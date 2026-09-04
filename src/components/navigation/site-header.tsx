@@ -1,0 +1,201 @@
+"use client";
+
+import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
+import { primaryNavigation } from "@/content/navigation";
+import { primaryServices } from "@/content/services";
+import { ButtonLink } from "@/components/ui/button-link";
+import { Container } from "@/components/ui/container";
+import { ArrowRightIcon, ChevronDownIcon, CloseIcon, MenuIcon } from "@/components/ui/icons";
+import { UtilityBar } from "@/components/layout/utility-bar";
+
+export function SiteHeader() {
+  const [megaOpen, setMegaOpen] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [expandedService, setExpandedService] = useState<string | null>("services");
+  const headerRef = useRef<HTMLElement>(null);
+  const servicesButtonRef = useRef<HTMLButtonElement>(null);
+  const mobilePanelRef = useRef<HTMLDivElement>(null);
+  const mobileButtonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    function handlePointerDown(event: PointerEvent) {
+      if (megaOpen && !headerRef.current?.contains(event.target as Node)) setMegaOpen(false);
+    }
+
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape" && megaOpen) {
+        setMegaOpen(false);
+        servicesButtonRef.current?.focus();
+      }
+    }
+
+    document.addEventListener("pointerdown", handlePointerDown);
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("pointerdown", handlePointerDown);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [megaOpen]);
+
+  useEffect(() => {
+    if (!mobileOpen) return;
+    const previousOverflow = document.body.style.overflow;
+    const previouslyFocused = document.activeElement as HTMLElement | null;
+    const mobileTrigger = mobileButtonRef.current;
+    document.body.style.overflow = "hidden";
+
+    const panel = mobilePanelRef.current;
+    const focusable = panel?.querySelectorAll<HTMLElement>(
+      'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])',
+    );
+    focusable?.[0]?.focus();
+
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        setMobileOpen(false);
+        return;
+      }
+      if (event.key !== "Tab" || !focusable?.length) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    }
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      document.removeEventListener("keydown", handleKeyDown);
+      (previouslyFocused ?? mobileTrigger)?.focus();
+    };
+  }, [mobileOpen]);
+
+  const closeMobile = () => setMobileOpen(false);
+
+  return (
+    <header ref={headerRef} className="sticky top-0 z-50 bg-warm-white/95 backdrop-blur-md">
+      <UtilityBar />
+      <div className="border-b border-steel">
+        <Container className="flex h-20 items-center justify-between gap-8">
+          <Link href="/" className="group flex items-center gap-3" aria-label="Apex Solution home">
+            <span className="grid size-9 place-items-center bg-navy text-sm font-bold text-white transition-colors duration-300 group-hover:bg-copper">A</span>
+            <span className="text-lg font-semibold tracking-[-0.03em] text-navy">Apex Solution</span>
+          </Link>
+
+          <nav className="hidden lg:block" aria-label="Primary navigation">
+            <ul className="flex items-center gap-7">
+              {primaryNavigation.map((item) => (
+                <li key={item.href}>
+                  {item.href === "/services" ? (
+                    <button
+                      ref={servicesButtonRef}
+                      type="button"
+                      className="flex min-h-11 items-center gap-1.5 text-sm font-medium text-navy transition-colors hover:text-copper"
+                      aria-expanded={megaOpen}
+                      aria-controls="services-mega-menu"
+                      onClick={() => setMegaOpen((open) => !open)}
+                    >
+                      {item.label}
+                      <ChevronDownIcon className={`size-4 transition-transform duration-300 ${megaOpen ? "rotate-180" : ""}`} />
+                    </button>
+                  ) : (
+                    <Link className="inline-flex min-h-11 items-center text-sm font-medium text-navy transition-colors hover:text-copper" href={item.href}>{item.label}</Link>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <div className="hidden lg:block"><ButtonLink href="/book">Book service</ButtonLink></div>
+          <button
+            ref={mobileButtonRef}
+            type="button"
+            className="grid size-12 place-items-center text-navy lg:hidden"
+            aria-label="Open navigation"
+            aria-expanded={mobileOpen}
+            onClick={() => setMobileOpen(true)}
+          >
+            <MenuIcon className="size-6" />
+          </button>
+        </Container>
+      </div>
+
+      <div
+        id="services-mega-menu"
+        className={`absolute inset-x-0 top-full hidden origin-top border-b border-steel bg-soft-white shadow-[0_24px_50px_rgba(16,29,44,0.1)] transition duration-300 lg:block ${megaOpen ? "visible scale-y-100 opacity-100" : "invisible scale-y-[0.98] opacity-0"}`}
+        aria-hidden={!megaOpen}
+      >
+        <Container className="grid grid-cols-[1fr_3fr] gap-12 py-10">
+          <div className="border-r border-steel pr-10">
+            <p className="eyebrow">How can we help?</p>
+            <h2 className="mt-4 text-3xl font-semibold tracking-[-0.04em] text-navy">Comfort starts with clarity.</h2>
+            <p className="mt-4 text-sm leading-6 text-slate">Not sure where to begin? Tell us what is happening and start a guided service request.</p>
+            <Link className="group mt-7 inline-flex items-center gap-3 text-sm font-semibold text-navy" href="/book" onClick={() => setMegaOpen(false)}>
+              Start your request <ArrowRightIcon className="size-5 transition-transform group-hover:translate-x-1" />
+            </Link>
+          </div>
+          <div className="grid grid-cols-4 gap-8">
+            {primaryServices.map((service) => (
+              <div key={service.id}>
+                <Link className="text-xs font-bold uppercase tracking-[0.16em] text-copper hover:text-navy" href={service.href} onClick={() => setMegaOpen(false)}>{service.name}</Link>
+                {service.children?.length ? (
+                  <ul className="mt-5 space-y-3">
+                    {service.children.map((child) => (
+                      <li key={child.id}><Link className="text-sm text-slate transition-colors hover:text-navy" href={child.href} onClick={() => setMegaOpen(false)}>{child.name}</Link></li>
+                    ))}
+                  </ul>
+                ) : <p className="mt-5 text-sm leading-6 text-slate">Cleaner, more balanced air for the way you live.</p>}
+              </div>
+            ))}
+          </div>
+        </Container>
+      </div>
+
+      {mobileOpen && (
+        <div className="fixed inset-0 bottom-[72px] z-50 bg-navy/45 lg:hidden" onMouseDown={(event) => event.target === event.currentTarget && closeMobile()}>
+          <div ref={mobilePanelRef} role="dialog" aria-modal="true" aria-label="Site navigation" className="ml-auto flex h-full w-[min(92vw,31rem)] animate-[drawer-in_300ms_ease-out] flex-col overflow-y-auto bg-soft-white">
+            <div className="flex h-20 shrink-0 items-center justify-between border-b border-steel px-6">
+              <span className="text-lg font-semibold tracking-[-0.03em] text-navy">Explore Apex</span>
+              <button type="button" className="grid size-12 place-items-center text-navy" onClick={closeMobile} aria-label="Close navigation"><CloseIcon className="size-6" /></button>
+            </div>
+            <nav className="flex-1 px-6 py-5" aria-label="Mobile navigation">
+              <div className="border-b border-steel pb-3">
+                <button type="button" className="flex min-h-14 w-full items-center justify-between text-left text-2xl font-semibold tracking-[-0.035em] text-navy" aria-expanded={expandedService === "services"} onClick={() => setExpandedService((value) => value === "services" ? null : "services")}>
+                  Services <ChevronDownIcon className={`size-5 transition-transform ${expandedService === "services" ? "rotate-180" : ""}`} />
+                </button>
+                {expandedService === "services" && (
+                  <div className="pb-5">
+                    {primaryServices.map((service) => (
+                      <div key={service.id} className="border-t border-steel/70 py-2 first:border-t-0">
+                        {service.children?.length ? (
+                          <>
+                            <button type="button" className="flex min-h-11 w-full items-center justify-between text-left text-sm font-bold uppercase tracking-[0.12em] text-copper" aria-expanded={expandedService === service.id} onClick={() => setExpandedService((value) => value === service.id ? "services" : service.id)}>
+                              {service.name}<ChevronDownIcon className={`size-4 transition-transform ${expandedService === service.id ? "rotate-180" : ""}`} />
+                            </button>
+                            {expandedService === service.id && <ul className="space-y-1 pb-2">{service.children.map((child) => <li key={child.id}><Link className="flex min-h-11 items-center text-base text-slate" href={child.href} onClick={closeMobile}>{child.name}</Link></li>)}</ul>}
+                          </>
+                        ) : <Link className="flex min-h-11 items-center text-sm font-bold uppercase tracking-[0.12em] text-copper" href={service.href} onClick={closeMobile}>{service.name}</Link>}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+              {primaryNavigation.filter((item) => item.href !== "/services").map((item) => (
+                <Link key={item.href} href={item.href} onClick={closeMobile} className="flex min-h-16 items-center justify-between border-b border-steel text-2xl font-semibold tracking-[-0.035em] text-navy">
+                  {item.label}<ArrowRightIcon className="size-5" />
+                </Link>
+              ))}
+            </nav>
+            <div className="border-t border-steel p-6"><ButtonLink className="w-full" href="/book" onClick={closeMobile}>Book service</ButtonLink></div>
+          </div>
+        </div>
+      )}
+    </header>
+  );
+}
