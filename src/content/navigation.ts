@@ -12,19 +12,12 @@ export const primaryNavigation: NavigationItem[] = [
       { label: "Air Quality", href: "/services/air-quality", description: "Healthier, more balanced indoor air." },
     ],
   },
-  { label: "About", href: "/about" },
-  { label: "Projects", href: "/projects" },
-  { label: "Apex Care", href: "/membership" },
   { label: "Service Areas", href: "/service-areas" },
-  { label: "Resources", href: "/resources" },
-];
-
-export const utilityNavigation: NavigationItem[] = [
-  { label: "Emergency", href: "/emergency" },
-  { label: "Financing", href: "/financing" },
-  { label: "Offers", href: "/offers" },
+  { label: "About", href: "/about" },
   { label: contactEntry.label, href: contactEntry.href },
 ];
+
+export const utilityNavigation: NavigationItem[] = [];
 
 export const footerNavigation: NavigationItem[] = [
   { label: "Team", href: "/team" },
@@ -42,9 +35,6 @@ export const footerGroups = [
     links: [
       { label: "About", href: "/about" },
       { label: "Brands We Service", href: "/brands" },
-      { label: "Team", href: "/team" },
-      { label: "Projects", href: "/projects" },
-      { label: "Careers", href: "/careers" },
     ],
   },
   {
@@ -52,18 +42,7 @@ export const footerGroups = [
     links: [
       { label: bookingEntry.label, href: bookingEntry.href },
       { label: "Service Areas", href: "/service-areas" },
-      { label: "Emergency", href: "/emergency" },
-      { label: "Financing", href: "/financing" },
       { label: contactEntry.label, href: contactEntry.href },
-    ],
-  },
-  {
-    label: "Resources",
-    links: [
-      { label: "Apex Journal", href: "/resources" },
-      { label: "FAQ", href: "/faq" },
-      { label: "Reviews", href: "/reviews" },
-      { label: "Apex Care", href: "/membership" },
     ],
   },
 ] satisfies { label: string; links: NavigationItem[] }[];

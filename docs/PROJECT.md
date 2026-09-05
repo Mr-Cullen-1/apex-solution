@@ -10,6 +10,8 @@ The experience combines technical precision, trustworthy local service, editoria
 
 Phase 0 established the production foundation. Phase 1 established the responsive homepage, accessible global navigation, temporary media system, and primary visual language. Phase 2A completed the service architecture, and Phase 2B completed the `/book` request experience with an unconnected, server-validated submission boundary. Phase 2C completes the public Service Areas, About, Brands We Service, and Contact pages. Remaining resource, commercial, team, proof, career, and legal routes stay `noindex` until their content or required business data is ready.
 
+The client-preview shell exposes only completed destinations. Unsupported projects, reviews, Apex Care, financing, offers, emergency, and journal content remain modeled for later work but are hidden from the homepage, primary navigation, and footer.
+
 ## Confirmed versus pending content
 
 Confirmed by the client: the public business name, tagline, five-state county coverage, supported-brand lists, core service taxonomy, and the Apex Care concept. The internal project and repository may remain named `apex-solution`.

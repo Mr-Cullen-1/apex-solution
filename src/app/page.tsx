@@ -3,7 +3,6 @@ import { AreasJournalAndFinal } from "@/components/home/areas-journal-and-final"
 import { ExpertiseAndStandard } from "@/components/home/expertise-and-standard";
 import { HeroAndSelector } from "@/components/home/hero-and-selector";
 import { StoryAndProblems } from "@/components/home/story-and-problems";
-import { WorkCareAndProof } from "@/components/home/work-care-and-proof";
 import { BrandsWeService } from "@/components/home/brands-we-service";
 import { company } from "@/content/company";
 
@@ -21,7 +20,6 @@ export default function Home() {
       <ExpertiseAndStandard />
       <BrandsWeService />
       <StoryAndProblems />
-      <WorkCareAndProof />
       <AreasJournalAndFinal />
     </main>
   );

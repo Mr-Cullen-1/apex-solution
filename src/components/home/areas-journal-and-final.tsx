@@ -1,54 +1,26 @@
 import Image from "next/image";
-import Link from "next/link";
 import { BookingLink } from "@/components/ui/booking-link";
-import { ButtonLink } from "@/components/ui/button-link";
 import { Container } from "@/components/ui/container";
-import { ArrowUpRightIcon } from "@/components/ui/icons";
 import { SectionHeading } from "@/components/ui/section-heading";
-import { media, type MediaId } from "@/content/media";
-import { faqs, resources } from "@/content/site";
+import { media } from "@/content/media";
+import { faqs } from "@/content/site";
 import { FAQAccordion } from "./faq-accordion";
 import { ServiceAreaExplorer } from "./service-area-explorer";
 
 export function AreasJournalAndFinal() {
   const finalImage = media.homeExterior;
+  const publicFaqs = faqs.filter(({ id }) => id !== "apex-care" && id !== "financing");
 
   return (
     <>
       <ServiceAreaExplorer />
 
-      <section className="bg-warm-white py-24 sm:py-32 lg:py-40">
-        <Container>
-          <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
-            <SectionHeading eyebrow="The Apex Journal" title={<>Smarter home.<br />Better comfort.</>} description="Planned practical guidance for making clearer decisions about the systems behind your home." />
-            <ButtonLink href="/resources" variant="secondary">View all insights</ButtonLink>
-          </div>
-          <div className="mt-14 grid gap-8 lg:grid-cols-3">
-            {resources.slice(0, 3).map((article, index) => {
-              const asset = media[article.mediaId as MediaId];
-              return (
-                <Link key={article.slug} href="/resources" className="group block">
-                  <div className={`relative overflow-hidden bg-steel ${index === 1 ? "aspect-[4/5]" : "aspect-[5/4]"}`}>
-                    <Image src={asset.src} alt={asset.alt} fill sizes="(max-width: 1023px) 100vw, 33vw" className="object-cover transition-transform duration-700 group-hover:scale-[1.025]" style={{ objectPosition: asset.focalPoint }} />
-                  </div>
-                  <div className="mt-5 flex items-start justify-between gap-5">
-                    <div><span className="text-[0.65rem] font-bold uppercase tracking-[0.18em] text-copper">Planned guide · {article.category}</span><h3 className="mt-3 text-2xl font-semibold leading-tight tracking-[-0.035em] text-navy">{article.title}</h3><p className="mt-3 text-sm leading-6 text-slate">{article.excerpt}</p></div>
-                    <ArrowUpRightIcon className="mt-1 size-5 shrink-0 text-navy transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />
-                  </div>
-                </Link>
-              );
-            })}
-          </div>
-        </Container>
-      </section>
-
       <section className="bg-soft-white py-24 sm:py-32 lg:py-40">
         <Container className="grid gap-12 lg:grid-cols-[0.75fr_1.25fr] lg:gap-24">
           <div>
-            <SectionHeading eyebrow="Questions, answered" title="A clearer way forward." description="Start with the essentials. Final service availability and commercial details are confirmed during the request process." />
-            <ButtonLink className="mt-8" href="/faq" variant="secondary">Visit all FAQs</ButtonLink>
+            <SectionHeading eyebrow="Questions, answered" title="A clearer way forward." description="Start with the essentials about choosing a service, coverage, and preparing your request." />
           </div>
-          <FAQAccordion items={faqs} />
+          <FAQAccordion items={publicFaqs} />
         </Container>
       </section>
 

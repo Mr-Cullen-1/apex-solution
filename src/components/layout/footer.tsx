@@ -20,7 +20,7 @@ export function Footer() {
             <p className="mt-8 max-w-sm text-[clamp(2.4rem,4vw,4.5rem)] font-semibold leading-[0.92] tracking-[-0.06em]">{company.tagline}</p>
             <p className="mt-6 max-w-sm text-sm leading-6 text-white/55">{company.description}</p>
           </div>
-          <div className="grid grid-cols-2 gap-x-7 gap-y-10 sm:grid-cols-3 xl:grid-cols-5">
+          <div className="grid grid-cols-2 gap-x-7 gap-y-10 sm:grid-cols-4">
             <FooterGroup label="Services" links={primaryServices.map((service) => ({ label: service.name, href: service.href }))} />
             {footerGroups.map((group) => <FooterGroup key={group.label} {...group} />)}
             <FooterGroup label="Locations" links={serviceAreas.map((area) => ({ label: area.state, href: `/service-areas#${area.slug}` }))} />
@@ -32,7 +32,6 @@ export function Footer() {
         </div>
         <div className="flex flex-col gap-4 pt-6 text-xs text-white/45 sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} {company.name}</p>
-          <div className="flex gap-6"><Link href="/privacy" className="hover:text-white">Privacy</Link><Link href="/terms" className="hover:text-white">Terms</Link></div>
           <p>Select-county service across five Northeast states.</p>
         </div>
       </Container>

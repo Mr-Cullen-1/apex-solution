@@ -15,8 +15,8 @@ export const metadata: Metadata = {
 
 const pathways = [
   { number: "01", title: "Need help choosing a service?", description: "Explore the verified service categories and common homeowner situations.", label: "Explore services", href: "/services" },
-  { number: "02", title: "Checking coverage?", description: "Review the confirmed county directory across five Northeast states.", label: "View service areas", href: "/service-areas" },
-  { number: "03", title: "Have a brand question?", description: "Browse the confirmed appliance and HVAC brand directory.", label: "Browse brands", href: "/brands" },
+  { number: "02", title: "Checking coverage?", description: "Review the county directory across five Northeast states.", label: "View service areas", href: "/service-areas" },
+  { number: "03", title: "Have a brand question?", description: "Browse the appliance and HVAC brand directory.", label: "Browse brands", href: "/brands" },
 ] as const;
 
 export default function ContactPage() {

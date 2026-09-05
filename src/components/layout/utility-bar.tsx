@@ -8,7 +8,7 @@ export function UtilityBar() {
     <div className="hidden border-b border-white/15 bg-navy text-white lg:block">
       <Container className="flex min-h-9 items-center justify-between gap-8 text-xs">
         <p className="font-medium tracking-wide">Serving {serviceAreas.map((area) => area.code).join(" · ")}</p>
-        <nav aria-label="Utility navigation">
+        {utilityNavigation.length > 0 && <nav aria-label="Utility navigation">
           <ul className="flex items-center gap-6">
             {utilityNavigation.map((item) => (
               <li key={item.href}>
@@ -16,7 +16,7 @@ export function UtilityBar() {
               </li>
             ))}
           </ul>
-        </nav>
+        </nav>}
       </Container>
     </div>
   );
