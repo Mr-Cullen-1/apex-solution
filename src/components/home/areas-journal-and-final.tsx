@@ -2,44 +2,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { ButtonLink } from "@/components/ui/button-link";
 import { Container } from "@/components/ui/container";
-import { ArrowRightIcon, ArrowUpRightIcon } from "@/components/ui/icons";
+import { ArrowUpRightIcon } from "@/components/ui/icons";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { media, type MediaId } from "@/content/media";
-import { faqs, resources, serviceAreas } from "@/content/site";
+import { faqs, resources } from "@/content/site";
 import { FAQAccordion } from "./faq-accordion";
+import { ServiceAreaExplorer } from "./service-area-explorer";
 
 export function AreasJournalAndFinal() {
   const finalImage = media.homeExterior;
 
   return (
     <>
-      <section className="bg-soft-white py-24 sm:py-32 lg:py-40">
-        <Container>
-          <div className="grid overflow-hidden border border-steel lg:grid-cols-[0.85fr_1.15fr]">
-            <div className="p-7 sm:p-10 lg:p-14">
-              <SectionHeading eyebrow="05 — Where we serve" title={<>Local expertise,<br />across the Valley.</>} description="Explore the initial city routes prepared for the Phoenix metropolitan service area." />
-              <div className="mt-10 grid sm:grid-cols-2">
-                {serviceAreas.map((area, index) => (
-                  <Link key={area.slug} href={`/service-areas/${area.slug}`} className="group flex min-h-14 items-center justify-between border-b border-steel text-sm font-semibold text-navy transition-colors hover:border-navy hover:text-copper sm:odd:mr-6">
-                    <span><span className="mr-3 text-xs text-copper">0{index + 1}</span>{area.name}</span><ArrowRightIcon className="size-4 transition-transform group-hover:translate-x-1" />
-                  </Link>
-                ))}
-              </div>
-              <ButtonLink className="mt-9" href="/service-areas" variant="secondary">All service areas</ButtonLink>
-            </div>
-            <div className="relative min-h-[30rem] overflow-hidden border-t border-steel bg-navy lg:min-h-0 lg:border-l lg:border-t-0" aria-label="Stylized Phoenix Valley service-area diagram">
-              <div className="absolute inset-0 opacity-30" style={{ backgroundImage: "linear-gradient(rgba(255,255,255,.13) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.13) 1px, transparent 1px)", backgroundSize: "52px 52px" }} />
-              <div className="absolute -bottom-20 -right-8 text-[20rem] font-semibold leading-none tracking-[-0.1em] text-white/[0.04]" aria-hidden="true">A</div>
-              <div className="absolute left-[15%] top-[18%] h-[58%] w-[68%] rounded-[50%] border border-dashed border-copper/60" aria-hidden="true" />
-              {serviceAreas.map((area, index) => {
-                const positions = ["left-[32%] top-[25%]", "left-[54%] top-[32%]", "left-[68%] top-[49%]", "left-[45%] top-[58%]", "left-[63%] top-[69%]", "left-[24%] top-[47%]"];
-                return <Link key={area.slug} href={`/service-areas/${area.slug}`} className={`group absolute ${positions[index]} flex items-center gap-2 text-xs font-semibold text-white`}><span className="relative size-3 rounded-full border border-copper bg-navy before:absolute before:-inset-2 before:rounded-full before:border before:border-copper/25" /><span className="bg-navy/80 px-2 py-1 transition-colors group-hover:bg-copper">{area.name}</span></Link>;
-              })}
-              <p className="absolute bottom-7 left-7 text-[0.65rem] uppercase tracking-[0.18em] text-white/45">Concept diagram · Not to scale</p>
-            </div>
-          </div>
-        </Container>
-      </section>
+      <ServiceAreaExplorer />
 
       <section className="bg-warm-white py-24 sm:py-32 lg:py-40">
         <Container>

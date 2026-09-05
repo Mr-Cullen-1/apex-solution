@@ -1,6 +1,6 @@
-# Apex Solution
+# Apex Home Services
 
-Production-oriented Next.js foundation for the Apex Solution home-services website.
+Production-oriented Next.js application for the Apex Home Services website. The internal repository name remains `apex-solution`.
 
 ## Start locally
 

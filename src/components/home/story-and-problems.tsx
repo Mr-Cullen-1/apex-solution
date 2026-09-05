@@ -7,6 +7,7 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { aboutValues } from "@/content/homepage";
 import { media } from "@/content/media";
 import { customerProblems } from "@/content/services";
+import { company } from "@/content/company";
 
 export function StoryAndProblems() {
   const interior = media.homeInterior;
@@ -22,7 +23,7 @@ export function StoryAndProblems() {
               </div>
               <div className="absolute -bottom-8 -right-2 hidden w-52 bg-navy p-7 text-white sm:block lg:right-0">
                 <span className="block text-4xl font-semibold tracking-[-0.05em]">Apex</span>
-                <span className="mt-2 block text-xs uppercase tracking-[0.17em] text-white/55">Comfort, elevated.</span>
+                <span className="mt-2 block text-xs uppercase tracking-[0.17em] text-white/55">{company.tagline}</span>
               </div>
             </div>
             <div className="lg:col-span-5">

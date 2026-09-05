@@ -22,7 +22,7 @@ export const media = {
   homeInterior: {
     id: "home-interior",
     src: "/images/apex-home-interior.png",
-    alt: "Comfortable modern Southwest living room with soft daylight and natural airflow",
+    alt: "Comfortable modern living room with soft daylight and natural airflow",
     width: 1122,
     height: 1402,
     focalPoint: "58% 48%",
@@ -31,7 +31,7 @@ export const media = {
   homeExterior: {
     id: "home-exterior",
     src: "/images/apex-home-exterior.png",
-    alt: "Contemporary Phoenix Valley home with desert landscaping at blue hour",
+    alt: "Contemporary home with low-water landscaping at blue hour",
     width: 1586,
     height: 992,
     focalPoint: "68% 52%",

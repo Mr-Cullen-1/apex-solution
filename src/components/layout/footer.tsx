@@ -12,17 +12,17 @@ export function Footer() {
       <Container>
         <div className="grid gap-12 border-b border-white/15 pb-14 lg:grid-cols-[1.2fr_2fr] lg:gap-20">
           <div>
-            <Link href="/" className="inline-flex items-center gap-3" aria-label="Apex Solution home">
+            <Link href="/" className="inline-flex items-center gap-3" aria-label={`${company.name} home`}>
               <span className="grid size-10 place-items-center bg-white text-sm font-bold text-navy">A</span>
               <span className="text-xl font-semibold tracking-[-0.035em]">{company.name}</span>
             </Link>
-            <p className="mt-8 max-w-sm text-[clamp(2.4rem,4vw,4.5rem)] font-semibold leading-[0.92] tracking-[-0.06em]">Comfort,<br />elevated.</p>
+            <p className="mt-8 max-w-sm text-[clamp(2.4rem,4vw,4.5rem)] font-semibold leading-[0.92] tracking-[-0.06em]">{company.tagline}</p>
             <p className="mt-6 max-w-sm text-sm leading-6 text-white/55">{company.description}</p>
           </div>
           <div className="grid grid-cols-2 gap-x-7 gap-y-10 sm:grid-cols-3 xl:grid-cols-5">
             <FooterGroup label="Services" links={primaryServices.map((service) => ({ label: service.name, href: service.href }))} />
             {footerGroups.map((group) => <FooterGroup key={group.label} {...group} />)}
-            <FooterGroup label="Locations" links={serviceAreas.map((area) => ({ label: area.name, href: `/service-areas/${area.slug}` as const }))} />
+            <FooterGroup label="Locations" links={serviceAreas.map((area) => ({ label: area.state, href: "/#service-areas" }))} />
           </div>
         </div>
         <div className="flex flex-col gap-5 border-b border-white/15 py-8 sm:flex-row sm:items-center sm:justify-between">

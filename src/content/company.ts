@@ -8,11 +8,11 @@ export const contact: ContactDetails = {
 };
 
 export const company = {
-  name: "Apex Solution",
-  tagline: "Service at a higher standard.",
-  description: "Expert heating, cooling, plumbing, and indoor air solutions designed to keep your home performing at its best.",
+  name: "Apex Home Services",
+  tagline: "Reliable Home Services. Local Professionals.",
+  description: "Reliable heating, cooling, plumbing, indoor air quality, and appliance service from local professionals across New York, New Jersey, Connecticut, Massachusetts, and Rhode Island.",
   locale: "en_US",
-  market: "Phoenix metropolitan area",
+  serviceRegion: "New York, New Jersey, Connecticut, Massachusetts, and Rhode Island",
   contact,
   socialLinks: [],
 } as const;

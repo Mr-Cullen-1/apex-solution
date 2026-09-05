@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: PlannedPageProps): Promise<Me
 
   return {
     title: route.title,
-    description: `${route.title} is planned in the Apex Solution product roadmap.`,
+    description: `${route.title} is planned in the Apex Home Services product roadmap.`,
     robots: { index: false, follow: false },
   };
 }
@@ -45,7 +45,7 @@ export default async function PlannedPage({ params }: PlannedPageProps) {
           {route.path !== "/book" && <ButtonLink href="/book" variant="secondary">Booking foundation</ButtonLink>}
         </div>
         <p className="mt-12 border-t border-steel pt-5 text-sm text-slate">
-          <Link className="text-link" href="/">Apex Solution</Link> / {route.title}
+          <Link className="text-link" href="/">Apex Home Services</Link> / {route.title}
         </p>
       </Container>
     </main>

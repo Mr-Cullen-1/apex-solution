@@ -4,6 +4,7 @@ import { ExpertiseAndStandard } from "@/components/home/expertise-and-standard";
 import { HeroAndSelector } from "@/components/home/hero-and-selector";
 import { StoryAndProblems } from "@/components/home/story-and-problems";
 import { WorkCareAndProof } from "@/components/home/work-care-and-proof";
+import { BrandsWeService } from "@/components/home/brands-we-service";
 import { company } from "@/content/company";
 
 export const metadata: Metadata = {
@@ -18,6 +19,7 @@ export default function Home() {
     <main id="main-content" className="flex-1">
       <HeroAndSelector />
       <ExpertiseAndStandard />
+      <BrandsWeService />
       <StoryAndProblems />
       <WorkCareAndProof />
       <AreasJournalAndFinal />

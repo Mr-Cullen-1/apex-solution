@@ -41,7 +41,7 @@ export function ExpertiseAndStandard() {
         <div className="absolute -right-24 -top-40 select-none text-[32rem] font-semibold leading-none tracking-[-0.1em] text-white/[0.025]" aria-hidden="true">A</div>
         <Container className="relative">
           <div className="grid gap-14 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24">
-            <SectionHeading theme="dark" eyebrow="The Apex Standard" title={<>Service at a<br />higher standard.</>} description="A simple operating idea: understand the home, explain the options, and take pride in the details." />
+            <SectionHeading theme="dark" eyebrow="The Apex Standard" title={<>Reliable care.<br />Thoughtfully delivered.</>} description="A simple operating idea: understand the home, explain the options, and take pride in the details." />
             <div className="border-t border-white/20">
               {apexStandard.map((principle) => (
                 <div key={principle.number} className="grid gap-4 border-b border-white/20 py-8 sm:grid-cols-[5rem_1fr_1.2fr] sm:items-baseline sm:py-10">

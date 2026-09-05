@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { primaryNavigation } from "@/content/navigation";
 import { primaryServices } from "@/content/services";
+import { company } from "@/content/company";
 import { ButtonLink } from "@/components/ui/button-link";
 import { Container } from "@/components/ui/container";
 import { ArrowRightIcon, ChevronDownIcon, CloseIcon, MenuIcon } from "@/components/ui/icons";
@@ -83,9 +84,9 @@ export function SiteHeader() {
       <UtilityBar />
       <div className="border-b border-steel">
         <Container className="flex h-20 items-center justify-between gap-8">
-          <Link href="/" className="group flex items-center gap-3" aria-label="Apex Solution home">
+          <Link href="/" className="group flex items-center gap-3" aria-label={`${company.name} home`}>
             <span className="grid size-9 place-items-center bg-navy text-sm font-bold text-white transition-colors duration-300 group-hover:bg-copper">A</span>
-            <span className="text-lg font-semibold tracking-[-0.03em] text-navy">Apex Solution</span>
+            <span className="text-lg font-semibold tracking-[-0.03em] text-navy">{company.name}</span>
           </Link>
 
           <nav className="hidden lg:block" aria-label="Primary navigation">

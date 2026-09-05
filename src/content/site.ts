@@ -1,14 +1,61 @@
-import type { FAQ, Project, ResourceArticle, Review, ServiceArea } from "@/types/content";
+import type { FAQ, Project, ResourceArticle, Review, ServiceArea, SupportedBrandGroup } from "@/types/content";
 
-export const serviceAreas: ServiceArea[] = ["Phoenix", "Scottsdale", "Mesa", "Chandler", "Gilbert", "Tempe"].map(
-  (name) => ({ name, slug: name.toLowerCase(), region: "Arizona" }),
-);
+export const serviceAreas = [
+  {
+    state: "New York",
+    code: "NY",
+    slug: "new-york",
+    counties: ["Kings County", "Bronx County", "Nassau County", "Suffolk County", "Westchester County", "Rockland County"],
+  },
+  {
+    state: "New Jersey",
+    code: "NJ",
+    slug: "new-jersey",
+    counties: ["Middlesex County", "Monmouth County", "Ocean County", "Union County", "Essex County", "Morris County", "Passaic County", "Bergen County", "Somerset County"],
+  },
+  {
+    state: "Connecticut",
+    code: "CT",
+    slug: "connecticut",
+    counties: ["Fairfield County", "New Haven County", "Litchfield County"],
+  },
+  {
+    state: "Massachusetts",
+    code: "MA",
+    slug: "massachusetts",
+    counties: ["Suffolk County", "Middlesex County", "Worcester County", "Norfolk County", "Plymouth County", "Bristol County"],
+  },
+  {
+    state: "Rhode Island",
+    code: "RI",
+    slug: "rhode-island",
+    counties: ["Providence County", "Kent County", "Bristol County", "Newport County", "Washington County"],
+  },
+] as const satisfies readonly ServiceArea[];
+
+export const supportedBrands = [
+  {
+    id: "appliances",
+    label: "Appliances",
+    brands: ["Samsung", "LG", "Whirlpool", "GE", "Maytag", "Frigidaire", "KitchenAid", "Bosch", "Kenmore", "Electrolux", "Amana"],
+  },
+  {
+    id: "premium-appliances",
+    label: "Premium Appliances",
+    brands: ["Sub-Zero", "Wolf", "Viking", "Thermador", "Miele", "Monogram"],
+  },
+  {
+    id: "hvac",
+    label: "HVAC",
+    brands: ["Carrier", "Trane", "Lennox", "Rheem", "Goodman", "American Standard", "Bryant", "York", "Mitsubishi", "Friedrich"],
+  },
+] as const satisfies readonly SupportedBrandGroup[];
 
 // Reviews remain empty until approved customer content is supplied.
 export const reviews: Review[] = [];
 export const faqs: FAQ[] = [
   { id: "choose-service", question: "How do I know which service to request?", answer: "Choose the category closest to what you are experiencing. If you are unsure, start a service request and describe the symptoms so the request can be directed appropriately." },
-  { id: "service-area", question: "Does Apex Solution serve my area?", answer: "The initial website service area includes Phoenix, Scottsdale, Mesa, Chandler, Gilbert, and Tempe. Final availability should be confirmed when you request service." },
+  { id: "service-area", question: "Does Apex Home Services serve my area?", answer: "Apex Home Services covers confirmed counties across New York, New Jersey, Connecticut, Massachusetts, and Rhode Island. Exact ZIP-level availability should be confirmed when you request service." },
   { id: "request-details", question: "What should I include in a service request?", answer: "Share the main symptom, when it started, the type of system if known, and your preferred timing. Exact scheduling will be confirmed separately." },
   { id: "apex-care", question: "What is Apex Care?", answer: "Apex Care is the planned preventive-maintenance membership concept. Final benefits, eligibility, and commercial terms are still subject to business confirmation." },
   { id: "financing", question: "Will financing be available?", answer: "A financing experience is planned, but providers, eligibility, rates, and terms have not yet been confirmed." },
