@@ -21,7 +21,7 @@ export function BrandsWeService() {
                 </ul>
               </div>
             ))}
-            <div className="pt-8"><p className="text-lg leading-8 text-slate">Don&apos;t see your brand? Contact us — we may still be able to help.</p><ButtonLink className="mt-6" href={contactEntry.href} variant="secondary">Contact us</ButtonLink></div>
+            <div className="pt-8"><p className="text-lg leading-8 text-slate">Don&apos;t see your brand? Contact us — we may still be able to help.</p><div className="mt-6 flex flex-col gap-3 sm:flex-row"><ButtonLink href="/brands" variant="secondary">Browse all brands</ButtonLink><ButtonLink href={contactEntry.href} variant="secondary">Contact us</ButtonLink></div></div>
           </div>
         </div>
       </Container>

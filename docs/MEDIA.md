@@ -46,6 +46,10 @@ Premium editorial residential HVAC service photograph of a professional technici
 
 The client describes a supplied Apex Home Services raster logo whose artwork contains the older line “Comfort Today. A Brighter Tomorrow.” No logo image file was present in the Phase 1.1 attachment, so it could not be safely added or inspected. The site continues to use the refined text mark. When the file is supplied, preserve the artwork without destructive edits and update or replace the asset through the approved brand-source workflow. Separately rendered copy must continue to use **Reliable Home Services. Local Professionals.**
 
+## Phase 2C usage
+
+Phase 2C generated no new media. The About page reuses `apex-northeast-hvac.png` with an explicit public caption identifying it as temporary conceptual service imagery—not an actual Apex employee or completed project. Service Areas, Brands, and Contact remain typography-led. No legacy Southwest asset is used as a prominent identity element on these pages.
+
 ## Production replacement rules
 
 - Replace assets in `src/content/media.ts`, retaining accurate width, height, focal point, and alt text.

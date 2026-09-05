@@ -4,7 +4,6 @@ import { ButtonLink } from "@/components/ui/button-link";
 import { Container } from "@/components/ui/container";
 import { ArrowUpRightIcon } from "@/components/ui/icons";
 import { SectionHeading } from "@/components/ui/section-heading";
-import { membershipConcepts } from "@/content/homepage";
 import { media, type MediaId } from "@/content/media";
 import { membership, projects, reviews } from "@/content/site";
 import type { Review } from "@/types/content";
@@ -15,8 +14,8 @@ export function WorkCareAndProof() {
       <section className="bg-soft-white py-24 sm:py-32 lg:py-40">
         <Container>
           <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
-            <SectionHeading eyebrow="03 — Selected work" title="Comfort, delivered." description="A flexible case-study system prepared for verified project photography and details." />
-            <ButtonLink href="/projects" variant="secondary">View projects</ButtonLink>
+            <SectionHeading eyebrow="03 — Project presentation" title="Project stories, in preparation." description="Concept layouts are reserved for future projects with verified photography, locations, and service details." />
+            <ButtonLink href="/projects" variant="secondary">Project page foundation</ButtonLink>
           </div>
 
           <div className="mt-14 grid gap-5 lg:grid-cols-12">
@@ -28,7 +27,7 @@ export function WorkCareAndProof() {
                   <Image src={asset.src} alt={asset.alt} fill sizes={large ? "(max-width: 1023px) 100vw, 58vw" : "(max-width: 1023px) 100vw, 42vw"} className="object-cover transition-transform duration-700 group-hover:scale-[1.025]" style={{ objectPosition: asset.focalPoint }} />
                   <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(16,29,44,0.9),transparent_65%)]" />
                   <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-5 p-6 text-white sm:p-8">
-                    <div><span className="text-[0.65rem] font-bold uppercase tracking-[0.18em] text-copper">Visual concept · Details pending</span><h3 className={`mt-2 font-semibold tracking-[-0.04em] ${large ? "text-3xl sm:text-4xl" : "text-2xl"}`}>{project.title}</h3><p className="mt-2 text-sm text-white/60">{project.service}</p></div>
+                    <div><span className="text-[0.65rem] font-bold uppercase tracking-[0.18em] text-copper">Visual concept · Not completed Apex work</span><h3 className={`mt-2 font-semibold tracking-[-0.04em] ${large ? "text-3xl sm:text-4xl" : "text-2xl"}`}>{project.title}</h3><p className="mt-2 text-sm text-white/60">{project.service}</p></div>
                     <ArrowUpRightIcon className="size-6 shrink-0 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />
                   </div>
                 </Link>
@@ -50,12 +49,8 @@ export function WorkCareAndProof() {
                 <ButtonLink className="mt-9 border-white bg-white text-navy hover:border-copper hover:bg-copper hover:text-white" href="/membership">Explore Apex Care</ButtonLink>
               </div>
               <div className="flex flex-col justify-end border-t border-white/15 bg-white/[0.035] p-8 sm:p-12 lg:border-l lg:border-t-0 lg:p-14">
-                <p className="text-xs font-bold uppercase tracking-[0.18em] text-copper">The care concept</p>
-                <ul className="mt-7 border-t border-white/20">
-                  {membershipConcepts.map((concept, index) => (
-                    <li key={concept} className="flex items-center gap-5 border-b border-white/20 py-5 text-base"><span className="text-xs text-copper">0{index + 1}</span>{concept}</li>
-                  ))}
-                </ul>
+                <p className="text-xs font-bold uppercase tracking-[0.18em] text-copper">Program status</p>
+                <p className="mt-7 border-t border-white/20 pt-7 text-xl leading-8 text-white/70">Scope, eligibility, maintenance inclusions, pricing, and terms are not yet confirmed. The route remains an unindexed product foundation.</p>
               </div>
             </div>
           </div>
@@ -79,7 +74,7 @@ export function WorkCareAndProof() {
 
       <section className="border-y border-steel bg-warm-white py-16 sm:py-20">
         <Container className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
-          <div><p className="eyebrow">Flexible paths forward</p><h2 className="mt-4 text-balance text-[clamp(2.6rem,5vw,5rem)] font-semibold leading-none tracking-[-0.055em] text-navy">A better home<br />doesn&apos;t have to wait.</h2></div>
+          <div><p className="eyebrow">Financing information</p><h2 className="mt-4 text-balance text-[clamp(2.6rem,5vw,5rem)] font-semibold leading-none tracking-[-0.055em] text-navy">Details follow<br />verified terms.</h2></div>
           <div className="lg:justify-self-end"><p className="max-w-md text-base leading-7 text-slate">Explore the financing experience. Providers, eligibility, rates, and terms will be published only after verification.</p><ButtonLink className="mt-7" href="/financing" variant="secondary">Explore financing</ButtonLink></div>
         </Container>
       </section>

@@ -23,7 +23,7 @@ export function Footer() {
           <div className="grid grid-cols-2 gap-x-7 gap-y-10 sm:grid-cols-3 xl:grid-cols-5">
             <FooterGroup label="Services" links={primaryServices.map((service) => ({ label: service.name, href: service.href }))} />
             {footerGroups.map((group) => <FooterGroup key={group.label} {...group} />)}
-            <FooterGroup label="Locations" links={serviceAreas.map((area) => ({ label: area.state, href: "/#service-areas" }))} />
+            <FooterGroup label="Locations" links={serviceAreas.map((area) => ({ label: area.state, href: `/service-areas#${area.slug}` }))} />
           </div>
         </div>
         <div className="flex flex-col gap-5 border-b border-white/15 py-8 sm:flex-row sm:items-center sm:justify-between">
@@ -33,7 +33,7 @@ export function Footer() {
         <div className="flex flex-col gap-4 pt-6 text-xs text-white/45 sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} {company.name}</p>
           <div className="flex gap-6"><Link href="/privacy" className="hover:text-white">Privacy</Link><Link href="/terms" className="hover:text-white">Terms</Link></div>
-          <p>Contact details pending business verification.</p>
+          <p>Select-county service across five Northeast states.</p>
         </div>
       </Container>
     </footer>

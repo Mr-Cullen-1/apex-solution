@@ -41,6 +41,7 @@ export const footerGroups = [
     label: "Company",
     links: [
       { label: "About", href: "/about" },
+      { label: "Brands We Service", href: "/brands" },
       { label: "Team", href: "/team" },
       { label: "Projects", href: "/projects" },
       { label: "Careers", href: "/careers" },
@@ -50,6 +51,7 @@ export const footerGroups = [
     label: "Support",
     links: [
       { label: bookingEntry.label, href: bookingEntry.href },
+      { label: "Service Areas", href: "/service-areas" },
       { label: "Emergency", href: "/emergency" },
       { label: "Financing", href: "/financing" },
       { label: contactEntry.label, href: contactEntry.href },

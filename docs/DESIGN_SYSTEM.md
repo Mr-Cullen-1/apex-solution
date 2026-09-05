@@ -52,3 +52,10 @@ Geist is self-hosted through the official `geist` package and `next/font/local` 
 - Mobile receives a dedicated sticky Back/Continue action area; the global mobile action bar is suppressed on `/book` to avoid competing controls.
 - Input errors appear beside their fields and in a focus-managed step summary. Choice tiles expose visible keyboard focus through their containing labels.
 - Confirmation styling distinguishes a locally prepared request from a transmitted or confirmed appointment. No success language may imply delivery while the adapter is unconfigured.
+
+## Core public-page patterns
+
+- Public-page heroes share the established display scale while changing composition according to the narrative: geographic directory, brand statement, operating principles, or route selection.
+- Long directories use numbered rows, rules, state anchors, and editorial groupings rather than repetitive cards or logo walls.
+- Service-area navigation remains horizontally scrollable on compact screens, while every county stays present in the document and reachable without JavaScript.
+- Contact uses route-oriented choices instead of a second unconnected form. Missing business contact fields are omitted rather than shown as empty or pending.

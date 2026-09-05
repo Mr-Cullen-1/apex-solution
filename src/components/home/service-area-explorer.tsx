@@ -1,11 +1,10 @@
 "use client";
 
 import { useRef, useState, type KeyboardEvent } from "react";
+import { BookingLink } from "@/components/ui/booking-link";
 import { ButtonLink } from "@/components/ui/button-link";
 import { Container } from "@/components/ui/container";
-import { ArrowRightIcon } from "@/components/ui/icons";
 import { SectionHeading } from "@/components/ui/section-heading";
-import { contactEntry } from "@/content/cta";
 import { serviceAreas } from "@/content/site";
 
 export function ServiceAreaExplorer() {
@@ -90,15 +89,10 @@ export function ServiceAreaExplorer() {
             <h3 className="mt-4 text-2xl font-semibold tracking-[-0.035em] text-navy">Not sure if we service your area?</h3>
             <p className="mt-3 text-base leading-7 text-slate">Enter your ZIP code and we&apos;ll check availability.</p>
           </div>
-          <form action={contactEntry.href} method="get" className="flex flex-col justify-center gap-4 p-7 sm:p-9" aria-describedby="zip-availability-note">
-            <input type="hidden" name="intent" value="zip-coverage" />
-            <label htmlFor="service-zip" className="text-xs font-bold uppercase tracking-[0.16em] text-navy">5-digit ZIP code</label>
-            <div className="flex flex-col gap-3 sm:flex-row">
-              <input id="service-zip" name="zip" type="text" inputMode="numeric" autoComplete="postal-code" pattern="[0-9]{5}" maxLength={5} required placeholder="ZIP code" title="Enter a 5-digit ZIP code" className="min-h-14 w-full border border-steel bg-soft-white px-5 text-base text-navy placeholder:text-slate/70 focus:border-navy focus:outline-none" />
-              <button type="submit" className="group inline-flex min-h-14 shrink-0 items-center justify-center gap-3 bg-navy px-6 text-sm font-semibold uppercase tracking-[0.08em] text-white transition-colors hover:bg-copper">Continue to contact <ArrowRightIcon className="size-4 transition-transform group-hover:translate-x-1" /></button>
-            </div>
-            <p id="zip-availability-note" className="text-xs leading-5 text-slate">ZIP-level coverage is confirmed by our team. This form does not return an automatic availability decision.</p>
-          </form>
+          <div className="flex flex-col items-start justify-center gap-4 p-7 sm:p-9">
+            <p className="text-base leading-7 text-slate">Enter your ZIP securely in the booking location step. The request flow validates format but does not return an automatic eligibility decision.</p>
+            <BookingLink>Continue to request</BookingLink>
+          </div>
         </div>
       </Container>
     </section>

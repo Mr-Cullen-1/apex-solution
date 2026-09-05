@@ -38,7 +38,9 @@ The files in `src/content` are the single source of truth during the file-backed
 
 ## Route strategy
 
-The typed route inventory in `src/content/routes.ts` powers a catch-all set of `noindex` foundation pages, keeping planned navigation destinations functional without presenting them as complete. Completed service routes live under `app/services`, use static params, and own indexable metadata. Dynamic resource pages will later use `app/resources/[slug]`. Do not generate thin location or article pages solely for SEO.
+The typed route inventory in `src/content/routes.ts` powers a catch-all set of `noindex` foundation pages, keeping planned navigation destinations functional without presenting them as complete. Completed service routes live under `app/services`; core public pages live at `app/about`, `app/brands`, `app/contact`, and `app/service-areas`. `completedPublicPaths` and `completedServicePaths` feed the sitemap. Dynamic resource pages will later use `app/resources/[slug]`. Do not generate thin location, brand, or article pages solely for SEO.
+
+The Service Areas page consumes the single state-and-county dataset and uses anchors rather than generating 29 county routes. The Brands page consumes the single supported-brand dataset and maintains a small explicit mapping from brand group to existing service-category routes.
 
 ## Booking boundary
 

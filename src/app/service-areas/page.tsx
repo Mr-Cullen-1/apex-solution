@@ -1,0 +1,29 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { BookingLink } from "@/components/ui/booking-link";
+import { Container } from "@/components/ui/container";
+import { ArrowRightIcon } from "@/components/ui/icons";
+import { SectionHeading } from "@/components/ui/section-heading";
+import { serviceAreas } from "@/content/site";
+
+export const metadata: Metadata = {
+  title: "Service Areas",
+  description: "Explore the select counties Apex Home Services serves across five Northeast states and prepare a request for location confirmation.",
+  alternates: { canonical: "/service-areas" },
+  openGraph: { title: "Service Areas", description: "Serving communities across select counties in five Northeast states.", url: "/service-areas" },
+  robots: { index: true, follow: true },
+};
+
+export default function ServiceAreasPage() {
+  return (
+    <main id="main-content" className="flex-1">
+      <section className="border-b border-steel bg-warm-white py-16 sm:py-24"><Container className="grid gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-end"><div><p className="eyebrow">Where we serve</p><h1 className="mt-5 max-w-5xl text-balance text-[clamp(4rem,9vw,8.5rem)] font-semibold leading-[0.84] tracking-[-0.075em] text-navy">Local service across select Northeast communities.</h1></div><div className="border-l-2 border-copper pl-6"><p className="text-lg leading-8 text-slate">Apex serves homes across confirmed counties in New York, New Jersey, Connecticut, Massachusetts, and Rhode Island. Coverage is not statewide, and exact ZIP availability is confirmed separately.</p><BookingLink className="mt-8">Request service</BookingLink></div></Container></section>
+
+      <nav className="sticky top-28 z-20 border-b border-steel bg-soft-white/95 backdrop-blur" aria-label="Service area states"><Container><ul className="flex snap-x gap-7 overflow-x-auto py-5">{serviceAreas.map((area) => <li key={area.code} className="shrink-0 snap-start"><a className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-navy hover:text-copper" href={`#${area.slug}`}><span className="text-xs font-bold tracking-[0.14em] text-copper">{area.code}</span>{area.state}</a></li>)}</ul></Container></nav>
+
+      <section className="py-20 sm:py-28" aria-labelledby="coverage-directory-heading"><Container><SectionHeading id="coverage-directory-heading" eyebrow="Confirmed county directory" title="Five states. Twenty-nine confirmed counties." description="Use the state index to move through the complete verified coverage dataset. No county listed here implies coverage beyond that county or every ZIP within it." /><div className="mt-16 border-t border-navy">{serviceAreas.map((area, areaIndex) => <section key={area.code} id={area.slug} className="scroll-mt-48 grid gap-8 border-b border-steel py-12 lg:grid-cols-[0.75fr_1.25fr] lg:gap-20" aria-labelledby={`${area.slug}-heading`}><div><span className="text-xs font-bold tracking-[0.18em] text-copper">{String(areaIndex + 1).padStart(2, "0")} / {area.code}</span><h2 id={`${area.slug}-heading`} className="mt-4 text-4xl font-semibold tracking-[-0.05em] text-navy sm:text-5xl">{area.state}</h2><p className="mt-5 max-w-md leading-7 text-slate">Apex lists service coverage in the counties shown. Submit a request so the team can later confirm the exact address and ZIP.</p><BookingLink className="mt-7" variant="secondary">Request service</BookingLink></div><ol className="grid content-start sm:grid-cols-2">{area.counties.map((county, index) => <li key={`${area.code}-${county}`} className="flex min-h-16 items-center gap-4 border-b border-steel py-4 sm:odd:border-r sm:odd:pr-6 sm:even:pl-6"><span className="text-xs font-bold tracking-[0.14em] text-copper">{String(index + 1).padStart(2, "0")}</span><span className="font-semibold text-navy">{county}</span></li>)}</ol></section>)}</div></Container></section>
+
+      <section className="bg-navy py-20 text-white sm:py-24"><Container className="grid gap-10 lg:grid-cols-[1fr_0.8fr] lg:items-end"><div><p className="eyebrow">Location confirmation</p><h2 className="mt-5 max-w-4xl text-balance text-[clamp(3rem,7vw,6.2rem)] font-semibold leading-[0.9] tracking-[-0.065em]">Not sure if we service your area?</h2><p className="mt-6 max-w-2xl text-lg leading-8 text-white/65">Enter your ZIP securely in the booking location step. ZIP format and actual service availability are separate checks.</p></div><div className="lg:justify-self-end"><BookingLink className="border-white bg-white text-navy hover:border-copper hover:bg-copper hover:text-white">Check through a request</BookingLink><Link className="mt-5 flex min-h-11 items-center gap-3 text-sm font-semibold text-white" href="/contact">Other location questions <ArrowRightIcon className="size-4" /></Link></div></Container></section>
+    </main>
+  );
+}
