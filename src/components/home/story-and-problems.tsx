@@ -6,7 +6,7 @@ import { ArrowRightIcon } from "@/components/ui/icons";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { aboutValues } from "@/content/homepage";
 import { media } from "@/content/media";
-import { customerProblems } from "@/content/services";
+import { homepageProblems } from "@/content/services";
 import { company } from "@/content/company";
 
 export function StoryAndProblems() {
@@ -47,7 +47,7 @@ export function StoryAndProblems() {
             <p className="mt-6 text-lg text-slate">Tell us what&apos;s happening.</p>
           </div>
           <div className="border-t border-navy">
-            {customerProblems.map((problem, index) => (
+            {homepageProblems.map((problem, index) => (
               <Link key={problem.id} href={problem.href} className="group flex min-h-20 items-center justify-between gap-6 border-b border-steel py-4 text-navy transition-colors duration-300 hover:border-navy hover:bg-soft-white sm:min-h-24 sm:px-5">
                 <span className="flex items-center gap-5"><span className="text-xs font-bold tracking-[0.16em] text-copper">0{index + 1}</span><span className="text-lg font-semibold tracking-[-0.02em] sm:text-2xl">{problem.label}</span></span>
                 <ArrowRightIcon className="size-6 shrink-0 transition-transform group-hover:translate-x-2" />

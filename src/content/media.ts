@@ -37,6 +37,24 @@ export const media = {
     focalPoint: "68% 52%",
     temporary: true,
   },
+  applianceService: {
+    id: "appliance-service",
+    src: "/images/apex-appliance-service.png",
+    alt: "Technician diagnosing a built-in refrigerator in a Northeast home kitchen",
+    width: 1536,
+    height: 1024,
+    focalPoint: "64% 50%",
+    temporary: true,
+  },
+  northeastHvac: {
+    id: "northeast-hvac",
+    src: "/images/apex-northeast-hvac.png",
+    alt: "Technician inspecting outdoor HVAC equipment beside a Northeast home",
+    width: 1586,
+    height: 992,
+    focalPoint: "36% 50%",
+    temporary: true,
+  },
 } satisfies Record<string, MediaAsset>;
 
 export type MediaId = keyof typeof media;

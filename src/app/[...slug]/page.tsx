@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ButtonLink } from "@/components/ui/button-link";
+import { BookingLink } from "@/components/ui/booking-link";
 import { Container } from "@/components/ui/container";
 import { getPlannedRoute, plannedRoutes } from "@/content/routes";
 
@@ -42,7 +43,7 @@ export default async function PlannedPage({ params }: PlannedPageProps) {
         </p>
         <div className="mt-9 flex flex-col gap-3 sm:flex-row">
           <ButtonLink href="/">Return home</ButtonLink>
-          {route.path !== "/book" && <ButtonLink href="/book" variant="secondary">Booking foundation</ButtonLink>}
+          {route.path !== "/book" && <BookingLink variant="secondary">Booking foundation</BookingLink>}
         </div>
         <p className="mt-12 border-t border-steel pt-5 text-sm text-slate">
           <Link className="text-link" href="/">Apex Home Services</Link> / {route.title}

@@ -12,13 +12,57 @@ export type ContactDetails = {
   hours: string | null;
 };
 
+export type ServiceSeo = {
+  title: string;
+  description: string;
+};
+
+export type ServiceFAQ = {
+  question: string;
+  answer: string;
+};
+
+export type ServiceProblem = {
+  id: string;
+  label: string;
+  description: string;
+  href: `/services/${string}` | "/book";
+};
+
 export type Service = {
   id: string;
   name: string;
   slug: string;
   href: `/services/${string}`;
   shortDescription: string;
-  children?: Service[];
+  summary: string;
+  description: string;
+  signs: readonly string[];
+  overview: readonly string[];
+  relatedServiceIds: readonly string[];
+  problems: readonly ServiceProblem[];
+  faqs: readonly ServiceFAQ[];
+  brandGroupIds: readonly SupportedBrandGroup["id"][];
+  mediaId: string;
+  seo: ServiceSeo;
+  status: "published" | "placeholder";
+};
+
+export type ServiceCategory = {
+  id: string;
+  name: string;
+  slug: string;
+  href: `/services/${string}`;
+  shortDescription: string;
+  description: string;
+  mediaId: string;
+  brandGroupIds: readonly SupportedBrandGroup["id"][];
+  problems: readonly ServiceProblem[];
+  faqs: readonly ServiceFAQ[];
+  children: readonly Service[];
+  layout: "image-led" | "directory" | "technical";
+  seo: ServiceSeo;
+  status: "published" | "placeholder";
 };
 
 export type ServiceArea = {

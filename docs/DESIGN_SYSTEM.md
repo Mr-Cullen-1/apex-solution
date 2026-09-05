@@ -38,3 +38,10 @@ Geist is self-hosted through the official `geist` package and `next/font/local` 
 - Hover motion is limited to short arrow shifts, one-pixel elevation, and subtle image scaling.
 - Homepage entrance motion uses CSS only and is disabled through the global reduced-motion rule.
 - Temporary imagery and its replacement contract are documented in `docs/MEDIA.md`.
+
+## Service-page patterns
+
+- Service discovery uses numbered editorial directories, divided lists, and asymmetric text/image compositions rather than repeated rounded cards.
+- Category pages share a section system but vary their light surface treatment and available content according to taxonomy data.
+- Individual services use restrained symptom callouts, a five-step visit framework, contextual relationships, relevant brand groups, and a compact five-state coverage band.
+- Native disclosure elements provide service FAQs without adding client JavaScript. Primary booking actions use the shared `BookingLink` boundary.

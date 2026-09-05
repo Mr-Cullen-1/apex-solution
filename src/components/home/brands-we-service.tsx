@@ -1,6 +1,7 @@
 import { ButtonLink } from "@/components/ui/button-link";
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
+import { contactEntry } from "@/content/cta";
 import { supportedBrands } from "@/content/site";
 
 export function BrandsWeService() {
@@ -20,7 +21,7 @@ export function BrandsWeService() {
                 </ul>
               </div>
             ))}
-            <div className="pt-8"><p className="text-lg leading-8 text-slate">Don&apos;t see your brand? Contact us — we may still be able to help.</p><ButtonLink className="mt-6" href="/contact" variant="secondary">Contact us</ButtonLink></div>
+            <div className="pt-8"><p className="text-lg leading-8 text-slate">Don&apos;t see your brand? Contact us — we may still be able to help.</p><ButtonLink className="mt-6" href={contactEntry.href} variant="secondary">Contact us</ButtonLink></div>
           </div>
         </div>
       </Container>

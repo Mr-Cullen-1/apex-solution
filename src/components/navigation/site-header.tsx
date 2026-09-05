@@ -5,7 +5,8 @@ import { useEffect, useRef, useState } from "react";
 import { primaryNavigation } from "@/content/navigation";
 import { primaryServices } from "@/content/services";
 import { company } from "@/content/company";
-import { ButtonLink } from "@/components/ui/button-link";
+import { BookingLink } from "@/components/ui/booking-link";
+import { bookingEntry } from "@/content/cta";
 import { Container } from "@/components/ui/container";
 import { ArrowRightIcon, ChevronDownIcon, CloseIcon, MenuIcon } from "@/components/ui/icons";
 import { UtilityBar } from "@/components/layout/utility-bar";
@@ -113,7 +114,7 @@ export function SiteHeader() {
             </ul>
           </nav>
 
-          <div className="hidden lg:block"><ButtonLink href="/book">Book service</ButtonLink></div>
+          <div className="hidden lg:block"><BookingLink /></div>
           <button
             ref={mobileButtonRef}
             type="button"
@@ -137,11 +138,11 @@ export function SiteHeader() {
             <p className="eyebrow">How can we help?</p>
             <h2 className="mt-4 text-3xl font-semibold tracking-[-0.04em] text-navy">Comfort starts with clarity.</h2>
             <p className="mt-4 text-sm leading-6 text-slate">Not sure where to begin? Tell us what is happening and start a guided service request.</p>
-            <Link className="group mt-7 inline-flex items-center gap-3 text-sm font-semibold text-navy" href="/book" onClick={() => setMegaOpen(false)}>
+            <Link className="group mt-7 inline-flex items-center gap-3 text-sm font-semibold text-navy" href={bookingEntry.href} onClick={() => setMegaOpen(false)}>
               Start your request <ArrowRightIcon className="size-5 transition-transform group-hover:translate-x-1" />
             </Link>
           </div>
-          <div className="grid grid-cols-4 gap-8">
+          <div className="grid grid-cols-5 gap-7">
             {primaryServices.map((service) => (
               <div key={service.id}>
                 <Link className="text-xs font-bold uppercase tracking-[0.16em] text-copper hover:text-navy" href={service.href} onClick={() => setMegaOpen(false)}>{service.name}</Link>
@@ -151,7 +152,7 @@ export function SiteHeader() {
                       <li key={child.id}><Link className="text-sm text-slate transition-colors hover:text-navy" href={child.href} onClick={() => setMegaOpen(false)}>{child.name}</Link></li>
                     ))}
                   </ul>
-                ) : <p className="mt-5 text-sm leading-6 text-slate">Cleaner, more balanced air for the way you live.</p>}
+                ) : <p className="mt-5 text-sm leading-6 text-slate">{service.shortDescription}</p>}
               </div>
             ))}
           </div>
@@ -193,7 +194,7 @@ export function SiteHeader() {
                 </Link>
               ))}
             </nav>
-            <div className="border-t border-steel p-6"><ButtonLink className="w-full" href="/book" onClick={closeMobile}>Book service</ButtonLink></div>
+            <div className="border-t border-steel p-6"><BookingLink className="w-full" onClick={closeMobile} /></div>
           </div>
         </div>
       )}

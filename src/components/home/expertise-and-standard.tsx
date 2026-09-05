@@ -9,7 +9,10 @@ import { primaryServices } from "@/content/services";
 
 export function ExpertiseAndStandard() {
   const image = media.serviceDetail;
-  const [cooling, heating, plumbing, airQuality] = primaryServices;
+  const cooling = primaryServices.find((service) => service.id === "cooling")!;
+  const heating = primaryServices.find((service) => service.id === "heating")!;
+  const plumbing = primaryServices.find((service) => service.id === "plumbing")!;
+  const airQuality = primaryServices.find((service) => service.id === "air-quality")!;
 
   return (
     <>

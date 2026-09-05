@@ -1,16 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
+import { BookingLink } from "@/components/ui/booking-link";
 import { ButtonLink } from "@/components/ui/button-link";
 import { Container } from "@/components/ui/container";
 import { ArrowRightIcon, ArrowUpRightIcon } from "@/components/ui/icons";
 import { company } from "@/content/company";
+import { bookingEntry } from "@/content/cta";
 import { media } from "@/content/media";
 import { primaryServices } from "@/content/services";
 import { trustPrinciples } from "@/content/homepage";
 
 const helpOptions = [
   ...primaryServices.map((service) => ({ label: service.name, href: service.href })),
-  { label: "Other", href: "/book" as const },
+  { label: "Other", href: bookingEntry.href },
 ];
 
 export function HeroAndSelector() {
@@ -27,7 +29,7 @@ export function HeroAndSelector() {
             </h1>
             <p className="mt-8 max-w-xl text-lg leading-8 text-slate sm:text-xl">{company.description}</p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <ButtonLink href="/book">Book a service</ButtonLink>
+              <BookingLink>Book a service</BookingLink>
               <ButtonLink href="/services" variant="secondary">Explore services</ButtonLink>
             </div>
             <div className="mt-12 flex items-center gap-4 border-t border-steel pt-5 text-sm text-slate">
@@ -50,7 +52,7 @@ export function HeroAndSelector() {
               />
               <span className="absolute right-0 top-0 bg-navy px-4 py-3 text-[0.65rem] font-bold uppercase tracking-[0.2em] text-white">Technical precision</span>
             </div>
-            <Link href="/book" className="group absolute -bottom-7 left-4 right-4 flex items-center justify-between gap-5 bg-soft-white p-5 shadow-[0_18px_50px_rgba(16,29,44,0.16)] transition-transform duration-300 hover:-translate-y-1 sm:left-8 sm:right-auto sm:w-[22rem] sm:p-6">
+            <Link href={bookingEntry.href} className="group absolute -bottom-7 left-4 right-4 flex items-center justify-between gap-5 bg-soft-white p-5 shadow-[0_18px_50px_rgba(16,29,44,0.16)] transition-transform duration-300 hover:-translate-y-1 sm:left-8 sm:right-auto sm:w-[22rem] sm:p-6">
               <span><span className="block text-xs font-bold uppercase tracking-[0.16em] text-copper">Need service?</span><span className="mt-1 block text-lg font-semibold text-navy">Start your request</span></span>
               <span className="grid size-11 shrink-0 place-items-center border border-steel text-navy transition-colors group-hover:border-navy group-hover:bg-navy group-hover:text-white"><ArrowUpRightIcon className="size-5" /></span>
             </Link>
@@ -65,7 +67,7 @@ export function HeroAndSelector() {
               <p className="eyebrow">Start here</p>
               <h2 id="service-selector-title" className="mt-3 text-2xl font-semibold tracking-[-0.035em] text-navy sm:text-3xl">What can we help with?</h2>
             </div>
-            <div className="grid sm:grid-cols-2 xl:grid-cols-5">
+            <div className="grid sm:grid-cols-2 xl:grid-cols-6">
               {helpOptions.map((option, index) => (
                 <Link key={option.label} href={option.href} className="group flex min-h-24 items-center justify-between gap-4 border-b border-steel px-6 text-base font-semibold text-navy transition-colors duration-300 hover:bg-navy hover:text-white focus-visible:bg-navy focus-visible:text-white sm:border-r xl:border-b-0 xl:last:border-r-0">
                   <span><span className="mb-1 block text-[0.65rem] font-bold tracking-[0.16em] text-copper">0{index + 1}</span>{option.label}</span>

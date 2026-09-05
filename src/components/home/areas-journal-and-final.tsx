@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { BookingLink } from "@/components/ui/booking-link";
 import { ButtonLink } from "@/components/ui/button-link";
 import { Container } from "@/components/ui/container";
 import { ArrowUpRightIcon } from "@/components/ui/icons";
@@ -60,7 +61,7 @@ export function AreasJournalAndFinal() {
               <p className="eyebrow">Your home. At its best.</p>
               <h2 className="mt-6 text-balance text-[clamp(4rem,9vw,8.5rem)] font-semibold leading-[0.83] tracking-[-0.07em]">Come home<br />to comfort.</h2>
               <p className="mt-8 max-w-lg text-lg leading-8 text-white/70">Start with a few details about your home and what you are experiencing.</p>
-              <ButtonLink className="mt-9 border-white bg-white text-navy hover:border-copper hover:bg-copper hover:text-white" href="/book">Book service</ButtonLink>
+              <BookingLink className="mt-9 border-white bg-white text-navy hover:border-copper hover:bg-copper hover:text-white">Book service</BookingLink>
             </div>
           </Container>
         </div>

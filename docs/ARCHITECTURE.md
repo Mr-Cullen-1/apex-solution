@@ -17,6 +17,7 @@ src/
   app/                 routes, metadata, and global styles
   components/
     home/              composed homepage sections
+    services/          shared category and detail-page sections
     layout/            global site shell
     navigation/        interactive responsive navigation
     ui/                small reusable primitives
@@ -31,19 +32,19 @@ Future feature-specific code should live under `src/features`, beginning with `s
 
 The files in `src/content` are the single source of truth during the file-backed phase. They deliberately mirror simple CMS collections. Unknown factual content stays `null` or in an empty collection; UI must handle that state honestly.
 
-`serviceAreas` is organized as typed state groups containing confirmed county lists. `supportedBrands` is organized as typed appliance, premium-appliance, and HVAC categories. Homepage and footer presentations consume these shared datasets directly.
+`serviceAreas` is organized as typed state groups containing confirmed county lists. `supportedBrands` is organized as typed appliance, premium-appliance, and HVAC categories. `services.ts` is the typed taxonomy for category, service, problem, relationship, FAQ, media, and SEO data. Homepage, navigation, service routes, and footer consume these datasets directly. `cta.ts` and `BookingLink` normalize the current booking entry point for replacement in Phase 2B.
 
 ## Route strategy
 
-The typed route inventory in `src/content/routes.ts` powers a catch-all set of `noindex` foundation pages, keeping planned navigation destinations functional without presenting them as complete. Real service and location routes replace those placeholders incrementally and own their metadata. Dynamic resource pages will later use `app/resources/[slug]`. Do not generate thin location or article pages solely for SEO.
+The typed route inventory in `src/content/routes.ts` powers a catch-all set of `noindex` foundation pages, keeping planned navigation destinations functional without presenting them as complete. Completed service routes live under `app/services`, use static params, and own indexable metadata. Dynamic resource pages will later use `app/resources/[slug]`. Do not generate thin location or article pages solely for SEO.
 
 ## Booking boundary
 
-The future wizard will separate typed form state, step validation, presentation, and submission adapter. React Hook Form and Zod are deferred until that implementation begins. No scheduling backend is implied by the Phase 0 shell.
+The future wizard will separate typed form state, step validation, presentation, and submission adapter. React Hook Form and Zod are deferred until that implementation begins. All primary service CTAs currently resolve through `src/content/cta.ts`; no scheduling backend is implied.
 
 ## SEO foundation
 
-Root metadata, Open Graph defaults, `robots.ts`, and `sitemap.ts` are present. Production must supply `NEXT_PUBLIC_SITE_URL`; later phases will add route-specific metadata, canonical rules, images, and validated schema.org JSON-LD.
+Root metadata, Open Graph defaults, `robots.ts`, and `sitemap.ts` are present. Production must supply `NEXT_PUBLIC_SITE_URL`. Completed service routes define unique descriptions, canonical URLs, Open Graph data, indexable robots directives, and fact-limited `Service` JSON-LD. The sitemap contains only the homepage and completed service routes.
 
 The homepage is explicitly indexable and owns a canonical URL. The catch-all foundation routes retain `noindex, nofollow` metadata.
 

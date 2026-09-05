@@ -5,21 +5,6 @@ export type PlannedRoute = {
 };
 
 export const plannedRoutes: PlannedRoute[] = [
-  { path: "/services", title: "Home Services", group: "Service" },
-  { path: "/services/cooling", title: "Cooling Services", group: "Service" },
-  { path: "/services/cooling/ac-repair", title: "AC Repair", group: "Service" },
-  { path: "/services/cooling/ac-installation", title: "AC Installation", group: "Service" },
-  { path: "/services/cooling/ac-maintenance", title: "AC Maintenance", group: "Service" },
-  { path: "/services/cooling/ac-replacement", title: "AC Replacement", group: "Service" },
-  { path: "/services/heating", title: "Heating Services", group: "Service" },
-  { path: "/services/heating/furnace-repair", title: "Furnace Repair", group: "Service" },
-  { path: "/services/heating/heat-pumps", title: "Heat Pumps", group: "Service" },
-  { path: "/services/heating/heating-maintenance", title: "Heating Maintenance", group: "Service" },
-  { path: "/services/plumbing", title: "Plumbing Services", group: "Service" },
-  { path: "/services/plumbing/water-heaters", title: "Water Heaters", group: "Service" },
-  { path: "/services/plumbing/drain-cleaning", title: "Drain Cleaning", group: "Service" },
-  { path: "/services/plumbing/leak-detection", title: "Leak Detection", group: "Service" },
-  { path: "/services/air-quality", title: "Indoor Air Quality", group: "Service" },
   { path: "/emergency", title: "Emergency Service", group: "Conversion" },
   { path: "/membership", title: "Apex Care", group: "Conversion" },
   { path: "/financing", title: "Financing", group: "Conversion" },

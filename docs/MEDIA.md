@@ -1,8 +1,8 @@
 # Media strategy
 
-Phase 1 uses four original, temporary images generated with the built-in OpenAI image generation tool on September 5, 2026. They are stored locally in `public/images`, referenced only through `src/content/media.ts`, and marked `temporary: true` so approved production photography can replace them without changing section components.
+Phase 1 and Phase 2A use six original, temporary images generated with the built-in OpenAI image generation tool on September 5, 2026. They are stored locally in `public/images`, referenced only through `src/content/media.ts`, and marked `temporary: true` so approved production photography can replace them without changing section components.
 
-The client has since confirmed a Northeast service footprint across New York, New Jersey, Connecticut, Massachusetts, and Rhode Island. The current generated images include Southwest architecture, arid terrain, and desert landscaping. They are geographically inaccurate for the final brand and must be replaced with Northeast-appropriate production photography. Their public alt text does not claim a Phoenix or Arizona service location.
+The client has since confirmed a Northeast service footprint across New York, New Jersey, Connecticut, Massachusetts, and Rhode Island. Three legacy Phase 1 images include Southwest architecture, arid terrain, and desert landscaping. They are geographically inaccurate for the final brand and must be replaced with Northeast-appropriate production photography. Their public alt text does not claim a Phoenix or Arizona service location.
 
 ## Asset inventory and prompts
 
@@ -29,6 +29,18 @@ Architectural photograph of a calm modern Southwest living room with soft airflo
 Blue-hour architectural photograph of a contemporary Phoenix Valley home with desert landscaping and discreet residential comfort equipment. Wide composition, deep navy sky, warm interior light, no people, vehicles, logos, or oversaturated HDR treatment.
 
 **Replacement status:** required; the desert landscaping is geographically inaccurate for final use.
+
+### `apex-appliance-service.png`
+
+Premium editorial residential service photograph of a professional technician in a clean navy work uniform diagnosing a built-in refrigerator in an upscale Northeast US kitchen. Natural window light, warm white cabinetry, subtle autumn greenery outside, candid working posture, realistic tools, no text, logo, badge, direct eye contact, exaggerated expression, or visible brand marks. Wide landscape composition with useful negative space and a calm navy, warm-white, steel, and natural-wood palette.
+
+**Replacement status:** temporary but regionally appropriate; replace with rights-cleared Apex photography when available.
+
+### `apex-northeast-hvac.png`
+
+Premium editorial residential HVAC service photograph of a professional technician in a clean navy work uniform inspecting an outdoor heat-pump or AC condenser beside a well-kept Northeast US clapboard home. Early autumn deciduous trees, cool natural daylight, realistic tools, safe working posture, no text, logo, badge, direct eye contact, dramatic effects, desert plants, or visible manufacturer marks. Wide landscape composition with architectural negative space and restrained navy, warm-white, slate, and copper-adjacent tones.
+
+**Replacement status:** temporary but regionally appropriate; replace with rights-cleared Apex photography when available.
 
 ## Client logo status
 

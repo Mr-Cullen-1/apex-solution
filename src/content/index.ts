@@ -1,4 +1,5 @@
 export * from "./company";
+export * from "./cta";
 export * from "./homepage";
 export * from "./media";
 export * from "./navigation";

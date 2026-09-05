@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { contact } from "@/content/company";
+import { bookingEntry, contactEntry } from "@/content/cta";
 
 export function MobileActionBar() {
   return (
@@ -7,9 +8,9 @@ export function MobileActionBar() {
       {contact.phone ? (
         <a className="grid min-h-12 place-items-center border border-steel text-sm font-semibold uppercase tracking-[0.08em] text-navy" href={`tel:${contact.phone}`}>Call now</a>
       ) : (
-        <Link className="grid min-h-12 place-items-center border border-steel text-sm font-semibold uppercase tracking-[0.08em] text-navy" href="/contact">Contact</Link>
+        <Link className="grid min-h-12 place-items-center border border-steel text-sm font-semibold uppercase tracking-[0.08em] text-navy" href={contactEntry.href}>Contact</Link>
       )}
-      <Link className="grid min-h-12 place-items-center bg-navy text-sm font-semibold uppercase tracking-[0.08em] text-white" href="/book">Book service</Link>
+      <Link className="grid min-h-12 place-items-center bg-navy text-sm font-semibold uppercase tracking-[0.08em] text-white" href={bookingEntry.href}>Book service</Link>
     </div>
   );
 }

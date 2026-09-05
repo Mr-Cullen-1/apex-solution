@@ -5,6 +5,7 @@ import { ButtonLink } from "@/components/ui/button-link";
 import { Container } from "@/components/ui/container";
 import { ArrowRightIcon } from "@/components/ui/icons";
 import { SectionHeading } from "@/components/ui/section-heading";
+import { contactEntry } from "@/content/cta";
 import { serviceAreas } from "@/content/site";
 
 export function ServiceAreaExplorer() {
@@ -89,7 +90,7 @@ export function ServiceAreaExplorer() {
             <h3 className="mt-4 text-2xl font-semibold tracking-[-0.035em] text-navy">Not sure if we service your area?</h3>
             <p className="mt-3 text-base leading-7 text-slate">Enter your ZIP code and we&apos;ll check availability.</p>
           </div>
-          <form action="/contact" method="get" className="flex flex-col justify-center gap-4 p-7 sm:p-9" aria-describedby="zip-availability-note">
+          <form action={contactEntry.href} method="get" className="flex flex-col justify-center gap-4 p-7 sm:p-9" aria-describedby="zip-availability-note">
             <input type="hidden" name="intent" value="zip-coverage" />
             <label htmlFor="service-zip" className="text-xs font-bold uppercase tracking-[0.16em] text-navy">5-digit ZIP code</label>
             <div className="flex flex-col gap-3 sm:flex-row">
