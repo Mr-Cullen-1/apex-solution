@@ -17,7 +17,6 @@ export const plannedRoutes: PlannedRoute[] = [
   { path: "/service-areas", title: "Service Areas", group: "Location" },
   { path: "/resources", title: "Apex Journal", group: "Resource" },
   { path: "/faq", title: "Frequently Asked Questions", group: "Resource" },
-  { path: "/book", title: "Book a Service", group: "Conversion" },
   { path: "/contact", title: "Contact", group: "Conversion" },
   { path: "/privacy", title: "Privacy Policy", group: "Legal" },
   { path: "/terms", title: "Terms of Use", group: "Legal" },

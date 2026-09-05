@@ -13,7 +13,7 @@ function getMedia(id: string) {
   return media[id as MediaId] ?? media.serviceDetail;
 }
 
-export function ServiceHero({ eyebrow, title, summary, mediaId, anchorLabel = "Explore this service" }: { eyebrow: string; title: string; summary: string; mediaId: string; anchorLabel?: string }) {
+export function ServiceHero({ eyebrow, title, summary, mediaId, anchorLabel = "Explore this service", categoryId, serviceId }: { eyebrow: string; title: string; summary: string; mediaId: string; anchorLabel?: string; categoryId?: string; serviceId?: string }) {
   const asset = getMedia(mediaId);
   return (
     <section className="border-b border-steel bg-warm-white py-14 sm:py-20 lg:py-24">
@@ -23,7 +23,7 @@ export function ServiceHero({ eyebrow, title, summary, mediaId, anchorLabel = "E
           <h1 className="mt-5 max-w-4xl text-balance text-[clamp(3.5rem,8vw,7.5rem)] font-semibold leading-[0.87] tracking-[-0.07em] text-navy">{title}</h1>
           <p className="mt-7 max-w-xl text-lg leading-8 text-slate sm:text-xl">{summary}</p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <BookingLink>Book service</BookingLink>
+            <BookingLink categoryId={categoryId} serviceId={serviceId}>Request service</BookingLink>
             <a className="inline-flex min-h-12 items-center justify-center border border-steel px-6 text-sm font-semibold uppercase tracking-[0.08em] text-navy transition-colors hover:border-navy" href="#service-details">{anchorLabel}</a>
           </div>
         </div>
@@ -121,6 +121,6 @@ export function RelatedServices({ items }: { items: readonly (Service | ServiceC
   return <section className="bg-warm-white py-20 sm:py-28" aria-labelledby="related-heading"><Container><SectionHeading id="related-heading" eyebrow="Related services" title="Keep exploring." /><div className="mt-12 grid border-t border-navy md:grid-cols-3">{items.map((item) => <Link key={item.id} href={item.href} className="group border-b border-steel py-7 md:border-r md:px-7 md:first:pl-0 md:last:border-r-0"><h3 className="text-2xl font-semibold tracking-[-0.04em]">{item.name}</h3><p className="mt-3 leading-7 text-slate">{item.shortDescription}</p><ArrowRightIcon className="mt-7 size-5 transition-transform group-hover:translate-x-1" /></Link>)}</div></Container></section>;
 }
 
-export function FinalServiceCta({ title = "Ready for a clearer next step?" }: { title?: string }) {
-  return <section className="bg-navy py-20 text-white sm:py-28"><Container className="flex flex-col items-start justify-between gap-10 lg:flex-row lg:items-end"><div><p className="eyebrow">Request service</p><h2 className="mt-5 max-w-4xl text-balance text-[clamp(3rem,7vw,6.5rem)] font-semibold leading-[0.9] tracking-[-0.065em]">{title}</h2><p className="mt-6 max-w-xl text-lg leading-8 text-white/65">Tell us what you are noticing. Service availability and scheduling are confirmed separately.</p></div><BookingLink className="border-white bg-white text-navy hover:border-copper hover:bg-copper hover:text-white">Book service</BookingLink></Container></section>;
+export function FinalServiceCta({ title = "Ready for a clearer next step?", categoryId, serviceId }: { title?: string; categoryId?: string; serviceId?: string }) {
+  return <section className="bg-navy py-20 text-white sm:py-28"><Container className="flex flex-col items-start justify-between gap-10 lg:flex-row lg:items-end"><div><p className="eyebrow">Request service</p><h2 className="mt-5 max-w-4xl text-balance text-[clamp(3rem,7vw,6.5rem)] font-semibold leading-[0.9] tracking-[-0.065em]">{title}</h2><p className="mt-6 max-w-xl text-lg leading-8 text-white/65">Tell us what you are noticing. Service availability and scheduling are confirmed separately.</p></div><BookingLink categoryId={categoryId} serviceId={serviceId} className="border-white bg-white text-navy hover:border-copper hover:bg-copper hover:text-white">Request service</BookingLink></Container></section>;
 }

@@ -29,7 +29,7 @@ export function HeroAndSelector() {
             </h1>
             <p className="mt-8 max-w-xl text-lg leading-8 text-slate sm:text-xl">{company.description}</p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <BookingLink>Book a service</BookingLink>
+              <BookingLink>Request service</BookingLink>
               <ButtonLink href="/services" variant="secondary">Explore services</ButtonLink>
             </div>
             <div className="mt-12 flex items-center gap-4 border-t border-steel pt-5 text-sm text-slate">

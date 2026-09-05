@@ -21,6 +21,8 @@ src/
     layout/            global site shell
     navigation/        interactive responsive navigation
     ui/                small reusable primitives
+  features/
+    booking/           request state, validation, presentation, and adapter boundary
   content/             CMS-ready structured business content
   types/               domain types shared across content and UI
 docs/                  product, system, architecture, and roadmap decisions
@@ -40,16 +42,18 @@ The typed route inventory in `src/content/routes.ts` powers a catch-all set of `
 
 ## Booking boundary
 
-The future wizard will separate typed form state, step validation, presentation, and submission adapter. React Hook Form and Zod are deferred until that implementation begins. All primary service CTAs currently resolve through `src/content/cta.ts`; no scheduling backend is implied.
+The booking flow keeps in-progress contact and address data in component memory and sends it only in a JSON request body. `model.ts` owns normalization, preselection, and shared validation; the API route repeats normalization and validation before calling `submission-adapter.ts`. The current adapter deliberately returns `not_configured` and does not transmit or persist a request. No scheduling backend, CRM, SMS, or email delivery is implied.
+
+`BookingLink` is the only query-string construction boundary. It permits category or service IDs, never personal data. A future provider should replace the adapter implementation and read credentials only from server-side environment variables. Production integration also needs rate limiting, bot protection, monitoring, retention rules, and legally approved communication consent.
 
 ## SEO foundation
 
 Root metadata, Open Graph defaults, `robots.ts`, and `sitemap.ts` are present. Production must supply `NEXT_PUBLIC_SITE_URL`. Completed service routes define unique descriptions, canonical URLs, Open Graph data, indexable robots directives, and fact-limited `Service` JSON-LD. The sitemap contains only the homepage and completed service routes.
 
-The homepage is explicitly indexable and owns a canonical URL. The catch-all foundation routes retain `noindex, nofollow` metadata.
+The homepage and completed booking and service pages are explicitly indexable and own canonical URLs. The catch-all foundation routes retain `noindex, nofollow` metadata.
 
 Former Phoenix city placeholders were removed. County landing pages are intentionally deferred; Phase 1.1 does not create thin regional routes.
 
 ## Client boundaries
 
-The navigation shell is client-side only where needed for mega-menu state, focus management, Escape handling, outside clicks, and mobile scroll locking. The FAQ accordion is the only homepage client component. All other homepage sections render as Server Components.
+The navigation shell is client-side only where needed for mega-menu state, focus management, Escape handling, outside clicks, and mobile scroll locking. The homepage FAQ and focused booking-flow boundary are client components. Booking metadata, query parsing, page shell, service pages, and other homepage sections remain server-rendered.

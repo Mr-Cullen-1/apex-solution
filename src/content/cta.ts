@@ -1,6 +1,6 @@
 export const bookingEntry = {
   href: "/book",
-  label: "Book service",
+  label: "Request service",
 } as const;
 
 export const contactEntry = {

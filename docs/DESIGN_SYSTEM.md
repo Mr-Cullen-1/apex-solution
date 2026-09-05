@@ -45,3 +45,10 @@ Geist is self-hosted through the official `geist` package and `next/font/local` 
 - Category pages share a section system but vary their light surface treatment and available content according to taxonomy data.
 - Individual services use restrained symptom callouts, a five-step visit framework, contextual relationships, relevant brand groups, and a compact five-state coverage band.
 - Native disclosure elements provide service FAQs without adding client JavaScript. Primary booking actions use the shared `BookingLink` boundary.
+
+## Booking-flow patterns
+
+- Booking uses an editorial progress line, large stage headings, square bordered choices, and an optional sticky desktop summary rail.
+- Mobile receives a dedicated sticky Back/Continue action area; the global mobile action bar is suppressed on `/book` to avoid competing controls.
+- Input errors appear beside their fields and in a focus-managed step summary. Choice tiles expose visible keyboard focus through their containing labels.
+- Confirmation styling distinguishes a locally prepared request from a transmitted or confirmed appointment. No success language may imply delivery while the adapter is unconfigured.

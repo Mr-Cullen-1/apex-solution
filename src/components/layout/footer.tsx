@@ -28,7 +28,7 @@ export function Footer() {
         </div>
         <div className="flex flex-col gap-5 border-b border-white/15 py-8 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-sm text-white/55">Ready to take the next step?</p>
-          <Link href={bookingEntry.href} className="group inline-flex items-center gap-4 text-lg font-semibold">Book a service <ArrowUpRightIcon className="size-5 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" /></Link>
+          <Link href={bookingEntry.href} className="group inline-flex items-center gap-4 text-lg font-semibold">Request service <ArrowUpRightIcon className="size-5 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" /></Link>
         </div>
         <div className="flex flex-col gap-4 pt-6 text-xs text-white/45 sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} {company.name}</p>

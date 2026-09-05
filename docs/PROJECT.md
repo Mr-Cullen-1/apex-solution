@@ -8,7 +8,7 @@ The experience combines technical precision, trustworthy local service, editoria
 
 ## Current delivery boundary
 
-Phase 0 established the production foundation. Phase 1 established the responsive homepage, accessible global navigation, temporary media system, and primary visual language. Phase 2A completes the service index, five confirmed category routes, and ten confirmed individual service routes. Booking, company, location, resource, and legal routes remain `noindex` foundation pages until their implementation phases.
+Phase 0 established the production foundation. Phase 1 established the responsive homepage, accessible global navigation, temporary media system, and primary visual language. Phase 2A completed the service index, five confirmed category routes, and ten confirmed individual service routes. Phase 2B completes the `/book` service-request experience and an unconnected, server-validated submission boundary. Company, location, resource, contact, and legal routes remain `noindex` foundation pages until their implementation phases.
 
 ## Confirmed versus pending content
 

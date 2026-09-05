@@ -43,7 +43,7 @@ export default async function PlannedPage({ params }: PlannedPageProps) {
         </p>
         <div className="mt-9 flex flex-col gap-3 sm:flex-row">
           <ButtonLink href="/">Return home</ButtonLink>
-          {route.path !== "/book" && <BookingLink variant="secondary">Booking foundation</BookingLink>}
+          <BookingLink variant="secondary">Request service</BookingLink>
         </div>
         <p className="mt-12 border-t border-steel pt-5 text-sm text-slate">
           <Link className="text-link" href="/">Apex Home Services</Link> / {route.title}
