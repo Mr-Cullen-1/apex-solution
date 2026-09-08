@@ -43,8 +43,8 @@ export default async function PlannedPage({ params }: PlannedPageProps) {
             This route is active in the site architecture. Its production content and interactions are scheduled for a later delivery phase.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <ButtonLink href="/">Return home</ButtonLink>
-            <BookingLink variant="secondary">Request service</BookingLink>
+            <BookingLink>Request service</BookingLink>
+            <ButtonLink href="/" variant="secondary">Return home</ButtonLink>
           </div>
           <p className="mt-12 border-t border-steel pt-5 text-sm text-slate">
             <Link className="text-link" href="/">Apex Home Services</Link> / {route.title}

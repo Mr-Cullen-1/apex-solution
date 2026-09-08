@@ -10,12 +10,28 @@ type CarouselProps = {
   arrowClassName?: string;
   trackClassName?: string;
   showArrows?: boolean;
+  /** "below" (default) keeps arrows in a row under the track. "overlay" floats
+   * them over the track edges via overlayArrowTopClassName, for callers whose
+   * cards need the controls attached to the visible card row itself. */
+  arrowVariant?: "below" | "overlay";
+  /** Vertical placement for arrowVariant="overlay", e.g. "top-[5.5rem] -translate-y-1/2"
+   * to center on a fixed-height media area rather than the full card. */
+  overlayArrowTopClassName?: string;
 };
 
 // Lightweight, dependency-free carousel built on native scroll-snap: swipe and
 // keyboard scrolling come from the browser for free, and reduced-motion users get
 // no autoplay and instant (non-smooth) scrolling via the global CSS override.
-export function Carousel({ ariaLabel, children, autoplayMs = 0, arrowClassName = "", trackClassName = "", showArrows = true }: CarouselProps) {
+export function Carousel({
+  ariaLabel,
+  children,
+  autoplayMs = 0,
+  arrowClassName = "",
+  trackClassName = "",
+  showArrows = true,
+  arrowVariant = "below",
+  overlayArrowTopClassName = "top-1/2 -translate-y-1/2",
+}: CarouselProps) {
   const trackRef = useRef<HTMLDivElement>(null);
   const [paused, setPaused] = useState(false);
 
@@ -58,7 +74,7 @@ export function Carousel({ ariaLabel, children, autoplayMs = 0, arrowClassName =
       >
         {children}
       </div>
-      {showArrows && (
+      {showArrows && arrowVariant === "below" && (
         <div className="mt-6 flex items-center justify-end gap-3">
           <button
             type="button"
@@ -77,6 +93,26 @@ export function Carousel({ ariaLabel, children, autoplayMs = 0, arrowClassName =
             <ArrowRightIcon className="size-4" />
           </button>
         </div>
+      )}
+      {showArrows && arrowVariant === "overlay" && (
+        <>
+          <button
+            type="button"
+            aria-label={`Previous — ${ariaLabel}`}
+            onClick={() => { setPaused(true); scrollByOne(-1); }}
+            className={`absolute left-2 z-10 grid size-11 place-items-center rounded-control border border-steel bg-surface/95 text-navy shadow-card backdrop-blur transition-colors hover:border-navy hover:bg-navy hover:text-white sm:left-3 ${overlayArrowTopClassName} ${arrowClassName}`}
+          >
+            <ArrowRightIcon className="size-4 rotate-180" />
+          </button>
+          <button
+            type="button"
+            aria-label={`Next — ${ariaLabel}`}
+            onClick={() => { setPaused(true); scrollByOne(1); }}
+            className={`absolute right-2 z-10 grid size-11 place-items-center rounded-control border border-steel bg-surface/95 text-navy shadow-card backdrop-blur transition-colors hover:border-navy hover:bg-navy hover:text-white sm:right-3 ${overlayArrowTopClassName} ${arrowClassName}`}
+          >
+            <ArrowRightIcon className="size-4" />
+          </button>
+        </>
       )}
     </div>
   );

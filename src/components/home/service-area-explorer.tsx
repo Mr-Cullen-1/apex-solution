@@ -2,7 +2,6 @@
 
 import { useRef, useState, type KeyboardEvent } from "react";
 import { BookingLink } from "@/components/ui/booking-link";
-import { ButtonLink } from "@/components/ui/button-link";
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { serviceAreas } from "@/content/site";
@@ -31,11 +30,10 @@ export function ServiceAreaExplorer() {
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
           <div>
             <SectionHeading id="service-area-heading" eyebrow="Where we serve" title={<>Local professionals,<br />across five states.</>} description="Confirmed county coverage across New York, New Jersey, Connecticut, Massachusetts, and Rhode Island." />
-            <ButtonLink className="mt-8" href="/service-areas" variant="secondary">Service area details</ButtonLink>
           </div>
 
-          <div className="hidden overflow-hidden rounded-panel border border-steel bg-surface shadow-soft md:block">
-            <div role="tablist" aria-label="Service area states" className="grid grid-cols-5 border-b border-steel">
+          <div className="hidden overflow-hidden rounded-panel border border-steel bg-surface shadow-soft md:flex md:flex-col">
+            <div role="tablist" aria-label="Service area states" className="grid shrink-0 grid-cols-5 border-b border-steel">
               {serviceAreas.map((area, index) => {
                 const active = area.code === activeCode;
                 return (
@@ -51,32 +49,32 @@ export function ServiceAreaExplorer() {
                     tabIndex={active ? 0 : -1}
                     onClick={() => setActiveCode(area.code)}
                     onKeyDown={(event) => selectByKeyboard(event, index)}
-                    className={`min-h-16 border-r border-steel text-sm font-bold tracking-[0.14em] transition-colors last:border-r-0 ${active ? "bg-navy text-white" : "text-navy hover:bg-steel/35"}`}
+                    className={`min-h-14 border-r border-steel text-sm font-bold tracking-[0.14em] transition-colors last:border-r-0 ${active ? "bg-navy text-white" : "text-navy hover:bg-steel/35"}`}
                   >
                     {area.code}
                   </button>
                 );
               })}
             </div>
-            <div id={`state-panel-${activeArea.code}`} role="tabpanel" aria-labelledby={`state-tab-${activeArea.code}`} className="grid items-stretch grid-cols-[0.7fr_1.3fr]">
-              <div className="flex flex-col justify-between border-r border-steel bg-navy p-8 text-white">
+            <div id={`state-panel-${activeArea.code}`} role="tabpanel" aria-labelledby={`state-tab-${activeArea.code}`} className="grid flex-1 items-stretch grid-cols-[0.7fr_1.3fr]">
+              <div className="flex flex-col justify-between border-r border-steel bg-navy p-7 text-white">
                 <div><p className="text-[0.65rem] font-bold uppercase tracking-[0.18em] text-white/75">{activeArea.code} service area</p><h3 className="mt-4 text-4xl font-semibold tracking-[-0.05em]">{activeArea.state}</h3></div>
                 <p className="text-sm text-white/55">{activeArea.counties.length} confirmed counties</p>
               </div>
               <ul className="grid content-start sm:grid-cols-2">
                 {activeArea.counties.map((county, index) => (
-                  <li key={`${activeArea.code}-${county}`} className="flex min-h-16 items-center gap-4 border-b border-steel px-6 text-sm font-semibold text-navy sm:odd:border-r">
+                  <li key={`${activeArea.code}-${county}`} className="flex min-h-14 items-center gap-4 border-b border-steel px-6 text-sm font-semibold text-navy sm:odd:border-r">
                     <span className="text-[0.65rem] text-copper">{String(index + 1).padStart(2, "0")}</span>{county}
                   </li>
                 ))}
               </ul>
             </div>
-            <div className="flex flex-col items-start justify-between gap-4 border-t border-steel p-7 sm:flex-row sm:items-center sm:p-9">
+            <div className="flex shrink-0 flex-col items-start justify-between gap-4 border-t border-steel p-7 sm:flex-row sm:items-center">
               <div>
                 <p className="text-xs font-bold uppercase tracking-[0.1em] text-copper">Not sure if we service your area?</p>
                 <p className="mt-1.5 max-w-xl text-sm leading-6 text-slate">Enter your ZIP in the booking location step. It checks format only — Apex confirms actual availability after you submit a request.</p>
               </div>
-              <BookingLink variant="secondary" className="w-full shrink-0 justify-center sm:w-auto">Continue to request</BookingLink>
+              <BookingLink variant="primary" className="w-full shrink-0 justify-center sm:w-auto">Continue to request</BookingLink>
             </div>
           </div>
 
@@ -90,7 +88,7 @@ export function ServiceAreaExplorer() {
             <div className="pt-7">
               <p className="text-xs font-bold uppercase tracking-[0.1em] text-copper">Not sure if we service your area?</p>
               <p className="mt-1.5 text-sm leading-6 text-slate">Enter your ZIP in the booking location step. It checks format only — Apex confirms actual availability after you submit a request.</p>
-              <BookingLink variant="secondary" className="mt-4 w-full justify-center">Continue to request</BookingLink>
+              <BookingLink variant="primary" className="mt-4 w-full justify-center">Continue to request</BookingLink>
             </div>
           </div>
         </div>

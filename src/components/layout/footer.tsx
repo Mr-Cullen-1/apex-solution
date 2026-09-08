@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ButtonLink } from "@/components/ui/button-link";
 import { Container } from "@/components/ui/container";
-import { ArrowUpRightIcon, PhoneIcon } from "@/components/ui/icons";
+import { PhoneIcon } from "@/components/ui/icons";
 import { brandMark } from "@/content/brand";
 import { company, contact } from "@/content/company";
 import { bookingEntry } from "@/content/cta";
@@ -21,7 +22,7 @@ export function Footer() {
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-6 text-white/55">{company.description}</p>
             {contact.phoneHref && (
-              <a href={contact.phoneHref} className="mt-5 inline-flex min-h-11 items-center gap-2 rounded-control bg-copper px-4 text-sm font-bold text-white"><PhoneIcon className="size-4" />{contact.phone}</a>
+              <a href={contact.phoneHref} className="mt-5 inline-flex min-h-11 items-center gap-2 rounded-control bg-white px-4 text-sm font-bold text-navy transition-colors hover:bg-copper hover:text-white"><PhoneIcon className="size-4" />{contact.phone}</a>
             )}
           </div>
           <div className="grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-4">
@@ -32,7 +33,7 @@ export function Footer() {
         </div>
         <div className="flex flex-col gap-3 border-b border-white/15 py-5 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-sm text-white/55">Ready to take the next step?</p>
-          <Link href={bookingEntry.href} className="group inline-flex items-center gap-3 text-base font-semibold">Request service <ArrowUpRightIcon className="size-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" /></Link>
+          <ButtonLink href={bookingEntry.href} variant="invert">Request service</ButtonLink>
         </div>
         <div className="flex flex-col gap-2 pt-5 text-xs text-white/45 sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} {company.name}</p>

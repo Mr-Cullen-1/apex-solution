@@ -12,7 +12,7 @@ export function ServiceCategoryPage({ category }: { category: ServiceCategory })
       <CompactOffer categoryId={category.id} />
       <section id="service-details" className="bg-page-bg section-y-bottom" aria-labelledby="category-services-heading">
         <Container className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:gap-20">
-          <SectionHeading id="category-services-heading" eyebrow="Service directory" title={category.children.length ? "Focused help for the system in front of you." : "A careful place to begin."} description={category.shortDescription} />
+          <SectionHeading id="category-services-heading" eyebrow="Service directory" title={category.children.length ? "Focused help for the system in front of you." : "A careful place to begin."} description={category.shortDescription} size="compact" />
           <ServiceDirectory category={category} />
         </Container>
       </section>

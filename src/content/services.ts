@@ -147,7 +147,7 @@ export const primaryServices: readonly ServiceCategory[] = [
   },
   {
     id: "plumbing", name: "Plumbing", slug: "plumbing", href: "/services/plumbing", shortDescription: "Water-heater, drain, and leak-detection service.",
-    description: "Focused residential plumbing service for hot-water, drainage, and suspected leak concerns already established in the Apex service catalog.", mediaId: "serviceDetail", brandGroupIds: [], children: [waterHeaters, drainCleaning, leakDetection], layout: "directory", status: "published",
+    description: "Focused residential plumbing service for hot-water, drainage, and suspected leak concerns already established in the Apex service catalog.", mediaId: "heroTechnician", brandGroupIds: [], children: [waterHeaters, drainCleaning, leakDetection], layout: "directory", status: "published",
     problems: [
       { id: "no-hot-water", label: "Hot water is inconsistent", description: "Water-heater service may be a useful place to begin.", href: waterHeaters.href },
       { id: "slow-drain", label: "A drain is slow or recurring", description: "Drain service can help review the specific pattern and affected fixtures.", href: drainCleaning.href },
@@ -158,7 +158,7 @@ export const primaryServices: readonly ServiceCategory[] = [
   },
   {
     id: "air-quality", name: "Indoor Air Quality", slug: "air-quality", href: "/services/air-quality", shortDescription: "Thoughtful service for cleaner, more balanced indoor air.",
-    description: "Indoor air quality and airflow concerns can involve the home, comfort system, and the way spaces are used. A professional conversation can help organize the next step.", mediaId: "serviceDetail", brandGroupIds: ["hvac"], children: [], layout: "directory", status: "published",
+    description: "Indoor air quality and airflow concerns can involve the home, comfort system, and the way spaces are used. A professional conversation can help organize the next step.", mediaId: "homeInterior", brandGroupIds: ["hvac"], children: [], layout: "directory", status: "published",
     problems: [
       { id: "uneven-comfort", label: "Rooms feel uneven or uncomfortable", description: "Airflow and indoor comfort concerns can have several possible service areas.", href: "/services/air-quality" },
       { id: "air-concerns", label: "The air feels stale or difficult to balance", description: "Share what you notice and where it occurs to begin a service conversation.", href: "/services/air-quality" },

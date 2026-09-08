@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BookingLink } from "@/components/ui/booking-link";
+import { ButtonLink } from "@/components/ui/button-link";
 import { Container } from "@/components/ui/container";
 import { ArrowRightIcon, PhoneIcon } from "@/components/ui/icons";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -30,7 +31,7 @@ export function ServiceHero({ eyebrow, title, summary, mediaId, anchorLabel = "E
               {contact.phoneHref && (
                 <a href={contact.phoneHref} className="inline-flex min-h-12 items-center gap-2 rounded-control bg-copper px-6 text-sm font-semibold text-white transition-transform duration-300 hover:-translate-y-0.5"><PhoneIcon className="size-4" />{contact.phone}</a>
               )}
-              <a className="inline-flex min-h-12 items-center justify-center rounded-control border border-steel px-6 text-sm font-semibold text-navy transition-colors hover:border-navy" href="#service-details">{anchorLabel}</a>
+              <ButtonLink href="#service-details" variant="secondary" showArrow={false}>{anchorLabel}</ButtonLink>
             </div>
           </div>
           <div className="relative min-h-[20rem] overflow-hidden sm:min-h-[26rem] lg:min-h-[34rem]">
@@ -53,7 +54,7 @@ export function CompactOffer({ categoryId, serviceId }: { categoryId?: string; s
             <p className="text-xs font-bold uppercase tracking-[0.14em] text-copper">{firstTimeOffer.title}</p>
             <p className="mt-2 text-xl font-semibold tracking-[-0.02em] text-navy">{firstTimeOffer.headline}</p>
           </div>
-          <BookingLink categoryId={categoryId} serviceId={serviceId} variant="secondary">Claim this offer</BookingLink>
+          <BookingLink categoryId={categoryId} serviceId={serviceId} variant="primary">Claim this offer</BookingLink>
         </div>
       </Container>
     </section>
@@ -120,9 +121,11 @@ export function RelevantBrands({ groupIds }: { groupIds: readonly string[] }) {
   if (!groups.length) return null;
   return (
     <section className="bg-page-bg section-y" aria-labelledby="brands-heading">
-      <Container className="grid gap-12 rounded-hero border border-steel bg-surface p-8 shadow-soft sm:p-12 lg:grid-cols-[0.75fr_1.25fr] lg:gap-20">
-        <SectionHeading id="brands-heading" eyebrow="Brands we service" title="Broad equipment familiarity." description="The names below describe brands Apex works on. They do not imply factory authorization, certification, partnership, dealership, or warranty authorization." />
-        <div className="space-y-10">{groups.map((group) => <div key={group.id}><h3 className="border-b border-steel pb-3 text-xs font-bold uppercase tracking-[0.16em] text-navy">{group.label}</h3><ul className="mt-5 grid grid-cols-2 gap-x-5 gap-y-3 sm:grid-cols-3">{group.brands.map((brand) => <li key={brand} className="text-base text-slate">{brand}</li>)}</ul></div>)}</div>
+      <Container>
+        <div className="grid gap-12 rounded-hero border border-steel bg-surface p-8 shadow-soft sm:p-12 lg:grid-cols-[0.75fr_1.25fr] lg:gap-20">
+          <SectionHeading id="brands-heading" eyebrow="Brands we service" title="Broad equipment familiarity." description="The names below describe brands Apex works on. They do not imply factory authorization, certification, partnership, dealership, or warranty authorization." size="compact" />
+          <div className="space-y-10">{groups.map((group) => <div key={group.id}><h3 className="border-b border-steel pb-3 text-xs font-bold uppercase tracking-[0.16em] text-navy">{group.label}</h3><ul className="mt-5 grid grid-cols-2 gap-x-5 gap-y-3 sm:grid-cols-3">{group.brands.map((brand) => <li key={brand} className="text-base text-slate">{brand}</li>)}</ul></div>)}</div>
+        </div>
       </Container>
     </section>
   );
@@ -131,9 +134,11 @@ export function RelevantBrands({ groupIds }: { groupIds: readonly string[] }) {
 export function ServiceRegion() {
   return (
     <section className="bg-page-bg section-y-bottom" aria-labelledby="region-heading">
-      <Container className="grid gap-8 rounded-panel border border-steel bg-surface p-8 shadow-soft sm:p-10 lg:grid-cols-[1fr_2fr] lg:items-end">
-        <div><p className="eyebrow">Regional service</p><h2 id="region-heading" className="mt-4 text-3xl font-semibold tracking-[-0.03em] text-navy">Across five Northeast states.</h2><Link className="text-link mt-5 inline-flex" href="/service-areas">View service-area details</Link></div>
-        <div><ul className="grid grid-cols-2 gap-3 sm:grid-cols-5">{serviceAreas.map((area) => <li key={area.code} className="border-t border-steel pt-3"><span className="block text-xs font-bold tracking-[0.16em] text-copper">{area.code}</span><span className="mt-2 block text-sm font-semibold text-navy">{area.state}</span></li>)}</ul><p className="mt-5 text-sm leading-6 text-slate">County coverage is confirmed in the service-area directory. Exact ZIP-level availability is confirmed when you request service.</p></div>
+      <Container>
+        <div className="grid gap-8 rounded-panel border border-steel bg-surface p-8 shadow-soft sm:p-10 lg:grid-cols-[1fr_2fr] lg:items-end">
+          <div><p className="eyebrow">Regional service</p><h2 id="region-heading" className="mt-4 text-3xl font-semibold tracking-[-0.03em] text-navy">Across five Northeast states.</h2><Link className="text-link mt-5 inline-flex" href="/service-areas">View service-area details</Link></div>
+          <div><ul className="grid grid-cols-2 gap-3 sm:grid-cols-5">{serviceAreas.map((area) => <li key={area.code} className="border-t border-steel pt-3"><span className="block text-xs font-bold tracking-[0.16em] text-copper">{area.code}</span><span className="mt-2 block text-sm font-semibold text-navy">{area.state}</span></li>)}</ul><p className="mt-5 text-sm leading-6 text-slate">County coverage is confirmed in the service-area directory. Exact ZIP-level availability is confirmed when you request service.</p></div>
+        </div>
       </Container>
     </section>
   );
@@ -143,7 +148,7 @@ export function ServiceFaqs({ items }: { items: readonly ServiceFAQ[] }) {
   return (
     <section className="bg-page-bg section-y" aria-labelledby="service-faq-heading">
       <Container className="grid gap-12 lg:grid-cols-[0.72fr_1.28fr] lg:gap-20">
-        <SectionHeading id="service-faq-heading" eyebrow="Service questions" title="Useful context before you book." />
+        <SectionHeading id="service-faq-heading" eyebrow="Service questions" title="Useful context before you book." size="compact" />
         <div className="space-y-3">{items.map((item) => <details key={item.question} className="group rounded-panel border border-steel bg-surface p-6 open:shadow-soft"><summary className="cursor-pointer list-none pr-10 text-lg font-semibold tracking-[-0.015em] text-navy marker:hidden">{item.question}<span className="float-right text-copper transition-transform group-open:rotate-45" aria-hidden="true">+</span></summary><p className="max-w-2xl pt-5 pr-10 leading-7 text-slate">{item.answer}</p></details>)}</div>
       </Container>
     </section>
@@ -173,7 +178,7 @@ export function FinalServiceCta({ title = "Ready for a clearer next step?", cate
             <p className="mt-6 max-w-xl text-lg leading-8 text-white/65">Tell us what you are noticing. Service availability and scheduling are confirmed separately.</p>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row">
-            {contact.phoneHref && <a href={contact.phoneHref} className="inline-flex min-h-12 items-center justify-center gap-2 rounded-control bg-copper px-6 text-sm font-semibold text-white"><PhoneIcon className="size-4" />{contact.phone}</a>}
+            {contact.phoneHref && <a href={contact.phoneHref} className="inline-flex min-h-12 items-center justify-center gap-2 rounded-control bg-white px-6 text-sm font-semibold text-navy transition-colors hover:bg-copper hover:text-white"><PhoneIcon className="size-4" />{contact.phone}</a>}
             <BookingLink categoryId={categoryId} serviceId={serviceId} variant="invert">Request service</BookingLink>
           </div>
         </div>

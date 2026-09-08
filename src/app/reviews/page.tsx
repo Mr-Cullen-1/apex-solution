@@ -16,16 +16,18 @@ export const metadata: Metadata = {
 
 export default function ReviewsPage() {
   return (
-    <main id="main-content" className="flex-1">
-      <section className="border-b border-steel bg-warm-white section-y">
+    <main id="main-content" className="flex-1 bg-page-bg">
+      <section className="bg-page-bg pb-16 pt-6 sm:pb-20 sm:pt-8">
         <Container>
-          <p className="eyebrow">Customer reviews</p>
-          <h1 className="mt-5 max-w-4xl text-balance text-[clamp(3rem,7vw,6rem)] font-semibold leading-[1.02] tracking-[-0.03em] text-navy">What homeowners say about Apex.</h1>
-          <p className="mt-7 max-w-2xl text-lg leading-8 text-slate">Only verified, customer-approved reviews are published here. Apex does not invent testimonials, ratings, or attribution.</p>
-          <BookingLink className="mt-9">Request service</BookingLink>
+          <div className="max-w-5xl rounded-hero border border-steel bg-surface p-8 shadow-hero sm:p-12">
+            <p className="eyebrow">Customer reviews</p>
+            <h1 className="mt-5 text-balance text-[clamp(2.5rem,6vw,4.5rem)] font-semibold leading-[1.02] tracking-[-0.03em] text-navy">What homeowners say about Apex.</h1>
+            <p className="mt-7 max-w-2xl text-lg leading-8 text-slate">Only verified, customer-approved reviews are published here. Apex does not invent testimonials, ratings, or attribution.</p>
+            <BookingLink className="mt-9">Request service</BookingLink>
+          </div>
         </Container>
       </section>
-      <section className="section-y"><Container><ReviewList reviews={reviews} /></Container></section>
+      <section className="bg-page-bg section-y-bottom"><Container><ReviewList reviews={reviews} /></Container></section>
     </main>
   );
 }

@@ -12,7 +12,7 @@ export function BrandsWeService() {
           <div>
             <SectionHeading id="brands-heading" eyebrow="Brands we service" title={<>Familiar systems.<br />Careful service.</>} description="Apex Home Services works on a wide range of appliance and HVAC brands without implying a manufacturer authorization or partnership." />
             <div className="mt-8 flex flex-col gap-3 sm:flex-row lg:flex-col lg:items-start">
-              <ButtonLink href="/brands" variant="secondary">Browse all brands</ButtonLink>
+              <ButtonLink href="/brands" variant="primary">Browse all brands</ButtonLink>
               <ButtonLink href={contactEntry.href} variant="secondary">Contact us</ButtonLink>
             </div>
           </div>

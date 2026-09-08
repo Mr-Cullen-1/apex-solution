@@ -57,7 +57,13 @@ export function BookingFlow({ initialSelection }: { initialSelection: { category
 
   function update<K extends keyof BookingDraft>(key: K, value: BookingDraft[K]) {
     setDraft((current) => ({ ...current, [key]: value }));
-    setErrors((current) => ({ ...current, [key]: undefined, form: undefined }));
+    setErrors((current) => {
+      if (!(key in current) && !("form" in current)) return current;
+      const next = { ...current };
+      delete next[key];
+      delete next.form;
+      return next;
+    });
   }
 
   function goTo(next: number, push = true) {

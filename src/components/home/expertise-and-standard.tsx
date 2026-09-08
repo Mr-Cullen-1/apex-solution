@@ -22,7 +22,12 @@ export function ServicesGrid() {
         </div>
 
         <div className="mt-10">
-          <Carousel ariaLabel="Service categories" autoplayMs={9000}>
+          <Carousel
+            ariaLabel="Service categories"
+            autoplayMs={9000}
+            arrowVariant="overlay"
+            overlayArrowTopClassName="top-[5.5rem] -translate-y-1/2"
+          >
             {primaryServices.map((service) => {
               const asset = media[service.mediaId as MediaId] ?? media.serviceDetail;
               return (

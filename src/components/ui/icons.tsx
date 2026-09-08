@@ -79,3 +79,13 @@ export function SparkleIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
+export function ImageIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" {...props}>
+      <rect x="3" y="4.5" width="18" height="15" rx="1.5" stroke="currentColor" strokeWidth="1.5" />
+      <circle cx="8.5" cy="10" r="1.5" stroke="currentColor" strokeWidth="1.5" />
+      <path d="m4 16.5 4.5-4 4 3.5 3-2.5 4.5 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" strokeLinejoin="round" />
+    </svg>
+  );
+}
