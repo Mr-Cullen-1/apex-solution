@@ -10,7 +10,6 @@ export const plannedRoutes: PlannedRoute[] = [
   { path: "/financing", title: "Financing", group: "Conversion" },
   { path: "/offers", title: "Offers", group: "Conversion" },
   { path: "/team", title: "Our Team", group: "Company" },
-  { path: "/reviews", title: "Customer Reviews", group: "Company" },
   { path: "/projects", title: "Selected Projects", group: "Company" },
   { path: "/careers", title: "Careers", group: "Company" },
   { path: "/resources", title: "Apex Journal", group: "Resource" },

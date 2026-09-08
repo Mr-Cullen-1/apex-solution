@@ -7,6 +7,8 @@ export type NavigationItem = {
 
 export type ContactDetails = {
   phone: string | null;
+  phoneHref: string | null;
+  smsHref: string | null;
   email: string | null;
   address: string | null;
   hours: string | null;
@@ -77,7 +79,7 @@ export type SupportedBrandGroup = {
   label: string;
   brands: readonly string[];
 };
-export type Review = { id: string; quote: string; author: string; location: string | null; rating: number; source: string; verified: boolean };
+export type Review = { id: string; quote: string; author: string; location: string | null; rating: number; source: string; verified: boolean; date: string | null };
 export type FAQ = { id: string; question: string; answer: string };
 export type Project = { id: string; title: string; service: string; location: string | null; summary: string; mediaId: string; status: "concept" | "verified" };
 export type ResourceArticle = { slug: string; title: string; excerpt: string; category: string; publishedAt: string | null; status: "planned" | "published"; mediaId: string };

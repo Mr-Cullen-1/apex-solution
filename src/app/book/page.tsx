@@ -16,11 +16,11 @@ type BookPageProps = { searchParams: Promise<{ service?: string | string[]; cate
 export default async function BookPage({ searchParams }: BookPageProps) {
   const initialSelection = parseBookingPreselection(await searchParams);
   return (
-    <main id="main-content" className="flex-1 bg-soft-white">
-      <section className="border-b border-steel bg-warm-white py-14 sm:py-20">
-        <Container><p className="eyebrow">Request service</p><h1 className="mt-5 max-w-5xl text-balance text-[clamp(3.8rem,8vw,7.5rem)] font-semibold leading-[0.86] tracking-[-0.07em] text-navy">Tell us what your home needs.</h1><p className="mt-7 max-w-2xl text-lg leading-8 text-slate sm:text-xl">Prepare a clear service request in a few focused steps. This does not reserve an appointment or confirm service availability.</p></Container>
+    <main id="main-content" className="flex-1 bg-page-bg">
+      <section className="bg-page-bg pb-8 pt-6 sm:pt-8">
+        <Container><div className="rounded-hero border border-steel bg-surface p-8 shadow-soft sm:p-12"><p className="eyebrow">Request service</p><h1 className="mt-5 max-w-5xl text-balance text-[clamp(2.5rem,6vw,4.5rem)] font-semibold leading-[1.02] tracking-[-0.03em] text-navy">Tell us what your home needs.</h1><p className="mt-7 max-w-2xl text-lg leading-8 text-slate">Prepare a clear service request in a few focused steps. This does not reserve an appointment or confirm service availability.</p></div></Container>
       </section>
-      <section className="py-12 sm:py-16 lg:py-20"><Container><BookingFlow initialSelection={initialSelection} /></Container></section>
+      <section className="section-y"><Container><BookingFlow initialSelection={initialSelection} /></Container></section>
     </main>
   );
 }

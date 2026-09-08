@@ -11,7 +11,7 @@ import type { Review } from "@/types/content";
 export function WorkCareAndProof() {
   return (
     <>
-      <section className="bg-soft-white py-24 sm:py-32 lg:py-40">
+      <section className="bg-soft-white section-y">
         <Container>
           <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
             <SectionHeading eyebrow="03 — Project presentation" title="Project stories, in preparation." description="Concept layouts are reserved for future projects with verified photography, locations, and service details." />
@@ -37,7 +37,7 @@ export function WorkCareAndProof() {
         </Container>
       </section>
 
-      <section className="bg-warm-white py-24 sm:py-32 lg:py-40">
+      <section className="bg-warm-white section-y">
         <Container>
           <div className="relative overflow-hidden bg-navy text-white">
             <div className="absolute -right-12 -top-24 select-none text-[24rem] font-semibold leading-none tracking-[-0.12em] text-white/[0.035]" aria-hidden="true">A</div>
@@ -57,7 +57,7 @@ export function WorkCareAndProof() {
         </Container>
       </section>
 
-      <section className="bg-soft-white py-24 sm:py-32">
+      <section className="bg-soft-white section-y">
         <Container className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-center lg:gap-24">
           <SectionHeading eyebrow="04 — Customer perspective" title={<>Trust is earned<br />in the details.</>} description="The review system is ready for verified customer feedback. No names, ratings, or testimonials are displayed until they are approved." />
           {reviews.length > 0 ? (
@@ -72,7 +72,7 @@ export function WorkCareAndProof() {
         </Container>
       </section>
 
-      <section className="border-y border-steel bg-warm-white py-16 sm:py-20">
+      <section className="border-y border-steel bg-warm-white section-y">
         <Container className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
           <div><p className="eyebrow">Financing information</p><h2 className="mt-4 text-balance text-[clamp(2.6rem,5vw,5rem)] font-semibold leading-none tracking-[-0.055em] text-navy">Details follow<br />verified terms.</h2></div>
           <div className="lg:justify-self-end"><p className="max-w-md text-base leading-7 text-slate">Explore the financing experience. Providers, eligibility, rates, and terms will be published only after verification.</p><ButtonLink className="mt-7" href="/financing" variant="secondary">Explore financing</ButtonLink></div>

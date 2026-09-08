@@ -42,6 +42,12 @@ Premium editorial residential HVAC service photograph of a professional technici
 
 **Replacement status:** temporary but regionally appropriate; replace with rights-cleared Apex photography when available.
 
+## Phase 3 usage (reference-driven redesign, Sep 2026)
+
+The redesign stopped placing `apex-hero-technician.png`, `apex-home-interior.png`, and `apex-home-exterior.png` (the three geographically inaccurate Southwest/desert concepts) in any new component. The new homepage hero, "What can we help with?" grid, and final CTA banner now reuse only `apex-northeast-hvac.png`, `apex-appliance-service.png`, and `apex-service-detail.png` — the three assets already flagged as regionally appropriate or geographically neutral. The three Southwest assets remain in `src/content/media.ts` (still `temporary: true`) but are no longer referenced by any component; they can be removed once confirmed unnecessary, or replaced if a future page needs a fourth distinct image.
+
+No new photography was generated or sourced in Phase 3. The "Apex Results" before/after section ships with all `beforeMediaId`/`afterMediaId` values `null` in `src/content/results.ts` — see the no-fabrication note there — pending real, customer-approved job photography.
+
 ## Client logo status
 
 The client describes a supplied Apex Home Services raster logo whose artwork contains the older line “Comfort Today. A Brighter Tomorrow.” No logo image file was present in the Phase 1.1 attachment, so it could not be safely added or inspected. The site continues to use the refined text mark. When the file is supplied, preserve the artwork without destructive edits and update or replace the asset through the approved brand-source workflow. Separately rendered copy must continue to use **Reliable Home Services. Local Professionals.**

@@ -1,7 +1,9 @@
 import type { ContactDetails } from "@/types/content";
 
 export const contact: ContactDetails = {
-  phone: null,
+  phone: "(516) 586-0826",
+  phoneHref: "tel:+15165860826",
+  smsHref: "sms:+15165860826",
   email: null,
   address: null,
   hours: null,

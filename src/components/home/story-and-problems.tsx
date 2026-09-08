@@ -14,7 +14,7 @@ export function StoryAndProblems() {
 
   return (
     <>
-      <section className="overflow-hidden bg-soft-white py-24 sm:py-32 lg:py-40">
+      <section className="overflow-hidden bg-soft-white section-y">
         <Container>
           <div className="grid gap-14 lg:grid-cols-12 lg:items-center">
             <div className="relative lg:col-span-7 lg:pr-14">
@@ -39,7 +39,7 @@ export function StoryAndProblems() {
         </Container>
       </section>
 
-      <section className="bg-warm-white py-24 sm:py-32 lg:py-36">
+      <section className="bg-warm-white section-y">
         <Container className="grid gap-12 lg:grid-cols-[0.72fr_1.28fr] lg:gap-24">
           <div className="lg:sticky lg:top-40 lg:self-start">
             <p className="eyebrow">Find your next step</p>

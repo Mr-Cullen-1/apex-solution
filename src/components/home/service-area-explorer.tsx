@@ -26,15 +26,15 @@ export function ServiceAreaExplorer() {
   }
 
   return (
-    <section id="service-areas" className="scroll-mt-32 bg-soft-white py-24 sm:py-32 lg:py-40" aria-labelledby="service-area-heading">
+    <section id="service-areas" className="section-y bg-page-bg" aria-labelledby="service-area-heading">
       <Container>
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
           <div>
-            <SectionHeading id="service-area-heading" eyebrow="05 — Where we serve" title={<>Local professionals,<br />across five states.</>} description="Confirmed county coverage across New York, New Jersey, Connecticut, Massachusetts, and Rhode Island." />
+            <SectionHeading id="service-area-heading" eyebrow="Where we serve" title={<>Local professionals,<br />across five states.</>} description="Confirmed county coverage across New York, New Jersey, Connecticut, Massachusetts, and Rhode Island." />
             <ButtonLink className="mt-8" href="/service-areas" variant="secondary">Service area details</ButtonLink>
           </div>
 
-          <div className="hidden border border-steel bg-warm-white md:block">
+          <div className="hidden overflow-hidden rounded-panel border border-steel bg-surface shadow-soft md:block">
             <div role="tablist" aria-label="Service area states" className="grid grid-cols-5 border-b border-steel">
               {serviceAreas.map((area, index) => {
                 const active = area.code === activeCode;
@@ -58,9 +58,9 @@ export function ServiceAreaExplorer() {
                 );
               })}
             </div>
-            <div id={`state-panel-${activeArea.code}`} role="tabpanel" aria-labelledby={`state-tab-${activeArea.code}`} className="grid min-h-[22rem] grid-cols-[0.7fr_1.3fr]">
+            <div id={`state-panel-${activeArea.code}`} role="tabpanel" aria-labelledby={`state-tab-${activeArea.code}`} className="grid items-stretch grid-cols-[0.7fr_1.3fr]">
               <div className="flex flex-col justify-between border-r border-steel bg-navy p-8 text-white">
-                <div><p className="text-[0.65rem] font-bold uppercase tracking-[0.18em] text-copper">{activeArea.code} service area</p><h3 className="mt-4 text-4xl font-semibold tracking-[-0.05em]">{activeArea.state}</h3></div>
+                <div><p className="text-[0.65rem] font-bold uppercase tracking-[0.18em] text-white/75">{activeArea.code} service area</p><h3 className="mt-4 text-4xl font-semibold tracking-[-0.05em]">{activeArea.state}</h3></div>
                 <p className="text-sm text-white/55">{activeArea.counties.length} confirmed counties</p>
               </div>
               <ul className="grid content-start sm:grid-cols-2">
@@ -71,6 +71,13 @@ export function ServiceAreaExplorer() {
                 ))}
               </ul>
             </div>
+            <div className="flex flex-col items-start justify-between gap-4 border-t border-steel p-7 sm:flex-row sm:items-center sm:p-9">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.1em] text-copper">Not sure if we service your area?</p>
+                <p className="mt-1.5 max-w-xl text-sm leading-6 text-slate">Enter your ZIP in the booking location step. It checks format only — Apex confirms actual availability after you submit a request.</p>
+              </div>
+              <BookingLink variant="secondary" className="w-full shrink-0 justify-center sm:w-auto">Continue to request</BookingLink>
+            </div>
           </div>
 
           <div className="border-t border-navy md:hidden">
@@ -80,18 +87,11 @@ export function ServiceAreaExplorer() {
                 <ul className="mt-5 grid grid-cols-2 gap-x-5 gap-y-3">{area.counties.map((county) => <li key={`${area.code}-${county}`} className="text-sm leading-5 text-slate">{county}</li>)}</ul>
               </section>
             ))}
-          </div>
-        </div>
-
-        <div className="mt-12 grid overflow-hidden border border-steel bg-warm-white lg:grid-cols-[1fr_1.1fr]">
-          <div className="border-b border-steel p-7 sm:p-9 lg:border-b-0 lg:border-r">
-            <p className="eyebrow">Check the next step</p>
-            <h3 className="mt-4 text-2xl font-semibold tracking-[-0.035em] text-navy">Not sure if we service your area?</h3>
-            <p className="mt-3 text-base leading-7 text-slate">Enter your ZIP code and we&apos;ll check availability.</p>
-          </div>
-          <div className="flex flex-col items-start justify-center gap-4 p-7 sm:p-9">
-            <p className="text-base leading-7 text-slate">Enter your ZIP securely in the booking location step. The request flow validates format but does not return an automatic eligibility decision.</p>
-            <BookingLink>Continue to request</BookingLink>
+            <div className="pt-7">
+              <p className="text-xs font-bold uppercase tracking-[0.1em] text-copper">Not sure if we service your area?</p>
+              <p className="mt-1.5 text-sm leading-6 text-slate">Enter your ZIP in the booking location step. It checks format only — Apex confirms actual availability after you submit a request.</p>
+              <BookingLink variant="secondary" className="mt-4 w-full justify-center">Continue to request</BookingLink>
+            </div>
           </div>
         </div>
       </Container>

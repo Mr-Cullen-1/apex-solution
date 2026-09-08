@@ -1,12 +1,43 @@
 @import "tailwindcss";
 
+/*
+ * Apex visual system.
+ * Brand colors (--ink, --brand-dark, --brand-primary, --brand-accent) are sampled
+ * directly from the official logo (apex logo/colored.png — see src/content/brand.ts).
+ * Layout/radius/shadow/spacing follow the reference composition approved separately.
+ * Legacy token names (--apex-navy, --warm-white, --soft-white, --slate, --steel,
+ * --copper) are kept and re-pointed so every existing component inherits the brand
+ * system automatically without a per-component rewrite.
+ */
 :root {
-  --apex-navy: #101d2c;
-  --warm-white: #f7f6f2;
-  --soft-white: #faf9f6;
-  --slate: #66717d;
-  --steel: #d9dee2;
-  --copper: #b9784b;
+  /* Sampled from the official logo */
+  --ink: #01213a;            /* window detail — darkest mark value */
+  --brand-dark: #003973;     /* "A" leg gradient — deep navy for large dark surfaces */
+  --brand-primary: #005098;  /* dominant mark blue — primary CTA / accent */
+  --brand-accent: #0376e7;   /* swoosh highlight — vivid accent, decorative use */
+
+  /* Neutral surfaces (reference's light atmosphere, tinted toward brand hue) */
+  --page-bg: color-mix(in srgb, var(--brand-primary) 5%, #f2f4f7);
+  --surface: #ffffff;
+  --surface-soft: color-mix(in srgb, var(--brand-primary) 6%, white);
+  --surface-muted: #c9d2dc;
+  --ink-muted: #4b5768;
+  --brand-soft: color-mix(in srgb, var(--brand-primary) 12%, white);
+
+  /* Semantic (not brand) */
+  --status-live: #16a34a;
+
+  --border-soft: color-mix(in srgb, var(--ink) 10%, transparent);
+  --shadow-tint: color-mix(in srgb, var(--ink) 18%, transparent);
+
+  /* Legacy aliases — do not reintroduce old hex values here */
+  --apex-navy: var(--ink);
+  --warm-white: var(--surface);
+  --soft-white: var(--page-bg);
+  --slate: var(--ink-muted);
+  --steel: var(--border-soft);
+  --copper: var(--brand-primary);
+
   --background: var(--soft-white);
   --foreground: var(--apex-navy);
 }
@@ -20,8 +51,32 @@
   --color-copper: var(--copper);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  --color-page-bg: var(--page-bg);
+  --color-surface: var(--surface);
+  --color-surface-soft: var(--surface-soft);
+  --color-surface-muted: var(--surface-muted);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-brand-dark: var(--brand-dark);
+  --color-brand-primary: var(--brand-primary);
+  --color-brand-accent: var(--brand-accent);
+  --color-brand-soft: var(--brand-soft);
+  --color-status-live: var(--status-live);
+
   --font-sans: var(--font-geist-sans);
   --spacing-page: clamp(1.25rem, 4vw, 4rem);
+
+  /* Centralized radius system — derived from the reference composition */
+  --radius-control: 999px;
+  --radius-card: 20px;
+  --radius-panel: 28px;
+  --radius-hero: 32px;
+
+  /* Restrained, low-opacity depth */
+  --shadow-soft: 0 10px 30px -12px var(--shadow-tint);
+  --shadow-card: 0 18px 44px -16px var(--shadow-tint);
+  --shadow-hero: 0 40px 90px -30px var(--shadow-tint);
 }
 
 * { border-color: var(--steel); }
@@ -32,8 +87,8 @@ body {
   font-family: var(--font-geist-sans), Arial, sans-serif;
   overflow-x: clip;
 }
-::selection { background: color-mix(in srgb, var(--copper) 28%, transparent); }
-:focus-visible { outline: 2px solid var(--copper); outline-offset: 3px; }
+::selection { background: color-mix(in srgb, var(--brand-primary) 25%, transparent); }
+:focus-visible { outline: 2px solid var(--brand-primary); outline-offset: 3px; }
 
 .skip-link {
   position: fixed;
@@ -41,16 +96,17 @@ body {
   top: 1rem;
   z-index: 100;
   translate: 0 -200%;
-  background: var(--apex-navy);
+  background: var(--ink);
   color: white;
   padding: 0.75rem 1rem;
+  border-radius: var(--radius-control);
 }
 .skip-link:focus { translate: 0; }
 .eyebrow {
-  color: var(--copper);
+  color: var(--brand-primary);
   font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 .text-link {
@@ -60,6 +116,17 @@ body {
   text-underline-offset: 0.3em;
 }
 .text-link:hover { text-decoration: underline; }
+
+/* One consistent vertical rhythm for major page sections — replaces ad hoc
+   per-section py-20/24/28/32/40 values. Scales smoothly instead of jumping at
+   fixed breakpoints. */
+.section-y { padding-top: clamp(2.75rem, 5.5vw, 5.5rem); padding-bottom: clamp(2.75rem, 5.5vw, 5.5rem); }
+.section-y-top { padding-top: clamp(2.75rem, 5.5vw, 5.5rem); }
+.section-y-bottom { padding-bottom: clamp(2.75rem, 5.5vw, 5.5rem); }
+.section-y-tight { padding-top: clamp(1.75rem, 3.5vw, 3rem); padding-bottom: clamp(1.75rem, 3.5vw, 3rem); }
+
+/* Scroll offset so the sticky header never covers an anchor target's heading. */
+[id] { scroll-margin-top: 6.5rem; }
 
 @keyframes rise-in {
   from { opacity: 0; transform: translateY(1.5rem); }
@@ -74,6 +141,21 @@ body {
 @keyframes drawer-in {
   from { transform: translateX(100%); }
   to { transform: translateX(0); }
+}
+
+@keyframes float-soft {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
+}
+
+@keyframes fade-slide {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 @media (prefers-reduced-motion: reduce) {

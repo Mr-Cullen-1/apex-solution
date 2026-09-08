@@ -1,24 +1,34 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { primaryNavigation } from "@/content/navigation";
 import { primaryServices } from "@/content/services";
-import { company } from "@/content/company";
+import { company, contact } from "@/content/company";
+import { brandMark } from "@/content/brand";
+import { availability } from "@/content/trust";
 import { BookingLink } from "@/components/ui/booking-link";
 import { bookingEntry } from "@/content/cta";
 import { Container } from "@/components/ui/container";
-import { ArrowRightIcon, ChevronDownIcon, CloseIcon, MenuIcon } from "@/components/ui/icons";
-import { UtilityBar } from "@/components/layout/utility-bar";
+import { ArrowRightIcon, ChevronDownIcon, CloseIcon, MenuIcon, PhoneIcon } from "@/components/ui/icons";
 
 export function SiteHeader() {
   const [megaOpen, setMegaOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [expandedService, setExpandedService] = useState<string | null>("services");
+  const [scrolled, setScrolled] = useState(false);
   const headerRef = useRef<HTMLElement>(null);
   const servicesButtonRef = useRef<HTMLButtonElement>(null);
   const mobilePanelRef = useRef<HTMLDivElement>(null);
   const mobileButtonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 12);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   useEffect(() => {
     function handlePointerDown(event: PointerEvent) {
@@ -81,13 +91,12 @@ export function SiteHeader() {
   const closeMobile = () => setMobileOpen(false);
 
   return (
-    <header ref={headerRef} className="sticky top-0 z-50 bg-warm-white/95 backdrop-blur-md">
-      <UtilityBar />
-      <div className="border-b border-steel">
-        <Container className="flex h-20 items-center justify-between gap-8">
-          <Link href="/" className="group flex items-center gap-3" aria-label={`${company.name} home`}>
-            <span className="grid size-9 place-items-center bg-navy text-sm font-bold text-white transition-colors duration-300 group-hover:bg-copper">A</span>
-            <span className="text-lg font-semibold tracking-[-0.03em] text-navy">{company.name}</span>
+    <header ref={headerRef} className="sticky top-0 z-50 pt-3 transition-[padding] duration-300 sm:pt-4">
+      <Container>
+        <div className={`flex h-16 items-center justify-between gap-6 rounded-hero px-4 transition-all duration-300 sm:h-18 sm:px-6 ${scrolled ? "border border-steel bg-surface/90 shadow-soft backdrop-blur-md" : "border border-transparent bg-transparent"}`}>
+          <Link href="/" className="flex shrink-0 items-center gap-2.5" aria-label={`${company.name} home`}>
+            <Image src={brandMark.colored.src} alt={brandMark.colored.alt} width={36} height={36} className="size-9" priority />
+            <span className="hidden text-lg font-semibold tracking-[-0.02em] text-navy sm:inline">{company.name}</span>
           </Link>
 
           <nav className="hidden lg:block" aria-label="Primary navigation">
@@ -114,29 +123,41 @@ export function SiteHeader() {
             </ul>
           </nav>
 
-          <div className="hidden lg:block"><BookingLink /></div>
+          <div className="hidden items-center gap-4 lg:flex">
+            <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-ink-muted">
+              <span className="relative flex size-1.5"><span aria-hidden="true" className="absolute inline-flex size-1.5 rounded-full bg-status-live motion-safe:animate-[pulse-dot_1.8s_ease-in-out_infinite]" /></span>
+              {availability.liveNowLabel}
+            </span>
+            {contact.phoneHref && (
+              <a href={contact.phoneHref} className="group inline-flex min-h-11 items-center gap-2 rounded-control bg-copper px-4 text-sm font-bold text-white transition-transform duration-300 hover:-translate-y-0.5">
+                <PhoneIcon className="size-4" />{contact.phone}
+              </a>
+            )}
+            <BookingLink variant="primary" showArrow={false}>{bookingEntry.label}</BookingLink>
+          </div>
           <button
             ref={mobileButtonRef}
             type="button"
-            className="grid size-12 place-items-center text-navy lg:hidden"
+            className="grid size-12 shrink-0 place-items-center rounded-control text-navy lg:hidden"
             aria-label="Open navigation"
             aria-expanded={mobileOpen}
             onClick={() => setMobileOpen(true)}
           >
             <MenuIcon className="size-6" />
           </button>
-        </Container>
-      </div>
+        </div>
+      </Container>
 
       <div
         id="services-mega-menu"
-        className={`absolute inset-x-0 top-full hidden origin-top border-b border-steel bg-soft-white shadow-[0_24px_50px_rgba(16,29,44,0.1)] transition duration-300 lg:block ${megaOpen ? "visible scale-y-100 opacity-100" : "invisible scale-y-[0.98] opacity-0"}`}
+        className={`absolute inset-x-0 top-full hidden origin-top pt-3 transition duration-300 lg:block ${megaOpen ? "visible scale-y-100 opacity-100" : "invisible scale-y-[0.98] opacity-0"}`}
         aria-hidden={!megaOpen}
       >
-        <Container className="grid grid-cols-[1fr_3fr] gap-12 py-10">
+        <Container>
+          <div className="grid grid-cols-[1fr_3fr] gap-12 rounded-panel border border-steel bg-surface p-10 shadow-card">
           <div className="border-r border-steel pr-10">
             <p className="eyebrow">How can we help?</p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-[-0.04em] text-navy">Comfort starts with clarity.</h2>
+            <h2 className="mt-4 text-3xl font-semibold tracking-[-0.03em] text-navy">Comfort starts with clarity.</h2>
             <p className="mt-4 text-sm leading-6 text-slate">Not sure where to begin? Tell us what is happening and start a guided service request.</p>
             <Link className="group mt-7 inline-flex items-center gap-3 text-sm font-semibold text-navy" href={bookingEntry.href} onClick={() => setMegaOpen(false)}>
               Start your request <ArrowRightIcon className="size-5 transition-transform group-hover:translate-x-1" />
@@ -156,16 +177,26 @@ export function SiteHeader() {
               </div>
             ))}
           </div>
+          </div>
         </Container>
       </div>
 
       {mobileOpen && (
         <div className="fixed inset-0 bottom-[72px] z-50 bg-navy/45 lg:hidden" onMouseDown={(event) => event.target === event.currentTarget && closeMobile()}>
-          <div ref={mobilePanelRef} role="dialog" aria-modal="true" aria-label="Site navigation" className="ml-auto flex h-full w-[min(92vw,31rem)] animate-[drawer-in_300ms_ease-out] flex-col overflow-y-auto bg-soft-white">
+          <div ref={mobilePanelRef} role="dialog" aria-modal="true" aria-label="Site navigation" className="ml-auto flex h-full w-[min(92vw,31rem)] animate-[drawer-in_300ms_ease-out] flex-col overflow-y-auto bg-surface">
             <div className="flex h-20 shrink-0 items-center justify-between border-b border-steel px-6">
-              <span className="text-lg font-semibold tracking-[-0.03em] text-navy">Explore Apex</span>
-              <button type="button" className="grid size-12 place-items-center text-navy" onClick={closeMobile} aria-label="Close navigation"><CloseIcon className="size-6" /></button>
+              <span className="text-lg font-semibold tracking-[-0.02em] text-navy">Explore Apex</span>
+              <button type="button" className="grid size-12 place-items-center rounded-control text-navy" onClick={closeMobile} aria-label="Close navigation"><CloseIcon className="size-6" /></button>
             </div>
+            {contact.phoneHref && (
+              <div className="flex items-center justify-between gap-3 border-b border-steel bg-page-bg/60 px-6 py-4">
+                <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-ink-muted">
+                  <span className="relative flex size-1.5"><span aria-hidden="true" className="absolute inline-flex size-1.5 rounded-full bg-status-live motion-safe:animate-[pulse-dot_1.8s_ease-in-out_infinite]" /></span>
+                  {availability.liveNowLabel}
+                </span>
+                <a href={contact.phoneHref} className="inline-flex min-h-11 items-center gap-2 rounded-control bg-copper px-4 text-sm font-bold text-white"><PhoneIcon className="size-4" />{contact.phone}</a>
+              </div>
+            )}
             <nav className="flex-1 px-6 py-5" aria-label="Mobile navigation">
               <div className="border-b border-steel pb-3">
                 <button type="button" className="flex min-h-14 w-full items-center justify-between text-left text-2xl font-semibold tracking-[-0.035em] text-navy" aria-expanded={expandedService === "services"} onClick={() => setExpandedService((value) => value === "services" ? null : "services")}>

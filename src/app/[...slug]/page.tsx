@@ -34,20 +34,22 @@ export default async function PlannedPage({ params }: PlannedPageProps) {
   if (!route) notFound();
 
   return (
-    <main id="main-content" className="flex-1 bg-warm-white py-20 sm:py-28">
+    <main id="main-content" className="flex-1 bg-page-bg section-y">
       <Container>
-        <p className="eyebrow">{route.group} · Phase foundation</p>
-        <h1 className="mt-5 max-w-4xl text-5xl font-semibold leading-none tracking-[-0.05em] text-navy sm:text-7xl">{route.title}</h1>
-        <p className="mt-7 max-w-2xl text-lg leading-8 text-slate">
-          This route is active in the site architecture. Its production content and interactions are scheduled for a later delivery phase.
-        </p>
-        <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-          <ButtonLink href="/">Return home</ButtonLink>
-          <BookingLink variant="secondary">Request service</BookingLink>
+        <div className="rounded-hero border border-steel bg-surface p-8 shadow-soft sm:p-12">
+          <p className="eyebrow">{route.group} · Phase foundation</p>
+          <h1 className="mt-5 max-w-4xl text-4xl font-semibold leading-[1.05] tracking-[-0.03em] text-navy sm:text-6xl">{route.title}</h1>
+          <p className="mt-7 max-w-2xl text-lg leading-8 text-slate">
+            This route is active in the site architecture. Its production content and interactions are scheduled for a later delivery phase.
+          </p>
+          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+            <ButtonLink href="/">Return home</ButtonLink>
+            <BookingLink variant="secondary">Request service</BookingLink>
+          </div>
+          <p className="mt-12 border-t border-steel pt-5 text-sm text-slate">
+            <Link className="text-link" href="/">Apex Home Services</Link> / {route.title}
+          </p>
         </div>
-        <p className="mt-12 border-t border-steel pt-5 text-sm text-slate">
-          <Link className="text-link" href="/">Apex Home Services</Link> / {route.title}
-        </p>
       </Container>
     </main>
   );

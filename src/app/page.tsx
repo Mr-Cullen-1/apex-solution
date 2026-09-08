@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import { ApexResults } from "@/components/home/apex-results";
 import { AreasJournalAndFinal } from "@/components/home/areas-journal-and-final";
-import { ExpertiseAndStandard } from "@/components/home/expertise-and-standard";
-import { HeroAndSelector } from "@/components/home/hero-and-selector";
-import { StoryAndProblems } from "@/components/home/story-and-problems";
 import { BrandsWeService } from "@/components/home/brands-we-service";
+import { Credentials } from "@/components/home/credentials";
+import { ServicesGrid } from "@/components/home/expertise-and-standard";
+import { FirstTimeOffer } from "@/components/home/first-time-offer";
+import { Hero } from "@/components/home/hero-and-selector";
 import { company } from "@/content/company";
 
 export const metadata: Metadata = {
@@ -15,11 +17,13 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main id="main-content" className="flex-1">
-      <HeroAndSelector />
-      <ExpertiseAndStandard />
+    <main id="main-content" className="flex-1 bg-page-bg">
+      <Hero />
+      <ServicesGrid />
+      <FirstTimeOffer />
+      <ApexResults />
+      <Credentials />
       <BrandsWeService />
-      <StoryAndProblems />
       <AreasJournalAndFinal />
     </main>
   );

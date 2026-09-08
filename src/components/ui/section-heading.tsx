@@ -13,8 +13,8 @@ export function SectionHeading({ eyebrow, title, description, theme = "light", c
   const dark = theme === "dark";
   return (
     <div className={className}>
-      <p className="eyebrow">{eyebrow}</p>
-      <h2 id={id} className={`mt-5 text-balance text-[clamp(2.5rem,6vw,5.5rem)] font-semibold leading-[0.98] tracking-[-0.055em] ${dark ? "text-white" : "text-navy"}`}>{title}</h2>
+      <p className={dark ? "text-xs font-bold uppercase tracking-[0.14em] text-white/75" : "eyebrow"}>{eyebrow}</p>
+      <h2 id={id} className={`mt-5 text-balance text-[clamp(2.25rem,5vw,4.25rem)] font-semibold leading-[1.05] tracking-[-0.03em] ${dark ? "text-white" : "text-navy"}`}>{title}</h2>
       {description && <p className={`mt-6 max-w-2xl text-base leading-7 sm:text-lg ${dark ? "text-white/65" : "text-slate"}`}>{description}</p>}
     </div>
   );
