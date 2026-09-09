@@ -34,11 +34,13 @@ Future feature-specific code should live under `src/features`, beginning with `s
 
 The files in `src/content` are the single source of truth during the file-backed phase. They deliberately mirror simple CMS collections. Unknown factual content stays `null` or in an empty collection; UI must handle that state honestly.
 
-`serviceAreas` is organized as typed state groups containing confirmed county lists. `supportedBrands` is organized as typed appliance, premium-appliance, and HVAC categories. `services.ts` is the typed taxonomy for category, service, problem, relationship, FAQ, media, and SEO data. Homepage, navigation, service routes, and footer consume these datasets directly. `cta.ts` and `BookingLink` normalize the current booking entry point for replacement in Phase 2B.
+`serviceAreas` is organized as typed state groups containing confirmed county lists. `supportedBrands` is organized as typed appliance, premium-appliance, and HVAC categories. `services.ts` is the typed taxonomy for category, service, problem, relationship, FAQ, media, and SEO data. Homepage, navigation, service routes, and footer consume these datasets directly. `cta.ts` and `BookingLink` define the site-wide "Book Now" entry point, which opens the shared modal in `src/features/booking/book-now-modal.tsx` rather than navigating to a page.
 
 ## Route strategy
 
-The typed route inventory in `src/content/routes.ts` powers a catch-all set of `noindex` foundation pages, keeping planned navigation destinations functional without presenting them as complete. Completed service routes live under `app/services`; core public pages live at `app/about`, `app/brands`, `app/contact`, and `app/service-areas`. `completedPublicPaths` and `completedServicePaths` feed the sitemap. Dynamic resource pages will later use `app/resources/[slug]`. Do not generate thin location, brand, or article pages solely for SEO.
+Completed service routes live under `app/services`; core public pages live at `app/about`, `app/brands`, `app/contact`, and `app/service-areas`. `completedPublicPaths` (`src/content/routes.ts`) and `completedServicePaths` feed the sitemap. Do not generate thin location, brand, or article pages solely for SEO.
+
+The old catch-all set of `noindex` "planned" foundation pages (`/emergency`, `/membership`, `/financing`, `/team`, `/faq`, `/privacy`, etc.) was removed — none had real content or an inbound link from the live UI, and the client asked for fewer placeholder pages. `/book` still resolves (as a redirect into the Book Now modal, preserving `?service=`/`?category=` context) so old links never 404.
 
 The Service Areas page consumes the single state-and-county dataset and uses anchors rather than generating 29 county routes. The Brands page consumes the single supported-brand dataset and maintains a small explicit mapping from brand group to existing service-category routes.
 

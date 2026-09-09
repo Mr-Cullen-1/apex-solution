@@ -1,5 +1,5 @@
 import type { NavigationItem } from "@/types/content";
-import { bookingEntry, contactEntry } from "./cta";
+import { contactEntry } from "./cta";
 
 export const primaryNavigation: NavigationItem[] = [
   {
@@ -17,18 +17,6 @@ export const primaryNavigation: NavigationItem[] = [
   { label: contactEntry.label, href: contactEntry.href },
 ];
 
-export const utilityNavigation: NavigationItem[] = [];
-
-export const footerNavigation: NavigationItem[] = [
-  { label: "Team", href: "/team" },
-  { label: "Reviews", href: "/reviews" },
-  { label: "Projects", href: "/projects" },
-  { label: "Careers", href: "/careers" },
-  { label: "FAQ", href: "/faq" },
-  { label: "Privacy", href: "/privacy" },
-  { label: "Terms", href: "/terms" },
-];
-
 export const footerGroups = [
   {
     label: "Company",
@@ -40,7 +28,6 @@ export const footerGroups = [
   {
     label: "Support",
     links: [
-      { label: bookingEntry.label, href: bookingEntry.href },
       { label: "Service Areas", href: "/service-areas" },
       { label: contactEntry.label, href: contactEntry.href },
     ],

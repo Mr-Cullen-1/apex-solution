@@ -24,9 +24,9 @@ export function FirstTimeOffer() {
                 <p className="text-xs font-bold uppercase tracking-[0.16em] text-copper">Your savings</p>
                 <p className="mt-5 text-[clamp(4.5rem,9vw,7rem)] font-bold leading-[0.85] tracking-[-0.05em] text-navy">10%</p>
                 <p className="mt-1 text-sm font-bold uppercase tracking-[0.2em] text-copper">Off your first visit</p>
-                <p className="mt-5 max-w-xs text-sm leading-6 text-navy/70">Valid on {firstTimeOffer.eligibility.length} eligible maintenance services — confirmed when you request service.</p>
+                <p className="mt-5 max-w-xs text-sm leading-6 text-navy/70">Valid on {firstTimeOffer.eligibility.length} eligible maintenance services — confirmed when you book.</p>
               </div>
-              <BookingLink variant="primary" className="w-full justify-center lg:w-auto lg:self-start">Claim this offer</BookingLink>
+              <BookingLink offer variant="primary" className="w-full justify-center lg:w-auto lg:self-start">Claim this offer</BookingLink>
             </div>
           </div>
           <div className="border-t border-steel bg-surface p-6 sm:p-8 lg:px-14 lg:py-8">

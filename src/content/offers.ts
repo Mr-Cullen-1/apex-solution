@@ -21,7 +21,7 @@ const eligibility: OfferEligibility[] = [
 export const firstTimeOffer = {
   title: "First-Time Customer Offer",
   headline: "Save 10% on your first maintenance service.",
-  disclaimer: "Applies to first-time Apex customers on the maintenance services listed below. Confirmed when you request service.",
+  disclaimer: "Applies to first-time Apex customers on the maintenance services listed below. Confirmed when you book.",
   eligibility,
 } as const;
 

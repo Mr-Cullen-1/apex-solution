@@ -72,9 +72,9 @@ export function ServiceAreaExplorer() {
             <div className="flex shrink-0 flex-col items-start justify-between gap-4 border-t border-steel p-7 sm:flex-row sm:items-center">
               <div>
                 <p className="text-xs font-bold uppercase tracking-[0.1em] text-copper">Not sure if we service your area?</p>
-                <p className="mt-1.5 max-w-xl text-sm leading-6 text-slate">Enter your ZIP in the booking location step. It checks format only — Apex confirms actual availability after you submit a request.</p>
+                <p className="mt-1.5 max-w-xl text-sm leading-6 text-slate">Provide your ZIP when you book, and our team will confirm availability.</p>
               </div>
-              <BookingLink variant="primary" className="w-full shrink-0 justify-center sm:w-auto">Continue to request</BookingLink>
+              <BookingLink variant="primary" className="w-full shrink-0 justify-center sm:w-auto" />
             </div>
           </div>
 
@@ -87,8 +87,8 @@ export function ServiceAreaExplorer() {
             ))}
             <div className="pt-7">
               <p className="text-xs font-bold uppercase tracking-[0.1em] text-copper">Not sure if we service your area?</p>
-              <p className="mt-1.5 text-sm leading-6 text-slate">Enter your ZIP in the booking location step. It checks format only — Apex confirms actual availability after you submit a request.</p>
-              <BookingLink variant="primary" className="mt-4 w-full justify-center">Continue to request</BookingLink>
+              <p className="mt-1.5 text-sm leading-6 text-slate">Provide your ZIP when you book, and our team will confirm availability.</p>
+              <BookingLink variant="primary" className="mt-4 w-full justify-center" />
             </div>
           </div>
         </div>

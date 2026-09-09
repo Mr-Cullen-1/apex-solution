@@ -27,11 +27,11 @@ export function ServiceHero({ eyebrow, title, summary, mediaId, anchorLabel = "E
             <h1 className="mt-5 max-w-xl text-balance text-[clamp(2.5rem,5.5vw,4.25rem)] font-semibold leading-[1.03] tracking-[-0.03em] text-navy">{title}</h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate">{summary}</p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <BookingLink categoryId={categoryId} serviceId={serviceId}>Request service</BookingLink>
               {contact.phoneHref && (
-                <a href={contact.phoneHref} className="inline-flex min-h-12 items-center gap-2 rounded-control bg-copper px-6 text-sm font-semibold text-white transition-transform duration-300 hover:-translate-y-0.5"><PhoneIcon className="size-4" />{contact.phone}</a>
+                <a href={contact.phoneHref} className="inline-flex min-h-12 items-center gap-2 rounded-control bg-copper px-6 text-sm font-semibold text-white transition-transform duration-300 hover:-translate-y-0.5"><PhoneIcon className="size-4" />Call {contact.phone}</a>
               )}
-              <ButtonLink href="#service-details" variant="secondary" showArrow={false}>{anchorLabel}</ButtonLink>
+              <BookingLink categoryId={categoryId} serviceId={serviceId} variant="secondary" />
+              <ButtonLink href="#service-details" variant="text" showArrow={false}>{anchorLabel}</ButtonLink>
             </div>
           </div>
           <div className="relative min-h-[20rem] overflow-hidden sm:min-h-[26rem] lg:min-h-[34rem]">
@@ -54,7 +54,7 @@ export function CompactOffer({ categoryId, serviceId }: { categoryId?: string; s
             <p className="text-xs font-bold uppercase tracking-[0.14em] text-copper">{firstTimeOffer.title}</p>
             <p className="mt-2 text-xl font-semibold tracking-[-0.02em] text-navy">{firstTimeOffer.headline}</p>
           </div>
-          <BookingLink categoryId={categoryId} serviceId={serviceId} variant="primary">Claim this offer</BookingLink>
+          <BookingLink categoryId={categoryId} serviceId={serviceId} offer variant="primary">Claim this offer</BookingLink>
         </div>
       </Container>
     </section>
@@ -137,7 +137,7 @@ export function ServiceRegion() {
       <Container>
         <div className="grid gap-8 rounded-panel border border-steel bg-surface p-8 shadow-soft sm:p-10 lg:grid-cols-[1fr_2fr] lg:items-end">
           <div><p className="eyebrow">Regional service</p><h2 id="region-heading" className="mt-4 text-3xl font-semibold tracking-[-0.03em] text-navy">Across five Northeast states.</h2><Link className="text-link mt-5 inline-flex" href="/service-areas">View service-area details</Link></div>
-          <div><ul className="grid grid-cols-2 gap-3 sm:grid-cols-5">{serviceAreas.map((area) => <li key={area.code} className="border-t border-steel pt-3"><span className="block text-xs font-bold tracking-[0.16em] text-copper">{area.code}</span><span className="mt-2 block text-sm font-semibold text-navy">{area.state}</span></li>)}</ul><p className="mt-5 text-sm leading-6 text-slate">County coverage is confirmed in the service-area directory. Exact ZIP-level availability is confirmed when you request service.</p></div>
+          <div><ul className="grid grid-cols-2 gap-3 sm:grid-cols-5">{serviceAreas.map((area) => <li key={area.code} className="border-t border-steel pt-3"><span className="block text-xs font-bold tracking-[0.16em] text-copper">{area.code}</span><span className="mt-2 block text-sm font-semibold text-navy">{area.state}</span></li>)}</ul><p className="mt-5 text-sm leading-6 text-slate">County coverage is confirmed in the service-area directory. Exact ZIP-level availability is confirmed when you book.</p></div>
         </div>
       </Container>
     </section>
@@ -173,13 +173,13 @@ export function FinalServiceCta({ title = "Ready for a clearer next step?", cate
       <Container>
         <div className="flex flex-col items-start justify-between gap-10 rounded-hero bg-brand-dark p-8 text-white sm:p-12 lg:flex-row lg:items-end lg:p-16">
           <div>
-            <p className="text-xs font-bold uppercase tracking-[0.14em] text-white/75">Request service</p>
+            <p className="text-xs font-bold uppercase tracking-[0.14em] text-white/75">Call or book now</p>
             <h2 className="mt-5 max-w-4xl text-balance text-[clamp(2.25rem,5vw,3.75rem)] font-semibold leading-[1.05] tracking-[-0.03em]">{title}</h2>
             <p className="mt-6 max-w-xl text-lg leading-8 text-white/65">Tell us what you are noticing. Service availability and scheduling are confirmed separately.</p>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row">
             {contact.phoneHref && <a href={contact.phoneHref} className="inline-flex min-h-12 items-center justify-center gap-2 rounded-control bg-white px-6 text-sm font-semibold text-navy transition-colors hover:bg-copper hover:text-white"><PhoneIcon className="size-4" />{contact.phone}</a>}
-            <BookingLink categoryId={categoryId} serviceId={serviceId} variant="invert">Request service</BookingLink>
+            <BookingLink categoryId={categoryId} serviceId={serviceId} variant="outline-invert" />
           </div>
         </div>
       </Container>

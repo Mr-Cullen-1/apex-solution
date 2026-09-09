@@ -7,6 +7,10 @@ export const availability = {
   emergencyLabel: "Emergency Same-Day Service",
   emergencyDetail: "We arrive ASAP.",
   heroExperience: "8+ Years Technician Experience",
+  // Distinguishes online-form availability from live phone-line hours — do not
+  // claim 24/7 phone support, only 24/7 Book Now form availability.
+  bookOnlineLabel: "Book Online 24/7",
+  phoneHoursLabel: "Phone Hours: 9 AM – Midnight",
 } as const;
 
 export const credentials = [

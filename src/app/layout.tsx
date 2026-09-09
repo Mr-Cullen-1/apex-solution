@@ -3,21 +3,30 @@ import { GeistSans } from "geist/font/sans";
 import { Footer } from "@/components/layout/footer";
 import { MobileActionBar } from "@/components/layout/mobile-action-bar";
 import { SiteHeader } from "@/components/navigation/site-header";
-import { company } from "@/content/company";
+import { company, homeMeta } from "@/content/company";
+import { siteUrl } from "@/content/site-url";
+import { BookNowProvider } from "@/features/booking/book-now-context";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
+  metadataBase: new URL(siteUrl),
   title: {
-    default: `${company.name} | Premium Home Comfort`,
+    default: homeMeta.title,
     template: `%s | ${company.name}`,
   },
-  description: company.description,
+  description: homeMeta.description,
+  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     siteName: company.name,
-    title: `${company.name} | Premium Home Comfort`,
-    description: company.description,
+    title: homeMeta.title,
+    description: homeMeta.description,
+    url: "/",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: homeMeta.title,
+    description: homeMeta.description,
   },
 };
 
@@ -26,10 +35,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en" className={`${GeistSans.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col">
         <a className="skip-link" href="#main-content">Skip to content</a>
-        <SiteHeader />
-        {children}
-        <Footer />
-        <MobileActionBar />
+        <BookNowProvider>
+          <SiteHeader />
+          {children}
+          <Footer />
+          <MobileActionBar />
+        </BookNowProvider>
       </body>
     </html>
   );

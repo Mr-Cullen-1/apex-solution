@@ -81,8 +81,6 @@ export type SupportedBrandGroup = {
 };
 export type Review = { id: string; quote: string; author: string; location: string | null; rating: number; source: string; verified: boolean; date: string | null };
 export type FAQ = { id: string; question: string; answer: string };
-export type Project = { id: string; title: string; service: string; location: string | null; summary: string; mediaId: string; status: "concept" | "verified" };
-export type ResourceArticle = { slug: string; title: string; excerpt: string; category: string; publishedAt: string | null; status: "planned" | "published"; mediaId: string };
 
 export type MediaAsset = {
   id: string;

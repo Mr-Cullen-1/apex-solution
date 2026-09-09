@@ -10,12 +10,13 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { media } from "@/content/media";
 import { customerProblems, primaryServices } from "@/content/services";
 import { serviceAreas, supportedBrands } from "@/content/site";
+import { sharedOpenGraph } from "@/content/social-meta";
 
 export const metadata: Metadata = {
   title: "Home Services",
-  description: "Explore appliance repair, cooling, heating, plumbing, and indoor air quality services from Apex Home Services.",
+  description: "Explore appliance repair, cooling, heating, plumbing, and indoor air quality services from Apex Home Support.",
   alternates: { canonical: "/services" },
-  openGraph: { title: "Home Services", description: "Explore appliance repair, cooling, heating, plumbing, and indoor air quality services from Apex Home Services.", url: "/services" },
+  openGraph: { ...sharedOpenGraph, title: "Home Services", description: "Explore appliance repair, cooling, heating, plumbing, and indoor air quality services from Apex Home Support.", url: "/services" },
   robots: { index: true, follow: true },
 };
 
@@ -26,7 +27,7 @@ export default function ServicesPage() {
       <section className="bg-page-bg pb-16 pt-6 sm:pb-24 sm:pt-8">
         <Container>
           <div className="grid gap-12 overflow-hidden rounded-hero border border-steel bg-surface p-8 shadow-hero sm:p-12 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:p-0">
-            <div className="lg:p-14"><p className="eyebrow">Apex service directory</p><h1 className="mt-5 max-w-xl text-balance text-[clamp(2.5rem,6vw,4.5rem)] font-semibold leading-[1.02] tracking-[-0.03em] text-navy">The right care for the systems behind your home.</h1><p className="mt-7 max-w-2xl text-lg leading-8 text-slate">Explore confirmed Apex service categories, or start with the symptom you are noticing. Specific availability is confirmed during the request process.</p><div className="mt-9 flex flex-col gap-3 sm:flex-row"><BookingLink>Request service</BookingLink><ButtonLink href="#category-heading" variant="secondary" showArrow={false}>Browse services</ButtonLink></div></div>
+            <div className="lg:p-14"><p className="eyebrow">Apex service directory</p><h1 className="mt-5 max-w-xl text-balance text-[clamp(2.5rem,6vw,4.5rem)] font-semibold leading-[1.02] tracking-[-0.03em] text-navy">The right care for the systems behind your home.</h1><p className="mt-7 max-w-2xl text-lg leading-8 text-slate">Explore confirmed Apex service categories, or start with the symptom you are noticing. Specific availability is confirmed during the request process.</p><div className="mt-9 flex flex-col gap-3 sm:flex-row"><BookingLink /><ButtonLink href="#category-heading" variant="secondary" showArrow={false}>Browse services</ButtonLink></div></div>
             <div className="relative min-h-72 overflow-hidden lg:min-h-[28rem]"><Image src={media.applianceService.src} alt={media.applianceService.alt} fill priority sizes="(min-width:1024px) 42vw, 100vw" className="object-cover" style={{ objectPosition: media.applianceService.focalPoint }} /></div>
           </div>
         </Container>

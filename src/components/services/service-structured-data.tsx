@@ -1,8 +1,8 @@
 import { company } from "@/content/company";
 import { serviceAreas } from "@/content/site";
+import { siteUrl as baseUrl } from "@/content/site-url";
 
 export function ServiceStructuredData({ name, description, path }: { name: string; description: string; path: string }) {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
   const data = {
     "@context": "https://schema.org",
     "@type": "Service",

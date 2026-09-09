@@ -1,10 +1,10 @@
-import type { BookingPayload, SubmissionResult } from "./types";
+import type { BookNowPayload, SubmissionResult } from "./types";
 
-export async function submitServiceRequest(payload: BookingPayload): Promise<SubmissionResult> {
+export async function submitBookNowRequest(payload: BookNowPayload): Promise<SubmissionResult> {
   void payload;
   return {
     ok: false,
     status: "not_configured",
-    message: "Your request details are ready, but online submission is not connected yet. Apex has not received this request.",
+    message: "Thanks — we received your request details, but online submission is not connected yet. Apex has not received this request. Please call us directly to reach the team right away.",
   };
 }

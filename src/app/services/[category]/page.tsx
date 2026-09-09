@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ServiceCategoryPage } from "@/components/services/service-category-page";
 import { getServiceCategory, primaryServices } from "@/content/services";
+import { sharedOpenGraph } from "@/content/social-meta";
 
 export const dynamicParams = false;
 type CategoryPageProps = { params: Promise<{ category: string }> };
@@ -14,7 +15,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   const { category: slug } = await params;
   const category = getServiceCategory(slug);
   if (!category) return {};
-  return { title: category.seo.title, description: category.seo.description, alternates: { canonical: category.href }, openGraph: { title: category.seo.title, description: category.seo.description, url: category.href }, robots: { index: true, follow: true } };
+  return { title: category.seo.title, description: category.seo.description, alternates: { canonical: category.href }, openGraph: { ...sharedOpenGraph, title: category.seo.title, description: category.seo.description, url: category.href }, robots: { index: true, follow: true } };
 }
 
 export default async function CategoryPage({ params }: CategoryPageProps) {

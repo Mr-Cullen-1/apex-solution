@@ -9,11 +9,12 @@ import { company, contact } from "@/content/company";
 import { brandMark } from "@/content/brand";
 import { availability } from "@/content/trust";
 import { BookingLink } from "@/components/ui/booking-link";
-import { bookingEntry } from "@/content/cta";
+import { useBookNow } from "@/features/booking/book-now-context";
 import { Container } from "@/components/ui/container";
 import { ArrowRightIcon, ChevronDownIcon, CloseIcon, MenuIcon, PhoneIcon } from "@/components/ui/icons";
 
 export function SiteHeader() {
+  const { open: openBookNow } = useBookNow();
   const [megaOpen, setMegaOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [expandedService, setExpandedService] = useState<string | null>("services");
@@ -123,28 +124,33 @@ export function SiteHeader() {
             </ul>
           </nav>
 
-          <div className="hidden items-center gap-3 2xl:gap-4 xl:flex">
-            <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-ink-muted">
+          {/* Conversion actions: Call + Book Now stay visible from tablet (md) up,
+             per the client requirement that they never hide behind the hamburger.
+             Live Now and the full nav are desktop-only (xl). */}
+          <div className="flex items-center gap-2 sm:gap-3">
+            <span className="hidden items-center gap-1.5 text-xs font-semibold text-ink-muted xl:inline-flex">
               <span className="relative flex size-1.5"><span aria-hidden="true" className="absolute inline-flex size-1.5 rounded-full bg-status-live motion-safe:animate-[pulse-dot_1.8s_ease-in-out_infinite]" /></span>
               {availability.liveNowLabel}
             </span>
             {contact.phoneHref && (
-              <a href={contact.phoneHref} className="group inline-flex min-h-11 items-center gap-2 rounded-control bg-copper px-4 text-sm font-bold text-white transition-transform duration-300 hover:-translate-y-0.5">
+              <a href={contact.phoneHref} className="hidden min-h-11 items-center gap-2 rounded-control bg-copper px-4 text-sm font-bold text-white transition-transform duration-300 hover:-translate-y-0.5 md:inline-flex">
                 <PhoneIcon className="size-4" />{contact.phone}
               </a>
             )}
-            <BookingLink variant="primary" showArrow={false}>{bookingEntry.label}</BookingLink>
+            <span className="hidden md:inline-flex">
+              <BookingLink variant="primary" showArrow={false} />
+            </span>
+            <button
+              ref={mobileButtonRef}
+              type="button"
+              className="grid size-12 shrink-0 place-items-center rounded-control text-navy xl:hidden"
+              aria-label="Open navigation"
+              aria-expanded={mobileOpen}
+              onClick={() => setMobileOpen(true)}
+            >
+              <MenuIcon className="size-6" />
+            </button>
           </div>
-          <button
-            ref={mobileButtonRef}
-            type="button"
-            className="grid size-12 shrink-0 place-items-center rounded-control text-navy xl:hidden"
-            aria-label="Open navigation"
-            aria-expanded={mobileOpen}
-            onClick={() => setMobileOpen(true)}
-          >
-            <MenuIcon className="size-6" />
-          </button>
         </div>
       </Container>
 
@@ -159,9 +165,9 @@ export function SiteHeader() {
             <p className="eyebrow">How can we help?</p>
             <p className="mt-4 text-3xl font-semibold tracking-[-0.03em] text-navy">Comfort starts with clarity.</p>
             <p className="mt-4 text-sm leading-6 text-slate">Not sure where to begin? Tell us what is happening and start a guided service request.</p>
-            <Link className="group mt-7 inline-flex items-center gap-3 text-sm font-semibold text-navy" href={bookingEntry.href} onClick={() => setMegaOpen(false)}>
-              Start your request <ArrowRightIcon className="size-5 transition-transform group-hover:translate-x-1" />
-            </Link>
+            <button type="button" className="group mt-7 inline-flex items-center gap-3 text-sm font-semibold text-navy" onClick={() => { setMegaOpen(false); openBookNow(); }}>
+              Book Now <ArrowRightIcon className="size-5 transition-transform group-hover:translate-x-1" />
+            </button>
           </div>
           <div className="grid grid-cols-5 gap-7">
             {primaryServices.map((service) => (

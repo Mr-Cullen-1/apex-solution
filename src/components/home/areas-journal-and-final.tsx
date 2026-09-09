@@ -5,8 +5,6 @@ import { FAQAccordion } from "./faq-accordion";
 import { ServiceAreaExplorer } from "./service-area-explorer";
 
 export function AreasJournalAndFinal() {
-  const publicFaqs = faqs.filter(({ id }) => id !== "apex-care" && id !== "financing");
-
   return (
     <>
       <ServiceAreaExplorer />
@@ -16,7 +14,7 @@ export function AreasJournalAndFinal() {
           <div>
             <SectionHeading eyebrow="Questions, answered" title="A clearer way forward." description="Start with the essentials about choosing a service, coverage, and preparing your request." />
           </div>
-          <FAQAccordion items={publicFaqs} />
+          <FAQAccordion items={faqs} />
         </Container>
       </section>
     </>

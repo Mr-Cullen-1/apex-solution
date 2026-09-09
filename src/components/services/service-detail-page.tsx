@@ -30,7 +30,7 @@ export function ServiceDetailPage({ category, service }: { category: ServiceCate
       <RelevantBrands groupIds={service.brandGroupIds} />
       <ServiceRegion />
       <ServiceFaqs items={service.faqs} />
-      <FinalServiceCta title={`Request ${service.name.toLowerCase()} service.`} serviceId={service.id} />
+      <FinalServiceCta title={`Book ${service.name.toLowerCase()} service.`} serviceId={service.id} />
     </main>
   );
 }

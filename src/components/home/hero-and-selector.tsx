@@ -35,7 +35,7 @@ export function Hero() {
                     <PhoneIcon className="size-4" /> Call Now — {contact.phone}
                   </a>
                 )}
-                <BookingLink variant="text">Request service</BookingLink>
+                <BookingLink variant="text" />
               </div>
               <p className="mt-6 flex items-center gap-2 text-sm text-slate">
                 <span className="relative flex size-2"><span aria-hidden="true" className="absolute inline-flex size-2 rounded-full bg-status-live motion-safe:animate-[pulse-dot_1.8s_ease-in-out_infinite]" /></span>
