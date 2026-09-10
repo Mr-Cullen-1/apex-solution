@@ -155,12 +155,11 @@ export function BookNowModal({ isOpen, categoryId, serviceId, offer, onClose }: 
             <form onSubmit={handleSubmit} noValidate>
               {errors.form && <p className="mb-3 rounded-control border-l-2 border-copper bg-page-bg px-4 py-2.5 text-sm font-semibold text-navy">{errors.form}</p>}
               <div className="grid grid-cols-1 gap-x-4 gap-y-3 sm:grid-cols-2 [@media(max-height:700px)]:gap-y-1.5">
-                <Field label="First name" htmlFor="bn-firstName" error={errors.firstName}>
-                  <input id="bn-firstName" autoComplete="given-name" className={fieldClass} value={draft.firstName} onChange={(event) => update("firstName", event.target.value)} />
-                </Field>
-                <Field label="Last name" htmlFor="bn-lastName" optional>
-                  <input id="bn-lastName" autoComplete="family-name" className={fieldClass} value={draft.lastName} onChange={(event) => update("lastName", event.target.value)} />
-                </Field>
+                <div className="sm:col-span-2">
+                  <Field label="Full Name" htmlFor="bn-fullName" error={errors.fullName}>
+                    <input id="bn-fullName" autoComplete="name" className={fieldClass} value={draft.fullName} onChange={(event) => update("fullName", event.target.value)} />
+                  </Field>
+                </div>
                 <Field label="Phone number" htmlFor="bn-phone" error={errors.phone}>
                   <input id="bn-phone" type="tel" inputMode="tel" autoComplete="tel" className={fieldClass} value={draft.phone} onChange={(event) => update("phone", event.target.value)} />
                 </Field>

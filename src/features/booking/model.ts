@@ -37,7 +37,7 @@ export function resolveBookingContext({ categoryId, serviceId, offer }: { catego
 }
 
 export function createBookNowDraft(): BookNowDraft {
-  return { firstName: "", lastName: "", phone: "", email: "", zipCode: "", message: "", serviceTextConsent: false };
+  return { fullName: "", phone: "", email: "", zipCode: "", message: "", serviceTextConsent: false };
 }
 
 function text(value: unknown) {
@@ -47,8 +47,7 @@ function text(value: unknown) {
 export function normalizeBookNowPayload(value: unknown): BookNowPayload {
   const input = value && typeof value === "object" ? value as Partial<Record<keyof BookNowPayload, unknown>> : {};
   return {
-    firstName: text(input.firstName).slice(0, 80),
-    lastName: text(input.lastName).slice(0, 80),
+    fullName: text(input.fullName).slice(0, 120),
     phone: text(input.phone).slice(0, 40),
     email: text(input.email).slice(0, 160).toLowerCase(),
     zipCode: text(input.zipCode).slice(0, 10),
@@ -66,7 +65,7 @@ const zipPattern = /^\d{5}$/;
 
 export function validateBookNowPayload(payload: BookNowPayload): BookNowErrors {
   const errors: BookNowErrors = {};
-  if (!payload.firstName) errors.firstName = "Enter your first name.";
+  if (!payload.fullName) errors.fullName = "Enter your full name.";
   if (!payload.phone) errors.phone = "Enter a phone number so we can reach you.";
   else if (!phonePattern.test(payload.phone)) errors.phone = "Enter a valid phone number.";
   if (!payload.zipCode) errors.zipCode = "Enter your ZIP code.";

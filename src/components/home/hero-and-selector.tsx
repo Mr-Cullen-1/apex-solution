@@ -9,7 +9,7 @@ import { serviceAreas } from "@/content/site";
 import { availability } from "@/content/trust";
 
 export function Hero() {
-  const slides = [media.northeastHvac, media.applianceService, media.serviceDetail].map((asset) => ({
+  const slides = [media.northeastHvac, media.applianceService, media.serviceDetail, media.realApplianceGeneric].map((asset) => ({
     src: asset.src,
     alt: asset.alt,
     focalPoint: asset.focalPoint,

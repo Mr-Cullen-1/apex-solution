@@ -29,7 +29,7 @@ export function ServicesGrid() {
             overlayArrowTopClassName="top-[5.5rem] -translate-y-1/2"
           >
             {primaryServices.map((service) => {
-              const asset = media[service.mediaId as MediaId] ?? media.serviceDetail;
+              const asset = media[(service.cardMediaId ?? service.mediaId) as MediaId] ?? media.serviceDetail;
               return (
                 <CarouselItem key={service.id} className="w-full basis-full sm:basis-[calc((100%-1.25rem)/2)] lg:basis-[calc((100%-2.5rem)/3)]">
                   <Link href={service.href} className="group flex h-full flex-col overflow-hidden rounded-panel border border-steel bg-surface shadow-soft transition-transform duration-300 hover:-translate-y-1">

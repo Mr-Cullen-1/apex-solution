@@ -55,6 +55,128 @@ export const media = {
     focalPoint: "36% 50%",
     temporary: true,
   },
+  // Real client-supplied photography (from /real images), copied to
+  // /public/images/real with normalized lowercase, space-free filenames for
+  // Vercel/Linux path safety. Not "temporary" — these are approved, permanent assets.
+  realAcCleaning: {
+    id: "real-ac-cleaning",
+    src: "/images/real/ac-cleaning-card.jpg",
+    alt: "Technician on a ladder using a multimeter to service an outdoor AC condenser unit",
+    width: 1200,
+    height: 1800,
+    focalPoint: "50% 72%",
+    temporary: false,
+  },
+  realHeatingUnit: {
+    id: "real-heating-unit",
+    src: "/images/real/heating-card.png",
+    alt: "Apex technician connecting refrigerant gauges to an outdoor heat pump unit",
+    width: 1086,
+    height: 1448,
+    focalPoint: "62% 45%",
+    temporary: false,
+  },
+  realApplianceOven: {
+    id: "real-appliance-oven",
+    src: "/images/real/appliance-oven-card.jpg",
+    alt: "Technician using a diagnostic tool to inspect an open range oven",
+    width: 1200,
+    height: 1600,
+    focalPoint: "55% 55%",
+    temporary: false,
+  },
+  realApplianceGeneric: {
+    id: "real-appliance-generic",
+    src: "/images/real/appliance-card.jpg",
+    alt: "Technician inspecting the interior of an open refrigerator in a home kitchen",
+    width: 1200,
+    height: 1600,
+    focalPoint: "45% 55%",
+    temporary: false,
+  },
+  realResultDryerBefore: {
+    id: "real-result-dryer-before",
+    src: "/images/real/before-appliances.jpg",
+    alt: "A dryer lint trap housing heavily clogged with compacted lint before cleaning",
+    width: 960,
+    height: 1280,
+    focalPoint: "50% 45%",
+    temporary: false,
+  },
+  realResultDryerAfter: {
+    id: "real-result-dryer-after",
+    src: "/images/real/after-appliances.jpg",
+    alt: "The same dryer lint trap housing fully cleaned after service",
+    width: 960,
+    height: 1280,
+    focalPoint: "50% 45%",
+    temporary: false,
+  },
+  realResultHvacBefore: {
+    id: "real-result-hvac-before",
+    src: "/images/real/before-hvac-maintenance.jpg",
+    alt: "A dusty, dirt-caked outdoor AC condenser coil before cleaning",
+    width: 960,
+    height: 1280,
+    focalPoint: "50% 50%",
+    temporary: false,
+  },
+  realResultHvacAfter: {
+    id: "real-result-hvac-after",
+    src: "/images/real/after-hvac-maintenance.jpg",
+    alt: "The outdoor AC condenser coil visibly cleaner after maintenance",
+    width: 1920,
+    height: 2560,
+    focalPoint: "50% 50%",
+    temporary: false,
+  },
+  // No dedicated indoor-air-quality photo was supplied. This reuses the Apex Results
+  // "after" HVAC-coil asset with a distinct id, alt text, and focal point (tight on the
+  // intake grille/fin texture rather than the full coil reveal used in Results) so the
+  // Services card reads as credible HVAC/air-system context without duplicating the
+  // Results card's framing or claiming a specific indoor-air-quality job was photographed.
+  realAirSystemGrille: {
+    id: "real-air-system-grille",
+    src: "/images/real/after-hvac-maintenance.jpg",
+    alt: "Close-up of an HVAC unit's intake grille and coil fins",
+    width: 1920,
+    height: 2560,
+    focalPoint: "40% 38%",
+    temporary: false,
+  },
+  // Dedicated homepage-services-card crops (~2.2:1) for the 3 real photos whose source
+  // aspect ratio is too tall/portrait to survive the card's short image band (h-44) via
+  // object-position alone — a single ~28%-tall slice of the source couldn't fit both the
+  // equipment and the technician action. Pre-cropped once at full resolution (no upscale,
+  // no stretch) instead of fighting object-fit: cover. The category-hero pages keep using
+  // the original full-frame assets above via `mediaId`; these are card-only overrides.
+  realApplianceOvenCard: {
+    id: "real-appliance-oven-card",
+    src: "/images/real/appliance-oven-card-wide.jpg",
+    alt: "Technician using a diagnostic tool to inspect an open range oven",
+    width: 1200,
+    height: 545,
+    focalPoint: "50% 50%",
+    temporary: false,
+  },
+  realHeatingUnitCard: {
+    id: "real-heating-unit-card",
+    src: "/images/real/heating-card-wide.jpg",
+    alt: "Apex technician connecting refrigerant gauges to an outdoor heat pump unit",
+    width: 1086,
+    height: 494,
+    focalPoint: "50% 50%",
+    temporary: false,
+  },
+  realAirSystemGrilleCard: {
+    id: "real-air-system-grille-card",
+    src: "/images/real/air-system-grille-wide.jpg",
+    alt: "The rounded intake grille and coil fins on top of an outdoor HVAC unit",
+    width: 1920,
+    height: 873,
+    focalPoint: "50% 50%",
+    temporary: false,
+  },
 } satisfies Record<string, MediaAsset>;
 
 export type MediaId = keyof typeof media;

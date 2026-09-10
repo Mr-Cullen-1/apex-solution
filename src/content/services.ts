@@ -117,7 +117,7 @@ const coolingProblems: readonly ServiceProblem[] = [
 export const primaryServices: readonly ServiceCategory[] = [
   {
     id: "appliance-repair", name: "Appliance Repair", slug: "appliance-repair", href: "/services/appliance-repair", shortDescription: "Professional diagnostic service for household appliances.",
-    description: "Apex Home Support works on a confirmed range of standard and premium appliance brands. Service begins with the appliance, symptoms, and a careful review of possible next steps.", mediaId: "applianceService", brandGroupIds: ["appliances", "premium-appliances"], children: [], layout: "image-led", status: "published",
+    description: "Apex Home Support works on a confirmed range of standard and premium appliance brands. Service begins with the appliance, symptoms, and a careful review of possible next steps.", mediaId: "realApplianceOven", cardMediaId: "realApplianceOvenCard", brandGroupIds: ["appliances", "premium-appliances"], children: [], layout: "image-led", status: "published",
     problems: [
       { id: "appliance-not-cooling", label: "An appliance is not cooling", description: "Cooling changes can justify a professional appliance inspection.", href: "/services/appliance-repair" },
       { id: "appliance-not-starting", label: "An appliance is not starting", description: "Power and operating symptoms can have several possible service areas.", href: "/services/appliance-repair" },
@@ -129,13 +129,13 @@ export const primaryServices: readonly ServiceCategory[] = [
   },
   {
     id: "cooling", name: "Cooling", slug: "cooling", href: "/services/cooling", shortDescription: "Cooling diagnostics, repair, installation, maintenance, and replacement.",
-    description: "Residential cooling service built around clear symptoms, careful inspection, and practical discussions about repair, care, or equipment options.", mediaId: "northeastHvac", brandGroupIds: ["hvac"], children: [acRepair, acInstallation, acMaintenance, acReplacement], problems: coolingProblems, layout: "image-led", status: "published",
+    description: "Residential cooling service built around clear symptoms, careful inspection, and practical discussions about repair, care, or equipment options.", mediaId: "realAcCleaning", brandGroupIds: ["hvac"], children: [acRepair, acInstallation, acMaintenance, acReplacement], problems: coolingProblems, layout: "image-led", status: "published",
     faqs: [visitFaq, { question: "Do cooling symptoms identify the exact problem?", answer: "No. Similar symptoms can have different causes, so an inspection may be appropriate before choosing a service path." }],
     seo: { title: "Residential Cooling Services", description: "Browse AC repair, installation, maintenance, and replacement services from Apex Home Support." },
   },
   {
     id: "heating", name: "Heating", slug: "heating", href: "/services/heating", shortDescription: "Furnace, heat-pump, and seasonal heating service.",
-    description: "Heating service for changing performance, preventive seasonal attention, and thoughtful equipment discussions.", mediaId: "serviceDetail", brandGroupIds: ["hvac"], children: [furnaceRepair, heatPumps, heatingMaintenance], layout: "technical", status: "published",
+    description: "Heating service for changing performance, preventive seasonal attention, and thoughtful equipment discussions.", mediaId: "realHeatingUnit", cardMediaId: "realHeatingUnitCard", brandGroupIds: ["hvac"], children: [furnaceRepair, heatPumps, heatingMaintenance], layout: "technical", status: "published",
     problems: [
       { id: "no-heat", label: "The home is not heating", description: "A heating inspection can help clarify the relevant system condition.", href: furnaceRepair.href },
       { id: "heating-noise", label: "The heating system sounds different", description: "New sounds are useful service context but not a remote diagnosis.", href: furnaceRepair.href },
@@ -157,7 +157,7 @@ export const primaryServices: readonly ServiceCategory[] = [
   },
   {
     id: "air-quality", name: "Indoor Air Quality", slug: "air-quality", href: "/services/air-quality", shortDescription: "Thoughtful service for cleaner, more balanced indoor air.",
-    description: "Indoor air quality and airflow concerns can involve the home, comfort system, and the way spaces are used. A professional conversation can help organize the next step.", mediaId: "homeInterior", brandGroupIds: ["hvac"], children: [], layout: "directory", status: "published",
+    description: "Indoor air quality and airflow concerns can involve the home, comfort system, and the way spaces are used. A professional conversation can help organize the next step.", mediaId: "realAirSystemGrille", cardMediaId: "realAirSystemGrilleCard", brandGroupIds: ["hvac"], children: [], layout: "directory", status: "published",
     problems: [
       { id: "uneven-comfort", label: "Rooms feel uneven or uncomfortable", description: "Airflow and indoor comfort concerns can have several possible service areas.", href: "/services/air-quality" },
       { id: "air-concerns", label: "The air feels stale or difficult to balance", description: "Share what you notice and where it occurs to begin a service conversation.", href: "/services/air-quality" },

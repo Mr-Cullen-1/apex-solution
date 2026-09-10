@@ -1,8 +1,8 @@
 import type { MediaId } from "./media";
 
-// No customer-approved before/after photography exists yet. beforeMediaId/afterMediaId
-// stay null so the UI never presents a fabricated completed job — populate them only
-// with real, customer-consented photography.
+// Only genuine, client-approved before/after photography is listed here. beforeMediaId/
+// afterMediaId stay null (with a sampleMediaId fallback) for any job that doesn't yet have
+// approved real photos, so the UI never presents a fabricated completed job.
 //
 // sampleMediaId is a SEPARATE, clearly-labeled field: an existing repo stock photo shown
 // only so the card isn't visually blank while real photos are pending. The UI must always
@@ -17,10 +17,9 @@ export type ApexResult = {
   sampleMediaId: MediaId | null;
 };
 
+// Two real, approved before/after pairs exist today. Do not pad this list with fake or
+// generic sample jobs to hit a round number — the UI renders gracefully with any count.
 export const apexResults: ApexResult[] = [
-  { id: "outdoor-ac-cleaning", category: "Cooling", label: "Outdoor AC unit cleaning", caption: "Verified before-and-after photos will appear here once approved.", beforeMediaId: null, afterMediaId: null, sampleMediaId: "northeastHvac" },
-  { id: "refrigerator", category: "Appliance Repair", label: "Refrigerator", caption: "Verified before-and-after photos will appear here once approved.", beforeMediaId: null, afterMediaId: null, sampleMediaId: "applianceService" },
-  { id: "dryer", category: "Appliance Repair", label: "Dryer", caption: "Verified before-and-after photos will appear here once approved.", beforeMediaId: null, afterMediaId: null, sampleMediaId: "heroTechnician" },
-  { id: "washer", category: "Appliance Repair", label: "Washer", caption: "Verified before-and-after photos will appear here once approved.", beforeMediaId: null, afterMediaId: null, sampleMediaId: "homeInterior" },
-  { id: "furnace", category: "Heating", label: "Furnace", caption: "Verified before-and-after photos will appear here once approved.", beforeMediaId: null, afterMediaId: null, sampleMediaId: "serviceDetail" },
+  { id: "outdoor-ac-cleaning", category: "Cooling", label: "Outdoor AC Unit Cleaning", caption: "A dirty outdoor condenser coil cleaned to restore proper airflow.", beforeMediaId: "realResultHvacBefore", afterMediaId: "realResultHvacAfter", sampleMediaId: null },
+  { id: "dryer-vent-cleaning", category: "Appliance Repair", label: "Dryer Vent Cleaning", caption: "A dryer lint trap clogged with compacted lint, cleaned to help reduce fire risk and restore airflow.", beforeMediaId: "realResultDryerBefore", afterMediaId: "realResultDryerAfter", sampleMediaId: null },
 ];

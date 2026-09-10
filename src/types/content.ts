@@ -58,6 +58,10 @@ export type ServiceCategory = {
   shortDescription: string;
   description: string;
   mediaId: string;
+  /** Optional override for the homepage services-carousel card image only (category
+   * hero pages keep using `mediaId`). Use when the source photo's aspect ratio doesn't
+   * survive the card's short, wide image band without an awkward crop. */
+  cardMediaId?: string;
   brandGroupIds: readonly SupportedBrandGroup["id"][];
   problems: readonly ServiceProblem[];
   faqs: readonly ServiceFAQ[];

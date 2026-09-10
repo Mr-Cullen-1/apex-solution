@@ -1,6 +1,5 @@
 export type BookNowDraft = {
-  firstName: string;
-  lastName: string;
+  fullName: string;
   phone: string;
   email: string;
   zipCode: string;
