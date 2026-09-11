@@ -6,10 +6,10 @@ export const primaryNavigation: NavigationItem[] = [
     label: "Services",
     href: "/services",
     children: [
+      { label: "Appliance Repair", href: "/services/appliance-repair", description: "Diagnostic and repair service for household appliances." },
       { label: "Cooling", href: "/services/cooling", description: "Repair, installation, maintenance, and replacement." },
       { label: "Heating", href: "/services/heating", description: "Furnaces, heat pumps, and seasonal care." },
-      { label: "Plumbing", href: "/services/plumbing", description: "Water heaters, drains, and leak detection." },
-      { label: "Air Quality", href: "/services/air-quality", description: "Healthier, more balanced indoor air." },
+      { label: "Water Heater Repair", href: "/services/water-heater-repair", description: "Diagnostics and repair for residential water heaters." },
     ],
   },
   { label: "Service Areas", href: "/service-areas" },

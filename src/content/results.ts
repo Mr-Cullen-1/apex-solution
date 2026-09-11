@@ -17,9 +17,11 @@ export type ApexResult = {
   sampleMediaId: MediaId | null;
 };
 
-// Two real, approved before/after pairs exist today. Do not pad this list with fake or
+// Four real, approved before/after pairs exist today. Do not pad this list with fake or
 // generic sample jobs to hit a round number — the UI renders gracefully with any count.
 export const apexResults: ApexResult[] = [
   { id: "outdoor-ac-cleaning", category: "Cooling", label: "Outdoor AC Unit Cleaning", caption: "A dirty outdoor condenser coil cleaned to restore proper airflow.", beforeMediaId: "realResultHvacBefore", afterMediaId: "realResultHvacAfter", sampleMediaId: null },
   { id: "dryer-vent-cleaning", category: "Appliance Repair", label: "Dryer Vent Cleaning", caption: "A dryer lint trap clogged with compacted lint, cleaned to help reduce fire risk and restore airflow.", beforeMediaId: "realResultDryerBefore", afterMediaId: "realResultDryerAfter", sampleMediaId: null },
+  { id: "ice-maker-replacement", category: "Appliance Repair", label: "Ice Maker Replacement", caption: "A failed ice maker assembly replaced in a refrigerator freezer door.", beforeMediaId: "realResultIceMakerBefore", afterMediaId: "realResultIceMakerAfter", sampleMediaId: null },
+  { id: "refrigerator-control-board-replacement", category: "Appliance Repair", label: "Refrigerator Control Board Replacement", caption: "A refrigerator control board replaced and reinstalled to restore proper operation.", beforeMediaId: "realResultControlBoardBefore", afterMediaId: "realResultControlBoardAfter", sampleMediaId: null },
 ];

@@ -3,7 +3,7 @@ import type { ComponentPropsWithoutRef } from "react";
 import { ArrowRightIcon } from "./icons";
 
 type ButtonLinkProps = ComponentPropsWithoutRef<typeof Link> & {
-  variant?: "primary" | "secondary" | "call" | "invert" | "outline-invert" | "footer-outline" | "text";
+  variant?: "primary" | "secondary" | "call" | "invert" | "outline-invert" | "footer-outline" | "header-compact" | "text";
   showArrow?: boolean;
 };
 
@@ -26,6 +26,11 @@ export const buttonStyles: Record<NonNullable<ButtonLinkProps["variant"]>, strin
   // solid white CTA — used where the two sit side by side at small sizes
   // (the footer), where the subtler "outline-invert" border reads too faint.
   "footer-outline": `${buttonBase} rounded-control border border-white/60 bg-white/5 px-6 text-white hover:border-white hover:bg-white/15`,
+  // Fully self-contained (not a `primary` override via className — buttonBase's own
+  // min-h-12/px-6 would silently win the cascade over a caller's smaller utilities).
+  // Used for the mobile site-header Book Now trigger, which needs to be noticeably
+  // smaller than the standard button at the smallest viewport widths.
+  "header-compact": "group inline-flex min-h-9 shrink-0 items-center justify-center gap-1.5 whitespace-nowrap rounded-control bg-navy px-3 text-xs font-bold text-white transition-all duration-300 hover:bg-copper sm:min-h-11 sm:gap-2.5 sm:px-5 sm:text-sm sm:font-semibold",
   text: "group inline-flex items-center gap-2 text-sm font-semibold text-navy transition-colors duration-300 hover:text-copper",
 };
 

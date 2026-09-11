@@ -12,10 +12,10 @@ import { serviceAreas } from "@/content/site";
 import { sharedOpenGraph } from "@/content/social-meta";
 
 export const metadata: Metadata = {
-  title: "About Apex Home Support",
-  description: "Learn how Apex Home Support approaches residential service through clear communication, thoughtful diagnosis, and careful workmanship.",
+  title: `About ${company.name}`,
+  description: `Learn how ${company.name} connects homeowners with experienced independent local service professionals through clear communication and thoughtful next steps.`,
   alternates: { canonical: "/about" },
-  openGraph: { ...sharedOpenGraph, title: "About Apex Home Support", description: company.tagline, url: "/about" },
+  openGraph: { ...sharedOpenGraph, title: `About ${company.name}`, description: company.tagline, url: "/about" },
   robots: { index: true, follow: true },
 };
 
@@ -23,9 +23,9 @@ export default function AboutPage() {
   return (
     <main id="main-content" className="flex-1 bg-page-bg">
       <OrganizationStructuredData path="/about" />
-      <section className="bg-page-bg pb-16 pt-6 sm:pb-20 sm:pt-8"><Container><div className="max-w-5xl rounded-hero border border-steel bg-surface p-8 shadow-soft sm:p-12"><p className="eyebrow">About Apex Home Support</p><h1 className="mt-5 text-balance text-[clamp(2.5rem,6vw,4.5rem)] font-semibold leading-[1.02] tracking-[-0.03em] text-navy">Reliable home service starts with clarity.</h1><p className="mt-8 max-w-2xl text-xl leading-8 text-slate">{company.tagline} Apex brings multiple home-service categories into one considered, understandable experience.</p><BookingLink className="mt-9" /></div></Container></section>
+      <section className="bg-page-bg pb-16 pt-6 sm:pb-20 sm:pt-8"><Container><div className="max-w-5xl rounded-hero border border-steel bg-surface p-8 shadow-soft sm:p-12"><p className="eyebrow">About {company.name}</p><h1 className="mt-5 text-balance text-[clamp(2.5rem,6vw,4.5rem)] font-semibold leading-[1.02] tracking-[-0.03em] text-navy">Reliable home service starts with clarity.</h1><p className="mt-8 max-w-2xl text-xl leading-8 text-slate">{company.tagline} Apex helps homeowners connect with experienced independent local service professionals and move from a home-service problem to the right next step.</p><BookingLink className="mt-9" /></div></Container></section>
 
-      <section className="bg-page-bg section-y" aria-labelledby="purpose-heading"><Container className="grid gap-12 lg:grid-cols-[0.75fr_1.25fr] lg:gap-24"><SectionHeading id="purpose-heading" eyebrow="What Apex is here to do" title="Make the next home-service decision easier to understand." size="compact" /><div className="space-y-6 rounded-panel border border-steel bg-surface p-8 text-lg leading-8 text-slate shadow-soft"><p>Home systems and appliances can be technical. The service experience should still begin with clear questions, useful context, and practical next steps.</p><p>Apex organizes appliance, cooling, heating, plumbing, and indoor air quality requests around what homeowners notice—not around assumptions or remote diagnosis.</p><p>Recommendations, availability, and approved work belong to the service conversation. The website creates a straightforward way to reach that conversation without inventing answers in advance.</p></div></Container></section>
+      <section className="bg-page-bg section-y" aria-labelledby="purpose-heading"><Container className="grid gap-12 lg:grid-cols-[0.75fr_1.25fr] lg:gap-24"><SectionHeading id="purpose-heading" eyebrow="What Apex is here to do" title="Make the next home-service decision easier to understand." size="compact" /><div className="space-y-6 rounded-panel border border-steel bg-surface p-8 text-lg leading-8 text-slate shadow-soft"><p>Home systems and appliances can be technical. The service experience should still begin with clear questions, useful context, and practical next steps.</p><p>Apex organizes appliance, cooling, heating, and water-heater requests around what homeowners notice—not around assumptions or remote diagnosis—and makes it easier to find the right technician and coordinate a service request.</p><p>Services are performed by independent service providers, who are responsible for the work they perform. Recommendations, availability, and approved work belong to the service conversation, and the website creates a straightforward way to reach that conversation without inventing answers in advance.</p></div></Container></section>
 
       <section className="bg-brand-dark section-y text-white" aria-labelledby="standard-heading"><Container><SectionHeading id="standard-heading" eyebrow="The Apex Standard" title="Precision in the work. Respect in the experience." theme="dark" /><ol className="mt-14 grid gap-4 md:grid-cols-3">{apexStandard.map((item) => <li key={item.number} className="rounded-panel border border-white/15 bg-white/[0.04] p-8"><span className="text-xs font-bold tracking-[0.16em] text-white/75">{item.number}</span><h3 className="mt-8 text-2xl font-semibold tracking-[-0.03em]">{item.title}</h3><p className="mt-4 leading-7 text-white/60">{item.description}</p></li>)}</ol></Container></section>
 

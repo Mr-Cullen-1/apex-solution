@@ -7,14 +7,12 @@ import { brandMark } from "@/content/brand";
 import { company, contact } from "@/content/company";
 import { getServiceCategory } from "@/content/services";
 
-// Real, existing routes only — one column per real category, grouped so no
-// single-item category (Appliance Repair, Indoor Air Quality) ends up
-// floating alone on its own row. No invented service names.
+// Real, existing routes only — one column per active public service category.
+// No invented service names.
 const applianceRepair = getServiceCategory("appliance-repair");
-const airQuality = getServiceCategory("air-quality");
 const cooling = getServiceCategory("cooling");
 const heating = getServiceCategory("heating");
-const plumbing = getServiceCategory("plumbing");
+const waterHeaterRepair = getServiceCategory("water-heater-repair");
 
 const toGroup = (category: NonNullable<ReturnType<typeof getServiceCategory>>) => ({
   label: category.name,
@@ -26,24 +24,18 @@ export function Footer() {
     <footer className="bg-brand-dark pb-24 pt-10 text-white md:pb-10 md:pt-12">
       <Container>
         {/* Brand/description + the real service directory, one unified block.
-            Below xl the service columns share one sub-grid so no category
-            (Appliance Repair, Air Quality) is ever isolated on its own row;
-            at xl the sub-grid dissolves (`xl:contents`) so all five columns
+            Below xl the service columns share one sub-grid; at xl the sub-grid
+            dissolves (`xl:contents`) so all five columns (brand + 4 categories)
             sit in a single 1.3fr/0.9fr row. */}
         <div className="grid gap-8 xl:grid-cols-[1.3fr_0.9fr_0.9fr_0.9fr_0.9fr] xl:gap-8">
           <BrandColumn />
           <div className="grid grid-cols-2 gap-x-6 gap-y-8 md:grid-cols-4 xl:contents">
-            {applianceRepair && airQuality && (
-              <div className="space-y-7">
-                <FooterGroup {...toGroup(applianceRepair)} />
-                <FooterGroup {...toGroup(airQuality)} />
-              </div>
-            )}
+            {applianceRepair && <FooterGroup {...toGroup(applianceRepair)} />}
             {cooling && <FooterGroup {...toGroup(cooling)} />}
             {heating && <FooterGroup {...toGroup(heating)} />}
-            {plumbing && <FooterGroup {...toGroup(plumbing)} />}
+            {waterHeaterRepair && <FooterGroup {...toGroup(waterHeaterRepair)} />}
             {/* Call + Book Now: spans the last two columns (Heating +
-                Plumbing) so both buttons sit side by side at equal width —
+                Water Heater Repair) so both buttons sit side by side at equal width —
                 a single narrow column isn't wide enough for that and forced
                 them to wrap/stack. Hidden below `md`: the fixed mobile
                 action bar already shows the same Call | Book Now pair. */}

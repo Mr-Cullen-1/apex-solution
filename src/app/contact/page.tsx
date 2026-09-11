@@ -7,10 +7,10 @@ import { company, contact } from "@/content/company";
 import { sharedOpenGraph } from "@/content/social-meta";
 
 export const metadata: Metadata = {
-  title: "Contact Apex Home Support",
+  title: `Contact ${company.name}`,
   description: "Find the right path to request service, explore Apex services, check listed coverage, or ask about supported brands.",
   alternates: { canonical: "/contact" },
-  openGraph: { ...sharedOpenGraph, title: "Contact Apex Home Support", description: "Choose the right path for service, coverage, or equipment-brand questions.", url: "/contact" },
+  openGraph: { ...sharedOpenGraph, title: `Contact ${company.name}`, description: "Choose the right path for service, coverage, or equipment-brand questions.", url: "/contact" },
   robots: { index: true, follow: true },
 };
 

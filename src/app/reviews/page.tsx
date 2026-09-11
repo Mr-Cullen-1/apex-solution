@@ -10,9 +10,9 @@ import { sharedOpenGraph } from "@/content/social-meta";
 // as thin, fabricated social proof — see docs/PROJECT.md decision log.
 export const metadata: Metadata = {
   title: "Customer Reviews",
-  description: "Verified Apex Home Support customer reviews.",
+  description: "Verified Apex Home Services customer reviews.",
   alternates: { canonical: "/reviews" },
-  openGraph: { ...sharedOpenGraph, title: "Customer Reviews", description: "Verified Apex Home Support customer reviews.", url: "/reviews" },
+  openGraph: { ...sharedOpenGraph, title: "Customer Reviews", description: "Verified Apex Home Services customer reviews.", url: "/reviews" },
   robots: { index: reviews.length > 0, follow: true },
 };
 

@@ -10,7 +10,7 @@ export function BrandsWeService() {
       <Container>
         <div className="grid gap-10 lg:grid-cols-[0.72fr_1.28fr] lg:gap-16">
           <div>
-            <SectionHeading id="brands-heading" eyebrow="Brands we service" title={<>Familiar systems.<br />Careful service.</>} description="Apex Home Support works on a wide range of appliance and HVAC brands without implying a manufacturer authorization or partnership." />
+            <SectionHeading id="brands-heading" eyebrow="Brands we service" title={<>Familiar systems.<br />Careful service.</>} description="Apex Home Services works on a wide range of appliance and HVAC brands without implying a manufacturer authorization or partnership." />
             <div className="mt-8 flex flex-col gap-3 sm:flex-row lg:flex-col lg:items-start">
               <ButtonLink href="/brands" variant="primary">Browse all brands</ButtonLink>
               <ButtonLink href={contactEntry.href} variant="secondary">Contact us</ButtonLink>

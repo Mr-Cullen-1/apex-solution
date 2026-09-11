@@ -13,7 +13,7 @@ type BookingLinkProps = Omit<ComponentPropsWithoutRef<"button">, "type"> & {
    * shows "Regarding: First-Time Customer Offer — 10%" without the offer terms
    * themselves changing. */
   offer?: boolean;
-  variant?: "primary" | "secondary" | "call" | "invert" | "outline-invert" | "footer-outline" | "text";
+  variant?: "primary" | "secondary" | "call" | "invert" | "outline-invert" | "footer-outline" | "header-compact" | "text";
   showArrow?: boolean;
 };
 

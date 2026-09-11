@@ -37,7 +37,7 @@ export default async function Image() {
             lineHeight: 1.05,
           }}
         >
-          Apex Home Support
+          {company.name}
         </div>
         <div
           style={{
@@ -61,7 +61,7 @@ export default async function Image() {
             fontWeight: 700,
           }}
         >
-          Heating · Cooling · Plumbing · Appliance · Indoor Air Quality
+          Appliance · Cooling · Heating · Water Heater
         </div>
       </div>
     ),

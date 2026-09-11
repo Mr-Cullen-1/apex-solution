@@ -10,16 +10,16 @@ import { supportedBrands } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "Brands We Service",
-  description: "Browse appliance, premium-appliance, and HVAC brands serviced by Apex Home Support.",
+  description: "Browse appliance, premium-appliance, and HVAC brands serviced by Apex Home Services.",
   alternates: { canonical: "/brands" },
-  openGraph: { ...sharedOpenGraph, title: "Brands We Service", description: "A directory of appliance and HVAC brands serviced by Apex Home Support.", url: "/brands" },
+  openGraph: { ...sharedOpenGraph, title: "Brands We Service", description: "A directory of appliance and HVAC brands serviced by Apex Home Services.", url: "/brands" },
   robots: { index: true, follow: true },
 };
 
 const relationships = {
   appliances: [{ label: "Appliance Repair", href: "/services/appliance-repair" }],
   "premium-appliances": [{ label: "Appliance Repair", href: "/services/appliance-repair" }],
-  hvac: [{ label: "Cooling", href: "/services/cooling" }, { label: "Heating", href: "/services/heating" }, { label: "Indoor Air Quality", href: "/services/air-quality" }],
+  hvac: [{ label: "Cooling", href: "/services/cooling" }, { label: "Heating", href: "/services/heating" }],
 } as const;
 
 export default function BrandsPage() {

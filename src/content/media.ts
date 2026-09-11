@@ -69,11 +69,11 @@ export const media = {
   },
   realHeatingUnit: {
     id: "real-heating-unit",
-    src: "/images/real/heating-card.png",
+    src: "/images/real/heating-2-card.jpg",
     alt: "Apex technician connecting refrigerant gauges to an outdoor heat pump unit",
     width: 1086,
     height: 1448,
-    focalPoint: "62% 45%",
+    focalPoint: "62% 42%",
     temporary: false,
   },
   realApplianceOven: {
@@ -161,13 +161,16 @@ export const media = {
   },
   realHeatingUnitCard: {
     id: "real-heating-unit-card",
-    src: "/images/real/heating-card-wide.jpg",
-    alt: "Apex technician connecting refrigerant gauges to an outdoor heat pump unit",
+    src: "/images/real/heating-2-card-wide.jpg",
+    alt: "Apex technician connecting refrigerant gauges to an outdoor heat pump unit, head and shoulders fully visible",
     width: 1086,
     height: 494,
     focalPoint: "50% 50%",
     temporary: false,
   },
+  // Indoor Air Quality service card/category removed from public UI — this asset is no
+  // longer referenced by services.ts, kept only so the Apex Results "after" HVAC-coil
+  // media entry above isn't orphaned by a dangling reference elsewhere.
   realAirSystemGrilleCard: {
     id: "real-air-system-grille-card",
     src: "/images/real/air-system-grille-wide.jpg",
@@ -175,6 +178,72 @@ export const media = {
     width: 1920,
     height: 873,
     focalPoint: "50% 50%",
+    temporary: false,
+  },
+  realWaterHeater: {
+    id: "real-water-heater",
+    src: "/images/real/water-heating.jpg",
+    alt: "Technician inspecting a residential gas water heater",
+    width: 1086,
+    height: 1448,
+    focalPoint: "50% 35%",
+    temporary: false,
+  },
+  realWaterHeaterCard: {
+    id: "real-water-heater-card",
+    src: "/images/real/water-heating-wide.jpg",
+    alt: "Technician inspecting the label on a residential gas water heater",
+    width: 1086,
+    height: 494,
+    focalPoint: "50% 50%",
+    temporary: false,
+  },
+  // Same technician/logo as realApplianceOven's source session, re-supplied by the client
+  // with the current public brand name on the uniform — used for hero variety only (the
+  // Appliance Repair card/category hero keep using realApplianceOven/realApplianceOvenCard).
+  realApplianceFridgeApex: {
+    id: "real-appliance-fridge-apex",
+    src: "/images/real/appliance-refrigerator-card.jpg",
+    alt: "Apex technician working inside an open refrigerator freezer compartment",
+    width: 1121,
+    height: 1403,
+    focalPoint: "50% 35%",
+    temporary: false,
+  },
+  realResultIceMakerBefore: {
+    id: "real-result-ice-maker-before",
+    src: "/images/real/ice-maker-replacement-before.jpg",
+    alt: "An ice maker assembly removed from a refrigerator freezer door, held in hand",
+    width: 960,
+    height: 1280,
+    focalPoint: "50% 50%",
+    temporary: false,
+  },
+  realResultIceMakerAfter: {
+    id: "real-result-ice-maker-after",
+    src: "/images/real/ice-maker-replacement-after.jpg",
+    alt: "The new ice maker assembly installed in the refrigerator freezer door",
+    width: 960,
+    height: 1280,
+    focalPoint: "50% 50%",
+    temporary: false,
+  },
+  realResultControlBoardBefore: {
+    id: "real-result-control-board-before",
+    src: "/images/real/refrigerator-control-board-before.jpg",
+    alt: "A replacement refrigerator control board held in hand before installation",
+    width: 960,
+    height: 1280,
+    focalPoint: "50% 45%",
+    temporary: false,
+  },
+  realResultControlBoardAfter: {
+    id: "real-result-control-board-after",
+    src: "/images/real/refrigerator-control-board-after.jpg",
+    alt: "The new refrigerator control board wired and installed in place",
+    width: 960,
+    height: 1280,
+    focalPoint: "50% 45%",
     temporary: false,
   },
 } satisfies Record<string, MediaAsset>;

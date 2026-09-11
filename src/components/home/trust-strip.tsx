@@ -7,7 +7,10 @@ import { credentials } from "@/content/trust";
  * not repeat them again later in a duplicate "Why Apex" section. */
 export function TrustStrip() {
   return (
-    <section className="bg-page-bg pb-8 sm:pb-10 lg:pb-12">
+    // No bottom padding here — ServicesGrid's own `section-y` top padding already
+    // provides the gap below. Stacking both (as before) doubled up to ~7rem of blank
+    // bg-page-bg space between the two sections, which read as a layout bug.
+    <section className="bg-page-bg">
       <Container>
         <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
           {credentials.map((item) => (

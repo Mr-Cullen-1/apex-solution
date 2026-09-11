@@ -8,8 +8,25 @@ import { primaryServices } from "@/content/services";
 import { serviceAreas } from "@/content/site";
 import { availability } from "@/content/trust";
 
+// Compact, readable labels for the hero's service chips — shorter than the full
+// canonical `service.name` (e.g. "Water Heater Repair") so they fit as small pills.
+const heroServiceLabels: Record<string, string> = {
+  "appliance-repair": "Appliance",
+  cooling: "Cooling",
+  heating: "Heating",
+  "water-heater-repair": "Water Heater",
+};
+
 export function Hero() {
-  const slides = [media.northeastHvac, media.applianceService, media.serviceDetail, media.realApplianceGeneric].map((asset) => ({
+  // Real client photography only — one slide per active service category, plus one
+  // extra appliance shot for variety. No AI/generated imagery in hero rotation.
+  const slides = [
+    media.realApplianceFridgeApex,
+    media.realAcCleaning,
+    media.realHeatingUnit,
+    media.realWaterHeater,
+    media.realApplianceOven,
+  ].map((asset) => ({
     src: asset.src,
     alt: asset.alt,
     focalPoint: asset.focalPoint,
@@ -27,7 +44,7 @@ export function Hero() {
                 <span className="block text-copper lg:whitespace-nowrap">fast and reliable.</span>
               </h1>
               <p className="mt-6 max-w-md text-base leading-7 text-slate sm:text-lg">
-                Heating, cooling, plumbing, appliance, and air-quality service from local Northeast technicians. Call now and talk to a real person today.
+                Heating, cooling, appliance, and water-heater service from local Northeast professionals. Call now and talk to a real person today.
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
                 {contact.phoneHref && (
@@ -43,11 +60,11 @@ export function Hero() {
               </p>
             </div>
 
-            <div className="flex items-center gap-4 border-t border-steel pt-6">
-              <div className="flex -space-x-2" aria-hidden="true">
+            <div className="flex flex-col gap-4 border-t border-steel pt-6 sm:flex-row sm:items-center">
+              <div className="flex flex-wrap items-center gap-1.5">
                 {primaryServices.map((service) => (
-                  <span key={service.id} className="grid size-9 place-items-center rounded-full border-2 border-surface bg-brand-dark text-[0.6rem] font-bold text-white">
-                    {service.name.slice(0, 2).toUpperCase()}
+                  <span key={service.id} className="rounded-control border border-steel bg-page-bg px-2.5 py-1 text-xs font-semibold text-navy">
+                    {heroServiceLabels[service.id] ?? service.name}
                   </span>
                 ))}
               </div>

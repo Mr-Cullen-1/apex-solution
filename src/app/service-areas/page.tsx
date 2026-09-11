@@ -9,7 +9,7 @@ import { sharedOpenGraph } from "@/content/social-meta";
 
 export const metadata: Metadata = {
   title: "Service Areas",
-  description: "Explore the select counties Apex Home Support serves across five Northeast states and prepare a request for location confirmation.",
+  description: "Explore the select counties Apex Home Services serves across five Northeast states and prepare a request for location confirmation.",
   alternates: { canonical: "/service-areas" },
   openGraph: { ...sharedOpenGraph, title: "Service Areas", description: "Serving communities across select counties in five Northeast states.", url: "/service-areas" },
   robots: { index: true, follow: true },

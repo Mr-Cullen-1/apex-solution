@@ -10,9 +10,9 @@ export const contact: ContactDetails = {
 };
 
 export const company = {
-  name: "Apex Home Support",
+  name: "Apex Home Services",
   tagline: "Reliable Home Services. Local Professionals.",
-  description: "Reliable heating, cooling, plumbing, indoor air quality, and appliance service from local professionals across New York, New Jersey, Connecticut, Massachusetts, and Rhode Island.",
+  description: "Reliable heating, cooling, water-heater, and appliance service from local professionals across New York, New Jersey, Connecticut, Massachusetts, and Rhode Island.",
   locale: "en_US",
   serviceRegion: "New York, New Jersey, Connecticut, Massachusetts, and Rhode Island",
   contact,
@@ -24,5 +24,5 @@ export const company = {
 // export replaces the parent's, it does not merge with it).
 export const homeMeta = {
   title: `${company.name} | Premium Home Services`,
-  description: "Reliable heating, cooling, plumbing, appliance, and indoor air quality service from local Northeast professionals.",
+  description: "Reliable heating, cooling, appliance, and water-heater service from local Northeast professionals.",
 } as const;

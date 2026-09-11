@@ -94,7 +94,7 @@ export function SiteHeader() {
   return (
     <header ref={headerRef} className="sticky top-0 z-50 pt-3 transition-[padding] duration-300 sm:pt-4">
       <Container>
-        <div className={`flex h-16 items-center justify-between gap-6 rounded-hero px-4 transition-all duration-300 sm:h-18 sm:px-6 ${scrolled ? "border border-steel/50 bg-surface/55 shadow-none backdrop-blur-md hover:border-steel hover:bg-surface/90 hover:shadow-soft" : "border border-steel bg-surface shadow-soft"}`}>
+        <div className={`flex h-16 items-center justify-between gap-2 rounded-hero px-3 transition-all duration-300 sm:h-18 sm:gap-6 sm:px-4 md:px-6 ${scrolled ? "border border-steel/50 bg-surface/55 shadow-none backdrop-blur-md hover:border-steel hover:bg-surface/90 hover:shadow-soft" : "border border-steel bg-surface shadow-soft"}`}>
           <Link href="/" className="flex shrink-0 items-center gap-2.5" aria-label={`${company.name} home`}>
             <Image src={brandMark.colored.src} alt={brandMark.colored.alt} width={36} height={36} className="size-9" priority />
             <span className="hidden text-lg font-semibold tracking-[-0.02em] text-navy sm:inline">{company.name}</span>
@@ -124,31 +124,32 @@ export function SiteHeader() {
             </ul>
           </nav>
 
-          {/* Conversion actions: Call + Book Now stay visible from tablet (md) up,
-             per the client requirement that they never hide behind the hamburger.
-             Live Now and the full nav are desktop-only (xl). */}
-          <div className="flex items-center gap-2 sm:gap-3">
+          {/* Conversion actions: Call + Book Now are visible at every width, including
+             the smallest mobile — per the client requirement that they never hide behind
+             the hamburger. Below sm they use compact sizing so the pair plus the logo mark
+             and hamburger all fit one row without overflow or wrapping. Live Now and the
+             full nav stay desktop-only (xl). */}
+          <div className="flex min-w-0 items-center gap-1.5 sm:gap-3">
             <span className="hidden items-center gap-1.5 text-xs font-semibold text-ink-muted xl:inline-flex">
               <span className="relative flex size-1.5"><span aria-hidden="true" className="absolute inline-flex size-1.5 rounded-full bg-status-live motion-safe:animate-[pulse-dot_1.8s_ease-in-out_infinite]" /></span>
               {availability.liveNowLabel}
             </span>
             {contact.phoneHref && (
-              <a href={contact.phoneHref} className="hidden min-h-11 items-center gap-2 rounded-control bg-copper px-4 text-sm font-bold text-white transition-transform duration-300 hover:-translate-y-0.5 md:inline-flex">
-                <PhoneIcon className="size-4" />{contact.phone}
+              <a href={contact.phoneHref} className="inline-flex min-h-9 shrink-0 items-center gap-1.5 rounded-control bg-copper px-2.5 text-xs font-bold text-white transition-transform duration-300 hover:-translate-y-0.5 sm:min-h-11 sm:gap-2 sm:px-4 sm:text-sm">
+                <PhoneIcon className="size-3.5 shrink-0 sm:size-4" />
+                <span className="whitespace-nowrap">{contact.phone}</span>
               </a>
             )}
-            <span className="hidden md:inline-flex">
-              <BookingLink variant="primary" showArrow={false} />
-            </span>
+            <BookingLink variant="header-compact" showArrow={false} />
             <button
               ref={mobileButtonRef}
               type="button"
-              className="grid size-12 shrink-0 place-items-center rounded-control text-navy xl:hidden"
+              className="grid size-10 shrink-0 place-items-center rounded-control text-navy sm:size-12 xl:hidden"
               aria-label="Open navigation"
               aria-expanded={mobileOpen}
               onClick={() => setMobileOpen(true)}
             >
-              <MenuIcon className="size-6" />
+              <MenuIcon className="size-5 sm:size-6" />
             </button>
           </div>
         </div>
@@ -169,7 +170,7 @@ export function SiteHeader() {
               Book Now <ArrowRightIcon className="size-5 transition-transform group-hover:translate-x-1" />
             </button>
           </div>
-          <div className="grid grid-cols-5 gap-7">
+          <div className="grid grid-cols-4 gap-7">
             {primaryServices.map((service) => (
               <div key={service.id}>
                 <Link className="text-xs font-bold uppercase tracking-[0.16em] text-copper hover:text-navy" href={service.href} onClick={() => setMegaOpen(false)}>{service.name}</Link>
