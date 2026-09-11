@@ -8,4 +8,7 @@
 // generated metadata never advertises `localhost` once actually deployed.
 const vercelUrl = process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : undefined;
 
-export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? vercelUrl ?? "http://localhost:3000";
+// `||` (not `??`) deliberately: an .env file with the key present but left
+// blank (e.g. `NEXT_PUBLIC_SITE_URL=`, as in .env.example) yields `""`, which
+// `??` would treat as a set value and pass straight to `new URL()`.
+export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || vercelUrl || "http://localhost:3000";

@@ -1,4 +1,4 @@
-import type { FAQ, Review, ServiceArea, SupportedBrandGroup } from "@/types/content";
+import type { FAQ, ServiceArea, SupportedBrandGroup } from "@/types/content";
 
 export const serviceAreas = [
   {
@@ -51,8 +51,6 @@ export const supportedBrands = [
   },
 ] as const satisfies readonly SupportedBrandGroup[];
 
-// Reviews remain empty until approved customer content is supplied.
-export const reviews: Review[] = [];
 export const faqs: FAQ[] = [
   { id: "choose-service", question: "How do I know which service to book?", answer: "Choose the category closest to what you are experiencing. If you are unsure, book now and describe the symptoms so the request can be directed appropriately." },
   { id: "service-area", question: "Does Apex Home Services serve my area?", answer: "Apex Home Services covers confirmed counties across New York, New Jersey, Connecticut, Massachusetts, and Rhode Island. Exact ZIP-level availability should be confirmed when you book." },

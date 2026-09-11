@@ -83,7 +83,6 @@ export type SupportedBrandGroup = {
   label: string;
   brands: readonly string[];
 };
-export type Review = { id: string; quote: string; author: string; location: string | null; rating: number; source: string; verified: boolean; date: string | null };
 export type FAQ = { id: string; question: string; answer: string };
 
 export type MediaAsset = {

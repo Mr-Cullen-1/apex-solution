@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { BookingLink } from "@/components/ui/booking-link";
 import { Container } from "@/components/ui/container";
 import { PhoneIcon } from "@/components/ui/icons";
@@ -20,6 +23,13 @@ const toGroup = (category: NonNullable<ReturnType<typeof getServiceCategory>>) =
 });
 
 export function Footer() {
+  // `/review` is a focused, one-screen customer submission flow — the
+  // global footer isn't needed there and would force scrolling past the
+  // review card. Every other route keeps it. Same exact-match pathname
+  // pattern MobileActionBar already uses for its own `/book` exclusion.
+  const pathname = usePathname();
+  if (pathname === "/review") return null;
+
   return (
     <footer className="bg-brand-dark pb-24 pt-10 text-white md:pb-10 md:pt-12">
       <Container>

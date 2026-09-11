@@ -7,9 +7,11 @@ import { credentials } from "@/content/trust";
  * not repeat them again later in a duplicate "Why Apex" section. */
 export function TrustStrip() {
   return (
-    // No bottom padding here — ServicesGrid's own `section-y` top padding already
-    // provides the gap below. Stacking both (as before) doubled up to ~7rem of blank
-    // bg-page-bg space between the two sections, which read as a layout bug.
+    // No bottom padding here — the next section's own top padding already
+    // provides the gap below (CustomerReviews's `section-y-top` when it
+    // renders, or ServicesGrid's `section-y` when there are no reviews to
+    // show yet). Stacking both sides would double the gap, which read as a
+    // layout bug before this comment was written.
     <section className="bg-page-bg">
       <Container>
         <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
