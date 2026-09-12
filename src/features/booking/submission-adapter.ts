@@ -1,30 +1,19 @@
 import "server-only";
 import { isSupabaseConfigured } from "@/lib/supabase/server";
-import { createServiceRequest, markTelegramFailed, markTelegramSent } from "./repository";
+import { isResendConfigured, sendConfirmationEmail } from "./email";
+import { createServiceRequest, markEmailFailed, markEmailSent, markTelegramFailed, markTelegramSent } from "./repository";
 import { formatLeadMessage, isTelegramConfigured, sendTelegramMessage } from "./telegram";
-import type { BookNowPayload, SubmissionResult } from "./types";
+import type { BookNowPayload, ServiceRequestRow, SubmissionResult } from "./types";
 
 const NOT_CONFIGURED_MESSAGE =
   "Thanks — we received your request details, but online submission is not connected yet. Apex has not received this request. Please call us directly to reach the team right away.";
 const SUBMISSION_FAILED_MESSAGE = "We couldn't submit your request right now. Please try again or call us.";
 
-/** Orchestrates the real Phase 1 flow: validated payload -> Supabase insert
- * (source of truth) -> best-effort Telegram notification -> status update.
- * The database insert is what decides whether the customer's request was
- * "received" — a Telegram outage after a successful insert never changes the
- * response already returned to the browser (see docs/BOOK_NOW_ARCHITECTURE.md). */
-export async function submitBookNowRequest(payload: BookNowPayload): Promise<SubmissionResult> {
-  if (!isSupabaseConfigured()) return { ok: false, status: "not_configured", message: NOT_CONFIGURED_MESSAGE };
-
-  const created = await createServiceRequest(payload);
-  if (!created.ok) return { ok: false, status: "error", message: SUBMISSION_FAILED_MESSAGE };
-
-  const { row } = created;
-
+async function deliverTelegram(row: ServiceRequestRow): Promise<void> {
   if (!isTelegramConfigured()) {
     console.warn("[book_now_telegram_not_configured] TELEGRAM_BOT_TOKEN/TELEGRAM_CHAT_ID not set — lead stored, no notification sent.", row.id);
     await markTelegramFailed(row.id, "Telegram not configured");
-    return { ok: true, status: "received", requestId: row.id };
+    return;
   }
 
   const text = formatLeadMessage({
@@ -48,9 +37,62 @@ export async function submitBookNowRequest(payload: BookNowPayload): Promise<Sub
     console.error("[book_now_telegram_delivery_failed]", row.id, delivery.error);
     await markTelegramFailed(row.id, delivery.error);
   }
+}
 
-  // Telegram's outcome is deliberately never surfaced to the customer here —
-  // the lead is already safely stored, so the response is the same whether
-  // Telegram succeeded or failed. See docs/BOOK_NOW_ARCHITECTURE.md.
+/** No-op when the customer left email blank — `email_status` is already
+ * "not_requested" from the insert, and Resend is never called. */
+async function deliverConfirmationEmail(row: ServiceRequestRow): Promise<void> {
+  if (!row.email) return;
+
+  if (!isResendConfigured()) {
+    console.warn("[book_now_resend_not_configured] RESEND_API_KEY/RESEND_FROM_EMAIL not set — lead stored, no confirmation email sent.", row.id);
+    await markEmailFailed(row.id, "Resend not configured");
+    return;
+  }
+
+  const delivery = await sendConfirmationEmail({
+    requestId: row.id,
+    fullName: row.full_name,
+    email: row.email,
+    categoryLabel: row.category_label,
+    serviceLabel: row.service_label,
+    issue: row.issue,
+    zipCode: row.zip_code,
+    message: row.message,
+  });
+
+  if (delivery.status === "sent") {
+    await markEmailSent(row.id, delivery.messageId);
+  } else if (delivery.status === "failed") {
+    console.error("[book_now_email_delivery_failed]", row.id, delivery.error);
+    await markEmailFailed(row.id, delivery.error);
+  }
+}
+
+/** Orchestrates the full flow: validated payload -> Supabase insert (source
+ * of truth) -> two independent, best-effort operational deliveries ->
+ * status updates. Telegram and email never gate each other — each records
+ * its own outcome on its own columns, and neither's success or failure ever
+ * changes the response already decided by the successful DB insert (see
+ * docs/BOOK_NOW_ARCHITECTURE.md).
+ *
+ * Run concurrently via Promise.all, not sequentially: the two deliveries
+ * touch disjoint columns on the same row (no write conflict), each function
+ * already catches and records its own failure internally (neither ever
+ * rejects), and this still runs on a serverless function that may freeze
+ * once a response is sent — so both are awaited here before responding,
+ * rather than left to finish in the background unawaited. */
+export async function submitBookNowRequest(payload: BookNowPayload): Promise<SubmissionResult> {
+  if (!isSupabaseConfigured()) return { ok: false, status: "not_configured", message: NOT_CONFIGURED_MESSAGE };
+
+  const created = await createServiceRequest(payload);
+  if (!created.ok) return { ok: false, status: "error", message: SUBMISSION_FAILED_MESSAGE };
+
+  const { row } = created;
+  await Promise.all([deliverTelegram(row), deliverConfirmationEmail(row)]);
+
+  // Neither delivery channel's outcome is ever surfaced to the customer
+  // here — the lead is already safely stored, so the response is the same
+  // regardless of Telegram/email success or failure.
   return { ok: true, status: "received", requestId: row.id };
 }

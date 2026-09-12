@@ -1,25 +1,32 @@
 # Book Now architecture
 
 ## Phase 1 (Sep 2026) — Supabase lead storage + Telegram delivery
+## Phase 2 (Sep 2026) — Resend confirmation email
 
 Book Now went from a UI-only stub (`submission-adapter.ts` always returned
-`not_configured`) to a real lead-delivery workflow:
+`not_configured`) to a real lead-delivery workflow with two independent,
+best-effort operational delivery channels:
 
 ```
 Browser (BookNowModal)
   -> POST /api/book-now
-  -> normalize + validate (src/features/booking/model.ts — unchanged from
-     the pre-Phase-1 UI, no second form model)
+  -> normalize + validate (src/features/booking/model.ts — unchanged since
+     before Phase 1, no second form model)
   -> insert into Supabase public.service_requests   <- source of truth
-  -> best-effort Telegram sendMessage
-  -> update telegram_status on the same row
+       |
+       +--> best-effort Telegram sendMessage   (always attempted)
+       |
+       +--> best-effort Resend confirmation email
+              (only when the customer supplied an email address)
+  -> update telegram_status / email_status on the same row
   -> respond to the browser
 ```
 
-**The database insert is the source of truth.** Telegram delivery is
-attempted only *after* the row is safely stored, and its outcome (success or
-failure) never changes the response already decided for the customer — see
-"Telegram failure behavior" below.
+**The database insert is the source of truth.** Telegram and email delivery
+are each attempted only *after* the row is safely stored, run concurrently
+(see "Execution strategy" below), and neither's outcome (success or failure)
+changes the response already decided for the customer, nor gates the other
+channel — see "Telegram failure behavior" and "Email failure behavior" below.
 
 ## Request flow
 
@@ -41,20 +48,33 @@ input) — now calls `submitBookNowRequest` from
    error — a bad ID never blocks an otherwise-valid lead.
    - If the insert fails, the customer gets a genuine error (500) — see
      "Database failure behavior" below.
-3. `isTelegramConfigured()` — if false, the request is still `received`
-   (the lead is safely stored); the row is marked `telegram_status = failed`
-   with `telegram_last_error = "Telegram not configured"` and a warning is
-   logged. Build/lint/typecheck never depend on these env vars.
-4. `formatLeadMessage` + `sendTelegramMessage`
-   (`src/features/booking/telegram.ts`) — formats and sends a plain-text
-   message via Telegram Bot API `sendMessage`, then `markTelegramSent` /
-   `markTelegramFailed` records the outcome on the same row.
-5. Response: `{ ok: true, status: "received", requestId }` (HTTP 201)
-   regardless of whether step 4 succeeded — see below.
+3. Two independent delivery functions run concurrently via `Promise.all`
+   (see "Execution strategy" below):
+   - `deliverTelegram` — if `isTelegramConfigured()` is false, marks
+     `telegram_status = 'failed'` with `telegram_last_error = "Telegram not
+     configured"` and logs a warning. Otherwise `formatLeadMessage` +
+     `sendTelegramMessage` (`src/features/booking/telegram.ts`) format and
+     send a plain-text Telegram message, then `markTelegramSent` /
+     `markTelegramFailed` records the outcome.
+   - `deliverConfirmationEmail` — a no-op if the row has no email
+     (`email_status` is already `'not_requested'` from the insert). If an
+     email exists but `isResendConfigured()` is false, marks
+     `email_status = 'failed'` with `email_last_error = "Resend not
+     configured"` and logs a warning. Otherwise `buildConfirmationEmail` +
+     `sendConfirmationEmail` (`src/features/booking/email.ts`) build and
+     send via the official `resend` SDK, then `markEmailSent` /
+     `markEmailFailed` records the outcome.
+   - Build/lint/typecheck never depend on any of these env vars.
+4. Response: `{ ok: true, status: "received", requestId }` (HTTP 201)
+   regardless of whether Telegram or email delivery succeeded — see below.
 
 ## `service_requests` schema
 
-Migration: `supabase/migrations/20260912100000_create_service_requests.sql`.
+Migrations:
+`supabase/migrations/20260912100000_create_service_requests.sql` (Phase 1,
+unedited) +
+`supabase/migrations/20260913100000_add_service_request_email_delivery.sql`
+(Phase 2, additive only).
 
 | Column | Type | Notes |
 |---|---|---|
@@ -74,10 +94,15 @@ Migration: `supabase/migrations/20260912100000_create_service_requests.sql`.
 | `telegram_message_id` | `bigint` | set only on `sent` |
 | `telegram_sent_at` | `timestamptz` | set only on `sent` |
 | `telegram_last_error` | `text` | sanitized summary only, ≤500 chars, never the bot token or a raw API response |
+| `email_status` | `public.email_delivery_status not null default 'not_requested'` | enum: `not_requested` \| `pending` \| `sent` \| `failed` — see "Email delivery" below |
+| `email_message_id` | `text` | Resend email id, set only on `sent` |
+| `email_sent_at` | `timestamptz` | set only on `sent` |
+| `email_last_error` | `text` | sanitized summary only, ≤500 chars, never the Resend API key or a raw API response |
 | `created_at` / `updated_at` | `timestamptz not null default now()` | `updated_at` maintained by the existing shared `public.set_updated_at()` trigger function (defined in the Reviews migration, reused here rather than redefined) |
 
-Indexes: `created_at desc`; `(telegram_status, created_at desc)` (for a
-future Phase 2 "list failed deliveries to retry" view).
+Indexes: `created_at desc`; `(telegram_status, created_at desc)`;
+`(email_status, created_at desc)` (both support a future retry/operational
+view, each channel independently).
 
 ## Security
 
@@ -100,6 +125,18 @@ future Phase 2 "list failed deliveries to retry" view).
   unexpected Telegram error string can't leak the token.
 - `telegramChatId` is **not** an accepted field on `/api/book-now` — the
   chat is entirely server-configured; the browser cannot choose it.
+- `RESEND_API_KEY`, `RESEND_FROM_EMAIL`, and the optional `RESEND_REPLY_TO`
+  are server-only env vars, read only in `src/features/booking/email.ts`
+  (`import "server-only"`). Never sent to the browser, never accepted from
+  the POST body, never logged, never stored in the database. Errors are
+  sanitized (`sanitizeResendError`) the same way Telegram's are.
+- **The recipient is never client-controlled.** `/api/book-now` does not
+  accept `emailTo`/`recipient`/`to` — the only recipient is the validated,
+  normalized `email` already on the stored row. No CC/BCC to internal staff
+  (Apex already gets Telegram for that).
+- **No marketing subscription.** This send is purely transactional — no
+  Resend Contact is created, no Audience membership, no Broadcast. A Book
+  Now submission is not treated as marketing opt-in.
 
 ## Telegram message format
 
@@ -174,6 +211,69 @@ If `sendMessage` fails (bad token, network error, timeout, Telegram outage):
   (`telegram_status = 'failed'`) for a future Phase 2 retry job. No
   background worker or retry cron exists yet.
 
+## Email delivery (Phase 2)
+
+Sent only when the customer supplied and validated an email address —
+`deliverConfirmationEmail` (`submission-adapter.ts`) is a no-op otherwise,
+and `email_status` is already `'not_requested'` from the insert. No fake or
+fallback recipient is ever invented.
+
+**Sender**: read from `RESEND_FROM_EMAIL` (e.g. `"Apex Home Services
+<no-reply@apexhomesupport.com>"`) — never hardcoded, never
+`onboarding@resend.dev`. **Reply-To**: read from `RESEND_REPLY_TO` when set,
+omitted entirely otherwise (never a fabricated support address).
+
+**Subject**: fixed — `"We received your service request"` (no emoji, no
+personalization, no marketing tone).
+
+**Content** (`buildConfirmationEmail`, `src/features/booking/email.ts`):
+a restrained HTML email (table-based layout for email-client compatibility,
+no images, simple Apex-blue accent) plus a plain-text version — both always
+sent together, never HTML-only. Greeting uses just the first
+whitespace-separated token of the stored name ("Mary-Jane O'Connor" → "Hi
+Mary-Jane,"), falling back to a plain "Hello," if nothing usable remains —
+deliberately simple, no name-parsing library. The request-details block
+shows Service (as `"{category} — {service}"`, just the category, or omitted
+entirely — never "Service: Not specified" — when Book Now was opened with no
+context), Issue (omitted when absent), ZIP Code, and the customer's message,
+plus a small "Request reference: `<uuid>`" line. Copy is careful never to
+imply Apex itself is dispatching a technician or performing the repair —
+Apex is positioned as the coordinator who will "reach out shortly to confirm
+the details and help coordinate your service request," with no promised
+arrival time, no same-day guarantee, no guaranteed repair. Customer-controlled
+text (name, message) is HTML-escaped before interpolation — never
+`dangerouslySetInnerHTML` with raw values — so a message containing `<`,
+`>`, `&`, or a stray `<script>`-looking string can never break the layout or
+execute as markup.
+
+**Idempotency**: `resend.emails.send(payload, { idempotencyKey:
+"book-now-confirmation/<requestId>" })` — keyed on the service request UUID,
+never the email address, phone, or a timestamp, so a retried request (e.g. a
+transient network retry) can never produce two confirmation emails for the
+same lead.
+
+**Success**: `email_status = 'sent'`, `email_message_id` = the Resend
+response `id`, `email_sent_at = now()`, `email_last_error = null`.
+
+**Failure** (bad key, Resend outage, missing config): the lead **is not
+deleted or modified** beyond `email_status`/`email_last_error`. Telegram's
+outcome is completely unaffected — the two channels update disjoint columns
+independently and neither ever gates the other. The customer still receives
+`{ ok: true, status: "received" }`; email failure is never surfaced as a
+customer-facing error.
+
+## Execution strategy
+
+`Promise.all([deliverTelegram(row), deliverConfirmationEmail(row)])` — run
+concurrently, not sequentially, and both awaited before the response is
+sent. Concurrency is safe here because the two functions touch disjoint
+columns on the same row (no write conflict) and each already catches and
+records its own failure internally (neither ever rejects, so `Promise.all`
+cannot short-circuit on one channel's failure). Both are awaited — rather
+than fired-and-left-running in the background — because this handler runs
+on a serverless function that can freeze once its response is sent, so
+anything not awaited first isn't guaranteed to finish.
+
 ## Database failure behavior
 
 If the Supabase insert itself fails (the lead was **not** safely received),
@@ -208,30 +308,36 @@ request headers.
 TELEGRAM_BOT_TOKEN=
 TELEGRAM_CHAT_ID=
 # TELEGRAM_THREAD_ID=
+
+RESEND_API_KEY=
+RESEND_FROM_EMAIL=
+RESEND_REPLY_TO=
 ```
 
 All server-only. Never `NEXT_PUBLIC_*`. See `.env.example` (always empty
 placeholders — never a real value in the repository).
 
-## Explicitly out of scope for Phase 1
+## Explicitly out of scope for Phase 2
 
-- **Resend / email** — not installed, not called, no `RESEND_API_KEY`. Email
-  is stored (optional, validated when provided) but no email is sent to the
-  customer or to Apex. Planned for Phase 3, after Telegram delivery is
-  verified end-to-end.
 - **Admin panel** — leads are inspected directly in Supabase for now.
 - **A separate Telegram bot server** — no webhook receiver, no long-polling
   worker. The bot is only a sending identity; the Next.js server calls
-  `sendMessage` directly.
-- **Automated retry** — a `failed` Telegram delivery is visible and
-  queryable but nothing currently retries it automatically. Phase 2 TODO.
+  `sendMessage` directly. No bot commands or Telegram buttons were added.
+- **Automated retry** — a `failed` Telegram or email delivery is visible and
+  queryable but nothing currently retries it automatically.
+- **Resend delivery/bounce/complaint webhooks** — not implemented. "Resend
+  API accepted the send" is treated as `email_status = 'sent'`; there is no
+  visibility yet into actual inbox delivery, bounces, complaints, opens, or
+  clicks. See "Future phase" below.
+- **Resend Contacts/Audience/Broadcasts** — a Book Now submission is never
+  treated as marketing consent.
 
-## Phase 2 TODO (not built yet)
+## Future phase TODO (not built yet)
 
-- Background/cron retry for rows where `telegram_status = 'failed'`.
-- Lightweight operational view/alerting for stuck `pending`/`failed` rows.
-
-## Phase 3 TODO (not built yet)
-
-- Resend-based customer confirmation email (only once Telegram is verified
-  in production).
+- Background/cron retry for rows where `telegram_status = 'failed'` or
+  `email_status = 'failed'`.
+- Lightweight operational view/alerting for stuck `pending`/`failed` rows
+  (either channel).
+- Resend webhooks (`email.delivered`, `email.bounced`, `email.complained`)
+  to move `email_status` beyond "Resend accepted the send" into actual
+  inbox-delivery confirmation.

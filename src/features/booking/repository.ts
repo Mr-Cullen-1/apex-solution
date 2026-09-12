@@ -31,6 +31,10 @@ export async function createServiceRequest(payload: BookNowPayload): Promise<{ o
       message: payload.message,
       sms_consent: payload.serviceTextConsent,
       source_path: payload.sourcePath || null,
+      // Set explicitly rather than relying on the column default: "pending"
+      // only when an email was actually supplied, so the confirmation-email
+      // branch below has an accurate starting point to update from.
+      email_status: payload.email ? "pending" : "not_requested",
     })
     .select()
     .single();
@@ -61,4 +65,25 @@ export async function markTelegramFailed(id: string, errorSummary: string): Prom
     .update({ telegram_status: "failed", telegram_last_error: errorSummary })
     .eq("id", id);
   if (error) console.error("[book_now_telegram_status_update_failed]", id, error.message);
+}
+
+/** Independent of markTelegramSent/Failed above — email and Telegram are
+ * separate columns on the same row, updated by separate calls, so one
+ * channel's outcome never overwrites the other's. */
+export async function markEmailSent(id: string, messageId: string): Promise<void> {
+  const supabase = getSupabaseServerClient();
+  const { error } = await supabase
+    .from("service_requests")
+    .update({ email_status: "sent", email_message_id: messageId, email_sent_at: new Date().toISOString(), email_last_error: null })
+    .eq("id", id);
+  if (error) console.error("[book_now_email_status_update_failed]", id, error.message);
+}
+
+export async function markEmailFailed(id: string, errorSummary: string): Promise<void> {
+  const supabase = getSupabaseServerClient();
+  const { error } = await supabase
+    .from("service_requests")
+    .update({ email_status: "failed", email_last_error: errorSummary })
+    .eq("id", id);
+  if (error) console.error("[book_now_email_status_update_failed]", id, error.message);
 }

@@ -32,9 +32,18 @@ export type TelegramDeliveryResult =
   | { status: "failed"; error: string }
   | { status: "not_configured" };
 
+/** Resend's message id is a string (a UUID-like value), unlike Telegram's
+ * numeric message_id — these are deliberately separate result types rather
+ * than one shared "delivery result" so each channel's own id type stays
+ * accurate. */
+export type EmailDeliveryResult =
+  | { status: "sent"; messageId: string }
+  | { status: "failed"; error: string }
+  | { status: "not_configured" };
+
 /** Shape of a row in `public.service_requests`. Includes the internal
- * Telegram-delivery-tracking columns — never return this directly from an
- * API response to the customer. */
+ * Telegram/email-delivery-tracking columns — never return this directly
+ * from an API response to the customer. */
 export type ServiceRequestRow = {
   id: string;
   full_name: string;
@@ -54,6 +63,12 @@ export type ServiceRequestRow = {
   telegram_message_id: number | null;
   telegram_sent_at: string | null;
   telegram_last_error: string | null;
+  /** "not_requested" when the customer left email blank at submission time —
+   * distinct from "failed" (an actual send attempt that didn't succeed). */
+  email_status: "not_requested" | "pending" | "sent" | "failed";
+  email_message_id: string | null;
+  email_sent_at: string | null;
+  email_last_error: string | null;
   created_at: string;
   updated_at: string;
 };
