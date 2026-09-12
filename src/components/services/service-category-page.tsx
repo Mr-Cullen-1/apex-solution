@@ -16,7 +16,7 @@ export function ServiceCategoryPage({ category }: { category: ServiceCategory })
           <ServiceDirectory category={category} />
         </Container>
       </section>
-      <ProblemDiscovery items={category.problems} />
+      <ProblemDiscovery items={category.problems} categoryId={category.id} />
       <ServiceProcess />
       <RelevantBrands groupIds={category.brandGroupIds} />
       <ServiceRegion />

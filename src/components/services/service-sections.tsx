@@ -11,9 +11,10 @@ import { firstTimeOffer, isOfferEligible } from "@/content/offers";
 import { serviceVisitSteps } from "@/content/services";
 import { serviceAreas, supportedBrands } from "@/content/site";
 import type { Service, ServiceCategory, ServiceFAQ, ServiceProblem } from "@/types/content";
+import { OtherProblemCard } from "./other-problem-card";
 
 function getMedia(id: string) {
-  return media[id as MediaId] ?? media.serviceDetail;
+  return media[id as MediaId] ?? media.realApplianceOven;
 }
 
 export function ServiceHero({ eyebrow, title, summary, mediaId, anchorLabel = "Explore this service", categoryId, serviceId }: { eyebrow: string; title: string; summary: string; mediaId: string; anchorLabel?: string; categoryId?: string; serviceId?: string }) {
@@ -85,18 +86,22 @@ export function ServiceDirectory({ category }: { category: ServiceCategory }) {
   );
 }
 
-export function ProblemDiscovery({ items }: { items: readonly ServiceProblem[] }) {
+export function ProblemDiscovery({ items, categoryId }: { items: readonly ServiceProblem[]; categoryId?: string }) {
   return (
     <section className="bg-brand-dark section-y text-white" aria-labelledby="problems-heading">
       <Container>
         <SectionHeading id="problems-heading" eyebrow="Start with what you notice" title="You do not need to diagnose it first." description="Choose the situation closest to yours. These are possible service paths, not remote diagnoses." theme="dark" />
-        <div className="mt-14 grid gap-4 md:grid-cols-2">
+        {/* 3-up on desktop / 2-up on tablet so the added "Other" card (making 5 total for
+            Appliance Repair and Cooling) reflows as an intentional 3+2 grid instead of
+            leaving a lone card stranded under a 2-column layout. */}
+        <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((problem) => (
             <Link key={problem.id} href={problem.href} className="group flex min-h-44 flex-col justify-between rounded-panel border border-white/15 bg-white/[0.04] p-6 transition-colors hover:bg-white/[0.08] sm:p-8">
               <span className="text-xl font-semibold tracking-[-0.02em]">{problem.label}</span>
               <span className="mt-6 flex items-end justify-between gap-5 text-sm leading-6 text-white/60"><span>{problem.description}</span><ArrowRightIcon className="size-4 shrink-0 text-copper transition-transform group-hover:translate-x-1" /></span>
             </Link>
           ))}
+          <OtherProblemCard categoryId={categoryId} />
         </div>
       </Container>
     </section>

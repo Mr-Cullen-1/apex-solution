@@ -1,60 +1,6 @@
 import type { MediaAsset } from "@/types/content";
 
 export const media = {
-  heroTechnician: {
-    id: "hero-technician",
-    src: "/images/apex-hero-technician.png",
-    alt: "Technician in a navy uniform carefully inspecting residential comfort equipment",
-    width: 1122,
-    height: 1402,
-    focalPoint: "62% 58%",
-    temporary: true,
-  },
-  serviceDetail: {
-    id: "service-detail",
-    src: "/images/apex-service-detail.png",
-    alt: "Gloved hands using a diagnostic instrument on residential HVAC equipment",
-    width: 1536,
-    height: 1024,
-    focalPoint: "55% 50%",
-    temporary: true,
-  },
-  homeInterior: {
-    id: "home-interior",
-    src: "/images/apex-home-interior.png",
-    alt: "Comfortable modern living room with soft daylight and natural airflow",
-    width: 1122,
-    height: 1402,
-    focalPoint: "58% 48%",
-    temporary: true,
-  },
-  homeExterior: {
-    id: "home-exterior",
-    src: "/images/apex-home-exterior.png",
-    alt: "Contemporary home with low-water landscaping at blue hour",
-    width: 1586,
-    height: 992,
-    focalPoint: "68% 52%",
-    temporary: true,
-  },
-  applianceService: {
-    id: "appliance-service",
-    src: "/images/apex-appliance-service.png",
-    alt: "Technician diagnosing a built-in refrigerator in a Northeast home kitchen",
-    width: 1536,
-    height: 1024,
-    focalPoint: "64% 50%",
-    temporary: true,
-  },
-  northeastHvac: {
-    id: "northeast-hvac",
-    src: "/images/apex-northeast-hvac.png",
-    alt: "Technician inspecting outdoor HVAC equipment beside a Northeast home",
-    width: 1586,
-    height: 992,
-    focalPoint: "36% 50%",
-    temporary: true,
-  },
   // Real client-supplied photography (from /real images), copied to
   // /public/images/real with normalized lowercase, space-free filenames for
   // Vercel/Linux path safety. Not "temporary" — these are approved, permanent assets.
@@ -74,6 +20,18 @@ export const media = {
     width: 1086,
     height: 1448,
     focalPoint: "62% 42%",
+    temporary: false,
+  },
+  // A second real frame from the same heating service visit as realHeatingUnit, used to
+  // give the Heating subservice pages (Furnace Repair, Heat Pumps, Heating Maintenance,
+  // Boiler Repair) some photo variety instead of repeating one exact image on every tab.
+  realHeatingUnitAlt: {
+    id: "real-heating-unit-alt",
+    src: "/images/real/heating-card.png",
+    alt: "Apex technician servicing an outdoor HVAC heating unit with the access panel open",
+    width: 1086,
+    height: 1448,
+    focalPoint: "58% 40%",
     temporary: false,
   },
   realApplianceOven: {

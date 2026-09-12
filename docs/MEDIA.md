@@ -56,6 +56,12 @@ The client describes a supplied Apex Home Services raster logo whose artwork con
 
 Phase 2C generated no new media. The About page reuses `apex-northeast-hvac.png` with an explicit public caption identifying it as temporary conceptual service imagery—not an actual Apex employee or completed project. Service Areas, Brands, and Contact remain typography-led. No legacy Southwest asset is used as a prominent identity element on these pages.
 
+## Phase 4 — AI/stock placeholder removal (client feedback pass, Sep 2026)
+
+The six Phase 1/2A placeholder images documented above (`apex-hero-technician.png`, `apex-service-detail.png`, `apex-home-interior.png`, `apex-home-exterior.png`, `apex-appliance-service.png`, `apex-northeast-hvac.png`) have been removed from `src/content/media.ts` and deleted from `public/images/`. The client explicitly asked that no AI-generated or stock service photography remain public ("тут во всех вкладках ии фотки"). All Cooling and Heating subservice detail pages (AC Repair, AC Installation, AC Maintenance, AC Replacement, Furnace Repair, Heat Pumps, Heating Maintenance, Boiler Repair), the `/services` directory hero, and the shared media-lookup fallbacks now resolve exclusively to real client-supplied photography (the `real*` entries sourced from `/real images`, normalized into `public/images/real/`). No image was generated or sourced to replace them — existing real photos are reused across related pages per the project's real-image-only policy.
+
+A new `realHeatingUnitAlt` entry (`/images/real/heating-card.png`) was added: a second real frame from the same heating service visit as `realHeatingUnit`, used so the four Heating subservice pages aren't all showing the identical crop.
+
 ## Production replacement rules
 
 - Replace assets in `src/content/media.ts`, retaining accurate width, height, focal point, and alt text.

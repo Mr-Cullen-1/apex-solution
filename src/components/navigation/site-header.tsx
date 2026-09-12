@@ -17,7 +17,8 @@ export function SiteHeader() {
   const { open: openBookNow } = useBookNow();
   const [megaOpen, setMegaOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [expandedService, setExpandedService] = useState<string | null>("services");
+  const [servicesOpen, setServicesOpen] = useState(true);
+  const [openCategoryId, setOpenCategoryId] = useState<string | null>(null);
   const [scrolled, setScrolled] = useState(false);
   const headerRef = useRef<HTMLElement>(null);
   const servicesButtonRef = useRef<HTMLButtonElement>(null);
@@ -206,19 +207,19 @@ export function SiteHeader() {
             )}
             <nav className="flex-1 px-6 py-5" aria-label="Mobile navigation">
               <div className="border-b border-steel pb-3">
-                <button type="button" className="flex min-h-14 w-full items-center justify-between text-left text-2xl font-semibold tracking-[-0.035em] text-navy" aria-expanded={expandedService === "services"} onClick={() => setExpandedService((value) => value === "services" ? null : "services")}>
-                  Services <ChevronDownIcon className={`size-5 transition-transform ${expandedService === "services" ? "rotate-180" : ""}`} />
+                <button type="button" className="flex min-h-14 w-full items-center justify-between text-left text-2xl font-semibold tracking-[-0.035em] text-navy" aria-expanded={servicesOpen} onClick={() => setServicesOpen((open) => !open)}>
+                  Services <ChevronDownIcon className={`size-5 transition-transform ${servicesOpen ? "rotate-180" : ""}`} />
                 </button>
-                {expandedService === "services" && (
+                {servicesOpen && (
                   <div className="pb-5">
                     {primaryServices.map((service) => (
                       <div key={service.id} className="border-t border-steel/70 py-2 first:border-t-0">
                         {service.children?.length ? (
                           <>
-                            <button type="button" className="flex min-h-11 w-full items-center justify-between text-left text-sm font-bold uppercase tracking-[0.12em] text-copper" aria-expanded={expandedService === service.id} onClick={() => setExpandedService((value) => value === service.id ? "services" : service.id)}>
-                              {service.name}<ChevronDownIcon className={`size-4 transition-transform ${expandedService === service.id ? "rotate-180" : ""}`} />
+                            <button type="button" className="flex min-h-11 w-full items-center justify-between text-left text-sm font-bold uppercase tracking-[0.12em] text-copper" aria-expanded={openCategoryId === service.id} onClick={() => setOpenCategoryId((current) => current === service.id ? null : service.id)}>
+                              {service.name}<ChevronDownIcon className={`size-4 transition-transform ${openCategoryId === service.id ? "rotate-180" : ""}`} />
                             </button>
-                            {expandedService === service.id && <ul className="space-y-1 pb-2">{service.children.map((child) => <li key={child.id}><Link className="flex min-h-11 items-center text-base text-slate" href={child.href} onClick={closeMobile}>{child.name}</Link></li>)}</ul>}
+                            {openCategoryId === service.id && <ul className="space-y-1 pb-2">{service.children.map((child) => <li key={child.id}><Link className="flex min-h-11 items-center text-base text-slate" href={child.href} onClick={closeMobile}>{child.name}</Link></li>)}</ul>}
                           </>
                         ) : <Link className="flex min-h-11 items-center text-sm font-bold uppercase tracking-[0.12em] text-copper" href={service.href} onClick={closeMobile}>{service.name}</Link>}
                       </div>

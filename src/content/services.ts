@@ -14,7 +14,7 @@ const acRepair = service({
   signs: ["The system runs but the home stays warm", "Airflow feels weaker or less consistent", "The system makes a new or unusual sound"],
   overview: ["Cooling concerns can have more than one cause, so symptoms alone are not a complete diagnosis.", "A service visit can help identify the relevant system condition and clarify practical repair or replacement options."],
   relatedServiceIds: ["ac-maintenance", "ac-replacement"], problems: [], faqs: [visitFaq, { question: "Does unusual noise always mean a major repair?", answer: "Not necessarily. Different conditions can create similar sounds, so an inspection may be appropriate before drawing a conclusion." }],
-  brandGroupIds: ["hvac"], mediaId: "northeastHvac", seo: { title: "AC Repair Services", description: "Explore AC repair service from Apex Home Services, including common cooling concerns, what to expect, related services, and how to request an inspection." }, status: "published",
+  brandGroupIds: ["hvac"], mediaId: "realAcCleaning", seo: { title: "AC Repair Services", description: "Explore AC repair service from Apex Home Services, including common cooling concerns, what to expect, related services, and how to request an inspection." }, status: "published",
 });
 
 const acInstallation = service({
@@ -24,7 +24,7 @@ const acInstallation = service({
   signs: ["You are planning a new or renovated space", "The existing system no longer meets household needs", "You want to compare current equipment options"],
   overview: ["Equipment selection is only one part of a cooling installation decision.", "Professional review can help connect system options with the home and the way it is used."],
   relatedServiceIds: ["ac-replacement", "heat-pumps"], problems: [], faqs: [visitFaq, { question: "Can installation options be compared before work begins?", answer: "Yes. The purpose of the initial discussion is to understand the home and review available options before any work is approved." }],
-  brandGroupIds: ["hvac"], mediaId: "northeastHvac", seo: { title: "AC Installation Services", description: "Learn how Apex Home Services approaches residential AC installation planning, equipment discussions, and next-step service requests." }, status: "published",
+  brandGroupIds: ["hvac"], mediaId: "realAcCleaning", seo: { title: "AC Installation Services", description: "Learn how Apex Home Services approaches residential AC installation planning, equipment discussions, and next-step service requests." }, status: "published",
 });
 
 const acMaintenance = service({
@@ -34,7 +34,7 @@ const acMaintenance = service({
   signs: ["A seasonal review is due", "Cooling performance has changed since last season", "You want the system inspected before regular use"],
   overview: ["Maintenance is preventive attention rather than a promise that future problems cannot occur.", "The visit can help surface observable concerns and support more informed home-comfort decisions."],
   relatedServiceIds: ["ac-repair", "heating-maintenance", "ac-replacement"], problems: [], faqs: [visitFaq, { question: "Does maintenance guarantee the system will not need repair?", answer: "No. Maintenance can support system awareness and care, but it cannot guarantee future operation or eliminate every possible issue." }],
-  brandGroupIds: ["hvac"], mediaId: "serviceDetail", seo: { title: "AC Maintenance Services", description: "Review residential AC maintenance from Apex Home Services, including common reasons to schedule seasonal system attention." }, status: "published",
+  brandGroupIds: ["hvac"], mediaId: "realAcCleaning", seo: { title: "AC Maintenance Services", description: "Review residential AC maintenance from Apex Home Services, including common reasons to schedule seasonal system attention." }, status: "published",
 });
 
 const acReplacement = service({
@@ -44,7 +44,7 @@ const acReplacement = service({
   signs: ["The system needs increasingly frequent attention", "Comfort needs have changed", "You want to compare repair and replacement paths"],
   overview: ["A replacement decision should be based on the specific system and household priorities.", "The service conversation can clarify options and the information needed for a responsible choice."],
   relatedServiceIds: ["ac-repair", "ac-installation", "heat-pumps"], problems: [], faqs: [visitFaq, { question: "Does an older system automatically need replacement?", answer: "No. Age can be one consideration, but an inspection and a discussion of the system's condition are more useful than age alone." }],
-  brandGroupIds: ["hvac"], mediaId: "northeastHvac", seo: { title: "AC Replacement Services", description: "Consider residential AC replacement with a clear review of system concerns, household goals, and available next steps." }, status: "published",
+  brandGroupIds: ["hvac"], mediaId: "realAcCleaning", seo: { title: "AC Replacement Services", description: "Consider residential AC replacement with a clear review of system concerns, household goals, and available next steps." }, status: "published",
 });
 
 const furnaceRepair = service({
@@ -54,7 +54,7 @@ const furnaceRepair = service({
   signs: ["The home does not warm as expected", "Heating cycles feel inconsistent", "The system has developed an unusual sound or smell"],
   overview: ["Similar heating symptoms can stem from different system conditions.", "A professional inspection can help replace guesswork with a clearer discussion of findings."],
   relatedServiceIds: ["heating-maintenance", "heat-pumps"], problems: [], faqs: [visitFaq, { question: "Should I keep running a system with a new smell?", answer: "If you are concerned about safety, stop using the equipment and follow appropriate emergency guidance. A remote description cannot establish the cause." }],
-  brandGroupIds: ["hvac"], mediaId: "serviceDetail", seo: { title: "Furnace Repair Services", description: "Explore furnace repair service from Apex Home Services, including common heating concerns and what a service visit may involve." }, status: "published",
+  brandGroupIds: ["hvac"], mediaId: "realHeatingUnit", seo: { title: "Furnace Repair Services", description: "Explore furnace repair service from Apex Home Services, including common heating concerns and what a service visit may involve." }, status: "published",
 });
 
 const heatPumps = service({
@@ -64,7 +64,7 @@ const heatPumps = service({
   signs: ["Heating or cooling performance has changed", "The system switches modes unexpectedly", "You are considering a heat-pump option for the home"],
   overview: ["Heat-pump needs vary between existing-system service and new-equipment planning.", "A review can help distinguish the request and organize the appropriate next conversation."],
   relatedServiceIds: ["furnace-repair", "ac-installation", "heating-maintenance"], problems: [], faqs: [visitFaq, { question: "Are heat pumps only used for heating?", answer: "Many heat-pump systems can support both heating and cooling. The right application depends on the home and equipment configuration." }],
-  brandGroupIds: ["hvac"], mediaId: "northeastHvac", seo: { title: "Heat Pump Services", description: "Explore residential heat-pump service and equipment considerations with Apex Home Services." }, status: "published",
+  brandGroupIds: ["hvac"], mediaId: "realHeatingUnitAlt", seo: { title: "Heat Pump Services", description: "Explore residential heat-pump service and equipment considerations with Apex Home Services." }, status: "published",
 });
 
 const heatingMaintenance = service({
@@ -74,7 +74,17 @@ const heatingMaintenance = service({
   signs: ["A seasonal heating review is due", "System behavior has changed since last winter", "You want the equipment reviewed before regular use"],
   overview: ["Preventive service supports awareness but is not a guarantee against future repairs.", "Clear findings help homeowners decide whether additional attention is appropriate."],
   relatedServiceIds: ["furnace-repair", "ac-maintenance", "heat-pumps"], problems: [], faqs: [visitFaq, { question: "Is maintenance the same as repair?", answer: "No. Maintenance is preventive attention. If a specific fault is found, repair options can be discussed separately." }],
-  brandGroupIds: ["hvac"], mediaId: "serviceDetail", seo: { title: "Heating Maintenance Services", description: "Learn about seasonal residential heating maintenance and how to request a system review from Apex Home Services." }, status: "published",
+  brandGroupIds: ["hvac"], mediaId: "realHeatingUnit", seo: { title: "Heating Maintenance Services", description: "Learn about seasonal residential heating maintenance and how to request a system review from Apex Home Services." }, status: "published",
+});
+
+const boilerRepair = service({
+  id: "boiler-repair", name: "Boiler Repair", slug: "boiler-repair", href: "/services/heating/boiler-repair", shortDescription: "Professional review of residential boiler heating concerns.",
+  summary: "If a boiler is not heating as expected, an inspection can help identify the relevant condition and available options.",
+  description: "Boiler repair service begins with the symptoms you have noticed and a review of the relevant boiler system components.",
+  signs: ["The home does not warm as expected", "The boiler cycles inconsistently or shuts off unexpectedly", "The system has developed an unusual sound, leak, or smell"],
+  overview: ["Boiler symptoms can have more than one possible cause, so a description alone is not a complete diagnosis.", "A professional inspection can help replace guesswork with a clearer discussion of findings."],
+  relatedServiceIds: ["furnace-repair", "heating-maintenance"], problems: [], faqs: [visitFaq, { question: "Should I keep running a boiler with a new leak or smell?", answer: "If you are concerned about safety, stop using the equipment and follow appropriate emergency guidance. A remote description cannot establish the cause." }],
+  brandGroupIds: ["hvac"], mediaId: "realHeatingUnitAlt", seo: { title: "Boiler Repair Services", description: "Explore boiler repair service from Apex Home Services, including common boiler heating concerns and what a service visit may involve." }, status: "published",
 });
 
 const coolingProblems: readonly ServiceProblem[] = [
@@ -105,7 +115,7 @@ export const primaryServices: readonly ServiceCategory[] = [
   },
   {
     id: "heating", name: "Heating", slug: "heating", href: "/services/heating", shortDescription: "Furnace, heat-pump, and seasonal heating service.",
-    description: "Heating service for changing performance, preventive seasonal attention, and thoughtful equipment discussions.", mediaId: "realHeatingUnit", cardMediaId: "realHeatingUnitCard", brandGroupIds: ["hvac"], children: [furnaceRepair, heatPumps, heatingMaintenance], layout: "technical", status: "published",
+    description: "Heating service for changing performance, preventive seasonal attention, and thoughtful equipment discussions.", mediaId: "realHeatingUnit", cardMediaId: "realHeatingUnitCard", brandGroupIds: ["hvac"], children: [furnaceRepair, heatPumps, heatingMaintenance, boilerRepair], layout: "technical", status: "published",
     problems: [
       { id: "no-heat", label: "The home is not heating", description: "A heating inspection can help clarify the relevant system condition.", href: furnaceRepair.href },
       { id: "heating-noise", label: "The heating system sounds different", description: "New sounds are useful service context but not a remote diagnosis.", href: furnaceRepair.href },
