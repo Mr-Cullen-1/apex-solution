@@ -5,7 +5,7 @@ import { createContext, Suspense, useCallback, useContext, useEffect, useMemo, u
 import { findServiceContext, getCategoryById } from "./model";
 import { BookNowModal } from "./book-now-modal";
 
-type OpenOptions = { categoryId?: string; serviceId?: string; offer?: boolean };
+type OpenOptions = { categoryId?: string; serviceId?: string; offer?: boolean; issue?: string };
 type BookNowContextValue = { open: (options?: OpenOptions) => void };
 
 const BookNowContext = createContext<BookNowContextValue | null>(null);
@@ -30,7 +30,7 @@ export function BookNowProvider({ children }: { children: React.ReactNode }) {
   return (
     <BookNowContext.Provider value={value}>
       {children}
-      <BookNowModal key={state.nonce} isOpen={state.isOpen} categoryId={state.categoryId} serviceId={state.serviceId} offer={state.offer} onClose={close} />
+      <BookNowModal key={state.nonce} isOpen={state.isOpen} categoryId={state.categoryId} serviceId={state.serviceId} offer={state.offer} issue={state.issue} onClose={close} />
       <Suspense fallback={null}>
         <BookNowUrlSync open={open} />
       </Suspense>

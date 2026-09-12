@@ -36,6 +36,30 @@ export function resolveBookingContext({ categoryId, serviceId, offer }: { catego
   return null;
 }
 
+/** Server-authoritative service/category context for a stored lead. Never
+ * trusts a client-supplied label — only IDs are accepted, and both labels are
+ * derived here from the live catalog (src/content/services.ts) via a single
+ * lookup, so a request that only supplied `serviceId` still gets a correct
+ * `categoryLabel` too. An ID that doesn't resolve to a real, current catalog
+ * entry (stale/tampered) is silently dropped rather than rejecting the whole
+ * submission — the customer still gets to leave a valid lead either way. */
+export function resolveServiceRequestContext({ categoryId, serviceId }: { categoryId?: string; serviceId?: string }): {
+  serviceId: string | null;
+  serviceLabel: string | null;
+  categoryId: string | null;
+  categoryLabel: string | null;
+} {
+  if (serviceId) {
+    const found = findServiceContext(serviceId);
+    if (found) return { serviceId: found.service.id, serviceLabel: found.service.name, categoryId: found.category.id, categoryLabel: found.category.name };
+  }
+  if (categoryId) {
+    const category = getCategoryById(categoryId);
+    if (category) return { serviceId: null, serviceLabel: null, categoryId: category.id, categoryLabel: category.name };
+  }
+  return { serviceId: null, serviceLabel: null, categoryId: null, categoryLabel: null };
+}
+
 export function createBookNowDraft(): BookNowDraft {
   return { fullName: "", phone: "", email: "", zipCode: "", message: "", serviceTextConsent: false };
 }
@@ -46,6 +70,7 @@ function text(value: unknown) {
 
 export function normalizeBookNowPayload(value: unknown): BookNowPayload {
   const input = value && typeof value === "object" ? value as Partial<Record<keyof BookNowPayload, unknown>> : {};
+  const sourcePath = text(input.sourcePath).slice(0, 200);
   return {
     fullName: text(input.fullName).slice(0, 120),
     phone: text(input.phone).slice(0, 40),
@@ -56,6 +81,11 @@ export function normalizeBookNowPayload(value: unknown): BookNowPayload {
     categoryId: text(input.categoryId).slice(0, 60),
     serviceId: text(input.serviceId).slice(0, 60),
     offer: input.offer === true,
+    issue: text(input.issue).slice(0, 60),
+    // Defensive shape check only (must look like an internal route), never
+    // trusted as anything more than display context — this never drives a
+    // redirect or lookup, only a stored/notified string.
+    sourcePath: sourcePath.startsWith("/") ? sourcePath : "",
   };
 }
 

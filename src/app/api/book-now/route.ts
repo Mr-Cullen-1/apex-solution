@@ -17,5 +17,6 @@ export async function POST(request: Request) {
   if (Object.keys(errors).length) return Response.json({ ok: false, status: "invalid", errors }, { status: 400 });
 
   const result = await submitBookNowRequest(payload);
-  return Response.json(result, { status: 503, headers: { "Cache-Control": "no-store" } });
+  const statusCode = result.ok ? 201 : result.status === "not_configured" ? 503 : 500;
+  return Response.json(result, { status: statusCode, headers: { "Cache-Control": "no-store" } });
 }

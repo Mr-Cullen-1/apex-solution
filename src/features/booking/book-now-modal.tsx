@@ -6,7 +6,9 @@ import { contact } from "@/content/company";
 import { createBookNowDraft, normalizeBookNowPayload, resolveBookingContext, validateBookNowPayload } from "./model";
 import type { BookNowDraft, BookNowErrors, SubmissionResult } from "./types";
 
-type NotConfiguredResult = Extract<SubmissionResult, { status: "not_configured" }>;
+// Every terminal outcome except the field-level "invalid" case, which is
+// handled separately via the `errors` state instead of ever being stored here.
+type CompletedResult = Exclude<SubmissionResult, { status: "invalid" }>;
 
 // Sizing has three tiers so the whole form clears the viewport with no
 // internal scrollbar everywhere it's tested:
@@ -24,14 +26,15 @@ type BookNowModalProps = {
   categoryId?: string;
   serviceId?: string;
   offer?: boolean;
+  issue?: string;
   onClose: () => void;
 };
 
-export function BookNowModal({ isOpen, categoryId, serviceId, offer, onClose }: BookNowModalProps) {
+export function BookNowModal({ isOpen, categoryId, serviceId, offer, issue, onClose }: BookNowModalProps) {
   const [draft, setDraft] = useState<BookNowDraft>(createBookNowDraft);
   const [errors, setErrors] = useState<BookNowErrors>({});
   const [submitting, setSubmitting] = useState(false);
-  const [result, setResult] = useState<NotConfiguredResult | null>(null);
+  const [result, setResult] = useState<CompletedResult | null>(null);
   const headingId = useId();
 
   const dialogRef = useRef<HTMLDivElement>(null);
@@ -91,7 +94,7 @@ export function BookNowModal({ isOpen, categoryId, serviceId, offer, onClose }: 
 
   async function handleSubmit(event: React.FormEvent) {
     event.preventDefault();
-    const payload = normalizeBookNowPayload({ ...draft, categoryId, serviceId, offer });
+    const payload = normalizeBookNowPayload({ ...draft, categoryId, serviceId, offer, issue, sourcePath: window.location.pathname });
     const validationErrors = validateBookNowPayload(payload);
     if (Object.keys(validationErrors).length) {
       setErrors(validationErrors);
@@ -113,6 +116,8 @@ export function BookNowModal({ isOpen, categoryId, serviceId, offer, onClose }: 
     }
   }
 
+  const firstName = draft.fullName.trim().split(/\s+/)[0] || "there";
+
   return (
     <div
       className="fixed inset-0 z-[60] flex items-end justify-center bg-ink/55 backdrop-blur-md motion-safe:animate-[fade-slide_200ms_ease-out] sm:items-center sm:p-4"
@@ -127,9 +132,9 @@ export function BookNowModal({ isOpen, categoryId, serviceId, offer, onClose }: 
       >
         <div className="flex items-start justify-between gap-4 border-b border-steel bg-brand-soft px-5 py-4 sm:px-7 sm:py-5 [@media(max-height:700px)]:px-4 [@media(max-height:700px)]:py-2">
           <div>
-            <p className="eyebrow [@media(max-height:700px)]:text-[0.65rem]">{result ? "Request sent" : "Book Now"}</p>
+            <p className="eyebrow [@media(max-height:700px)]:text-[0.65rem]">{result ? (result.ok ? "Request sent" : "Request not sent") : "Book Now"}</p>
             <h2 id={headingId} className="mt-1.5 text-xl font-semibold tracking-[-0.02em] text-navy sm:mt-2 sm:text-2xl [@media(max-height:700px)]:mt-0.5 [@media(max-height:700px)]:text-base">
-              {result ? "Thanks for reaching out." : "Tell us what's going on."}
+              {result ? (result.ok ? "Request received." : "We couldn't send this.") : "Tell us what's going on."}
             </h2>
             {!result && contextLabel && <p className="mt-1.5 text-xs font-semibold text-brand-primary sm:text-sm [@media(max-height:700px)]:mt-0.5 [@media(max-height:700px)]:text-[0.7rem]">Regarding: {contextLabel}</p>}
           </div>
@@ -141,7 +146,11 @@ export function BookNowModal({ isOpen, categoryId, serviceId, offer, onClose }: 
         <div className="px-5 py-4 sm:px-7 sm:py-5 [@media(max-height:700px)]:px-4 [@media(max-height:700px)]:py-2">
           {result ? (
             <div>
-              <p className="rounded-panel border border-steel bg-page-bg p-4 text-sm leading-6 text-slate sm:p-5">{result.message}</p>
+              <p className="rounded-panel border border-steel bg-page-bg p-4 text-sm leading-6 text-slate sm:p-5">
+                {result.ok
+                  ? `Thanks, ${firstName}. We received your service request and someone from our team will reach out shortly.`
+                  : result.message}
+              </p>
               {contact.phoneHref && (
                 <a href={contact.phoneHref} className="mt-4 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-control bg-copper px-6 text-sm font-semibold text-white sm:mt-5 sm:min-h-12">
                   Call {contact.phone} now
