@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { GeistSans } from "geist/font/sans";
-import { Footer } from "@/components/layout/footer";
-import { MobileActionBar } from "@/components/layout/mobile-action-bar";
-import { SiteHeader } from "@/components/navigation/site-header";
 import { company, homeMeta } from "@/content/company";
 import { siteUrl } from "@/content/site-url";
-import { BookNowProvider } from "@/features/booking/book-now-context";
 import "./globals.css";
 
+// True root layout: html/body + fonts + site-wide default metadata only.
+// The public marketing shell (SiteHeader/Footer/MobileActionBar/
+// BookNowProvider) lives one level down in src/app/(marketing)/layout.tsx,
+// so /admin/** — a sibling of that group — never inherits it (instruction
+// #17). Per-route metadata (including every /admin page) still overrides
+// these defaults normally; only the shared fallback lives here.
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
@@ -30,17 +33,12 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={`${GeistSans.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col">
         <a className="skip-link" href="#main-content">Skip to content</a>
-        <BookNowProvider>
-          <SiteHeader />
-          {children}
-          <Footer />
-          <MobileActionBar />
-        </BookNowProvider>
+        {children}
       </body>
     </html>
   );

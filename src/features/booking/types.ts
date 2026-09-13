@@ -41,6 +41,11 @@ export type EmailDeliveryResult =
   | { status: "failed"; error: string }
   | { status: "not_configured" };
 
+/** Admin-facing operational CRM status (Admin Phase 2) — independent of
+ * telegram_status/email_status, which track delivery, not the lead's
+ * lifecycle. Every existing (and newly created) row defaults to "NEW". */
+export type RequestStatus = "NEW" | "CONTACTED" | "SCHEDULED" | "COMPLETED" | "CANCELLED";
+
 /** Shape of a row in `public.service_requests`. Includes the internal
  * Telegram/email-delivery-tracking columns — never return this directly
  * from an API response to the customer. */
@@ -69,6 +74,17 @@ export type ServiceRequestRow = {
   email_message_id: string | null;
   email_sent_at: string | null;
   email_last_error: string | null;
+  /** Admin Phase 2 — CRM identity and offer tracking, all set once at
+   * creation time via the `book_now_create_request` RPC (see
+   * supabase/migrations/20260914130000_service_requests_crm_fields.sql).
+   * `customer_id` is never null on a row created after that migration. */
+  customer_id: string;
+  request_status: RequestStatus;
+  /** Null when no promotion was claimed. Independent of `issue` — the two
+   * used to be conflated (see the migration's backfill comment). */
+  offer_code: string | null;
+  offer_label: string | null;
+  discount_percent: number | null;
   created_at: string;
   updated_at: string;
 };

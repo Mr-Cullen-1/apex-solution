@@ -6,6 +6,7 @@ import { deriveDisplayName, normalizeReviewSubmission, resolveServiceContext, va
 import { extensionForMimeType, REVIEW_MEDIA_BUCKET, REVIEW_MEDIA_UPLOAD_FAILED_MESSAGE } from "./media";
 import type { ReviewMediaMimeType } from "./media";
 import { hashRateKey, releaseRateLimitReservation, reserveRateLimitSlot } from "./rate-limit";
+import { createReviewMediaSignedUrl } from "./signed-media";
 import type { GetApprovedReviewsOptions, GetApprovedReviewsResult, PublicReview, ReviewRow, ReviewSubmissionResult } from "./types";
 
 const SUBMIT_NOT_CONFIGURED_MESSAGE =
@@ -34,39 +35,9 @@ const DEFAULT_LIMIT = 6;
 const MIN_LIMIT = 1;
 const MAX_LIMIT = 20;
 
-// A public page can be cached (see the `revalidate` export on the homepage
-// and /reviews route segments) for up to a couple of minutes, so a signed
-// URL embedded in that cached HTML must still be valid the whole time it
-// could be served. 10 minutes comfortably covers a ~2 minute page cache
-// with room to spare, without minting a URL that stays valid indefinitely.
-const MEDIA_SIGNED_URL_EXPIRY_SECONDS = 600;
-
 function clampLimit(limit: number | undefined): number {
   if (!Number.isFinite(limit ?? NaN)) return DEFAULT_LIMIT;
   return Math.min(MAX_LIMIT, Math.max(MIN_LIMIT, Math.round(limit as number)));
-}
-
-/** Short-lived signed URL into the private `review-media` bucket. Callers
- * must only invoke this for a review that has already been confirmed
- * `approved` + `consent_to_publish = true` (see `getApprovedReviews` below,
- * the only caller) — this function itself does not re-check moderation
- * status, so it must never be called with an arbitrary/untrusted path.
- * Fails safe: any error (including a genuinely missing/deleted object) is
- * logged server-side and resolves to `null`, never thrown — callers render
- * the review without its photo rather than breaking the whole card. */
-async function createReviewMediaSignedUrl(mediaPath: string): Promise<string | null> {
-  try {
-    const supabase = getSupabaseServerClient();
-    const { data, error } = await supabase.storage.from(REVIEW_MEDIA_BUCKET).createSignedUrl(mediaPath, MEDIA_SIGNED_URL_EXPIRY_SECONDS);
-    if (error || !data?.signedUrl) {
-      console.error("[reviews_media_signed_url_failed]", mediaPath, error?.message);
-      return null;
-    }
-    return data.signedUrl;
-  } catch (err) {
-    console.error("[reviews_media_signed_url_failed]", mediaPath, err instanceof Error ? err.message : err);
-    return null;
-  }
 }
 
 /** The only place a database row is mapped to what a client is allowed to

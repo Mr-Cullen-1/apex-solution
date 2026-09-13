@@ -1,43 +1,45 @@
 import "server-only";
 import { getSupabaseServerClient } from "@/lib/supabase/server";
-import { resolveServiceRequestContext } from "./model";
+import { normalizeEmail, normalizeUsPhone } from "@/features/customers/phone";
+import { resolveOfferContext, resolveServiceRequestContext } from "./model";
 import type { BookNowPayload, ServiceRequestRow } from "./types";
 
-/** Inserts the lead first — this is the source of truth. Telegram delivery
- * (see submission-adapter.ts) only ever happens after this succeeds, and its
+/** Resolves/creates the customer, inserts the lead, and records a
+ * `request_created` activity event — all in one transaction via the
+ * `book_now_create_request` RPC (see
+ * supabase/migrations/20260914130000_service_requests_crm_fields.sql), so a
+ * failure partway through never leaves a half-created CRM state (a
+ * customer with no request, or a request with no customer_id). The
+ * database insert remains the source of truth; Telegram delivery (see
+ * submission-adapter.ts) only ever happens after this succeeds, and its
  * outcome never changes what was already stored here. Returns the full row
  * (not just an id) so the caller has everything it needs to format the
  * Telegram message without a second round trip. */
 export async function createServiceRequest(payload: BookNowPayload): Promise<{ ok: true; row: ServiceRequestRow } | { ok: false; error: string }> {
   const supabase = getSupabaseServerClient();
   const context = resolveServiceRequestContext({ categoryId: payload.categoryId, serviceId: payload.serviceId });
-  // The offer flag has no dedicated column (see docs/BOOK_NOW_ARCHITECTURE.md)
-  // — it's folded into `issue` so a first-time-offer claim isn't silently
-  // dropped, reusing the same short context-tag column "Other" already uses.
-  const issue = payload.offer ? "First-Time Customer Offer" : payload.issue || null;
+  const offer = resolveOfferContext(payload.offer);
+  const email = payload.email || null;
 
-  const { data, error } = await supabase
-    .from("service_requests")
-    .insert({
-      full_name: payload.fullName,
-      phone: payload.phone,
-      email: payload.email || null,
-      zip_code: payload.zipCode,
-      service_id: context.serviceId,
-      service_label: context.serviceLabel,
-      category_id: context.categoryId,
-      category_label: context.categoryLabel,
-      issue,
-      message: payload.message,
-      sms_consent: payload.serviceTextConsent,
-      source_path: payload.sourcePath || null,
-      // Set explicitly rather than relying on the column default: "pending"
-      // only when an email was actually supplied, so the confirmation-email
-      // branch below has an accurate starting point to update from.
-      email_status: payload.email ? "pending" : "not_requested",
-    })
-    .select()
-    .single();
+  const { data, error } = await supabase.rpc("book_now_create_request", {
+    p_full_name: payload.fullName,
+    p_phone: payload.phone,
+    p_normalized_phone: normalizeUsPhone(payload.phone),
+    p_email: email,
+    p_normalized_email: email ? normalizeEmail(email) : null,
+    p_zip_code: payload.zipCode,
+    p_service_id: context.serviceId,
+    p_service_label: context.serviceLabel,
+    p_category_id: context.categoryId,
+    p_category_label: context.categoryLabel,
+    p_issue: payload.issue || null,
+    p_message: payload.message,
+    p_sms_consent: payload.serviceTextConsent,
+    p_source_path: payload.sourcePath || null,
+    p_offer_code: offer.offerCode,
+    p_offer_label: offer.offerLabel,
+    p_discount_percent: offer.discountPercent,
+  });
 
   if (error || !data) {
     console.error("[book_now_insert_failed]", error?.code, error?.message);

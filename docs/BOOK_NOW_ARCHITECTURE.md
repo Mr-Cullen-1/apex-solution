@@ -39,8 +39,20 @@ input) — now calls `submitBookNowRequest` from
    Reviews) — if false, returns `not_configured` (503) without attempting
    anything. Local/CI environments without Supabase credentials still lint,
    typecheck, and build normally; this path is not new to Phase 1.
-2. `createServiceRequest` (`src/features/booking/repository.ts`) — inserts
-   the row. Service/category **labels are never trusted from the browser**:
+2. `createServiceRequest` (`src/features/booking/repository.ts`) — calls the
+   `book_now_create_request(...)` RPC (Admin Phase 2), which
+   resolves/creates the customer, inserts the row, and records a
+   `request_created` CRM activity event all in one transaction (never a
+   plain insert since customer linkage was introduced — see
+   docs/ADMIN_ARCHITECTURE.md §26). The RPC assigns `email_status` from a
+   `case when p_email is not null then 'pending' else 'not_requested' end`
+   expression, explicitly cast to `public.email_delivery_status` — Postgres
+   infers an untyped `case` as `text`, which a strict enum column rejects
+   (error `42804`); fixed by
+   `supabase/migrations/20260916100000_fix_book_now_email_status_cast.sql`
+   after real QA caught every Book Now submission failing against the
+   original (uncast) version. Service/category **labels are never
+   trusted from the browser**:
    only `categoryId`/`serviceId` travel over the wire, and
    `resolveServiceRequestContext` (`model.ts`) looks both up against the live
    catalog (`src/content/services.ts`) at insert time. An ID that doesn't
@@ -85,8 +97,11 @@ unedited) +
 | `zip_code` | `text not null` | 1–20 chars |
 | `service_id` / `service_label` | `text` | derived server-side, never trusted from the client |
 | `category_id` / `category_label` | `text` | derived server-side, never trusted from the client |
-| `issue` | `text` | short tag: `"Other"`, `"First-Time Customer Offer"`, or null |
+| `issue` | `text` | short tag: `"Other"` or null. **Admin Phase 2**: no longer overloaded with `"First-Time Customer Offer"` — see `offer_code`/`offer_label`/`discount_percent` below and docs/ADMIN_ARCHITECTURE.md §25. |
 | `message` | `text not null` | 1–1200 chars, matches the existing client cap |
+| `customer_id` | `uuid not null references public.customers(id)` | **Admin Phase 2** — resolved/created by `resolve_or_create_customer(...)`; see docs/ADMIN_ARCHITECTURE.md §26 |
+| `request_status` | `public.request_status not null default 'NEW'` | **Admin Phase 2** — operational CRM status (`NEW`/`CONTACTED`/`SCHEDULED`/`COMPLETED`/`CANCELLED`), independent of `telegram_status`/`email_status` |
+| `offer_code` / `offer_label` / `discount_percent` | `text` / `text` / `smallint` | **Admin Phase 2** — `FIRST_TIME_10` / `"First-Time Customer Offer"` / `10` when the 10% first-time offer was claimed, all three `null` otherwise |
 | `sms_consent` | `boolean not null default false` | |
 | `source` | `text not null default 'website'` | not customer-editable |
 | `source_path` | `text` | originating route, e.g. `/services/heating` |
@@ -293,10 +308,14 @@ the Telegram message, so "Heating → Other" reaches Telegram as
 `Service: Heating` / `Issue: Other` without asking the customer to re-select
 anything the site already knows.
 
-A "Claim this offer" CTA (`offer: true`) has no dedicated database column —
-it's folded into the same `issue` column as `"First-Time Customer Offer"`
-(`repository.ts`) so that context isn't silently dropped, rather than adding
-a column the rest of this phase's schema doesn't call for.
+A "Claim this offer" CTA (`offer: true`) is translated by
+`resolveOfferContext` (`src/features/booking/model.ts`) into its own
+`offer_code`/`offer_label`/`discount_percent` columns — see
+docs/ADMIN_ARCHITECTURE.md §25. (Prior to Admin Phase 2, this had no
+dedicated column and was folded into `issue` as the literal string
+`"First-Time Customer Offer"`; that overload was replaced, with a one-time
+backfill splitting historical rows apart, once the CRM needed `issue` and
+the offer to be independently queryable.)
 
 `source_path` captures `window.location.pathname` at submit time (e.g.
 `/services/heating/boiler-repair`) — never the full URL, query string, or

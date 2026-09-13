@@ -80,6 +80,14 @@ export function SparkleIcon(props: SVGProps<SVGSVGElement>) {
   );
 }
 
+export function QuoteMarkIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 32 24" fill="currentColor" {...props}>
+      <path d="M0 24V14.4Q0 8.16 3.36 4.08 6.72 0 13.44 0v5.28q-3.36 0-5.04 2.16Q6.72 9.6 6.72 12.96h6.72V24Zm18.56 0V14.4q0-6.24 3.36-10.32Q25.28 0 32 0v5.28q-3.36 0-5.04 2.16-1.68 2.16-1.68 5.52h6.72V24Z" />
+    </svg>
+  );
+}
+
 export function ImageIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" {...props}>

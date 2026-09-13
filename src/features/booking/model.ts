@@ -2,6 +2,17 @@ import { firstTimeOffer } from "@/content/offers";
 import { getServiceById, primaryServices } from "@/content/services";
 import type { BookNowDraft, BookNowErrors, BookNowPayload } from "./types";
 
+/** Server-authoritative offer context — the only place a claimed 10%
+ * first-time offer is translated from the customer's boolean flag into the
+ * columns actually stored (offer_code/offer_label/discount_percent).
+ * Independent of `issue`: a customer can claim the offer AND separately
+ * describe their problem (see resolveServiceRequestContext) — the two are
+ * no longer conflated the way the pre-Admin-Phase-2 `issue` overload did. */
+export function resolveOfferContext(offer: boolean): { offerCode: string | null; offerLabel: string | null; discountPercent: number | null } {
+  if (!offer) return { offerCode: null, offerLabel: null, discountPercent: null };
+  return { offerCode: firstTimeOffer.code, offerLabel: firstTimeOffer.title, discountPercent: firstTimeOffer.discountPercent };
+}
+
 export function findServiceContext(serviceId: string) {
   for (const category of primaryServices) {
     const service = category.children.find((item) => item.id === serviceId);

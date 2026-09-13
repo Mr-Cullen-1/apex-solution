@@ -23,6 +23,14 @@ export const firstTimeOffer = {
   headline: "Save 10% on your first maintenance service.",
   disclaimer: "Applies to first-time Apex customers on the maintenance services listed below. Confirmed when you book.",
   eligibility,
+  // Admin/CRM-facing offer identity (service_requests.offer_code/offer_label/
+  // discount_percent — see supabase/migrations/20260914130000_service_requests_crm_fields.sql).
+  // Distinct from the old (pre-Admin-Phase-2) approach of overloading the
+  // `issue` column with this same title string — that was a Book Now
+  // Phase 1 shortcut, replaced now that offer and issue are tracked as
+  // independent columns.
+  code: "FIRST_TIME_10",
+  discountPercent: 10,
 } as const;
 
 const offerServiceIds = new Set(["ac-maintenance", "heating-maintenance"]);
