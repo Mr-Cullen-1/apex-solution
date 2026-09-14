@@ -1,9 +1,18 @@
 "use server";
 
 import { redirect } from "next/navigation";
+import { headers } from "next/headers";
 import { createAuthServerClient, isAuthConfigured } from "@/lib/supabase/auth-server";
 import { getSupabaseServerClient, isSupabaseConfigured } from "@/lib/supabase/server";
+import { isAdminHost } from "@/lib/admin-host";
 import { getAdminSession } from "./require-admin";
+
+/** Same host-aware redirect-target reasoning as require-admin.ts and
+ * proxy.ts — on the admin subdomain these must land on the unprefixed
+ * path, not visibly bounce the browser to ".../admin". */
+async function onAdminSubdomain(): Promise<boolean> {
+  return isAdminHost((await headers()).get("host"));
+}
 
 // One deliberately generic message for every failure mode — wrong
 // password, an email with no Supabase account, and a real Supabase account
@@ -55,7 +64,7 @@ export async function loginAction(_prevState: LoginActionState, formData: FormDa
     return { error: GENERIC_LOGIN_ERROR };
   }
 
-  redirect("/admin");
+  redirect((await onAdminSubdomain()) ? "/" : "/admin");
 }
 
 /** Terminates the Supabase Auth session (clearing its cookies) and sends
@@ -66,7 +75,7 @@ export async function logoutAction(): Promise<void> {
     const authClient = await createAuthServerClient();
     await authClient.auth.signOut();
   }
-  redirect("/admin/login");
+  redirect((await onAdminSubdomain()) ? "/login" : "/admin/login");
 }
 
 const MIN_PASSWORD_LENGTH = 8;
@@ -88,7 +97,8 @@ export type ChangePasswordActionState = { error: string } | undefined;
  * so a SUPER_ADMIN never sees or sets another admin's password. */
 export async function changePasswordAction(_prevState: ChangePasswordActionState, formData: FormData): Promise<ChangePasswordActionState> {
   const session = await getAdminSession();
-  if (!session) redirect("/admin/login");
+  const onAdminHost = await onAdminSubdomain();
+  if (!session) redirect(onAdminHost ? "/login" : "/admin/login");
 
   const password = String(formData.get("password") ?? "");
   const confirmPassword = String(formData.get("confirmPassword") ?? "");
@@ -115,5 +125,5 @@ export async function changePasswordAction(_prevState: ChangePasswordActionState
     if (clearError) console.error("[admin_must_change_password_clear_failed]", clearError.code, clearError.message);
   }
 
-  redirect("/admin");
+  redirect(onAdminHost ? "/" : "/admin");
 }

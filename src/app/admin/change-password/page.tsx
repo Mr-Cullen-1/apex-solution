@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
+import { headers } from "next/headers";
 import { company } from "@/content/company";
 import { getAdminSession } from "@/features/admin/auth/require-admin";
 import { ChangePasswordForm } from "@/features/admin/auth/change-password-form";
+import { isAdminHost } from "@/lib/admin-host";
 
 export const metadata: Metadata = {
   title: { absolute: `Set your password | ${company.name}` },
@@ -20,7 +22,8 @@ export const dynamic = "force-dynamic";
 // loop forever if this page also called it.
 export default async function AdminChangePasswordPage() {
   const session = await getAdminSession();
-  if (!session) redirect("/admin/login");
+  // Host-aware for the same reason as /admin/login/page.tsx above.
+  if (!session) redirect(isAdminHost((await headers()).get("host")) ? "/login" : "/admin/login");
 
   return (
     <main className="flex min-h-full flex-1 items-center justify-center bg-page-bg px-page py-16">

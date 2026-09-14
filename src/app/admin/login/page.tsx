@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
+import { headers } from "next/headers";
 import { company } from "@/content/company";
 import { getAdminSession } from "@/features/admin/auth/require-admin";
 import { LoginForm } from "@/features/admin/auth/login-form";
+import { isAdminHost } from "@/lib/admin-host";
 
 export const metadata: Metadata = {
   title: { absolute: `Admin sign in | ${company.name}` },
@@ -21,7 +23,10 @@ export const dynamic = "force-dynamic";
 // docs/ADMIN_ARCHITECTURE.md).
 export default async function AdminLoginPage() {
   const session = await getAdminSession();
-  if (session) redirect("/admin");
+  // Host-aware: on the admin subdomain (proxy.ts rewrote "/login" here)
+  // this must land back on "/", never visibly bounce to ".../admin" — see
+  // the same pattern in proxy.ts and features/admin/auth/{actions,require-admin}.ts.
+  if (session) redirect(isAdminHost((await headers()).get("host")) ? "/" : "/admin");
 
   return (
     <main className="flex min-h-full flex-1 items-center justify-center bg-page-bg px-page py-16">

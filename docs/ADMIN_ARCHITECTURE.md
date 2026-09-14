@@ -101,7 +101,8 @@ future phase (e.g. account management, permissions).
   an **optimistic** check only: is there a Supabase Auth session at all? If
   not, `/admin/**` (except `/admin/login`) redirects to `/admin/login`. This
   never queries `admin_users` — proxy must stay fast and is never the real
-  security boundary.
+  security boundary. Since Phase 4 (§41), this same check runs against the
+  *effective* path after the admin-subdomain rewrite — see §41.
 - `src/app/admin/(dashboard)/layout.tsx` calls `requireAdmin()` — the real
   boundary for `/admin` and `/admin/reviews`. An authenticated-but-
   unauthorized (or since-deactivated) user is signed out and redirected to
@@ -824,3 +825,71 @@ All follow the existing repository conventions: `isSupabaseConfigured()`
 guard, try/catch, `console.error` with a stable `[admin_*_failed]` tag, and
 an honest `{ ok: false, message }` result the page renders as a per-card
 empty state rather than crashing the whole dashboard.
+
+## 41. Phase 4: admin.apexhomesupport.com hostname routing
+
+DNS and the Vercel project's custom domains were already configured
+(`apexhomesupport.com` and `admin.apexhomesupport.com` both point at the
+same production deployment) before this phase — this phase is the
+application-side routing only.
+
+**The rewrite** (`src/proxy.ts`): a request whose `Host` header is
+`admin.apexhomesupport.com` (`isAdminHost()`, `src/lib/admin-host.ts`) has
+its path internally rewritten to the existing `/admin`-prefixed route tree
+— `NextResponse.rewrite()`, never a redirect, so the browser's address bar
+never changes. `admin.apexhomesupport.com/` → serves `/admin`;
+`admin.apexhomesupport.com/login` → serves `/admin/login`;
+`admin.apexhomesupport.com/requests/<id>` → serves
+`/admin/requests/<id>`; query parameters carry over (`nextUrl.clone()`,
+only `.pathname` is changed). A path that **already** starts with `/admin`
+(an internal `<Link href="/admin/…">`, or a `redirect()` target elsewhere
+in the app) is left untouched instead of being prefixed a second time —
+this is both the loop-proofing and the reason the old
+`apexhomesupport.com/admin` path keeps working completely unchanged
+(intentionally not removed/redirected yet).
+
+**Everything else is unaffected on purpose.** The public site (any other
+host, and any path not already under `/admin`) returns from `proxy()`
+immediately — no cookies read, no Supabase client created — identical to
+proxy not running at all, which is exactly today's behavior. The matcher
+(`'/((?!api|_next/static|_next/image|favicon\.ico|robots\.txt|sitemap\.xml
+|manifest\.webmanifest|opengraph-image|twitter-image|icon\.png|
+apple-icon\.png).*)'`) keeps proxy from even being invoked for API routes,
+Next.js build/image internals, and the well-known metadata file-convention
+routes; `isFrameworkOrStaticPath()` inside `proxy()` is the defense-in-depth
+backstop for arbitrary `public/` assets that can't be enumerated in a
+matcher (any path whose last segment has a file extension).
+
+**Auth stays exactly as strict, just host-aware.** §5's optimistic
+session check now runs against the *effective* (post-rewrite) path, so
+`admin.apexhomesupport.com/requests` is recognized as a protected route the
+same as `/admin/requests` always was, and an unauthenticated visitor is
+redirected to `/login` (not `/admin/login`) so the browser stays on the
+subdomain. `requireAdmin()`/`requireSuperAdmin()`
+(`require-admin.ts`) remain the actual security boundary, completely
+unchanged in logic — only their redirect *targets* are now host-aware
+(`onAdminSubdomain()`, reading `next/headers`'s `headers().get("host")`).
+The same host-aware target logic was applied to every other hardcoded
+`/admin`-prefixed `redirect()` in the auth path: `loginAction`,
+`logoutAction`, `changePasswordAction` (`auth/actions.ts`), and the
+session-bounce checks in `/admin/login` and `/admin/change-password`'s own
+page components — without this, a successful login/logout on the subdomain
+would have visibly bounced the browser to
+`admin.apexhomesupport.com/admin` instead of staying at
+`admin.apexhomesupport.com/`.
+
+**No RLS/RPC/migration/session-storage change.** Supabase Auth cookies are
+still set with no explicit `Domain` attribute (host-only scoping, the
+`@supabase/ssr` default) — a session established on
+`apexhomesupport.com/admin` is **not** shared with
+`admin.apexhomesupport.com` or vice versa; signing in on one host does not
+carry over to the other while both remain reachable. This is deliberate
+(narrower cookie scope is the safer default, and nothing in this phase
+asked for cross-host session continuity) rather than an oversight — worth
+revisiting only if/when the old `/admin` path is actually retired.
+
+**No new environment variable.** `ADMIN_HOSTNAME` is a hardcoded constant
+in `src/lib/admin-host.ts`, not an env var — it names a specific,
+already-DNS-configured production hostname, not a per-environment value
+(local dev and preview deployments simply never match it, so they keep
+serving Admin at `/admin` exactly as before).

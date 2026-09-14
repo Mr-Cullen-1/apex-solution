@@ -1,8 +1,20 @@
 import "server-only";
 import { redirect } from "next/navigation";
+import { headers } from "next/headers";
 import { getSupabaseServerClient, isSupabaseConfigured } from "@/lib/supabase/server";
 import { createAuthServerClient, isAuthConfigured } from "@/lib/supabase/auth-server";
+import { isAdminHost } from "@/lib/admin-host";
 import type { AdminIdentity, AdminRole } from "./types";
+
+/** Every redirect() below targets a hardcoded "/admin"-prefixed path so the
+ * old apexhomesupport.com/admin route keeps working unchanged — except on
+ * the admin subdomain, where that would visibly bounce the browser to
+ * "admin.apexhomesupport.com/admin" instead of staying on the clean
+ * unprefixed path proxy.ts rewrote FROM. Mirrors the same host-aware
+ * pattern in proxy.ts and auth/actions.ts. */
+async function onAdminSubdomain(): Promise<boolean> {
+  return isAdminHost((await headers()).get("host"));
+}
 
 type ActiveAdminRow = { role: AdminRole; mustChangePassword: boolean };
 
@@ -61,21 +73,25 @@ export async function getAdminSession(): Promise<AdminIdentity | null> {
  *   /admin/change-password before reaching anything else. That page uses
  *   `getAdminSession()` instead of this function, so it never loops. */
 export async function requireAdmin(): Promise<AdminIdentity> {
-  if (!isAuthConfigured()) redirect("/admin/login");
+  const onAdminHost = await onAdminSubdomain();
+  const loginPath = onAdminHost ? "/login" : "/admin/login";
+  const changePasswordPath = onAdminHost ? "/change-password" : "/admin/change-password";
+
+  if (!isAuthConfigured()) redirect(loginPath);
 
   const authClient = await createAuthServerClient();
   const {
     data: { user },
   } = await authClient.auth.getUser();
-  if (!user) redirect("/admin/login");
+  if (!user) redirect(loginPath);
 
   const admin = await lookupActiveAdmin(user.id);
   if (!admin) {
     await authClient.auth.signOut();
-    redirect("/admin/login");
+    redirect(loginPath);
   }
 
-  if (admin.mustChangePassword) redirect("/admin/change-password");
+  if (admin.mustChangePassword) redirect(changePasswordPath);
 
   return { userId: user.id, email: user.email ?? "", role: admin.role, mustChangePassword: false };
 }
@@ -90,6 +106,6 @@ export async function requireAdmin(): Promise<AdminIdentity> {
  * way, since `redirect()` unwinds the action the same as a page render). */
 export async function requireSuperAdmin(): Promise<AdminIdentity> {
   const admin = await requireAdmin();
-  if (admin.role !== "SUPER_ADMIN") redirect("/admin");
+  if (admin.role !== "SUPER_ADMIN") redirect((await onAdminSubdomain()) ? "/" : "/admin");
   return admin;
 }
