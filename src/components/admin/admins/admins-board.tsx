@@ -4,6 +4,8 @@ import { useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import { createAdminAction, resetAdminPasswordAction, setAdminActiveAction, setAdminRoleAction } from "@/features/admin/admins/actions";
 import type { AdminAccount, AdminRole } from "@/features/admin/admins/types";
+import { Badge } from "@/components/admin/ui/badge";
+import { LockIcon, PlusIcon, ShieldIcon } from "@/components/ui/icons";
 
 function formatDate(iso: string): string {
   const date = new Date(iso);
@@ -132,7 +134,8 @@ export function AdminsBoard({ admins, currentUserId }: { admins: AdminAccount[];
             />
           </div>
           <div>
-            <label htmlFor="create-role" className="text-sm font-semibold text-navy">
+            <label htmlFor="create-role" className="inline-flex items-center gap-1.5 text-sm font-semibold text-navy">
+              <ShieldIcon className="size-4 text-slate" />
               Role
             </label>
             <select
@@ -149,8 +152,9 @@ export function AdminsBoard({ admins, currentUserId }: { admins: AdminAccount[];
           <button
             type="submit"
             disabled={pending || !createEmail}
-            className="min-h-10 rounded-control bg-navy px-5 text-sm font-semibold text-white transition-colors hover:bg-copper disabled:cursor-not-allowed disabled:opacity-60"
+            className="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-control bg-navy px-5 text-sm font-semibold text-white transition-colors hover:bg-brand-primary disabled:cursor-not-allowed disabled:opacity-60"
           >
+            <PlusIcon className="size-4" />
             {pendingUserId === "create" ? "Creating…" : "Create Admin"}
           </button>
         </form>
@@ -165,7 +169,7 @@ export function AdminsBoard({ admins, currentUserId }: { admins: AdminAccount[];
       <div className="overflow-x-auto rounded-panel border border-steel bg-surface">
         <table className="w-full min-w-[720px] border-collapse text-sm">
           <thead>
-            <tr className="border-b border-steel text-left text-xs font-bold uppercase tracking-[0.06em] text-slate">
+            <tr className="border-b border-steel bg-page-bg text-left text-xs font-bold uppercase tracking-[0.06em] text-slate">
               <th className="px-4 py-3">Email</th>
               <th className="px-4 py-3">Role</th>
               <th className="px-4 py-3">Status</th>
@@ -196,15 +200,9 @@ export function AdminsBoard({ admins, currentUserId }: { admins: AdminAccount[];
                     </select>
                   </td>
                   <td className="px-4 py-3 align-top">
-                    <div className="flex flex-col gap-1">
-                      <span
-                        className={`inline-flex w-fit items-center rounded-control px-2.5 py-1 text-xs font-bold uppercase tracking-[0.06em] ${
-                          admin.isActive ? "bg-status-live/15 text-status-live" : "bg-ink/10 text-ink-muted"
-                        }`}
-                      >
-                        {admin.isActive ? "Active" : "Inactive"}
-                      </span>
-                      {admin.mustChangePassword && <span className="text-xs font-semibold text-copper">Must change password</span>}
+                    <div className="flex flex-col gap-1.5">
+                      <Badge tone={admin.isActive ? "success" : "neutral"}>{admin.isActive ? "Active" : "Inactive"}</Badge>
+                      {admin.mustChangePassword && <span className="text-xs font-semibold text-brand-primary">Must change password</span>}
                     </div>
                   </td>
                   <td className="px-4 py-3 align-top text-slate">{formatDate(admin.createdAt)}</td>
@@ -215,8 +213,9 @@ export function AdminsBoard({ admins, currentUserId }: { admins: AdminAccount[];
                         type="button"
                         disabled={rowPending}
                         onClick={() => handleResetPassword(admin)}
-                        className="rounded-control border border-steel px-3 py-1.5 text-sm font-semibold text-navy transition-colors hover:border-navy disabled:opacity-60"
+                        className="inline-flex items-center gap-1.5 rounded-control border border-steel px-3 py-1.5 text-sm font-semibold text-navy transition-colors hover:border-navy disabled:opacity-60"
                       >
+                        <LockIcon className="size-3.5" />
                         {rowPending ? "Working…" : "Reset Password"}
                       </button>
                       <button

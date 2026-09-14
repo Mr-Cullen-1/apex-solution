@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { CustomerList } from "@/components/admin/customers/customer-list";
 import { Pagination } from "@/components/admin/pagination";
+import { AdminPageHeader } from "@/components/admin/ui/page-header";
 import { listAdminCustomers } from "@/features/admin/customers/repository";
 
 export const metadata: Metadata = { title: "Customers" };
@@ -19,12 +20,9 @@ export default async function AdminCustomersPage({ searchParams }: CustomersPage
 
   return (
     <div className="flex flex-col gap-6">
-      <div>
-        <h1 className="text-2xl font-semibold tracking-[-0.02em] text-navy">Customers</h1>
-        <p className="mt-1 text-sm text-slate">Internal CRM directory — resolved from Book Now submissions.</p>
-      </div>
+      <AdminPageHeader eyebrow="Operations" title="Customers" description="Internal CRM directory — resolved from Book Now submissions." />
 
-      <form method="get" action="/admin/customers" className="flex items-center gap-2">
+      <form method="get" action="/admin/customers" className="flex items-center gap-2 rounded-panel border border-steel bg-surface p-4 sm:p-5">
         <label htmlFor="customer-search" className="sr-only">
           Search customers
         </label>

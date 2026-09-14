@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { requireSuperAdmin } from "@/features/admin/auth/require-admin";
 import { listAdmins } from "@/features/admin/admins/repository";
 import { AdminsBoard } from "@/components/admin/admins/admins-board";
+import { AdminPageHeader } from "@/components/admin/ui/page-header";
 
 export const metadata: Metadata = { title: "Admins" };
 
@@ -17,10 +18,7 @@ export default async function AdminAdminsPage() {
 
   return (
     <div className="flex flex-col gap-6">
-      <div>
-        <h1 className="text-2xl font-semibold tracking-[-0.02em] text-navy">Admins</h1>
-        <p className="mt-1 text-sm text-slate">Create admins, change roles, and activate or deactivate accounts.</p>
-      </div>
+      <AdminPageHeader eyebrow="Administration" title="Admins" description="Create admins, change roles, and activate or deactivate accounts." />
 
       {!result.ok ? (
         <div className="rounded-panel border border-steel bg-surface p-8 text-center text-sm font-medium text-ink">{result.message}</div>

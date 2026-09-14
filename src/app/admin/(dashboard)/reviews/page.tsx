@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ReviewFilters } from "@/components/admin/reviews/review-filters";
 import { ReviewPagination } from "@/components/admin/reviews/review-pagination";
 import { ReviewBoard } from "@/components/admin/reviews/review-board";
+import { AdminPageHeader } from "@/components/admin/ui/page-header";
 import { isValidReviewStatusFilter, listAdminReviews } from "@/features/admin/reviews/repository";
 import type { AdminReviewStatusFilter } from "@/features/admin/reviews/types";
 
@@ -28,10 +29,7 @@ export default async function AdminReviewsPage({ searchParams }: ReviewsPageProp
 
   return (
     <div className="flex flex-col gap-6">
-      <div>
-        <h1 className="text-2xl font-semibold tracking-[-0.02em] text-navy">Reviews</h1>
-        <p className="mt-1 text-sm text-slate">Moderate customer review submissions.</p>
-      </div>
+      <AdminPageHeader eyebrow="Operations" title="Reviews" description="Moderate customer review submissions." />
 
       <ReviewFilters status={status} search={search} />
 

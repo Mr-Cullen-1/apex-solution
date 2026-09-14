@@ -9,6 +9,10 @@ phases (aside from the review-card no-image polish noted in §25).
 **Phase 1** (Auth + Dashboard + Review Moderation) is covered by §1–§18.
 **Phase 2** (SUPER_ADMIN account management + Requests/Customers CRM +
 review-card polish) is covered by §19 onward.
+**Phase 3** (visual redesign + dashboard analytics — no auth/authorization/
+data-model change) is covered by §40. It supersedes the sidebar/dashboard
+*descriptions* in §6/§7 below (the security model those sections describe is
+unchanged) — read §40 for the current shell and dashboard content.
 
 ## 1. Two Supabase clients, two responsibilities
 
@@ -738,3 +742,85 @@ in this project and can be removed from Supabase Dashboard → Authentication
 harmless, since nothing points at them anymore. No SMTP customization, no
 email template changes: `supabase.auth.admin.createUser` and
 `updateUserById` never trigger a Supabase email.
+
+## 40. Phase 3: visual redesign + dashboard analytics
+
+A visual/structural redesign of the whole `/admin` area — no auth,
+authorization, RLS, migration, or route change. Every existing Server
+Action, RPC, filter, and mutation from Phases 1–2 is unchanged; this phase
+only touches presentation and adds a handful of additive, read-only
+dashboard queries.
+
+**Admin shell** (`src/components/admin/admin-shell.tsx`) — desktop: a fixed
+264px sidebar grouped into "Overview" / "Operations" / "Administration"
+(icons + active/hover state) plus a sticky top bar (breadcrumb derived from
+the current route + an account chip showing the signed-in admin's email and
+role). Mobile: unchanged slide-in drawer pattern, restyled. The
+Admins-nav-item role gating (`role === "SUPER_ADMIN"`) is still a UX nicety
+only — `requireSuperAdmin()` on the route remains the real boundary.
+
+**Design tokens** (`src/app/globals.css`) — two additions, both validated
+against `dataviz` skill's palette rules before being added:
+
+- `--status-critical` (`#c0362c`) — reserved for genuine operational
+  failures (Telegram/Email delivery failed), never reused as a brand
+  accent. 5.52:1 text contrast on white.
+- `--status-pipeline-1..4` — an ordinal ramp (`color-mix` steps of
+  `--brand-primary`) for the request lifecycle NEW→CONTACTED→SCHEDULED→
+  COMPLETED, used **only** in the status-distribution chart's mark fills
+  (validated `--ordinal`: monotone lightness, light-end contrast ≥ 2:1).
+  CANCELLED deliberately stays out of this ramp — it reuses `--ink-muted`
+  as a distinct off-path status. Badge/chip **text** never uses these ramp
+  steps (their lighter end doesn't clear 4.5:1 text contrast); text chips
+  use the existing `--brand-primary`/`--status-live`/`--status-critical`/
+  `--ink-muted` tokens instead.
+
+**Shared UI primitives** (new: `src/components/admin/ui/`) —
+`AdminPageHeader`, `KpiCard`, `SectionCard`, `ChartCard`, `EmptyState`, and
+`Badge` (a single tone-based chip replacing the per-page `STATUS_STYLES`
+maps that used to be duplicated in `status-badge.tsx`, `request-list.tsx`,
+and `admins-board.tsx`). `RequestStatusBadge`/`DeliveryStatusBadge`
+(`src/components/admin/requests/`) wrap `Badge` with the request-pipeline
+and Telegram/Email tone mappings respectively, reused across the Requests
+list/detail, Customer request history, and the dashboard's recent-activity
+feed. One behavior change: CANCELLED now renders with the `critical` tone
+instead of sharing COMPLETED's neutral gray, so a cancelled request reads
+as a distinct outcome rather than blending into "closed."
+
+**Charts** (new: `src/components/admin/charts/`) — `AreaLineChart` (line +
+area, requests-over-time), `DonutChart` (status-scale ring + legend,
+request-status/review-moderation), `BarListChart` (horizontal ranking,
+top service categories), `StackedBar` (single-row proportional breakdown,
+delivery outcomes). All are plain server components — inline SVG or
+HTML/CSS, zero client JS, zero new dependency (per this project's existing
+"don't add a dependency when a small accessible platform/React solution is
+sufficient" rule). Hover detail comes from native SVG `<title>` elements,
+not a custom tooltip. Every chart ships an honest empty state
+(`ChartEmptyState`/`EmptyState`) instead of a fake/placeholder chart when a
+query fails or returns no data.
+
+**Dashboard analytics reads** (additive functions in
+`src/features/admin/dashboard/repository.ts` / `types.ts` — no schema
+change, no new migration):
+
+- `getRequestsOverTime(days)` — daily submission counts for 7/14/30 days
+  (URL-driven `?range=`), bucketed in JS from one `created_at`-only query.
+- `getRequestStatusDistribution()` — five `head: true` counts, one per
+  `request_status` value (same cheap-count pattern as the existing
+  `getServiceRequestSignals`).
+- `getTopServiceCategories(limit)` — ranks `category_label` from the most
+  recent 5,000 submissions (bounded read, reduced in JS — no `GROUP BY` RPC
+  needed for a ranking chart).
+- `getDeliveryOutcomes()` — Telegram (`pending`/`sent`/`failed`) and Email
+  (`not_requested`/`pending`/`sent`/`failed`) breakdowns, seven `head: true`
+  counts.
+- `getOfferUsage()` — with-offer vs. without-offer counts, reusing the same
+  `offer_code` filter as the Requests page's Offer filter.
+- `getRecentRequestsFeed(limit)` — latest N submissions for the dashboard's
+  recent-activity list (id/name/service/status/created_at only — not the
+  full `AdminRequest` DTO).
+
+All follow the existing repository conventions: `isSupabaseConfigured()`
+guard, try/catch, `console.error` with a stable `[admin_*_failed]` tag, and
+an honest `{ ok: false, message }` result the page renders as a per-card
+empty state rather than crashing the whole dashboard.

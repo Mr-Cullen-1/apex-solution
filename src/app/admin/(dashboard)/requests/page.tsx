@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { RequestFilters } from "@/components/admin/requests/request-filters";
 import { RequestList } from "@/components/admin/requests/request-list";
 import { Pagination } from "@/components/admin/pagination";
+import { AdminPageHeader } from "@/components/admin/ui/page-header";
 import { listAdminRequests } from "@/features/admin/requests/repository";
 import type { AdminEmailStatusFilter, AdminOfferFilter, AdminRequestStatusFilter, AdminTelegramStatusFilter } from "@/features/admin/requests/types";
 
@@ -34,10 +35,7 @@ export default async function AdminRequestsPage({ searchParams }: RequestsPagePr
 
   return (
     <div className="flex flex-col gap-6">
-      <div>
-        <h1 className="text-2xl font-semibold tracking-[-0.02em] text-navy">Requests</h1>
-        <p className="mt-1 text-sm text-slate">Book Now submissions — newest first.</p>
-      </div>
+      <AdminPageHeader eyebrow="Operations" title="Requests" description="Book Now submissions — newest first." />
 
       <RequestFilters status={status} telegramStatus={telegramStatus} emailStatus={emailStatus} offer={offer} serviceId={serviceId} search={search} />
 

@@ -26,6 +26,21 @@
 
   /* Semantic (not brand) */
   --status-live: #16a34a;
+  /* Reserved for genuine operational failures only (Telegram/Email delivery
+     failed) — never a brand accent, never reused for "series 4". Validated
+     against the design system's dataviz palette rules: 5.52:1 text contrast
+     on white, distinct step from --status-live. */
+  --status-critical: #c0362c;
+
+  /* Ordinal ramp for the request pipeline (NEW -> CONTACTED -> SCHEDULED ->
+     COMPLETED) — one hue (brand-primary), monotone lightness, validated with
+     scripts/validate_palette.js --ordinal (all checks pass). CANCELLED is
+     deliberately NOT part of this ramp — it's an off-path status, not a
+     further pipeline stage, so it reuses the neutral --ink-muted instead. */
+  --status-pipeline-1: color-mix(in srgb, var(--brand-primary) 50%, white);
+  --status-pipeline-2: color-mix(in srgb, var(--brand-primary) 70%, white);
+  --status-pipeline-3: color-mix(in srgb, var(--brand-primary) 85%, white);
+  --status-pipeline-4: var(--brand-primary);
 
   --border-soft: color-mix(in srgb, var(--ink) 10%, transparent);
   --shadow-tint: color-mix(in srgb, var(--ink) 18%, transparent);
@@ -63,6 +78,11 @@
   --color-brand-accent: var(--brand-accent);
   --color-brand-soft: var(--brand-soft);
   --color-status-live: var(--status-live);
+  --color-status-critical: var(--status-critical);
+  --color-status-pipeline-1: var(--status-pipeline-1);
+  --color-status-pipeline-2: var(--status-pipeline-2);
+  --color-status-pipeline-3: var(--status-pipeline-3);
+  --color-status-pipeline-4: var(--status-pipeline-4);
 
   --font-sans: var(--font-geist-sans);
   --spacing-page: clamp(1.25rem, 4vw, 4rem);

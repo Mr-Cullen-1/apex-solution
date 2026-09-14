@@ -3,16 +3,33 @@
 import { useEffect, useMemo, useRef, useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import { CheckIcon, ImageIcon } from "@/components/ui/icons";
+import { CheckIcon, CloseIcon, ImageIcon, QuoteMarkIcon, StarIcon } from "@/components/ui/icons";
 import { StarRating } from "@/components/reviews/star-rating";
 import { StatusBadge } from "@/components/admin/status-badge";
 import { setReviewFeaturedAction, setReviewStatusAction, setReviewVerifiedAction } from "@/features/admin/reviews/actions";
 import type { AdminReview, ReviewStatus } from "@/features/admin/reviews/types";
+import { EmptyState } from "@/components/admin/ui/empty-state";
 
 function formatDateTime(iso: string): string {
   const date = new Date(iso);
   if (Number.isNaN(date.getTime())) return "—";
   return new Intl.DateTimeFormat("en-US", { dateStyle: "medium", timeStyle: "short", timeZone: "UTC" }).format(date) + " UTC";
+}
+
+/** Locks background page scroll for as long as the calling component is
+ * mounted — both dialog components here are only ever mounted while open,
+ * so mount/unmount doubles as open/close. Native `<dialog showModal()>`
+ * already blocks pointer interaction with the rest of the page, but not
+ * every browser reliably blocks wheel/touch scroll-through, so this is
+ * explicit rather than assumed. */
+function useBodyScrollLock() {
+  useEffect(() => {
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = previousOverflow;
+    };
+  }, []);
 }
 
 /** Server-rendered dates only, formatted with a fixed timeZone so the
@@ -59,7 +76,11 @@ export function ReviewBoard({ reviews }: { reviews: AdminReview[] }) {
   }
 
   if (reviews.length === 0) {
-    return <div className="rounded-panel border border-steel bg-surface p-8 text-center text-sm text-slate">No reviews match this view.</div>;
+    return (
+      <div className="rounded-panel border border-steel bg-surface p-6">
+        <EmptyState icon={<StarIcon className="size-6" />} title="No reviews match this view" description="Try a different tab or search term." />
+      </div>
+    );
   }
 
   return (
@@ -68,7 +89,7 @@ export function ReviewBoard({ reviews }: { reviews: AdminReview[] }) {
       <div className="hidden overflow-x-auto rounded-panel border border-steel bg-surface lg:block">
         <table className="w-full table-fixed border-collapse text-sm">
           <thead>
-            <tr className="border-b border-steel text-left text-xs font-bold uppercase tracking-[0.06em] text-slate">
+            <tr className="border-b border-steel bg-page-bg text-left text-xs font-bold uppercase tracking-[0.06em] text-slate">
               <th className="w-24 px-4 py-3">Rating</th>
               <th className="w-40 px-4 py-3">Customer</th>
               <th className="px-4 py-3">Review</th>
@@ -196,6 +217,7 @@ function ReviewDetailDrawer({
 }) {
   const [imageFailed, setImageFailed] = useState(false);
   const dialogRef = useRef<HTMLDialogElement>(null);
+  useBodyScrollLock();
 
   useEffect(() => {
     const dialog = dialogRef.current;
@@ -220,22 +242,38 @@ function ReviewDetailDrawer({
       }}
       className="fixed inset-y-0 right-0 top-0 left-auto m-0 h-full max-h-full w-full max-w-md rounded-none border-l border-steel bg-surface p-0 shadow-hero backdrop:bg-ink/40 open:flex open:flex-col"
     >
-      <div className="flex h-full flex-col overflow-y-auto p-6 sm:p-8">
+      {/* This div is the drawer's own scroll container — independent of
+       * the page behind it, which useBodyScrollLock keeps still. */}
+      <div className="flex h-full min-h-0 flex-col gap-6 overflow-y-auto p-6 sm:p-8">
         <div className="flex items-start justify-between gap-4">
           <div>
             <StatusBadge status={review.status} />
             <h2 className="mt-3 text-xl font-semibold text-navy">{review.fullName}</h2>
-            <p className="text-sm text-slate">Public display name: {review.displayName}</p>
+            <p className="mt-0.5 text-sm text-slate">Public display name: {review.displayName}</p>
           </div>
-          <button type="button" onClick={onClose} aria-label="Close" className="rounded-control border border-steel px-2.5 py-1.5 text-sm text-slate hover:text-navy">
-            Close
+          <button
+            type="button"
+            onClick={onClose}
+            aria-label="Close review detail"
+            className="inline-flex size-9 shrink-0 items-center justify-center rounded-control border border-steel text-slate transition-colors hover:border-navy hover:text-navy"
+          >
+            <CloseIcon className="size-4.5" />
           </button>
         </div>
 
-        <StarRating rating={review.rating} />
-        <p className="mt-4 whitespace-pre-line text-sm leading-6 text-navy">{review.reviewText}</p>
+        <div>
+          <StarRating rating={review.rating} />
+          {review.hasMedia ? (
+            <p className="mt-3 whitespace-pre-line text-sm leading-6 text-navy">{review.reviewText}</p>
+          ) : (
+            <div className="relative mt-3 rounded-card bg-page-bg p-5">
+              <QuoteMarkIcon className="absolute right-4 top-4 size-6 text-brand-primary/15" />
+              <p className="relative whitespace-pre-line text-sm leading-6 text-navy">{review.reviewText}</p>
+            </div>
+          )}
+        </div>
 
-        <dl className="mt-6 grid grid-cols-2 gap-x-4 gap-y-3 text-sm">
+        <dl className="grid grid-cols-2 gap-x-4 gap-y-3 text-sm">
           <dt className="text-slate">Service</dt>
           <dd className="text-navy">{review.serviceLabel ?? "—"}</dd>
           <dt className="text-slate">Location</dt>
@@ -247,7 +285,7 @@ function ReviewDetailDrawer({
         </dl>
 
         {review.hasMedia && (
-          <div className="mt-6">
+          <div>
             <p className="mb-2 text-xs font-bold uppercase tracking-[0.08em] text-slate">Photo</p>
             {review.mediaUrl && !imageFailed ? (
               <div className="relative aspect-[4/3] w-full overflow-hidden rounded-card border border-steel">
@@ -260,75 +298,81 @@ function ReviewDetailDrawer({
         )}
 
         {!review.consentToPublish && (
-          <p className="mt-6 rounded-control bg-brand-soft px-4 py-3 text-sm font-medium text-ink">
+          <p className="rounded-control bg-brand-soft px-4 py-3 text-sm font-medium text-ink">
             Consent to publish was not given. This review cannot appear publicly even if approved, and this cannot be changed from Admin.
           </p>
         )}
 
         {feedback && (
-          <p role="status" className={`mt-6 rounded-control px-4 py-2.5 text-sm font-medium ${feedback.tone === "success" ? "bg-status-live/15 text-status-live" : "bg-brand-soft text-ink"}`}>
+          <p role="status" className={`rounded-control px-4 py-2.5 text-sm font-medium ${feedback.tone === "success" ? "bg-status-live/15 text-status-live" : "bg-brand-soft text-ink"}`}>
             {feedback.text}
           </p>
         )}
 
-        <div className="mt-6 flex flex-col gap-3 border-t border-steel pt-6">
-          <div className="flex gap-3">
-            {review.status !== "approved" && (
+        <div className="mt-auto flex flex-col gap-4 border-t border-steel pt-6">
+          <div className="flex flex-col gap-2.5">
+            <div className="flex gap-2.5">
+              {review.status !== "approved" && (
+                <button
+                  type="button"
+                  disabled={disabled}
+                  onClick={onApprove}
+                  className="min-h-10 flex-1 rounded-control bg-status-live px-4 text-sm font-semibold text-white transition-opacity disabled:opacity-60"
+                >
+                  {pendingAction?.startsWith(`status:${review.id}:approved`) ? "Approving…" : "Approve"}
+                </button>
+              )}
+              {review.status !== "rejected" && (
+                <button
+                  type="button"
+                  disabled={disabled}
+                  onClick={onReject}
+                  className="min-h-10 flex-1 rounded-control border border-ink-muted px-4 text-sm font-semibold text-ink transition-opacity disabled:opacity-60"
+                >
+                  Reject
+                </button>
+              )}
+            </div>
+            {review.status !== "pending" && (
               <button
                 type="button"
                 disabled={disabled}
-                onClick={onApprove}
-                className="flex-1 rounded-control bg-status-live px-4 py-2.5 text-sm font-semibold text-white transition-opacity disabled:opacity-60"
+                onClick={onRestoreToPending}
+                className="min-h-10 rounded-control border border-steel px-4 text-sm font-semibold text-slate transition-opacity hover:text-navy disabled:opacity-60"
               >
-                {pendingAction?.startsWith(`status:${review.id}:approved`) ? "Approving…" : "Approve"}
-              </button>
-            )}
-            {review.status !== "rejected" && (
-              <button
-                type="button"
-                disabled={disabled}
-                onClick={onReject}
-                className="flex-1 rounded-control border border-ink-muted px-4 py-2.5 text-sm font-semibold text-ink transition-opacity disabled:opacity-60"
-              >
-                Reject
+                {pendingAction?.startsWith(`status:${review.id}:pending`) ? "Moving…" : "Move back to Pending"}
               </button>
             )}
           </div>
-          {review.status !== "pending" && (
-            <button
-              type="button"
-              disabled={disabled}
-              onClick={onRestoreToPending}
-              className="rounded-control border border-steel px-4 py-2.5 text-sm font-semibold text-slate transition-opacity hover:text-navy disabled:opacity-60"
+
+          <div className="flex flex-col gap-2.5">
+            <label className="flex min-h-10 items-center justify-between rounded-control border border-steel px-4 text-sm font-semibold text-navy">
+              <span className="inline-flex items-center gap-2">
+                <CheckIcon className="size-4" /> Verified Customer
+              </span>
+              <input
+                type="checkbox"
+                checked={review.isVerifiedCustomer}
+                disabled={disabled}
+                onChange={(event) => onToggleVerified(event.target.checked)}
+                className="size-4"
+              />
+            </label>
+
+            <label
+              className={`flex min-h-10 items-center justify-between rounded-control border border-steel px-4 text-sm font-semibold ${review.status === "approved" ? "text-navy" : "text-steel"}`}
             >
-              {pendingAction?.startsWith(`status:${review.id}:pending`) ? "Moving…" : "Move back to Pending"}
-            </button>
-          )}
-
-          <label className="flex items-center justify-between rounded-control border border-steel px-4 py-3 text-sm font-semibold text-navy">
-            <span className="inline-flex items-center gap-2">
-              <CheckIcon className="size-4" /> Verified Customer
-            </span>
-            <input
-              type="checkbox"
-              checked={review.isVerifiedCustomer}
-              disabled={disabled}
-              onChange={(event) => onToggleVerified(event.target.checked)}
-              className="size-4"
-            />
-          </label>
-
-          <label className={`flex items-center justify-between rounded-control border px-4 py-3 text-sm font-semibold ${review.status === "approved" ? "border-steel text-navy" : "border-steel text-steel"}`}>
-            <span>Featured</span>
-            <input
-              type="checkbox"
-              checked={review.isFeatured}
-              disabled={disabled || review.status !== "approved"}
-              onChange={(event) => onToggleFeatured(event.target.checked)}
-              className="size-4"
-            />
-          </label>
-          {review.status !== "approved" && <p className="text-xs text-slate">Only approved reviews can be featured.</p>}
+              <span>Featured</span>
+              <input
+                type="checkbox"
+                checked={review.isFeatured}
+                disabled={disabled || review.status !== "approved"}
+                onChange={(event) => onToggleFeatured(event.target.checked)}
+                className="size-4"
+              />
+            </label>
+            {review.status !== "approved" && <p className="text-xs text-slate">Only approved reviews can be featured.</p>}
+          </div>
         </div>
       </div>
     </dialog>
@@ -349,6 +393,7 @@ function ConfirmDialog({
   onConfirm: () => void;
 }) {
   const dialogRef = useRef<HTMLDialogElement>(null);
+  useBodyScrollLock();
 
   useEffect(() => {
     const dialog = dialogRef.current;

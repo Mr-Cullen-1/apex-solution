@@ -4,8 +4,13 @@ import { notFound } from "next/navigation";
 import { getAdminRequest } from "@/features/admin/requests/repository";
 import { listActivityForRequest } from "@/features/admin/activity/repository";
 import { RequestStatusControl } from "@/components/admin/requests/request-status-control";
+import { RequestStatusBadge } from "@/components/admin/requests/request-status-badge";
+import { DeliveryStatusBadge } from "@/components/admin/requests/delivery-status-badge";
+import { Badge } from "@/components/admin/ui/badge";
+import { SectionCard } from "@/components/admin/ui/section-card";
 import { ActivityTimeline } from "@/components/admin/activity-timeline";
 import { AddNoteForm } from "@/components/admin/add-note-form";
+import { ArrowRightIcon } from "@/components/ui/icons";
 
 export const metadata: Metadata = { title: "Request detail" };
 
@@ -40,19 +45,22 @@ export default async function AdminRequestDetailPage({ params }: RequestDetailPa
     <div className="flex flex-col gap-8">
       <div className="flex flex-wrap items-start justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-semibold tracking-[-0.02em] text-navy">{request.fullName}</h1>
+          <p className="eyebrow">Request case</p>
+          <h1 className="mt-1 text-2xl font-semibold tracking-[-0.02em] text-navy">{request.fullName}</h1>
           <p className="mt-1 text-sm text-slate">Submitted {formatDateTime(request.createdAt)}</p>
         </div>
-        <Link href={`/admin/customers/${request.customerId}`} className="text-sm font-semibold text-brand-primary hover:underline">
-          View customer profile →
-        </Link>
+        <div className="flex items-center gap-3">
+          <RequestStatusBadge status={request.requestStatus} />
+          <Link href={`/admin/customers/${request.customerId}`} className="inline-flex items-center gap-1 text-sm font-semibold text-brand-primary hover:underline">
+            Customer profile <ArrowRightIcon className="size-3.5" />
+          </Link>
+        </div>
       </div>
 
       <div className="grid gap-6 lg:grid-cols-3">
         <div className="flex flex-col gap-6 lg:col-span-2">
-          <section className="rounded-panel border border-steel bg-surface p-6">
-            <h2 className="text-sm font-bold uppercase tracking-[0.08em] text-slate">Contact</h2>
-            <dl className="mt-4 grid grid-cols-2 gap-x-4 gap-y-3 text-sm">
+          <SectionCard title="Contact">
+            <dl className="grid grid-cols-2 gap-x-4 gap-y-3 text-sm sm:grid-cols-3">
               <dt className="text-slate">Phone</dt>
               <dd className="text-navy">{request.phone}</dd>
               <dt className="text-slate">Email</dt>
@@ -60,56 +68,61 @@ export default async function AdminRequestDetailPage({ params }: RequestDetailPa
               <dt className="text-slate">ZIP</dt>
               <dd className="text-navy">{request.zipCode}</dd>
             </dl>
-          </section>
+          </SectionCard>
 
-          <section className="rounded-panel border border-steel bg-surface p-6">
-            <h2 className="text-sm font-bold uppercase tracking-[0.08em] text-slate">Service request</h2>
-            <dl className="mt-4 grid grid-cols-2 gap-x-4 gap-y-3 text-sm">
+          <SectionCard title="Service request">
+            <dl className="grid grid-cols-2 gap-x-4 gap-y-3 text-sm sm:grid-cols-3">
               <dt className="text-slate">Service</dt>
               <dd className="text-navy">{request.serviceLabel ?? request.categoryLabel ?? "—"}</dd>
               <dt className="text-slate">Issue</dt>
               <dd className="text-navy">{request.issue ?? "—"}</dd>
               <dt className="text-slate">Offer</dt>
-              <dd className="text-navy">{request.offerLabel ? `${request.offerLabel} — ${request.discountPercent}%` : "No offer"}</dd>
+              <dd>{request.offerLabel ? <Badge tone="accent">{request.offerLabel} — {request.discountPercent}%</Badge> : <span className="text-slate">No offer</span>}</dd>
             </dl>
-            <p className="mt-4 text-xs font-bold uppercase tracking-[0.08em] text-slate">Customer message</p>
-            <p className="mt-2 whitespace-pre-line text-sm leading-6 text-navy">{request.message}</p>
-          </section>
+            <p className="mt-5 text-xs font-bold uppercase tracking-[0.08em] text-slate">Customer message</p>
+            <p className="mt-2 whitespace-pre-line rounded-control bg-page-bg p-4 text-sm leading-6 text-navy">{request.message}</p>
+          </SectionCard>
 
-          <section className="rounded-panel border border-steel bg-surface p-6">
-            <h2 className="text-sm font-bold uppercase tracking-[0.08em] text-slate">Delivery</h2>
-            <dl className="mt-4 grid grid-cols-2 gap-x-4 gap-y-3 text-sm">
-              <dt className="text-slate">Telegram</dt>
-              <dd className="text-navy">
-                {request.telegramStatus}
-                {request.telegramSentAt && ` — ${formatDateTime(request.telegramSentAt)}`}
-              </dd>
-              <dt className="text-slate">Email confirmation</dt>
-              <dd className="text-navy">
-                {request.emailStatus}
-                {request.emailSentAt && ` — ${formatDateTime(request.emailSentAt)}`}
-              </dd>
-              <dt className="text-slate">Created</dt>
-              <dd className="text-navy">{formatDateTime(request.createdAt)}</dd>
-              <dt className="text-slate">Updated</dt>
-              <dd className="text-navy">{formatDateTime(request.updatedAt)}</dd>
+          <SectionCard title="Delivery">
+            <dl className="grid grid-cols-2 gap-x-4 gap-y-4 text-sm sm:grid-cols-4">
+              <div>
+                <dt className="text-slate">Telegram</dt>
+                <dd className="mt-1.5">
+                  <DeliveryStatusBadge status={request.telegramStatus} />
+                  {request.telegramSentAt && <p className="mt-1.5 text-xs text-slate">{formatDateTime(request.telegramSentAt)}</p>}
+                </dd>
+              </div>
+              <div>
+                <dt className="text-slate">Email confirmation</dt>
+                <dd className="mt-1.5">
+                  <DeliveryStatusBadge status={request.emailStatus} />
+                  {request.emailSentAt && <p className="mt-1.5 text-xs text-slate">{formatDateTime(request.emailSentAt)}</p>}
+                </dd>
+              </div>
+              <div>
+                <dt className="text-slate">Created</dt>
+                <dd className="mt-1.5 text-navy">{formatDateTime(request.createdAt)}</dd>
+              </div>
+              <div>
+                <dt className="text-slate">Updated</dt>
+                <dd className="mt-1.5 text-navy">{formatDateTime(request.updatedAt)}</dd>
+              </div>
             </dl>
-          </section>
+          </SectionCard>
 
-          <section className="rounded-panel border border-steel bg-surface p-6">
-            <h2 className="text-sm font-bold uppercase tracking-[0.08em] text-slate">Activity</h2>
-            <div className="mt-4">{activity.ok ? <ActivityTimeline events={activity.events} /> : <p className="text-sm text-ink">{activity.message}</p>}</div>
-          </section>
+          <SectionCard title="Activity">
+            {activity.ok ? <ActivityTimeline events={activity.events} /> : <p className="text-sm text-ink">{activity.message}</p>}
+          </SectionCard>
         </div>
 
         <div className="flex flex-col gap-6">
-          <section className="rounded-panel border border-steel bg-surface p-6">
+          <SectionCard title="Status">
             <RequestStatusControl requestId={request.id} status={request.requestStatus} />
-          </section>
+          </SectionCard>
 
-          <section className="rounded-panel border border-steel bg-surface p-6">
+          <SectionCard title="Notes">
             <AddNoteForm customerId={request.customerId} serviceRequestId={request.id} />
-          </section>
+          </SectionCard>
         </div>
       </div>
     </div>

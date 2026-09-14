@@ -14,7 +14,9 @@ All colors live in `src/app/globals.css`. The brand triad is sampled directly fr
 | `--brand-dark` | `#003973` | logo "A" leg gradient | Large dark section surfaces, footer |
 | `--brand-primary` | `#005098` | logo dominant blue | Primary CTA fill, accent text, focus ring |
 | `--brand-accent` | `#0376E7` | logo swoosh highlight | Decorative accents only (not text/button fills — too light for AA text contrast on its own) |
-| `--status-live` | `#16A34A` | semantic, not brand | "Live Now" status dot only — green is reserved for this one semantic meaning |
+| `--status-live` | `#16A34A` | semantic, not brand | Positive/live state — the public site's "Live Now" dot, and (Admin) approved reviews, sent deliveries, active admins |
+| `--status-critical` | `#C0362C` | semantic, not brand | Admin-only — genuine operational failures (Telegram/Email delivery failed, cancelled requests). Never a brand accent. |
+| `--status-pipeline-1..4` | `color-mix` steps of `--brand-primary` | derived | Admin-only — chart **mark** fills for the request-pipeline donut (ordinal ramp, NEW→COMPLETED). Not used for text/badges — see `docs/ADMIN_ARCHITECTURE.md` §40. |
 | `--page-bg` | tinted `#F2F4F7` | reference atmosphere | Page canvas |
 | `--surface` / `--surface-soft` | white / brand-tinted white | — | Cards, panels |
 | `--ink-muted` | `#4B5768` | — | Secondary text |
@@ -56,3 +58,14 @@ The only approved logo files are `apex logo/{colored,white,black}.png` (client-s
 - Apex Results and Reviews render an honest, designed empty state (not fabricated content) until real photography/testimonials are supplied.
 - No guarantee/warranty claims appear anywhere in the UI.
 - "Live Now" and similar status cues are never conveyed by color alone.
+
+## Admin dashboard (internal, `/admin`)
+
+A separate operational surface — never the public shell above (see
+`src/app/admin/(dashboard)/layout.tsx`), built on the same foundation
+tokens plus the two admin-only semantic additions in the table above
+(`--status-critical`, `--status-pipeline-1..4`). Its own reusable
+primitives (`src/components/admin/ui/`, `src/components/admin/charts/`),
+badge/status system, and zero-dependency chart components are documented in
+full in `docs/ADMIN_ARCHITECTURE.md` §40 — that's the source of truth for
+anything admin-specific; this file stays scoped to the public site.

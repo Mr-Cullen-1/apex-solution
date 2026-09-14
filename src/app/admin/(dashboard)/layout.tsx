@@ -17,5 +17,9 @@ export const metadata: Metadata = {
 // defense in depth, per instruction #57.
 export default async function AdminDashboardLayout({ children }: { children: ReactNode }) {
   const admin = await requireAdmin();
-  return <AdminShell role={admin.role}>{children}</AdminShell>;
+  return (
+    <AdminShell role={admin.role} email={admin.email}>
+      {children}
+    </AdminShell>
+  );
 }

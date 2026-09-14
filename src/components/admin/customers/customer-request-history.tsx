@@ -1,5 +1,7 @@
 import Link from "next/link";
 import type { AdminRequest } from "@/features/admin/requests/types";
+import { RequestStatusBadge } from "@/components/admin/requests/request-status-badge";
+import { Badge } from "@/components/admin/ui/badge";
 
 function formatDate(iso: string): string {
   const date = new Date(iso);
@@ -20,19 +22,23 @@ export function CustomerRequestHistory({ requests }: { requests: AdminRequest[] 
     <ol className="flex flex-col gap-4">
       {requests.map((request) => (
         <li key={request.id} className="border-l-2 border-steel pl-4">
-          <Link href={`/admin/requests/${request.id}`} className="text-sm font-semibold text-brand-primary hover:underline">
-            {formatDate(request.createdAt)}
-          </Link>
-          <p className="mt-0.5 text-sm text-navy">
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <Link href={`/admin/requests/${request.id}`} className="text-sm font-semibold text-brand-primary hover:underline">
+              {formatDate(request.createdAt)}
+            </Link>
+            <RequestStatusBadge status={request.requestStatus} />
+          </div>
+          <p className="mt-1 text-sm text-navy">
             {request.serviceLabel ?? request.categoryLabel ?? "General"}
             {request.issue ? ` — ${request.issue}` : ""}
           </p>
           {request.offerLabel && (
-            <p className="mt-0.5 text-sm text-copper">
-              {request.offerLabel} — {request.discountPercent}%
-            </p>
+            <div className="mt-1.5">
+              <Badge tone="accent">
+                {request.offerLabel} — {request.discountPercent}%
+              </Badge>
+            </div>
           )}
-          <p className="mt-0.5 text-xs font-semibold text-slate">Status: {request.requestStatus}</p>
         </li>
       ))}
     </ol>

@@ -6,6 +6,7 @@ import { listActivityForCustomer } from "@/features/admin/activity/repository";
 import { CustomerRequestHistory } from "@/components/admin/customers/customer-request-history";
 import { ActivityTimeline } from "@/components/admin/activity-timeline";
 import { AddNoteForm } from "@/components/admin/add-note-form";
+import { SectionCard } from "@/components/admin/ui/section-card";
 
 export const metadata: Metadata = { title: "Customer profile" };
 
@@ -17,6 +18,11 @@ function formatDate(iso: string | null): string {
   const date = new Date(iso);
   if (Number.isNaN(date.getTime())) return "—";
   return new Intl.DateTimeFormat("en-US", { dateStyle: "medium", timeZone: "UTC" }).format(date);
+}
+
+function initials(fullName: string): string {
+  const parts = fullName.trim().split(/\s+/);
+  return ((parts[0]?.[0] ?? "") + (parts[1]?.[0] ?? "")).toUpperCase() || "?";
 }
 
 type CustomerProfilePageProps = { params: Promise<{ id: string }> };
@@ -37,47 +43,58 @@ export default async function AdminCustomerProfilePage({ params }: CustomerProfi
 
   return (
     <div className="flex flex-col gap-8">
-      <div>
-        <h1 className="text-2xl font-semibold tracking-[-0.02em] text-navy">{customer.fullName}</h1>
-        <p className="mt-1 text-sm text-slate">Customer since {formatDate(customer.firstSeenAt)}</p>
+      <div className="flex flex-wrap items-center gap-4">
+        <span className="inline-flex size-14 shrink-0 items-center justify-center rounded-full bg-brand-soft text-lg font-bold text-brand-primary">{initials(customer.fullName)}</span>
+        <div>
+          <p className="eyebrow">Customer profile</p>
+          <h1 className="mt-0.5 text-2xl font-semibold tracking-[-0.02em] text-navy">{customer.fullName}</h1>
+          <p className="mt-1 text-sm text-slate">Customer since {formatDate(customer.firstSeenAt)}</p>
+        </div>
       </div>
 
-      <section className="rounded-panel border border-steel bg-surface p-6">
-        <dl className="grid grid-cols-2 gap-x-4 gap-y-3 text-sm sm:grid-cols-3">
+      <div className="grid gap-4 sm:grid-cols-3">
+        <StatTile label="Total requests" value={String(customer.totalRequests)} />
+        <StatTile label="First request" value={formatDate(customer.firstSeenAt)} />
+        <StatTile label="Most recent request" value={formatDate(customer.lastRequestAt)} />
+      </div>
+
+      <SectionCard title="Contact">
+        <dl className="grid grid-cols-1 gap-x-4 gap-y-3 text-sm sm:grid-cols-3">
           <dt className="text-slate">Phone</dt>
-          <dd className="text-navy">{customer.phone}</dd>
+          <dd className="text-navy sm:col-span-2">{customer.phone}</dd>
           <dt className="text-slate">Email</dt>
-          <dd className="text-navy">{customer.email ?? "—"}</dd>
+          <dd className="text-navy sm:col-span-2">{customer.email ?? "—"}</dd>
           <dt className="text-slate">ZIP</dt>
-          <dd className="text-navy">{customer.zipCode ?? "—"}</dd>
-          <dt className="text-slate">First request</dt>
-          <dd className="text-navy">{formatDate(customer.firstSeenAt)}</dd>
-          <dt className="text-slate">Most recent request</dt>
-          <dd className="text-navy">{formatDate(customer.lastRequestAt)}</dd>
-          <dt className="text-slate">Total requests</dt>
-          <dd className="text-navy">{customer.totalRequests}</dd>
+          <dd className="text-navy sm:col-span-2">{customer.zipCode ?? "—"}</dd>
         </dl>
-      </section>
+      </SectionCard>
 
       <div className="grid gap-6 lg:grid-cols-3">
         <div className="flex flex-col gap-6 lg:col-span-2">
-          <section className="rounded-panel border border-steel bg-surface p-6">
-            <h2 className="text-sm font-bold uppercase tracking-[0.08em] text-slate">Request history</h2>
-            <div className="mt-4">{requestsResult.ok ? <CustomerRequestHistory requests={requestsResult.requests} /> : <p className="text-sm text-ink">{requestsResult.message}</p>}</div>
-          </section>
+          <SectionCard title="Request history">
+            {requestsResult.ok ? <CustomerRequestHistory requests={requestsResult.requests} /> : <p className="text-sm text-ink">{requestsResult.message}</p>}
+          </SectionCard>
 
-          <section className="rounded-panel border border-steel bg-surface p-6">
-            <h2 className="text-sm font-bold uppercase tracking-[0.08em] text-slate">Activity</h2>
-            <div className="mt-4">{activityResult.ok ? <ActivityTimeline events={activityResult.events} /> : <p className="text-sm text-ink">{activityResult.message}</p>}</div>
-          </section>
+          <SectionCard title="Activity">
+            {activityResult.ok ? <ActivityTimeline events={activityResult.events} /> : <p className="text-sm text-ink">{activityResult.message}</p>}
+          </SectionCard>
         </div>
 
         <div>
-          <section className="rounded-panel border border-steel bg-surface p-6">
+          <SectionCard title="Notes">
             <AddNoteForm customerId={customer.id} />
-          </section>
+          </SectionCard>
         </div>
       </div>
+    </div>
+  );
+}
+
+function StatTile({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="rounded-panel border border-steel bg-surface p-5">
+      <p className="text-xs font-bold uppercase tracking-[0.08em] text-slate">{label}</p>
+      <p className="mt-2 text-xl font-semibold tracking-[-0.01em] text-navy">{value}</p>
     </div>
   );
 }
