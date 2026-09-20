@@ -23,12 +23,12 @@ const toGroup = (category: NonNullable<ReturnType<typeof getServiceCategory>>) =
 });
 
 export function Footer() {
-  // `/review` is a focused, one-screen customer submission flow — the
-  // global footer isn't needed there and would force scrolling past the
-  // review card. Every other route keeps it. Same exact-match pathname
-  // pattern MobileActionBar already uses for its own `/book` exclusion.
+  // `/review` (and its tokenized invitation variant, `/review/<token>`) is
+  // a focused, one-screen customer submission flow — the global footer
+  // isn't needed there and would force scrolling past the review card.
+  // Every other route keeps it.
   const pathname = usePathname();
-  if (pathname === "/review") return null;
+  if (pathname === "/review" || pathname.startsWith("/review/")) return null;
 
   return (
     <footer className="bg-brand-dark pb-24 pt-10 text-white md:pb-10 md:pt-12">

@@ -106,8 +106,14 @@ export async function proxy(request: NextRequest) {
     data: { user },
   } = await supabase.auth.getUser();
 
+  // /admin/forgot-password and /admin/reset-password must be reachable by a
+  // signed-out visitor by definition (Phase 4 self-service password
+  // recovery) — same "not the real security boundary, just an optimistic
+  // fast path" posture as the /admin/login exclusion below.
+  const PUBLIC_ADMIN_AUTH_ROUTES = ["/admin/login", "/admin/forgot-password", "/admin/reset-password"];
   const isLoginRoute = effectivePathname === "/admin/login";
-  const isProtectedAdminRoute = effectivePathname.startsWith("/admin") && !isLoginRoute;
+  const isPublicAdminAuthRoute = PUBLIC_ADMIN_AUTH_ROUTES.includes(effectivePathname);
+  const isProtectedAdminRoute = effectivePathname.startsWith("/admin") && !isPublicAdminAuthRoute;
 
   // Host-aware targets: on the admin subdomain these redirects must land
   // on the clean, unprefixed path too, or a login/logout would visibly

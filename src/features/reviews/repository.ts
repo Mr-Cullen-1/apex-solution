@@ -7,7 +7,58 @@ import { extensionForMimeType, REVIEW_MEDIA_BUCKET, REVIEW_MEDIA_UPLOAD_FAILED_M
 import type { ReviewMediaMimeType } from "./media";
 import { hashRateKey, releaseRateLimitReservation, reserveRateLimitSlot } from "./rate-limit";
 import { createReviewMediaSignedUrl } from "./signed-media";
+import { hashInvitationToken } from "./invitation-token";
 import type { GetApprovedReviewsOptions, GetApprovedReviewsResult, PublicReview, ReviewRow, ReviewSubmissionResult } from "./types";
+
+export type ReviewInvitationContext = {
+  serviceRequestId: string;
+  customerId: string;
+  fullName: string;
+  serviceLabel: string | null;
+  categoryLabel: string | null;
+};
+
+type ReviewInvitationRpcRow = {
+  id: string;
+  service_request_id: string;
+  customer_id: string;
+  full_name: string;
+  service_label: string | null;
+  category_label: string | null;
+};
+
+/** Public redemption lookup for /review/<token> -- hashes the incoming
+ * token and matches it server-side against review_invitations.token_hash
+ * (get_active_review_invitation only ever returns an 'active' row: used,
+ * revoked, and unmatched tokens are all indistinguishable "not found"
+ * results here, so the public page can never learn which case it is). Only
+ * customer-safe fields are returned -- no phone, email, or address. */
+export async function resolveReviewInvitation(token: string): Promise<{ ok: true; invitation: ReviewInvitationContext } | { ok: false }> {
+  if (!token || !isSupabaseConfigured()) return { ok: false };
+  try {
+    const supabase = getSupabaseServerClient();
+    const { data, error } = await supabase.rpc("get_active_review_invitation", { p_token_hash: hashInvitationToken(token) });
+    if (error) {
+      console.error("[reviews_invitation_lookup_failed]", error.code, error.message);
+      return { ok: false };
+    }
+    const row = (data as ReviewInvitationRpcRow[] | null)?.[0];
+    if (!row) return { ok: false };
+    return {
+      ok: true,
+      invitation: {
+        serviceRequestId: row.service_request_id,
+        customerId: row.customer_id,
+        fullName: row.full_name,
+        serviceLabel: row.service_label,
+        categoryLabel: row.category_label,
+      },
+    };
+  } catch (err) {
+    console.error("[reviews_invitation_lookup_failed]", err instanceof Error ? err.message : err);
+    return { ok: false };
+  }
+}
 
 const SUBMIT_NOT_CONFIGURED_MESSAGE =
   "Thanks — we received your review details, but the review database is not connected yet. It has not been submitted.";
@@ -15,6 +66,29 @@ const FETCH_NOT_CONFIGURED_MESSAGE = "Reviews are not available right now.";
 const SUBMISSION_FAILED_MESSAGE = "The review could not be submitted right now. Please try again shortly.";
 const FETCH_FAILED_MESSAGE = "Reviews could not be loaded right now.";
 const RATE_LIMITED_MESSAGE = "Too many review attempts. Please try again later.";
+const INVALID_INVITATION_MESSAGE = "This review link has already been used or is no longer active.";
+
+/** True only if the invitation is still 'active' right now (never cached
+ * from an earlier page load) -- audit fix: submitReview previously only
+ * checked this at /review/<token> page-load time and always inserted the
+ * review regardless, silently failing just the redeem-and-link-back step
+ * afterward. That let the same invitation link be submitted more than once
+ * (each POST created a new, unlinked review row). This re-check, run before
+ * the review is ever inserted, is what actually enforces single-use. */
+async function isReviewInvitationActive(token: string): Promise<boolean> {
+  try {
+    const supabase = getSupabaseServerClient();
+    const { data, error } = await supabase.rpc("get_active_review_invitation", { p_token_hash: hashInvitationToken(token) });
+    if (error) {
+      console.error("[reviews_invitation_precheck_failed]", error.code, error.message);
+      return false;
+    }
+    return Array.isArray(data) && data.length > 0;
+  } catch (err) {
+    console.error("[reviews_invitation_precheck_failed]", err instanceof Error ? err.message : err);
+    return false;
+  }
+}
 
 /** Already validated by the caller (route.ts sniffs the real bytes via
  * `sniffImageMimeType` and enforces the size cap before this is ever built)
@@ -78,13 +152,22 @@ function toPublicReview(
  * acceptable). */
 export async function submitReview(
   rawPayload: unknown,
-  options: { clientIp?: string; userAgent?: string; media?: ReviewMediaInput | null } = {},
+  options: { clientIp?: string; userAgent?: string; media?: ReviewMediaInput | null; invitationToken?: string | null } = {},
 ): Promise<ReviewSubmissionResult> {
   const payload = normalizeReviewSubmission(rawPayload);
   const errors = validateReviewSubmission(payload);
   if (Object.keys(errors).length) return { ok: false, status: "invalid", errors };
 
   if (!isSupabaseConfigured()) return { ok: false, status: "not_configured", message: SUBMIT_NOT_CONFIGURED_MESSAGE };
+
+  // Checked fresh here (not just once at page load) and before rate
+  // limiting/media/insert -- see isReviewInvitationActive's own comment for
+  // why. A stale token consumes no rate-limit quota and touches no
+  // Storage/DB row, exactly like a validation failure.
+  if (options.invitationToken) {
+    const active = await isReviewInvitationActive(options.invitationToken);
+    if (!active) return { ok: false, status: "invalid_invitation", message: INVALID_INVITATION_MESSAGE };
+  }
 
   let rateLimitEventId: string | null = null;
   if (options.clientIp) {
@@ -128,25 +211,47 @@ export async function submitReview(
   }
 
   try {
-    const { error } = await supabase.from("reviews").insert({
-      full_name: payload.fullName,
-      display_name: displayName,
-      rating: payload.rating,
-      review_text: payload.reviewText,
-      service_slug: slug,
-      service_label: label,
-      location_text: payload.locationText || null,
-      consent_to_publish: payload.consentToPublish,
-      media_path: mediaPath,
-      media_mime_type: media ? media.mimeType : null,
-      media_size_bytes: media ? media.sizeBytes : null,
-    });
+    const { data: insertedReview, error } = await supabase
+      .from("reviews")
+      .insert({
+        full_name: payload.fullName,
+        display_name: displayName,
+        rating: payload.rating,
+        review_text: payload.reviewText,
+        service_slug: slug,
+        service_label: label,
+        location_text: payload.locationText || null,
+        consent_to_publish: payload.consentToPublish,
+        media_path: mediaPath,
+        media_mime_type: media ? media.mimeType : null,
+        media_size_bytes: media ? media.sizeBytes : null,
+      })
+      .select("id")
+      .single();
     if (error) {
       console.error("[reviews_submission_failed]", error.code, error.message);
       if (mediaPath) await deleteOrphanMedia(supabase, mediaPath);
       if (rateLimitEventId) await releaseRateLimitReservation(rateLimitEventId);
       return { ok: false, status: "error", message: SUBMISSION_FAILED_MESSAGE };
     }
+
+    // Best-effort link-back to the invitation that brought the customer
+    // here -- never blocks or fails the submission itself (the review is
+    // already safely stored above). The precheck above already rejects a
+    // token that's clearly no longer active before we ever get here; this
+    // only needs to cover the narrow remaining race (e.g. two near-
+    // simultaneous submits with the same token) -- redeem_review_invitation
+    // is itself atomic, so at most one of them wins the link-back, and the
+    // other just logs a warning rather than losing the review it already
+    // wrote.
+    if (options.invitationToken) {
+      const { error: redeemError } = await supabase.rpc("redeem_review_invitation", {
+        p_token_hash: hashInvitationToken(options.invitationToken),
+        p_review_id: insertedReview.id,
+      });
+      if (redeemError) console.warn("[reviews_invitation_redeem_failed]", redeemError.code, redeemError.message);
+    }
+
     return { ok: true, status: "pending" };
   } catch (err) {
     console.error("[reviews_submission_failed]", err instanceof Error ? err.message : err);

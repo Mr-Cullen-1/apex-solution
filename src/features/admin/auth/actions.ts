@@ -5,6 +5,7 @@ import { headers } from "next/headers";
 import { createAuthServerClient, isAuthConfigured } from "@/lib/supabase/auth-server";
 import { getSupabaseServerClient, isSupabaseConfigured } from "@/lib/supabase/server";
 import { isAdminHost } from "@/lib/admin-host";
+import { siteUrl } from "@/content/site-url";
 import { getAdminSession } from "./require-admin";
 
 /** Same host-aware redirect-target reasoning as require-admin.ts and
@@ -126,4 +127,103 @@ export async function changePasswordAction(_prevState: ChangePasswordActionState
   }
 
   redirect(onAdminHost ? "/" : "/admin");
+}
+
+// --- Self-service password recovery (Phase 4) -------------------------------
+//
+// This is a genuinely new flow -- there was no resetPasswordForEmail() call
+// anywhere in this codebase before it. Uses Supabase's standard recovery
+// flow with the DEFAULT email template ({{ .ConfirmationURL }}) -- no
+// custom Supabase email template is required, since this project has no
+// custom SMTP configured and cannot edit the hosted email templates for
+// that reason. It deliberately follows the same "no browser Supabase
+// client, everything server-action/cookie-based" convention as the rest of
+// Admin auth: @supabase/ssr's createServerClient (createAuthServerClient())
+// manages the PKCE code-verifier via cookies on the request that calls
+// resetPasswordForEmail, and the matching exchangeCodeForSession() call
+// later reads that same cookie back -- both ends of the flow run on the
+// same server, never in browser JS.
+//
+// The "explicit button, not automatic GET" shape below is the same fix this
+// codebase already applied once, for the exact same reason (see
+// docs/ADMIN_ARCHITECTURE.md §34: a PKCE `?code=` link's own GET request
+// consumes the one-time code, and email clients/security scanners routinely
+// GET links automatically before a real recipient ever clicks anything). To
+// avoid repeating that regression: landing on /admin/reset-password (a GET)
+// never exchanges the code by itself -- only a subsequent, explicit "Set
+// new password" submission (confirmPasswordResetAction, a POST) does.
+//
+// Note: this still doesn't protect against an email-security scanner that
+// prefetches Supabase's own /auth/v1/verify link before the real admin
+// clicks it (that hop is outside this application's control either way).
+// The token_hash + verifyOtp() alternative closes that gap but requires a
+// custom Supabase email template using {{ .TokenHash }} -- reverted here
+// because this project cannot configure custom email templates without its
+// own SMTP set up. If that changes, that alternative is worth revisiting.
+
+const GENERIC_RESET_REQUEST_MESSAGE = "If that email belongs to an admin account, a password reset link has been sent.";
+const RESET_NOT_CONFIGURED_MESSAGE = "Password reset is not configured yet.";
+const RESET_LINK_INVALID_MESSAGE = "This link is invalid or has expired. Request a new password reset.";
+
+export type RequestPasswordResetState = { message: string } | undefined;
+
+/** Always returns the same message regardless of whether the email belongs
+ * to a real admin account -- same no-enumeration posture as loginAction
+ * above. Supabase errors (rate limiting, misconfiguration) are logged, not
+ * surfaced, for the same reason. */
+export async function requestPasswordResetAction(_prevState: RequestPasswordResetState, formData: FormData): Promise<RequestPasswordResetState> {
+  const email = String(formData.get("email") ?? "").trim();
+  if (!email) return { message: GENERIC_RESET_REQUEST_MESSAGE };
+  if (!isAuthConfigured()) return { message: RESET_NOT_CONFIGURED_MESSAGE };
+
+  try {
+    const authClient = await createAuthServerClient();
+    const { error } = await authClient.auth.resetPasswordForEmail(email, { redirectTo: `${siteUrl}/admin/reset-password` });
+    if (error) console.error("[admin_password_reset_request_failed]", error.status, error.message);
+  } catch (err) {
+    console.error("[admin_password_reset_request_failed]", err instanceof Error ? err.message : err);
+  }
+
+  return { message: GENERIC_RESET_REQUEST_MESSAGE };
+}
+
+export type ConfirmPasswordResetState = { error: string } | undefined;
+
+/** Exchanges the PKCE `code` from the reset-password link for a real
+ * session (only ever called from this explicit, user-clicked form submit --
+ * never from the page's own GET render), sets the new password on that
+ * session (never the service-role `admin.updateUserById`), and clears
+ * `must_change_password` if it was set -- the same routine self-service
+ * state clear changePasswordAction already performs, no audit event (this
+ * isn't a SUPER_ADMIN action). */
+export async function confirmPasswordResetAction(_prevState: ConfirmPasswordResetState, formData: FormData): Promise<ConfirmPasswordResetState> {
+  const code = String(formData.get("code") ?? "");
+  const password = String(formData.get("password") ?? "");
+  const confirmPassword = String(formData.get("confirmPassword") ?? "");
+
+  if (!code) return { error: RESET_LINK_INVALID_MESSAGE };
+  if (password.length < MIN_PASSWORD_LENGTH) return { error: PASSWORD_TOO_SHORT_ERROR };
+  if (password !== confirmPassword) return { error: PASSWORD_MISMATCH_ERROR };
+  if (!isAuthConfigured()) return { error: GENERIC_PASSWORD_ERROR };
+
+  const authClient = await createAuthServerClient();
+  const { data: exchangeData, error: exchangeError } = await authClient.auth.exchangeCodeForSession(code);
+  if (exchangeError || !exchangeData.user) {
+    console.warn("[admin_password_reset_exchange_failed]", exchangeError?.status ?? "no_user");
+    return { error: RESET_LINK_INVALID_MESSAGE };
+  }
+
+  const { error: updateError } = await authClient.auth.updateUser({ password });
+  if (updateError) {
+    console.error("[admin_password_reset_update_failed]", updateError.status, updateError.message);
+    return { error: GENERIC_PASSWORD_ERROR };
+  }
+
+  if (isSupabaseConfigured()) {
+    const privileged = getSupabaseServerClient();
+    const { error: clearError } = await privileged.from("admin_users").update({ must_change_password: false }).eq("user_id", exchangeData.user.id);
+    if (clearError) console.error("[admin_must_change_password_clear_failed]", clearError.code, clearError.message);
+  }
+
+  redirect((await onAdminSubdomain()) ? "/login?reset=success" : "/admin/login?reset=success");
 }

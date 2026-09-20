@@ -31,12 +31,20 @@ const REACTION_EMOJI = ["😊", "👍", "❤️", "🙏", "⭐", "🔥", "👏",
 
 const serviceOptions = primaryServices.map((category) => ({ value: category.slug, label: category.name }));
 
-function createDraft(): ReviewSubmissionDraft {
-  return { fullName: "", rating: null, reviewText: "", serviceSlug: "", locationText: "", consentToPublish: false };
+function createDraft(initial?: { fullName?: string; serviceSlug?: string }): ReviewSubmissionDraft {
+  return { fullName: initial?.fullName ?? "", rating: null, reviewText: "", serviceSlug: initial?.serviceSlug ?? "", locationText: "", consentToPublish: false };
 }
 
-export function ReviewForm() {
-  const [draft, setDraft] = useState<ReviewSubmissionDraft>(createDraft);
+/** `invitationToken`/`initialFullName`/`initialServiceSlug` are only ever
+ * set by the /review/[token] invitation route (see
+ * src/app/(marketing)/review/[token]/page.tsx) — the plain /review page
+ * renders this with no props, exactly as before. The token travels as a
+ * hidden form field straight through to POST /api/reviews; it is never read
+ * from anywhere else (not a query param the customer could tamper with
+ * client-side and have it silently accepted — the server independently
+ * re-validates it before linking a review to it). */
+export function ReviewForm({ invitationToken, initialFullName, initialServiceSlug }: { invitationToken?: string; initialFullName?: string; initialServiceSlug?: string } = {}) {
+  const [draft, setDraft] = useState<ReviewSubmissionDraft>(() => createDraft({ fullName: initialFullName, serviceSlug: initialServiceSlug }));
   const [mediaFile, setMediaFile] = useState<File | null>(null);
   const [errors, setErrors] = useState<ReviewValidationErrors>({});
   const [submitting, setSubmitting] = useState(false);
@@ -198,6 +206,7 @@ export function ReviewForm() {
       formData.set("locationText", payload.locationText);
       formData.set("consentToPublish", String(payload.consentToPublish));
       formData.set("website", honeypot);
+      if (invitationToken) formData.set("invitationToken", invitationToken);
       if (mediaFile) formData.set("media", mediaFile);
 
       const response = await fetch("/api/reviews", { method: "POST", body: formData });
@@ -218,9 +227,9 @@ export function ReviewForm() {
         document.getElementById("review-media")?.focus();
         document.getElementById("review-media")?.scrollIntoView({ behavior: "smooth", block: "center" });
       } else {
-        // "not_configured" | "rate_limited" | "error" all surface as a
-        // single compact form-level message — none of them are
-        // field-specific, and the customer's entered text (and selected
+        // "not_configured" | "rate_limited" | "invalid_invitation" | "error"
+        // all surface as a single compact form-level message — none of them
+        // are field-specific, and the customer's entered text (and selected
         // photo) are preserved either way.
         setFormError(data.message);
       }

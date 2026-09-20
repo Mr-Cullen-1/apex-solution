@@ -7,10 +7,12 @@ const LIST_FAILED_MESSAGE = "Couldn't load requests. Try again.";
 const MUTATION_FAILED_MESSAGE = "The request couldn't be updated right now. Please try again.";
 
 const ADMIN_REQUEST_COLUMNS =
-  "id, customer_id, full_name, phone, email, zip_code, service_id, service_label, category_id, category_label, issue, message, sms_consent, source_path, request_status, offer_label, discount_percent, telegram_status, telegram_message_id, telegram_sent_at, email_status, email_message_id, email_sent_at, created_at, updated_at";
+  "id, request_code, source, customer_id, full_name, phone, email, zip_code, service_id, service_label, category_id, category_label, issue, message, sms_consent, source_path, request_status, offer_label, discount_percent, telegram_status, telegram_message_id, telegram_sent_at, email_status, email_message_id, email_sent_at, created_at, updated_at";
 
 type AdminRequestRow = {
   id: string;
+  request_code: string;
+  source: string;
   customer_id: string;
   full_name: string;
   phone: string;
@@ -40,6 +42,8 @@ type AdminRequestRow = {
 function toAdminRequest(row: AdminRequestRow): AdminRequest {
   return {
     id: row.id,
+    requestCode: row.request_code,
+    source: row.source,
     customerId: row.customer_id,
     fullName: row.full_name,
     phone: row.phone,

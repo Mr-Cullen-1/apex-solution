@@ -162,6 +162,8 @@ would reject or mangle the whole message rather than just that field.
 ```
 🔵 NEW SERVICE REQUEST
 
+APEX014
+
 👤 Full Name:
 John Smith
 
@@ -187,7 +189,7 @@ The furnace stopped heating and makes a loud noise.
 Yes
 
 🌐 Source:
-Apex Home Services — Book Now
+Book Now
 
 🆔 Request ID:
 5f2c1a3e-...

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { company } from "@/content/company";
 import { logoutAction } from "@/features/admin/auth/actions";
-import { CloseIcon, GridIcon, InboxIcon, LockIcon, LogoutIcon, MenuIcon, ShieldIcon, StarIcon, UsersIcon } from "@/components/ui/icons";
+import { CloseIcon, GridIcon, InboxIcon, LockIcon, LogoutIcon, MenuIcon, PlusIcon, ShieldIcon, StarIcon, TagIcon, UsersIcon } from "@/components/ui/icons";
 import type { AdminRole } from "@/features/admin/auth/types";
 
 type NavIcon = ComponentType<SVGProps<SVGSVGElement>>;
@@ -18,8 +18,10 @@ const OPERATIONS_GROUP: NavGroup = {
   heading: "Operations",
   links: [
     { href: "/admin/requests", label: "Requests", icon: InboxIcon },
+    { href: "/admin/create-request", label: "Create Request", icon: PlusIcon },
     { href: "/admin/customers", label: "Customers", icon: UsersIcon },
     { href: "/admin/reviews", label: "Reviews", icon: StarIcon },
+    { href: "/admin/campaign-links", label: "Campaign Links", icon: TagIcon },
   ],
 };
 

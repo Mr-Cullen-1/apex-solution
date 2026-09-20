@@ -13,6 +13,8 @@ export const metadata: Metadata = {
 
 export const dynamic = "force-dynamic";
 
+type AdminLoginPageProps = { searchParams: Promise<{ reset?: string }> };
+
 // Not wrapped by the protected /admin/(dashboard) layout (no sidebar, no
 // requireAdmin() redirect loop) and not wrapped by the public marketing
 // (SiteHeader/Footer) layout either — this route sits directly under the
@@ -21,12 +23,14 @@ export const dynamic = "force-dynamic";
 // signup CTA (there is no public admin registration; admins are provisioned
 // by a SUPER_ADMIN with a temporary password — see
 // docs/ADMIN_ARCHITECTURE.md).
-export default async function AdminLoginPage() {
+export default async function AdminLoginPage({ searchParams }: AdminLoginPageProps) {
   const session = await getAdminSession();
   // Host-aware: on the admin subdomain (proxy.ts rewrote "/login" here)
   // this must land back on "/", never visibly bounce to ".../admin" — see
   // the same pattern in proxy.ts and features/admin/auth/{actions,require-admin}.ts.
   if (session) redirect(isAdminHost((await headers()).get("host")) ? "/" : "/admin");
+
+  const { reset } = await searchParams;
 
   return (
     <main className="flex min-h-full flex-1 items-center justify-center bg-page-bg px-page py-16">
@@ -34,6 +38,11 @@ export default async function AdminLoginPage() {
         <p className="eyebrow">{company.name}</p>
         <h1 className="mt-3 text-2xl font-semibold tracking-[-0.02em] text-navy">Admin sign in</h1>
         <p className="mt-2 text-sm text-slate">Authorized personnel only.</p>
+        {reset === "success" && (
+          <p role="status" className="mt-4 rounded-control bg-brand-soft px-4 py-3 text-sm font-medium text-ink">
+            Your password has been updated. Sign in with your new password.
+          </p>
+        )}
         <div className="mt-7">
           <LoginForm />
         </div>

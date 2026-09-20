@@ -5,7 +5,7 @@ import { createContext, Suspense, useCallback, useContext, useEffect, useMemo, u
 import { findServiceContext, getCategoryById } from "./model";
 import { BookNowModal } from "./book-now-modal";
 
-type OpenOptions = { categoryId?: string; serviceId?: string; offer?: boolean; issue?: string };
+type OpenOptions = { categoryId?: string; serviceId?: string; offer?: boolean; issue?: string; campaignToken?: string };
 type BookNowContextValue = { open: (options?: OpenOptions) => void };
 
 const BookNowContext = createContext<BookNowContextValue | null>(null);
@@ -30,7 +30,16 @@ export function BookNowProvider({ children }: { children: React.ReactNode }) {
   return (
     <BookNowContext.Provider value={value}>
       {children}
-      <BookNowModal key={state.nonce} isOpen={state.isOpen} categoryId={state.categoryId} serviceId={state.serviceId} offer={state.offer} issue={state.issue} onClose={close} />
+      <BookNowModal
+        key={state.nonce}
+        isOpen={state.isOpen}
+        categoryId={state.categoryId}
+        serviceId={state.serviceId}
+        offer={state.offer}
+        issue={state.issue}
+        campaignToken={state.campaignToken}
+        onClose={close}
+      />
       <Suspense fallback={null}>
         <BookNowUrlSync open={open} />
       </Suspense>
@@ -46,12 +55,13 @@ function BookNowUrlSync({ open }: { open: (options?: OpenOptions) => void }) {
   const pathname = usePathname();
 
   useEffect(() => {
-    const shouldOpen = searchParams.has("book") || searchParams.has("service") || searchParams.has("category");
+    const shouldOpen = searchParams.has("book") || searchParams.has("service") || searchParams.has("category") || searchParams.has("campaign");
     if (!shouldOpen) return;
 
     const serviceId = searchParams.get("service") ?? "";
     const categoryId = searchParams.get("category") ?? "";
     const offer = searchParams.get("offer") === "1";
+    const campaignToken = searchParams.get("campaign") ?? undefined;
     const serviceContext = serviceId ? findServiceContext(serviceId) : undefined;
     const category = !serviceContext && categoryId ? getCategoryById(categoryId) : undefined;
 
@@ -59,6 +69,7 @@ function BookNowUrlSync({ open }: { open: (options?: OpenOptions) => void }) {
       serviceId: serviceContext?.service.id,
       categoryId: serviceContext?.category.id ?? category?.id,
       offer,
+      campaignToken,
     });
 
     router.replace(pathname, { scroll: false });

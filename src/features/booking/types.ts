@@ -17,6 +17,12 @@ export type BookNowPayload = BookNowDraft & {
   /** Originating route (e.g. "/services/heating"), captured client-side at
    * submit time via `window.location.pathname`. Never the full URL/query. */
   sourcePath: string;
+  /** Campaign link token (Phase 6), read from the `?campaign=` query param
+   * BookNowUrlSync parses on load. Resolved server-side only -- an
+   * unrecognized/inactive token is silently dropped (never blocks an
+   * otherwise-valid lead), same philosophy as a stale service/category id
+   * in resolveServiceRequestContext. */
+  campaignToken: string;
 };
 
 export type BookNowErrors = Partial<Record<keyof BookNowDraft | "form", string>>;
@@ -80,6 +86,16 @@ export type ServiceRequestRow = {
    * `customer_id` is never null on a row created after that migration. */
   customer_id: string;
   request_status: RequestStatus;
+  /** Unified Request System — sequence-backed, unique, assigned
+   * automatically on insert (see
+   * supabase/migrations/20260918100000_service_request_number_and_source.sql).
+   * `request_code` ("APEX001", "APEX1000", ...) is generated from
+   * request_number and always in sync with it. */
+  request_number: number;
+  request_code: string;
+  /** Set only when this request originated from a campaign link (Phase 6) --
+   * null for Book Now and Admin Create Request. */
+  campaign_link_id: string | null;
   /** Null when no promotion was claimed. Independent of `issue` — the two
    * used to be conflated (see the migration's backfill comment). */
   offer_code: string | null;

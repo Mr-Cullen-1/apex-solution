@@ -75,6 +75,29 @@ export function createBookNowDraft(): BookNowDraft {
   return { fullName: "", phone: "", email: "", zipCode: "", message: "", serviceTextConsent: false };
 }
 
+/** Human-readable label for `service_requests.source` — shared by the
+ * Telegram message and the admin Requests UI so the two never drift apart.
+ * `source` itself stays free text (no enum) per the Unified Request System
+ * design; this is presentation only. Unknown/legacy values (e.g. the
+ * original Phase 1 default "website") fall back to a title-cased render of
+ * the raw value rather than "Unknown". */
+export function resolveSourceLabel(source: string): string {
+  switch (source) {
+    case "book_now":
+      return "Book Now";
+    case "admin_phone":
+      return "Admin / Phone";
+    case "instagram":
+      return "Instagram";
+    case "facebook":
+      return "Facebook";
+    case "website":
+      return "Website";
+    default:
+      return source ? source.charAt(0).toUpperCase() + source.slice(1) : "Unknown";
+  }
+}
+
 function text(value: unknown) {
   return typeof value === "string" ? value.trim() : "";
 }
@@ -97,6 +120,7 @@ export function normalizeBookNowPayload(value: unknown): BookNowPayload {
     // trusted as anything more than display context — this never drives a
     // redirect or lookup, only a stored/notified string.
     sourcePath: sourcePath.startsWith("/") ? sourcePath : "",
+    campaignToken: text(input.campaignToken).slice(0, 64),
   };
 }
 

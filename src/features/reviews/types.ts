@@ -49,6 +49,12 @@ export type ReviewSubmissionResult =
   // compact form-level banner — a photo upload failure isn't a form-wide
   // problem, and shouldn't read like one.
   | { ok: false; status: "media_upload_failed"; message: string }
+  // A review-invitation token (see invitation-token.ts) that is no longer
+  // active — already used, revoked, or unrecognized — at the moment of
+  // submission (checked fresh here, not just at page load, so a reused or
+  // double-submitted link can never insert a second review). Never
+  // possible on the plain, tokenless /review form.
+  | { ok: false; status: "invalid_invitation"; message: string }
   | { ok: false; status: "error"; message: string };
 
 /** Shape of a row in `public.reviews`. Includes private/moderation fields —

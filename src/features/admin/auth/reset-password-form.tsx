@@ -1,26 +1,30 @@
 "use client";
 
-import Link from "next/link";
 import { useActionState } from "react";
-import { loginAction } from "./actions";
+import { confirmPasswordResetAction } from "./actions";
 
-/** Operational sign-in only: email + password + Sign in. Deliberately
- * absent: a signup CTA, social login, and a public password-reset flow —
- * this app has no public admin registration at all (instruction #3/#13). */
-export function LoginForm() {
-  const [state, formAction, pending] = useActionState(loginAction, undefined);
+/** The `code` from the URL travels as a hidden field, submitted only on an
+ * explicit click of "Set new password" -- this page's own GET render never
+ * exchanges it (see the comment above confirmPasswordResetAction for why:
+ * a prefetched/scanned GET on the email link must never be able to consume
+ * the one-time code before the real admin clicks anything here). */
+export function ResetPasswordForm({ code }: { code: string }) {
+  const [state, formAction, pending] = useActionState(confirmPasswordResetAction, undefined);
 
   return (
     <form action={formAction} className="flex flex-col gap-5" noValidate>
+      <input type="hidden" name="code" value={code} />
+
       <div className="flex flex-col gap-1.5">
-        <label htmlFor="email" className="text-sm font-semibold text-navy">
-          Email
+        <label htmlFor="password" className="text-sm font-semibold text-navy">
+          New Password
         </label>
         <input
-          id="email"
-          name="email"
-          type="email"
-          autoComplete="username"
+          id="password"
+          name="password"
+          type="password"
+          autoComplete="new-password"
+          minLength={8}
           required
           disabled={pending}
           className="min-h-11 rounded-control border border-steel bg-surface px-4 text-sm text-navy outline-none focus-visible:border-brand-primary disabled:opacity-60"
@@ -28,21 +32,19 @@ export function LoginForm() {
       </div>
 
       <div className="flex flex-col gap-1.5">
-        <label htmlFor="password" className="text-sm font-semibold text-navy">
-          Password
+        <label htmlFor="confirmPassword" className="text-sm font-semibold text-navy">
+          Confirm Password
         </label>
         <input
-          id="password"
-          name="password"
+          id="confirmPassword"
+          name="confirmPassword"
           type="password"
-          autoComplete="current-password"
+          autoComplete="new-password"
+          minLength={8}
           required
           disabled={pending}
           className="min-h-11 rounded-control border border-steel bg-surface px-4 text-sm text-navy outline-none focus-visible:border-brand-primary disabled:opacity-60"
         />
-        <Link href="/admin/forgot-password" className="self-end text-xs font-semibold text-brand-primary hover:underline">
-          Forgot password?
-        </Link>
       </div>
 
       {state?.error && (
@@ -56,7 +58,7 @@ export function LoginForm() {
         disabled={pending}
         className="mt-2 inline-flex min-h-11 items-center justify-center rounded-control bg-navy px-6 text-sm font-semibold text-white transition-colors duration-300 hover:bg-copper disabled:cursor-not-allowed disabled:opacity-70"
       >
-        {pending ? "Signing in…" : "Sign in"}
+        {pending ? "Saving…" : "Set new password"}
       </button>
     </form>
   );

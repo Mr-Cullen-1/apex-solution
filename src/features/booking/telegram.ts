@@ -27,6 +27,14 @@ export function isTelegramConfigured(): boolean {
 
 export type LeadForTelegram = {
   requestId: string;
+  /** Human-readable "APEXxxx" request number (Unified Request System) --
+   * always present on any row created after
+   * supabase/migrations/20260918100000_service_request_number_and_source.sql. */
+  requestCode: string;
+  /** Display label for service_requests.source, already resolved via
+   * resolveSourceLabel() (src/features/booking/model.ts) -- e.g. "Book Now",
+   * "Admin / Phone", "Instagram", "Facebook". */
+  sourceLabel: string;
   fullName: string;
   phone: string;
   email: string | null;
@@ -36,7 +44,7 @@ export type LeadForTelegram = {
   issue: string | null;
   message: string;
   smsConsent: boolean;
-  /** ISO timestamp from the Supabase row (`created_at`) — the database
+  /** ISO timestamp from the Supabase row (`created_at`) -- the database
    * timestamp is canonical; this is only ever used for display. */
   createdAt: string;
 };
@@ -72,6 +80,8 @@ function buildMessageLines(lead: LeadForTelegram, message: string): string[] {
   const lines = [
     "🔵 NEW SERVICE REQUEST",
     "",
+    lead.requestCode,
+    "",
     "👤 Full Name:",
     lead.fullName,
     "",
@@ -97,7 +107,7 @@ function buildMessageLines(lead: LeadForTelegram, message: string): string[] {
     lead.smsConsent ? "Yes" : "No",
     "",
     "🌐 Source:",
-    "Apex Home Services — Book Now",
+    lead.sourceLabel,
     "",
     "🆔 Request ID:",
     lead.requestId,

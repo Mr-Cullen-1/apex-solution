@@ -90,7 +90,8 @@ export async function POST(request: Request) {
     media = { data: bytes, mimeType: sniffed, sizeBytes: bytes.byteLength };
   }
 
-  const result = await submitReview(body, { clientIp: extractClientIp(request), userAgent: extractUserAgent(request), media });
+  const invitationToken = textField(formData, "invitationToken") || null;
+  const result = await submitReview(body, { clientIp: extractClientIp(request), userAgent: extractUserAgent(request), media, invitationToken });
   const statusCode = result.ok
     ? 201
     : result.status === "invalid"
@@ -99,7 +100,9 @@ export async function POST(request: Request) {
         ? 503
         : result.status === "rate_limited"
           ? 429
-          : 500;
+          : result.status === "invalid_invitation"
+            ? 410
+            : 500;
   return Response.json(result, { status: statusCode, headers: { "Cache-Control": "no-store" } });
 }
 

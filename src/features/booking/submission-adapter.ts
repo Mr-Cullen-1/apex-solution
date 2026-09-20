@@ -1,6 +1,7 @@
 import "server-only";
 import { isSupabaseConfigured } from "@/lib/supabase/server";
 import { isResendConfigured, sendConfirmationEmail } from "./email";
+import { resolveSourceLabel } from "./model";
 import { createServiceRequest, markEmailFailed, markEmailSent, markTelegramFailed, markTelegramSent } from "./repository";
 import { formatLeadMessage, isTelegramConfigured, sendTelegramMessage } from "./telegram";
 import type { BookNowPayload, ServiceRequestRow, SubmissionResult } from "./types";
@@ -18,6 +19,8 @@ async function deliverTelegram(row: ServiceRequestRow): Promise<void> {
 
   const text = formatLeadMessage({
     requestId: row.id,
+    requestCode: row.request_code,
+    sourceLabel: resolveSourceLabel(row.source),
     fullName: row.full_name,
     phone: row.phone,
     email: row.email,
@@ -82,10 +85,10 @@ async function deliverConfirmationEmail(row: ServiceRequestRow): Promise<void> {
  * rejects), and this still runs on a serverless function that may freeze
  * once a response is sent — so both are awaited here before responding,
  * rather than left to finish in the background unawaited. */
-export async function submitBookNowRequest(payload: BookNowPayload): Promise<SubmissionResult> {
+export async function submitBookNowRequest(payload: BookNowPayload, options: { source?: string } = {}): Promise<SubmissionResult> {
   if (!isSupabaseConfigured()) return { ok: false, status: "not_configured", message: NOT_CONFIGURED_MESSAGE };
 
-  const created = await createServiceRequest(payload);
+  const created = await createServiceRequest(payload, options);
   if (!created.ok) return { ok: false, status: "error", message: SUBMISSION_FAILED_MESSAGE };
 
   const { row } = created;
@@ -95,4 +98,27 @@ export async function submitBookNowRequest(payload: BookNowPayload): Promise<Sub
   // here — the lead is already safely stored, so the response is the same
   // regardless of Telegram/email success or failure.
   return { ok: true, status: "received", requestId: row.id };
+}
+
+/** Same canonical creation + delivery pipeline as submitBookNowRequest
+ * above, but returns the full stored row (request_code, customer_id, ...)
+ * instead of the public API's narrow { requestId } contract — for
+ * server-side/internal callers only (e.g. Admin Create Request, which needs
+ * the request_code for its own success message and the customer_id to
+ * attach an internal note). Never call this from a route that serializes
+ * its result straight back to the browser -- ServiceRequestRow includes
+ * internal delivery-tracking fields that must never reach an untrusted
+ * client. */
+export async function submitAdminServiceRequest(
+  payload: BookNowPayload,
+  options: { source?: string } = {},
+): Promise<{ ok: true; row: ServiceRequestRow } | { ok: false; message: string }> {
+  if (!isSupabaseConfigured()) return { ok: false, message: NOT_CONFIGURED_MESSAGE };
+
+  const created = await createServiceRequest(payload, options);
+  if (!created.ok) return { ok: false, message: SUBMISSION_FAILED_MESSAGE };
+
+  const { row } = created;
+  await Promise.all([deliverTelegram(row), deliverConfirmationEmail(row)]);
+  return { ok: true, row };
 }

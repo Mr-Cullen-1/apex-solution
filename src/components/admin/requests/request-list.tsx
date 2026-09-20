@@ -63,7 +63,7 @@ export function RequestList({ requests }: { requests: AdminRequest[] }) {
                       <Link href={`/admin/requests/${request.id}`} className="block truncate font-semibold text-navy hover:text-brand-primary hover:underline">
                         {request.fullName}
                       </Link>
-                      <p className="text-xs text-slate">{request.phone}</p>
+                      <p className="text-xs text-slate">{request.requestCode} · {request.phone}</p>
                     </div>
                   </div>
                 </td>
@@ -99,7 +99,7 @@ export function RequestList({ requests }: { requests: AdminRequest[] }) {
                 <span className="inline-flex size-8 shrink-0 items-center justify-center rounded-full bg-brand-soft text-xs font-bold text-brand-primary">{initials(request.fullName)}</span>
                 <div>
                   <p className="font-semibold text-navy">{request.fullName}</p>
-                  <p className="text-xs text-slate">{formatDate(request.createdAt)}</p>
+                  <p className="text-xs text-slate">{request.requestCode} · {formatDate(request.createdAt)}</p>
                 </div>
               </div>
               <RequestStatusBadge status={request.requestStatus} />

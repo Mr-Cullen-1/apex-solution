@@ -23,6 +23,8 @@ export type ListAdminRequestsParams = {
  * any public route or API. */
 export type AdminRequest = {
   id: string;
+  requestCode: string;
+  source: string;
   customerId: string;
   fullName: string;
   phone: string;

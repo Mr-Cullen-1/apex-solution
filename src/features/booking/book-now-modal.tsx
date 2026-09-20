@@ -27,10 +27,11 @@ type BookNowModalProps = {
   serviceId?: string;
   offer?: boolean;
   issue?: string;
+  campaignToken?: string;
   onClose: () => void;
 };
 
-export function BookNowModal({ isOpen, categoryId, serviceId, offer, issue, onClose }: BookNowModalProps) {
+export function BookNowModal({ isOpen, categoryId, serviceId, offer, issue, campaignToken, onClose }: BookNowModalProps) {
   const [draft, setDraft] = useState<BookNowDraft>(createBookNowDraft);
   const [errors, setErrors] = useState<BookNowErrors>({});
   const [submitting, setSubmitting] = useState(false);
@@ -94,7 +95,7 @@ export function BookNowModal({ isOpen, categoryId, serviceId, offer, issue, onCl
 
   async function handleSubmit(event: React.FormEvent) {
     event.preventDefault();
-    const payload = normalizeBookNowPayload({ ...draft, categoryId, serviceId, offer, issue, sourcePath: window.location.pathname });
+    const payload = normalizeBookNowPayload({ ...draft, categoryId, serviceId, offer, issue, sourcePath: window.location.pathname, campaignToken });
     const validationErrors = validateBookNowPayload(payload);
     if (Object.keys(validationErrors).length) {
       setErrors(validationErrors);
