@@ -36,6 +36,10 @@ The files in `src/content` are the single source of truth during the file-backed
 
 `serviceAreas` is organized as typed state groups containing confirmed county lists. `supportedBrands` is organized as typed appliance, premium-appliance, and HVAC categories. `services.ts` is the typed taxonomy for category, service, problem, relationship, FAQ, media, and SEO data. Homepage, navigation, service routes, and footer consume these datasets directly. `cta.ts` and `BookingLink` define the site-wide "Book Now" entry point, which opens the shared modal in `src/features/booking/book-now-modal.tsx` rather than navigating to a page.
 
+### Footer appliance coverage
+
+`src/content/appliance-repair.ts` holds the client-supplied equipment list: nine residential appliance types and four commercial equipment types. The footer renders these as semantic lists under the existing Appliance Repair category link, without creating equipment-specific routes. The catalogue occupies a full row above the other service links; residential items use two columns from `sm`, with commercial equipment beside them. On narrow screens both groups stack. The existing review-flow footer exclusion and mobile booking/call actions remain in place.
+
 ## Route strategy
 
 Completed service routes live under `app/services`; core public pages live at `app/about`, `app/brands`, `app/contact`, and `app/service-areas`. `completedPublicPaths` (`src/content/routes.ts`) and `completedServicePaths` feed the sitemap. Do not generate thin location, brand, or article pages solely for SEO.
