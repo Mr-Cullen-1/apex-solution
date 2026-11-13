@@ -4,6 +4,27 @@
 
 Premium, restrained home-services brand built on a Dribbble reference's layout language (large rounded canvases, asymmetric split composition, soft floating elements, generous whitespace) and the official Apex logo's own color identity (navy/blue). Superseded Sep 2026: the original editorial/square-edged/navy-copper direction (see git history for the prior version of this file) and a brief green-dominant iteration that used the reference's own palette instead of the client's real brand color — corrected once the official logo files were supplied.
 
+## Footer redesign (2026-11-13)
+
+The supplied footer concept explicitly adds a scoped palette in `globals.css`:
+`--footer-start` (#062B4E), `--footer-end` (#031C34), and `--footer-accent`
+(#38BDF8), with light text, muted text, border, and panel tokens. This is an
+approved exception to the logo-sampling rule below; other surfaces keep their
+existing brand colors.
+
+The footer uses one column on phones, two at `md`, and a 12-track grid at `lg`
+with spans 4/3/2/3 for brand, residential, commercial, and HVAC respectively.
+Category headings are uppercase sky blue with thin dividers. The brand column
+contains the official white mark, centralized description, linked state badge,
+phone action, and solid blue Book Now trigger. The `footer-primary` button
+variant owns both its default and hover color pairs.
+
+Links change color on hover, links and buttons move 3px when motion is allowed,
+and focus outlines use the footer accent. Reduced motion disables translations,
+including the booking arrow. Mobile bottom padding reserves room for the sticky
+action bar. The bottom bar contains copyright; legal links were explicitly
+excluded by the user. No policy pages or legal promises are introduced.
+
 ## Foundation tokens
 
 All colors live in `src/app/globals.css`. The brand triad is sampled directly from `apex logo/colored.png` (see `src/content/brand.ts`) — do not hand-pick new hex values without re-sampling the source file.

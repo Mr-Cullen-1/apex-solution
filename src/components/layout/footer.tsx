@@ -1,110 +1,75 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { FooterVisibility } from "@/components/layout/footer-visibility";
 import { BookingLink } from "@/components/ui/booking-link";
 import { Container } from "@/components/ui/container";
 import { PhoneIcon } from "@/components/ui/icons";
-import { applianceRepairGroups } from "@/content/appliance-repair";
 import { brandMark } from "@/content/brand";
 import { company, contact } from "@/content/company";
-import { getServiceCategory } from "@/content/services";
-
-// Service links use existing routes; equipment coverage is descriptive content.
-const applianceRepair = getServiceCategory("appliance-repair");
-const cooling = getServiceCategory("cooling");
-const heating = getServiceCategory("heating");
-const waterHeaterRepair = getServiceCategory("water-heater-repair");
-
-const toGroup = (category: NonNullable<ReturnType<typeof getServiceCategory>>) => ({
-  label: category.name,
-  links: category.children.length ? category.children.map((service) => ({ label: service.name, href: service.href })) : [{ label: category.name, href: category.href }],
-});
+import { footerEquipmentGroups, footerSystemGroups } from "@/content/footer";
+import { serviceAreas } from "@/content/site";
 
 export function Footer() {
-  // `/review` (and its tokenized invitation variant, `/review/<token>`) is
-  // a focused, one-screen customer submission flow — the global footer
-  // isn't needed there and would force scrolling past the review card.
-  // Every other route keeps it.
-  const pathname = usePathname();
-  if (pathname === "/review" || pathname.startsWith("/review/")) return null;
-
   return (
-    <footer className="bg-brand-dark pb-24 pt-10 text-white md:pb-10 md:pt-12">
-      <Container>
-        {/* Equipment gets a full directory row so long names stay readable.
-            The brand sits beside the directory only when there is room. */}
-        <div className="grid gap-8 xl:grid-cols-[1fr_3fr] xl:gap-12">
-          <BrandColumn />
-          <div className="grid min-w-0 grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-3">
-            {applianceRepair && <ApplianceRepairGroup />}
-            {cooling && <FooterGroup {...toGroup(cooling)} />}
-            {heating && <FooterGroup {...toGroup(heating)} />}
-            {waterHeaterRepair && <FooterGroup {...toGroup(waterHeaterRepair)} />}
-            {/* The fixed mobile action bar supplies these actions below md. */}
-            <div className="col-span-full hidden md:mt-2 md:flex md:w-full md:max-w-[440px] md:items-center md:justify-self-end md:gap-3">
-              {contact.phoneHref && (
-                <a href={contact.phoneHref} className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 rounded-control bg-white px-6 text-sm font-bold text-navy transition-colors hover:bg-copper hover:text-white">
-                  <PhoneIcon className="size-4" />
-                  {contact.phone}
-                </a>
-              )}
-              <BookingLink variant="footer-outline" className="flex-1" />
-            </div>
+    <FooterVisibility>
+      <footer className="site-footer pb-[calc(7rem+env(safe-area-inset-bottom))] pt-14 text-white md:pb-10 md:pt-16">
+        <Container>
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-12 lg:gap-8">
+            <BrandColumn />
+            {footerEquipmentGroups.map((group) => (
+              <nav key={group.id} aria-labelledby={`footer-${group.id}`} className={`min-w-0 ${group.id === "residential" ? "lg:col-span-3" : "lg:col-span-2"}`}>
+                <FooterGroup {...group} />
+              </nav>
+            ))}
+            <nav aria-label="HVAC & Heating" className="min-w-0 space-y-7 lg:col-span-3">
+              {footerSystemGroups.map((group) => <FooterGroup key={group.id} {...group} />)}
+            </nav>
           </div>
-        </div>
 
-        <div className="mt-8 border-t border-white/15 pt-5 text-xs text-white/45 md:mt-10">
-          <p>© {new Date().getFullYear()} {company.name}</p>
-        </div>
-      </Container>
-    </footer>
-  );
-}
-
-function ApplianceRepairGroup() {
-  if (!applianceRepair) return null;
-
-  return (
-    <section className="col-span-full border-b border-white/15 pb-8" aria-labelledby="footer-appliance-heading">
-      <h2 id="footer-appliance-heading" className="text-[0.65rem] font-bold uppercase tracking-[0.16em] text-white/75">
-        <Link href={applianceRepair.href} className="underline-offset-4 transition-colors hover:text-white hover:underline focus-visible:outline-white">
-          {applianceRepair.name}
-        </Link>
-      </h2>
-      <div className="mt-5 grid gap-6 sm:grid-cols-3">
-        {applianceRepairGroups.map((group) => (
-          <div key={group.id} className={group.id === "residential" ? "sm:col-span-2" : undefined}>
-            <h3 className="text-xs font-semibold text-white">{group.label}</h3>
-            <ul className={`mt-3 grid gap-x-6 gap-y-2 text-sm leading-6 text-white/75 ${group.id === "residential" ? "sm:grid-cols-2" : ""}`}>
-              {group.items.map((item) => <li key={item}>{item}</li>)}
-            </ul>
+          <div className="mt-12 border-t border-footer-border pt-6 text-xs leading-6 text-footer-muted md:mt-16">
+            <p>© {new Date().getFullYear()} {company.name}. All rights reserved.</p>
           </div>
-        ))}
-      </div>
-    </section>
+        </Container>
+      </footer>
+    </FooterVisibility>
   );
 }
 
 function BrandColumn() {
   return (
-    <div>
-      <Link href="/" className="inline-flex items-center gap-2.5" aria-label={`${company.name} home`}>
-        <Image src={brandMark.white.src} alt={brandMark.white.alt} width={32} height={32} className="size-8" />
-        <span className="text-lg font-semibold tracking-[-0.02em]">{company.name}</span>
+    <div className="min-w-0 lg:col-span-4 lg:pr-4">
+      <Link href="/" className="inline-flex items-center gap-3" aria-label={`${company.name} home`}>
+        <Image src={brandMark.white.src} alt="" width={40} height={40} className="size-10 shrink-0" />
+        <span className="text-xl font-semibold tracking-[-0.02em]">{company.name}</span>
       </Link>
-      <p className="mt-4 max-w-xs text-sm leading-6 text-white/55">{company.description}</p>
+      <p className="mt-5 max-w-sm text-sm leading-6 text-footer-text">{company.description}</p>
+      <Link href="/service-areas" className="mt-6 block max-w-sm rounded-xl border border-footer-border bg-footer-panel p-4" aria-label={`States served: ${serviceAreas.map((area) => area.state).join(", ")}. Explore service areas.`}>
+        <span className="block text-[0.65rem] font-bold uppercase tracking-[0.14em] text-footer-accent">States served</span>
+        <span className="mt-1.5 block text-sm font-medium tracking-wide">{serviceAreas.map((area) => area.code).join(" · ")}</span>
+      </Link>
+      <div className="mt-6 flex max-w-sm flex-col gap-3 sm:flex-row md:flex-col xl:flex-row">
+        {contact.phoneHref && (
+          <a href={contact.phoneHref} className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 whitespace-nowrap rounded-control border border-footer-border bg-white/10 px-4 text-sm font-semibold hover:bg-white/15">
+            <PhoneIcon className="size-4 shrink-0 text-footer-accent" />
+            {contact.phone}
+          </a>
+        )}
+        <BookingLink variant="footer-primary" className="flex-1 whitespace-nowrap" />
+      </div>
     </div>
   );
 }
 
-function FooterGroup({ label, links }: { label: string; links: { label: string; href: string }[] }) {
+function FooterGroup({ id, label, links }: { id: string; label: string; links: { label: string; href: string }[] }) {
   return (
     <div>
-      <h2 className="text-[0.65rem] font-bold uppercase tracking-[0.16em] text-white/75">{label}</h2>
-      <ul className="mt-4 space-y-2.5">
-        {links.map((item) => <li key={item.href}><Link className="text-sm text-white/62 transition-colors hover:text-white" href={item.href}>{item.label}</Link></li>)}
+      <h2 id={`footer-${id}`} className="border-b border-footer-border pb-3 text-xs font-bold uppercase leading-5 tracking-[0.1em] text-footer-accent">{label}</h2>
+      <ul className="mt-3 space-y-1">
+        {links.map((item) => (
+          <li key={item.label}>
+            <Link className="inline-block py-1.5 text-sm leading-6 text-footer-text" href={item.href}>{item.label}</Link>
+          </li>
+        ))}
       </ul>
     </div>
   );

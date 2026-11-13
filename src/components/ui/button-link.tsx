@@ -3,7 +3,7 @@ import type { ComponentPropsWithoutRef } from "react";
 import { ArrowRightIcon } from "./icons";
 
 type ButtonLinkProps = ComponentPropsWithoutRef<typeof Link> & {
-  variant?: "primary" | "secondary" | "call" | "invert" | "outline-invert" | "footer-outline" | "header-compact" | "text";
+  variant?: "primary" | "secondary" | "call" | "invert" | "outline-invert" | "footer-outline" | "footer-primary" | "header-compact" | "text";
   showArrow?: boolean;
 };
 
@@ -18,6 +18,7 @@ export const buttonBase = "group inline-flex min-h-12 items-center justify-cente
 export const buttonStyles: Record<NonNullable<ButtonLinkProps["variant"]>, string> = {
   call: `${buttonBase} rounded-control bg-copper px-6 text-white shadow-soft hover:bg-brand-dark`,
   primary: `${buttonBase} rounded-control bg-navy px-6 text-white hover:bg-copper`,
+  "footer-primary": `${buttonBase} rounded-control bg-brand-primary px-4 text-white hover:bg-footer-accent hover:text-ink`,
   secondary: `${buttonBase} rounded-control border border-steel bg-transparent px-6 text-navy hover:border-navy hover:bg-warm-white`,
   invert: `${buttonBase} rounded-control bg-white px-6 text-navy hover:bg-copper hover:text-white`,
   "outline-invert": `${buttonBase} rounded-control border border-white/35 px-6 text-white hover:border-white hover:bg-white/10`,

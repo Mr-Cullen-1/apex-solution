@@ -16,6 +16,15 @@
   --brand-primary: #005098;  /* dominant mark blue — primary CTA / accent */
   --brand-accent: #0376e7;   /* swoosh highlight — vivid accent, decorative use */
 
+  /* Footer-specific palette supplied in the November 2026 redesign concept. */
+  --footer-start: #062b4e;
+  --footer-end: #031c34;
+  --footer-accent: #38bdf8;
+  --footer-text: #d2e2f0;
+  --footer-muted: #a8c2d8;
+  --footer-border: color-mix(in srgb, var(--footer-accent) 25%, transparent);
+  --footer-panel: color-mix(in srgb, var(--footer-end) 65%, transparent);
+
   /* Neutral surfaces (reference's light atmosphere, tinted toward brand hue) */
   --page-bg: color-mix(in srgb, var(--brand-primary) 5%, #f2f4f7);
   --surface: #ffffff;
@@ -77,6 +86,11 @@
   --color-brand-primary: var(--brand-primary);
   --color-brand-accent: var(--brand-accent);
   --color-brand-soft: var(--brand-soft);
+  --color-footer-accent: var(--footer-accent);
+  --color-footer-text: var(--footer-text);
+  --color-footer-muted: var(--footer-muted);
+  --color-footer-border: var(--footer-border);
+  --color-footer-panel: var(--footer-panel);
   --color-status-live: var(--status-live);
   --color-status-critical: var(--status-critical);
   --color-status-pipeline-1: var(--status-pipeline-1);
@@ -109,6 +123,26 @@ body {
 }
 ::selection { background: color-mix(in srgb, var(--brand-primary) 25%, transparent); }
 :focus-visible { outline: 2px solid var(--brand-primary); outline-offset: 3px; }
+
+.site-footer {
+  background: linear-gradient(to bottom, var(--footer-start), var(--footer-end));
+}
+.site-footer a,
+.site-footer button {
+  transition: color 200ms ease, background-color 200ms ease, border-color 200ms ease, transform 200ms ease;
+}
+.site-footer a:hover {
+  color: var(--footer-accent);
+}
+.site-footer :is(a, button):focus-visible {
+  outline-color: var(--footer-accent);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .site-footer :is(a, button):hover { transform: translateX(3px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-footer button svg { transform: none; translate: none; }
+}
 
 .skip-link {
   position: fixed;

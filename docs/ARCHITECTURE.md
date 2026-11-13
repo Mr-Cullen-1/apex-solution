@@ -64,4 +64,13 @@ Former Phoenix city placeholders were removed. County landing pages are intentio
 
 ## Client boundaries
 
+The footer directory is a Server Component. Its small `FooterVisibility`
+client wrapper reads the pathname to preserve hiding on `/review` and
+`/review/<token>`; the existing `BookingLink` remains the interactive booking
+boundary. Footer labels live in `src/content/footer.ts`, company and contact
+details in `company.ts`, and the state badge derives from `site.ts` service areas.
+Equipment links share the existing `/services/appliance-repair` route; HVAC
+links derive from the existing service catalog. No new routes or dependencies
+are added by the November 2026 footer redesign.
+
 The navigation shell is client-side only where needed for mega-menu state, focus management, Escape handling, outside clicks, and mobile scroll locking. The homepage FAQ and focused booking-flow boundary are client components. Booking metadata, query parsing, page shell, service pages, and other homepage sections remain server-rendered.
