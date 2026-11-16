@@ -1,5 +1,11 @@
 # Implementation progress
 
+## Browser QA follow-up — 16 November 2026
+
+Actual local Chromium testing is now documented in [VISUAL_QA_REPORT.md](VISUAL_QA_REPORT.md), [INTERACTION_TEST_REPORT.md](INTERACTION_TEST_REPORT.md), [VISUAL_QA_ISSUES.csv](VISUAL_QA_ISSUES.csv), and [SCREENSHOT_INDEX.md](SCREENSHOT_INDEX.md). This follow-up supersedes the historical browser-access limitation below. It fixes service-description contrast, pricing/action wrapping, and the homepage service-call/chat overlap. The page architecture and runtime dependencies are unchanged; no deployment or Quo configuration change was made.
+
+The remaining sections describe the earlier implementation handoff.
+
 Updated 16 November 2026. Implementation is in the local working tree. No deployment, commit, database migration or Quo account change was made. Existing SEO audit files remain intact.
 
 ## Delivered

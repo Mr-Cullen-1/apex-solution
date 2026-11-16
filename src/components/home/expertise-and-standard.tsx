@@ -11,10 +11,10 @@ export function ServicesGrid() {
   return (
     <section className="section-y bg-page-bg" aria-labelledby="services-grid-heading">
       <Container>
-        <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
+        <div className="flex flex-col justify-between gap-6 lg:flex-row lg:items-end">
           <SectionHeading id="services-grid-heading" eyebrow="What can we help with?" title="The systems your day depends on." description="Choose a category to see common situations, or call now and describe what you're noticing." />
           {contact.phoneHref && (
-            <a href={contact.phoneHref} className="inline-flex min-h-12 shrink-0 items-center gap-2 rounded-control bg-navy px-5 text-sm font-semibold text-white transition-colors hover:bg-copper">
+            <a href={contact.phoneHref} className="inline-flex min-h-12 shrink-0 self-start items-center gap-2 rounded-control bg-navy px-5 text-sm font-semibold text-white transition-colors hover:bg-copper lg:mr-16 lg:self-auto">
               <PhoneIcon className="size-4" />{contact.phone}
             </a>
           )}

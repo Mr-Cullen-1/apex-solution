@@ -1,0 +1,557 @@
+{
+  "results": [
+    {
+      "viewport": "desktop",
+      "name": "navigation and overview links",
+      "details": {
+        "navigatedTo": "/services/cooling"
+      },
+      "pass": true
+    },
+    {
+      "viewport": "desktop",
+      "name": "3D service selection, camera and reduced motion",
+      "details": {
+        "cameraChanged": true,
+        "reducedMotionTransition": "1e-05s"
+      },
+      "pass": true
+    },
+    {
+      "viewport": "desktop",
+      "name": "pricing phone stays on one line",
+      "details": {
+        "textLines": 1,
+        "height": 48
+      },
+      "pass": true
+    },
+    {
+      "viewport": "desktop",
+      "name": "service call text stays clear of chat launcher",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n43.3125 !== 0\n",
+      "screenshot": "docs/qa/2026-11-16/chat-repro/failure-service-call-text-stays-clear-of-chat-launcher--desktop.png"
+    },
+    {
+      "viewport": "desktop",
+      "name": "booking focus trap, validation and comfortable controls",
+      "details": {
+        "controls": [
+          {
+            "id": "bn-service",
+            "size": 16,
+            "height": 49
+          },
+          {
+            "id": "bn-fullName",
+            "size": 16,
+            "height": 50
+          },
+          {
+            "id": "bn-phone",
+            "size": 16,
+            "height": 50
+          },
+          {
+            "id": "bn-zip",
+            "size": 16,
+            "height": 50
+          },
+          {
+            "id": "bn-email",
+            "size": 16,
+            "height": 50
+          },
+          {
+            "id": "bn-message",
+            "size": 16,
+            "height": 112
+          }
+        ],
+        "blockedInvalidSubmissions": true
+      },
+      "pass": true
+    },
+    {
+      "viewport": "desktop",
+      "name": "booking success response",
+      "details": {
+        "intercepted": true,
+        "payloadService": "ac-repair",
+        "zipPreserved": "06810"
+      },
+      "pass": true
+    },
+    {
+      "viewport": "desktop",
+      "name": "booking error response",
+      "details": {
+        "intercepted": true,
+        "payloadService": "ac-repair",
+        "zipPreserved": "06810"
+      },
+      "pass": true
+    },
+    {
+      "viewport": "desktop",
+      "name": "booking unavailable response",
+      "details": {
+        "intercepted": true,
+        "payloadService": "ac-repair",
+        "zipPreserved": "06810"
+      },
+      "pass": true
+    },
+    {
+      "viewport": "desktop",
+      "name": "booking network response",
+      "details": {
+        "intercepted": true,
+        "payloadService": "ac-repair",
+        "zipPreserved": "06810"
+      },
+      "pass": true
+    },
+    {
+      "viewport": "desktop",
+      "name": "booking invalid response",
+      "details": {
+        "intercepted": true,
+        "payloadService": "ac-repair",
+        "zipPreserved": "06810"
+      },
+      "pass": true
+    },
+    {
+      "viewport": "desktop",
+      "name": "keyboard skip link and visible focus",
+      "details": {
+        "outlineStyle": "solid",
+        "outlineWidth": "2px",
+        "top": 16
+      },
+      "pass": true
+    },
+    {
+      "viewport": "desktop",
+      "name": "service preselection and modal accessibility",
+      "details": {
+        "selected": "furnace-repair",
+        "violations": []
+      },
+      "pass": true
+    },
+    {
+      "viewport": "desktop",
+      "name": "faq expansion and results carousel",
+      "details": {
+        "scrollLeft": 2
+      },
+      "pass": true
+    },
+    {
+      "viewport": "tablet",
+      "name": "navigation and overview links",
+      "details": {
+        "navigatedTo": "/services/cooling"
+      },
+      "pass": true
+    },
+    {
+      "viewport": "tablet",
+      "name": "3D service selection, camera and reduced motion",
+      "details": {
+        "cameraChanged": true,
+        "reducedMotionTransition": "1e-05s"
+      },
+      "pass": true
+    },
+    {
+      "viewport": "tablet",
+      "name": "pricing phone stays on one line",
+      "details": {
+        "textLines": 1,
+        "height": 48
+      },
+      "pass": true
+    },
+    {
+      "viewport": "tablet",
+      "name": "service call text stays clear of chat launcher",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n527.0625 !== 0\n",
+      "screenshot": "docs/qa/2026-11-16/chat-repro/failure-service-call-text-stays-clear-of-chat-launcher--tablet.png"
+    },
+    {
+      "viewport": "tablet",
+      "name": "booking focus trap, validation and comfortable controls",
+      "details": {
+        "controls": [
+          {
+            "id": "bn-service",
+            "size": 16,
+            "height": 49
+          },
+          {
+            "id": "bn-fullName",
+            "size": 16,
+            "height": 50
+          },
+          {
+            "id": "bn-phone",
+            "size": 16,
+            "height": 50
+          },
+          {
+            "id": "bn-zip",
+            "size": 16,
+            "height": 50
+          },
+          {
+            "id": "bn-email",
+            "size": 16,
+            "height": 50
+          },
+          {
+            "id": "bn-message",
+            "size": 16,
+            "height": 112
+          }
+        ],
+        "blockedInvalidSubmissions": true
+      },
+      "pass": true
+    },
+    {
+      "viewport": "tablet",
+      "name": "booking success response",
+      "details": {
+        "intercepted": true,
+        "payloadService": "ac-repair",
+        "zipPreserved": "06810"
+      },
+      "pass": true
+    },
+    {
+      "viewport": "tablet",
+      "name": "booking error response",
+      "details": {
+        "intercepted": true,
+        "payloadService": "ac-repair",
+        "zipPreserved": "06810"
+      },
+      "pass": true
+    },
+    {
+      "viewport": "tablet",
+      "name": "booking unavailable response",
+      "details": {
+        "intercepted": true,
+        "payloadService": "ac-repair",
+        "zipPreserved": "06810"
+      },
+      "pass": true
+    },
+    {
+      "viewport": "tablet",
+      "name": "booking network response",
+      "details": {
+        "intercepted": true,
+        "payloadService": "ac-repair",
+        "zipPreserved": "06810"
+      },
+      "pass": true
+    },
+    {
+      "viewport": "tablet",
+      "name": "booking invalid response",
+      "details": {
+        "intercepted": true,
+        "payloadService": "ac-repair",
+        "zipPreserved": "06810"
+      },
+      "pass": true
+    },
+    {
+      "viewport": "tablet",
+      "name": "keyboard skip link and visible focus",
+      "details": {
+        "outlineStyle": "solid",
+        "outlineWidth": "2px",
+        "top": 16
+      },
+      "pass": true
+    },
+    {
+      "viewport": "tablet",
+      "name": "service preselection and modal accessibility",
+      "details": {
+        "selected": "furnace-repair",
+        "violations": []
+      },
+      "pass": true
+    },
+    {
+      "viewport": "tablet",
+      "name": "faq expansion and results carousel",
+      "details": {
+        "scrollLeft": 2
+      },
+      "pass": true
+    },
+    {
+      "viewport": "mobile",
+      "name": "navigation and overview links",
+      "details": {
+        "navigatedTo": "/services/cooling"
+      },
+      "pass": true
+    },
+    {
+      "viewport": "mobile",
+      "name": "3D service selection, camera and reduced motion",
+      "details": {
+        "cameraChanged": false,
+        "reducedMotionTransition": "1e-05s"
+      },
+      "pass": true
+    },
+    {
+      "viewport": "mobile",
+      "name": "pricing phone stays on one line",
+      "details": {
+        "textLines": 1,
+        "height": 48
+      },
+      "pass": true
+    },
+    {
+      "viewport": "mobile",
+      "name": "service call text stays clear of chat launcher",
+      "details": {
+        "width": 0,
+        "height": 0
+      },
+      "pass": true
+    },
+    {
+      "viewport": "mobile",
+      "name": "booking focus trap, validation and comfortable controls",
+      "details": {
+        "controls": [
+          {
+            "id": "bn-service",
+            "size": 16,
+            "height": 49
+          },
+          {
+            "id": "bn-fullName",
+            "size": 16,
+            "height": 50
+          },
+          {
+            "id": "bn-phone",
+            "size": 16,
+            "height": 50
+          },
+          {
+            "id": "bn-zip",
+            "size": 16,
+            "height": 50
+          },
+          {
+            "id": "bn-email",
+            "size": 16,
+            "height": 50
+          },
+          {
+            "id": "bn-message",
+            "size": 16,
+            "height": 112
+          }
+        ],
+        "blockedInvalidSubmissions": true
+      },
+      "pass": true
+    },
+    {
+      "viewport": "mobile",
+      "name": "booking success response",
+      "details": {
+        "intercepted": true,
+        "payloadService": "ac-repair",
+        "zipPreserved": "06810"
+      },
+      "pass": true
+    },
+    {
+      "viewport": "mobile",
+      "name": "booking error response",
+      "details": {
+        "intercepted": true,
+        "payloadService": "ac-repair",
+        "zipPreserved": "06810"
+      },
+      "pass": true
+    },
+    {
+      "viewport": "mobile",
+      "name": "booking unavailable response",
+      "details": {
+        "intercepted": true,
+        "payloadService": "ac-repair",
+        "zipPreserved": "06810"
+      },
+      "pass": true
+    },
+    {
+      "viewport": "mobile",
+      "name": "booking network response",
+      "details": {
+        "intercepted": true,
+        "payloadService": "ac-repair",
+        "zipPreserved": "06810"
+      },
+      "pass": true
+    },
+    {
+      "viewport": "mobile",
+      "name": "booking invalid response",
+      "details": {
+        "intercepted": true,
+        "payloadService": "ac-repair",
+        "zipPreserved": "06810"
+      },
+      "pass": true
+    },
+    {
+      "viewport": "mobile",
+      "name": "keyboard skip link and visible focus",
+      "details": {
+        "outlineStyle": "solid",
+        "outlineWidth": "2px",
+        "top": 16
+      },
+      "pass": true
+    },
+    {
+      "viewport": "mobile",
+      "name": "service preselection and modal accessibility",
+      "details": {
+        "selected": "furnace-repair",
+        "violations": []
+      },
+      "pass": true
+    },
+    {
+      "viewport": "mobile",
+      "name": "faq expansion and results carousel",
+      "details": {
+        "scrollLeft": 2
+      },
+      "pass": true
+    }
+  ],
+  "payloads": [
+    {
+      "fullName": "QA Fixture",
+      "phone": "(202) 555-0147",
+      "email": "",
+      "zipCode": "06810",
+      "message": "Synthetic local UI check only.",
+      "serviceTextConsent": false,
+      "categoryId": "cooling",
+      "serviceId": "ac-repair",
+      "offer": false,
+      "issue": "",
+      "sourcePath": "/contact",
+      "campaignToken": ""
+    },
+    {
+      "fullName": "QA Fixture",
+      "phone": "(202) 555-0147",
+      "email": "",
+      "zipCode": "06810",
+      "message": "Synthetic local UI check only.",
+      "serviceTextConsent": false,
+      "categoryId": "cooling",
+      "serviceId": "ac-repair",
+      "offer": false,
+      "issue": "",
+      "sourcePath": "/contact",
+      "campaignToken": ""
+    },
+    {
+      "fullName": "QA Fixture",
+      "phone": "(202) 555-0147",
+      "email": "",
+      "zipCode": "06810",
+      "message": "Synthetic local UI check only.",
+      "serviceTextConsent": false,
+      "categoryId": "cooling",
+      "serviceId": "ac-repair",
+      "offer": false,
+      "issue": "",
+      "sourcePath": "/contact",
+      "campaignToken": ""
+    },
+    {
+      "fullName": "QA Fixture",
+      "phone": "(202) 555-0147",
+      "email": "",
+      "zipCode": "06810",
+      "message": "Synthetic local UI check only.",
+      "serviceTextConsent": false,
+      "categoryId": "cooling",
+      "serviceId": "ac-repair",
+      "offer": false,
+      "issue": "",
+      "sourcePath": "/contact",
+      "campaignToken": ""
+    },
+    {
+      "fullName": "QA Fixture",
+      "phone": "(202) 555-0147",
+      "email": "",
+      "zipCode": "06810",
+      "message": "Synthetic local UI check only.",
+      "serviceTextConsent": false,
+      "categoryId": "cooling",
+      "serviceId": "ac-repair",
+      "offer": false,
+      "issue": "",
+      "sourcePath": "/contact",
+      "campaignToken": ""
+    }
+  ],
+  "blocked": [
+    {
+      "method": "POST",
+      "path": "/api/book-now"
+    },
+    {
+      "method": "POST",
+      "path": "/api/book-now"
+    },
+    {
+      "method": "POST",
+      "path": "/api/book-now"
+    },
+    {
+      "method": "POST",
+      "path": "/api/book-now"
+    },
+    {
+      "method": "POST",
+      "path": "/api/book-now"
+    }
+  ],
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: the server responded with a status of 400 (Bad Request)"
+  ],
+  "pageErrors": []
+}

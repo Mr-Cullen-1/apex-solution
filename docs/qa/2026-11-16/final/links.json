@@ -1,0 +1,506 @@
+{
+  "results": [
+    {
+      "url": "/",
+      "viewport": "desktop",
+      "visiblePhoneClicks": 5,
+      "totalPhoneLinks": 6,
+      "pass": true
+    },
+    {
+      "url": "/about",
+      "viewport": "desktop",
+      "visiblePhoneClicks": 2,
+      "totalPhoneLinks": 3,
+      "pass": true
+    },
+    {
+      "url": "/brands",
+      "viewport": "desktop",
+      "visiblePhoneClicks": 2,
+      "totalPhoneLinks": 3,
+      "pass": true
+    },
+    {
+      "url": "/contact",
+      "viewport": "desktop",
+      "visiblePhoneClicks": 5,
+      "totalPhoneLinks": 6,
+      "pass": true
+    },
+    {
+      "url": "/service-areas",
+      "viewport": "desktop",
+      "visiblePhoneClicks": 2,
+      "totalPhoneLinks": 3,
+      "pass": true
+    },
+    {
+      "url": "/services",
+      "viewport": "desktop",
+      "visiblePhoneClicks": 3,
+      "totalPhoneLinks": 4,
+      "pass": true
+    },
+    {
+      "url": "/reviews",
+      "viewport": "desktop",
+      "visiblePhoneClicks": 2,
+      "totalPhoneLinks": 3,
+      "pass": true
+    },
+    {
+      "url": "/services/appliance-repair",
+      "viewport": "desktop",
+      "visiblePhoneClicks": 4,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/cooling",
+      "viewport": "desktop",
+      "visiblePhoneClicks": 4,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/heating",
+      "viewport": "desktop",
+      "visiblePhoneClicks": 4,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/water-heater-repair",
+      "viewport": "desktop",
+      "visiblePhoneClicks": 4,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/cooling/ac-repair",
+      "viewport": "desktop",
+      "visiblePhoneClicks": 4,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/cooling/ac-installation",
+      "viewport": "desktop",
+      "visiblePhoneClicks": 4,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/cooling/ac-maintenance",
+      "viewport": "desktop",
+      "visiblePhoneClicks": 4,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/cooling/ac-replacement",
+      "viewport": "desktop",
+      "visiblePhoneClicks": 4,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/heating/furnace-repair",
+      "viewport": "desktop",
+      "visiblePhoneClicks": 4,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/heating/heat-pumps",
+      "viewport": "desktop",
+      "visiblePhoneClicks": 4,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/heating/heating-maintenance",
+      "viewport": "desktop",
+      "visiblePhoneClicks": 4,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/heating/boiler-repair",
+      "viewport": "desktop",
+      "visiblePhoneClicks": 4,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/",
+      "viewport": "tablet",
+      "visiblePhoneClicks": 5,
+      "totalPhoneLinks": 6,
+      "pass": true
+    },
+    {
+      "url": "/about",
+      "viewport": "tablet",
+      "visiblePhoneClicks": 2,
+      "totalPhoneLinks": 3,
+      "pass": true
+    },
+    {
+      "url": "/brands",
+      "viewport": "tablet",
+      "visiblePhoneClicks": 2,
+      "totalPhoneLinks": 3,
+      "pass": true
+    },
+    {
+      "url": "/contact",
+      "viewport": "tablet",
+      "visiblePhoneClicks": 5,
+      "totalPhoneLinks": 6,
+      "pass": true
+    },
+    {
+      "url": "/service-areas",
+      "viewport": "tablet",
+      "visiblePhoneClicks": 2,
+      "totalPhoneLinks": 3,
+      "pass": true
+    },
+    {
+      "url": "/services",
+      "viewport": "tablet",
+      "visiblePhoneClicks": 3,
+      "totalPhoneLinks": 4,
+      "pass": true
+    },
+    {
+      "url": "/reviews",
+      "viewport": "tablet",
+      "visiblePhoneClicks": 2,
+      "totalPhoneLinks": 3,
+      "pass": true
+    },
+    {
+      "url": "/services/appliance-repair",
+      "viewport": "tablet",
+      "visiblePhoneClicks": 4,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/cooling",
+      "viewport": "tablet",
+      "visiblePhoneClicks": 4,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/heating",
+      "viewport": "tablet",
+      "visiblePhoneClicks": 4,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/water-heater-repair",
+      "viewport": "tablet",
+      "visiblePhoneClicks": 4,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/cooling/ac-repair",
+      "viewport": "tablet",
+      "visiblePhoneClicks": 4,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/cooling/ac-installation",
+      "viewport": "tablet",
+      "visiblePhoneClicks": 4,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/cooling/ac-maintenance",
+      "viewport": "tablet",
+      "visiblePhoneClicks": 4,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/cooling/ac-replacement",
+      "viewport": "tablet",
+      "visiblePhoneClicks": 4,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/heating/furnace-repair",
+      "viewport": "tablet",
+      "visiblePhoneClicks": 4,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/heating/heat-pumps",
+      "viewport": "tablet",
+      "visiblePhoneClicks": 4,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/heating/heating-maintenance",
+      "viewport": "tablet",
+      "visiblePhoneClicks": 4,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/heating/boiler-repair",
+      "viewport": "tablet",
+      "visiblePhoneClicks": 4,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/",
+      "viewport": "mobile",
+      "visiblePhoneClicks": 6,
+      "totalPhoneLinks": 6,
+      "pass": true
+    },
+    {
+      "url": "/about",
+      "viewport": "mobile",
+      "visiblePhoneClicks": 3,
+      "totalPhoneLinks": 3,
+      "pass": true
+    },
+    {
+      "url": "/brands",
+      "viewport": "mobile",
+      "visiblePhoneClicks": 3,
+      "totalPhoneLinks": 3,
+      "pass": true
+    },
+    {
+      "url": "/contact",
+      "viewport": "mobile",
+      "visiblePhoneClicks": 6,
+      "totalPhoneLinks": 6,
+      "pass": true
+    },
+    {
+      "url": "/service-areas",
+      "viewport": "mobile",
+      "visiblePhoneClicks": 3,
+      "totalPhoneLinks": 3,
+      "pass": true
+    },
+    {
+      "url": "/services",
+      "viewport": "mobile",
+      "visiblePhoneClicks": 4,
+      "totalPhoneLinks": 4,
+      "pass": true
+    },
+    {
+      "url": "/reviews",
+      "viewport": "mobile",
+      "visiblePhoneClicks": 3,
+      "totalPhoneLinks": 3,
+      "pass": true
+    },
+    {
+      "url": "/services/appliance-repair",
+      "viewport": "mobile",
+      "visiblePhoneClicks": 5,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/cooling",
+      "viewport": "mobile",
+      "visiblePhoneClicks": 5,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/heating",
+      "viewport": "mobile",
+      "visiblePhoneClicks": 5,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/water-heater-repair",
+      "viewport": "mobile",
+      "visiblePhoneClicks": 5,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/cooling/ac-repair",
+      "viewport": "mobile",
+      "visiblePhoneClicks": 5,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/cooling/ac-installation",
+      "viewport": "mobile",
+      "visiblePhoneClicks": 5,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/cooling/ac-maintenance",
+      "viewport": "mobile",
+      "visiblePhoneClicks": 5,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/cooling/ac-replacement",
+      "viewport": "mobile",
+      "visiblePhoneClicks": 5,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/heating/furnace-repair",
+      "viewport": "mobile",
+      "visiblePhoneClicks": 5,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/heating/heat-pumps",
+      "viewport": "mobile",
+      "visiblePhoneClicks": 5,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/heating/heating-maintenance",
+      "viewport": "mobile",
+      "visiblePhoneClicks": 5,
+      "totalPhoneLinks": 5,
+      "pass": true
+    },
+    {
+      "url": "/services/heating/boiler-repair",
+      "viewport": "mobile",
+      "visiblePhoneClicks": 5,
+      "totalPhoneLinks": 5,
+      "pass": true
+    }
+  ],
+  "destinations": [
+    {
+      "href": "/",
+      "status": 200,
+      "finalPath": "/"
+    },
+    {
+      "href": "/service-areas",
+      "status": 200,
+      "finalPath": "/service-areas"
+    },
+    {
+      "href": "/about",
+      "status": 200,
+      "finalPath": "/about"
+    },
+    {
+      "href": "/contact",
+      "status": 200,
+      "finalPath": "/contact"
+    },
+    {
+      "href": "/services",
+      "status": 200,
+      "finalPath": "/services"
+    },
+    {
+      "href": "/services/appliance-repair",
+      "status": 200,
+      "finalPath": "/services/appliance-repair"
+    },
+    {
+      "href": "/services/cooling",
+      "status": 200,
+      "finalPath": "/services/cooling"
+    },
+    {
+      "href": "/services/cooling/ac-repair",
+      "status": 200,
+      "finalPath": "/services/cooling/ac-repair"
+    },
+    {
+      "href": "/services/cooling/ac-installation",
+      "status": 200,
+      "finalPath": "/services/cooling/ac-installation"
+    },
+    {
+      "href": "/services/cooling/ac-maintenance",
+      "status": 200,
+      "finalPath": "/services/cooling/ac-maintenance"
+    },
+    {
+      "href": "/services/cooling/ac-replacement",
+      "status": 200,
+      "finalPath": "/services/cooling/ac-replacement"
+    },
+    {
+      "href": "/services/heating",
+      "status": 200,
+      "finalPath": "/services/heating"
+    },
+    {
+      "href": "/services/heating/furnace-repair",
+      "status": 200,
+      "finalPath": "/services/heating/furnace-repair"
+    },
+    {
+      "href": "/services/heating/heat-pumps",
+      "status": 200,
+      "finalPath": "/services/heating/heat-pumps"
+    },
+    {
+      "href": "/services/heating/heating-maintenance",
+      "status": 200,
+      "finalPath": "/services/heating/heating-maintenance"
+    },
+    {
+      "href": "/services/heating/boiler-repair",
+      "status": 200,
+      "finalPath": "/services/heating/boiler-repair"
+    },
+    {
+      "href": "/services/water-heater-repair",
+      "status": 200,
+      "finalPath": "/services/water-heater-repair"
+    },
+    {
+      "href": "/brands",
+      "status": 200,
+      "finalPath": "/brands"
+    },
+    {
+      "href": "/?book=1",
+      "status": 200,
+      "finalPath": "/"
+    },
+    {
+      "href": "/review",
+      "status": 200,
+      "finalPath": "/review"
+    }
+  ],
+  "note": "Phone clicks were prevented in capture phase; no dialer or call was opened. All non-read requests blocked."
+}

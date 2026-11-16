@@ -1,0 +1,165 @@
+{
+  "results": [
+    {
+      "viewport": "desktop",
+      "name": "service category CTA labels stay on one line",
+      "pass": false,
+      "error": "[{\"route\":\"/services/appliance-repair\",\"labels\":[{\"label\":\"(516) 586-0826\",\"lines\":2},{\"label\":\"Book Now\",\"lines\":2}]},{\"route\":\"/services/cooling\",\"labels\":[{\"label\":\"(516) 586-0826\",\"lines\":2},{\"label\":\"Book Now\",\"lines\":2}]},{\"route\":\"/services/heating\",\"labels\":[{\"label\":\"(516) 586-0826\",\"lines\":2},{\"label\":\"Book Now\",\"lines\":2}]},{\"route\":\"/services/water-heater-repair\",\"labels\":[{\"label\":\"(516) 586-0826\",\"lines\":2},{\"label\":\"Book Now\",\"lines\":2}]},{\"route\":\"/services/heating/heating-maintenance\",\"labels\":[{\"label\":\"(516) 586-0826\",\"lines\":2},{\"label\":\"Book Now\",\"lines\":2}]}]",
+      "screenshot": "docs/qa/2026-11-16/cta-repro/failure-service-category-CTA-labels-stay-on-one-line--desktop.png"
+    },
+    {
+      "viewport": "tablet",
+      "name": "service category CTA labels stay on one line",
+      "details": [
+        {
+          "route": "/services/appliance-repair",
+          "labels": [
+            {
+              "label": "(516) 586-0826",
+              "lines": 1
+            },
+            {
+              "label": "Book Now",
+              "lines": 1
+            }
+          ]
+        },
+        {
+          "route": "/services/cooling",
+          "labels": [
+            {
+              "label": "(516) 586-0826",
+              "lines": 1
+            },
+            {
+              "label": "Book Now",
+              "lines": 1
+            }
+          ]
+        },
+        {
+          "route": "/services/heating",
+          "labels": [
+            {
+              "label": "(516) 586-0826",
+              "lines": 1
+            },
+            {
+              "label": "Book Now",
+              "lines": 1
+            }
+          ]
+        },
+        {
+          "route": "/services/water-heater-repair",
+          "labels": [
+            {
+              "label": "(516) 586-0826",
+              "lines": 1
+            },
+            {
+              "label": "Book Now",
+              "lines": 1
+            }
+          ]
+        },
+        {
+          "route": "/services/heating/heating-maintenance",
+          "labels": [
+            {
+              "label": "(516) 586-0826",
+              "lines": 1
+            },
+            {
+              "label": "Book Now",
+              "lines": 1
+            }
+          ]
+        }
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "mobile",
+      "name": "service category CTA labels stay on one line",
+      "details": [
+        {
+          "route": "/services/appliance-repair",
+          "labels": [
+            {
+              "label": "(516) 586-0826",
+              "lines": 1
+            },
+            {
+              "label": "Book Now",
+              "lines": 1
+            }
+          ]
+        },
+        {
+          "route": "/services/cooling",
+          "labels": [
+            {
+              "label": "(516) 586-0826",
+              "lines": 1
+            },
+            {
+              "label": "Book Now",
+              "lines": 1
+            }
+          ]
+        },
+        {
+          "route": "/services/heating",
+          "labels": [
+            {
+              "label": "(516) 586-0826",
+              "lines": 1
+            },
+            {
+              "label": "Book Now",
+              "lines": 1
+            }
+          ]
+        },
+        {
+          "route": "/services/water-heater-repair",
+          "labels": [
+            {
+              "label": "(516) 586-0826",
+              "lines": 1
+            },
+            {
+              "label": "Book Now",
+              "lines": 1
+            }
+          ]
+        },
+        {
+          "route": "/services/heating/heating-maintenance",
+          "labels": [
+            {
+              "label": "(516) 586-0826",
+              "lines": 1
+            },
+            {
+              "label": "Book Now",
+              "lines": 1
+            }
+          ]
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "payloads": [],
+  "blocked": [],
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "pageErrors": []
+}

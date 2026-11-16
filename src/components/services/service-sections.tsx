@@ -185,8 +185,8 @@ export function FinalServiceCta({ title = "Ready for a clearer next step?", cate
             <h2 className="mt-5 max-w-4xl text-balance text-[clamp(2.25rem,5vw,3.75rem)] font-semibold leading-[1.05] tracking-[-0.03em]">{title}</h2>
             <p className="mt-6 max-w-xl text-lg leading-8 text-white/65">Tell us what you are noticing. Service availability and scheduling are confirmed separately.</p>
           </div>
-          <div className="flex flex-col gap-3 sm:flex-row">
-            {contact.phoneHref && <a href={contact.phoneHref} className="inline-flex min-h-12 items-center justify-center gap-2 rounded-control bg-white px-6 text-sm font-semibold text-navy transition-colors hover:bg-copper hover:text-white"><PhoneIcon className="size-4" />{contact.phone}</a>}
+          <div className="flex shrink-0 flex-col gap-3 whitespace-nowrap sm:flex-row">
+            {contact.phoneHref && <a href={contact.phoneHref} className="inline-flex min-h-12 shrink-0 items-center justify-center gap-2 rounded-control bg-white px-6 text-sm font-semibold text-navy transition-colors hover:bg-copper hover:text-white"><PhoneIcon className="size-4 shrink-0" />{contact.phone}</a>}
             <BookingLink categoryId={categoryId} serviceId={serviceId} variant="outline-invert" />
           </div>
         </div>
