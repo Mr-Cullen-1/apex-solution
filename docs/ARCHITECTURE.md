@@ -12,6 +12,14 @@ The only runtime dependency beyond Next and React is the official `geist` font p
 
 ## Source layout
 
+### Public service workspace (2026-11-16)
+
+`Hero` remains a server component and passes only service identity/description fields to the client `HomeExplorer`. The explorer owns illustration view state. `BookNowContext` owns the home category selection so both the contextual `BookingLink` and the navigation dock open the same service request. Presentation descriptions live in `src/content/service-experience.ts` and icons in `src/components/ui/service-icon.tsx`.
+
+`ServiceFinder` receives a minimal directory projection from the server-rendered services index. Search filters locally using word-prefix matching in `src/lib/service-search.ts`, so "AC repair" cannot match the middle of "furnace" or "diagnostics". It preserves ordinary Next links and category booking actions, with no API endpoint or dependency.
+
+`MobileActionBar` is now the public navigation dock through tablet widths. It derives booking context from the current category/subservice route and uses the existing chat provider for Help. `BookNowContext` exposes `isOpen` so the dock becomes inert and desktop help hides during booking. The marketing wrapper owns dock clearance; `/admin` retains its separate shell. No scheduling, notification, database or account changes accompany this redesign.
+
 ```text
 src/
   app/                 routes, metadata, and global styles

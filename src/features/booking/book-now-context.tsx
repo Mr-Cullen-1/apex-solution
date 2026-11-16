@@ -4,9 +4,15 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { createContext, Suspense, useCallback, useContext, useEffect, useMemo, useState } from "react";
 import { findServiceContext, getCategoryById } from "./model";
 import { BookNowModal } from "./book-now-modal";
+import { primaryServices } from "@/content/services";
 
 type OpenOptions = { categoryId?: string; serviceId?: string; offer?: boolean; issue?: string; campaignToken?: string };
-type BookNowContextValue = { open: (options?: OpenOptions) => void };
+type BookNowContextValue = {
+  open: (options?: OpenOptions) => void;
+  isOpen: boolean;
+  homeCategoryId: string;
+  setHomeCategoryId: (categoryId: string) => void;
+};
 
 const BookNowContext = createContext<BookNowContextValue | null>(null);
 
@@ -21,11 +27,12 @@ export function BookNowProvider({ children }: { children: React.ReactNode }) {
   // so each open mounts a fresh instance with a clean form — no reset-on-open
   // effect required.
   const [state, setState] = useState<{ isOpen: boolean; nonce: number } & OpenOptions>({ isOpen: false, nonce: 0 });
+  const [homeCategoryId, setHomeCategoryId] = useState(primaryServices[0].id);
 
   const open = useCallback((options: OpenOptions = {}) => setState((current) => ({ isOpen: true, nonce: current.nonce + 1, ...options })), []);
   const close = useCallback(() => setState((current) => ({ ...current, isOpen: false })), []);
 
-  const value = useMemo(() => ({ open }), [open]);
+  const value = useMemo(() => ({ open, isOpen: state.isOpen, homeCategoryId, setHomeCategoryId }), [open, state.isOpen, homeCategoryId]);
 
   return (
     <BookNowContext.Provider value={value}>

@@ -11,7 +11,7 @@ export function ServiceDetailPage({ category, service }: { category: ServiceCate
   return (
     <main id="main-content" className="flex-1 bg-page-bg">
       <ServiceStructuredData name={service.name} description={service.description} path={service.href} />
-      <ServiceHero eyebrow={`${category.name} service`} title={service.name} summary={service.summary} mediaId={service.mediaId} serviceId={service.id} />
+      <ServiceHero eyebrow={`${category.name} service`} title={service.name} summary={service.summary} mediaId={service.mediaId} categoryId={category.id} serviceId={service.id} />
       <CompactOffer categoryId={category.id} serviceId={service.id} />
       <section id="service-details" className="bg-page-bg section-y-bottom" aria-labelledby="overview-heading">
         <Container>

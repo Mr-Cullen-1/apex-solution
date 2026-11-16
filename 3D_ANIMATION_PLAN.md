@@ -1,5 +1,9 @@
 # 3D and motion plan
 
+## Implemented refinement — 2026-11-16
+
+The explorer now has distinct appliance/cooling/heating/hot-water icons, selected equipment labels, a dark grid canvas and explicit 2D/3D controls. Phone and compact tablet users open the illustration on demand; task selection and booking stay visible independently. The desktop view remains manual, with reduced-motion and unsupported-3D fallbacks. No package or WebGL renderer was added. See `docs/UX_UI_AUDIT_2026-11-16.md` for the latest verification status; the browser release checks below remain required.
+
 Use a small CSS perspective cutaway home in the homepage hero. The house is decorative; labeled HTML controls select heating, cooling, appliance and water-heater context. An ordinary service link provides the next step. Geometry is an illustration, never a diagnostic representation or a photograph of actual work.
 
 ## Interaction and fallback

@@ -12,7 +12,7 @@ import { serviceAreas } from "@/content/site";
 export function Footer() {
   return (
     <FooterVisibility>
-      <footer className="site-footer pb-[calc(7rem+env(safe-area-inset-bottom))] pt-14 text-white md:pb-10 md:pt-16">
+      <footer className="site-footer pb-10 pt-14 text-white md:pt-16">
         <Container>
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-12 lg:gap-8">
             <BrandColumn />

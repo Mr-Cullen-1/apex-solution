@@ -20,12 +20,14 @@ export default function MarketingLayout({ children }: { children: ReactNode }) {
   return (
     <BookNowProvider>
       <ChatProvider>
-        <SiteHeader />
-        {children}
-        <Footer />
-        <MobileActionBar />
-        <ChatLauncher />
-        <ChatPanel />
+        <div className="marketing-shell">
+          <SiteHeader />
+          {children}
+          <Footer />
+          <MobileActionBar />
+          <ChatLauncher />
+          <ChatPanel />
+        </div>
       </ChatProvider>
     </BookNowProvider>
   );

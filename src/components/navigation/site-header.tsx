@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { primaryNavigation } from "@/content/navigation";
 import { primaryServices } from "@/content/services";
@@ -14,6 +15,7 @@ import { Container } from "@/components/ui/container";
 import { ArrowRightIcon, ChevronDownIcon, CloseIcon, MenuIcon, PhoneIcon } from "@/components/ui/icons";
 
 export function SiteHeader() {
+  const pathname = usePathname();
   const { open: openBookNow } = useBookNow();
   const [megaOpen, setMegaOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -94,12 +96,12 @@ export function SiteHeader() {
   const closeMobile = () => setMobileOpen(false);
 
   return (
-    <header ref={headerRef} className="sticky top-0 z-50 pt-3 transition-[padding] duration-300 sm:pt-4">
+    <header ref={headerRef} className="sticky top-0 z-50 bg-page-bg pb-2 pt-2 transition-[padding] duration-300 sm:pt-3">
       <Container>
         <div className={`flex h-16 items-center justify-between gap-2 rounded-hero px-3 transition-all duration-300 sm:h-18 sm:gap-6 sm:px-4 md:px-6 ${scrolled ? "border border-steel/50 bg-surface shadow-soft" : "border border-steel bg-surface shadow-soft"}`}>
           <Link href="/" className="flex min-h-11 min-w-11 shrink-0 items-center gap-2.5" aria-label={`${company.name} home`}>
             <Image src={brandMark.colored.src} alt={brandMark.colored.alt} width={36} height={36} className="size-9" priority />
-            <span className="hidden text-lg font-semibold tracking-[-0.02em] text-navy sm:inline">{company.name}</span>
+            <span className="text-sm font-semibold tracking-[-0.02em] text-navy max-[359px]:hidden sm:text-lg"><span className="lg:hidden">Apex</span><span className="hidden lg:inline">{company.name}</span></span>
           </Link>
 
           <nav className="hidden xl:block" aria-label="Primary navigation">
@@ -110,7 +112,8 @@ export function SiteHeader() {
                     <button
                       ref={servicesButtonRef}
                       type="button"
-                      className="flex min-h-11 items-center gap-1.5 text-sm font-medium text-navy transition-colors hover:text-copper"
+                      className="site-nav-link flex min-h-11 items-center gap-1.5 text-sm font-medium text-navy transition-colors hover:text-copper"
+                      aria-current={pathname.startsWith("/services") ? "page" : undefined}
                       aria-expanded={megaOpen}
                       aria-controls="services-mega-menu"
                       onClick={() => setMegaOpen((open) => !open)}
@@ -119,7 +122,7 @@ export function SiteHeader() {
                       <ChevronDownIcon className={`size-4 transition-transform duration-300 ${megaOpen ? "rotate-180" : ""}`} />
                     </button>
                   ) : (
-                    <Link className="inline-flex min-h-11 items-center text-sm font-medium text-navy transition-colors hover:text-copper" href={item.href}>{item.label}</Link>
+                    <Link className="site-nav-link inline-flex min-h-11 items-center text-sm font-medium text-navy transition-colors hover:text-copper" aria-current={pathname === item.href ? "page" : undefined} href={item.href}>{item.label}</Link>
                   )}
                 </li>
               ))}

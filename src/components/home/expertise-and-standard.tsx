@@ -9,7 +9,7 @@ import { primaryServices } from "@/content/services";
 
 export function ServicesGrid() {
   return (
-    <section className="section-y bg-page-bg" aria-labelledby="services-grid-heading">
+    <section id="home-services" className="section-y bg-page-bg" aria-labelledby="services-grid-heading">
       <Container>
         <div className="flex flex-col justify-between gap-6 lg:flex-row lg:items-end">
           <SectionHeading id="services-grid-heading" eyebrow="What can we help with?" title="The systems your day depends on." description="Choose a category to see common situations, or call now and describe what you're noticing." />
@@ -20,21 +20,21 @@ export function ServicesGrid() {
           )}
         </div>
 
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
             {primaryServices.map((service) => {
               const asset = media[(service.cardMediaId ?? service.mediaId) as MediaId] ?? media.realApplianceOven;
               return (
                 <div key={service.id}>
-                  <Link href={service.href} className="group flex h-full flex-col overflow-hidden rounded-card border border-steel bg-surface motion-safe:transition-transform motion-safe:duration-300 motion-safe:hover:-translate-y-1">
-                    <div className="relative h-44 shrink-0 overflow-hidden">
-                      <Image src={asset.src} alt={asset.alt} fill sizes="(min-width:1280px) 23vw, (min-width:640px) 46vw, 90vw" className="object-cover motion-safe:transition-transform motion-safe:duration-500 motion-safe:group-hover:scale-105" style={{ objectPosition: asset.focalPoint }} />
+                  <Link href={service.href} className="group flex h-full overflow-hidden rounded-card border border-steel bg-surface motion-safe:transition-transform motion-safe:duration-300 motion-safe:hover:-translate-y-1 sm:flex-col">
+                    <div className="relative w-24 shrink-0 overflow-hidden sm:h-44 sm:w-full">
+                      <Image src={asset.src} alt={asset.alt} fill sizes="(min-width:1280px) 23vw, (min-width:640px) 46vw, 96px" className="object-cover motion-safe:transition-transform motion-safe:duration-500 motion-safe:group-hover:scale-105" style={{ objectPosition: asset.focalPoint }} />
                     </div>
-                    <div className="flex flex-1 flex-col justify-between gap-6 p-6">
+                    <div className="flex min-w-0 flex-1 flex-col justify-between gap-3 p-4 sm:gap-6 sm:p-6">
                       <div>
-                        <h3 className="text-2xl font-semibold tracking-[-0.025em] text-navy">{service.name}</h3>
-                        <p className="mt-2 leading-6 text-slate">{service.shortDescription}</p>
+                        <h3 className="text-lg font-semibold tracking-[-0.025em] text-navy sm:text-2xl">{service.name}</h3>
+                        <p className="mt-2 text-sm leading-6 text-slate">{service.shortDescription}</p>
                       </div>
-                      <span className="inline-flex items-center gap-2 text-sm font-semibold text-navy">Explore {service.name.toLowerCase()} <ArrowUpRightIcon className="size-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" /></span>
+                      <span className="inline-flex items-center gap-2 text-sm font-semibold text-navy">View service <ArrowUpRightIcon className="size-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" /></span>
                     </div>
                   </Link>
                 </div>

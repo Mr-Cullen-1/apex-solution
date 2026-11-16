@@ -5,7 +5,7 @@ import { useBookNow } from "@/features/booking/book-now-context";
 import { useChat } from "@/features/chat/chat-context";
 
 const chipClass =
-  "inline-flex min-h-9 items-center rounded-control border border-steel bg-surface px-3.5 text-xs font-semibold text-navy transition-colors hover:border-navy hover:bg-page-bg";
+  "inline-flex min-h-11 items-center rounded-control border border-steel bg-surface px-3.5 text-xs font-semibold text-navy transition-colors hover:border-navy hover:bg-page-bg";
 
 /** Four chips send a starter message into the real Gemini-backed
  * conversation (see chat-context.tsx / features/chat/gemini.ts).

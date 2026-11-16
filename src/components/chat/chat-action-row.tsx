@@ -9,9 +9,9 @@ import type { ChatAction } from "@/features/chat/actions";
 // button convention); "call" is the lighter secondary/outline style,
 // visually the same weight as the Phase 1 quick-action chips.
 const bookButtonClass =
-  "inline-flex min-h-9 items-center rounded-control bg-navy px-4 text-xs font-semibold text-white transition-colors hover:bg-copper";
+  "inline-flex min-h-11 items-center rounded-control bg-navy px-4 text-xs font-semibold text-white transition-colors hover:bg-copper";
 const callButtonClass =
-  "inline-flex min-h-9 items-center rounded-control border border-steel bg-surface px-4 text-xs font-semibold text-navy transition-colors hover:border-navy hover:bg-page-bg";
+  "inline-flex min-h-11 items-center rounded-control border border-steel bg-surface px-4 text-xs font-semibold text-navy transition-colors hover:border-navy hover:bg-page-bg";
 
 /** Renders the small, message-attached conversion action row. Reuses the
  * existing global booking flow and canonical contact config exactly like

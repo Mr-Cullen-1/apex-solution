@@ -141,13 +141,13 @@ export function BookNowModal({ isOpen, categoryId, serviceId, offer, issue, camp
         role="dialog"
         aria-modal="true"
         aria-labelledby={headingId}
-        className="flex max-h-[92dvh] w-full flex-col overflow-hidden rounded-t-hero border border-steel bg-surface shadow-hero motion-safe:animate-[fade-slide_240ms_ease-out] sm:w-[600px] sm:rounded-hero"
+        className="booking-dialog flex max-h-[96dvh] w-full flex-col overflow-hidden rounded-t-hero border border-steel bg-surface shadow-hero motion-safe:animate-[fade-slide_240ms_ease-out] sm:max-h-[92dvh] sm:w-[600px] sm:rounded-hero"
       >
-        <div className="flex shrink-0 items-start justify-between gap-4 border-b border-steel bg-brand-soft px-5 py-4 sm:px-7 sm:py-5">
+        <div className="booking-dialog-header flex shrink-0 items-start justify-between gap-4 border-b border-steel bg-brand-soft px-5 py-4 sm:px-7 sm:py-5">
           <div>
             <p className="eyebrow">{result ? (result.ok ? "Request sent" : "Request not sent") : "Book Now"}</p>
             <h2 ref={resultHeadingRef} tabIndex={-1} id={headingId} className="mt-1.5 text-xl font-semibold tracking-[-0.02em] text-navy sm:mt-2 sm:text-2xl">
-              {result ? (result.ok ? "Request received." : "We couldn't send this.") : "Tell us what's going on."}
+              {result ? (result.ok ? "Request received." : "We couldn't send this.") : "Let’s get your request started."}
             </h2>
             {!result && contextLabel && <p className="mt-1.5 text-xs font-semibold text-brand-primary sm:text-sm">Regarding: {contextLabel}</p>}
           </div>
@@ -156,7 +156,7 @@ export function BookNowModal({ isOpen, categoryId, serviceId, offer, issue, camp
           </button>
         </div>
 
-        <div className="min-h-0 overflow-y-auto overscroll-contain px-5 py-5 pb-[max(1.25rem,env(safe-area-inset-bottom))] sm:px-7">
+        <div className="booking-fields min-h-0 overflow-y-auto overscroll-contain px-5 py-5 pb-[max(1.25rem,env(safe-area-inset-bottom))] sm:px-7">
           {result ? (
             <div>
               <p className="rounded-panel border border-steel bg-page-bg p-4 text-sm leading-6 text-slate sm:p-5">
@@ -183,8 +183,8 @@ export function BookNowModal({ isOpen, categoryId, serviceId, offer, issue, camp
                   {primaryServices.map((category) => <optgroup key={category.id} label={category.name}><option value={category.id}>{category.name} — general request</option>{category.children.map((service) => <option key={service.id} value={service.id}>{service.name}</option>)}</optgroup>)}
                 </select>
               </div>
-              <div className="grid grid-cols-1 gap-x-4 gap-y-4 sm:grid-cols-2">
-                <div className="sm:col-span-2">
+              <div className="grid grid-cols-2 gap-x-4 gap-y-4">
+                <div className="col-span-2">
                   <Field label="Full Name" htmlFor="bn-fullName" error={errors.fullName}>
                     <input id="bn-fullName" aria-invalid={Boolean(errors.fullName)} aria-describedby={errors.fullName ? "bn-fullName-error" : undefined} required autoComplete="name" className={fieldClass} value={draft.fullName} onChange={(event) => update("fullName", event.target.value)} />
                   </Field>
@@ -195,12 +195,12 @@ export function BookNowModal({ isOpen, categoryId, serviceId, offer, issue, camp
                 <Field label="ZIP code" htmlFor="bn-zip" error={errors.zipCode}>
                   <input id="bn-zip" aria-invalid={Boolean(errors.zipCode)} aria-describedby={errors.zipCode ? "bn-zip-error" : undefined} required inputMode="numeric" autoComplete="postal-code" maxLength={5} className={fieldClass} value={draft.zipCode} onChange={(event) => update("zipCode", event.target.value.replace(/\D/g, ""))} />
                 </Field>
-                <div className="sm:col-span-2">
+                <div className="col-span-2">
                   <Field label="Email address" htmlFor="bn-email" optional error={errors.email}>
                     <input id="bn-email" aria-invalid={Boolean(errors.email)} aria-describedby={errors.email ? "bn-email-error" : undefined} type="email" autoComplete="email" className={fieldClass} value={draft.email} onChange={(event) => update("email", event.target.value)} />
                   </Field>
                 </div>
-                <div className="sm:col-span-2">
+                <div className="col-span-2">
                   <Field label="Tell us what's going on" htmlFor="bn-message" error={errors.message}>
                     <textarea id="bn-message" aria-invalid={Boolean(errors.message)} aria-describedby={errors.message ? "bn-message-error" : undefined} required rows={2} maxLength={1200} className={`${fieldClass} min-h-28 resize-y py-3`} value={draft.message} onChange={(event) => update("message", event.target.value)} placeholder="What's happening, and with what system or appliance?" />
                   </Field>
@@ -216,10 +216,12 @@ export function BookNowModal({ isOpen, categoryId, serviceId, offer, issue, camp
                 I agree that my phone number may be used for service-request text communication. This is not marketing consent.
               </label>
 
-              <button type="submit" disabled={submitting} className="mt-3 inline-flex min-h-12 w-full items-center justify-center rounded-control bg-navy px-6 text-sm font-semibold text-white transition-colors hover:bg-copper disabled:cursor-wait disabled:opacity-60 sm:mt-4 sm:min-h-12">
+              <div className="booking-submit-bar">
+              <button type="submit" disabled={submitting} className="inline-flex min-h-12 w-full items-center justify-center rounded-control bg-brand-primary px-6 text-sm font-semibold text-white transition-colors hover:bg-navy disabled:cursor-wait disabled:opacity-60">
                 {submitting ? "Sending…" : "Send Request"}
               </button>
               <p className="mt-2 text-xs leading-5 text-slate">Sending this does not confirm an appointment. Availability is confirmed when Apex follows up.</p>
+              </div>
             </form>
           )}
         </div>

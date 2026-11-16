@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BookingLink } from "@/components/ui/booking-link";
-import { ButtonLink } from "@/components/ui/button-link";
 import { Container } from "@/components/ui/container";
 import { ArrowRightIcon, PhoneIcon } from "@/components/ui/icons";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -20,22 +19,22 @@ function getMedia(id: string) {
 export function ServiceHero({ eyebrow, title, summary, mediaId, anchorLabel = "Explore this service", categoryId, serviceId }: { eyebrow: string; title: string; summary: string; mediaId: string; anchorLabel?: string; categoryId?: string; serviceId?: string }) {
   const asset = getMedia(mediaId);
   return (
-    <section className="bg-page-bg pb-16 pt-6 sm:pb-20 sm:pt-8">
+    <section className="bg-page-bg pb-8 pt-4 sm:pb-12 sm:pt-6">
       <Container>
-        <div className="grid gap-10 overflow-hidden rounded-hero border border-steel bg-surface shadow-hero lg:grid-cols-[1.02fr_0.98fr] lg:items-center lg:gap-16">
-          <div className="p-7 sm:p-10 lg:p-14">
+        <div className="grid overflow-hidden rounded-hero border border-steel bg-surface md:grid-cols-[1.2fr_0.8fr] md:items-center">
+          <div className="p-5 sm:p-8 lg:p-10">
             <nav aria-label="Breadcrumb" className="mb-6 flex flex-wrap gap-2 text-sm text-slate"><Link href="/" className="underline">Home</Link><span aria-hidden="true">/</span><Link href="/services" className="underline">Services</Link>{serviceId && categoryId && <><span aria-hidden="true">/</span><Link href={`/services/${categoryId}`} className="capitalize underline">{categoryId.replaceAll("-", " ")}</Link></>}</nav><p className="eyebrow">{eyebrow}</p>
-            <h1 className="mt-5 max-w-xl text-balance text-[clamp(2.5rem,5.5vw,4.25rem)] font-semibold leading-[1.03] tracking-[-0.03em] text-navy">{title}</h1>
-            <p className="mt-6 max-w-xl text-lg leading-8 text-slate">{summary}</p>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <h1 className="mt-3 max-w-xl text-balance text-[clamp(2rem,4.5vw,3.75rem)] font-semibold leading-[1.06] tracking-[-0.03em] text-navy">{title}</h1>
+            <p className="mt-4 max-w-xl text-base leading-7 text-slate">{summary}</p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <BookingLink categoryId={categoryId} serviceId={serviceId} variant="call">Book this service</BookingLink>
               {contact.phoneHref && (
-                <a href={contact.phoneHref} className="inline-flex min-h-12 items-center gap-2 rounded-control bg-copper px-6 text-sm font-semibold text-white transition-transform duration-300 hover:-translate-y-0.5"><PhoneIcon className="size-4" />Call {contact.phone}</a>
+                <a href={contact.phoneHref} className="inline-flex min-h-12 items-center gap-2 rounded-control border border-steel px-5 text-sm font-semibold text-navy transition-colors hover:bg-surface-soft"><PhoneIcon className="size-4" />Call {contact.phone}</a>
               )}
-              <BookingLink categoryId={categoryId} serviceId={serviceId} variant="secondary" />
-              <ButtonLink href="#service-details" variant="text" showArrow={false}>{anchorLabel}</ButtonLink>
             </div>
+            <nav aria-label="On this page" className="service-section-links"><a href="#service-details">{anchorLabel} ↓</a><a href="#process-heading">How it works ↓</a><a href="#service-faq-heading">Questions ↓</a></nav>
           </div>
-          <div className="relative min-h-[16rem] overflow-hidden sm:min-h-[22rem] lg:h-full lg:min-h-[30rem]">
+          <div className="relative h-44 overflow-hidden sm:h-56 md:h-full md:min-h-80">
             <Image src={asset.src} alt={asset.alt} fill preload sizes="(min-width: 1024px) 48vw, 100vw" className="object-cover" style={{ objectPosition: asset.focalPoint }} />
             <span className="absolute bottom-4 left-4 rounded-control bg-ink/85 px-4 py-2.5 text-[0.65rem] font-bold uppercase tracking-[0.14em] text-white">Local home service</span>
           </div>
@@ -116,7 +115,7 @@ export function ServiceProcess() {
     <section className="bg-page-bg section-y" aria-labelledby="process-heading">
       <Container>
         <SectionHeading id="process-heading" eyebrow="The service visit" title="Clarity at every step." description="The exact work depends on the request and findings. This is the shared service framework." />
-        <ol className="mt-14 grid gap-4 md:grid-cols-5">
+        <ol className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
           {serviceVisitSteps.map((step) => <li key={step.number} className="rounded-panel border border-steel bg-surface p-6 shadow-soft"><span className="text-xs font-bold tracking-[0.16em] text-copper">{step.number}</span><h3 className="mt-6 text-lg font-semibold tracking-[-0.02em] text-navy">{step.title}</h3><p className="mt-3 text-sm leading-6 text-slate">{step.description}</p></li>)}
         </ol>
       </Container>

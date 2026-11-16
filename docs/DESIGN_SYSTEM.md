@@ -1,5 +1,19 @@
 # Design system
 
+## Service workspace update (2026-11-16)
+
+The current public UI uses an application-style service workspace. This section supersedes the older header, mobile action bar and booking wizard descriptions below.
+
+- Homepage: compact editorial introduction, four labeled service choices, immediate contextual booking, service-detail links and a separate optional home illustration. Service choice always works without the illustration.
+- Mobile and tablet: Home / Services / Help / Call / Book dock below 1280px, with current-page state and safe-area padding owned by the marketing shell. Dock booking preserves the homepage selection or current service route. Header call/booking remain visible. The full wordmark starts at 1024px to prevent intermediate-width crowding. Desktop help uses a 44px icon button in the right gutter, with an accessible name and tooltip, to avoid covering content actions; smaller screens use Help in the dock.
+- CSS illustration: token-based navy technical canvas, differentiated equipment, 2D/3D switches, manual rotation, selected equipment highlight. Below 900px it opens only on request. No WebGL dependency, autoplay or scroll interception.
+- Services: searchable directory and direct subservice links; compact photo-led category/detail heroes with section shortcuts. Five process cards become two columns on tablets, five only on large desktops.
+- Booking: the existing single-form bottom sheet/modal uses a dynamic-viewport bound, compact phone/ZIP row and sticky submit section. At viewport heights of 480px or less, the header compacts and submit returns to normal flow to preserve room for form fields. Request/appointment semantics, consent and adapters are unchanged.
+- Chat: the empty-state content scrolls independently of the composer, starts at the top on short screens, and uses 44px quick-action/close targets. Decorative content yields space to actionable controls.
+- Motion: short hover and state transitions; all respect reduced motion. Content is available immediately. At short phone heights the service tiles simplify; content remains naturally scrollable, never forced into a clipped fixed-height page.
+
+New scene and dock tokens live in `globals.css`; existing brand colors are retained. The component review and code checks do not substitute for visual QA. See `UX_UI_AUDIT_2026-11-16.md` for verification evidence and remaining device checks.
+
 ## Direction
 
 Premium, restrained home-services brand built on a Dribbble reference's layout language (large rounded canvases, asymmetric split composition, soft floating elements, generous whitespace) and the official Apex logo's own color identity (navy/blue). Superseded Sep 2026: the original editorial/square-edged/navy-copper direction (see git history for the prior version of this file) and a brief green-dominant iteration that used the reference's own palette instead of the client's real brand color — corrected once the official logo files were supplied.

@@ -93,7 +93,7 @@ export function ChatPanel() {
         role="dialog"
         aria-modal="true"
         aria-labelledby={headingId}
-        className="flex h-[min(85vh,680px)] w-full flex-col overflow-hidden rounded-t-hero border border-steel bg-surface shadow-hero motion-safe:animate-[fade-slide_240ms_ease-out] md:h-[620px] md:w-[400px] md:rounded-panel"
+        className="flex h-[min(90dvh,680px)] max-h-[calc(100dvh-2rem)] w-full flex-col overflow-hidden rounded-t-hero border border-steel bg-surface shadow-hero motion-safe:animate-[fade-slide_240ms_ease-out] md:h-[620px] md:w-[400px] md:rounded-panel"
       >
         <div className="flex items-center justify-between gap-3 border-b border-steel bg-brand-soft px-4 py-3.5 sm:px-5">
           <div>
@@ -115,14 +115,14 @@ export function ChatPanel() {
             type="button"
             onClick={close}
             aria-label="Close Apex Assistant"
-            className="grid size-9 shrink-0 place-items-center rounded-control text-navy transition-colors hover:bg-page-bg"
+            className="grid size-11 shrink-0 place-items-center rounded-control text-navy transition-colors hover:bg-page-bg"
           >
             <CloseIcon className="size-5" />
           </button>
         </div>
 
         {messages.length === 0 ? (
-          <div className="flex flex-1 flex-col items-center justify-center gap-5 overflow-y-auto px-6 py-8 text-center">
+          <div className="chat-empty-state flex min-h-0 flex-1 flex-col items-center justify-center gap-5 overflow-y-auto px-6 py-8 text-center [&>*]:shrink-0">
             <div className="grid size-11 place-items-center rounded-control bg-brand-soft text-brand-primary">
               <MessageIcon className="size-5" />
             </div>
@@ -176,7 +176,7 @@ export function ChatPanel() {
             onKeyDown={handleComposerKeyDown}
             disabled={isSending}
             aria-label="Message"
-            className="min-h-10 max-h-32 flex-1 resize-none rounded-control border border-steel bg-surface px-3.5 py-2 text-sm text-navy outline-none transition-colors placeholder:text-slate/65 focus:border-brand-primary disabled:opacity-60"
+            className="min-h-11 max-h-32 min-w-0 flex-1 resize-none rounded-control border border-steel bg-surface px-3.5 py-2 text-base text-navy transition-colors placeholder:text-slate/65 focus:border-brand-primary disabled:opacity-60 sm:text-sm"
           />
           <button
             type="button"
