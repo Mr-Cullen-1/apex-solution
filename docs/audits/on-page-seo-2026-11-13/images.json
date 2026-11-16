@@ -1,0 +1,561 @@
+[
+  {
+    "source": "/brand/apex-mark-colored.png",
+    "httpStatus": 200,
+    "contentType": "image/webp",
+    "bytes": 2828,
+    "file": "assets/28-ad8939466723.webp",
+    "pages": [
+      "https://apexhomesupport.com/",
+      "https://apexhomesupport.com/about",
+      "https://apexhomesupport.com/brands",
+      "https://apexhomesupport.com/contact",
+      "https://apexhomesupport.com/reviews",
+      "https://apexhomesupport.com/service-areas",
+      "https://apexhomesupport.com/services",
+      "https://apexhomesupport.com/services/appliance-repair",
+      "https://apexhomesupport.com/services/cooling",
+      "https://apexhomesupport.com/services/cooling/ac-installation",
+      "https://apexhomesupport.com/services/cooling/ac-maintenance",
+      "https://apexhomesupport.com/services/cooling/ac-repair",
+      "https://apexhomesupport.com/services/cooling/ac-replacement",
+      "https://apexhomesupport.com/services/heating",
+      "https://apexhomesupport.com/services/heating/boiler-repair",
+      "https://apexhomesupport.com/services/heating/furnace-repair",
+      "https://apexhomesupport.com/services/heating/heat-pumps",
+      "https://apexhomesupport.com/services/heating/heating-maintenance",
+      "https://apexhomesupport.com/services/water-heater-repair"
+    ],
+    "alt": [
+      "Apex Home Services mark"
+    ],
+    "htmlWidth": "36",
+    "htmlHeight": "36",
+    "fill": false,
+    "actualWidth": 96,
+    "actualHeight": 96,
+    "actualFormat": "webp",
+    "sha256": "0002c7e97bd8a0ba7627df882cda82d54ec4b715dca8530ad5f965faf2b2818b"
+  },
+  {
+    "source": "/images/real/appliance-refrigerator-card.jpg",
+    "httpStatus": 200,
+    "contentType": "image/webp",
+    "bytes": 73996,
+    "file": "assets/44-2f865c8ac74f.webp",
+    "pages": [
+      "https://apexhomesupport.com/"
+    ],
+    "alt": [
+      "Apex technician working inside an open refrigerator freezer compartment"
+    ],
+    "htmlWidth": null,
+    "htmlHeight": null,
+    "fill": true,
+    "actualWidth": 1121,
+    "actualHeight": 1403,
+    "actualFormat": "webp",
+    "sha256": "e6cc6915d590302da2a5ef2d0b8670edee39357705fb98b6154ebcbf131f5075"
+  },
+  {
+    "source": "/images/real/ac-cleaning-card.jpg",
+    "httpStatus": 200,
+    "contentType": "image/webp",
+    "bytes": 122142,
+    "file": "assets/33-de53cba084f9.webp",
+    "pages": [
+      "https://apexhomesupport.com/",
+      "https://apexhomesupport.com/services/cooling",
+      "https://apexhomesupport.com/services/cooling/ac-installation",
+      "https://apexhomesupport.com/services/cooling/ac-maintenance",
+      "https://apexhomesupport.com/services/cooling/ac-repair",
+      "https://apexhomesupport.com/services/cooling/ac-replacement"
+    ],
+    "alt": [
+      "Technician on a ladder using a multimeter to service an outdoor AC condenser unit"
+    ],
+    "htmlWidth": null,
+    "htmlHeight": null,
+    "fill": true,
+    "actualWidth": 1200,
+    "actualHeight": 1800,
+    "actualFormat": "webp",
+    "sha256": "d14263a811837713581f81d2015584221dba88c8abd0a349e4b3b4108ae44c35"
+  },
+  {
+    "source": "/images/real/heating-2-card.jpg",
+    "httpStatus": 200,
+    "contentType": "image/webp",
+    "bytes": 324252,
+    "file": "assets/31-b93ceb3cc9a9.webp",
+    "pages": [
+      "https://apexhomesupport.com/",
+      "https://apexhomesupport.com/services",
+      "https://apexhomesupport.com/services/heating",
+      "https://apexhomesupport.com/services/heating/furnace-repair",
+      "https://apexhomesupport.com/services/heating/heating-maintenance"
+    ],
+    "alt": [
+      "Apex technician connecting refrigerant gauges to an outdoor heat pump unit"
+    ],
+    "htmlWidth": null,
+    "htmlHeight": null,
+    "fill": true,
+    "actualWidth": 1086,
+    "actualHeight": 1448,
+    "actualFormat": "webp",
+    "sha256": "ebff22698f76bcc1d1165373230ce1cf7081b6127a1236ebe55ef1b36ff1b35d"
+  },
+  {
+    "source": "/images/real/water-heating.jpg",
+    "httpStatus": 200,
+    "contentType": "image/webp",
+    "bytes": 85774,
+    "file": "assets/30-3efba7b266ac.webp",
+    "pages": [
+      "https://apexhomesupport.com/",
+      "https://apexhomesupport.com/services/water-heater-repair"
+    ],
+    "alt": [
+      "Technician inspecting a residential gas water heater"
+    ],
+    "htmlWidth": null,
+    "htmlHeight": null,
+    "fill": true,
+    "actualWidth": 1086,
+    "actualHeight": 1448,
+    "actualFormat": "webp",
+    "sha256": "ab4641c7e895be22619f9c9b41c377d22cc2a8c902d9b838a1c971d6ace878d7"
+  },
+  {
+    "source": "/images/real/appliance-oven-card.jpg",
+    "httpStatus": 200,
+    "contentType": "image/webp",
+    "bytes": 184778,
+    "file": "assets/36-862ac75667ff.webp",
+    "pages": [
+      "https://apexhomesupport.com/",
+      "https://apexhomesupport.com/services/appliance-repair"
+    ],
+    "alt": [
+      "Technician using a diagnostic tool to inspect an open range oven"
+    ],
+    "htmlWidth": null,
+    "htmlHeight": null,
+    "fill": true,
+    "actualWidth": 1200,
+    "actualHeight": 1600,
+    "actualFormat": "webp",
+    "sha256": "0198accdeaef22fc3a83a28fe05c39071b67ef023c0e96cf4b8bcc6ad6346ebe"
+  },
+  {
+    "source": "https://tadwrcbhisqswixwuqze.supabase.co/storage/v1/object/sign/review-media/reviews/17aff1e9-4516-4274-95a8-a3f7e8d1eb07.jpg",
+    "httpStatus": 200,
+    "contentType": "image/webp",
+    "bytes": 592312,
+    "file": "assets/125-22ee6be36198.webp",
+    "pages": [
+      "https://apexhomesupport.com/",
+      "https://apexhomesupport.com/reviews"
+    ],
+    "alt": [
+      "Customer review photo"
+    ],
+    "htmlWidth": null,
+    "htmlHeight": null,
+    "fill": true,
+    "actualWidth": 2560,
+    "actualHeight": 1920,
+    "actualFormat": "webp",
+    "sha256": "beffa029dfda359312c48d15e3e84ce3b316fb9bcb482ab54eb715f5ef173004"
+  },
+  {
+    "source": "https://tadwrcbhisqswixwuqze.supabase.co/storage/v1/object/sign/review-media/reviews/8a881e6c-1441-4b84-a2dc-6ec1616752c9.jpg",
+    "httpStatus": 200,
+    "contentType": "image/webp",
+    "bytes": 592312,
+    "file": "assets/125-01c7933c42e9.webp",
+    "pages": [
+      "https://apexhomesupport.com/",
+      "https://apexhomesupport.com/reviews"
+    ],
+    "alt": [
+      "Customer review photo"
+    ],
+    "htmlWidth": null,
+    "htmlHeight": null,
+    "fill": true,
+    "actualWidth": 2560,
+    "actualHeight": 1920,
+    "actualFormat": "webp",
+    "sha256": "beffa029dfda359312c48d15e3e84ce3b316fb9bcb482ab54eb715f5ef173004"
+  },
+  {
+    "source": "/images/real/appliance-oven-card-wide.jpg",
+    "httpStatus": 200,
+    "contentType": "image/webp",
+    "bytes": 87616,
+    "file": "assets/41-1cc424358824.webp",
+    "pages": [
+      "https://apexhomesupport.com/"
+    ],
+    "alt": [
+      "Technician using a diagnostic tool to inspect an open range oven"
+    ],
+    "htmlWidth": null,
+    "htmlHeight": null,
+    "fill": true,
+    "actualWidth": 1200,
+    "actualHeight": 545,
+    "actualFormat": "webp",
+    "sha256": "7b85f56322a3eddd32ce1a3e0ff9d6b8fa9b4694ca0b89fa42bd53337e7c32f0"
+  },
+  {
+    "source": "/images/real/heating-2-card-wide.jpg",
+    "httpStatus": 200,
+    "contentType": "image/webp",
+    "bytes": 67218,
+    "file": "assets/36-dba9db1aeaeb.webp",
+    "pages": [
+      "https://apexhomesupport.com/"
+    ],
+    "alt": [
+      "Apex technician connecting refrigerant gauges to an outdoor heat pump unit, head and shoulders fully visible"
+    ],
+    "htmlWidth": null,
+    "htmlHeight": null,
+    "fill": true,
+    "actualWidth": 1086,
+    "actualHeight": 494,
+    "actualFormat": "webp",
+    "sha256": "16adb9d485e244b9fad2edc2e6393670e3f45db6a911fade80ce70831549bfb9"
+  },
+  {
+    "source": "/images/real/water-heating-wide.jpg",
+    "httpStatus": 200,
+    "contentType": "image/webp",
+    "bytes": 28306,
+    "file": "assets/35-417619a50750.webp",
+    "pages": [
+      "https://apexhomesupport.com/"
+    ],
+    "alt": [
+      "Technician inspecting the label on a residential gas water heater"
+    ],
+    "htmlWidth": null,
+    "htmlHeight": null,
+    "fill": true,
+    "actualWidth": 1086,
+    "actualHeight": 494,
+    "actualFormat": "webp",
+    "sha256": "9a4625cff9b14bee9ef16d6b9e18ed2456b591bd048328c7103dacbe3c5cc611"
+  },
+  {
+    "source": "/images/real/before-hvac-maintenance.jpg",
+    "httpStatus": 200,
+    "contentType": "image/webp",
+    "bytes": 127536,
+    "file": "assets/40-46251bc407bf.webp",
+    "pages": [
+      "https://apexhomesupport.com/"
+    ],
+    "alt": [
+      "A dusty, dirt-caked outdoor AC condenser coil before cleaning"
+    ],
+    "htmlWidth": null,
+    "htmlHeight": null,
+    "fill": true,
+    "actualWidth": 960,
+    "actualHeight": 1280,
+    "actualFormat": "webp",
+    "sha256": "97d8ddd3817751f655dad4ea82ee04f2dc9514f0e6495f99ecf6ca47f2bcded6"
+  },
+  {
+    "source": "/images/real/after-hvac-maintenance.jpg",
+    "httpStatus": 200,
+    "contentType": "image/webp",
+    "bytes": 593934,
+    "file": "assets/39-dc2090d04ec1.webp",
+    "pages": [
+      "https://apexhomesupport.com/"
+    ],
+    "alt": [
+      "The outdoor AC condenser coil visibly cleaner after maintenance"
+    ],
+    "htmlWidth": null,
+    "htmlHeight": null,
+    "fill": true,
+    "actualWidth": 1920,
+    "actualHeight": 2560,
+    "actualFormat": "webp",
+    "sha256": "0d5e99eed3e1f4bb4993511bae1d8fbc5831d06124013dceb1afb93bb4b154a0"
+  },
+  {
+    "source": "/images/real/before-appliances.jpg",
+    "httpStatus": 200,
+    "contentType": "image/webp",
+    "bytes": 77988,
+    "file": "assets/34-a4e19f975286.webp",
+    "pages": [
+      "https://apexhomesupport.com/"
+    ],
+    "alt": [
+      "A dryer lint trap housing heavily clogged with compacted lint before cleaning"
+    ],
+    "htmlWidth": null,
+    "htmlHeight": null,
+    "fill": true,
+    "actualWidth": 960,
+    "actualHeight": 1280,
+    "actualFormat": "webp",
+    "sha256": "ba21ed91fdea414886715a75809299e1da89ff6688869e2636ab33b82447ca86"
+  },
+  {
+    "source": "/images/real/after-appliances.jpg",
+    "httpStatus": 200,
+    "contentType": "image/webp",
+    "bytes": 76586,
+    "file": "assets/33-df055e9c7509.webp",
+    "pages": [
+      "https://apexhomesupport.com/"
+    ],
+    "alt": [
+      "The same dryer lint trap housing fully cleaned after service"
+    ],
+    "htmlWidth": null,
+    "htmlHeight": null,
+    "fill": true,
+    "actualWidth": 960,
+    "actualHeight": 1280,
+    "actualFormat": "webp",
+    "sha256": "46e03c4bc50f48fab78c84467ad07e1d8e4b827e0bcc3a354b8a00be26f79de6"
+  },
+  {
+    "source": "/images/real/ice-maker-replacement-before.jpg",
+    "httpStatus": 200,
+    "contentType": "image/webp",
+    "bytes": 57658,
+    "file": "assets/45-407368f8b4a1.webp",
+    "pages": [
+      "https://apexhomesupport.com/"
+    ],
+    "alt": [
+      "An ice maker assembly removed from a refrigerator freezer door, held in hand"
+    ],
+    "htmlWidth": null,
+    "htmlHeight": null,
+    "fill": true,
+    "actualWidth": 960,
+    "actualHeight": 1280,
+    "actualFormat": "webp",
+    "sha256": "78fcff19a61a9017c492d9490a97ac089ec2cf91fee04f17ecd9b22c4fedc821"
+  },
+  {
+    "source": "/images/real/ice-maker-replacement-after.jpg",
+    "httpStatus": 200,
+    "contentType": "image/webp",
+    "bytes": 52512,
+    "file": "assets/44-f04d7f1bc75e.webp",
+    "pages": [
+      "https://apexhomesupport.com/"
+    ],
+    "alt": [
+      "The new ice maker assembly installed in the refrigerator freezer door"
+    ],
+    "htmlWidth": null,
+    "htmlHeight": null,
+    "fill": true,
+    "actualWidth": 960,
+    "actualHeight": 1280,
+    "actualFormat": "webp",
+    "sha256": "e1a858d4adef490caf1d6bdec9776b9de737081508b0fd23d8a59450d69e8333"
+  },
+  {
+    "source": "/images/real/refrigerator-control-board-before.jpg",
+    "httpStatus": 200,
+    "contentType": "image/webp",
+    "bytes": 95770,
+    "file": "assets/50-e4d11a2ba595.webp",
+    "pages": [
+      "https://apexhomesupport.com/"
+    ],
+    "alt": [
+      "A replacement refrigerator control board held in hand before installation"
+    ],
+    "htmlWidth": null,
+    "htmlHeight": null,
+    "fill": true,
+    "actualWidth": 960,
+    "actualHeight": 1280,
+    "actualFormat": "webp",
+    "sha256": "df38960ebf9aca55c954c0e04dfb1a2aa3004c1a1f7f10b94f88c25f3f9ab9c2"
+  },
+  {
+    "source": "/images/real/refrigerator-control-board-after.jpg",
+    "httpStatus": 200,
+    "contentType": "image/webp",
+    "bytes": 93906,
+    "file": "assets/49-773f0c785fce.webp",
+    "pages": [
+      "https://apexhomesupport.com/"
+    ],
+    "alt": [
+      "The new refrigerator control board wired and installed in place"
+    ],
+    "htmlWidth": null,
+    "htmlHeight": null,
+    "fill": true,
+    "actualWidth": 960,
+    "actualHeight": 1280,
+    "actualFormat": "webp",
+    "sha256": "4bc466a4e5a857b139bdc6cf90390ac1badc66852afb445bfa213da97fe857e8"
+  },
+  {
+    "source": "/brand/apex-mark-white.png",
+    "httpStatus": 200,
+    "contentType": "image/webp",
+    "bytes": 1894,
+    "file": "assets/26-cf8e2db66e9f.webp",
+    "pages": [
+      "https://apexhomesupport.com/",
+      "https://apexhomesupport.com/about",
+      "https://apexhomesupport.com/brands",
+      "https://apexhomesupport.com/contact",
+      "https://apexhomesupport.com/reviews",
+      "https://apexhomesupport.com/service-areas",
+      "https://apexhomesupport.com/services",
+      "https://apexhomesupport.com/services/appliance-repair",
+      "https://apexhomesupport.com/services/cooling",
+      "https://apexhomesupport.com/services/cooling/ac-installation",
+      "https://apexhomesupport.com/services/cooling/ac-maintenance",
+      "https://apexhomesupport.com/services/cooling/ac-repair",
+      "https://apexhomesupport.com/services/cooling/ac-replacement",
+      "https://apexhomesupport.com/services/heating",
+      "https://apexhomesupport.com/services/heating/boiler-repair",
+      "https://apexhomesupport.com/services/heating/furnace-repair",
+      "https://apexhomesupport.com/services/heating/heat-pumps",
+      "https://apexhomesupport.com/services/heating/heating-maintenance",
+      "https://apexhomesupport.com/services/water-heater-repair"
+    ],
+    "alt": [
+      ""
+    ],
+    "htmlWidth": "40",
+    "htmlHeight": "40",
+    "fill": false,
+    "actualWidth": 96,
+    "actualHeight": 96,
+    "actualFormat": "webp",
+    "sha256": "522c95cfe410fc8789e8880df72a7939e3f2a6be7c9b406c935ed7bdad6b6193"
+  },
+  {
+    "source": "/images/real/heating-card.png",
+    "httpStatus": 200,
+    "contentType": "image/webp",
+    "bytes": 266574,
+    "file": "assets/29-e23e0fa8e1c3.webp",
+    "pages": [
+      "https://apexhomesupport.com/services/heating/boiler-repair",
+      "https://apexhomesupport.com/services/heating/heat-pumps"
+    ],
+    "alt": [
+      "Apex technician servicing an outdoor HVAC heating unit with the access panel open"
+    ],
+    "htmlWidth": null,
+    "htmlHeight": null,
+    "fill": true,
+    "actualWidth": 1086,
+    "actualHeight": 1448,
+    "actualFormat": "webp",
+    "sha256": "c9c61a45dfb1b73faa198c4b276b7e8c30cf2e8c8533aa9d7aac558ac3743637"
+  },
+  {
+    "source": "https://apexhomesupport.com/opengraph-image?ba0a4ac7c10e07d1",
+    "httpStatus": 200,
+    "contentType": "image/png",
+    "bytes": 73958,
+    "file": "assets/60-a97fb5e3ace7.png",
+    "pages": [
+      "https://apexhomesupport.com/"
+    ],
+    "alt": [],
+    "htmlWidth": null,
+    "htmlHeight": null,
+    "fill": false,
+    "actualWidth": 1200,
+    "actualHeight": 630,
+    "actualFormat": "png",
+    "sha256": "4f6883aa5a3be5863a262049f8d6ad96d37e7306226f6561613fec2ff96d26bd"
+  },
+  {
+    "source": "https://apexhomesupport.com/twitter-image?1de2661a8bf35528",
+    "httpStatus": 200,
+    "contentType": "image/png",
+    "bytes": 73958,
+    "file": "assets/58-c076cabbe2c4.png",
+    "pages": [
+      "https://apexhomesupport.com/",
+      "https://apexhomesupport.com/about",
+      "https://apexhomesupport.com/brands",
+      "https://apexhomesupport.com/contact",
+      "https://apexhomesupport.com/reviews",
+      "https://apexhomesupport.com/service-areas",
+      "https://apexhomesupport.com/services",
+      "https://apexhomesupport.com/services/appliance-repair",
+      "https://apexhomesupport.com/services/cooling",
+      "https://apexhomesupport.com/services/cooling/ac-installation",
+      "https://apexhomesupport.com/services/cooling/ac-maintenance",
+      "https://apexhomesupport.com/services/cooling/ac-repair",
+      "https://apexhomesupport.com/services/cooling/ac-replacement",
+      "https://apexhomesupport.com/services/heating",
+      "https://apexhomesupport.com/services/heating/boiler-repair",
+      "https://apexhomesupport.com/services/heating/furnace-repair",
+      "https://apexhomesupport.com/services/heating/heat-pumps",
+      "https://apexhomesupport.com/services/heating/heating-maintenance",
+      "https://apexhomesupport.com/services/water-heater-repair"
+    ],
+    "alt": [],
+    "htmlWidth": null,
+    "htmlHeight": null,
+    "fill": false,
+    "actualWidth": 1200,
+    "actualHeight": 630,
+    "actualFormat": "png",
+    "sha256": "4f6883aa5a3be5863a262049f8d6ad96d37e7306226f6561613fec2ff96d26bd"
+  },
+  {
+    "source": "https://apexhomesupport.com/opengraph-image",
+    "httpStatus": 200,
+    "contentType": "image/png",
+    "bytes": 73958,
+    "file": "assets/43-7fffb49e2b29.png",
+    "pages": [
+      "https://apexhomesupport.com/about",
+      "https://apexhomesupport.com/brands",
+      "https://apexhomesupport.com/contact",
+      "https://apexhomesupport.com/reviews",
+      "https://apexhomesupport.com/service-areas",
+      "https://apexhomesupport.com/services",
+      "https://apexhomesupport.com/services/appliance-repair",
+      "https://apexhomesupport.com/services/cooling",
+      "https://apexhomesupport.com/services/cooling/ac-installation",
+      "https://apexhomesupport.com/services/cooling/ac-maintenance",
+      "https://apexhomesupport.com/services/cooling/ac-repair",
+      "https://apexhomesupport.com/services/cooling/ac-replacement",
+      "https://apexhomesupport.com/services/heating",
+      "https://apexhomesupport.com/services/heating/boiler-repair",
+      "https://apexhomesupport.com/services/heating/furnace-repair",
+      "https://apexhomesupport.com/services/heating/heat-pumps",
+      "https://apexhomesupport.com/services/heating/heating-maintenance",
+      "https://apexhomesupport.com/services/water-heater-repair"
+    ],
+    "alt": [],
+    "htmlWidth": null,
+    "htmlHeight": null,
+    "fill": false,
+    "actualWidth": 1200,
+    "actualHeight": 630,
+    "actualFormat": "png",
+    "sha256": "4f6883aa5a3be5863a262049f8d6ad96d37e7306226f6561613fec2ff96d26bd"
+  }
+]

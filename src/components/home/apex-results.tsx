@@ -19,12 +19,11 @@ export function ApexResults() {
   return (
     <section className="section-y bg-page-bg" aria-labelledby="results-heading">
       <Container>
-        <SectionHeading id="results-heading" eyebrow="Apex Results" title="See the difference Apex makes." description="Customer-approved before-and-after results will appear here as real projects are cleared for publication." />
+        <SectionHeading id="results-heading" eyebrow="Apex Results" title="See the difference Apex makes." description="A closer look at completed work, with before-and-after photos from Apex projects." />
         <div className="mt-10">
           {useCarousel ? (
             <Carousel
               ariaLabel="Apex results"
-              autoplayMs={9500}
               arrowVariant="overlay"
               overlayArrowTopClassName="top-[7.5rem] sm:top-[8rem] lg:top-[9rem] -translate-y-1/2"
             >

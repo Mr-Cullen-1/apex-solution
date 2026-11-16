@@ -31,8 +31,8 @@ export const buttonStyles: Record<NonNullable<ButtonLinkProps["variant"]>, strin
   // min-h-12/px-6 would silently win the cascade over a caller's smaller utilities).
   // Used for the mobile site-header Book Now trigger, which needs to be noticeably
   // smaller than the standard button at the smallest viewport widths.
-  "header-compact": "group inline-flex min-h-9 shrink-0 items-center justify-center gap-1.5 whitespace-nowrap rounded-control bg-navy px-3 text-xs font-bold text-white transition-all duration-300 hover:bg-copper sm:min-h-11 sm:gap-2.5 sm:px-5 sm:text-sm sm:font-semibold",
-  text: "group inline-flex items-center gap-2 text-sm font-semibold text-navy transition-colors duration-300 hover:text-copper",
+  "header-compact": "group inline-flex min-h-11 shrink-0 items-center justify-center gap-1.5 whitespace-nowrap rounded-control bg-navy px-3 text-xs font-bold text-white transition-all duration-300 hover:bg-copper sm:min-h-11 sm:gap-2.5 sm:px-5 sm:text-sm sm:font-semibold",
+  text: "group inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-navy transition-colors duration-300 hover:text-copper",
 };
 
 export function ButtonLink({ className = "", variant = "primary", showArrow = true, children, ...props }: ButtonLinkProps) {

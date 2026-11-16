@@ -1,0 +1,135 @@
+{
+  "/": [
+    "Homepage",
+    "Apex Home Services",
+    "Branded navigation + local service discovery",
+    "heating and cooling service; appliance repair; water-heater repair; Northeast home services",
+    "Clear categories, imagery and CTAs. Generic H1/title, repeated branding and inconsistent proof/offer copy weaken relevance. Keep the homepage as the branded entry point, with /services organizing the catalog."
+  ],
+  "/about": [
+    "Company",
+    "About Apex Home Services",
+    "Branded informational / credibility investigation",
+    "independent local service professionals; home-service coordination; Apex service process",
+    "Explains the independent-provider model and has the only standalone Organization object. We diagnose conflicts with that framing. Obtain approved company identity and verification-process details; do not invent history, certifications or staff biographies."
+  ],
+  "/brands": [
+    "Brand directory",
+    "appliance and HVAC brands serviced by Apex",
+    "Commercial compatibility / brand navigation",
+    "Samsung appliance service; Sub-Zero appliance service; Carrier HVAC service; supported appliance brands",
+    "Lists 27 brands in three groups with category links and an authorization disclaimer. Clarify H1 and how to supply equipment model details. Expand service scope only after confirmation; do not create thin brand pages."
+  ],
+  "/contact": [
+    "Contact",
+    "contact Apex Home Services",
+    "Branded navigation / request service",
+    "Apex phone number; book home service; service coverage questions",
+    "Direct phone and information paths match intent. Contradictory online-submission statements need urgent correction. Hours are absent; email/address remain unknown. Do not infer location from the phone area code."
+  ],
+  "/service-areas": [
+    "Coverage directory",
+    "Apex Home Services service areas",
+    "Local eligibility / coverage lookup",
+    "Nassau County home services; Bergen County home services; Fairfield County home services; county coverage",
+    "Strong local intent: five state headings, 29 counties, working anchor links and ZIP confirmation. This is site-stated coverage, not independently verified. Add useful service links when relevant; avoid statewide claims and doorway pages."
+  ],
+  "/services": [
+    "Service hub",
+    "Apex home services",
+    "Commercial service selection",
+    "appliance repair; cooling services; heating services; water-heater repair",
+    "Four categories and symptom links give useful pathways. Only one inbound source and a slogan H1 weaken the hub. Let this page organize the catalog and the homepage introduce the company."
+  ],
+  "/services/appliance-repair": [
+    "Service category",
+    "appliance repair",
+    "Transactional repair / equipment compatibility",
+    "refrigerator repair; washer and dryer repair; dishwasher repair; oven repair; commercial appliance service",
+    "Broad repair intent is appropriate, but main content omits explanations of the supplied residential/commercial equipment inventory in the footer. Replace planning text with confirmed equipment scope and symptoms; clarify the maintenance offer on this existing page."
+  ],
+  "/services/cooling": [
+    "Service category",
+    "residential cooling services",
+    "Commercial comparison / service selection",
+    "AC repair; AC installation; AC maintenance; AC replacement",
+    "Four child services and symptom paths support intent. Strengthen the H1 and briefly distinguish options; send visitors to specific detail pages rather than duplicating their answers."
+  ],
+  "/services/heating": [
+    "Service category",
+    "residential heating services",
+    "Commercial comparison / service selection",
+    "furnace repair; boiler repair; heat-pump service; heating maintenance",
+    "Four child services appear in HTML. Boiler repair is omitted from short description and metadata. Explain equipment distinctions and align the overview with all existing offerings."
+  ],
+  "/services/water-heater-repair": [
+    "Service category",
+    "water heater repair",
+    "Transactional troubleshooting / request repair",
+    "inconsistent hot water; water-heater noise; moisture near water heater; water-heater inspection",
+    "Correct keyword, symptoms and CTA, but planning text replaces useful scope. Confirm supported equipment and explain inspection, exclusions and preparation. A gas-water-heater photo does not establish all gas/electric service capabilities."
+  ],
+  "/services/cooling/ac-repair": [
+    "Service detail",
+    "AC repair",
+    "Transactional repair / symptom investigation",
+    "AC not cooling; weak airflow; unusual AC noise; cooling-system inspection",
+    "Clear repair intent, symptoms, FAQs and related links. Add approved diagnostic scope, preparation and examples. Do not promise remote diagnosis."
+  ],
+  "/services/cooling/ac-installation": [
+    "Service detail",
+    "AC installation",
+    "Commercial investigation / installation request",
+    "new cooling system; residential AC installation; equipment selection; renovated-space cooling",
+    "Recognizes new/renovated spaces but offers generic planning copy. Explain verified planning inputs and installation deliverables; distinguish new-system projects from replacement without inventing supported equipment types."
+  ],
+  "/services/cooling/ac-maintenance": [
+    "Service detail",
+    "AC maintenance",
+    "Preventive service / maintenance request",
+    "outdoor AC unit cleaning; seasonal cooling service; cooling-system inspection",
+    "Seasonal intent and offer align. Homepage offers outdoor AC unit cleaning, but this page lacks concrete included/excluded tasks. Add approved scope and relevant existing results."
+  ],
+  "/services/cooling/ac-replacement": [
+    "Service detail",
+    "AC replacement",
+    "Commercial repair-versus-replace investigation",
+    "cooling-system replacement; repair or replace AC; recurring AC problems",
+    "Differentiation rests on brief summaries and recurring-attention symptoms. Add verified decision factors and replacement process; avoid invented age thresholds, savings or guarantees."
+  ],
+  "/services/heating/furnace-repair": [
+    "Service detail",
+    "furnace repair",
+    "Transactional repair / no-heat investigation",
+    "furnace not heating; inconsistent heating cycles; furnace noise; heating inspection",
+    "Relevant symptoms and safety FAQ. Copy resembles boiler repair and hero shows outdoor HVAC equipment. Explain furnace-specific scope and use approved relevant imagery."
+  ],
+  "/services/heating/heat-pumps": [
+    "Service detail",
+    "heat pump service",
+    "Commercial investigation / existing-system service",
+    "heat-pump heating and cooling; heat-pump performance; heat-pump equipment options",
+    "Correct year-round heating/cooling explanation and relevant image. Service and new-equipment planning are mixed. Clarify confirmed tasks and planning assistance within this page before considering new routes."
+  ],
+  "/services/heating/heating-maintenance": [
+    "Service detail",
+    "heating maintenance",
+    "Preventive service / seasonal request",
+    "furnace maintenance; seasonal heating inspection; preventive heating service",
+    "Useful maintenance-versus-repair distinction and offer. Explain confirmed systems and included tasks. Add boiler context/link only if applicable; do not expand scope by assumption."
+  ],
+  "/services/heating/boiler-repair": [
+    "Service detail",
+    "boiler repair",
+    "Transactional repair / symptom investigation",
+    "boiler not heating; boiler cycling; boiler leak; boiler inspection",
+    "Explicit boiler intent and symptoms. Copy resembles furnace repair, image is a heat pump and only heating hub links contextually. Add verified boiler-specific scope, imagery and relevant inbound links."
+  ],
+  "/reviews": [
+    "Review archive",
+    "Apex Home Services reviews",
+    "Branded commercial trust investigation",
+    "customer experiences; verified customer reviews; Apex appliance repair feedback",
+    "Three published entries; authenticity not independently verified. Archive adds dates/full text but little context. Explain verification, check duplicate photos and improve discovery. Do not fabricate testimonials or assume aggregate-rating eligibility."
+  ]
+}

@@ -70,6 +70,7 @@ export function SiteHeader() {
         setMobileOpen(false);
         return;
       }
+      const focusable = panel?.querySelectorAll<HTMLElement>('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])');
       if (event.key !== "Tab" || !focusable?.length) return;
       const first = focusable[0];
       const last = focusable[focusable.length - 1];
@@ -95,8 +96,8 @@ export function SiteHeader() {
   return (
     <header ref={headerRef} className="sticky top-0 z-50 pt-3 transition-[padding] duration-300 sm:pt-4">
       <Container>
-        <div className={`flex h-16 items-center justify-between gap-2 rounded-hero px-3 transition-all duration-300 sm:h-18 sm:gap-6 sm:px-4 md:px-6 ${scrolled ? "border border-steel/50 bg-surface/55 shadow-none backdrop-blur-md hover:border-steel hover:bg-surface/90 hover:shadow-soft" : "border border-steel bg-surface shadow-soft"}`}>
-          <Link href="/" className="flex shrink-0 items-center gap-2.5" aria-label={`${company.name} home`}>
+        <div className={`flex h-16 items-center justify-between gap-2 rounded-hero px-3 transition-all duration-300 sm:h-18 sm:gap-6 sm:px-4 md:px-6 ${scrolled ? "border border-steel/50 bg-surface shadow-soft" : "border border-steel bg-surface shadow-soft"}`}>
+          <Link href="/" className="flex min-h-11 min-w-11 shrink-0 items-center gap-2.5" aria-label={`${company.name} home`}>
             <Image src={brandMark.colored.src} alt={brandMark.colored.alt} width={36} height={36} className="size-9" priority />
             <span className="hidden text-lg font-semibold tracking-[-0.02em] text-navy sm:inline">{company.name}</span>
           </Link>
@@ -136,16 +137,16 @@ export function SiteHeader() {
               {availability.liveNowLabel}
             </span>
             {contact.phoneHref && (
-              <a href={contact.phoneHref} className="inline-flex min-h-9 shrink-0 items-center gap-1.5 rounded-control bg-copper px-2.5 text-xs font-bold text-white transition-transform duration-300 hover:-translate-y-0.5 sm:min-h-11 sm:gap-2 sm:px-4 sm:text-sm">
+              <a href={contact.phoneHref} aria-label={`Call Apex at ${contact.phone}`} className="inline-flex min-h-11 shrink-0 items-center gap-1.5 rounded-control bg-copper px-2.5 text-xs font-bold text-white transition-transform duration-300 hover:-translate-y-0.5 sm:min-h-11 sm:gap-2 sm:px-4 sm:text-sm">
                 <PhoneIcon className="size-3.5 shrink-0 sm:size-4" />
-                <span className="whitespace-nowrap">{contact.phone}</span>
+                <span className="sm:hidden">Call</span><span className="hidden whitespace-nowrap sm:inline">{contact.phone}</span>
               </a>
             )}
             <BookingLink variant="header-compact" showArrow={false} />
             <button
               ref={mobileButtonRef}
               type="button"
-              className="grid size-10 shrink-0 place-items-center rounded-control text-navy sm:size-12 xl:hidden"
+              className="grid size-11 shrink-0 place-items-center rounded-control text-navy sm:size-12 xl:hidden"
               aria-label="Open navigation"
               aria-expanded={mobileOpen}
               onClick={() => setMobileOpen(true)}
@@ -164,7 +165,7 @@ export function SiteHeader() {
         <Container>
           <div className="grid grid-cols-[1fr_3fr] gap-12 rounded-panel border border-steel bg-surface p-10 shadow-card">
           <div className="border-r border-steel pr-10">
-            <p className="eyebrow">How can we help?</p>
+            <Link href="/services" onClick={() => setMegaOpen(false)} className="text-link inline-flex min-h-11 items-center underline">All services</Link>
             <p className="mt-4 text-3xl font-semibold tracking-[-0.03em] text-navy">Comfort starts with clarity.</p>
             <p className="mt-4 text-sm leading-6 text-slate">Not sure where to begin? Tell us what is happening and start a guided service request.</p>
             <button type="button" className="group mt-7 inline-flex items-center gap-3 text-sm font-semibold text-navy" onClick={() => { setMegaOpen(false); openBookNow(); }}>
@@ -190,7 +191,7 @@ export function SiteHeader() {
       </div>
 
       {mobileOpen && (
-        <div className="fixed inset-0 bottom-[72px] z-50 bg-navy/45 xl:hidden" onMouseDown={(event) => event.target === event.currentTarget && closeMobile()}>
+        <div className="fixed inset-0 z-50 bg-navy/45 xl:hidden" onMouseDown={(event) => event.target === event.currentTarget && closeMobile()}>
           <div ref={mobilePanelRef} role="dialog" aria-modal="true" aria-label="Site navigation" className="ml-auto flex h-full w-[min(92vw,31rem)] animate-[drawer-in_300ms_ease-out] flex-col overflow-y-auto bg-surface">
             <div className="flex h-20 shrink-0 items-center justify-between border-b border-steel px-6">
               <span className="text-lg font-semibold tracking-[-0.02em] text-navy">Explore Apex</span>
@@ -211,7 +212,7 @@ export function SiteHeader() {
                   Services <ChevronDownIcon className={`size-5 transition-transform ${servicesOpen ? "rotate-180" : ""}`} />
                 </button>
                 {servicesOpen && (
-                  <div className="pb-5">
+                  <div className="pb-5"><Link href="/services" onClick={closeMobile} className="flex min-h-12 items-center font-semibold text-navy underline">All services</Link>
                     {primaryServices.map((service) => (
                       <div key={service.id} className="border-t border-steel/70 py-2 first:border-t-0">
                         {service.children?.length ? (
@@ -219,7 +220,7 @@ export function SiteHeader() {
                             <button type="button" className="flex min-h-11 w-full items-center justify-between text-left text-sm font-bold uppercase tracking-[0.12em] text-copper" aria-expanded={openCategoryId === service.id} onClick={() => setOpenCategoryId((current) => current === service.id ? null : service.id)}>
                               {service.name}<ChevronDownIcon className={`size-4 transition-transform ${openCategoryId === service.id ? "rotate-180" : ""}`} />
                             </button>
-                            {openCategoryId === service.id && <ul className="space-y-1 pb-2">{service.children.map((child) => <li key={child.id}><Link className="flex min-h-11 items-center text-base text-slate" href={child.href} onClick={closeMobile}>{child.name}</Link></li>)}</ul>}
+                            {openCategoryId === service.id && <ul className="space-y-1 pb-2"><li><Link href={service.href} onClick={closeMobile} className="flex min-h-11 items-center font-semibold text-navy">{service.name} overview</Link></li>{service.children.map((child) => <li key={child.id}><Link className="flex min-h-11 items-center text-base text-slate" href={child.href} onClick={closeMobile}>{child.name}</Link></li>)}</ul>}
                           </>
                         ) : <Link className="flex min-h-11 items-center text-sm font-bold uppercase tracking-[0.12em] text-copper" href={service.href} onClick={closeMobile}>{service.name}</Link>}
                       </div>

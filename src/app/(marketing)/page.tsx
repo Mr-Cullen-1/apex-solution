@@ -11,7 +11,7 @@ import { TrustStrip } from "@/components/home/trust-strip";
 import { homeMeta } from "@/content/company";
 
 export const metadata: Metadata = {
-  title: homeMeta.title,
+  title: { absolute: homeMeta.title },
   description: homeMeta.description,
   alternates: { canonical: "/" },
   robots: { index: true, follow: true },
@@ -31,8 +31,8 @@ export default function Home() {
       <Hero />
       <PricingStrip />
       <TrustStrip />
-      <CustomerReviews />
       <ServicesGrid />
+      <CustomerReviews />
       <FirstTimeOffer />
       <ApexResults />
       <BrandsWeService />

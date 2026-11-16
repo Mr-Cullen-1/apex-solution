@@ -95,7 +95,7 @@ export function AdminShell({ children, role, email }: { children: ReactNode; rol
           <AccountChip email={email} role={role} />
         </div>
 
-        <main>
+        <main id="main-content">
           <div className="mx-auto max-w-6xl px-page py-8 sm:py-10">{children}</div>
         </main>
       </div>

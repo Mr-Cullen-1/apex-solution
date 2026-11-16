@@ -1,0 +1,391 @@
+{
+  "targets": [
+    {
+      "url": "https://apexhomesupport.com/",
+      "status": 200,
+      "finalURL": "https://apexhomesupport.com/",
+      "source": "initial crawl"
+    },
+    {
+      "url": "https://apexhomesupport.com/service-areas",
+      "status": 200,
+      "finalURL": "https://apexhomesupport.com/service-areas",
+      "source": "initial crawl"
+    },
+    {
+      "url": "https://apexhomesupport.com/about",
+      "status": 200,
+      "finalURL": "https://apexhomesupport.com/about",
+      "source": "initial crawl"
+    },
+    {
+      "url": "https://apexhomesupport.com/contact",
+      "status": 200,
+      "finalURL": "https://apexhomesupport.com/contact",
+      "source": "initial crawl"
+    },
+    {
+      "url": "https://apexhomesupport.com/services/appliance-repair",
+      "status": 200,
+      "finalURL": "https://apexhomesupport.com/services/appliance-repair",
+      "source": "initial crawl"
+    },
+    {
+      "url": "https://apexhomesupport.com/services/cooling",
+      "status": 200,
+      "finalURL": "https://apexhomesupport.com/services/cooling",
+      "source": "initial crawl"
+    },
+    {
+      "url": "https://apexhomesupport.com/services/cooling/ac-repair",
+      "status": 200,
+      "finalURL": "https://apexhomesupport.com/services/cooling/ac-repair",
+      "source": "initial crawl"
+    },
+    {
+      "url": "https://apexhomesupport.com/services/cooling/ac-installation",
+      "status": 200,
+      "finalURL": "https://apexhomesupport.com/services/cooling/ac-installation",
+      "source": "initial crawl"
+    },
+    {
+      "url": "https://apexhomesupport.com/services/cooling/ac-maintenance",
+      "status": 200,
+      "finalURL": "https://apexhomesupport.com/services/cooling/ac-maintenance",
+      "source": "initial crawl"
+    },
+    {
+      "url": "https://apexhomesupport.com/services/cooling/ac-replacement",
+      "status": 200,
+      "finalURL": "https://apexhomesupport.com/services/cooling/ac-replacement",
+      "source": "initial crawl"
+    },
+    {
+      "url": "https://apexhomesupport.com/services/heating",
+      "status": 200,
+      "finalURL": "https://apexhomesupport.com/services/heating",
+      "source": "initial crawl"
+    },
+    {
+      "url": "https://apexhomesupport.com/services/heating/furnace-repair",
+      "status": 200,
+      "finalURL": "https://apexhomesupport.com/services/heating/furnace-repair",
+      "source": "initial crawl"
+    },
+    {
+      "url": "https://apexhomesupport.com/services/heating/heat-pumps",
+      "status": 200,
+      "finalURL": "https://apexhomesupport.com/services/heating/heat-pumps",
+      "source": "initial crawl"
+    },
+    {
+      "url": "https://apexhomesupport.com/services/heating/heating-maintenance",
+      "status": 200,
+      "finalURL": "https://apexhomesupport.com/services/heating/heating-maintenance",
+      "source": "initial crawl"
+    },
+    {
+      "url": "https://apexhomesupport.com/services/heating/boiler-repair",
+      "status": 200,
+      "finalURL": "https://apexhomesupport.com/services/heating/boiler-repair",
+      "source": "initial crawl"
+    },
+    {
+      "url": "https://apexhomesupport.com/services/water-heater-repair",
+      "status": 200,
+      "finalURL": "https://apexhomesupport.com/services/water-heater-repair",
+      "source": "initial crawl"
+    },
+    {
+      "url": "https://apexhomesupport.com/review",
+      "status": 200,
+      "finalURL": "https://apexhomesupport.com/review",
+      "source": "additional GET"
+    },
+    {
+      "url": "https://apexhomesupport.com/reviews",
+      "status": 200,
+      "finalURL": "https://apexhomesupport.com/reviews",
+      "source": "initial crawl"
+    },
+    {
+      "url": "https://apexhomesupport.com/brands",
+      "status": 200,
+      "finalURL": "https://apexhomesupport.com/brands",
+      "source": "initial crawl"
+    },
+    {
+      "url": "https://apexhomesupport.com/services",
+      "status": 200,
+      "finalURL": "https://apexhomesupport.com/services",
+      "source": "initial crawl"
+    },
+    {
+      "url": "https://apexhomesupport.com/?book=1",
+      "status": 200,
+      "finalURL": "https://apexhomesupport.com/?book=1",
+      "source": "additional GET"
+    }
+  ],
+  "fragments": [
+    {
+      "from": "https://apexhomesupport.com/",
+      "href": "#main-content",
+      "target": "https://apexhomesupport.com/",
+      "id": "main-content",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/about",
+      "href": "#main-content",
+      "target": "https://apexhomesupport.com/about",
+      "id": "main-content",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/brands",
+      "href": "#main-content",
+      "target": "https://apexhomesupport.com/brands",
+      "id": "main-content",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/contact",
+      "href": "#main-content",
+      "target": "https://apexhomesupport.com/contact",
+      "id": "main-content",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/service-areas",
+      "href": "#main-content",
+      "target": "https://apexhomesupport.com/service-areas",
+      "id": "main-content",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/service-areas",
+      "href": "#new-york",
+      "target": "https://apexhomesupport.com/service-areas",
+      "id": "new-york",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/service-areas",
+      "href": "#new-jersey",
+      "target": "https://apexhomesupport.com/service-areas",
+      "id": "new-jersey",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/service-areas",
+      "href": "#connecticut",
+      "target": "https://apexhomesupport.com/service-areas",
+      "id": "connecticut",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/service-areas",
+      "href": "#massachusetts",
+      "target": "https://apexhomesupport.com/service-areas",
+      "id": "massachusetts",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/service-areas",
+      "href": "#rhode-island",
+      "target": "https://apexhomesupport.com/service-areas",
+      "id": "rhode-island",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/services",
+      "href": "#main-content",
+      "target": "https://apexhomesupport.com/services",
+      "id": "main-content",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/services",
+      "href": "#category-heading",
+      "target": "https://apexhomesupport.com/services",
+      "id": "category-heading",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/services/appliance-repair",
+      "href": "#main-content",
+      "target": "https://apexhomesupport.com/services/appliance-repair",
+      "id": "main-content",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/services/appliance-repair",
+      "href": "#service-details",
+      "target": "https://apexhomesupport.com/services/appliance-repair",
+      "id": "service-details",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/services/cooling",
+      "href": "#main-content",
+      "target": "https://apexhomesupport.com/services/cooling",
+      "id": "main-content",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/services/cooling",
+      "href": "#service-details",
+      "target": "https://apexhomesupport.com/services/cooling",
+      "id": "service-details",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/services/heating",
+      "href": "#main-content",
+      "target": "https://apexhomesupport.com/services/heating",
+      "id": "main-content",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/services/heating",
+      "href": "#service-details",
+      "target": "https://apexhomesupport.com/services/heating",
+      "id": "service-details",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/services/water-heater-repair",
+      "href": "#main-content",
+      "target": "https://apexhomesupport.com/services/water-heater-repair",
+      "id": "main-content",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/services/water-heater-repair",
+      "href": "#service-details",
+      "target": "https://apexhomesupport.com/services/water-heater-repair",
+      "id": "service-details",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/services/cooling/ac-repair",
+      "href": "#main-content",
+      "target": "https://apexhomesupport.com/services/cooling/ac-repair",
+      "id": "main-content",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/services/cooling/ac-repair",
+      "href": "#service-details",
+      "target": "https://apexhomesupport.com/services/cooling/ac-repair",
+      "id": "service-details",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/services/cooling/ac-installation",
+      "href": "#main-content",
+      "target": "https://apexhomesupport.com/services/cooling/ac-installation",
+      "id": "main-content",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/services/cooling/ac-installation",
+      "href": "#service-details",
+      "target": "https://apexhomesupport.com/services/cooling/ac-installation",
+      "id": "service-details",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/services/cooling/ac-maintenance",
+      "href": "#main-content",
+      "target": "https://apexhomesupport.com/services/cooling/ac-maintenance",
+      "id": "main-content",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/services/cooling/ac-maintenance",
+      "href": "#service-details",
+      "target": "https://apexhomesupport.com/services/cooling/ac-maintenance",
+      "id": "service-details",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/services/cooling/ac-replacement",
+      "href": "#main-content",
+      "target": "https://apexhomesupport.com/services/cooling/ac-replacement",
+      "id": "main-content",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/services/cooling/ac-replacement",
+      "href": "#service-details",
+      "target": "https://apexhomesupport.com/services/cooling/ac-replacement",
+      "id": "service-details",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/services/heating/furnace-repair",
+      "href": "#main-content",
+      "target": "https://apexhomesupport.com/services/heating/furnace-repair",
+      "id": "main-content",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/services/heating/furnace-repair",
+      "href": "#service-details",
+      "target": "https://apexhomesupport.com/services/heating/furnace-repair",
+      "id": "service-details",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/services/heating/heat-pumps",
+      "href": "#main-content",
+      "target": "https://apexhomesupport.com/services/heating/heat-pumps",
+      "id": "main-content",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/services/heating/heat-pumps",
+      "href": "#service-details",
+      "target": "https://apexhomesupport.com/services/heating/heat-pumps",
+      "id": "service-details",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/services/heating/heating-maintenance",
+      "href": "#main-content",
+      "target": "https://apexhomesupport.com/services/heating/heating-maintenance",
+      "id": "main-content",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/services/heating/heating-maintenance",
+      "href": "#service-details",
+      "target": "https://apexhomesupport.com/services/heating/heating-maintenance",
+      "id": "service-details",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/services/heating/boiler-repair",
+      "href": "#main-content",
+      "target": "https://apexhomesupport.com/services/heating/boiler-repair",
+      "id": "main-content",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/services/heating/boiler-repair",
+      "href": "#service-details",
+      "target": "https://apexhomesupport.com/services/heating/boiler-repair",
+      "id": "service-details",
+      "exists": true
+    },
+    {
+      "from": "https://apexhomesupport.com/reviews",
+      "href": "#main-content",
+      "target": "https://apexhomesupport.com/reviews",
+      "id": "main-content",
+      "exists": true
+    }
+  ]
+}

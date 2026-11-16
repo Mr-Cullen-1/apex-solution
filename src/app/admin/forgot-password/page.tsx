@@ -14,7 +14,7 @@ export const dynamic = "force-dynamic";
 // must be reachable by a signed-out visitor by definition.
 export default function AdminForgotPasswordPage() {
   return (
-    <main className="flex min-h-full flex-1 items-center justify-center bg-page-bg px-page py-16">
+    <main id="main-content" className="flex min-h-full flex-1 items-center justify-center bg-page-bg px-page py-16">
       <div className="w-full max-w-sm rounded-panel border border-steel bg-surface p-8 shadow-soft">
         <p className="eyebrow">{company.name}</p>
         <h1 className="mt-3 text-2xl font-semibold tracking-[-0.02em] text-navy">Reset your password</h1>

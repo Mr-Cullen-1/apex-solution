@@ -24,7 +24,7 @@ export function ServiceHero({ eyebrow, title, summary, mediaId, anchorLabel = "E
       <Container>
         <div className="grid gap-10 overflow-hidden rounded-hero border border-steel bg-surface shadow-hero lg:grid-cols-[1.02fr_0.98fr] lg:items-center lg:gap-16">
           <div className="p-7 sm:p-10 lg:p-14">
-            <p className="eyebrow">{eyebrow}</p>
+            <nav aria-label="Breadcrumb" className="mb-6 flex flex-wrap gap-2 text-sm text-slate"><Link href="/" className="underline">Home</Link><span aria-hidden="true">/</span><Link href="/services" className="underline">Services</Link>{serviceId && categoryId && <><span aria-hidden="true">/</span><Link href={`/services/${categoryId}`} className="capitalize underline">{categoryId.replaceAll("-", " ")}</Link></>}</nav><p className="eyebrow">{eyebrow}</p>
             <h1 className="mt-5 max-w-xl text-balance text-[clamp(2.5rem,5.5vw,4.25rem)] font-semibold leading-[1.03] tracking-[-0.03em] text-navy">{title}</h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate">{summary}</p>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -35,8 +35,8 @@ export function ServiceHero({ eyebrow, title, summary, mediaId, anchorLabel = "E
               <ButtonLink href="#service-details" variant="text" showArrow={false}>{anchorLabel}</ButtonLink>
             </div>
           </div>
-          <div className="relative min-h-[20rem] overflow-hidden sm:min-h-[26rem] lg:min-h-[34rem]">
-            <Image src={asset.src} alt={asset.alt} fill priority sizes="(min-width: 1024px) 48vw, 100vw" className="object-cover" style={{ objectPosition: asset.focalPoint }} />
+          <div className="relative min-h-[16rem] overflow-hidden sm:min-h-[22rem] lg:h-full lg:min-h-[30rem]">
+            <Image src={asset.src} alt={asset.alt} fill preload sizes="(min-width: 1024px) 48vw, 100vw" className="object-cover" style={{ objectPosition: asset.focalPoint }} />
             <span className="absolute bottom-4 left-4 rounded-control bg-ink/85 px-4 py-2.5 text-[0.65rem] font-bold uppercase tracking-[0.14em] text-white">Local home service</span>
           </div>
         </div>
@@ -66,7 +66,10 @@ export function ServiceDirectory({ category }: { category: ServiceCategory }) {
   if (!category.children.length) {
     return (
       <div className="rounded-panel border border-steel bg-surface p-8 text-lg leading-8 text-slate">
-        This category is available as a direct service conversation. More specific service pages will be added only when the offering is confirmed.
+        <h3 className="text-xl font-semibold text-navy">A few details help us get started.</h3>
+        <ul className="mt-4 list-disc space-y-3 pl-5"><li>Tell us which {category.id === "appliance-repair" ? "appliance" : "water heater"} needs attention and what you have noticed.</li><li>Share the brand and model, if you have them handy.</li><li>Include your ZIP code so we can check availability for your address.</li></ul>
+        <p className="mt-5 text-base">You do not need to diagnose the issue. Scheduling and the scope of a visit are confirmed when the team follows up.</p>
+        <BookingLink categoryId={category.id} className="mt-6">Request {category.name.toLowerCase()}</BookingLink>
       </div>
     );
   }
@@ -98,7 +101,7 @@ export function ProblemDiscovery({ items, categoryId }: { items: readonly Servic
           {items.map((problem) => (
             <Link key={problem.id} href={problem.href} className="group flex min-h-44 flex-col justify-between rounded-panel border border-white/15 bg-white/[0.04] p-6 transition-colors hover:bg-white/[0.08] sm:p-8">
               <span className="text-xl font-semibold tracking-[-0.02em]">{problem.label}</span>
-              <span className="mt-6 flex items-end justify-between gap-5 text-sm leading-6 text-white/60"><span>{problem.description}</span><ArrowRightIcon className="size-4 shrink-0 text-copper transition-transform group-hover:translate-x-1" /></span>
+              <span className="mt-6 flex items-end justify-between gap-5 text-sm leading-6 text-white/80"><span>{problem.description}</span><ArrowRightIcon className="size-4 shrink-0 text-copper transition-transform group-hover:translate-x-1" /></span>
             </Link>
           ))}
           <OtherProblemCard categoryId={categoryId} />
@@ -129,7 +132,7 @@ export function RelevantBrands({ groupIds }: { groupIds: readonly string[] }) {
       <Container>
         <div className="grid gap-12 rounded-hero border border-steel bg-surface p-8 shadow-soft sm:p-12 lg:grid-cols-[0.75fr_1.25fr] lg:gap-20">
           <SectionHeading id="brands-heading" eyebrow="Brands we service" title="Broad equipment familiarity." description="The names below describe brands Apex works on. They do not imply factory authorization, certification, partnership, dealership, or warranty authorization." size="compact" />
-          <div className="space-y-10">{groups.map((group) => <div key={group.id}><h3 className="border-b border-steel pb-3 text-xs font-bold uppercase tracking-[0.16em] text-navy">{group.label}</h3><ul className="mt-5 grid grid-cols-2 gap-x-5 gap-y-3 sm:grid-cols-3">{group.brands.map((brand) => <li key={brand} className="text-base text-slate">{brand}</li>)}</ul></div>)}</div>
+          <div className="space-y-10"><Link href="/brands" className="text-link inline-flex min-h-11 items-center underline">View the full brand directory</Link>{groups.map((group) => <div key={group.id}><h3 className="border-b border-steel pb-3 text-xs font-bold uppercase tracking-[0.16em] text-navy">{group.label}</h3><ul className="mt-5 grid grid-cols-2 gap-x-5 gap-y-3 sm:grid-cols-3">{group.brands.map((brand) => <li key={brand} className="text-base text-slate">{brand}</li>)}</ul></div>)}</div>
         </div>
       </Container>
     </section>
@@ -141,7 +144,7 @@ export function ServiceRegion() {
     <section className="bg-page-bg section-y-bottom" aria-labelledby="region-heading">
       <Container>
         <div className="grid gap-8 rounded-panel border border-steel bg-surface p-8 shadow-soft sm:p-10 lg:grid-cols-[1fr_2fr] lg:items-end">
-          <div><p className="eyebrow">Regional service</p><h2 id="region-heading" className="mt-4 text-3xl font-semibold tracking-[-0.03em] text-navy">Across five Northeast states.</h2><Link className="text-link mt-5 inline-flex" href="/service-areas">View service-area details</Link></div>
+          <div><p className="eyebrow">Regional service</p><h2 id="region-heading" className="mt-4 text-3xl font-semibold tracking-[-0.03em] text-navy">New York and the Northeast.</h2><Link className="text-link mt-5 inline-flex" href="/service-areas">View service-area details</Link></div>
           <div><ul className="grid grid-cols-2 gap-3 sm:grid-cols-5">{serviceAreas.map((area) => <li key={area.code} className="border-t border-steel pt-3"><span className="block text-xs font-bold tracking-[0.16em] text-copper">{area.code}</span><span className="mt-2 block text-sm font-semibold text-navy">{area.state}</span></li>)}</ul><p className="mt-5 text-sm leading-6 text-slate">County coverage is confirmed in the service-area directory. Exact ZIP-level availability is confirmed when you book.</p></div>
         </div>
       </Container>

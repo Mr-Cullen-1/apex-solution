@@ -1,1 +1,1 @@
-export const completedPublicPaths = ["/about", "/brands", "/contact", "/service-areas"] as const;
+export const completedPublicPaths = ["/about", "/brands", "/contact", "/service-areas", "/reviews"] as const;

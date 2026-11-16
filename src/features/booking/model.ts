@@ -125,14 +125,14 @@ export function normalizeBookNowPayload(value: unknown): BookNowPayload {
 }
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const phonePattern = /^[+()\d\s.-]{7,20}$/;
+const phonePattern = /^\+?[()\d\s.-]{10,20}$/;
 const zipPattern = /^\d{5}$/;
 
 export function validateBookNowPayload(payload: BookNowPayload): BookNowErrors {
   const errors: BookNowErrors = {};
   if (!payload.fullName) errors.fullName = "Enter your full name.";
   if (!payload.phone) errors.phone = "Enter a phone number so we can reach you.";
-  else if (!phonePattern.test(payload.phone)) errors.phone = "Enter a valid phone number.";
+  else if (!phonePattern.test(payload.phone) || !/^(1)?\d{10}$/.test(payload.phone.replace(/\D/g, ""))) errors.phone = "Enter a ten-digit US phone number, with an optional +1 country code.";
   if (!payload.zipCode) errors.zipCode = "Enter your ZIP code.";
   else if (!zipPattern.test(payload.zipCode)) errors.zipCode = "Enter a five-digit ZIP code.";
   if (!payload.message) errors.message = "Tell us what's going on.";

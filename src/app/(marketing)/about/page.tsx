@@ -12,7 +12,7 @@ import { serviceAreas } from "@/content/site";
 import { sharedOpenGraph } from "@/content/social-meta";
 
 export const metadata: Metadata = {
-  title: `About ${company.name}`,
+  title: "About",
   description: `Learn how ${company.name} connects homeowners with experienced independent local service professionals through clear communication and thoughtful next steps.`,
   alternates: { canonical: "/about" },
   openGraph: { ...sharedOpenGraph, title: `About ${company.name}`, description: company.tagline, url: "/about" },

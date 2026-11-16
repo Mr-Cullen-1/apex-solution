@@ -7,7 +7,7 @@ import { formatLeadMessage, isTelegramConfigured, sendTelegramMessage } from "./
 import type { BookNowPayload, ServiceRequestRow, SubmissionResult } from "./types";
 
 const NOT_CONFIGURED_MESSAGE =
-  "Thanks — we received your request details, but online submission is not connected yet. Apex has not received this request. Please call us directly to reach the team right away.";
+  "Online submission is unavailable right now. Apex has not received this request. Please call us directly to reach the team right away.";
 const SUBMISSION_FAILED_MESSAGE = "We couldn't submit your request right now. Please try again or call us.";
 
 async function deliverTelegram(row: ServiceRequestRow): Promise<void> {

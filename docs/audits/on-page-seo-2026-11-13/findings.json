@@ -1,0 +1,549 @@
+[
+  {
+    "ID": "OP-01",
+    "URL": "https://apexhomesupport.com/; https://apexhomesupport.com/about; https://apexhomesupport.com/contact",
+    "Category": "Metadata",
+    "Issue": "Brand repeated within the page title",
+    "Evidence": "Live titles: homepage = Apex Home Services | Premium Home Services | Apex Home Services (63 characters); About = About Apex Home Services | Apex Home Services (45); Contact = Contact Apex Home Services | Apex Home Services (47). Root title template appends the brand to already branded page titles. src/app/layout.tsx:18; src/app/(marketing)/page.tsx:14.",
+    "Priority": "Low",
+    "Recommended Fix": "Use one brand occurrence per title; preserve route intent. Recheck actual emitted titles after an authorized change.",
+    "Status": "Pending",
+    "paths": [
+      "/",
+      "/about",
+      "/contact"
+    ]
+  },
+  {
+    "ID": "OP-02",
+    "URL": "https://apexhomesupport.com/about; https://apexhomesupport.com/brands; https://apexhomesupport.com/contact; https://apexhomesupport.com/service-areas; https://apexhomesupport.com/services; https://apexhomesupport.com/services/appliance-repair; https://apexhomesupport.com/services/cooling; https://apexhomesupport.com/services/heating; https://apexhomesupport.com/services/water-heater-repair; https://apexhomesupport.com/services/cooling/ac-repair; https://apexhomesupport.com/services/cooling/ac-installation; https://apexhomesupport.com/services/cooling/ac-maintenance; https://apexhomesupport.com/services/cooling/ac-replacement; https://apexhomesupport.com/services/heating/furnace-repair; https://apexhomesupport.com/services/heating/heat-pumps; https://apexhomesupport.com/services/heating/heating-maintenance; https://apexhomesupport.com/services/heating/boiler-repair; https://apexhomesupport.com/reviews",
+    "Category": "Metadata",
+    "Issue": "All 18 subpages inherit homepage Twitter title and description",
+    "Evidence": "Every subpage emits twitter:title = Apex Home Services | Premium Home Services and twitter:description = Reliable heating, cooling, appliance, and water-heater service from local Northeast professionals. Open Graph is route-specific. src/app/layout.tsx:29-32; pages.json meta fields.",
+    "Priority": "Medium",
+    "Recommended Fix": "Give subpages route-specific Twitter title/description, or use a verified fallback that derives from each route. Keep the working image and large-image card.",
+    "Status": "Pending",
+    "paths": [
+      "/about",
+      "/brands",
+      "/contact",
+      "/service-areas",
+      "/services",
+      "/services/appliance-repair",
+      "/services/cooling",
+      "/services/heating",
+      "/services/water-heater-repair",
+      "/services/cooling/ac-repair",
+      "/services/cooling/ac-installation",
+      "/services/cooling/ac-maintenance",
+      "/services/cooling/ac-replacement",
+      "/services/heating/furnace-repair",
+      "/services/heating/heat-pumps",
+      "/services/heating/heating-maintenance",
+      "/services/heating/boiler-repair",
+      "/reviews"
+    ]
+  },
+  {
+    "ID": "OP-03",
+    "URL": "https://apexhomesupport.com/; https://apexhomesupport.com/services; https://apexhomesupport.com/services/appliance-repair; https://apexhomesupport.com/services/cooling; https://apexhomesupport.com/services/heating; https://apexhomesupport.com/services/water-heater-repair; https://apexhomesupport.com/services/cooling/ac-repair; https://apexhomesupport.com/services/cooling/ac-installation; https://apexhomesupport.com/services/cooling/ac-maintenance; https://apexhomesupport.com/services/cooling/ac-replacement; https://apexhomesupport.com/services/heating/furnace-repair; https://apexhomesupport.com/services/heating/heat-pumps; https://apexhomesupport.com/services/heating/heating-maintenance; https://apexhomesupport.com/services/heating/boiler-repair",
+    "Category": "Metadata",
+    "Issue": "Commercial metadata underuses the stated service area and useful service detail",
+    "Evidence": "Service titles identify services but no commercial title names the stated region; homepage title uses Premium Home Services. Cooling description is 94 characters, heating 91, heat pumps 91; these describe browsing rather than concrete service scope or location. No character-count violation is alleged.",
+    "Priority": "Medium",
+    "Recommended Fix": "Prioritize accurate service intent and a natural, owner-confirmed region qualifier; make descriptions explain useful scope and a next step. Do not imply statewide coverage or insert all 29 counties into titles.",
+    "Status": "Pending",
+    "paths": [
+      "/",
+      "/services",
+      "/services/appliance-repair",
+      "/services/cooling",
+      "/services/heating",
+      "/services/water-heater-repair",
+      "/services/cooling/ac-repair",
+      "/services/cooling/ac-installation",
+      "/services/cooling/ac-maintenance",
+      "/services/cooling/ac-replacement",
+      "/services/heating/furnace-repair",
+      "/services/heating/heat-pumps",
+      "/services/heating/heating-maintenance",
+      "/services/heating/boiler-repair"
+    ]
+  },
+  {
+    "ID": "OP-04",
+    "URL": "https://apexhomesupport.com/; https://apexhomesupport.com/about; https://apexhomesupport.com/brands; https://apexhomesupport.com/contact; https://apexhomesupport.com/service-areas; https://apexhomesupport.com/services; https://apexhomesupport.com/services/cooling; https://apexhomesupport.com/services/heating",
+    "Category": "Headings",
+    "Issue": "Several H1s favor slogans or broad labels over page purpose",
+    "Evidence": "Examples: /brands H1 Familiar equipment. Thoughtful service.; /contact Start with the right path forward.; /services The right care for the systems behind your home.; category H1s Cooling and Heating. The adjacent copy supplies context, and every page has exactly one H1.",
+    "Priority": "Medium",
+    "Recommended Fix": "Use a clear primary heading identifying each page purpose or service; retain editorial slogans as supporting copy. This is relevance and scanning improvement, not a missing-H1 or multiple-H1 defect.",
+    "Status": "Pending",
+    "paths": [
+      "/",
+      "/about",
+      "/brands",
+      "/contact",
+      "/service-areas",
+      "/services",
+      "/services/cooling",
+      "/services/heating"
+    ]
+  },
+  {
+    "ID": "OP-05",
+    "URL": "https://apexhomesupport.com/services/appliance-repair; https://apexhomesupport.com/services/cooling; https://apexhomesupport.com/services/heating; https://apexhomesupport.com/services/water-heater-repair; https://apexhomesupport.com/services/cooling/ac-repair; https://apexhomesupport.com/services/cooling/ac-installation; https://apexhomesupport.com/services/cooling/ac-maintenance; https://apexhomesupport.com/services/cooling/ac-replacement; https://apexhomesupport.com/services/heating/furnace-repair; https://apexhomesupport.com/services/heating/heat-pumps; https://apexhomesupport.com/services/heating/heating-maintenance; https://apexhomesupport.com/services/heating/boiler-repair",
+    "Category": "Headings",
+    "Issue": "Shared H2s contribute little service-specific context",
+    "Evidence": "All eight detail pages use Start with the full picture., Clarity at every step., Keep exploring., Broad equipment familiarity., and Useful context before you book. Category pages reuse most of the same headings. src/components/services/service-detail-page.tsx:20 and service-sections.tsx.",
+    "Priority": "Low",
+    "Recommended Fix": "Use meaningful service-specific overview and FAQ section headings where content supports them; keep useful reusable process headings. Avoid mechanically repeating keywords in every heading.",
+    "Status": "Pending",
+    "paths": [
+      "/services/appliance-repair",
+      "/services/cooling",
+      "/services/heating",
+      "/services/water-heater-repair",
+      "/services/cooling/ac-repair",
+      "/services/cooling/ac-installation",
+      "/services/cooling/ac-maintenance",
+      "/services/cooling/ac-replacement",
+      "/services/heating/furnace-repair",
+      "/services/heating/heat-pumps",
+      "/services/heating/heating-maintenance",
+      "/services/heating/boiler-repair"
+    ]
+  },
+  {
+    "ID": "OP-06",
+    "URL": "https://apexhomesupport.com/contact",
+    "Category": "Content quality",
+    "Issue": "Contact page contradicts itself about online requests",
+    "Evidence": "Live hero says Book Now takes a minute and our team will follow up to confirm details. Final CTA says Online submission is not yet connected, so the flow will not claim Apex received the request. Both appear in the same main element. src/app/(marketing)/contact/page.tsx.",
+    "Priority": "High",
+    "Recommended Fix": "Verify the production request workflow with the owner, then reconcile both statements to its actual behavior. Do not claim delivery was tested in this audit; no form was submitted.",
+    "Status": "Pending",
+    "paths": [
+      "/contact"
+    ]
+  },
+  {
+    "ID": "OP-07",
+    "URL": "https://apexhomesupport.com/services/appliance-repair; https://apexhomesupport.com/services/water-heater-repair",
+    "Category": "Content quality",
+    "Issue": "Primary service pages still contain planning placeholders",
+    "Evidence": "Both pages show: This category is available as a direct service conversation. More specific service pages will be added only when the offering is confirmed. Appliance main content does not explain the nine residential and four commercial equipment groups already listed in the footer/source. src/components/services/service-sections.tsx:69; src/content/appliance-repair.ts.",
+    "Priority": "High",
+    "Recommended Fix": "Replace planning language with confirmed service scope on the existing pages. Describe supplied appliance equipment types, relevant symptoms, process and limits; verify water-heater equipment coverage before naming types. New routes are unnecessary.",
+    "Status": "Pending",
+    "paths": [
+      "/services/appliance-repair",
+      "/services/water-heater-repair"
+    ]
+  },
+  {
+    "ID": "OP-08",
+    "URL": "https://apexhomesupport.com/services/cooling/ac-repair; https://apexhomesupport.com/services/cooling/ac-installation; https://apexhomesupport.com/services/cooling/ac-maintenance; https://apexhomesupport.com/services/cooling/ac-replacement; https://apexhomesupport.com/services/heating/furnace-repair; https://apexhomesupport.com/services/heating/heat-pumps; https://apexhomesupport.com/services/heating/heating-maintenance; https://apexhomesupport.com/services/heating/boiler-repair",
+    "Category": "Content quality",
+    "Issue": "Service detail pages rely heavily on generic shared copy",
+    "Evidence": "Eight main sections contain 396-423 whitespace-delimited words, including brands, related services, five-state boilerplate and the same five-step process. Each service overview adds two short generic paragraphs. AC maintenance says a visit can focus on observable system condition without an actual approved maintenance scope. Furnace and boiler descriptions closely mirror each other. src/content/services.ts; service-detail-page.tsx.",
+    "Priority": "High",
+    "Recommended Fix": "Have a qualified service stakeholder supply distinct inspection scope, included/excluded work, customer preparation, decision factors and service-specific FAQs for each existing page. Use approved examples and photos; avoid invented prices, credentials, equipment support or guarantees. Word count is context, not a target.",
+    "Status": "Pending",
+    "paths": [
+      "/services/cooling/ac-repair",
+      "/services/cooling/ac-installation",
+      "/services/cooling/ac-maintenance",
+      "/services/cooling/ac-replacement",
+      "/services/heating/furnace-repair",
+      "/services/heating/heat-pumps",
+      "/services/heating/heating-maintenance",
+      "/services/heating/boiler-repair"
+    ]
+  },
+  {
+    "ID": "OP-09",
+    "URL": "https://apexhomesupport.com/services/cooling/ac-installation; https://apexhomesupport.com/services/cooling/ac-replacement",
+    "Category": "Keywords and intent",
+    "Issue": "Installation and replacement have overlapping intent and insufficient differentiation",
+    "Evidence": "Installation summary discusses a new cooling system and existing equipment; replacement discusses current system and available equipment. Both use the same image, process, brands and region blocks, and link to each other. Their summaries differ, so these are not identical pages.",
+    "Priority": "Medium",
+    "Recommended Fix": "Differentiate new-system planning from replacing existing equipment with confirmed deliverables and decision information. Use Search Console query-to-page data before considering consolidation. Cannibalization is a content-based risk, not a proven ranking problem.",
+    "Status": "Pending",
+    "paths": [
+      "/services/cooling/ac-installation",
+      "/services/cooling/ac-replacement"
+    ]
+  },
+  {
+    "ID": "OP-10",
+    "URL": "https://apexhomesupport.com/about; https://apexhomesupport.com/services/appliance-repair; https://apexhomesupport.com/services/cooling; https://apexhomesupport.com/services/heating; https://apexhomesupport.com/services/water-heater-repair; https://apexhomesupport.com/services/cooling/ac-repair; https://apexhomesupport.com/services/cooling/ac-installation; https://apexhomesupport.com/services/cooling/ac-maintenance; https://apexhomesupport.com/services/cooling/ac-replacement; https://apexhomesupport.com/services/heating/furnace-repair; https://apexhomesupport.com/services/heating/heat-pumps; https://apexhomesupport.com/services/heating/heating-maintenance; https://apexhomesupport.com/services/heating/boiler-repair",
+    "Category": "Content and schema consistency",
+    "Issue": "Provider identity is ambiguous between coordination and direct service",
+    "Evidence": "About explicitly says services are performed by independent service providers, yet the same page states We diagnose before we recommend. All 12 Service schemas name Apex Home Services as provider. src/content/homepage.ts:2; src/components/services/service-structured-data.tsx:12; about mainText.",
+    "Priority": "High",
+    "Recommended Fix": "Confirm Apex?s actual role and align About, service copy and provider/broker relationships in schema. Keep claims about independent technicians and responsibility consistent. This audit does not determine the legal business model.",
+    "Status": "Pending",
+    "paths": [
+      "/about",
+      "/services/appliance-repair",
+      "/services/cooling",
+      "/services/heating",
+      "/services/water-heater-repair",
+      "/services/cooling/ac-repair",
+      "/services/cooling/ac-installation",
+      "/services/cooling/ac-maintenance",
+      "/services/cooling/ac-replacement",
+      "/services/heating/furnace-repair",
+      "/services/heating/heat-pumps",
+      "/services/heating/heating-maintenance",
+      "/services/heating/boiler-repair"
+    ]
+  },
+  {
+    "ID": "OP-11",
+    "URL": "https://apexhomesupport.com/; https://apexhomesupport.com/about; https://apexhomesupport.com/brands; https://apexhomesupport.com/contact; https://apexhomesupport.com/service-areas; https://apexhomesupport.com/services; https://apexhomesupport.com/services/appliance-repair; https://apexhomesupport.com/services/cooling; https://apexhomesupport.com/services/heating; https://apexhomesupport.com/services/water-heater-repair; https://apexhomesupport.com/services/cooling/ac-repair; https://apexhomesupport.com/services/cooling/ac-installation; https://apexhomesupport.com/services/cooling/ac-maintenance; https://apexhomesupport.com/services/cooling/ac-replacement; https://apexhomesupport.com/services/heating/furnace-repair; https://apexhomesupport.com/services/heating/heat-pumps; https://apexhomesupport.com/services/heating/heating-maintenance; https://apexhomesupport.com/services/heating/boiler-repair; https://apexhomesupport.com/reviews",
+    "Category": "Trust and contact information",
+    "Issue": "Static Live Now promise lacks visible hours; contact hours are unset",
+    "Evidence": "SiteHeader always renders Live Now, while homepage adds Instant response. Call or text and we reply right away. contact.hours is null; trust.ts contains Phone Hours: 9 AM ? Midnight, but that string does not appear in any of the 19 HTML pages. Contact lists only a phone. src/content/company.ts:9; src/content/trust.ts:10-21.",
+    "Priority": "Medium",
+    "Recommended Fix": "Obtain approved operating days, time zone and response expectations; centralize and display them. Qualify or condition Live Now appropriately. Do not publish the unused hours string as verified fact.",
+    "Status": "Pending",
+    "paths": [
+      "/",
+      "/about",
+      "/brands",
+      "/contact",
+      "/service-areas",
+      "/services",
+      "/services/appliance-repair",
+      "/services/cooling",
+      "/services/heating",
+      "/services/water-heater-repair",
+      "/services/cooling/ac-repair",
+      "/services/cooling/ac-installation",
+      "/services/cooling/ac-maintenance",
+      "/services/cooling/ac-replacement",
+      "/services/heating/furnace-repair",
+      "/services/heating/heat-pumps",
+      "/services/heating/heating-maintenance",
+      "/services/heating/boiler-repair",
+      "/reviews"
+    ]
+  },
+  {
+    "ID": "OP-12",
+    "URL": "https://apexhomesupport.com/",
+    "Category": "Content quality",
+    "Issue": "Results introduction says published examples will appear in the future",
+    "Evidence": "Homepage says Customer-approved before-and-after results will appear here as real projects are cleared for publication, directly above four before/after examples. Source describes four approved pairs. src/components/home/apex-results.tsx:22; src/content/results.ts.",
+    "Priority": "Medium",
+    "Recommended Fix": "Reconcile the introduction with the current approved examples and explain their context. Confirm publication permission instead of assuming the source comment proves consent.",
+    "Status": "Pending",
+    "paths": [
+      "/"
+    ]
+  },
+  {
+    "ID": "OP-13",
+    "URL": "https://apexhomesupport.com/",
+    "Category": "Content and image context",
+    "Issue": "Dryer Vent Cleaning label describes a lint-trap cleaning example",
+    "Evidence": "The result title is Dryer Vent Cleaning, but the caption says A dryer lint trap clogged with compacted lint and both ALT descriptions identify a lint trap housing. src/content/results.ts:24; media.ts; homepage mainText and images.",
+    "Priority": "Medium",
+    "Recommended Fix": "Confirm the work pictured and use the precise service label and caption. Do not imply whole-vent cleaning when the evidence only documents a lint-trap housing.",
+    "Status": "Pending",
+    "paths": [
+      "/"
+    ]
+  },
+  {
+    "ID": "OP-14",
+    "URL": "https://apexhomesupport.com/",
+    "Category": "Content quality",
+    "Issue": "Offer shorthand is broader than the stated eligibility",
+    "Evidence": "Offer headline says first maintenance service and lists five eligible maintenance services; adjacent large-discount block says Off your first visit. src/components/home/first-time-offer.tsx:26; src/content/offers.ts.",
+    "Priority": "Low",
+    "Recommended Fix": "Keep all offer text consistently limited to the owner-approved eligible maintenance services and terms. Do not expand the offer to general repair visits.",
+    "Status": "Pending",
+    "paths": [
+      "/"
+    ]
+  },
+  {
+    "ID": "OP-15",
+    "URL": "https://apexhomesupport.com/; https://apexhomesupport.com/reviews",
+    "Category": "Trust and image context",
+    "Issue": "Two review photos are identical and do not match their displayed service labels",
+    "Evidence": "Two distinct media filenames ending 17aff1e9-4516-4274-95a8-a3f7e8d1eb07.jpg and 8a881e6c-1441-4b84-a2dc-6ec1616752c9.jpg return identical WebP bytes (SHA-256 beffa029dfda359312c48d15e3e84ce3b316fb9bcb482ab54eb715f5ef173004). Visual inspection shows an outdoor AC condenser; review cards are labeled Appliance Repair. images.json and saved assets.",
+    "Priority": "Medium",
+    "Recommended Fix": "Verify each image?s relationship to its review and the selected service category. Correct misassociation if confirmed, or add accurate context. Duplicate photos do not establish that the reviews are fabricated; do not rewrite customer statements.",
+    "Status": "Pending",
+    "paths": [
+      "/",
+      "/reviews"
+    ]
+  },
+  {
+    "ID": "OP-16",
+    "URL": "https://apexhomesupport.com/reviews",
+    "Category": "Content quality",
+    "Issue": "Review archive has little independent context beyond three short testimonials",
+    "Evidence": "Main text has 63 whitespace-delimited words including names, labels and dates. It contains three testimonials also shown on the homepage, one H1, a short introduction and a Leave a review link; no explanation of Verified Customer appears.",
+    "Priority": "Low",
+    "Recommended Fix": "Explain review moderation and verification accurately, and collect more genuine, consented detail over time. Keep the archive indexable if useful; do not manufacture testimonials or impose a minimum word count.",
+    "Status": "Pending",
+    "paths": [
+      "/reviews"
+    ]
+  },
+  {
+    "ID": "OP-17",
+    "URL": "https://apexhomesupport.com/services",
+    "Category": "Internal linking",
+    "Issue": "Service hub is weakly linked and absent as a navigation destination",
+    "Evidence": "Only /contact links to /services in the 19-page HTML graph. Header Services is a menu button, not an anchor to the hub; footer goes directly to category/detail pages. Mobile Heating and Cooling labels toggle submenus rather than linking to category hubs. site-header.tsx:107-124, 209-223.",
+    "Priority": "Medium",
+    "Recommended Fix": "Add an actual Browse all services link to the shared navigation and useful hub links from relevant pages. Make category overview destinations reachable inside the mobile menu while retaining submenu controls.",
+    "Status": "Pending",
+    "paths": [
+      "/services"
+    ]
+  },
+  {
+    "ID": "OP-18",
+    "URL": "https://apexhomesupport.com/reviews",
+    "Category": "Internal linking and discovery",
+    "Issue": "Reviews has only one inbound source and is omitted from the sitemap",
+    "Evidence": "Only the homepage links to /reviews; there is no shared navigation/footer link. Production sitemap.xml has 18 entries and omits /reviews despite its index, follow and self canonical. pages.json links; sitemap.xml; src/app/sitemap.ts.",
+    "Priority": "Medium",
+    "Recommended Fix": "Add relevant review links from About and service content and a suitable shared navigation location; include /reviews in the sitemap if intentionally indexable. This is a discovery finding, not proof that Google has failed to index it.",
+    "Status": "Pending",
+    "paths": [
+      "/reviews"
+    ]
+  },
+  {
+    "ID": "OP-19",
+    "URL": "https://apexhomesupport.com/services/heating/boiler-repair",
+    "Category": "Internal linking",
+    "Issue": "Boiler page has only one contextual inbound source",
+    "Evidence": "Boiler repair is linked globally but only /services/heating links to it inside main content. Furnace and heating-maintenance related-service lists do not link back to boiler repair, while boiler links to both. pages.json graph; src/content/services.ts.",
+    "Priority": "Medium",
+    "Recommended Fix": "Add relevant contextual boiler links from furnace/heating-maintenance content where useful, keeping distinct equipment scope clear. The page is not orphaned.",
+    "Status": "Pending",
+    "paths": [
+      "/services/heating/boiler-repair"
+    ]
+  },
+  {
+    "ID": "OP-20",
+    "URL": "https://apexhomesupport.com/services/appliance-repair; https://apexhomesupport.com/services/cooling; https://apexhomesupport.com/services/heating; https://apexhomesupport.com/services/cooling/ac-repair; https://apexhomesupport.com/services/cooling/ac-installation; https://apexhomesupport.com/services/cooling/ac-maintenance; https://apexhomesupport.com/services/cooling/ac-replacement; https://apexhomesupport.com/services/heating/furnace-repair; https://apexhomesupport.com/services/heating/heat-pumps; https://apexhomesupport.com/services/heating/heating-maintenance; https://apexhomesupport.com/services/heating/boiler-repair",
+    "Category": "Internal linking",
+    "Issue": "Brand lists on service pages do not link to the full brand directory",
+    "Evidence": "RelevantBrands renders brand names as list items with no /brands anchor. The Brands directory has four inbound source pages overall, but none of the 12 service landing pages links to it within main content. service-sections.tsx RelevantBrands. Water-heater page has no brand list.",
+    "Priority": "Low",
+    "Recommended Fix": "Link to the existing brand directory from relevant service brand sections; add only where a supported-brand relationship exists. Do not create thin brand pages or claim manufacturer authorization.",
+    "Status": "Pending",
+    "paths": [
+      "/services/appliance-repair",
+      "/services/cooling",
+      "/services/heating",
+      "/services/cooling/ac-repair",
+      "/services/cooling/ac-installation",
+      "/services/cooling/ac-maintenance",
+      "/services/cooling/ac-replacement",
+      "/services/heating/furnace-repair",
+      "/services/heating/heat-pumps",
+      "/services/heating/heating-maintenance",
+      "/services/heating/boiler-repair"
+    ]
+  },
+  {
+    "ID": "OP-21",
+    "URL": "https://apexhomesupport.com/",
+    "Category": "Structured data",
+    "Issue": "Homepage lacks WebSite and organization identity markup",
+    "Evidence": "Homepage contains zero application/ld+json blocks. Organization is present only on /about; no WebSite node exists on any of the 19 pages. This is an enhancement gap, not invalid existing schema.",
+    "Priority": "Medium",
+    "Recommended Fix": "After business identity review, describe the site and confirmed organization on the homepage with stable identifiers and visible matching facts. WebSite supports site-name understanding; no ranking or rich-result guarantee is implied.",
+    "Status": "Pending",
+    "paths": [
+      "/"
+    ]
+  },
+  {
+    "ID": "OP-22",
+    "URL": "https://apexhomesupport.com/about; https://apexhomesupport.com/services/appliance-repair; https://apexhomesupport.com/services/cooling; https://apexhomesupport.com/services/heating; https://apexhomesupport.com/services/water-heater-repair; https://apexhomesupport.com/services/cooling/ac-repair; https://apexhomesupport.com/services/cooling/ac-installation; https://apexhomesupport.com/services/cooling/ac-maintenance; https://apexhomesupport.com/services/cooling/ac-replacement; https://apexhomesupport.com/services/heating/furnace-repair; https://apexhomesupport.com/services/heating/heat-pumps; https://apexhomesupport.com/services/heating/heating-maintenance; https://apexhomesupport.com/services/heating/boiler-repair",
+    "Category": "Structured data",
+    "Issue": "Structured coverage loses the county-level restrictions",
+    "Evidence": "All 13 JSON-LD blocks declare areaServed as five state-level AdministrativeArea objects. Visible /service-areas copy says Coverage is not statewide and lists 29 selected counties. The broad schema omits that restriction. organization-structured-data.tsx:12; service-structured-data.tsx:13.",
+    "Priority": "Medium",
+    "Recommended Fix": "Represent the confirmed counties and their parent states consistently, preserving the explicit ZIP confirmation condition in visible content. Do not add Queens or any other place solely because a testimonial mentions it.",
+    "Status": "Pending",
+    "paths": [
+      "/about",
+      "/services/appliance-repair",
+      "/services/cooling",
+      "/services/heating",
+      "/services/water-heater-repair",
+      "/services/cooling/ac-repair",
+      "/services/cooling/ac-installation",
+      "/services/cooling/ac-maintenance",
+      "/services/cooling/ac-replacement",
+      "/services/heating/furnace-repair",
+      "/services/heating/heat-pumps",
+      "/services/heating/heating-maintenance",
+      "/services/heating/boiler-repair"
+    ]
+  },
+  {
+    "ID": "OP-23",
+    "URL": "https://apexhomesupport.com/about; https://apexhomesupport.com/services/appliance-repair; https://apexhomesupport.com/services/cooling; https://apexhomesupport.com/services/heating; https://apexhomesupport.com/services/water-heater-repair; https://apexhomesupport.com/services/cooling/ac-repair; https://apexhomesupport.com/services/cooling/ac-installation; https://apexhomesupport.com/services/cooling/ac-maintenance; https://apexhomesupport.com/services/cooling/ac-replacement; https://apexhomesupport.com/services/heating/furnace-repair; https://apexhomesupport.com/services/heating/heat-pumps; https://apexhomesupport.com/services/heating/heating-maintenance; https://apexhomesupport.com/services/heating/boiler-repair",
+    "Category": "Structured data",
+    "Issue": "Organization identity is minimally connected across schema nodes",
+    "Evidence": "About Organization url points to /about, has no @id, logo or telephone; each Service repeats only provider @type Organization and name. These are valid JSON structures, but weak entity connections. organization-structured-data.tsx:7-13; service-structured-data.tsx:12.",
+    "Priority": "Low",
+    "Recommended Fix": "Use a stable organization identifier and connect service entities to it; include only confirmed public identity fields. Resolve the provider-role ambiguity first. Missing recommended fields are not labeled syntax failures.",
+    "Status": "Pending",
+    "paths": [
+      "/about",
+      "/services/appliance-repair",
+      "/services/cooling",
+      "/services/heating",
+      "/services/water-heater-repair",
+      "/services/cooling/ac-repair",
+      "/services/cooling/ac-installation",
+      "/services/cooling/ac-maintenance",
+      "/services/cooling/ac-replacement",
+      "/services/heating/furnace-repair",
+      "/services/heating/heat-pumps",
+      "/services/heating/heating-maintenance",
+      "/services/heating/boiler-repair"
+    ]
+  },
+  {
+    "ID": "OP-24",
+    "URL": "https://apexhomesupport.com/services/appliance-repair; https://apexhomesupport.com/services/cooling; https://apexhomesupport.com/services/heating; https://apexhomesupport.com/services/water-heater-repair; https://apexhomesupport.com/services/cooling/ac-repair; https://apexhomesupport.com/services/cooling/ac-installation; https://apexhomesupport.com/services/cooling/ac-maintenance; https://apexhomesupport.com/services/cooling/ac-replacement; https://apexhomesupport.com/services/heating/furnace-repair; https://apexhomesupport.com/services/heating/heat-pumps; https://apexhomesupport.com/services/heating/heating-maintenance; https://apexhomesupport.com/services/heating/boiler-repair",
+    "Category": "Structured data",
+    "Issue": "Service hierarchy lacks BreadcrumbList markup",
+    "Evidence": "No BreadcrumbList appears on any audited page. Eight details have a visible All cooling/heating services parent link; category/detail URL paths clearly encode a hierarchy.",
+    "Priority": "Low",
+    "Recommended Fix": "If approved later, provide consistent visible breadcrumbs and matching valid BreadcrumbList on service routes. No schema needs to be injected during this audit.",
+    "Status": "Pending",
+    "paths": [
+      "/services/appliance-repair",
+      "/services/cooling",
+      "/services/heating",
+      "/services/water-heater-repair",
+      "/services/cooling/ac-repair",
+      "/services/cooling/ac-installation",
+      "/services/cooling/ac-maintenance",
+      "/services/cooling/ac-replacement",
+      "/services/heating/furnace-repair",
+      "/services/heating/heat-pumps",
+      "/services/heating/heating-maintenance",
+      "/services/heating/boiler-repair"
+    ]
+  },
+  {
+    "ID": "OP-25",
+    "URL": "https://apexhomesupport.com/services/heating/furnace-repair; https://apexhomesupport.com/services/heating/boiler-repair",
+    "Category": "Image SEO",
+    "Issue": "Primary images show outdoor heat-pump work on furnace and boiler pages",
+    "Evidence": "Furnace uses /images/real/heating-card.png and boiler uses /images/real/heating-2-card.jpg. ALT describes outdoor HVAC/heat-pump equipment. Both downloaded assets were visually inspected and show outdoor refrigerant equipment, not a furnace or boiler.",
+    "Priority": "Medium",
+    "Recommended Fix": "Use approved images of the actual relevant equipment, or label the image clearly as general HVAC illustration. Do not alter truthful ALT to call a heat pump a boiler.",
+    "Status": "Pending",
+    "paths": [
+      "/services/heating/furnace-repair",
+      "/services/heating/boiler-repair"
+    ]
+  },
+  {
+    "ID": "OP-26",
+    "URL": "https://apexhomesupport.com/; https://apexhomesupport.com/reviews",
+    "Category": "Image SEO",
+    "Issue": "Informative review photos have generic ALT",
+    "Evidence": "All four review-photo image occurrences across the two pages use alt=\"Customer review photo\". The inspected image shows an outdoor AC condenser, which the ALT does not convey. src/components/reviews/review-media.tsx:19.",
+    "Priority": "Low",
+    "Recommended Fix": "After verifying image association, use concise factual visual descriptions when the image adds information. If an image is redundant decoration, empty ALT may be appropriate. Never add service-area keywords just for SEO.",
+    "Status": "Pending",
+    "paths": [
+      "/",
+      "/reviews"
+    ]
+  },
+  {
+    "ID": "OP-27",
+    "URL": "https://apexhomesupport.com/; https://apexhomesupport.com/services; https://apexhomesupport.com/services/heating; https://apexhomesupport.com/services/heating/furnace-repair; https://apexhomesupport.com/services/heating/heat-pumps; https://apexhomesupport.com/services/heating/heating-maintenance; https://apexhomesupport.com/services/heating/boiler-repair",
+    "Category": "Image SEO",
+    "Issue": "Some source filenames are vague or numbered",
+    "Evidence": "Observed heating filenames include heating-card.png, heating-2-card.jpg and heating-2-card-wide.jpg. Most other assets already use descriptive filenames, such as ice-maker-replacement-after.jpg.",
+    "Priority": "Low",
+    "Recommended Fix": "Use accurate subject-based filenames when replacing or adding assets. Avoid disruptive renaming solely for marginal SEO value; keep decorative assets and private review-storage identifiers out of keyword campaigns.",
+    "Status": "Pending",
+    "paths": [
+      "/",
+      "/services",
+      "/services/heating",
+      "/services/heating/furnace-repair",
+      "/services/heating/heat-pumps",
+      "/services/heating/heating-maintenance",
+      "/services/heating/boiler-repair"
+    ]
+  },
+  {
+    "ID": "OP-28",
+    "URL": "https://apexhomesupport.com/",
+    "Category": "Mobile and usability",
+    "Issue": "Hero photo selector hit targets are very small",
+    "Evidence": "Production HTML and CSS show buttons with h-1.5, inactive w-1.5, gap-1.5 and --spacing:.25rem: about 6x6 CSS pixels with 6px spacing at a 16px root size; active target is about 24x6. No padding enlarges them. hero-image-carousel.tsx:49; production.css.",
+    "Priority": "Medium",
+    "Recommended Fix": "Increase hit areas and spacing while preserving small visual dots; verify with touch, keyboard and zoom. WCAG target size minimum is 24x24 or a qualifying exception. Browser measurements were unavailable, so this is a source-and-CSS finding.",
+    "Status": "Pending",
+    "paths": [
+      "/"
+    ]
+  },
+  {
+    "ID": "OP-29",
+    "URL": "https://apexhomesupport.com/about; https://apexhomesupport.com/brands; https://apexhomesupport.com/contact; https://apexhomesupport.com/services/appliance-repair; https://apexhomesupport.com/services/cooling; https://apexhomesupport.com/services/heating; https://apexhomesupport.com/services/water-heater-repair; https://apexhomesupport.com/services/cooling/ac-repair; https://apexhomesupport.com/services/cooling/ac-installation; https://apexhomesupport.com/services/cooling/ac-maintenance; https://apexhomesupport.com/services/cooling/ac-replacement; https://apexhomesupport.com/services/heating/furnace-repair; https://apexhomesupport.com/services/heating/heat-pumps; https://apexhomesupport.com/services/heating/heating-maintenance; https://apexhomesupport.com/services/heating/boiler-repair",
+    "Category": "Mobile and usability",
+    "Issue": "Global focus outline has low contrast on dark CTA panels",
+    "Evidence": "Production CSS uses #005098 for :focus-visible outline and #003973 for bg-brand-dark. Calculated contrast is 1.419:1, below 3:1, on controls in those panels. Footer has a separate brighter focus outline and is excluded. globals.css:125 and service-sections.tsx FinalServiceCta; relevant page CTA markup.",
+    "Priority": "Medium",
+    "Recommended Fix": "Provide an appropriate contrasting focus treatment for dark surfaces and verify all keyboard states in a browser. This is a calculated CSS concern, not a claim that a full accessibility audit passed or failed.",
+    "Status": "Pending",
+    "paths": [
+      "/about",
+      "/brands",
+      "/contact",
+      "/services/appliance-repair",
+      "/services/cooling",
+      "/services/heating",
+      "/services/water-heater-repair",
+      "/services/cooling/ac-repair",
+      "/services/cooling/ac-installation",
+      "/services/cooling/ac-maintenance",
+      "/services/cooling/ac-replacement",
+      "/services/heating/furnace-repair",
+      "/services/heating/heat-pumps",
+      "/services/heating/heating-maintenance",
+      "/services/heating/boiler-repair"
+    ]
+  },
+  {
+    "ID": "OP-30",
+    "URL": "https://apexhomesupport.com/services/heating",
+    "Category": "Metadata and content relevance",
+    "Issue": "Heating summary and description omit the existing boiler offering",
+    "Evidence": "Heating meta description: Browse furnace repair, heat-pump, and heating-maintenance services from Apex Home Services. Its shortDescription likewise names only furnace, heat-pump and seasonal heating, while the same page lists Boiler Repair as a fourth child. src/content/services.ts.",
+    "Priority": "Medium",
+    "Recommended Fix": "Include the existing boiler-repair offering naturally in the heating overview and metadata where space allows; keep it distinct from furnace repair.",
+    "Status": "Pending",
+    "paths": [
+      "/services/heating"
+    ]
+  }
+]
