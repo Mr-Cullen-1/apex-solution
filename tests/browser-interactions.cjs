@@ -4,7 +4,7 @@ const path = require('node:path');
 const assert = require('node:assert/strict');
 const { chromium } = require(process.env.QA_PLAYWRIGHT || '../node_modules/.qa-tools/node_modules/playwright-core');
 const base = process.env.QA_BASE_URL || 'http://127.0.0.1:3123';
-const output = `docs/qa/2026-11-16/${process.env.QA_PHASE || 'baseline'}`;
+const output = process.env.QA_OUTPUT || `docs/qa/current/${process.env.QA_PHASE || 'interactions'}`;
 fs.mkdirSync(output, { recursive: true });
 const results = [];
 const viewports = { desktop: { width: 1440, height: 900 }, tablet: { width: 768, height: 1024 }, mobile: { width: 390, height: 844 } };

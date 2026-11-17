@@ -1,0 +1,303 @@
+{
+  "date": "2026-11-17",
+  "base": "http://127.0.0.1:3137",
+  "scope": "Cleaned local production build; intercepted browser submissions, no valid lead sent",
+  "lint": "passed",
+  "typecheck": "passed",
+  "build": {
+    "status": "passed",
+    "staticOutputs": 33,
+    "limitation": "reviews_fetch_failed fallback"
+  },
+  "domainTests": {
+    "passed": 7,
+    "failed": 0
+  },
+  "seoTests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "http": {
+    "base": "http://127.0.0.1:3137",
+    "public_pages": [
+      {
+        "path": "/",
+        "status": 200,
+        "title": "Appliance Repair & HVAC Services | Apex Home Services",
+        "h1_count": 1,
+        "canonical": "http://localhost:3000",
+        "twitter_title": "Appliance Repair & HVAC Services | Apex Home Services"
+      },
+      {
+        "path": "/about",
+        "status": 200,
+        "title": "About | Apex Home Services",
+        "h1_count": 1,
+        "canonical": "http://localhost:3000/about",
+        "twitter_title": "About Apex Home Services"
+      },
+      {
+        "path": "/brands",
+        "status": 200,
+        "title": "Brands We Service | Apex Home Services",
+        "h1_count": 1,
+        "canonical": "http://localhost:3000/brands",
+        "twitter_title": "Brands We Service"
+      },
+      {
+        "path": "/contact",
+        "status": 200,
+        "title": "Contact | Apex Home Services",
+        "h1_count": 1,
+        "canonical": "http://localhost:3000/contact",
+        "twitter_title": "Contact Apex Home Services"
+      },
+      {
+        "path": "/service-areas",
+        "status": 200,
+        "title": "Service Areas | Apex Home Services",
+        "h1_count": 1,
+        "canonical": "http://localhost:3000/service-areas",
+        "twitter_title": "Service Areas"
+      },
+      {
+        "path": "/services",
+        "status": 200,
+        "title": "Home Services | Apex Home Services",
+        "h1_count": 1,
+        "canonical": "http://localhost:3000/services",
+        "twitter_title": "Home Services"
+      },
+      {
+        "path": "/reviews",
+        "status": 200,
+        "title": "Customer Reviews | Apex Home Services",
+        "h1_count": 1,
+        "canonical": "http://localhost:3000/reviews",
+        "twitter_title": "Customer Reviews"
+      },
+      {
+        "path": "/services/appliance-repair",
+        "status": 200,
+        "title": "Appliance Repair Services | Apex Home Services",
+        "h1_count": 1,
+        "canonical": "http://localhost:3000/services/appliance-repair",
+        "twitter_title": "Appliance Repair Services"
+      },
+      {
+        "path": "/services/cooling",
+        "status": 200,
+        "title": "Residential Cooling Services | Apex Home Services",
+        "h1_count": 1,
+        "canonical": "http://localhost:3000/services/cooling",
+        "twitter_title": "Residential Cooling Services"
+      },
+      {
+        "path": "/services/heating",
+        "status": 200,
+        "title": "Residential Heating Services | Apex Home Services",
+        "h1_count": 1,
+        "canonical": "http://localhost:3000/services/heating",
+        "twitter_title": "Residential Heating Services"
+      },
+      {
+        "path": "/services/water-heater-repair",
+        "status": 200,
+        "title": "Water Heater Repair Services | Apex Home Services",
+        "h1_count": 1,
+        "canonical": "http://localhost:3000/services/water-heater-repair",
+        "twitter_title": "Water Heater Repair Services"
+      },
+      {
+        "path": "/services/cooling/ac-repair",
+        "status": 200,
+        "title": "AC Repair Services | Apex Home Services",
+        "h1_count": 1,
+        "canonical": "http://localhost:3000/services/cooling/ac-repair",
+        "twitter_title": "AC Repair Services"
+      },
+      {
+        "path": "/services/cooling/ac-installation",
+        "status": 200,
+        "title": "AC Installation Services | Apex Home Services",
+        "h1_count": 1,
+        "canonical": "http://localhost:3000/services/cooling/ac-installation",
+        "twitter_title": "AC Installation Services"
+      },
+      {
+        "path": "/services/cooling/ac-maintenance",
+        "status": 200,
+        "title": "AC Maintenance Services | Apex Home Services",
+        "h1_count": 1,
+        "canonical": "http://localhost:3000/services/cooling/ac-maintenance",
+        "twitter_title": "AC Maintenance Services"
+      },
+      {
+        "path": "/services/cooling/ac-replacement",
+        "status": 200,
+        "title": "AC Replacement Services | Apex Home Services",
+        "h1_count": 1,
+        "canonical": "http://localhost:3000/services/cooling/ac-replacement",
+        "twitter_title": "AC Replacement Services"
+      },
+      {
+        "path": "/services/heating/furnace-repair",
+        "status": 200,
+        "title": "Furnace Repair Services | Apex Home Services",
+        "h1_count": 1,
+        "canonical": "http://localhost:3000/services/heating/furnace-repair",
+        "twitter_title": "Furnace Repair Services"
+      },
+      {
+        "path": "/services/heating/heat-pumps",
+        "status": 200,
+        "title": "Heat Pump Services | Apex Home Services",
+        "h1_count": 1,
+        "canonical": "http://localhost:3000/services/heating/heat-pumps",
+        "twitter_title": "Heat Pump Services"
+      },
+      {
+        "path": "/services/heating/heating-maintenance",
+        "status": 200,
+        "title": "Heating Maintenance Services | Apex Home Services",
+        "h1_count": 1,
+        "canonical": "http://localhost:3000/services/heating/heating-maintenance",
+        "twitter_title": "Heating Maintenance Services"
+      },
+      {
+        "path": "/services/heating/boiler-repair",
+        "status": 200,
+        "title": "Boiler Repair Services | Apex Home Services",
+        "h1_count": 1,
+        "canonical": "http://localhost:3000/services/heating/boiler-repair",
+        "twitter_title": "Boiler Repair Services"
+      }
+    ],
+    "supporting": [
+      {
+        "path": "/review",
+        "status": 200,
+        "noindex": true
+      },
+      {
+        "path": "/admin/login",
+        "status": 200,
+        "noindex": true
+      },
+      {
+        "path": "/admin/forgot-password",
+        "status": 200,
+        "noindex": true
+      },
+      {
+        "path": "/admin/reset-password",
+        "status": 200,
+        "noindex": true
+      },
+      {
+        "path": "/admin",
+        "redirected_to_login": true
+      },
+      {
+        "path": "/admin/admins",
+        "redirected_to_login": true
+      },
+      {
+        "path": "/admin/campaign-links",
+        "redirected_to_login": true
+      },
+      {
+        "path": "/admin/create-request",
+        "redirected_to_login": true
+      },
+      {
+        "path": "/admin/customers",
+        "redirected_to_login": true
+      },
+      {
+        "path": "/admin/requests",
+        "redirected_to_login": true
+      },
+      {
+        "path": "/admin/reviews",
+        "redirected_to_login": true
+      },
+      {
+        "path": "/book?service=ac-repair",
+        "context_redirect_preserved": true
+      }
+    ],
+    "api_validation": [
+      {
+        "http_status": 400,
+        "status": "invalid",
+        "error_fields": [
+          "form"
+        ]
+      },
+      {
+        "http_status": 400,
+        "status": "invalid",
+        "error_fields": [
+          "phone"
+        ]
+      }
+    ]
+  },
+  "browser": {
+    "browser": "153.0.8010.12",
+    "base": "http://127.0.0.1:3137",
+    "note": "All non-read requests intercepted; synthetic booking responses, not integration validation.",
+    "results": [
+      {
+        "profile": "narrow",
+        "width": 320,
+        "height": 568,
+        "status": "passed",
+        "interceptedSubmissions": 1,
+        "pageErrors": []
+      },
+      {
+        "profile": "mobile",
+        "width": 390,
+        "height": 844,
+        "status": "passed",
+        "interceptedSubmissions": 1,
+        "pageErrors": []
+      },
+      {
+        "profile": "landscape",
+        "width": 568,
+        "height": 320,
+        "status": "passed",
+        "interceptedSubmissions": 1,
+        "pageErrors": []
+      },
+      {
+        "profile": "tablet",
+        "width": 768,
+        "height": 1024,
+        "status": "passed",
+        "interceptedSubmissions": 1,
+        "pageErrors": []
+      },
+      {
+        "profile": "desktop",
+        "width": 1440,
+        "height": 900,
+        "status": "passed",
+        "interceptedSubmissions": 3,
+        "pageErrors": []
+      }
+    ]
+  },
+  "assetReferences": {
+    "checked": 23,
+    "missing": 0
+  },
+  "cleanup": {
+    "manifestFilesRemoved": 380,
+    "additionalFilesRemoved": 3,
+    "manifestBytesRemoved": 91032929
+  }
+}

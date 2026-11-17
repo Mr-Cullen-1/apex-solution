@@ -9,6 +9,7 @@ import { Hero } from "@/components/home/hero-and-selector";
 import { PricingStrip } from "@/components/home/pricing-strip";
 import { TrustStrip } from "@/components/home/trust-strip";
 import { homeMeta } from "@/content/company";
+import { OrganizationStructuredData } from "@/components/public/organization-structured-data";
 
 export const metadata: Metadata = {
   title: { absolute: homeMeta.title },
@@ -28,6 +29,7 @@ export const revalidate = 120;
 export default function Home() {
   return (
     <main id="main-content" className="flex-1 bg-page-bg">
+      <OrganizationStructuredData />
       <Hero />
       <PricingStrip />
       <TrustStrip />

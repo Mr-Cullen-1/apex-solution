@@ -3,8 +3,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { chromium } = require(process.env.QA_PLAYWRIGHT || '../node_modules/.qa-tools/node_modules/playwright-core');
 const base = process.env.QA_BASE_URL || 'http://127.0.0.1:3123';
-const phase = process.env.QA_PHASE || 'baseline';
-const output = path.join('docs/qa/2026-11-16', phase);
+const output = process.env.QA_OUTPUT || path.join('docs/qa/current', process.env.QA_PHASE || 'pages');
 const routes = ['/', '/about', '/brands', '/contact', '/service-areas', '/services', '/reviews',
   ...['appliance-repair', 'cooling', 'heating', 'water-heater-repair'].map(p => '/services/' + p),
   ...['ac-repair', 'ac-installation', 'ac-maintenance', 'ac-replacement'].map(p => '/services/cooling/' + p),
@@ -66,6 +65,23 @@ async function scan(browser, name, viewport) {
           track.scrollTo({ left: 0, behavior: 'instant' });
         }
       });
+      // Scroll snapping can skip the last carousel card when moving by track width.
+      // Bring each rendered image into view and wait for its actual load result.
+      for (const img of await page.locator('img').all()) {
+        if (!await img.isVisible()) continue;
+        await img.scrollIntoViewIfNeeded();
+        await img.evaluate(image => new Promise(resolve => {
+          if (image.complete) return resolve();
+          image.addEventListener('load', resolve, { once: true });
+          image.addEventListener('error', resolve, { once: true });
+          setTimeout(resolve, 5000);
+        }));
+      }
+      await page.evaluate(() => {
+        for (const track of document.querySelectorAll('[role="region"][tabindex="0"]')) {
+          track.scrollTo({ left: 0, behavior: 'instant' });
+        }
+      });
       await page.waitForFunction(() => [...document.images].every(i => i.complete), null, { timeout: 12000 }).catch(() => {});
       await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
       await page.waitForFunction(() => window.scrollY === 0);
@@ -95,7 +111,7 @@ async function scan(browser, name, viewport) {
       });
       // Capture before axe, and assert scroll origin so fixed UI is represented accurately.
       await page.screenshot({ path: row.screenshot, fullPage: true, type: 'jpeg', quality: 78, style: 'nextjs-portal { visibility: hidden; }' });
-      await page.addScriptTag({ path: require.resolve('axe-core') });
+      await page.addScriptTag({ path: process.env.QA_AXE || require.resolve('axe-core') });
       row.accessibility = await page.evaluate(async () => {
         const result = await window.axe.run(document, { runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21aa'] } });
         return { violations: result.violations.map(v => ({ id: v.id, impact: v.impact, description: v.description, nodes: v.nodes.map(n => ({ target: n.target, summary: n.failureSummary, html: n.html })) })), incomplete: result.incomplete.map(v => ({ id: v.id, nodes: v.nodes.length })) };

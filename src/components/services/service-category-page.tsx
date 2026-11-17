@@ -8,7 +8,8 @@ export function ServiceCategoryPage({ category }: { category: ServiceCategory })
   return (
     <main id="main-content" className="flex-1 bg-page-bg">
       <ServiceStructuredData name={`${category.name} Services`} description={category.description} path={category.href} />
-      <ServiceHero eyebrow="Apex service category" title={category.name} summary={category.description} mediaId={category.mediaId} anchorLabel="Browse service options" categoryId={category.id} />
+      <ServiceHero eyebrow="Apex service category" title={category.name} summary={category.description} mediaId={category.mediaId} anchorLabel="Browse service options" categoryId={category.id}
+        breadcrumbs={[{ name: "Home", href: "/" }, { name: "Services", href: "/services" }, { name: category.name, href: category.href }]} />
       <CompactOffer categoryId={category.id} />
       <section id="service-details" className="bg-page-bg section-y-bottom" aria-labelledby="category-services-heading">
         <Container className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:gap-20">
@@ -20,7 +21,7 @@ export function ServiceCategoryPage({ category }: { category: ServiceCategory })
       <ServiceProcess />
       <RelevantBrands groupIds={category.brandGroupIds} />
       <ServiceRegion />
-      <ServiceFaqs items={category.faqs} />
+      <ServiceFaqs items={category.faqs} serviceName={category.name} />
       <FinalServiceCta title={`Let’s talk about your ${category.name.toLowerCase()} needs.`} categoryId={category.id} />
     </main>
   );

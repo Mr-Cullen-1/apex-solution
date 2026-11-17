@@ -1,0 +1,117 @@
+{
+  "note": "Local synthetic measurements; small sample with variable machine load. Before desktop home had one unavailable observation. No production or field performance conclusion.",
+  "results": [
+    {
+      "stage": "before",
+      "profile": "desktop",
+      "url": "/",
+      "lcpMedian": 468,
+      "lcpRange": [
+        468,
+        468
+      ],
+      "validSamples": 2,
+      "totalSamples": 3,
+      "clsMax": 0,
+      "interactionMax": 560
+    },
+    {
+      "stage": "before",
+      "profile": "desktop",
+      "url": "/services/cooling/ac-repair",
+      "lcpMedian": 308,
+      "lcpRange": [
+        284,
+        472
+      ],
+      "validSamples": 3,
+      "totalSamples": 3,
+      "clsMax": 0,
+      "interactionMax": 208
+    },
+    {
+      "stage": "before",
+      "profile": "mobile-throttled",
+      "url": "/",
+      "lcpMedian": 3148,
+      "lcpRange": [
+        3140,
+        3764
+      ],
+      "validSamples": 3,
+      "totalSamples": 3,
+      "clsMax": 0,
+      "interactionMax": 416
+    },
+    {
+      "stage": "before",
+      "profile": "mobile-throttled",
+      "url": "/services/cooling/ac-repair",
+      "lcpMedian": 2744,
+      "lcpRange": [
+        2700,
+        2768
+      ],
+      "validSamples": 3,
+      "totalSamples": 3,
+      "clsMax": 0,
+      "interactionMax": 272
+    },
+    {
+      "stage": "after",
+      "profile": "desktop",
+      "url": "/",
+      "lcpMedian": 464,
+      "lcpRange": [
+        372,
+        2224
+      ],
+      "validSamples": 3,
+      "totalSamples": 3,
+      "clsMax": 0,
+      "interactionMax": 408
+    },
+    {
+      "stage": "after",
+      "profile": "desktop",
+      "url": "/services/cooling/ac-repair",
+      "lcpMedian": 324,
+      "lcpRange": [
+        260,
+        344
+      ],
+      "validSamples": 3,
+      "totalSamples": 3,
+      "clsMax": 0,
+      "interactionMax": 256
+    },
+    {
+      "stage": "after",
+      "profile": "mobile-throttled",
+      "url": "/",
+      "lcpMedian": 3308,
+      "lcpRange": [
+        2988,
+        3336
+      ],
+      "validSamples": 3,
+      "totalSamples": 3,
+      "clsMax": 0,
+      "interactionMax": 304
+    },
+    {
+      "stage": "after",
+      "profile": "mobile-throttled",
+      "url": "/services/cooling/ac-repair",
+      "lcpMedian": 2688,
+      "lcpRange": [
+        2652,
+        2740
+      ],
+      "validSamples": 3,
+      "totalSamples": 3,
+      "clsMax": 0,
+      "interactionMax": 328
+    }
+  ]
+}

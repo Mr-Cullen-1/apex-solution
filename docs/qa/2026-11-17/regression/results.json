@@ -1,0 +1,47 @@
+{
+  "browser": "153.0.8010.12",
+  "base": "http://127.0.0.1:3127",
+  "note": "All non-read requests intercepted; synthetic booking responses, not integration validation.",
+  "results": [
+    {
+      "profile": "narrow",
+      "width": 320,
+      "height": 568,
+      "status": "passed",
+      "interceptedSubmissions": 1,
+      "pageErrors": []
+    },
+    {
+      "profile": "mobile",
+      "width": 390,
+      "height": 844,
+      "status": "passed",
+      "interceptedSubmissions": 1,
+      "pageErrors": []
+    },
+    {
+      "profile": "landscape",
+      "width": 568,
+      "height": 320,
+      "status": "passed",
+      "interceptedSubmissions": 1,
+      "pageErrors": []
+    },
+    {
+      "profile": "tablet",
+      "width": 768,
+      "height": 1024,
+      "status": "passed",
+      "interceptedSubmissions": 1,
+      "pageErrors": []
+    },
+    {
+      "profile": "desktop",
+      "width": 1440,
+      "height": 900,
+      "status": "passed",
+      "interceptedSubmissions": 3,
+      "pageErrors": []
+    }
+  ]
+}

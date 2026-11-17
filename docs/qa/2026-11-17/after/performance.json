@@ -1,0 +1,525 @@
+{
+  "browser": "153.0.8010.12",
+  "note": "Local production build. Synthetic timings; observed interaction maximum is a lab diagnostic, not field INP. New browser context per sample. Throttled profile: 4x CPU, 1.6 Mbps down, 0.75 Mbps up, 150ms latency.",
+  "samples": [
+    {
+      "profile": "desktop",
+      "url": "/",
+      "sample": 1,
+      "lcp": 2224,
+      "lcpElement": "H1:Let’s get your home back to comfortable.",
+      "cls": 0,
+      "longTasks": [
+        72,
+        107,
+        50
+      ],
+      "interactions": {
+        "8193": 376,
+        "8200": 408,
+        "8207": 56
+      },
+      "resourceBytes": 440274,
+      "resources": 53,
+      "navigation": [
+        {
+          "ttfb": 379.19999998807907,
+          "domContentLoaded": 468.19999998807907,
+          "load": 699.5999999642372
+        }
+      ],
+      "cameraFrames": [
+        16.90000000000009,
+        16.5,
+        17.09999999999991,
+        16.199999999999818,
+        16.59999999999991,
+        16.700000000000273,
+        16.59999999999991,
+        16.699999999999818,
+        16.600000000000364,
+        16.699999999999818,
+        16.699999999999818,
+        16.700000000000273,
+        16.59999999999991,
+        16.800000000000182,
+        16.59999999999991,
+        16.799999999999727,
+        16.600000000000364,
+        16.699999999999818,
+        16.600000000000364,
+        16.599999999999454,
+        16.699999999999818,
+        16.700000000000728,
+        16.699999999999818,
+        16.599999999999454,
+        16.700000000000728,
+        16.599999999999454,
+        16.699999999999818,
+        16.600000000000364,
+        16.699999999999818,
+        16.699999999999818,
+        16.800000000000182,
+        16.600000000000364,
+        16.5,
+        16.699999999999818,
+        16.699999999999818,
+        16.600000000000364,
+        17.099999999999454,
+        16.800000000000182,
+        16.5,
+        16.400000000000546,
+        16.599999999999454,
+        17,
+        16.400000000000546,
+        16.899999999999636,
+        16.399999999999636,
+        16.700000000000728,
+        16.699999999999818,
+        16.899999999999636,
+        16.400000000000546,
+        16.899999999999636,
+        16.600000000000364,
+        16.5,
+        16.899999999999636,
+        16.800000000000182
+      ],
+      "observedInteractionMax": 408
+    },
+    {
+      "profile": "desktop",
+      "url": "/",
+      "sample": 2,
+      "lcp": 464,
+      "lcpElement": "H1:Let’s get your home back to comfortable.",
+      "cls": 0,
+      "longTasks": [
+        64,
+        126
+      ],
+      "interactions": {
+        "4441": 104,
+        "4448": 96,
+        "4455": 40
+      },
+      "resourceBytes": 440274,
+      "resources": 53,
+      "navigation": [
+        {
+          "ttfb": 30.599999964237213,
+          "domContentLoaded": 122.39999997615814,
+          "load": 504.80000001192093
+        }
+      ],
+      "cameraFrames": [
+        16.602000000000317,
+        16.699999999999818,
+        16.59999999999991,
+        16.700000000000273,
+        16.59999999999991,
+        16.699999999999818,
+        16.700000000000273,
+        16.699999999999818,
+        16.59999999999991,
+        16.700000000000273,
+        16.799999999999727,
+        16.5,
+        16.800000000000182,
+        16.59999999999991,
+        18.200000000000273,
+        15.199999999999818,
+        16.59999999999991,
+        16.700000000000273,
+        16.699999999999818,
+        16.59999999999991,
+        16.90000000000009,
+        16.40000000000009,
+        16.90000000000009,
+        16.699999999999818,
+        16.40000000000009,
+        16.90000000000009,
+        16.5,
+        16.59999999999991,
+        17,
+        16.5,
+        16.59999999999991,
+        16.59999999999991,
+        16.700000000000273,
+        16.699999999999818,
+        16.59999999999991,
+        16.59999999999991,
+        16.800000000000182,
+        16.59999999999991,
+        16.700000000000273,
+        16.699999999999818,
+        16.59999999999991,
+        16.700000000000273,
+        16.59999999999991,
+        16.699999999999818,
+        16.700000000000273,
+        16.59999999999991,
+        16.699999999999818,
+        16.700000000000273,
+        16.899999999999636,
+        16.600000000000364,
+        16.59999999999991,
+        16.699999999999818,
+        16.5,
+        16.799999999999727
+      ],
+      "observedInteractionMax": 104
+    },
+    {
+      "profile": "desktop",
+      "url": "/",
+      "sample": 3,
+      "lcp": 372,
+      "lcpElement": "H1:Let’s get your home back to comfortable.",
+      "cls": 0,
+      "longTasks": [
+        105
+      ],
+      "interactions": {
+        "6104": 104,
+        "6111": 56,
+        "6118": 56
+      },
+      "resourceBytes": 440274,
+      "resources": 53,
+      "navigation": [
+        {
+          "ttfb": 21.700000047683716,
+          "domContentLoaded": 100.60000002384186,
+          "load": 394.10000002384186
+        }
+      ],
+      "cameraFrames": [
+        16.5,
+        16.700000000000273,
+        16.699999999999818,
+        16.59999999999991,
+        17.09999999999991,
+        16.600000000000364,
+        16.399999999999636,
+        16.700000000000273,
+        16.59999999999991,
+        16.699999999999818,
+        16.90000000000009,
+        16.40000000000009,
+        16.699999999999818,
+        16.700000000000273,
+        16.5,
+        16.799999999999727,
+        16.600000000000364,
+        16.799999999999727,
+        16.5,
+        16.800000000000182,
+        16.59999999999991,
+        16.699999999999818,
+        16.600000000000364,
+        16.799999999999727,
+        16.59999999999991,
+        16.700000000000273,
+        16.59999999999991,
+        16.800000000000182,
+        16.59999999999991,
+        16.59999999999991,
+        16.699999999999818,
+        16.600000000000364,
+        16.59999999999991,
+        16.699999999999818,
+        16.700000000000273,
+        16.699999999999818,
+        16.699999999999818,
+        16.90000000000009,
+        16.40000000000009,
+        16.800000000000182,
+        16.59999999999991,
+        16.59999999999991,
+        17.09999999999991,
+        16.200000000000273,
+        16.799999999999727,
+        16.59999999999991,
+        16.5,
+        16.800000000000182,
+        16.699999999999818,
+        16.600000000000364,
+        16.799999999999727,
+        16.59999999999991,
+        16.800000000000182,
+        16.5,
+        16.699999999999818
+      ],
+      "observedInteractionMax": 104
+    },
+    {
+      "profile": "desktop",
+      "url": "/services/cooling/ac-repair",
+      "sample": 1,
+      "lcp": 324,
+      "lcpElement": "IMG:Technician on a ladder using a multimeter to service an outdoor AC condenser unit",
+      "cls": 0,
+      "longTasks": [
+        93
+      ],
+      "interactions": {
+        "971": 256,
+        "978": 152
+      },
+      "resourceBytes": 422087,
+      "resources": 45,
+      "navigation": [
+        {
+          "ttfb": 26.399999976158142,
+          "domContentLoaded": 322.39999997615814,
+          "load": 322.89999997615814
+        }
+      ],
+      "cameraFrames": null,
+      "observedInteractionMax": 256
+    },
+    {
+      "profile": "desktop",
+      "url": "/services/cooling/ac-repair",
+      "sample": 2,
+      "lcp": 344,
+      "lcpElement": "IMG:Technician on a ladder using a multimeter to service an outdoor AC condenser unit",
+      "cls": 0,
+      "longTasks": [
+        51,
+        144
+      ],
+      "interactions": {
+        "3662": 104,
+        "3669": 48
+      },
+      "resourceBytes": 422752,
+      "resources": 46,
+      "navigation": [
+        {
+          "ttfb": 32.89999997615814,
+          "domContentLoaded": 124.60000002384186,
+          "load": 458.89999997615814
+        }
+      ],
+      "cameraFrames": null,
+      "observedInteractionMax": 104
+    },
+    {
+      "profile": "desktop",
+      "url": "/services/cooling/ac-repair",
+      "sample": 3,
+      "lcp": 260,
+      "lcpElement": "IMG:Technician on a ladder using a multimeter to service an outdoor AC condenser unit",
+      "cls": 0,
+      "longTasks": [
+        105
+      ],
+      "interactions": {
+        "1390": 120,
+        "1397": 64
+      },
+      "resourceBytes": 422752,
+      "resources": 46,
+      "navigation": [
+        {
+          "ttfb": 24.700000047683716,
+          "domContentLoaded": 116.70000004768372,
+          "load": 345.5
+        }
+      ],
+      "cameraFrames": null,
+      "observedInteractionMax": 120
+    },
+    {
+      "profile": "mobile-throttled",
+      "url": "/",
+      "sample": 1,
+      "lcp": 3336,
+      "lcpElement": "H1:Let’s get your home back to comfortable.",
+      "cls": 0,
+      "longTasks": [
+        279,
+        632,
+        74,
+        53,
+        56,
+        224,
+        59,
+        138
+      ],
+      "interactions": {
+        "9505": 304,
+        "9512": 152
+      },
+      "resourceBytes": 329615,
+      "resources": 32,
+      "navigation": [
+        {
+          "ttfb": 22.799999952316284,
+          "domContentLoaded": 885.3999999761581,
+          "load": 4592.899999976158
+        }
+      ],
+      "cameraFrames": null,
+      "observedInteractionMax": 304
+    },
+    {
+      "profile": "mobile-throttled",
+      "url": "/",
+      "sample": 2,
+      "lcp": 3308,
+      "lcpElement": "H1:Let’s get your home back to comfortable.",
+      "cls": 0,
+      "longTasks": [
+        324,
+        625,
+        64,
+        52,
+        56,
+        220,
+        58,
+        105
+      ],
+      "interactions": {
+        "3036": 280,
+        "3043": 128
+      },
+      "resourceBytes": 329615,
+      "resources": 32,
+      "navigation": [
+        {
+          "ttfb": 19.099999964237213,
+          "domContentLoaded": 915.8999999761581,
+          "load": 4610.399999976158
+        }
+      ],
+      "cameraFrames": null,
+      "observedInteractionMax": 280
+    },
+    {
+      "profile": "mobile-throttled",
+      "url": "/",
+      "sample": 3,
+      "lcp": 2988,
+      "lcpElement": "H1:Let’s get your home back to comfortable.",
+      "cls": 0,
+      "longTasks": [
+        261,
+        600,
+        71,
+        245,
+        154
+      ],
+      "interactions": {
+        "1858": 304,
+        "1865": 168
+      },
+      "resourceBytes": 329615,
+      "resources": 32,
+      "navigation": [
+        {
+          "ttfb": 46.09999996423721,
+          "domContentLoaded": 932.3000000119209,
+          "load": 4249.099999964237
+        }
+      ],
+      "cameraFrames": null,
+      "observedInteractionMax": 304
+    },
+    {
+      "profile": "mobile-throttled",
+      "url": "/services/cooling/ac-repair",
+      "sample": 1,
+      "lcp": 2688,
+      "lcpElement": "IMG:Technician on a ladder using a multimeter to service an outdoor AC condenser unit",
+      "cls": 0,
+      "longTasks": [
+        157,
+        455,
+        66,
+        181,
+        95
+      ],
+      "interactions": {
+        "8628": 232,
+        "8635": 112
+      },
+      "resourceBytes": 310729,
+      "resources": 24,
+      "navigation": [
+        {
+          "ttfb": 30.700000047683716,
+          "domContentLoaded": 902,
+          "load": 3729
+        }
+      ],
+      "cameraFrames": null,
+      "observedInteractionMax": 232
+    },
+    {
+      "profile": "mobile-throttled",
+      "url": "/services/cooling/ac-repair",
+      "sample": 2,
+      "lcp": 2740,
+      "lcpElement": "IMG:Technician on a ladder using a multimeter to service an outdoor AC condenser unit",
+      "cls": 0,
+      "longTasks": [
+        207,
+        621,
+        67,
+        58,
+        267,
+        53,
+        98
+      ],
+      "interactions": {
+        "3709": 328,
+        "3716": 120
+      },
+      "resourceBytes": 310729,
+      "resources": 24,
+      "navigation": [
+        {
+          "ttfb": 16.80000001192093,
+          "domContentLoaded": 927.3000000119209,
+          "load": 3930.100000023842
+        }
+      ],
+      "cameraFrames": null,
+      "observedInteractionMax": 328
+    },
+    {
+      "profile": "mobile-throttled",
+      "url": "/services/cooling/ac-repair",
+      "sample": 3,
+      "lcp": 2652,
+      "lcpElement": "IMG:Technician on a ladder using a multimeter to service an outdoor AC condenser unit",
+      "cls": 0,
+      "longTasks": [
+        199,
+        628,
+        78,
+        60,
+        232,
+        49,
+        113
+      ],
+      "interactions": {
+        "597": 272,
+        "604": 120
+      },
+      "resourceBytes": 310729,
+      "resources": 24,
+      "navigation": [
+        {
+          "ttfb": 20.899999976158142,
+          "domContentLoaded": 910.5999999642372,
+          "load": 3875
+        }
+      ],
+      "cameraFrames": null,
+      "observedInteractionMax": 272
+    }
+  ]
+}

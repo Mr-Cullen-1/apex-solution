@@ -1,0 +1,6943 @@
+{
+  "auditDate": "2026-11-17",
+  "timezone": "Asia/Tashkent",
+  "scope": "19 sitemap URLs plus 1 internally linked noindex review form; public HTML only. Main text may include hidden tabs and repeated responsive content. Image query tokens omitted.",
+  "pages": [
+    {
+      "url": "https://apexhomesupport.com/",
+      "status": 200,
+      "title": "Apex Home Services | Premium Home Services",
+      "titleLength": 42,
+      "description": "Reliable heating, cooling, appliance, and water-heater service from local Northeast professionals.",
+      "descriptionLength": 98,
+      "canonical": "https://apexhomesupport.com",
+      "robots": "index, follow",
+      "lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Let’s get your home back to comfortable."
+        },
+        {
+          "level": 2,
+          "text": "What can we help with?"
+        },
+        {
+          "level": 2,
+          "text": "The systems your day depends on."
+        },
+        {
+          "level": 3,
+          "text": "Appliance Repair"
+        },
+        {
+          "level": 3,
+          "text": "Cooling"
+        },
+        {
+          "level": 3,
+          "text": "Heating"
+        },
+        {
+          "level": 3,
+          "text": "Water Heater Repair"
+        },
+        {
+          "level": 2,
+          "text": "What customers say"
+        },
+        {
+          "level": 2,
+          "text": "Save 10% on your first maintenance service."
+        },
+        {
+          "level": 2,
+          "text": "See the difference Apex makes."
+        },
+        {
+          "level": 3,
+          "text": "Outdoor AC Unit Cleaning"
+        },
+        {
+          "level": 3,
+          "text": "Dryer Vent Cleaning"
+        },
+        {
+          "level": 3,
+          "text": "Ice Maker Replacement"
+        },
+        {
+          "level": 3,
+          "text": "Refrigerator Control Board Replacement"
+        },
+        {
+          "level": 2,
+          "text": "Familiar systems. Careful service."
+        },
+        {
+          "level": 3,
+          "text": "Appliances"
+        },
+        {
+          "level": 3,
+          "text": "Premium Appliances"
+        },
+        {
+          "level": 3,
+          "text": "HVAC"
+        },
+        {
+          "level": 2,
+          "text": "Local professionals, across five states."
+        },
+        {
+          "level": 3,
+          "text": "New York"
+        },
+        {
+          "level": 3,
+          "text": "New York"
+        },
+        {
+          "level": 3,
+          "text": "New Jersey"
+        },
+        {
+          "level": 3,
+          "text": "Connecticut"
+        },
+        {
+          "level": 3,
+          "text": "Massachusetts"
+        },
+        {
+          "level": 3,
+          "text": "Rhode Island"
+        },
+        {
+          "level": 2,
+          "text": "A clearer way forward."
+        },
+        {
+          "level": 3,
+          "text": "How do I know which service to book? +"
+        },
+        {
+          "level": 3,
+          "text": "Does Apex Home Services serve my area? +"
+        },
+        {
+          "level": 3,
+          "text": "What should I include when I book? +"
+        }
+      ],
+      "approximateMainWordCount": 819,
+      "jsonld": [],
+      "links": [
+        {
+          "href": "#main-content",
+          "text": "Skip to content"
+        },
+        {
+          "href": "/",
+          "text": "Apex Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "Service Areas"
+        },
+        {
+          "href": "/about",
+          "text": "About"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact us"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "/services",
+          "text": "All services"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Appliance Repair"
+        },
+        {
+          "href": "/services/cooling",
+          "text": "Cooling"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating",
+          "text": "Heating"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/service-areas",
+          "text": "Check your service area"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Service details"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Talk to Apex"
+        },
+        {
+          "href": "/service-areas",
+          "text": "Service areas"
+        },
+        {
+          "href": "/brands",
+          "text": "Brands we service"
+        },
+        {
+          "href": "/reviews",
+          "text": "Customer reviews"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Appliance Repair Professional diagnostic service for household appliances. View service"
+        },
+        {
+          "href": "/services/cooling",
+          "text": "Cooling Cooling diagnostics, repair, installation, maintenance, and replacement. View service"
+        },
+        {
+          "href": "/services/heating",
+          "text": "Heating Furnace, heat-pump, and seasonal heating service. View service"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair Water-heater diagnostics and repair service from local professionals. View service"
+        },
+        {
+          "href": "/review",
+          "text": "Leave a review"
+        },
+        {
+          "href": "/reviews",
+          "text": "Read all reviews"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "Outdoor AC unit cleaning"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Furnace maintenance"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Refrigerator maintenance"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Dryer maintenance"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Washer maintenance"
+        },
+        {
+          "href": "/brands",
+          "text": "Browse all brands"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact us"
+        },
+        {
+          "href": "/",
+          "text": "Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "States served NY · NJ · CT · MA · RI"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Refrigerators, Freezers & Ice Makers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Washers & Dryers (Gas & Electric)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Ovens, Ranges & Cooktops"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Microwaves (Built-in & Over-the-Range)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Dishwashers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Wine & Beverage Coolers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Range Hoods & Warming Drawers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Refrigerators"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Freezers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Ice Machines"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Pizza Ovens & Griddles"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Frozen Beverage Dispensers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Food Truck Refrigeration"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call"
+        }
+      ],
+      "images": [
+        {
+          "src": "/brand/apex-mark-colored.png",
+          "alt": "Apex Home Services mark",
+          "width": "36",
+          "height": "36"
+        },
+        {
+          "src": "/images/real/appliance-oven-card-wide.jpg",
+          "alt": "Technician using a diagnostic tool to inspect an open range oven",
+          "loading": "lazy"
+        },
+        {
+          "src": "/images/real/ac-cleaning-card.jpg",
+          "alt": "Technician on a ladder using a multimeter to service an outdoor AC condenser unit",
+          "loading": "lazy"
+        },
+        {
+          "src": "/images/real/heating-2-card-wide.jpg",
+          "alt": "Apex technician connecting refrigerant gauges to an outdoor heat pump unit, head and shoulders fully visible",
+          "loading": "lazy"
+        },
+        {
+          "src": "/images/real/water-heating-wide.jpg",
+          "alt": "Technician inspecting the label on a residential gas water heater",
+          "loading": "lazy"
+        },
+        {
+          "src": "https://tadwrcbhisqswixwuqze.supabase.co/storage/v1/object/sign/review-media/reviews/17aff1e9-4516-4274-95a8-a3f7e8d1eb07.jpg",
+          "alt": "Customer review photo",
+          "loading": "lazy"
+        },
+        {
+          "src": "https://tadwrcbhisqswixwuqze.supabase.co/storage/v1/object/sign/review-media/reviews/8a881e6c-1441-4b84-a2dc-6ec1616752c9.jpg",
+          "alt": "Customer review photo",
+          "loading": "lazy"
+        },
+        {
+          "src": "/images/real/before-hvac-maintenance.jpg",
+          "alt": "A dusty, dirt-caked outdoor AC condenser coil before cleaning",
+          "loading": "lazy"
+        },
+        {
+          "src": "/images/real/after-hvac-maintenance.jpg",
+          "alt": "The outdoor AC condenser coil visibly cleaner after maintenance",
+          "loading": "lazy"
+        },
+        {
+          "src": "/images/real/before-appliances.jpg",
+          "alt": "A dryer lint trap housing heavily clogged with compacted lint before cleaning",
+          "loading": "lazy"
+        },
+        {
+          "src": "/images/real/after-appliances.jpg",
+          "alt": "The same dryer lint trap housing fully cleaned after service",
+          "loading": "lazy"
+        },
+        {
+          "src": "/images/real/ice-maker-replacement-before.jpg",
+          "alt": "An ice maker assembly removed from a refrigerator freezer door, held in hand",
+          "loading": "lazy"
+        },
+        {
+          "src": "/images/real/ice-maker-replacement-after.jpg",
+          "alt": "The new ice maker assembly installed in the refrigerator freezer door",
+          "loading": "lazy"
+        },
+        {
+          "src": "/images/real/refrigerator-control-board-before.jpg",
+          "alt": "A replacement refrigerator control board held in hand before installation",
+          "loading": "lazy"
+        },
+        {
+          "src": "/images/real/refrigerator-control-board-after.jpg",
+          "alt": "The new refrigerator control board wired and installed in place",
+          "loading": "lazy"
+        },
+        {
+          "src": "/brand/apex-mark-white.png",
+          "alt": "",
+          "width": "40",
+          "height": "40",
+          "loading": "lazy"
+        }
+      ],
+      "htmlBytes": 178876
+    },
+    {
+      "url": "https://apexhomesupport.com/about",
+      "status": 200,
+      "title": "About | Apex Home Services",
+      "titleLength": 26,
+      "description": "Learn how Apex Home Services connects homeowners with experienced independent local service professionals through clear communication and thoughtful next steps.",
+      "descriptionLength": 160,
+      "canonical": "https://apexhomesupport.com/about",
+      "robots": "index, follow",
+      "lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Reliable home service starts with clarity."
+        },
+        {
+          "level": 2,
+          "text": "Make the next home-service decision easier to understand."
+        },
+        {
+          "level": 2,
+          "text": "Precision in the work. Respect in the experience."
+        },
+        {
+          "level": 3,
+          "text": "Precision"
+        },
+        {
+          "level": 3,
+          "text": "Transparency"
+        },
+        {
+          "level": 3,
+          "text": "Craftsmanship"
+        },
+        {
+          "level": 2,
+          "text": "Help for the systems behind daily life."
+        },
+        {
+          "level": 3,
+          "text": "Appliance Repair"
+        },
+        {
+          "level": 3,
+          "text": "Cooling"
+        },
+        {
+          "level": 3,
+          "text": "Heating"
+        },
+        {
+          "level": 3,
+          "text": "Water Heater Repair"
+        },
+        {
+          "level": 2,
+          "text": "Select counties across five states."
+        },
+        {
+          "level": 2,
+          "text": "Brands we service."
+        },
+        {
+          "level": 2,
+          "text": "Start with what your home needs."
+        }
+      ],
+      "approximateMainWordCount": 304,
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Apex Home Services",
+          "description": "Reliable heating, cooling, water-heater, and appliance service from local professionals across New York, New Jersey, Connecticut, Massachusetts, and Rhode Island.",
+          "slogan": "Reliable Home Services. Local Professionals.",
+          "areaServed": [
+            {
+              "@type": "AdministrativeArea",
+              "name": "New York"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "New Jersey"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Connecticut"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Massachusetts"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Rhode Island"
+            }
+          ],
+          "url": "https://apexhomesupport.com/about"
+        }
+      ],
+      "links": [
+        {
+          "href": "#main-content",
+          "text": "Skip to content"
+        },
+        {
+          "href": "/",
+          "text": "Apex Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "Service Areas"
+        },
+        {
+          "href": "/about",
+          "text": "About"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact us"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "/services",
+          "text": "All services"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Appliance Repair"
+        },
+        {
+          "href": "/services/cooling",
+          "text": "Cooling"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating",
+          "text": "Heating"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "01 Appliance Repair Professional diagnostic service for household appliances."
+        },
+        {
+          "href": "/services/cooling",
+          "text": "02 Cooling Cooling diagnostics, repair, installation, maintenance, and replacement."
+        },
+        {
+          "href": "/services/heating",
+          "text": "03 Heating Furnace, heat-pump, and seasonal heating service."
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "04 Water Heater Repair Water-heater diagnostics and repair service from local professionals."
+        },
+        {
+          "href": "/service-areas",
+          "text": "Explore service areas"
+        },
+        {
+          "href": "/brands",
+          "text": "Browse brands we service"
+        },
+        {
+          "href": "/",
+          "text": "Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "States served NY · NJ · CT · MA · RI"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Refrigerators, Freezers & Ice Makers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Washers & Dryers (Gas & Electric)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Ovens, Ranges & Cooktops"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Microwaves (Built-in & Over-the-Range)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Dishwashers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Wine & Beverage Coolers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Range Hoods & Warming Drawers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Refrigerators"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Freezers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Ice Machines"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Pizza Ovens & Griddles"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Frozen Beverage Dispensers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Food Truck Refrigeration"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call"
+        }
+      ],
+      "images": [
+        {
+          "src": "/brand/apex-mark-colored.png",
+          "alt": "Apex Home Services mark",
+          "width": "36",
+          "height": "36"
+        },
+        {
+          "src": "/brand/apex-mark-white.png",
+          "alt": "",
+          "width": "40",
+          "height": "40",
+          "loading": "lazy"
+        }
+      ],
+      "htmlBytes": 64093
+    },
+    {
+      "url": "https://apexhomesupport.com/brands",
+      "status": 200,
+      "title": "Brands We Service | Apex Home Services",
+      "titleLength": 38,
+      "description": "Browse appliance, premium-appliance, and HVAC brands serviced by Apex Home Services.",
+      "descriptionLength": 84,
+      "canonical": "https://apexhomesupport.com/brands",
+      "robots": "index, follow",
+      "lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Familiar equipment. Thoughtful service."
+        },
+        {
+          "level": 2,
+          "text": "Find the category behind your equipment."
+        },
+        {
+          "level": 2,
+          "text": "Appliances"
+        },
+        {
+          "level": 2,
+          "text": "Premium Appliances"
+        },
+        {
+          "level": 2,
+          "text": "HVAC"
+        },
+        {
+          "level": 2,
+          "text": "Don’t see your brand?"
+        }
+      ],
+      "approximateMainWordCount": 202,
+      "jsonld": [],
+      "links": [
+        {
+          "href": "#main-content",
+          "text": "Skip to content"
+        },
+        {
+          "href": "/",
+          "text": "Apex Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "Service Areas"
+        },
+        {
+          "href": "/about",
+          "text": "About"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact us"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "/services",
+          "text": "All services"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Appliance Repair"
+        },
+        {
+          "href": "/services/cooling",
+          "text": "Cooling"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating",
+          "text": "Heating"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Appliance Repair"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Appliance Repair"
+        },
+        {
+          "href": "/services/cooling",
+          "text": "Cooling"
+        },
+        {
+          "href": "/services/heating",
+          "text": "Heating"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact us"
+        },
+        {
+          "href": "/",
+          "text": "Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "States served NY · NJ · CT · MA · RI"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Refrigerators, Freezers & Ice Makers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Washers & Dryers (Gas & Electric)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Ovens, Ranges & Cooktops"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Microwaves (Built-in & Over-the-Range)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Dishwashers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Wine & Beverage Coolers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Range Hoods & Warming Drawers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Refrigerators"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Freezers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Ice Machines"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Pizza Ovens & Griddles"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Frozen Beverage Dispensers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Food Truck Refrigeration"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call"
+        }
+      ],
+      "images": [
+        {
+          "src": "/brand/apex-mark-colored.png",
+          "alt": "Apex Home Services mark",
+          "width": "36",
+          "height": "36"
+        },
+        {
+          "src": "/brand/apex-mark-white.png",
+          "alt": "",
+          "width": "40",
+          "height": "40",
+          "loading": "lazy"
+        }
+      ],
+      "htmlBytes": 74222
+    },
+    {
+      "url": "https://apexhomesupport.com/contact",
+      "status": 200,
+      "title": "Contact | Apex Home Services",
+      "titleLength": 28,
+      "description": "Find the right path to request service, explore Apex services, check listed coverage, or ask about supported brands.",
+      "descriptionLength": 116,
+      "canonical": "https://apexhomesupport.com/contact",
+      "robots": "index, follow",
+      "lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Let's get your home back on track."
+        },
+        {
+          "level": 2,
+          "text": "Find information without starting over."
+        },
+        {
+          "level": 3,
+          "text": "Need help choosing a service?"
+        },
+        {
+          "level": 3,
+          "text": "Checking coverage?"
+        },
+        {
+          "level": 3,
+          "text": "Have a brand question?"
+        },
+        {
+          "level": 2,
+          "text": "Business contact information"
+        },
+        {
+          "level": 2,
+          "text": "Tell us what you’re noticing."
+        }
+      ],
+      "approximateMainWordCount": 144,
+      "jsonld": [],
+      "links": [
+        {
+          "href": "#main-content",
+          "text": "Skip to content"
+        },
+        {
+          "href": "/",
+          "text": "Apex Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "Service Areas"
+        },
+        {
+          "href": "/about",
+          "text": "About"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact us"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "/services",
+          "text": "All services"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Appliance Repair"
+        },
+        {
+          "href": "/services/cooling",
+          "text": "Cooling"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating",
+          "text": "Heating"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "/services",
+          "text": "01 Need help choosing a service? Explore the verified service categories and common homeowner situations. Explore services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "02 Checking coverage? Review the county directory across five Northeast states. View service areas"
+        },
+        {
+          "href": "/brands",
+          "text": "03 Have a brand question? Browse the appliance and HVAC brand directory. Browse brands"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "/",
+          "text": "Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "States served NY · NJ · CT · MA · RI"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Refrigerators, Freezers & Ice Makers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Washers & Dryers (Gas & Electric)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Ovens, Ranges & Cooktops"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Microwaves (Built-in & Over-the-Range)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Dishwashers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Wine & Beverage Coolers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Range Hoods & Warming Drawers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Refrigerators"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Freezers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Ice Machines"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Pizza Ovens & Griddles"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Frozen Beverage Dispensers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Food Truck Refrigeration"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call"
+        }
+      ],
+      "images": [
+        {
+          "src": "/brand/apex-mark-colored.png",
+          "alt": "Apex Home Services mark",
+          "width": "36",
+          "height": "36"
+        },
+        {
+          "src": "/brand/apex-mark-white.png",
+          "alt": "",
+          "width": "40",
+          "height": "40",
+          "loading": "lazy"
+        }
+      ],
+      "htmlBytes": 56682
+    },
+    {
+      "url": "https://apexhomesupport.com/service-areas",
+      "status": 200,
+      "title": "Service Areas | Apex Home Services",
+      "titleLength": 34,
+      "description": "Explore the select counties Apex Home Services serves across five Northeast states and prepare a request for location confirmation.",
+      "descriptionLength": 131,
+      "canonical": "https://apexhomesupport.com/service-areas",
+      "robots": "index, follow",
+      "lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Local service across select Northeast communities."
+        },
+        {
+          "level": 2,
+          "text": "Five states. Twenty-nine counties."
+        },
+        {
+          "level": 2,
+          "text": "New York"
+        },
+        {
+          "level": 2,
+          "text": "New Jersey"
+        },
+        {
+          "level": 2,
+          "text": "Connecticut"
+        },
+        {
+          "level": 2,
+          "text": "Massachusetts"
+        },
+        {
+          "level": 2,
+          "text": "Rhode Island"
+        },
+        {
+          "level": 2,
+          "text": "Not sure if we service your area?"
+        }
+      ],
+      "approximateMainWordCount": 334,
+      "jsonld": [],
+      "links": [
+        {
+          "href": "#main-content",
+          "text": "Skip to content"
+        },
+        {
+          "href": "/",
+          "text": "Apex Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "Service Areas"
+        },
+        {
+          "href": "/about",
+          "text": "About"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact us"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "/services",
+          "text": "All services"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Appliance Repair"
+        },
+        {
+          "href": "/services/cooling",
+          "text": "Cooling"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating",
+          "text": "Heating"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "#new-york",
+          "text": "NY New York"
+        },
+        {
+          "href": "#new-jersey",
+          "text": "NJ New Jersey"
+        },
+        {
+          "href": "#connecticut",
+          "text": "CT Connecticut"
+        },
+        {
+          "href": "#massachusetts",
+          "text": "MA Massachusetts"
+        },
+        {
+          "href": "#rhode-island",
+          "text": "RI Rhode Island"
+        },
+        {
+          "href": "/contact",
+          "text": "Other location questions"
+        },
+        {
+          "href": "/",
+          "text": "Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "States served NY · NJ · CT · MA · RI"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Refrigerators, Freezers & Ice Makers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Washers & Dryers (Gas & Electric)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Ovens, Ranges & Cooktops"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Microwaves (Built-in & Over-the-Range)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Dishwashers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Wine & Beverage Coolers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Range Hoods & Warming Drawers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Refrigerators"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Freezers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Ice Machines"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Pizza Ovens & Griddles"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Frozen Beverage Dispensers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Food Truck Refrigeration"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call"
+        }
+      ],
+      "images": [
+        {
+          "src": "/brand/apex-mark-colored.png",
+          "alt": "Apex Home Services mark",
+          "width": "36",
+          "height": "36"
+        },
+        {
+          "src": "/brand/apex-mark-white.png",
+          "alt": "",
+          "width": "40",
+          "height": "40",
+          "loading": "lazy"
+        }
+      ],
+      "htmlBytes": 81156
+    },
+    {
+      "url": "https://apexhomesupport.com/reviews",
+      "status": 200,
+      "title": "Customer Reviews | Apex Home Services",
+      "titleLength": 37,
+      "description": "Read approved customer feedback about service experiences coordinated through Apex Home Services.",
+      "descriptionLength": 97,
+      "canonical": "https://apexhomesupport.com/reviews",
+      "robots": "index, follow",
+      "lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "What customers say"
+        }
+      ],
+      "approximateMainWordCount": 63,
+      "jsonld": [],
+      "links": [
+        {
+          "href": "#main-content",
+          "text": "Skip to content"
+        },
+        {
+          "href": "/",
+          "text": "Apex Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "Service Areas"
+        },
+        {
+          "href": "/about",
+          "text": "About"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact us"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "/services",
+          "text": "All services"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Appliance Repair"
+        },
+        {
+          "href": "/services/cooling",
+          "text": "Cooling"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating",
+          "text": "Heating"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/review",
+          "text": "Leave a review"
+        },
+        {
+          "href": "/",
+          "text": "Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "States served NY · NJ · CT · MA · RI"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Refrigerators, Freezers & Ice Makers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Washers & Dryers (Gas & Electric)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Ovens, Ranges & Cooktops"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Microwaves (Built-in & Over-the-Range)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Dishwashers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Wine & Beverage Coolers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Range Hoods & Warming Drawers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Refrigerators"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Freezers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Ice Machines"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Pizza Ovens & Griddles"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Frozen Beverage Dispensers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Food Truck Refrigeration"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call"
+        }
+      ],
+      "images": [
+        {
+          "src": "/brand/apex-mark-colored.png",
+          "alt": "Apex Home Services mark",
+          "width": "36",
+          "height": "36"
+        },
+        {
+          "src": "https://tadwrcbhisqswixwuqze.supabase.co/storage/v1/object/sign/review-media/reviews/17aff1e9-4516-4274-95a8-a3f7e8d1eb07.jpg",
+          "alt": "Customer review photo",
+          "loading": "lazy"
+        },
+        {
+          "src": "https://tadwrcbhisqswixwuqze.supabase.co/storage/v1/object/sign/review-media/reviews/8a881e6c-1441-4b84-a2dc-6ec1616752c9.jpg",
+          "alt": "Customer review photo",
+          "loading": "lazy"
+        },
+        {
+          "src": "/brand/apex-mark-white.png",
+          "alt": "",
+          "width": "40",
+          "height": "40",
+          "loading": "lazy"
+        }
+      ],
+      "htmlBytes": 64279
+    },
+    {
+      "url": "https://apexhomesupport.com/services",
+      "status": 200,
+      "title": "Home Services | Apex Home Services",
+      "titleLength": 34,
+      "description": "Explore appliance repair, cooling, heating, and water-heater repair services from Apex Home Services.",
+      "descriptionLength": 101,
+      "canonical": "https://apexhomesupport.com/services",
+      "robots": "index, follow",
+      "lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "What needs attention?"
+        },
+        {
+          "level": 2,
+          "text": "Appliance Repair"
+        },
+        {
+          "level": 2,
+          "text": "Cooling"
+        },
+        {
+          "level": 2,
+          "text": "Heating"
+        },
+        {
+          "level": 2,
+          "text": "Water Heater Repair"
+        },
+        {
+          "level": 2,
+          "text": "Start with what changed."
+        },
+        {
+          "level": 2,
+          "text": "Local service across the Northeast."
+        },
+        {
+          "level": 2,
+          "text": "Brands we service"
+        },
+        {
+          "level": 2,
+          "text": "Tell us what your home needs."
+        }
+      ],
+      "approximateMainWordCount": 438,
+      "jsonld": [],
+      "links": [
+        {
+          "href": "#main-content",
+          "text": "Skip to content"
+        },
+        {
+          "href": "/",
+          "text": "Apex Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "Service Areas"
+        },
+        {
+          "href": "/about",
+          "text": "About"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact us"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "/services",
+          "text": "All services"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Appliance Repair"
+        },
+        {
+          "href": "/services/cooling",
+          "text": "Cooling"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating",
+          "text": "Heating"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Appliance Repair"
+        },
+        {
+          "href": "/services/cooling",
+          "text": "Cooling"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "↗ AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "↗ AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "↗ AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "↗ AC Replacement"
+        },
+        {
+          "href": "/services/heating",
+          "text": "Heating"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "↗ Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "↗ Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "↗ Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "↗ Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "An appliance is not cooling Cooling changes can justify a professional appliance inspection."
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "An appliance is not starting Power and operating symptoms can have several possible service areas."
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "An appliance is making unusual noise The sound and when it occurs are useful details for a service request."
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "An appliance appears to be leaking Moisture location and timing can help prepare for an inspection."
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "The home is not cooling well Weak or uneven cooling can have multiple possible service areas."
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "The system sounds different New noise is useful context for a professional inspection, not a remote diagnosis."
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "I want a seasonal system review Preventive attention can help you understand observable system condition."
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "I am considering new equipment Start with a discussion of the home, current system, and comfort priorities."
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "The home is not heating A heating inspection can help clarify the relevant system condition."
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "The heating system sounds different New sounds are useful service context but not a remote diagnosis."
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "I want a seasonal heating review Preventive attention can support a clearer understanding of the system."
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Hot water is inconsistent A water-heater inspection may be a useful place to begin."
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "The water heater sounds or smells different New sounds or smells are useful service context, not a remote diagnosis."
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "There is moisture near the water heater Moisture can have different sources and should be inspected before drawing a conclusion."
+        },
+        {
+          "href": "/?book=1",
+          "text": "Something else Book now and describe what you are noticing."
+        },
+        {
+          "href": "/brands",
+          "text": "View the confirmed brand directory"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/",
+          "text": "Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "States served NY · NJ · CT · MA · RI"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Refrigerators, Freezers & Ice Makers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Washers & Dryers (Gas & Electric)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Ovens, Ranges & Cooktops"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Microwaves (Built-in & Over-the-Range)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Dishwashers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Wine & Beverage Coolers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Range Hoods & Warming Drawers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Refrigerators"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Freezers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Ice Machines"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Pizza Ovens & Griddles"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Frozen Beverage Dispensers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Food Truck Refrigeration"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call"
+        }
+      ],
+      "images": [
+        {
+          "src": "/brand/apex-mark-colored.png",
+          "alt": "Apex Home Services mark",
+          "width": "36",
+          "height": "36"
+        },
+        {
+          "src": "/brand/apex-mark-white.png",
+          "alt": "",
+          "width": "40",
+          "height": "40",
+          "loading": "lazy"
+        }
+      ],
+      "htmlBytes": 88080
+    },
+    {
+      "url": "https://apexhomesupport.com/services/appliance-repair",
+      "status": 200,
+      "title": "Appliance Repair Services | Apex Home Services",
+      "titleLength": 46,
+      "description": "Explore appliance repair service from Apex Home Services, supported brand categories, common service situations, and how to request an inspection.",
+      "descriptionLength": 146,
+      "canonical": "https://apexhomesupport.com/services/appliance-repair",
+      "robots": "index, follow",
+      "lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Appliance Repair"
+        },
+        {
+          "level": 2,
+          "text": "Request appliance repair"
+        },
+        {
+          "level": 3,
+          "text": "A few details help us get started."
+        },
+        {
+          "level": 2,
+          "text": "You do not need to diagnose it first."
+        },
+        {
+          "level": 2,
+          "text": "Clarity at every step."
+        },
+        {
+          "level": 3,
+          "text": "Understand the issue"
+        },
+        {
+          "level": 3,
+          "text": "Inspect the relevant system"
+        },
+        {
+          "level": 3,
+          "text": "Explain the findings"
+        },
+        {
+          "level": 3,
+          "text": "Review service options"
+        },
+        {
+          "level": 3,
+          "text": "Perform approved work"
+        },
+        {
+          "level": 2,
+          "text": "Broad equipment familiarity."
+        },
+        {
+          "level": 3,
+          "text": "Appliances"
+        },
+        {
+          "level": 3,
+          "text": "Premium Appliances"
+        },
+        {
+          "level": 2,
+          "text": "New York and the Northeast."
+        },
+        {
+          "level": 2,
+          "text": "Useful context before you book."
+        },
+        {
+          "level": 2,
+          "text": "Let’s talk about your appliance repair needs."
+        }
+      ],
+      "approximateMainWordCount": 518,
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Appliance Repair Services",
+          "description": "Apex Home Services works on a confirmed range of standard and premium appliance brands. Service begins with the appliance, symptoms, and a careful review of possible next steps.",
+          "serviceType": "Appliance Repair Services",
+          "provider": {
+            "@type": "Organization",
+            "name": "Apex Home Services"
+          },
+          "areaServed": [
+            {
+              "@type": "AdministrativeArea",
+              "name": "New York"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "New Jersey"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Connecticut"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Massachusetts"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Rhode Island"
+            }
+          ],
+          "url": "https://apexhomesupport.com/services/appliance-repair"
+        }
+      ],
+      "links": [
+        {
+          "href": "#main-content",
+          "text": "Skip to content"
+        },
+        {
+          "href": "/",
+          "text": "Apex Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "Service Areas"
+        },
+        {
+          "href": "/about",
+          "text": "About"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact us"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "/services",
+          "text": "All services"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Appliance Repair"
+        },
+        {
+          "href": "/services/cooling",
+          "text": "Cooling"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating",
+          "text": "Heating"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "#service-details",
+          "text": "Browse service options ↓"
+        },
+        {
+          "href": "#process-heading",
+          "text": "How it works ↓"
+        },
+        {
+          "href": "#service-faq-heading",
+          "text": "Questions ↓"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "An appliance is not cooling Cooling changes can justify a professional appliance inspection."
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "An appliance is not starting Power and operating symptoms can have several possible service areas."
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "An appliance is making unusual noise The sound and when it occurs are useful details for a service request."
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "An appliance appears to be leaking Moisture location and timing can help prepare for an inspection."
+        },
+        {
+          "href": "/brands",
+          "text": "View the full brand directory"
+        },
+        {
+          "href": "/service-areas",
+          "text": "View service-area details"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/",
+          "text": "Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "States served NY · NJ · CT · MA · RI"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Refrigerators, Freezers & Ice Makers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Washers & Dryers (Gas & Electric)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Ovens, Ranges & Cooktops"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Microwaves (Built-in & Over-the-Range)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Dishwashers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Wine & Beverage Coolers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Range Hoods & Warming Drawers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Refrigerators"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Freezers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Ice Machines"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Pizza Ovens & Griddles"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Frozen Beverage Dispensers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Food Truck Refrigeration"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call"
+        }
+      ],
+      "images": [
+        {
+          "src": "/brand/apex-mark-colored.png",
+          "alt": "Apex Home Services mark",
+          "width": "36",
+          "height": "36"
+        },
+        {
+          "src": "/images/real/appliance-oven-card.jpg",
+          "alt": "Technician using a diagnostic tool to inspect an open range oven"
+        },
+        {
+          "src": "/brand/apex-mark-white.png",
+          "alt": "",
+          "width": "40",
+          "height": "40",
+          "loading": "lazy"
+        }
+      ],
+      "htmlBytes": 90124
+    },
+    {
+      "url": "https://apexhomesupport.com/services/cooling",
+      "status": 200,
+      "title": "Residential Cooling Services | Apex Home Services",
+      "titleLength": 49,
+      "description": "Browse AC repair, installation, maintenance, and replacement services from Apex Home Services.",
+      "descriptionLength": 94,
+      "canonical": "https://apexhomesupport.com/services/cooling",
+      "robots": "index, follow",
+      "lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Cooling"
+        },
+        {
+          "level": 2,
+          "text": "Cooling service options"
+        },
+        {
+          "level": 2,
+          "text": "You do not need to diagnose it first."
+        },
+        {
+          "level": 2,
+          "text": "Clarity at every step."
+        },
+        {
+          "level": 3,
+          "text": "Understand the issue"
+        },
+        {
+          "level": 3,
+          "text": "Inspect the relevant system"
+        },
+        {
+          "level": 3,
+          "text": "Explain the findings"
+        },
+        {
+          "level": 3,
+          "text": "Review service options"
+        },
+        {
+          "level": 3,
+          "text": "Perform approved work"
+        },
+        {
+          "level": 2,
+          "text": "Broad equipment familiarity."
+        },
+        {
+          "level": 3,
+          "text": "HVAC"
+        },
+        {
+          "level": 2,
+          "text": "New York and the Northeast."
+        },
+        {
+          "level": 2,
+          "text": "Useful context before you book."
+        },
+        {
+          "level": 2,
+          "text": "Let’s talk about your cooling needs."
+        }
+      ],
+      "approximateMainWordCount": 454,
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Cooling Services",
+          "description": "Residential cooling service built around clear symptoms, careful inspection, and practical discussions about repair, care, or equipment options.",
+          "serviceType": "Cooling Services",
+          "provider": {
+            "@type": "Organization",
+            "name": "Apex Home Services"
+          },
+          "areaServed": [
+            {
+              "@type": "AdministrativeArea",
+              "name": "New York"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "New Jersey"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Connecticut"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Massachusetts"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Rhode Island"
+            }
+          ],
+          "url": "https://apexhomesupport.com/services/cooling"
+        }
+      ],
+      "links": [
+        {
+          "href": "#main-content",
+          "text": "Skip to content"
+        },
+        {
+          "href": "/",
+          "text": "Apex Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "Service Areas"
+        },
+        {
+          "href": "/about",
+          "text": "About"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact us"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "/services",
+          "text": "All services"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Appliance Repair"
+        },
+        {
+          "href": "/services/cooling",
+          "text": "Cooling"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating",
+          "text": "Heating"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "#service-details",
+          "text": "Browse service options ↓"
+        },
+        {
+          "href": "#process-heading",
+          "text": "How it works ↓"
+        },
+        {
+          "href": "#service-faq-heading",
+          "text": "Questions ↓"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "01 AC Repair Cooling-system inspection and repair options."
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "02 AC Installation Thoughtful planning for new cooling equipment."
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "03 AC Maintenance Seasonal attention for residential cooling systems."
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "04 AC Replacement Clear guidance when replacement is being considered."
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "The home is not cooling well Weak or uneven cooling can have multiple possible service areas."
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "The system sounds different New noise is useful context for a professional inspection, not a remote diagnosis."
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "I want a seasonal system review Preventive attention can help you understand observable system condition."
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "I am considering new equipment Start with a discussion of the home, current system, and comfort priorities."
+        },
+        {
+          "href": "/brands",
+          "text": "View the full brand directory"
+        },
+        {
+          "href": "/service-areas",
+          "text": "View service-area details"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/",
+          "text": "Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "States served NY · NJ · CT · MA · RI"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Refrigerators, Freezers & Ice Makers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Washers & Dryers (Gas & Electric)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Ovens, Ranges & Cooktops"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Microwaves (Built-in & Over-the-Range)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Dishwashers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Wine & Beverage Coolers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Range Hoods & Warming Drawers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Refrigerators"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Freezers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Ice Machines"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Pizza Ovens & Griddles"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Frozen Beverage Dispensers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Food Truck Refrigeration"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call"
+        }
+      ],
+      "images": [
+        {
+          "src": "/brand/apex-mark-colored.png",
+          "alt": "Apex Home Services mark",
+          "width": "36",
+          "height": "36"
+        },
+        {
+          "src": "/images/real/ac-cleaning-card.jpg",
+          "alt": "Technician on a ladder using a multimeter to service an outdoor AC condenser unit"
+        },
+        {
+          "src": "/brand/apex-mark-white.png",
+          "alt": "",
+          "width": "40",
+          "height": "40",
+          "loading": "lazy"
+        }
+      ],
+      "htmlBytes": 91376
+    },
+    {
+      "url": "https://apexhomesupport.com/services/heating",
+      "status": 200,
+      "title": "Residential Heating Services | Apex Home Services",
+      "titleLength": 49,
+      "description": "Browse furnace repair, heat-pump, and heating-maintenance services from Apex Home Services.",
+      "descriptionLength": 91,
+      "canonical": "https://apexhomesupport.com/services/heating",
+      "robots": "index, follow",
+      "lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Heating"
+        },
+        {
+          "level": 2,
+          "text": "Heating service options"
+        },
+        {
+          "level": 2,
+          "text": "You do not need to diagnose it first."
+        },
+        {
+          "level": 2,
+          "text": "Clarity at every step."
+        },
+        {
+          "level": 3,
+          "text": "Understand the issue"
+        },
+        {
+          "level": 3,
+          "text": "Inspect the relevant system"
+        },
+        {
+          "level": 3,
+          "text": "Explain the findings"
+        },
+        {
+          "level": 3,
+          "text": "Review service options"
+        },
+        {
+          "level": 3,
+          "text": "Perform approved work"
+        },
+        {
+          "level": 2,
+          "text": "Broad equipment familiarity."
+        },
+        {
+          "level": 3,
+          "text": "HVAC"
+        },
+        {
+          "level": 2,
+          "text": "New York and the Northeast."
+        },
+        {
+          "level": 2,
+          "text": "Useful context before you book."
+        },
+        {
+          "level": 2,
+          "text": "Let’s talk about your heating needs."
+        }
+      ],
+      "approximateMainWordCount": 426,
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Heating Services",
+          "description": "Heating service for changing performance, preventive seasonal attention, and thoughtful equipment discussions.",
+          "serviceType": "Heating Services",
+          "provider": {
+            "@type": "Organization",
+            "name": "Apex Home Services"
+          },
+          "areaServed": [
+            {
+              "@type": "AdministrativeArea",
+              "name": "New York"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "New Jersey"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Connecticut"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Massachusetts"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Rhode Island"
+            }
+          ],
+          "url": "https://apexhomesupport.com/services/heating"
+        }
+      ],
+      "links": [
+        {
+          "href": "#main-content",
+          "text": "Skip to content"
+        },
+        {
+          "href": "/",
+          "text": "Apex Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "Service Areas"
+        },
+        {
+          "href": "/about",
+          "text": "About"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact us"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "/services",
+          "text": "All services"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Appliance Repair"
+        },
+        {
+          "href": "/services/cooling",
+          "text": "Cooling"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating",
+          "text": "Heating"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "#service-details",
+          "text": "Browse service options ↓"
+        },
+        {
+          "href": "#process-heading",
+          "text": "How it works ↓"
+        },
+        {
+          "href": "#service-faq-heading",
+          "text": "Questions ↓"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "01 Furnace Repair Professional review of residential heating concerns."
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "02 Heat Pumps Service considerations for year-round heat-pump systems."
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "03 Heating Maintenance Preventive seasonal heating-system attention."
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "04 Boiler Repair Professional review of residential boiler heating concerns."
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "The home is not heating A heating inspection can help clarify the relevant system condition."
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "The heating system sounds different New sounds are useful service context but not a remote diagnosis."
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "I want a seasonal heating review Preventive attention can support a clearer understanding of the system."
+        },
+        {
+          "href": "/brands",
+          "text": "View the full brand directory"
+        },
+        {
+          "href": "/service-areas",
+          "text": "View service-area details"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/",
+          "text": "Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "States served NY · NJ · CT · MA · RI"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Refrigerators, Freezers & Ice Makers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Washers & Dryers (Gas & Electric)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Ovens, Ranges & Cooktops"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Microwaves (Built-in & Over-the-Range)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Dishwashers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Wine & Beverage Coolers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Range Hoods & Warming Drawers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Refrigerators"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Freezers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Ice Machines"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Pizza Ovens & Griddles"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Frozen Beverage Dispensers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Food Truck Refrigeration"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call"
+        }
+      ],
+      "images": [
+        {
+          "src": "/brand/apex-mark-colored.png",
+          "alt": "Apex Home Services mark",
+          "width": "36",
+          "height": "36"
+        },
+        {
+          "src": "/images/real/heating-2-card.jpg",
+          "alt": "Apex technician connecting refrigerant gauges to an outdoor heat pump unit"
+        },
+        {
+          "src": "/brand/apex-mark-white.png",
+          "alt": "",
+          "width": "40",
+          "height": "40",
+          "loading": "lazy"
+        }
+      ],
+      "htmlBytes": 89422
+    },
+    {
+      "url": "https://apexhomesupport.com/services/water-heater-repair",
+      "status": 200,
+      "title": "Water Heater Repair Services | Apex Home Services",
+      "titleLength": 49,
+      "description": "Explore residential water-heater repair from Apex Home Services for inconsistent hot water, equipment concerns, and informed next-step planning.",
+      "descriptionLength": 144,
+      "canonical": "https://apexhomesupport.com/services/water-heater-repair",
+      "robots": "index, follow",
+      "lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Water Heater Repair"
+        },
+        {
+          "level": 2,
+          "text": "Request water heater repair"
+        },
+        {
+          "level": 3,
+          "text": "A few details help us get started."
+        },
+        {
+          "level": 2,
+          "text": "You do not need to diagnose it first."
+        },
+        {
+          "level": 2,
+          "text": "Clarity at every step."
+        },
+        {
+          "level": 3,
+          "text": "Understand the issue"
+        },
+        {
+          "level": 3,
+          "text": "Inspect the relevant system"
+        },
+        {
+          "level": 3,
+          "text": "Explain the findings"
+        },
+        {
+          "level": 3,
+          "text": "Review service options"
+        },
+        {
+          "level": 3,
+          "text": "Perform approved work"
+        },
+        {
+          "level": 2,
+          "text": "New York and the Northeast."
+        },
+        {
+          "level": 2,
+          "text": "Useful context before you book."
+        },
+        {
+          "level": 2,
+          "text": "Let’s talk about your water heater repair needs."
+        }
+      ],
+      "approximateMainWordCount": 436,
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Water Heater Repair Services",
+          "description": "Water-heater service can focus on understanding the concern, reviewing accessible equipment conditions, and explaining available next steps.",
+          "serviceType": "Water Heater Repair Services",
+          "provider": {
+            "@type": "Organization",
+            "name": "Apex Home Services"
+          },
+          "areaServed": [
+            {
+              "@type": "AdministrativeArea",
+              "name": "New York"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "New Jersey"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Connecticut"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Massachusetts"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Rhode Island"
+            }
+          ],
+          "url": "https://apexhomesupport.com/services/water-heater-repair"
+        }
+      ],
+      "links": [
+        {
+          "href": "#main-content",
+          "text": "Skip to content"
+        },
+        {
+          "href": "/",
+          "text": "Apex Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "Service Areas"
+        },
+        {
+          "href": "/about",
+          "text": "About"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact us"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "/services",
+          "text": "All services"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Appliance Repair"
+        },
+        {
+          "href": "/services/cooling",
+          "text": "Cooling"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating",
+          "text": "Heating"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "#service-details",
+          "text": "Browse service options ↓"
+        },
+        {
+          "href": "#process-heading",
+          "text": "How it works ↓"
+        },
+        {
+          "href": "#service-faq-heading",
+          "text": "Questions ↓"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Hot water is inconsistent A water-heater inspection may be a useful place to begin."
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "The water heater sounds or smells different New sounds or smells are useful service context, not a remote diagnosis."
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "There is moisture near the water heater Moisture can have different sources and should be inspected before drawing a conclusion."
+        },
+        {
+          "href": "/service-areas",
+          "text": "View service-area details"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/",
+          "text": "Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "States served NY · NJ · CT · MA · RI"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Refrigerators, Freezers & Ice Makers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Washers & Dryers (Gas & Electric)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Ovens, Ranges & Cooktops"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Microwaves (Built-in & Over-the-Range)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Dishwashers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Wine & Beverage Coolers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Range Hoods & Warming Drawers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Refrigerators"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Freezers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Ice Machines"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Pizza Ovens & Griddles"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Frozen Beverage Dispensers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Food Truck Refrigeration"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call"
+        }
+      ],
+      "images": [
+        {
+          "src": "/brand/apex-mark-colored.png",
+          "alt": "Apex Home Services mark",
+          "width": "36",
+          "height": "36"
+        },
+        {
+          "src": "/images/real/water-heating.jpg",
+          "alt": "Technician inspecting a residential gas water heater"
+        },
+        {
+          "src": "/brand/apex-mark-white.png",
+          "alt": "",
+          "width": "40",
+          "height": "40",
+          "loading": "lazy"
+        }
+      ],
+      "htmlBytes": 80843
+    },
+    {
+      "url": "https://apexhomesupport.com/services/cooling/ac-repair",
+      "status": 200,
+      "title": "AC Repair Services | Apex Home Services",
+      "titleLength": 39,
+      "description": "Explore AC repair service from Apex Home Services, including common cooling concerns, what to expect, related services, and how to request an inspection.",
+      "descriptionLength": 153,
+      "canonical": "https://apexhomesupport.com/services/cooling/ac-repair",
+      "robots": "index, follow",
+      "lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "AC Repair"
+        },
+        {
+          "level": 2,
+          "text": "About ac repair"
+        },
+        {
+          "level": 3,
+          "text": "Reasons to request service"
+        },
+        {
+          "level": 2,
+          "text": "Clarity at every step."
+        },
+        {
+          "level": 3,
+          "text": "Understand the issue"
+        },
+        {
+          "level": 3,
+          "text": "Inspect the relevant system"
+        },
+        {
+          "level": 3,
+          "text": "Explain the findings"
+        },
+        {
+          "level": 3,
+          "text": "Review service options"
+        },
+        {
+          "level": 3,
+          "text": "Perform approved work"
+        },
+        {
+          "level": 2,
+          "text": "Keep exploring."
+        },
+        {
+          "level": 3,
+          "text": "AC Maintenance"
+        },
+        {
+          "level": 3,
+          "text": "AC Replacement"
+        },
+        {
+          "level": 2,
+          "text": "Broad equipment familiarity."
+        },
+        {
+          "level": 3,
+          "text": "HVAC"
+        },
+        {
+          "level": 2,
+          "text": "New York and the Northeast."
+        },
+        {
+          "level": 2,
+          "text": "Useful context before you book."
+        },
+        {
+          "level": 2,
+          "text": "Book ac repair service."
+        }
+      ],
+      "approximateMainWordCount": 428,
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "AC Repair",
+          "description": "AC repair service focuses on understanding performance concerns, inspecting relevant components, and discussing appropriate options before approved work begins.",
+          "serviceType": "AC Repair",
+          "provider": {
+            "@type": "Organization",
+            "name": "Apex Home Services"
+          },
+          "areaServed": [
+            {
+              "@type": "AdministrativeArea",
+              "name": "New York"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "New Jersey"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Connecticut"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Massachusetts"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Rhode Island"
+            }
+          ],
+          "url": "https://apexhomesupport.com/services/cooling/ac-repair"
+        }
+      ],
+      "links": [
+        {
+          "href": "#main-content",
+          "text": "Skip to content"
+        },
+        {
+          "href": "/",
+          "text": "Apex Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "Service Areas"
+        },
+        {
+          "href": "/about",
+          "text": "About"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact us"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "/services",
+          "text": "All services"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Appliance Repair"
+        },
+        {
+          "href": "/services/cooling",
+          "text": "Cooling"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating",
+          "text": "Heating"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "/services/cooling",
+          "text": "cooling"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "#service-details",
+          "text": "Explore this service ↓"
+        },
+        {
+          "href": "#process-heading",
+          "text": "How it works ↓"
+        },
+        {
+          "href": "#service-faq-heading",
+          "text": "Questions ↓"
+        },
+        {
+          "href": "/services/cooling",
+          "text": "← All cooling services"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance Seasonal attention for residential cooling systems."
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement Clear guidance when replacement is being considered."
+        },
+        {
+          "href": "/brands",
+          "text": "View the full brand directory"
+        },
+        {
+          "href": "/service-areas",
+          "text": "View service-area details"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/",
+          "text": "Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "States served NY · NJ · CT · MA · RI"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Refrigerators, Freezers & Ice Makers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Washers & Dryers (Gas & Electric)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Ovens, Ranges & Cooktops"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Microwaves (Built-in & Over-the-Range)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Dishwashers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Wine & Beverage Coolers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Range Hoods & Warming Drawers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Refrigerators"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Freezers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Ice Machines"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Pizza Ovens & Griddles"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Frozen Beverage Dispensers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Food Truck Refrigeration"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call"
+        }
+      ],
+      "images": [
+        {
+          "src": "/brand/apex-mark-colored.png",
+          "alt": "Apex Home Services mark",
+          "width": "36",
+          "height": "36"
+        },
+        {
+          "src": "/images/real/ac-cleaning-card.jpg",
+          "alt": "Technician on a ladder using a multimeter to service an outdoor AC condenser unit"
+        },
+        {
+          "src": "/brand/apex-mark-white.png",
+          "alt": "",
+          "width": "40",
+          "height": "40",
+          "loading": "lazy"
+        }
+      ],
+      "htmlBytes": 83540
+    },
+    {
+      "url": "https://apexhomesupport.com/services/cooling/ac-installation",
+      "status": 200,
+      "title": "AC Installation Services | Apex Home Services",
+      "titleLength": 45,
+      "description": "Learn how Apex Home Services approaches residential AC installation planning, equipment discussions, and next-step service requests.",
+      "descriptionLength": 132,
+      "canonical": "https://apexhomesupport.com/services/cooling/ac-installation",
+      "robots": "index, follow",
+      "lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "AC Installation"
+        },
+        {
+          "level": 2,
+          "text": "About ac installation"
+        },
+        {
+          "level": 3,
+          "text": "Reasons to request service"
+        },
+        {
+          "level": 2,
+          "text": "Clarity at every step."
+        },
+        {
+          "level": 3,
+          "text": "Understand the issue"
+        },
+        {
+          "level": 3,
+          "text": "Inspect the relevant system"
+        },
+        {
+          "level": 3,
+          "text": "Explain the findings"
+        },
+        {
+          "level": 3,
+          "text": "Review service options"
+        },
+        {
+          "level": 3,
+          "text": "Perform approved work"
+        },
+        {
+          "level": 2,
+          "text": "Keep exploring."
+        },
+        {
+          "level": 3,
+          "text": "AC Replacement"
+        },
+        {
+          "level": 3,
+          "text": "Heat Pumps"
+        },
+        {
+          "level": 2,
+          "text": "Broad equipment familiarity."
+        },
+        {
+          "level": 3,
+          "text": "HVAC"
+        },
+        {
+          "level": 2,
+          "text": "New York and the Northeast."
+        },
+        {
+          "level": 2,
+          "text": "Useful context before you book."
+        },
+        {
+          "level": 2,
+          "text": "Book ac installation service."
+        }
+      ],
+      "approximateMainWordCount": 426,
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "AC Installation",
+          "description": "Installation planning may include reviewing the current system, discussing household priorities, and considering equipment options appropriate to the property.",
+          "serviceType": "AC Installation",
+          "provider": {
+            "@type": "Organization",
+            "name": "Apex Home Services"
+          },
+          "areaServed": [
+            {
+              "@type": "AdministrativeArea",
+              "name": "New York"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "New Jersey"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Connecticut"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Massachusetts"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Rhode Island"
+            }
+          ],
+          "url": "https://apexhomesupport.com/services/cooling/ac-installation"
+        }
+      ],
+      "links": [
+        {
+          "href": "#main-content",
+          "text": "Skip to content"
+        },
+        {
+          "href": "/",
+          "text": "Apex Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "Service Areas"
+        },
+        {
+          "href": "/about",
+          "text": "About"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact us"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "/services",
+          "text": "All services"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Appliance Repair"
+        },
+        {
+          "href": "/services/cooling",
+          "text": "Cooling"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating",
+          "text": "Heating"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "/services/cooling",
+          "text": "cooling"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "#service-details",
+          "text": "Explore this service ↓"
+        },
+        {
+          "href": "#process-heading",
+          "text": "How it works ↓"
+        },
+        {
+          "href": "#service-faq-heading",
+          "text": "Questions ↓"
+        },
+        {
+          "href": "/services/cooling",
+          "text": "← All cooling services"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement Clear guidance when replacement is being considered."
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps Service considerations for year-round heat-pump systems."
+        },
+        {
+          "href": "/brands",
+          "text": "View the full brand directory"
+        },
+        {
+          "href": "/service-areas",
+          "text": "View service-area details"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/",
+          "text": "Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "States served NY · NJ · CT · MA · RI"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Refrigerators, Freezers & Ice Makers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Washers & Dryers (Gas & Electric)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Ovens, Ranges & Cooktops"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Microwaves (Built-in & Over-the-Range)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Dishwashers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Wine & Beverage Coolers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Range Hoods & Warming Drawers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Refrigerators"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Freezers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Ice Machines"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Pizza Ovens & Griddles"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Frozen Beverage Dispensers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Food Truck Refrigeration"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call"
+        }
+      ],
+      "images": [
+        {
+          "src": "/brand/apex-mark-colored.png",
+          "alt": "Apex Home Services mark",
+          "width": "36",
+          "height": "36"
+        },
+        {
+          "src": "/images/real/ac-cleaning-card.jpg",
+          "alt": "Technician on a ladder using a multimeter to service an outdoor AC condenser unit"
+        },
+        {
+          "src": "/brand/apex-mark-white.png",
+          "alt": "",
+          "width": "40",
+          "height": "40",
+          "loading": "lazy"
+        }
+      ],
+      "htmlBytes": 83493
+    },
+    {
+      "url": "https://apexhomesupport.com/services/cooling/ac-maintenance",
+      "status": 200,
+      "title": "AC Maintenance Services | Apex Home Services",
+      "titleLength": 44,
+      "description": "Review residential AC maintenance from Apex Home Services, including common reasons to schedule seasonal system attention.",
+      "descriptionLength": 122,
+      "canonical": "https://apexhomesupport.com/services/cooling/ac-maintenance",
+      "robots": "index, follow",
+      "lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "AC Maintenance"
+        },
+        {
+          "level": 2,
+          "text": "About ac maintenance"
+        },
+        {
+          "level": 3,
+          "text": "Reasons to request service"
+        },
+        {
+          "level": 2,
+          "text": "Clarity at every step."
+        },
+        {
+          "level": 3,
+          "text": "Understand the issue"
+        },
+        {
+          "level": 3,
+          "text": "Inspect the relevant system"
+        },
+        {
+          "level": 3,
+          "text": "Explain the findings"
+        },
+        {
+          "level": 3,
+          "text": "Review service options"
+        },
+        {
+          "level": 3,
+          "text": "Perform approved work"
+        },
+        {
+          "level": 2,
+          "text": "Keep exploring."
+        },
+        {
+          "level": 3,
+          "text": "AC Repair"
+        },
+        {
+          "level": 3,
+          "text": "Heating Maintenance"
+        },
+        {
+          "level": 3,
+          "text": "AC Replacement"
+        },
+        {
+          "level": 2,
+          "text": "Broad equipment familiarity."
+        },
+        {
+          "level": 3,
+          "text": "HVAC"
+        },
+        {
+          "level": 2,
+          "text": "New York and the Northeast."
+        },
+        {
+          "level": 2,
+          "text": "Useful context before you book."
+        },
+        {
+          "level": 2,
+          "text": "Book ac maintenance service."
+        }
+      ],
+      "approximateMainWordCount": 440,
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "AC Maintenance",
+          "description": "A maintenance visit can focus on observable system condition and performance while creating space to discuss findings and possible next steps.",
+          "serviceType": "AC Maintenance",
+          "provider": {
+            "@type": "Organization",
+            "name": "Apex Home Services"
+          },
+          "areaServed": [
+            {
+              "@type": "AdministrativeArea",
+              "name": "New York"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "New Jersey"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Connecticut"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Massachusetts"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Rhode Island"
+            }
+          ],
+          "url": "https://apexhomesupport.com/services/cooling/ac-maintenance"
+        }
+      ],
+      "links": [
+        {
+          "href": "#main-content",
+          "text": "Skip to content"
+        },
+        {
+          "href": "/",
+          "text": "Apex Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "Service Areas"
+        },
+        {
+          "href": "/about",
+          "text": "About"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact us"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "/services",
+          "text": "All services"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Appliance Repair"
+        },
+        {
+          "href": "/services/cooling",
+          "text": "Cooling"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating",
+          "text": "Heating"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "/services/cooling",
+          "text": "cooling"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "#service-details",
+          "text": "Explore this service ↓"
+        },
+        {
+          "href": "#process-heading",
+          "text": "How it works ↓"
+        },
+        {
+          "href": "#service-faq-heading",
+          "text": "Questions ↓"
+        },
+        {
+          "href": "/services/cooling",
+          "text": "← All cooling services"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair Cooling-system inspection and repair options."
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance Preventive seasonal heating-system attention."
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement Clear guidance when replacement is being considered."
+        },
+        {
+          "href": "/brands",
+          "text": "View the full brand directory"
+        },
+        {
+          "href": "/service-areas",
+          "text": "View service-area details"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/",
+          "text": "Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "States served NY · NJ · CT · MA · RI"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Refrigerators, Freezers & Ice Makers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Washers & Dryers (Gas & Electric)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Ovens, Ranges & Cooktops"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Microwaves (Built-in & Over-the-Range)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Dishwashers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Wine & Beverage Coolers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Range Hoods & Warming Drawers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Refrigerators"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Freezers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Ice Machines"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Pizza Ovens & Griddles"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Frozen Beverage Dispensers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Food Truck Refrigeration"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call"
+        }
+      ],
+      "images": [
+        {
+          "src": "/brand/apex-mark-colored.png",
+          "alt": "Apex Home Services mark",
+          "width": "36",
+          "height": "36"
+        },
+        {
+          "src": "/images/real/ac-cleaning-card.jpg",
+          "alt": "Technician on a ladder using a multimeter to service an outdoor AC condenser unit"
+        },
+        {
+          "src": "/brand/apex-mark-white.png",
+          "alt": "",
+          "width": "40",
+          "height": "40",
+          "loading": "lazy"
+        }
+      ],
+      "htmlBytes": 86661
+    },
+    {
+      "url": "https://apexhomesupport.com/services/cooling/ac-replacement",
+      "status": 200,
+      "title": "AC Replacement Services | Apex Home Services",
+      "titleLength": 44,
+      "description": "Consider residential AC replacement with a clear review of system concerns, household goals, and available next steps.",
+      "descriptionLength": 118,
+      "canonical": "https://apexhomesupport.com/services/cooling/ac-replacement",
+      "robots": "index, follow",
+      "lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "AC Replacement"
+        },
+        {
+          "level": 2,
+          "text": "About ac replacement"
+        },
+        {
+          "level": 3,
+          "text": "Reasons to request service"
+        },
+        {
+          "level": 2,
+          "text": "Clarity at every step."
+        },
+        {
+          "level": 3,
+          "text": "Understand the issue"
+        },
+        {
+          "level": 3,
+          "text": "Inspect the relevant system"
+        },
+        {
+          "level": 3,
+          "text": "Explain the findings"
+        },
+        {
+          "level": 3,
+          "text": "Review service options"
+        },
+        {
+          "level": 3,
+          "text": "Perform approved work"
+        },
+        {
+          "level": 2,
+          "text": "Keep exploring."
+        },
+        {
+          "level": 3,
+          "text": "AC Repair"
+        },
+        {
+          "level": 3,
+          "text": "AC Installation"
+        },
+        {
+          "level": 3,
+          "text": "Heat Pumps"
+        },
+        {
+          "level": 2,
+          "text": "Broad equipment familiarity."
+        },
+        {
+          "level": 3,
+          "text": "HVAC"
+        },
+        {
+          "level": 2,
+          "text": "New York and the Northeast."
+        },
+        {
+          "level": 2,
+          "text": "Useful context before you book."
+        },
+        {
+          "level": 2,
+          "text": "Book ac replacement service."
+        }
+      ],
+      "approximateMainWordCount": 425,
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "AC Replacement",
+          "description": "Replacement discussions can consider current performance, the home, and available equipment options without assuming that replacement is always the answer.",
+          "serviceType": "AC Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "Apex Home Services"
+          },
+          "areaServed": [
+            {
+              "@type": "AdministrativeArea",
+              "name": "New York"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "New Jersey"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Connecticut"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Massachusetts"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Rhode Island"
+            }
+          ],
+          "url": "https://apexhomesupport.com/services/cooling/ac-replacement"
+        }
+      ],
+      "links": [
+        {
+          "href": "#main-content",
+          "text": "Skip to content"
+        },
+        {
+          "href": "/",
+          "text": "Apex Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "Service Areas"
+        },
+        {
+          "href": "/about",
+          "text": "About"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact us"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "/services",
+          "text": "All services"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Appliance Repair"
+        },
+        {
+          "href": "/services/cooling",
+          "text": "Cooling"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating",
+          "text": "Heating"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "/services/cooling",
+          "text": "cooling"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "#service-details",
+          "text": "Explore this service ↓"
+        },
+        {
+          "href": "#process-heading",
+          "text": "How it works ↓"
+        },
+        {
+          "href": "#service-faq-heading",
+          "text": "Questions ↓"
+        },
+        {
+          "href": "/services/cooling",
+          "text": "← All cooling services"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair Cooling-system inspection and repair options."
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation Thoughtful planning for new cooling equipment."
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps Service considerations for year-round heat-pump systems."
+        },
+        {
+          "href": "/brands",
+          "text": "View the full brand directory"
+        },
+        {
+          "href": "/service-areas",
+          "text": "View service-area details"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/",
+          "text": "Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "States served NY · NJ · CT · MA · RI"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Refrigerators, Freezers & Ice Makers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Washers & Dryers (Gas & Electric)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Ovens, Ranges & Cooktops"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Microwaves (Built-in & Over-the-Range)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Dishwashers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Wine & Beverage Coolers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Range Hoods & Warming Drawers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Refrigerators"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Freezers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Ice Machines"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Pizza Ovens & Griddles"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Frozen Beverage Dispensers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Food Truck Refrigeration"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call"
+        }
+      ],
+      "images": [
+        {
+          "src": "/brand/apex-mark-colored.png",
+          "alt": "Apex Home Services mark",
+          "width": "36",
+          "height": "36"
+        },
+        {
+          "src": "/images/real/ac-cleaning-card.jpg",
+          "alt": "Technician on a ladder using a multimeter to service an outdoor AC condenser unit"
+        },
+        {
+          "src": "/brand/apex-mark-white.png",
+          "alt": "",
+          "width": "40",
+          "height": "40",
+          "loading": "lazy"
+        }
+      ],
+      "htmlBytes": 84750
+    },
+    {
+      "url": "https://apexhomesupport.com/services/heating/furnace-repair",
+      "status": 200,
+      "title": "Furnace Repair Services | Apex Home Services",
+      "titleLength": 44,
+      "description": "Explore furnace repair service from Apex Home Services, including common heating concerns and what a service visit may involve.",
+      "descriptionLength": 127,
+      "canonical": "https://apexhomesupport.com/services/heating/furnace-repair",
+      "robots": "index, follow",
+      "lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Furnace Repair"
+        },
+        {
+          "level": 2,
+          "text": "About furnace repair"
+        },
+        {
+          "level": 3,
+          "text": "Reasons to request service"
+        },
+        {
+          "level": 2,
+          "text": "Clarity at every step."
+        },
+        {
+          "level": 3,
+          "text": "Understand the issue"
+        },
+        {
+          "level": 3,
+          "text": "Inspect the relevant system"
+        },
+        {
+          "level": 3,
+          "text": "Explain the findings"
+        },
+        {
+          "level": 3,
+          "text": "Review service options"
+        },
+        {
+          "level": 3,
+          "text": "Perform approved work"
+        },
+        {
+          "level": 2,
+          "text": "Keep exploring."
+        },
+        {
+          "level": 3,
+          "text": "Heating Maintenance"
+        },
+        {
+          "level": 3,
+          "text": "Heat Pumps"
+        },
+        {
+          "level": 2,
+          "text": "Broad equipment familiarity."
+        },
+        {
+          "level": 3,
+          "text": "HVAC"
+        },
+        {
+          "level": 2,
+          "text": "New York and the Northeast."
+        },
+        {
+          "level": 2,
+          "text": "Useful context before you book."
+        },
+        {
+          "level": 2,
+          "text": "Book furnace repair service."
+        }
+      ],
+      "approximateMainWordCount": 419,
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Furnace Repair",
+          "description": "Furnace repair service begins with the symptoms you have noticed and a review of the relevant heating system components.",
+          "serviceType": "Furnace Repair",
+          "provider": {
+            "@type": "Organization",
+            "name": "Apex Home Services"
+          },
+          "areaServed": [
+            {
+              "@type": "AdministrativeArea",
+              "name": "New York"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "New Jersey"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Connecticut"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Massachusetts"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Rhode Island"
+            }
+          ],
+          "url": "https://apexhomesupport.com/services/heating/furnace-repair"
+        }
+      ],
+      "links": [
+        {
+          "href": "#main-content",
+          "text": "Skip to content"
+        },
+        {
+          "href": "/",
+          "text": "Apex Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "Service Areas"
+        },
+        {
+          "href": "/about",
+          "text": "About"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact us"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "/services",
+          "text": "All services"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Appliance Repair"
+        },
+        {
+          "href": "/services/cooling",
+          "text": "Cooling"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating",
+          "text": "Heating"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "/services/heating",
+          "text": "heating"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "#service-details",
+          "text": "Explore this service ↓"
+        },
+        {
+          "href": "#process-heading",
+          "text": "How it works ↓"
+        },
+        {
+          "href": "#service-faq-heading",
+          "text": "Questions ↓"
+        },
+        {
+          "href": "/services/heating",
+          "text": "← All heating services"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance Preventive seasonal heating-system attention."
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps Service considerations for year-round heat-pump systems."
+        },
+        {
+          "href": "/brands",
+          "text": "View the full brand directory"
+        },
+        {
+          "href": "/service-areas",
+          "text": "View service-area details"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/",
+          "text": "Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "States served NY · NJ · CT · MA · RI"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Refrigerators, Freezers & Ice Makers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Washers & Dryers (Gas & Electric)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Ovens, Ranges & Cooktops"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Microwaves (Built-in & Over-the-Range)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Dishwashers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Wine & Beverage Coolers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Range Hoods & Warming Drawers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Refrigerators"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Freezers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Ice Machines"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Pizza Ovens & Griddles"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Frozen Beverage Dispensers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Food Truck Refrigeration"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call"
+        }
+      ],
+      "images": [
+        {
+          "src": "/brand/apex-mark-colored.png",
+          "alt": "Apex Home Services mark",
+          "width": "36",
+          "height": "36"
+        },
+        {
+          "src": "/images/real/heating-2-card.jpg",
+          "alt": "Apex technician connecting refrigerant gauges to an outdoor heat pump unit"
+        },
+        {
+          "src": "/brand/apex-mark-white.png",
+          "alt": "",
+          "width": "40",
+          "height": "40",
+          "loading": "lazy"
+        }
+      ],
+      "htmlBytes": 83212
+    },
+    {
+      "url": "https://apexhomesupport.com/services/heating/heat-pumps",
+      "status": 200,
+      "title": "Heat Pump Services | Apex Home Services",
+      "titleLength": 39,
+      "description": "Explore residential heat-pump service and equipment considerations with Apex Home Services.",
+      "descriptionLength": 91,
+      "canonical": "https://apexhomesupport.com/services/heating/heat-pumps",
+      "robots": "index, follow",
+      "lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Heat Pumps"
+        },
+        {
+          "level": 2,
+          "text": "About heat pumps"
+        },
+        {
+          "level": 3,
+          "text": "Reasons to request service"
+        },
+        {
+          "level": 2,
+          "text": "Clarity at every step."
+        },
+        {
+          "level": 3,
+          "text": "Understand the issue"
+        },
+        {
+          "level": 3,
+          "text": "Inspect the relevant system"
+        },
+        {
+          "level": 3,
+          "text": "Explain the findings"
+        },
+        {
+          "level": 3,
+          "text": "Review service options"
+        },
+        {
+          "level": 3,
+          "text": "Perform approved work"
+        },
+        {
+          "level": 2,
+          "text": "Keep exploring."
+        },
+        {
+          "level": 3,
+          "text": "Furnace Repair"
+        },
+        {
+          "level": 3,
+          "text": "AC Installation"
+        },
+        {
+          "level": 3,
+          "text": "Heating Maintenance"
+        },
+        {
+          "level": 2,
+          "text": "Broad equipment familiarity."
+        },
+        {
+          "level": 3,
+          "text": "HVAC"
+        },
+        {
+          "level": 2,
+          "text": "New York and the Northeast."
+        },
+        {
+          "level": 2,
+          "text": "Useful context before you book."
+        },
+        {
+          "level": 2,
+          "text": "Book heat pumps service."
+        }
+      ],
+      "approximateMainWordCount": 413,
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Heat Pumps",
+          "description": "Heat-pump service can address performance concerns or help homeowners explore equipment options for year-round comfort.",
+          "serviceType": "Heat Pumps",
+          "provider": {
+            "@type": "Organization",
+            "name": "Apex Home Services"
+          },
+          "areaServed": [
+            {
+              "@type": "AdministrativeArea",
+              "name": "New York"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "New Jersey"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Connecticut"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Massachusetts"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Rhode Island"
+            }
+          ],
+          "url": "https://apexhomesupport.com/services/heating/heat-pumps"
+        }
+      ],
+      "links": [
+        {
+          "href": "#main-content",
+          "text": "Skip to content"
+        },
+        {
+          "href": "/",
+          "text": "Apex Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "Service Areas"
+        },
+        {
+          "href": "/about",
+          "text": "About"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact us"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "/services",
+          "text": "All services"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Appliance Repair"
+        },
+        {
+          "href": "/services/cooling",
+          "text": "Cooling"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating",
+          "text": "Heating"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "/services/heating",
+          "text": "heating"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "#service-details",
+          "text": "Explore this service ↓"
+        },
+        {
+          "href": "#process-heading",
+          "text": "How it works ↓"
+        },
+        {
+          "href": "#service-faq-heading",
+          "text": "Questions ↓"
+        },
+        {
+          "href": "/services/heating",
+          "text": "← All heating services"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair Professional review of residential heating concerns."
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation Thoughtful planning for new cooling equipment."
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance Preventive seasonal heating-system attention."
+        },
+        {
+          "href": "/brands",
+          "text": "View the full brand directory"
+        },
+        {
+          "href": "/service-areas",
+          "text": "View service-area details"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/",
+          "text": "Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "States served NY · NJ · CT · MA · RI"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Refrigerators, Freezers & Ice Makers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Washers & Dryers (Gas & Electric)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Ovens, Ranges & Cooktops"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Microwaves (Built-in & Over-the-Range)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Dishwashers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Wine & Beverage Coolers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Range Hoods & Warming Drawers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Refrigerators"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Freezers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Ice Machines"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Pizza Ovens & Griddles"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Frozen Beverage Dispensers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Food Truck Refrigeration"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call"
+        }
+      ],
+      "images": [
+        {
+          "src": "/brand/apex-mark-colored.png",
+          "alt": "Apex Home Services mark",
+          "width": "36",
+          "height": "36"
+        },
+        {
+          "src": "/images/real/heating-card.png",
+          "alt": "Apex technician servicing an outdoor HVAC heating unit with the access panel open"
+        },
+        {
+          "src": "/brand/apex-mark-white.png",
+          "alt": "",
+          "width": "40",
+          "height": "40",
+          "loading": "lazy"
+        }
+      ],
+      "htmlBytes": 84271
+    },
+    {
+      "url": "https://apexhomesupport.com/services/heating/heating-maintenance",
+      "status": 200,
+      "title": "Heating Maintenance Services | Apex Home Services",
+      "titleLength": 49,
+      "description": "Learn about seasonal residential heating maintenance and how to request a system review from Apex Home Services.",
+      "descriptionLength": 112,
+      "canonical": "https://apexhomesupport.com/services/heating/heating-maintenance",
+      "robots": "index, follow",
+      "lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Heating Maintenance"
+        },
+        {
+          "level": 2,
+          "text": "About heating maintenance"
+        },
+        {
+          "level": 3,
+          "text": "Reasons to request service"
+        },
+        {
+          "level": 2,
+          "text": "Clarity at every step."
+        },
+        {
+          "level": 3,
+          "text": "Understand the issue"
+        },
+        {
+          "level": 3,
+          "text": "Inspect the relevant system"
+        },
+        {
+          "level": 3,
+          "text": "Explain the findings"
+        },
+        {
+          "level": 3,
+          "text": "Review service options"
+        },
+        {
+          "level": 3,
+          "text": "Perform approved work"
+        },
+        {
+          "level": 2,
+          "text": "Keep exploring."
+        },
+        {
+          "level": 3,
+          "text": "Furnace Repair"
+        },
+        {
+          "level": 3,
+          "text": "AC Maintenance"
+        },
+        {
+          "level": 3,
+          "text": "Heat Pumps"
+        },
+        {
+          "level": 2,
+          "text": "Broad equipment familiarity."
+        },
+        {
+          "level": 3,
+          "text": "HVAC"
+        },
+        {
+          "level": 2,
+          "text": "New York and the Northeast."
+        },
+        {
+          "level": 2,
+          "text": "Useful context before you book."
+        },
+        {
+          "level": 2,
+          "text": "Book heating maintenance service."
+        }
+      ],
+      "approximateMainWordCount": 431,
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Heating Maintenance",
+          "description": "Heating maintenance provides a structured opportunity to review the system, discuss observations, and identify concerns that may deserve further service.",
+          "serviceType": "Heating Maintenance",
+          "provider": {
+            "@type": "Organization",
+            "name": "Apex Home Services"
+          },
+          "areaServed": [
+            {
+              "@type": "AdministrativeArea",
+              "name": "New York"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "New Jersey"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Connecticut"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Massachusetts"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Rhode Island"
+            }
+          ],
+          "url": "https://apexhomesupport.com/services/heating/heating-maintenance"
+        }
+      ],
+      "links": [
+        {
+          "href": "#main-content",
+          "text": "Skip to content"
+        },
+        {
+          "href": "/",
+          "text": "Apex Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "Service Areas"
+        },
+        {
+          "href": "/about",
+          "text": "About"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact us"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "/services",
+          "text": "All services"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Appliance Repair"
+        },
+        {
+          "href": "/services/cooling",
+          "text": "Cooling"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating",
+          "text": "Heating"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "/services/heating",
+          "text": "heating"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "#service-details",
+          "text": "Explore this service ↓"
+        },
+        {
+          "href": "#process-heading",
+          "text": "How it works ↓"
+        },
+        {
+          "href": "#service-faq-heading",
+          "text": "Questions ↓"
+        },
+        {
+          "href": "/services/heating",
+          "text": "← All heating services"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair Professional review of residential heating concerns."
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance Seasonal attention for residential cooling systems."
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps Service considerations for year-round heat-pump systems."
+        },
+        {
+          "href": "/brands",
+          "text": "View the full brand directory"
+        },
+        {
+          "href": "/service-areas",
+          "text": "View service-area details"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/",
+          "text": "Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "States served NY · NJ · CT · MA · RI"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Refrigerators, Freezers & Ice Makers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Washers & Dryers (Gas & Electric)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Ovens, Ranges & Cooktops"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Microwaves (Built-in & Over-the-Range)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Dishwashers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Wine & Beverage Coolers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Range Hoods & Warming Drawers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Refrigerators"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Freezers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Ice Machines"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Pizza Ovens & Griddles"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Frozen Beverage Dispensers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Food Truck Refrigeration"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call"
+        }
+      ],
+      "images": [
+        {
+          "src": "/brand/apex-mark-colored.png",
+          "alt": "Apex Home Services mark",
+          "width": "36",
+          "height": "36"
+        },
+        {
+          "src": "/images/real/heating-2-card.jpg",
+          "alt": "Apex technician connecting refrigerant gauges to an outdoor heat pump unit"
+        },
+        {
+          "src": "/brand/apex-mark-white.png",
+          "alt": "",
+          "width": "40",
+          "height": "40",
+          "loading": "lazy"
+        }
+      ],
+      "htmlBytes": 86570
+    },
+    {
+      "url": "https://apexhomesupport.com/services/heating/boiler-repair",
+      "status": 200,
+      "title": "Boiler Repair Services | Apex Home Services",
+      "titleLength": 43,
+      "description": "Explore boiler repair service from Apex Home Services, including common boiler heating concerns and what a service visit may involve.",
+      "descriptionLength": 133,
+      "canonical": "https://apexhomesupport.com/services/heating/boiler-repair",
+      "robots": "index, follow",
+      "lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Boiler Repair"
+        },
+        {
+          "level": 2,
+          "text": "About boiler repair"
+        },
+        {
+          "level": 3,
+          "text": "Reasons to request service"
+        },
+        {
+          "level": 2,
+          "text": "Clarity at every step."
+        },
+        {
+          "level": 3,
+          "text": "Understand the issue"
+        },
+        {
+          "level": 3,
+          "text": "Inspect the relevant system"
+        },
+        {
+          "level": 3,
+          "text": "Explain the findings"
+        },
+        {
+          "level": 3,
+          "text": "Review service options"
+        },
+        {
+          "level": 3,
+          "text": "Perform approved work"
+        },
+        {
+          "level": 2,
+          "text": "Keep exploring."
+        },
+        {
+          "level": 3,
+          "text": "Furnace Repair"
+        },
+        {
+          "level": 3,
+          "text": "Heating Maintenance"
+        },
+        {
+          "level": 2,
+          "text": "Broad equipment familiarity."
+        },
+        {
+          "level": 3,
+          "text": "HVAC"
+        },
+        {
+          "level": 2,
+          "text": "New York and the Northeast."
+        },
+        {
+          "level": 2,
+          "text": "Useful context before you book."
+        },
+        {
+          "level": 2,
+          "text": "Book boiler repair service."
+        }
+      ],
+      "approximateMainWordCount": 435,
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Boiler Repair",
+          "description": "Boiler repair service begins with the symptoms you have noticed and a review of the relevant boiler system components.",
+          "serviceType": "Boiler Repair",
+          "provider": {
+            "@type": "Organization",
+            "name": "Apex Home Services"
+          },
+          "areaServed": [
+            {
+              "@type": "AdministrativeArea",
+              "name": "New York"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "New Jersey"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Connecticut"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Massachusetts"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Rhode Island"
+            }
+          ],
+          "url": "https://apexhomesupport.com/services/heating/boiler-repair"
+        }
+      ],
+      "links": [
+        {
+          "href": "#main-content",
+          "text": "Skip to content"
+        },
+        {
+          "href": "/",
+          "text": "Apex Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "Service Areas"
+        },
+        {
+          "href": "/about",
+          "text": "About"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact us"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "/services",
+          "text": "All services"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Appliance Repair"
+        },
+        {
+          "href": "/services/cooling",
+          "text": "Cooling"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating",
+          "text": "Heating"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "/services/heating",
+          "text": "heating"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "#service-details",
+          "text": "Explore this service ↓"
+        },
+        {
+          "href": "#process-heading",
+          "text": "How it works ↓"
+        },
+        {
+          "href": "#service-faq-heading",
+          "text": "Questions ↓"
+        },
+        {
+          "href": "/services/heating",
+          "text": "← All heating services"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair Professional review of residential heating concerns."
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance Preventive seasonal heating-system attention."
+        },
+        {
+          "href": "/brands",
+          "text": "View the full brand directory"
+        },
+        {
+          "href": "/service-areas",
+          "text": "View service-area details"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/",
+          "text": "Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "States served NY · NJ · CT · MA · RI"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "(516) 586-0826"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Refrigerators, Freezers & Ice Makers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Washers & Dryers (Gas & Electric)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Ovens, Ranges & Cooktops"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Microwaves (Built-in & Over-the-Range)"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Dishwashers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Wine & Beverage Coolers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Range Hoods & Warming Drawers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Refrigerators"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Freezers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Commercial Ice Machines"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Pizza Ovens & Griddles"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Frozen Beverage Dispensers"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Food Truck Refrigeration"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call"
+        }
+      ],
+      "images": [
+        {
+          "src": "/brand/apex-mark-colored.png",
+          "alt": "Apex Home Services mark",
+          "width": "36",
+          "height": "36"
+        },
+        {
+          "src": "/images/real/heating-card.png",
+          "alt": "Apex technician servicing an outdoor HVAC heating unit with the access panel open"
+        },
+        {
+          "src": "/brand/apex-mark-white.png",
+          "alt": "",
+          "width": "40",
+          "height": "40",
+          "loading": "lazy"
+        }
+      ],
+      "htmlBytes": 83438
+    },
+    {
+      "url": "https://apexhomesupport.com/review",
+      "status": 200,
+      "title": "Leave a Review | Apex Home Services | Apex Home Services",
+      "titleLength": 56,
+      "description": "Share your experience with Apex Home Services. Submitted reviews are reviewed before they appear publicly.",
+      "descriptionLength": 106,
+      "canonical": "https://apexhomesupport.com/review",
+      "robots": "noindex, follow",
+      "lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Share your experience"
+        }
+      ],
+      "approximateMainWordCount": 99,
+      "jsonld": [],
+      "links": [
+        {
+          "href": "#main-content",
+          "text": "Skip to content"
+        },
+        {
+          "href": "/",
+          "text": "Apex Apex Home Services"
+        },
+        {
+          "href": "/service-areas",
+          "text": "Service Areas"
+        },
+        {
+          "href": "/about",
+          "text": "About"
+        },
+        {
+          "href": "/contact",
+          "text": "Contact us"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call (516) 586-0826"
+        },
+        {
+          "href": "/services",
+          "text": "All services"
+        },
+        {
+          "href": "/services/appliance-repair",
+          "text": "Appliance Repair"
+        },
+        {
+          "href": "/services/cooling",
+          "text": "Cooling"
+        },
+        {
+          "href": "/services/cooling/ac-repair",
+          "text": "AC Repair"
+        },
+        {
+          "href": "/services/cooling/ac-installation",
+          "text": "AC Installation"
+        },
+        {
+          "href": "/services/cooling/ac-maintenance",
+          "text": "AC Maintenance"
+        },
+        {
+          "href": "/services/cooling/ac-replacement",
+          "text": "AC Replacement"
+        },
+        {
+          "href": "/services/heating",
+          "text": "Heating"
+        },
+        {
+          "href": "/services/heating/furnace-repair",
+          "text": "Furnace Repair"
+        },
+        {
+          "href": "/services/heating/heat-pumps",
+          "text": "Heat Pumps"
+        },
+        {
+          "href": "/services/heating/heating-maintenance",
+          "text": "Heating Maintenance"
+        },
+        {
+          "href": "/services/heating/boiler-repair",
+          "text": "Boiler Repair"
+        },
+        {
+          "href": "/services/water-heater-repair",
+          "text": "Water Heater Repair"
+        },
+        {
+          "href": "/",
+          "text": "Home"
+        },
+        {
+          "href": "/services",
+          "text": "Services"
+        },
+        {
+          "href": "tel:+15165860826",
+          "text": "Call"
+        }
+      ],
+      "images": [
+        {
+          "src": "/brand/apex-mark-colored.png",
+          "alt": "Apex Home Services mark",
+          "width": "36",
+          "height": "36"
+        }
+      ],
+      "htmlBytes": 44324
+    }
+  ]
+}

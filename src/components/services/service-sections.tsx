@@ -4,11 +4,14 @@ import { BookingLink } from "@/components/ui/booking-link";
 import { Container } from "@/components/ui/container";
 import { ArrowRightIcon, PhoneIcon } from "@/components/ui/icons";
 import { SectionHeading } from "@/components/ui/section-heading";
+import { BreadcrumbStructuredData, type BreadcrumbItem } from "@/components/public/breadcrumb-structured-data";
+import { applianceRepairGroups } from "@/content/appliance-repair";
 import { contact } from "@/content/company";
 import { media, type MediaId } from "@/content/media";
 import { firstTimeOffer, isOfferEligible } from "@/content/offers";
+import { servicePricing } from "@/content/trust";
 import { serviceVisitSteps } from "@/content/services";
-import { serviceAreas, supportedBrands } from "@/content/site";
+import { serviceAreas, serviceCoverageDescription, supportedBrands } from "@/content/site";
 import type { Service, ServiceCategory, ServiceFAQ, ServiceProblem } from "@/types/content";
 import { OtherProblemCard } from "./other-problem-card";
 
@@ -16,14 +19,24 @@ function getMedia(id: string) {
   return media[id as MediaId] ?? media.realApplianceOven;
 }
 
-export function ServiceHero({ eyebrow, title, summary, mediaId, anchorLabel = "Explore this service", categoryId, serviceId }: { eyebrow: string; title: string; summary: string; mediaId: string; anchorLabel?: string; categoryId?: string; serviceId?: string }) {
+export function ServiceHero({ eyebrow, title, summary, mediaId, breadcrumbs, imageCaption = "Local home service", anchorLabel = "Explore this service", categoryId, serviceId }: { eyebrow: string; title: string; summary: string; mediaId: string; breadcrumbs: readonly BreadcrumbItem[]; imageCaption?: string; anchorLabel?: string; categoryId?: string; serviceId?: string }) {
   const asset = getMedia(mediaId);
   return (
     <section className="bg-page-bg pb-8 pt-4 sm:pb-12 sm:pt-6">
+      <BreadcrumbStructuredData items={breadcrumbs} />
       <Container>
         <div className="grid overflow-hidden rounded-hero border border-steel bg-surface md:grid-cols-[1.2fr_0.8fr] md:items-center">
           <div className="p-5 sm:p-8 lg:p-10">
-            <nav aria-label="Breadcrumb" className="mb-6 flex flex-wrap gap-2 text-sm text-slate"><Link href="/" className="underline">Home</Link><span aria-hidden="true">/</span><Link href="/services" className="underline">Services</Link>{serviceId && categoryId && <><span aria-hidden="true">/</span><Link href={`/services/${categoryId}`} className="capitalize underline">{categoryId.replaceAll("-", " ")}</Link></>}</nav><p className="eyebrow">{eyebrow}</p>
+            <nav aria-label="Breadcrumb" className="mb-6 text-sm text-slate">
+              <ol className="flex flex-wrap gap-x-2 gap-y-1">
+                {breadcrumbs.map((item, index) => (
+                  <li key={item.href} className="inline-flex items-center gap-2">
+                    {index > 0 && <span aria-hidden="true">/</span>}
+                    {index === breadcrumbs.length - 1 ? <span aria-current="page">{item.name}</span> : <Link href={item.href} className="underline">{item.name}</Link>}
+                  </li>
+                ))}
+              </ol>
+            </nav><p className="eyebrow">{eyebrow}</p>
             <h1 className="mt-3 max-w-xl text-balance text-[clamp(2rem,4.5vw,3.75rem)] font-semibold leading-[1.06] tracking-[-0.03em] text-navy">{title}</h1>
             <p className="mt-4 max-w-xl text-base leading-7 text-slate">{summary}</p>
             <div className="mt-6 flex flex-wrap gap-3">
@@ -35,8 +48,8 @@ export function ServiceHero({ eyebrow, title, summary, mediaId, anchorLabel = "E
             <nav aria-label="On this page" className="service-section-links"><a href="#service-details">{anchorLabel} ↓</a><a href="#process-heading">How it works ↓</a><a href="#service-faq-heading">Questions ↓</a></nav>
           </div>
           <div className="relative h-44 overflow-hidden sm:h-56 md:h-full md:min-h-80">
-            <Image src={asset.src} alt={asset.alt} fill preload sizes="(min-width: 1024px) 48vw, 100vw" className="object-cover" style={{ objectPosition: asset.focalPoint }} />
-            <span className="absolute bottom-4 left-4 rounded-control bg-ink/85 px-4 py-2.5 text-[0.65rem] font-bold uppercase tracking-[0.14em] text-white">Local home service</span>
+            <Image src={asset.src} alt={asset.alt} fill preload sizes="(min-width: 1440px) 525px, (min-width: 768px) 37vw, 92vw" className="object-cover" style={{ objectPosition: asset.focalPoint }} />
+            <span className="absolute bottom-4 left-4 right-4 w-fit rounded-control bg-ink/85 px-4 py-2.5 text-[0.65rem] font-bold uppercase tracking-[0.14em] text-white">{imageCaption}</span>
           </div>
         </div>
       </Container>
@@ -68,6 +81,17 @@ export function ServiceDirectory({ category }: { category: ServiceCategory }) {
         <h3 className="text-xl font-semibold text-navy">A few details help us get started.</h3>
         <ul className="mt-4 list-disc space-y-3 pl-5"><li>Tell us which {category.id === "appliance-repair" ? "appliance" : "water heater"} needs attention and what you have noticed.</li><li>Share the brand and model, if you have them handy.</li><li>Include your ZIP code so we can check availability for your address.</li></ul>
         <p className="mt-5 text-base">You do not need to diagnose the issue. Scheduling and the scope of a visit are confirmed when the team follows up.</p>
+        {category.id === "appliance-repair" && (
+          <div className="mt-8 space-y-7 border-t border-steel pt-7">
+            {applianceRepairGroups.map((group) => (
+              <section key={group.id} aria-labelledby={`appliance-scope-${group.id}`}>
+                <h3 id={`appliance-scope-${group.id}`} className="text-lg font-semibold text-navy">{group.label}</h3>
+                <ul className="mt-3 list-disc space-y-2 pl-5 text-base leading-7">{group.items.map((item) => <li key={item}>{item}</li>)}</ul>
+              </section>
+            ))}
+            <p className="text-base">Tell us the equipment type, brand, model and ZIP code. The team will confirm support for the specific equipment and location; a brand listing does not mean manufacturer-authorized service.</p>
+          </div>
+        )}
         <BookingLink categoryId={category.id} className="mt-6">Request {category.name.toLowerCase()}</BookingLink>
       </div>
     );
@@ -118,6 +142,10 @@ export function ServiceProcess() {
         <ol className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
           {serviceVisitSteps.map((step) => <li key={step.number} className="rounded-panel border border-steel bg-surface p-6 shadow-soft"><span className="text-xs font-bold tracking-[0.16em] text-copper">{step.number}</span><h3 className="mt-6 text-lg font-semibold tracking-[-0.02em] text-navy">{step.title}</h3><p className="mt-3 text-sm leading-6 text-slate">{step.description}</p></li>)}
         </ol>
+        <div className="mt-8 border-t border-steel pt-6">
+          <h3 className="text-lg font-semibold text-navy">{servicePricing.headline}</h3>
+          <p className="mt-2 max-w-3xl leading-7 text-slate">{servicePricing.detail} Confirm the diagnostic fee for your location and the proposed scope before approving work. Ask which parts, labor and warranty terms apply to your particular request.</p>
+        </div>
       </Container>
     </section>
   );
@@ -144,18 +172,18 @@ export function ServiceRegion() {
       <Container>
         <div className="grid gap-8 rounded-panel border border-steel bg-surface p-8 shadow-soft sm:p-10 lg:grid-cols-[1fr_2fr] lg:items-end">
           <div><p className="eyebrow">Regional service</p><h2 id="region-heading" className="mt-4 text-3xl font-semibold tracking-[-0.03em] text-navy">New York and the Northeast.</h2><Link className="text-link mt-5 inline-flex" href="/service-areas">View service-area details</Link></div>
-          <div><ul className="grid grid-cols-2 gap-3 sm:grid-cols-5">{serviceAreas.map((area) => <li key={area.code} className="border-t border-steel pt-3"><span className="block text-xs font-bold tracking-[0.16em] text-copper">{area.code}</span><span className="mt-2 block text-sm font-semibold text-navy">{area.state}</span></li>)}</ul><p className="mt-5 text-sm leading-6 text-slate">County coverage is confirmed in the service-area directory. Exact ZIP-level availability is confirmed when you book.</p></div>
+          <div><ul className="grid grid-cols-2 gap-3 sm:grid-cols-5">{serviceAreas.map((area) => <li key={area.code} className="border-t border-steel pt-3"><span className="block text-xs font-bold tracking-[0.16em] text-copper">{area.code}</span><span className="mt-2 block text-sm font-semibold text-navy">{area.state}</span></li>)}</ul><p className="mt-5 text-sm leading-6 text-slate">{serviceCoverageDescription}</p><Link href="/reviews" className="text-link mt-5 inline-flex min-h-11 items-center">Read customer reviews</Link></div>
         </div>
       </Container>
     </section>
   );
 }
 
-export function ServiceFaqs({ items }: { items: readonly ServiceFAQ[] }) {
+export function ServiceFaqs({ items, serviceName }: { items: readonly ServiceFAQ[]; serviceName: string }) {
   return (
     <section className="bg-page-bg section-y" aria-labelledby="service-faq-heading">
       <Container className="grid gap-12 lg:grid-cols-[0.72fr_1.28fr] lg:gap-20">
-        <SectionHeading id="service-faq-heading" eyebrow="Service questions" title="Useful context before you book." size="compact" />
+        <SectionHeading id="service-faq-heading" eyebrow="Service questions" title={`Questions about ${serviceName.toLowerCase()}`} size="compact" />
         <div className="space-y-3">{items.map((item) => <details key={item.question} className="group rounded-panel border border-steel bg-surface p-6 open:shadow-soft"><summary className="cursor-pointer list-none pr-10 text-lg font-semibold tracking-[-0.015em] text-navy marker:hidden">{item.question}<span className="float-right text-copper transition-transform group-open:rotate-45" aria-hidden="true">+</span></summary><p className="max-w-2xl pt-5 pr-10 leading-7 text-slate">{item.answer}</p></details>)}</div>
       </Container>
     </section>

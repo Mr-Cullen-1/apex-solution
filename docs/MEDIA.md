@@ -1,5 +1,7 @@
 # Media strategy
 
+Current inventory note (17 November 2026): only the real client-supplied assets in `public/images/real/` and approved marks in `public/brand/` are served. Exact duplicate source copies were removed after SHA-256 checks; unique source images remain in `real images/`. The duplicate map is in `docs/audits/workspace-cleanup-2026-11-17.json`. Earlier phase descriptions below are historical and do not describe the current public assets.
+
 Phase 1 and Phase 2A use six original, temporary images generated with the built-in OpenAI image generation tool on September 5, 2026. They are stored locally in `public/images`, referenced only through `src/content/media.ts`, and marked `temporary: true` so approved production photography can replace them without changing section components.
 
 The client has since confirmed a Northeast service footprint across New York, New Jersey, Connecticut, Massachusetts, and Rhode Island. Three legacy Phase 1 images include Southwest architecture, arid terrain, and desert landscaping. They are geographically inaccurate for the final brand and must be replaced with Northeast-appropriate production photography. Their public alt text does not claim a Phoenix or Arizona service location.
@@ -61,6 +63,12 @@ Phase 2C generated no new media. The About page reuses `apex-northeast-hvac.png`
 The six Phase 1/2A placeholder images documented above (`apex-hero-technician.png`, `apex-service-detail.png`, `apex-home-interior.png`, `apex-home-exterior.png`, `apex-appliance-service.png`, `apex-northeast-hvac.png`) have been removed from `src/content/media.ts` and deleted from `public/images/`. The client explicitly asked that no AI-generated or stock service photography remain public ("тут во всех вкладках ии фотки"). All Cooling and Heating subservice detail pages (AC Repair, AC Installation, AC Maintenance, AC Replacement, Furnace Repair, Heat Pumps, Heating Maintenance, Boiler Repair), the `/services` directory hero, and the shared media-lookup fallbacks now resolve exclusively to real client-supplied photography (the `real*` entries sourced from `/real images`, normalized into `public/images/real/`). No image was generated or sourced to replace them — existing real photos are reused across related pages per the project's real-image-only policy.
 
 A new `realHeatingUnitAlt` entry (`/images/real/heating-card.png`) was added: a second real frame from the same heating service visit as `realHeatingUnit`, used so the four Heating subservice pages aren't all showing the identical crop.
+
+## Audit optimization — 17 November 2026
+
+The approved `public/brand/apex-mark-colored.png` remains unchanged. Lossless PNG encoding after proportional resizing produces `src/app/icon.png` at 64×64 (3,942 bytes) and `apple-icon.png` at 180×180 (17,263 bytes), replacing two 285,831-byte files. The manifest declares the actual 64×64 icon size. No logo artwork was regenerated or retouched.
+
+Shared service hero `sizes` now follows the 40% desktop/tablet grid track, container maximum and page gutters: 525px above 1440px, 37vw above 768px, 92vw below. Preload was already present and retained. Furnace/boiler pages explicitly caption the reused outdoor-equipment image as general HVAC service photography; ALT remains factual.
 
 ## Production replacement rules
 

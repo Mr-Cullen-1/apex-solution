@@ -1,0 +1,527 @@
+{
+  "browser": "153.0.8010.12",
+  "note": "Local production build. Synthetic timings; observed interaction maximum is a lab diagnostic, not field INP. New browser context per sample. Throttled profile: 4x CPU, 1.6 Mbps down, 0.75 Mbps up, 150ms latency.",
+  "samples": [
+    {
+      "profile": "desktop",
+      "url": "/",
+      "sample": 1,
+      "lcp": null,
+      "lcpElement": null,
+      "cls": 0,
+      "longTasks": [
+        112,
+        69
+      ],
+      "interactions": {
+        "5037": 560,
+        "5044": 472,
+        "5051": 440
+      },
+      "resourceBytes": 712616,
+      "resources": 52,
+      "navigation": [
+        {
+          "ttfb": 77.19999998807907,
+          "domContentLoaded": 243.79999995231628,
+          "load": 534.8999999761581
+        }
+      ],
+      "cameraFrames": [
+        16.699999999999818,
+        16.59999999999991,
+        16.600000000000364,
+        17,
+        16.5,
+        16.5,
+        16.899999999999636,
+        16.600000000000364,
+        16.800000000000182,
+        16.599999999999454,
+        16.400000000000546,
+        16.799999999999272,
+        16.800000000000182,
+        16.699999999999818,
+        16.5,
+        16.700000000000728,
+        16.799999999999272,
+        16.5,
+        16.900000000000546,
+        16.5,
+        16.599999999999454,
+        16.700000000000728,
+        16.599999999999454,
+        16.900000000000546,
+        16.599999999999454,
+        16.699999999999818,
+        16.600000000000364,
+        16.800000000000182,
+        16.399999999999636,
+        16.699999999999818,
+        16.700000000000728,
+        16.699999999999818,
+        16.800000000000182,
+        16.399999999999636,
+        16.699999999999818,
+        17.100000000000364,
+        16.5,
+        17.300000000000182,
+        16.099999999999454,
+        16.600000000000364,
+        16.699999999999818,
+        16.600000000000364,
+        16.599999999999454,
+        16.5,
+        17,
+        16.800000000000182,
+        16.199999999999818,
+        16.600000000000364,
+        16.699999999999818,
+        16.899999999999636,
+        16.800000000000182,
+        16.600000000000364,
+        16.399999999999636,
+        16.699999999999818,
+        16.900000000000546
+      ],
+      "observedInteractionMax": 560
+    },
+    {
+      "profile": "desktop",
+      "url": "/",
+      "sample": 2,
+      "lcp": 468,
+      "lcpElement": "H1:Let’s get your home back to comfortable.",
+      "cls": 0,
+      "longTasks": [
+        51,
+        88
+      ],
+      "interactions": {
+        "1210": 240,
+        "1217": 296,
+        "1224": 112
+      },
+      "resourceBytes": 713251,
+      "resources": 53,
+      "navigation": [
+        {
+          "ttfb": 27.80000001192093,
+          "domContentLoaded": 106.5,
+          "load": 401.80000001192093
+        }
+      ],
+      "cameraFrames": [
+        16.799999999999727,
+        16.40000000000009,
+        66.80000000000018,
+        16.699999999999818,
+        16.90000000000009,
+        16.699999999999818,
+        16.40000000000009,
+        17,
+        16.59999999999991,
+        16.59999999999991,
+        16.800000000000182,
+        16.5,
+        16.40000000000009,
+        17,
+        16.699999999999818,
+        16.59999999999991,
+        17.100000000000364,
+        16.299999999999727,
+        16.700000000000273,
+        16.299999999999727,
+        16.90000000000009,
+        16.5,
+        16.800000000000182,
+        16.59999999999991,
+        17.09999999999991,
+        16.40000000000009,
+        17.199999999999818,
+        15.900000000000091,
+        16.90000000000009,
+        16.5,
+        16.59999999999991,
+        16.59999999999991,
+        17,
+        16.59999999999991,
+        16.5,
+        16.600000000000364,
+        16.799999999999727,
+        16.700000000000273,
+        16.699999999999818,
+        16.5,
+        16.90000000000009,
+        16.40000000000009,
+        16.799999999999727,
+        16.800000000000182,
+        17.299999999999727,
+        15.900000000000091,
+        16.700000000000273,
+        16.5,
+        17.199999999999818,
+        16.199999999999818,
+        16.600000000000364
+      ],
+      "observedInteractionMax": 296
+    },
+    {
+      "profile": "desktop",
+      "url": "/",
+      "sample": 3,
+      "lcp": 468,
+      "lcpElement": "H1:Let’s get your home back to comfortable.",
+      "cls": 0,
+      "longTasks": [
+        63,
+        135
+      ],
+      "interactions": {
+        "1280": 216,
+        "1287": 152,
+        "1294": 56
+      },
+      "resourceBytes": 713251,
+      "resources": 53,
+      "navigation": [
+        {
+          "ttfb": 30.5,
+          "domContentLoaded": 112.80000001192093,
+          "load": 497.9000000357628
+        }
+      ],
+      "cameraFrames": [
+        16.59999999999991,
+        16.59999999999991,
+        16.700000000000273,
+        16.699999999999818,
+        16.59999999999991,
+        16.800000000000182,
+        16.59999999999991,
+        16.700000000000273,
+        17.299999999999727,
+        16.09999999999991,
+        16.700000000000273,
+        16.5,
+        16.59999999999991,
+        17.09999999999991,
+        16.700000000000273,
+        16.59999999999991,
+        16.699999999999818,
+        16.59999999999991,
+        16.700000000000273,
+        16.40000000000009,
+        16.699999999999818,
+        16.90000000000009,
+        16.5,
+        17,
+        16.5,
+        16.699999999999818,
+        16.59999999999991,
+        16.90000000000009,
+        16.5,
+        16.5,
+        16.800000000000182,
+        16.5,
+        16.59999999999991,
+        16.699999999999818,
+        16.600000000000364,
+        16.59999999999991,
+        16.699999999999818,
+        16.700000000000273,
+        16.699999999999818,
+        16.59999999999991,
+        17,
+        16.700000000000273,
+        16.59999999999991,
+        16.5,
+        16.799999999999727,
+        16.800000000000182,
+        16.300000000000182,
+        16.699999999999818,
+        16.90000000000009,
+        16.5,
+        16.799999999999727,
+        16.5,
+        16.600000000000364,
+        16.899999999999636
+      ],
+      "observedInteractionMax": 216
+    },
+    {
+      "profile": "desktop",
+      "url": "/services/cooling/ac-repair",
+      "sample": 1,
+      "lcp": 472,
+      "lcpElement": "IMG:Technician on a ladder using a multimeter to service an outdoor AC condenser unit",
+      "cls": 0,
+      "longTasks": [
+        101
+      ],
+      "interactions": {
+        "230": 208,
+        "237": 120
+      },
+      "resourceBytes": 709493,
+      "resources": 46,
+      "navigation": [
+        {
+          "ttfb": 34.59999996423721,
+          "domContentLoaded": 371.39999997615814,
+          "load": 372.39999997615814
+        }
+      ],
+      "cameraFrames": null,
+      "observedInteractionMax": 208
+    },
+    {
+      "profile": "desktop",
+      "url": "/services/cooling/ac-repair",
+      "sample": 2,
+      "lcp": 284,
+      "lcpElement": "IMG:Technician on a ladder using a multimeter to service an outdoor AC condenser unit",
+      "cls": 0,
+      "longTasks": [
+        96
+      ],
+      "interactions": {
+        "2223": 152,
+        "2230": 80
+      },
+      "resourceBytes": 709493,
+      "resources": 46,
+      "navigation": [
+        {
+          "ttfb": 26.799999952316284,
+          "domContentLoaded": 357.89999997615814,
+          "load": 358.5
+        }
+      ],
+      "cameraFrames": null,
+      "observedInteractionMax": 152
+    },
+    {
+      "profile": "desktop",
+      "url": "/services/cooling/ac-repair",
+      "sample": 3,
+      "lcp": 308,
+      "lcpElement": "IMG:Technician on a ladder using a multimeter to service an outdoor AC condenser unit",
+      "cls": 0,
+      "longTasks": [
+        174
+      ],
+      "interactions": {
+        "9804": 176,
+        "9811": 136
+      },
+      "resourceBytes": 709493,
+      "resources": 46,
+      "navigation": [
+        {
+          "ttfb": 28.30000001192093,
+          "domContentLoaded": 110.60000002384186,
+          "load": 441.80000001192093
+        }
+      ],
+      "cameraFrames": null,
+      "observedInteractionMax": 176
+    },
+    {
+      "profile": "mobile-throttled",
+      "url": "/",
+      "sample": 1,
+      "lcp": 3764,
+      "lcpElement": "H1:Let’s get your home back to comfortable.",
+      "cls": 0,
+      "longTasks": [
+        429,
+        645,
+        547,
+        71,
+        65,
+        52,
+        54,
+        54,
+        100,
+        303,
+        104
+      ],
+      "interactions": {
+        "1166": 416,
+        "1173": 128
+      },
+      "resourceBytes": 608479,
+      "resources": 32,
+      "navigation": [
+        {
+          "ttfb": 28.5,
+          "domContentLoaded": 847.3000000119209,
+          "load": 4341
+        }
+      ],
+      "cameraFrames": null,
+      "observedInteractionMax": 416
+    },
+    {
+      "profile": "mobile-throttled",
+      "url": "/",
+      "sample": 2,
+      "lcp": 3148,
+      "lcpElement": "H1:Let’s get your home back to comfortable.",
+      "cls": 0,
+      "longTasks": [
+        236,
+        591,
+        77,
+        61,
+        57,
+        227,
+        123,
+        105
+      ],
+      "interactions": {
+        "4261": 288,
+        "4268": 112
+      },
+      "resourceBytes": 608479,
+      "resources": 32,
+      "navigation": [
+        {
+          "ttfb": 33.69999998807907,
+          "domContentLoaded": 900.3999999761581,
+          "load": 4352.699999988079
+        }
+      ],
+      "cameraFrames": null,
+      "observedInteractionMax": 288
+    },
+    {
+      "profile": "mobile-throttled",
+      "url": "/",
+      "sample": 3,
+      "lcp": 3140,
+      "lcpElement": "H1:Let’s get your home back to comfortable.",
+      "cls": 0,
+      "longTasks": [
+        269,
+        528,
+        66,
+        110,
+        221,
+        111
+      ],
+      "interactions": {
+        "1240": 280,
+        "1247": 128
+      },
+      "resourceBytes": 608479,
+      "resources": 32,
+      "navigation": [
+        {
+          "ttfb": 25.900000035762787,
+          "domContentLoaded": 835.5,
+          "load": 4000.199999988079
+        }
+      ],
+      "cameraFrames": null,
+      "observedInteractionMax": 280
+    },
+    {
+      "profile": "mobile-throttled",
+      "url": "/services/cooling/ac-repair",
+      "sample": 1,
+      "lcp": 2768,
+      "lcpElement": "IMG:Technician on a ladder using a multimeter to service an outdoor AC condenser unit",
+      "cls": 0,
+      "longTasks": [
+        135,
+        588,
+        68,
+        58,
+        212,
+        51,
+        96,
+        106
+      ],
+      "interactions": {
+        "7980": 272,
+        "7987": 96
+      },
+      "resourceBytes": 616432,
+      "resources": 24,
+      "navigation": [
+        {
+          "ttfb": 22.19999998807907,
+          "domContentLoaded": 930.6999999880791,
+          "load": 3817.800000011921
+        }
+      ],
+      "cameraFrames": null,
+      "observedInteractionMax": 272
+    },
+    {
+      "profile": "mobile-throttled",
+      "url": "/services/cooling/ac-repair",
+      "sample": 2,
+      "lcp": 2700,
+      "lcpElement": "IMG:Technician on a ladder using a multimeter to service an outdoor AC condenser unit",
+      "cls": 0,
+      "longTasks": [
+        172,
+        579,
+        71,
+        214,
+        54,
+        66,
+        108
+      ],
+      "interactions": {
+        "9731": 256,
+        "9738": 104
+      },
+      "resourceBytes": 616432,
+      "resources": 24,
+      "navigation": [
+        {
+          "ttfb": 23.399999976158142,
+          "domContentLoaded": 899.1999999880791,
+          "load": 3739.5
+        }
+      ],
+      "cameraFrames": null,
+      "observedInteractionMax": 256
+    },
+    {
+      "profile": "mobile-throttled",
+      "url": "/services/cooling/ac-repair",
+      "sample": 3,
+      "lcp": 2744,
+      "lcpElement": "IMG:Technician on a ladder using a multimeter to service an outdoor AC condenser unit",
+      "cls": 0,
+      "longTasks": [
+        169,
+        566,
+        64,
+        223,
+        87,
+        97
+      ],
+      "interactions": {
+        "1498": 264,
+        "1505": 88
+      },
+      "resourceBytes": 616432,
+      "resources": 24,
+      "navigation": [
+        {
+          "ttfb": 22.69999998807907,
+          "domContentLoaded": 913,
+          "load": 3728.899999976158
+        }
+      ],
+      "cameraFrames": null,
+      "observedInteractionMax": 264
+    }
+  ]
+}

@@ -1,6 +1,18 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Basic response protections without changing rendering or script policy.
+  // CSP needs a separate staging resource inventory before enforcement.
+  async headers() {
+    return [{
+      source: "/:path*",
+      headers: [
+        { key: "X-Content-Type-Options", value: "nosniff" },
+        { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+        { key: "X-Frame-Options", value: "SAMEORIGIN" },
+      ],
+    }];
+  },
   // Approved review photos (Phase 3) render from short-lived signed URLs
   // into the private `review-media` Supabase Storage bucket — never a
   // permanent public URL. Scoped to the storage-sign path specifically

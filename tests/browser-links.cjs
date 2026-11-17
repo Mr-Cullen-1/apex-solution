@@ -4,7 +4,7 @@ const path = require('node:path');
 const assert = require('node:assert/strict');
 const { chromium } = require(process.env.QA_PLAYWRIGHT || '../node_modules/.qa-tools/node_modules/playwright-core');
 const base = process.env.QA_BASE_URL || 'http://127.0.0.1:3123';
-const output = 'docs/qa/2026-11-16/final';
+const output = process.env.QA_OUTPUT || 'docs/qa/current/pages';
 (async () => {
   const browser = await chromium.launch({ headless: true, executablePath: process.env.QA_BROWSER || path.join(process.env.LOCALAPPDATA, 'ms-playwright/chromium-1228/chrome-win64/chrome.exe') });
   const results = [], destinations = [];

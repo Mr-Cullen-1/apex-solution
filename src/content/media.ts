@@ -1,7 +1,7 @@
 import type { MediaAsset } from "@/types/content";
 
 export const media = {
-  // Real client-supplied photography (from /real images), copied to
+  // Real client-supplied photography (unique source files remain in /real images), normalized to
   // /public/images/real with normalized lowercase, space-free filenames for
   // Vercel/Linux path safety. Not "temporary" — these are approved, permanent assets.
   realAcCleaning: {

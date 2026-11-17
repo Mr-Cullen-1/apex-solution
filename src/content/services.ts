@@ -12,7 +12,7 @@ const acRepair = service({
   summary: "When your home is not cooling as expected, a professional inspection can help clarify what the system needs.",
   description: "AC repair service focuses on understanding performance concerns, inspecting relevant components, and discussing appropriate options before approved work begins.",
   signs: ["The system runs but the home stays warm", "Airflow feels weaker or less consistent", "The system makes a new or unusual sound"],
-  overview: ["Cooling concerns can have more than one cause, so symptoms alone are not a complete diagnosis.", "A service visit can help identify the relevant system condition and clarify practical repair or replacement options."],
+  overview: ["When requesting AC repair, describe whether the system will not start, runs without cooling, or cools some rooms less effectively than others. Note when the change began and whether it is constant or comes and goes. Those details help the service professional understand the request; they do not establish a diagnosis.", "Share the equipment brand and model if you already have them, along with previous repairs and your ZIP code. Before authorizing work, ask the service professional to explain the findings, proposed repair, any parts needed and the applicable price. Repair and replacement are separate decisions, and neither is assumed from a symptom alone."],
   relatedServiceIds: ["ac-maintenance", "ac-replacement"], problems: [], faqs: [visitFaq, { question: "Does unusual noise always mean a major repair?", answer: "Not necessarily. Different conditions can create similar sounds, so an inspection may be appropriate before drawing a conclusion." }],
   brandGroupIds: ["hvac"], mediaId: "realAcCleaning", seo: { title: "AC Repair Services", description: "Explore AC repair service from Apex Home Services, including common cooling concerns, what to expect, related services, and how to request an inspection." }, status: "published",
 });
@@ -22,7 +22,7 @@ const acInstallation = service({
   summary: "A new cooling system should be considered in the context of the home, comfort goals, and existing equipment.",
   description: "Installation planning may include reviewing the current system, discussing household priorities, and considering equipment options appropriate to the property.",
   signs: ["You are planning a new or renovated space", "The existing system no longer meets household needs", "You want to compare current equipment options"],
-  overview: ["Equipment selection is only one part of a cooling installation decision.", "Professional review can help connect system options with the home and the way it is used."],
+  overview: ["For a new installation, describe the rooms or space you want to cool, whether the property already has cooling equipment, and any renovation plans. This gives the initial conversation a clearer starting point than choosing equipment from a model name alone.", "If the request is to replace an existing unit, the AC replacement page explains that starting point. For either route, ask what the proposed work includes, what property information or inspection is needed, and how equipment, timing and price will be confirmed before you approve the work."],
   relatedServiceIds: ["ac-replacement", "heat-pumps"], problems: [], faqs: [visitFaq, { question: "Can installation options be compared before work begins?", answer: "Yes. The purpose of the initial discussion is to understand the home and review available options before any work is approved." }],
   brandGroupIds: ["hvac"], mediaId: "realAcCleaning", seo: { title: "AC Installation Services", description: "Learn how Apex Home Services approaches residential AC installation planning, equipment discussions, and next-step service requests." }, status: "published",
 });
@@ -32,7 +32,7 @@ const acMaintenance = service({
   summary: "Preventive cooling service provides an opportunity to review system condition before or during periods of regular use.",
   description: "A maintenance visit can focus on observable system condition and performance while creating space to discuss findings and possible next steps.",
   signs: ["A seasonal review is due", "Cooling performance has changed since last season", "You want the system inspected before regular use"],
-  overview: ["Maintenance is preventive attention rather than a promise that future problems cannot occur.", "The visit can help surface observable concerns and support more informed home-comfort decisions."],
+  overview: ["Use a maintenance request to describe seasonal care needs, the equipment you have and when it was last serviced, if known. If the system has already stopped cooling or developed a specific fault, mention that clearly so the request is not mistaken for routine care.", "Outdoor AC unit cleaning appears in the existing maintenance offer. Ask the team to confirm whether your request is for outdoor-unit cleaning or a different maintenance scope; the terms should be clear before work is agreed. Maintenance does not guarantee future operation or include every possible repair."],
   relatedServiceIds: ["ac-repair", "heating-maintenance", "ac-replacement"], problems: [], faqs: [visitFaq, { question: "Does maintenance guarantee the system will not need repair?", answer: "No. Maintenance can support system awareness and care, but it cannot guarantee future operation or eliminate every possible issue." }],
   brandGroupIds: ["hvac"], mediaId: "realAcCleaning", seo: { title: "AC Maintenance Services", description: "Review residential AC maintenance from Apex Home Services, including common reasons to schedule seasonal system attention." }, status: "published",
 });
@@ -42,7 +42,7 @@ const acReplacement = service({
   summary: "When repair and replacement both deserve consideration, a system review can help organize the decision.",
   description: "Replacement discussions can consider current performance, the home, and available equipment options without assuming that replacement is always the answer.",
   signs: ["The system needs increasingly frequent attention", "Comfort needs have changed", "You want to compare repair and replacement paths"],
-  overview: ["A replacement decision should be based on the specific system and household priorities.", "The service conversation can clarify options and the information needed for a responsible choice."],
+  overview: ["Replacement starts with equipment that is already in place. Share its brand and model, approximate age if known, recent repair history and the comfort problem you want to address. An older unit or a single symptom does not by itself establish that replacement is necessary.", "Ask for the repair and replacement options to be explained separately, including what equipment and work each proposal covers. Confirm any exclusions, pricing and scheduling before proceeding. A request for a comparison is not an agreement to replace the system."],
   relatedServiceIds: ["ac-repair", "ac-installation", "heat-pumps"], problems: [], faqs: [visitFaq, { question: "Does an older system automatically need replacement?", answer: "No. Age can be one consideration, but an inspection and a discussion of the system's condition are more useful than age alone." }],
   brandGroupIds: ["hvac"], mediaId: "realAcCleaning", seo: { title: "AC Replacement Services", description: "Consider residential AC replacement with a clear review of system concerns, household goals, and available next steps." }, status: "published",
 });
@@ -52,8 +52,8 @@ const furnaceRepair = service({
   summary: "If a furnace is not heating as expected, an inspection can help identify the relevant condition and available options.",
   description: "Furnace repair service begins with the symptoms you have noticed and a review of the relevant heating system components.",
   signs: ["The home does not warm as expected", "Heating cycles feel inconsistent", "The system has developed an unusual sound or smell"],
-  overview: ["Similar heating symptoms can stem from different system conditions.", "A professional inspection can help replace guesswork with a clearer discussion of findings."],
-  relatedServiceIds: ["heating-maintenance", "heat-pumps"], problems: [], faqs: [visitFaq, { question: "Should I keep running a system with a new smell?", answer: "If you are concerned about safety, stop using the equipment and follow appropriate emergency guidance. A remote description cannot establish the cause." }],
+  overview: ["For a furnace request, describe whether heating has stopped, cycles have changed, or some rooms feel different. Share the brand and model if available and say whether the change affects the whole home. Symptoms are useful preparation for an inspection, not a remote diagnosis.", "If your equipment is a boiler or heat pump, choose that service instead, or tell the team you are unsure. Confirm support for your specific equipment, the findings and proposed repair before authorizing work. Furnace, boiler and heat-pump requests should not be treated as interchangeable."],
+  relatedServiceIds: ["heating-maintenance", "heat-pumps", "boiler-repair"], problems: [], faqs: [visitFaq, { question: "Should I keep running a system with a new smell?", answer: "If you are concerned about safety, stop using the equipment and follow appropriate emergency guidance. A remote description cannot establish the cause." }],
   brandGroupIds: ["hvac"], mediaId: "realHeatingUnit", seo: { title: "Furnace Repair Services", description: "Explore furnace repair service from Apex Home Services, including common heating concerns and what a service visit may involve." }, status: "published",
 });
 
@@ -62,7 +62,7 @@ const heatPumps = service({
   summary: "Heat pumps support both heating and cooling, making whole-system context especially useful when performance changes.",
   description: "Heat-pump service can address performance concerns or help homeowners explore equipment options for year-round comfort.",
   signs: ["Heating or cooling performance has changed", "The system switches modes unexpectedly", "You are considering a heat-pump option for the home"],
-  overview: ["Heat-pump needs vary between existing-system service and new-equipment planning.", "A review can help distinguish the request and organize the appropriate next conversation."],
+  overview: ["Tell the team whether the concern occurs during heating, cooling or both, and whether you are requesting service for an existing heat pump or discussing new equipment. Include the brand and model if known, when the issue started and any recent service history.", "A heat-pump request can involve a different next step from a furnace or AC-only request. Ask the service professional to confirm equipment support, the relevant findings and the proposed scope. Installation planning, maintenance and fault repair should be discussed as separate requests."],
   relatedServiceIds: ["furnace-repair", "ac-installation", "heating-maintenance"], problems: [], faqs: [visitFaq, { question: "Are heat pumps only used for heating?", answer: "Many heat-pump systems can support both heating and cooling. The right application depends on the home and equipment configuration." }],
   brandGroupIds: ["hvac"], mediaId: "realHeatingUnitAlt", seo: { title: "Heat Pump Services", description: "Explore residential heat-pump service and equipment considerations with Apex Home Services." }, status: "published",
 });
@@ -72,8 +72,8 @@ const heatingMaintenance = service({
   summary: "A seasonal heating review can help homeowners understand observable system condition before regular cold-weather use.",
   description: "Heating maintenance provides a structured opportunity to review the system, discuss observations, and identify concerns that may deserve further service.",
   signs: ["A seasonal heating review is due", "System behavior has changed since last winter", "You want the equipment reviewed before regular use"],
-  overview: ["Preventive service supports awareness but is not a guarantee against future repairs.", "Clear findings help homeowners decide whether additional attention is appropriate."],
-  relatedServiceIds: ["furnace-repair", "ac-maintenance", "heat-pumps"], problems: [], faqs: [visitFaq, { question: "Is maintenance the same as repair?", answer: "No. Maintenance is preventive attention. If a specific fault is found, repair options can be discussed separately." }],
+  overview: ["When requesting seasonal heating maintenance, identify whether the home uses a furnace, boiler or heat pump, if you know. Mention the last service date and any current performance concern. If heating has failed, state that explicitly rather than describing the request only as routine maintenance.", "Confirm the maintenance scope for your specific equipment before a visit. The first-time maintenance offer lists furnace maintenance; eligibility for another type of equipment should be confirmed separately. If an inspection identifies repair work, discuss its scope and price separately from maintenance."],
+  relatedServiceIds: ["furnace-repair", "boiler-repair", "heat-pumps"], problems: [], faqs: [visitFaq, { question: "Is maintenance the same as repair?", answer: "No. Maintenance is preventive attention. If a specific fault is found, repair options can be discussed separately." }],
   brandGroupIds: ["hvac"], mediaId: "realHeatingUnit", seo: { title: "Heating Maintenance Services", description: "Learn about seasonal residential heating maintenance and how to request a system review from Apex Home Services." }, status: "published",
 });
 
@@ -82,7 +82,7 @@ const boilerRepair = service({
   summary: "If a boiler is not heating as expected, an inspection can help identify the relevant condition and available options.",
   description: "Boiler repair service begins with the symptoms you have noticed and a review of the relevant boiler system components.",
   signs: ["The home does not warm as expected", "The boiler cycles inconsistently or shuts off unexpectedly", "The system has developed an unusual sound, leak, or smell"],
-  overview: ["Boiler symptoms can have more than one possible cause, so a description alone is not a complete diagnosis.", "A professional inspection can help replace guesswork with a clearer discussion of findings."],
+  overview: ["For a boiler request, describe whether heat is absent, intermittent or uneven, and whether you have noticed a leak, shutdown or a change in sound. Include the equipment brand and model if available and say when the concern began. The team should confirm the equipment type rather than assume a furnace or heat-pump service is appropriate.", "Ask the service professional to explain the inspection findings, any proposed repair and the parts or further work involved before you approve a scope. Share your ZIP code so the team can confirm boiler-service availability for your location. A written description cannot establish the cause of a fault."],
   relatedServiceIds: ["furnace-repair", "heating-maintenance"], problems: [], faqs: [visitFaq, { question: "Should I keep running a boiler with a new leak or smell?", answer: "If you are concerned about safety, stop using the equipment and follow appropriate emergency guidance. A remote description cannot establish the cause." }],
   brandGroupIds: ["hvac"], mediaId: "realHeatingUnitAlt", seo: { title: "Boiler Repair Services", description: "Explore boiler repair service from Apex Home Services, including common boiler heating concerns and what a service visit may involve." }, status: "published",
 });
@@ -114,7 +114,7 @@ export const primaryServices: readonly ServiceCategory[] = [
     seo: { title: "Residential Cooling Services", description: "Browse AC repair, installation, maintenance, and replacement services from Apex Home Services." },
   },
   {
-    id: "heating", name: "Heating", slug: "heating", href: "/services/heating", shortDescription: "Furnace, heat-pump, and seasonal heating service.",
+    id: "heating", name: "Heating", slug: "heating", href: "/services/heating", shortDescription: "Furnace and boiler repair, heat-pump service, and seasonal heating maintenance.",
     description: "Heating service for changing performance, preventive seasonal attention, and thoughtful equipment discussions.", mediaId: "realHeatingUnit", cardMediaId: "realHeatingUnitCard", brandGroupIds: ["hvac"], children: [furnaceRepair, heatPumps, heatingMaintenance, boilerRepair], layout: "technical", status: "published",
     problems: [
       { id: "no-heat", label: "The home is not heating", description: "A heating inspection can help clarify the relevant system condition.", href: furnaceRepair.href },
@@ -122,7 +122,7 @@ export const primaryServices: readonly ServiceCategory[] = [
       { id: "seasonal-heating", label: "I want a seasonal heating review", description: "Preventive attention can support a clearer understanding of the system.", href: heatingMaintenance.href },
     ],
     faqs: [visitFaq, { question: "Can heating concerns be diagnosed from a description alone?", answer: "No. The description helps prepare for service, but confirming a condition generally requires inspection." }],
-    seo: { title: "Residential Heating Services", description: "Browse furnace repair, heat-pump, and heating-maintenance services from Apex Home Services." },
+    seo: { title: "Residential Heating Services", description: "Request furnace or boiler repair, heat-pump service, or heating maintenance. Apex confirms service and ZIP availability in select Northeast counties." },
   },
   {
     id: "water-heater-repair", name: "Water Heater Repair", slug: "water-heater-repair", href: "/services/water-heater-repair", shortDescription: "Water-heater diagnostics and repair service from local professionals.",

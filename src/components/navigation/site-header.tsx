@@ -132,12 +132,11 @@ export function SiteHeader() {
           {/* Conversion actions: Call + Book Now are visible at every width, including
              the smallest mobile — per the client requirement that they never hide behind
              the hamburger. Below sm they use compact sizing so the pair plus the logo mark
-             and hamburger all fit one row without overflow or wrapping. Live Now and the
+             and hamburger all fit one row without overflow or wrapping. The contact label and the
              full nav stay desktop-only (xl). */}
           <div className="flex min-w-0 items-center gap-1.5 sm:gap-3">
             <span className="hidden items-center gap-1.5 text-xs font-semibold text-ink-muted xl:inline-flex">
-              <span className="relative flex size-1.5"><span aria-hidden="true" className="absolute inline-flex size-1.5 rounded-full bg-status-live motion-safe:animate-[pulse-dot_1.8s_ease-in-out_infinite]" /></span>
-              {availability.liveNowLabel}
+              {availability.contactLabel}
             </span>
             {contact.phoneHref && (
               <a href={contact.phoneHref} aria-label={`Call Apex at ${contact.phone}`} className="inline-flex min-h-11 shrink-0 items-center gap-1.5 rounded-control bg-copper px-2.5 text-xs font-bold text-white transition-transform duration-300 hover:-translate-y-0.5 sm:min-h-11 sm:gap-2 sm:px-4 sm:text-sm">
@@ -203,8 +202,7 @@ export function SiteHeader() {
             {contact.phoneHref && (
               <div className="flex items-center justify-between gap-3 border-b border-steel bg-page-bg/60 px-6 py-4">
                 <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-ink-muted">
-                  <span className="relative flex size-1.5"><span aria-hidden="true" className="absolute inline-flex size-1.5 rounded-full bg-status-live motion-safe:animate-[pulse-dot_1.8s_ease-in-out_infinite]" /></span>
-                  {availability.liveNowLabel}
+                  {availability.contactLabel}
                 </span>
                 <a href={contact.phoneHref} className="inline-flex min-h-11 items-center gap-2 rounded-control bg-copper px-4 text-sm font-bold text-white"><PhoneIcon className="size-4" />{contact.phone}</a>
               </div>

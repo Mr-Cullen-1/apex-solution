@@ -11,7 +11,9 @@ export function ServiceDetailPage({ category, service }: { category: ServiceCate
   return (
     <main id="main-content" className="flex-1 bg-page-bg">
       <ServiceStructuredData name={service.name} description={service.description} path={service.href} />
-      <ServiceHero eyebrow={`${category.name} service`} title={service.name} summary={service.summary} mediaId={service.mediaId} categoryId={category.id} serviceId={service.id} />
+      <ServiceHero eyebrow={`${category.name} service`} title={service.name} summary={service.summary} mediaId={service.mediaId} categoryId={category.id} serviceId={service.id}
+        breadcrumbs={[{ name: "Home", href: "/" }, { name: "Services", href: "/services" }, { name: category.name, href: category.href }, { name: service.name, href: service.href }]}
+        imageCaption={service.id === "furnace-repair" || service.id === "boiler-repair" ? "General HVAC service photo · outdoor equipment" : undefined} />
       <CompactOffer categoryId={category.id} serviceId={service.id} />
       <section id="service-details" className="bg-page-bg section-y-bottom" aria-labelledby="overview-heading">
         <Container>
@@ -29,7 +31,7 @@ export function ServiceDetailPage({ category, service }: { category: ServiceCate
       <RelatedServices items={related} />
       <RelevantBrands groupIds={service.brandGroupIds} />
       <ServiceRegion />
-      <ServiceFaqs items={service.faqs} />
+      <ServiceFaqs items={service.faqs} serviceName={service.name} />
       <FinalServiceCta title={`Book ${service.name.toLowerCase()} service.`} serviceId={service.id} />
     </main>
   );

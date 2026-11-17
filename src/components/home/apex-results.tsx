@@ -19,7 +19,7 @@ export function ApexResults() {
   return (
     <section className="section-y bg-page-bg" aria-labelledby="results-heading">
       <Container>
-        <SectionHeading id="results-heading" eyebrow="Apex Results" title="See the difference Apex makes." description="A closer look at completed work, with before-and-after photos from Apex projects." />
+        <SectionHeading id="results-heading" eyebrow="Apex Results" title="See the work in detail." description="Before-and-after examples from service professionals connected through Apex." />
         <div className="mt-10">
           {useCarousel ? (
             <Carousel

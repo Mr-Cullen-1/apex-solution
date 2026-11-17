@@ -220,7 +220,7 @@ export function BookNowModal({ isOpen, categoryId, serviceId, offer, issue, camp
               <button type="submit" disabled={submitting} className="inline-flex min-h-12 w-full items-center justify-center rounded-control bg-brand-primary px-6 text-sm font-semibold text-white transition-colors hover:bg-navy disabled:cursor-wait disabled:opacity-60">
                 {submitting ? "Sending…" : "Send Request"}
               </button>
-              <p className="mt-2 text-xs leading-5 text-slate">Sending this does not confirm an appointment. Availability is confirmed when Apex follows up.</p>
+              <p className="mt-2 text-xs leading-5 text-slate">Apex coordinates requests with independent service professionals. Sending this does not confirm an appointment. Availability is confirmed when Apex follows up.</p>
               </div>
             </form>
           )}

@@ -62,7 +62,17 @@ The booking flow keeps in-progress contact and address data in component memory 
 
 `BookingLink` is the only query-string construction boundary. It permits category or service IDs, never personal data. A future provider should replace the adapter implementation and read credentials only from server-side environment variables. Production integration also needs rate limiting, bot protection, monitoring, retention rules, and legally approved communication consent.
 
-## SEO foundation
+## SEO foundation (updated 17 November 2026)
+
+The sitemap includes the 19 completed marketing URLs, including `/reviews`; it omits `/review`, admin, token and utility routes. `lastModified` is omitted until real editorial dates are maintained. A build timestamp is not a content update.
+
+Home and About emit the same Organization ID (`/#organization`), approved logo/phone and county-level coverage with parent states. Service JSON-LD links Apex as `broker`, matching the existing About explanation of independent providers; qualified text coverage avoids claiming every service is offered in every county. No office, LocalBusiness subtype, rating or credentials were invented. See [Schema.org Service](https://schema.org/Service) and [areaServed](https://schema.org/areaServed).
+
+Category/detail pages pass a single breadcrumb array to `ServiceHero`; visible navigation and `BreadcrumbStructuredData` use the same names/URLs. The current item is visible and marked `aria-current`. See [BreadcrumbList](https://schema.org/BreadcrumbList).
+
+`next.config.ts` adds nosniff, strict-origin-when-cross-origin referrer policy and same-origin framing. Cross-origin embedding is intentionally not allowed; no embedding integration was found. CSP enforcement and production-domain redirect changes remain separate staging/hosting work. This batch adds no runtime dependency, route, database migration or analytics script.
+
+### Historical foundation notes (superseded by the current state above)
 
 Root metadata, Open Graph defaults, `robots.ts`, and `sitemap.ts` are present. Production must supply `NEXT_PUBLIC_SITE_URL`. Completed service routes define unique descriptions, canonical URLs, Open Graph data, indexable robots directives, and fact-limited `Service` JSON-LD. The sitemap contains only the homepage and completed service routes.
 

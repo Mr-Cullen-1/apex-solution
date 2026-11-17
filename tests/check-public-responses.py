@@ -79,7 +79,7 @@ for body in [b"{", json.dumps({"fullName": "Validation fixture", "phone": "-----
         assert error.code == 400 and result["status"] == "invalid", result
         report["api_validation"].append({"http_status": error.code, "status": result["status"], "error_fields": list(result["errors"])})
 
-folder = Path("docs/audits/ui-ux-2026-11-16")
+folder = Path(sys.argv[2]) if len(sys.argv) > 2 else Path("docs/qa/current")
 folder.mkdir(parents=True, exist_ok=True)
 (folder / "http-validation.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
 print(f"PASS: {len(paths)} public pages, {len(report['supporting'])} supporting checks, sitemap and 2 invalid API requests. No valid lead submitted.")

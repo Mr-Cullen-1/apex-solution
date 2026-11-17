@@ -41,6 +41,9 @@ export default async function ReviewsPage() {
             <p className="mt-7 max-w-2xl text-lg leading-8 text-slate">
               Real feedback from customers who used Apex Home Services to connect with local service professionals.
             </p>
+            <p className="mt-4 max-w-2xl text-sm leading-7 text-slate">
+              Reviews are published after moderation and permission to publish. The “Verified Customer” label appears only when the Apex team has marked that review as verified; it is separate from publication approval. A review may describe a past service location. Current service and ZIP availability are confirmed when you request service.
+            </p>
             <ButtonLink href="/review" className="mt-9">
               Leave a review
             </ButtonLink>

@@ -4,7 +4,7 @@
 **Audit date:** 13 November 2026 (Asia/Tashkent)  
 **Mode:** Audit only. No website source, content, metadata, configuration, schemas or deployment changed.
 
-Evidence: [production crawl](docs/audits/on-page-seo-2026-11-13/pages.json), [HTML captures](docs/audits/on-page-seo-2026-11-13/html), [link checks](docs/audits/on-page-seo-2026-11-13/links.json), [image checks](docs/audits/on-page-seo-2026-11-13/images.json), [production CSS](docs/audits/on-page-seo-2026-11-13/production.css). Temporary publicly embedded review-media tokens are redacted in archived HTML/JSON; downloaded images preserve the observed evidence.
+Evidence: [production crawl](docs/audits/on-page-seo-2026-11-13/pages.json), [HTML captures](https://github.com/Mr-Cullen-1/apex-solution/tree/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/html), [link checks](docs/audits/on-page-seo-2026-11-13/links.json), [image checks](docs/audits/on-page-seo-2026-11-13/images.json), [production CSS](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/production.css). Temporary publicly embedded review-media tokens are redacted in archived HTML/JSON; downloaded images preserve the observed evidence.
 
 ## Executive summary
 
@@ -490,7 +490,7 @@ Full titles, descriptions, lengths, canonicals and statuses also appear in [PAGE
 
 **Overall:** Usable foundation; targeted improvements pending. **Issues:** OP-01, OP-03, OP-04, OP-11, OP-12, OP-13, OP-14, OP-15, OP-21, OP-26, OP-27, OP-28.
 
-**Evidence:** [HTML](docs/audits/on-page-seo-2026-11-13/html/home.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
+**Evidence:** [HTML](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/html/home.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
 
 ### 2. https://apexhomesupport.com/about
 
@@ -518,7 +518,7 @@ Full titles, descriptions, lengths, canonicals and statuses also appear in [PAGE
 
 **Overall:** Needs high-priority content/identity work; technical tags present. **Issues:** OP-01, OP-02, OP-04, OP-10, OP-11, OP-22, OP-23, OP-29.
 
-**Evidence:** [HTML](docs/audits/on-page-seo-2026-11-13/html/about.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
+**Evidence:** [HTML](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/html/about.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
 
 ### 3. https://apexhomesupport.com/brands
 
@@ -546,7 +546,7 @@ Full titles, descriptions, lengths, canonicals and statuses also appear in [PAGE
 
 **Overall:** Usable foundation; targeted improvements pending. **Issues:** OP-02, OP-04, OP-11, OP-29.
 
-**Evidence:** [HTML](docs/audits/on-page-seo-2026-11-13/html/brands.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
+**Evidence:** [HTML](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/html/brands.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
 
 ### 4. https://apexhomesupport.com/contact
 
@@ -574,7 +574,7 @@ Full titles, descriptions, lengths, canonicals and statuses also appear in [PAGE
 
 **Overall:** Needs high-priority content/identity work; technical tags present. **Issues:** OP-01, OP-02, OP-04, OP-06, OP-11, OP-29.
 
-**Evidence:** [HTML](docs/audits/on-page-seo-2026-11-13/html/contact.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
+**Evidence:** [HTML](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/html/contact.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
 
 ### 5. https://apexhomesupport.com/service-areas
 
@@ -602,7 +602,7 @@ Full titles, descriptions, lengths, canonicals and statuses also appear in [PAGE
 
 **Overall:** Usable foundation; targeted improvements pending. **Issues:** OP-02, OP-04, OP-11.
 
-**Evidence:** [HTML](docs/audits/on-page-seo-2026-11-13/html/service-areas.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
+**Evidence:** [HTML](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/html/service-areas.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
 
 ### 6. https://apexhomesupport.com/services
 
@@ -630,7 +630,7 @@ Full titles, descriptions, lengths, canonicals and statuses also appear in [PAGE
 
 **Overall:** Usable foundation; targeted improvements pending. **Issues:** OP-02, OP-03, OP-04, OP-11, OP-17, OP-27.
 
-**Evidence:** [HTML](docs/audits/on-page-seo-2026-11-13/html/services.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
+**Evidence:** [HTML](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/html/services.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
 
 ### 7. https://apexhomesupport.com/services/appliance-repair
 
@@ -658,7 +658,7 @@ Full titles, descriptions, lengths, canonicals and statuses also appear in [PAGE
 
 **Overall:** Needs high-priority content/identity work; technical tags present. **Issues:** OP-02, OP-03, OP-05, OP-07, OP-10, OP-11, OP-20, OP-22, OP-23, OP-24, OP-29.
 
-**Evidence:** [HTML](docs/audits/on-page-seo-2026-11-13/html/services__appliance-repair.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
+**Evidence:** [HTML](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/html/services__appliance-repair.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
 
 ### 8. https://apexhomesupport.com/services/cooling
 
@@ -686,7 +686,7 @@ Full titles, descriptions, lengths, canonicals and statuses also appear in [PAGE
 
 **Overall:** Needs high-priority content/identity work; technical tags present. **Issues:** OP-02, OP-03, OP-04, OP-05, OP-10, OP-11, OP-20, OP-22, OP-23, OP-24, OP-29.
 
-**Evidence:** [HTML](docs/audits/on-page-seo-2026-11-13/html/services__cooling.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
+**Evidence:** [HTML](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/html/services__cooling.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
 
 ### 9. https://apexhomesupport.com/services/heating
 
@@ -714,7 +714,7 @@ Full titles, descriptions, lengths, canonicals and statuses also appear in [PAGE
 
 **Overall:** Needs high-priority content/identity work; technical tags present. **Issues:** OP-02, OP-03, OP-04, OP-05, OP-10, OP-11, OP-20, OP-22, OP-23, OP-24, OP-27, OP-29, OP-30.
 
-**Evidence:** [HTML](docs/audits/on-page-seo-2026-11-13/html/services__heating.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
+**Evidence:** [HTML](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/html/services__heating.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
 
 ### 10. https://apexhomesupport.com/services/water-heater-repair
 
@@ -742,7 +742,7 @@ Full titles, descriptions, lengths, canonicals and statuses also appear in [PAGE
 
 **Overall:** Needs high-priority content/identity work; technical tags present. **Issues:** OP-02, OP-03, OP-05, OP-07, OP-10, OP-11, OP-22, OP-23, OP-24, OP-29.
 
-**Evidence:** [HTML](docs/audits/on-page-seo-2026-11-13/html/services__water-heater-repair.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
+**Evidence:** [HTML](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/html/services__water-heater-repair.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
 
 ### 11. https://apexhomesupport.com/services/cooling/ac-repair
 
@@ -770,7 +770,7 @@ Full titles, descriptions, lengths, canonicals and statuses also appear in [PAGE
 
 **Overall:** Needs high-priority content/identity work; technical tags present. **Issues:** OP-02, OP-03, OP-05, OP-08, OP-10, OP-11, OP-20, OP-22, OP-23, OP-24, OP-29.
 
-**Evidence:** [HTML](docs/audits/on-page-seo-2026-11-13/html/services__cooling__ac-repair.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
+**Evidence:** [HTML](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/html/services__cooling__ac-repair.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
 
 ### 12. https://apexhomesupport.com/services/cooling/ac-installation
 
@@ -798,7 +798,7 @@ Full titles, descriptions, lengths, canonicals and statuses also appear in [PAGE
 
 **Overall:** Needs high-priority content/identity work; technical tags present. **Issues:** OP-02, OP-03, OP-05, OP-08, OP-09, OP-10, OP-11, OP-20, OP-22, OP-23, OP-24, OP-29.
 
-**Evidence:** [HTML](docs/audits/on-page-seo-2026-11-13/html/services__cooling__ac-installation.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
+**Evidence:** [HTML](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/html/services__cooling__ac-installation.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
 
 ### 13. https://apexhomesupport.com/services/cooling/ac-maintenance
 
@@ -826,7 +826,7 @@ Full titles, descriptions, lengths, canonicals and statuses also appear in [PAGE
 
 **Overall:** Needs high-priority content/identity work; technical tags present. **Issues:** OP-02, OP-03, OP-05, OP-08, OP-10, OP-11, OP-20, OP-22, OP-23, OP-24, OP-29.
 
-**Evidence:** [HTML](docs/audits/on-page-seo-2026-11-13/html/services__cooling__ac-maintenance.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
+**Evidence:** [HTML](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/html/services__cooling__ac-maintenance.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
 
 ### 14. https://apexhomesupport.com/services/cooling/ac-replacement
 
@@ -854,7 +854,7 @@ Full titles, descriptions, lengths, canonicals and statuses also appear in [PAGE
 
 **Overall:** Needs high-priority content/identity work; technical tags present. **Issues:** OP-02, OP-03, OP-05, OP-08, OP-09, OP-10, OP-11, OP-20, OP-22, OP-23, OP-24, OP-29.
 
-**Evidence:** [HTML](docs/audits/on-page-seo-2026-11-13/html/services__cooling__ac-replacement.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
+**Evidence:** [HTML](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/html/services__cooling__ac-replacement.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
 
 ### 15. https://apexhomesupport.com/services/heating/furnace-repair
 
@@ -882,7 +882,7 @@ Full titles, descriptions, lengths, canonicals and statuses also appear in [PAGE
 
 **Overall:** Needs high-priority content/identity work; technical tags present. **Issues:** OP-02, OP-03, OP-05, OP-08, OP-10, OP-11, OP-20, OP-22, OP-23, OP-24, OP-25, OP-27, OP-29.
 
-**Evidence:** [HTML](docs/audits/on-page-seo-2026-11-13/html/services__heating__furnace-repair.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
+**Evidence:** [HTML](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/html/services__heating__furnace-repair.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
 
 ### 16. https://apexhomesupport.com/services/heating/heat-pumps
 
@@ -910,7 +910,7 @@ Full titles, descriptions, lengths, canonicals and statuses also appear in [PAGE
 
 **Overall:** Needs high-priority content/identity work; technical tags present. **Issues:** OP-02, OP-03, OP-05, OP-08, OP-10, OP-11, OP-20, OP-22, OP-23, OP-24, OP-27, OP-29.
 
-**Evidence:** [HTML](docs/audits/on-page-seo-2026-11-13/html/services__heating__heat-pumps.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
+**Evidence:** [HTML](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/html/services__heating__heat-pumps.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
 
 ### 17. https://apexhomesupport.com/services/heating/heating-maintenance
 
@@ -938,7 +938,7 @@ Full titles, descriptions, lengths, canonicals and statuses also appear in [PAGE
 
 **Overall:** Needs high-priority content/identity work; technical tags present. **Issues:** OP-02, OP-03, OP-05, OP-08, OP-10, OP-11, OP-20, OP-22, OP-23, OP-24, OP-27, OP-29.
 
-**Evidence:** [HTML](docs/audits/on-page-seo-2026-11-13/html/services__heating__heating-maintenance.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
+**Evidence:** [HTML](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/html/services__heating__heating-maintenance.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
 
 ### 18. https://apexhomesupport.com/services/heating/boiler-repair
 
@@ -966,7 +966,7 @@ Full titles, descriptions, lengths, canonicals and statuses also appear in [PAGE
 
 **Overall:** Needs high-priority content/identity work; technical tags present. **Issues:** OP-02, OP-03, OP-05, OP-08, OP-10, OP-11, OP-19, OP-20, OP-22, OP-23, OP-24, OP-25, OP-27, OP-29.
 
-**Evidence:** [HTML](docs/audits/on-page-seo-2026-11-13/html/services__heating__boiler-repair.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
+**Evidence:** [HTML](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/html/services__heating__boiler-repair.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
 
 ### 19. https://apexhomesupport.com/reviews
 
@@ -994,7 +994,7 @@ Full titles, descriptions, lengths, canonicals and statuses also appear in [PAGE
 
 **Overall:** Usable foundation; targeted improvements pending. **Issues:** OP-02, OP-11, OP-15, OP-16, OP-18, OP-26.
 
-**Evidence:** [HTML](docs/audits/on-page-seo-2026-11-13/html/reviews.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
+**Evidence:** [HTML](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/html/reviews.html) and matching URL in [pages.json](docs/audits/on-page-seo-2026-11-13/pages.json).
 
 ## Decoded image response inventory
 
@@ -1002,27 +1002,27 @@ These are downloaded response dimensions, not CSS display sizes or declared orig
 
 | Source | Actual pixels | Format | Response bytes | Evidence |
 |---|---|---|---|---|
-| /brand/apex-mark-colored.png | 96?96 | webp | 2828 | [asset](docs/audits/on-page-seo-2026-11-13/assets/28-ad8939466723.webp) |
-| /images/real/appliance-refrigerator-card.jpg | 1121?1403 | webp | 73996 | [asset](docs/audits/on-page-seo-2026-11-13/assets/44-2f865c8ac74f.webp) |
-| /images/real/ac-cleaning-card.jpg | 1200?1800 | webp | 122142 | [asset](docs/audits/on-page-seo-2026-11-13/assets/33-de53cba084f9.webp) |
-| /images/real/heating-2-card.jpg | 1086?1448 | webp | 324252 | [asset](docs/audits/on-page-seo-2026-11-13/assets/31-b93ceb3cc9a9.webp) |
-| /images/real/water-heating.jpg | 1086?1448 | webp | 85774 | [asset](docs/audits/on-page-seo-2026-11-13/assets/30-3efba7b266ac.webp) |
-| /images/real/appliance-oven-card.jpg | 1200?1600 | webp | 184778 | [asset](docs/audits/on-page-seo-2026-11-13/assets/36-862ac75667ff.webp) |
-| review-media/17aff1e9-4516-4274-95a8-a3f7e8d1eb07.jpg | 2560?1920 | webp | 592312 | [asset](docs/audits/on-page-seo-2026-11-13/assets/125-22ee6be36198.webp) |
-| review-media/8a881e6c-1441-4b84-a2dc-6ec1616752c9.jpg | 2560?1920 | webp | 592312 | [asset](docs/audits/on-page-seo-2026-11-13/assets/125-01c7933c42e9.webp) |
-| /images/real/appliance-oven-card-wide.jpg | 1200?545 | webp | 87616 | [asset](docs/audits/on-page-seo-2026-11-13/assets/41-1cc424358824.webp) |
-| /images/real/heating-2-card-wide.jpg | 1086?494 | webp | 67218 | [asset](docs/audits/on-page-seo-2026-11-13/assets/36-dba9db1aeaeb.webp) |
-| /images/real/water-heating-wide.jpg | 1086?494 | webp | 28306 | [asset](docs/audits/on-page-seo-2026-11-13/assets/35-417619a50750.webp) |
-| /images/real/before-hvac-maintenance.jpg | 960?1280 | webp | 127536 | [asset](docs/audits/on-page-seo-2026-11-13/assets/40-46251bc407bf.webp) |
-| /images/real/after-hvac-maintenance.jpg | 1920?2560 | webp | 593934 | [asset](docs/audits/on-page-seo-2026-11-13/assets/39-dc2090d04ec1.webp) |
-| /images/real/before-appliances.jpg | 960?1280 | webp | 77988 | [asset](docs/audits/on-page-seo-2026-11-13/assets/34-a4e19f975286.webp) |
-| /images/real/after-appliances.jpg | 960?1280 | webp | 76586 | [asset](docs/audits/on-page-seo-2026-11-13/assets/33-df055e9c7509.webp) |
-| /images/real/ice-maker-replacement-before.jpg | 960?1280 | webp | 57658 | [asset](docs/audits/on-page-seo-2026-11-13/assets/45-407368f8b4a1.webp) |
-| /images/real/ice-maker-replacement-after.jpg | 960?1280 | webp | 52512 | [asset](docs/audits/on-page-seo-2026-11-13/assets/44-f04d7f1bc75e.webp) |
-| /images/real/refrigerator-control-board-before.jpg | 960?1280 | webp | 95770 | [asset](docs/audits/on-page-seo-2026-11-13/assets/50-e4d11a2ba595.webp) |
-| /images/real/refrigerator-control-board-after.jpg | 960?1280 | webp | 93906 | [asset](docs/audits/on-page-seo-2026-11-13/assets/49-773f0c785fce.webp) |
-| /brand/apex-mark-white.png | 96?96 | webp | 1894 | [asset](docs/audits/on-page-seo-2026-11-13/assets/26-cf8e2db66e9f.webp) |
-| /images/real/heating-card.png | 1086?1448 | webp | 266574 | [asset](docs/audits/on-page-seo-2026-11-13/assets/29-e23e0fa8e1c3.webp) |
-| https://apexhomesupport.com/opengraph-image?ba0a4ac7c10e07d1 | 1200?630 | png | 73958 | [asset](docs/audits/on-page-seo-2026-11-13/assets/60-a97fb5e3ace7.png) |
-| https://apexhomesupport.com/twitter-image?1de2661a8bf35528 | 1200?630 | png | 73958 | [asset](docs/audits/on-page-seo-2026-11-13/assets/58-c076cabbe2c4.png) |
-| https://apexhomesupport.com/opengraph-image | 1200?630 | png | 73958 | [asset](docs/audits/on-page-seo-2026-11-13/assets/43-7fffb49e2b29.png) |
+| /brand/apex-mark-colored.png | 96?96 | webp | 2828 | [asset](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/assets/28-ad8939466723.webp) |
+| /images/real/appliance-refrigerator-card.jpg | 1121?1403 | webp | 73996 | [asset](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/assets/44-2f865c8ac74f.webp) |
+| /images/real/ac-cleaning-card.jpg | 1200?1800 | webp | 122142 | [asset](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/assets/33-de53cba084f9.webp) |
+| /images/real/heating-2-card.jpg | 1086?1448 | webp | 324252 | [asset](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/assets/31-b93ceb3cc9a9.webp) |
+| /images/real/water-heating.jpg | 1086?1448 | webp | 85774 | [asset](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/assets/30-3efba7b266ac.webp) |
+| /images/real/appliance-oven-card.jpg | 1200?1600 | webp | 184778 | [asset](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/assets/36-862ac75667ff.webp) |
+| review-media/17aff1e9-4516-4274-95a8-a3f7e8d1eb07.jpg | 2560?1920 | webp | 592312 | [asset](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/assets/125-22ee6be36198.webp) |
+| review-media/8a881e6c-1441-4b84-a2dc-6ec1616752c9.jpg | 2560?1920 | webp | 592312 | [asset](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/assets/125-01c7933c42e9.webp) |
+| /images/real/appliance-oven-card-wide.jpg | 1200?545 | webp | 87616 | [asset](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/assets/41-1cc424358824.webp) |
+| /images/real/heating-2-card-wide.jpg | 1086?494 | webp | 67218 | [asset](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/assets/36-dba9db1aeaeb.webp) |
+| /images/real/water-heating-wide.jpg | 1086?494 | webp | 28306 | [asset](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/assets/35-417619a50750.webp) |
+| /images/real/before-hvac-maintenance.jpg | 960?1280 | webp | 127536 | [asset](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/assets/40-46251bc407bf.webp) |
+| /images/real/after-hvac-maintenance.jpg | 1920?2560 | webp | 593934 | [asset](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/assets/39-dc2090d04ec1.webp) |
+| /images/real/before-appliances.jpg | 960?1280 | webp | 77988 | [asset](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/assets/34-a4e19f975286.webp) |
+| /images/real/after-appliances.jpg | 960?1280 | webp | 76586 | [asset](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/assets/33-df055e9c7509.webp) |
+| /images/real/ice-maker-replacement-before.jpg | 960?1280 | webp | 57658 | [asset](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/assets/45-407368f8b4a1.webp) |
+| /images/real/ice-maker-replacement-after.jpg | 960?1280 | webp | 52512 | [asset](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/assets/44-f04d7f1bc75e.webp) |
+| /images/real/refrigerator-control-board-before.jpg | 960?1280 | webp | 95770 | [asset](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/assets/50-e4d11a2ba595.webp) |
+| /images/real/refrigerator-control-board-after.jpg | 960?1280 | webp | 93906 | [asset](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/assets/49-773f0c785fce.webp) |
+| /brand/apex-mark-white.png | 96?96 | webp | 1894 | [asset](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/assets/26-cf8e2db66e9f.webp) |
+| /images/real/heating-card.png | 1086?1448 | webp | 266574 | [asset](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/assets/29-e23e0fa8e1c3.webp) |
+| https://apexhomesupport.com/opengraph-image?ba0a4ac7c10e07d1 | 1200?630 | png | 73958 | [asset](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/assets/60-a97fb5e3ace7.png) |
+| https://apexhomesupport.com/twitter-image?1de2661a8bf35528 | 1200?630 | png | 73958 | [asset](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/assets/58-c076cabbe2c4.png) |
+| https://apexhomesupport.com/opengraph-image | 1200?630 | png | 73958 | [asset](https://github.com/Mr-Cullen-1/apex-solution/blob/3bb9ed1d8e9141e3c18f2115cac75eb4475cc983/docs/audits/on-page-seo-2026-11-13/assets/43-7fffb49e2b29.png) |

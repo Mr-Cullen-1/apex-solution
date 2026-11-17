@@ -5,7 +5,7 @@ import { sharedOpenGraph } from "@/content/social-meta";
 import { ReviewForm } from "@/features/reviews/review-form";
 
 export const metadata: Metadata = {
-  title: `Leave a Review | ${company.name}`,
+  title: "Leave a Review",
   description: `Share your experience with ${company.name}. Submitted reviews are reviewed before they appear publicly.`,
   alternates: { canonical: "/review" },
   openGraph: { ...sharedOpenGraph, title: `Leave a Review | ${company.name}`, description: `Share your experience with ${company.name}. Submitted reviews are reviewed before they appear publicly.`, url: "/review" },

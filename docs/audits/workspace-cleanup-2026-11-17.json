@@ -1,0 +1,1913 @@
+﻿[
+    {
+        "path":  "apex logo/black.png",
+        "reason":  "Exact duplicate",
+        "bytes":  74087,
+        "retained":  "public/brand/apex-mark-black.png"
+    },
+    {
+        "path":  "apex logo/colored.png",
+        "reason":  "Exact duplicate",
+        "bytes":  285831,
+        "retained":  "public/brand/apex-mark-colored.png"
+    },
+    {
+        "path":  "apex logo/white.png",
+        "reason":  "Exact duplicate",
+        "bytes":  82012,
+        "retained":  "public/brand/apex-mark-white.png"
+    },
+    {
+        "path":  "real images/AC-cleaning-card.JPG",
+        "reason":  "Exact duplicate",
+        "bytes":  393618,
+        "retained":  "public/images/real/ac-cleaning-card.jpg"
+    },
+    {
+        "path":  "real images/after-appliances.JPG",
+        "reason":  "Exact duplicate",
+        "bytes":  138191,
+        "retained":  "public/images/real/after-appliances.jpg"
+    },
+    {
+        "path":  "real images/after-hvac maintenance.JPG",
+        "reason":  "Exact duplicate",
+        "bytes":  782952,
+        "retained":  "public/images/real/after-hvac-maintenance.jpg"
+    },
+    {
+        "path":  "real images/appliance-oven-card.JPG",
+        "reason":  "Exact duplicate",
+        "bytes":  468161,
+        "retained":  "public/images/real/appliance-oven-card.jpg"
+    },
+    {
+        "path":  "real images/before-appliances.JPG",
+        "reason":  "Exact duplicate",
+        "bytes":  135103,
+        "retained":  "public/images/real/before-appliances.jpg"
+    },
+    {
+        "path":  "real images/before-hvac maintenance.JPG",
+        "reason":  "Exact duplicate",
+        "bytes":  246785,
+        "retained":  "public/images/real/before-hvac-maintenance.jpg"
+    },
+    {
+        "path":  "real images/heating-card.PNG",
+        "reason":  "Exact duplicate",
+        "bytes":  756126,
+        "retained":  "public/images/real/heating-card.png"
+    },
+    {
+        "path":  "real images/appliance-card-new.PNG",
+        "reason":  "Exact duplicate",
+        "bytes":  1976070,
+        "retained":  "real images/appliance-refrigerator-card.JPG"
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/booking-empty--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  273021
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/booking-empty--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  138359
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/booking-empty--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  216947
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/booking-error--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  258175
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/booking-error--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  118216
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/booking-error--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  163230
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/booking-invalid--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  199379
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/booking-invalid--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  69136
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/booking-invalid--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  134909
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/booking-loading--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  246830
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/booking-loading--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  59921
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/booking-loading--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  209644
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/booking-network--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  202915
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/booking-network--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  113653
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/booking-network--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  135855
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/booking-preselected--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  196668
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/booking-preselected--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  57228
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/booking-preselected--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  115389
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/booking-success--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  195516
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/booking-success--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  67910
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/booking-success--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  135976
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/booking-unavailable--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  233538
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/booking-unavailable--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  74511
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/booking-unavailable--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  201935
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/booking-validation--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  196397
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/booking-validation--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  58861
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/booking-validation--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  119874
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/home-explorer--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  141171
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/home-explorer--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  68204
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/home-explorer--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  103940
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/initial-tablet-full.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  468150
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/initial-tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  103569
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/keyboard-focus--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  148147
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/keyboard-focus--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  67233
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/keyboard-focus--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  102476
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/navigation-open--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  171792
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/navigation-open--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  35824
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/navigation-open--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  86099
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/reduced-motion--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  140679
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/reduced-motion--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  66872
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/reduced-motion--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  102631
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/scrolled-tablet-viewport.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  108237
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/about--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  400030
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/about--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  303954
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/about--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  313095
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/brands--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  278608
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/brands--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  236934
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/brands--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  242148
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/contact--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  227283
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/contact--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  177268
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/contact--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  191981
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/home--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  694148
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/home--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  513024
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/home--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  562192
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/reviews--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  126052
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/reviews--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  101904
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/reviews--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  108699
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/service-areas--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  346094
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/service-areas--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  286265
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/service-areas--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  297655
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  492608
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  356983
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  395704
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__appliance-repair--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  517646
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__appliance-repair--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  377667
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__appliance-repair--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  5366
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__cooling--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  460948
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__cooling--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  348188
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__cooling--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  383246
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__cooling__ac-installation--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  431195
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__cooling__ac-installation--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  325432
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__cooling__ac-installation--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  367515
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__cooling__ac-maintenance--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  457895
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__cooling__ac-maintenance--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  343397
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__cooling__ac-maintenance--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  384073
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__cooling__ac-repair--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  426598
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__cooling__ac-repair--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  322382
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__cooling__ac-repair--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  365663
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__cooling__ac-replacement--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  439249
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__cooling__ac-replacement--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  332655
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__cooling__ac-replacement--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  373211
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__heating--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  486407
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__heating--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  345959
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__heating--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  404590
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__heating__boiler-repair--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  457593
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__heating__boiler-repair--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  329951
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__heating__boiler-repair--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  389204
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__heating__furnace-repair--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  460686
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__heating__furnace-repair--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  326522
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__heating__furnace-repair--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  390459
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__heating__heat-pumps--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  462906
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__heating__heat-pumps--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  336323
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__heating__heat-pumps--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  391317
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__heating__heating-maintenance--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  489849
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__heating__heating-maintenance--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  355334
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__heating__heating-maintenance--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  416816
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__water-heater-repair--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  431055
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__water-heater-repair--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  319392
+    },
+    {
+        "path":  "docs/qa/2026-11-16/baseline/screenshots/services__water-heater-repair--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  354207
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/booking-empty--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  197670
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/booking-empty--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  56404
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/booking-empty--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  123973
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/booking-error--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  195078
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/booking-error--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  68457
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/booking-error--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  133593
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/booking-invalid--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  199340
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/booking-invalid--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  63396
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/booking-invalid--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  126008
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/booking-loading--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  197882
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/booking-loading--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  59922
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/booking-loading--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  125322
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/booking-network--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  202894
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/booking-network--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  61981
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/booking-network--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  126052
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/booking-preselected--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  196674
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/booking-preselected--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  57228
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/booking-preselected--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  115389
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/booking-success--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  195519
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/booking-success--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  67913
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/booking-success--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  135976
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/booking-unavailable--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  196651
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/booking-unavailable--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  68382
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/booking-unavailable--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  135045
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/booking-validation--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  196438
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/booking-validation--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  58844
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/booking-validation--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  119876
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/failure-service-call-text-stays-clear-of-chat-launcher--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  136128
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/failure-service-call-text-stays-clear-of-chat-launcher--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  110832
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/home-explorer--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  141185
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/home-explorer--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  67981
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/home-explorer--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  97814
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/keyboard-focus--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  148151
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/keyboard-focus--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  67233
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/keyboard-focus--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  102476
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/navigation-open--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  128585
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/navigation-open--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  35748
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/navigation-open--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  86033
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/pricing--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  138546
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/pricing--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  76141
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/pricing--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  113312
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/reduced-motion--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  140679
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/reduced-motion--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  67244
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/reduced-motion--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  96849
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/results-carousel--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  704993
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/results-carousel--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  202261
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/results-carousel--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  407490
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/service-call-chat-clearance--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  136128
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/service-call-chat-clearance--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  83150
+    },
+    {
+        "path":  "docs/qa/2026-11-16/chat-repro/service-call-chat-clearance--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  110832
+    },
+    {
+        "path":  "docs/qa/2026-11-16/cta-repro/booking-error--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  39360
+    },
+    {
+        "path":  "docs/qa/2026-11-16/cta-repro/booking-invalid--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  39687
+    },
+    {
+        "path":  "docs/qa/2026-11-16/cta-repro/booking-loading--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  42281
+    },
+    {
+        "path":  "docs/qa/2026-11-16/cta-repro/booking-network--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  40743
+    },
+    {
+        "path":  "docs/qa/2026-11-16/cta-repro/booking-preselected--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  43280
+    },
+    {
+        "path":  "docs/qa/2026-11-16/cta-repro/booking-success--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  39970
+    },
+    {
+        "path":  "docs/qa/2026-11-16/cta-repro/booking-unavailable--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  40158
+    },
+    {
+        "path":  "docs/qa/2026-11-16/cta-repro/failure-3D-service-selection-camera-and-reduced-motion--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  34281
+    },
+    {
+        "path":  "docs/qa/2026-11-16/cta-repro/failure-booking-focus-trap-validation-and-comfortable-controls--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  43990
+    },
+    {
+        "path":  "docs/qa/2026-11-16/cta-repro/failure-faq-expansion-and-results-carousel--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  45970
+    },
+    {
+        "path":  "docs/qa/2026-11-16/cta-repro/failure-keyboard-skip-link-and-visible-focus--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  1048431
+    },
+    {
+        "path":  "docs/qa/2026-11-16/cta-repro/failure-navigation-and-overview-links--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  1011684
+    },
+    {
+        "path":  "docs/qa/2026-11-16/cta-repro/failure-service-category-CTA-labels-stay-on-one-line--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  130637
+    },
+    {
+        "path":  "docs/qa/2026-11-16/cta-repro/pricing--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  19499
+    },
+    {
+        "path":  "docs/qa/2026-11-16/cta-repro/service-call-chat-clearance--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  37319
+    },
+    {
+        "path":  "docs/qa/2026-11-16/cta-repro/service-cta-appliance-repair--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  134497
+    },
+    {
+        "path":  "docs/qa/2026-11-16/cta-repro/service-cta-appliance-repair--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  62990
+    },
+    {
+        "path":  "docs/qa/2026-11-16/cta-repro/service-cta-appliance-repair--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  111579
+    },
+    {
+        "path":  "docs/qa/2026-11-16/cta-repro/service-cta-cooling--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  132259
+    },
+    {
+        "path":  "docs/qa/2026-11-16/cta-repro/service-cta-cooling--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  60523
+    },
+    {
+        "path":  "docs/qa/2026-11-16/cta-repro/service-cta-cooling--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  111194
+    },
+    {
+        "path":  "docs/qa/2026-11-16/cta-repro/service-cta-heating--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  132459
+    },
+    {
+        "path":  "docs/qa/2026-11-16/cta-repro/service-cta-heating--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  56674
+    },
+    {
+        "path":  "docs/qa/2026-11-16/cta-repro/service-cta-heating--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  110453
+    },
+    {
+        "path":  "docs/qa/2026-11-16/cta-repro/service-cta-heating-maintenance--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  128524
+    },
+    {
+        "path":  "docs/qa/2026-11-16/cta-repro/service-cta-heating-maintenance--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  57081
+    },
+    {
+        "path":  "docs/qa/2026-11-16/cta-repro/service-cta-heating-maintenance--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  107657
+    },
+    {
+        "path":  "docs/qa/2026-11-16/cta-repro/service-cta-water-heater-repair--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  134797
+    },
+    {
+        "path":  "docs/qa/2026-11-16/cta-repro/service-cta-water-heater-repair--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  54439
+    },
+    {
+        "path":  "docs/qa/2026-11-16/cta-repro/service-cta-water-heater-repair--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  111718
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/booking-empty--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  197670
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/booking-empty--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  56404
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/booking-empty--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  123973
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/booking-error--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  195078
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/booking-error--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  68457
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/booking-error--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  133593
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/booking-invalid--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  199344
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/booking-invalid--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  63396
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/booking-invalid--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  126008
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/booking-loading--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  197882
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/booking-loading--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  59922
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/booking-loading--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  125322
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/booking-network--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  202894
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/booking-network--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  61981
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/booking-network--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  126052
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/booking-preselected--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  196674
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/booking-preselected--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  57228
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/booking-preselected--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  115389
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/booking-success--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  195519
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/booking-success--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  67913
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/booking-success--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  135976
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/booking-unavailable--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  196651
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/booking-unavailable--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  68382
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/booking-unavailable--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  135045
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/booking-validation--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  196438
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/booking-validation--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  58844
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/booking-validation--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  119876
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/contact-booking-entry--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  196008
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/contact-booking-entry--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  54831
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/contact-booking-entry--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  122134
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/home-explorer--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  141171
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/home-explorer--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  67981
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/home-explorer--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  97814
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/keyboard-focus--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  148151
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/keyboard-focus--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  67233
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/keyboard-focus--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  102476
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/navigation-open--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  128585
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/navigation-open--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  35748
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/navigation-open--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  86033
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/pricing--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  138706
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/pricing--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  76141
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/pricing--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  109934
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/reduced-motion--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  140679
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/reduced-motion--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  67244
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/reduced-motion--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  96849
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/results-carousel--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  704163
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/results-carousel--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  205460
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/results-carousel--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  406839
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/service-call-chat-clearance--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  136410
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/service-call-chat-clearance--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  83044
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/service-call-chat-clearance--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  108628
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/service-cta-appliance-repair--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  133789
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/service-cta-appliance-repair--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  62990
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/service-cta-appliance-repair--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  111579
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/service-cta-cooling--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  131548
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/service-cta-cooling--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  58974
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/service-cta-cooling--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  109072
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/service-cta-heating--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  131751
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/service-cta-heating--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  56674
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/service-cta-heating--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  110453
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/service-cta-heating-maintenance--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  127850
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/service-cta-heating-maintenance--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  57081
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/service-cta-heating-maintenance--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  107657
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/service-cta-water-heater-repair--desktop.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  134093
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/service-cta-water-heater-repair--mobile.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  54439
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/service-cta-water-heater-repair--tablet.png",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  111718
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/about--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  409659
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/about--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  303954
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/about--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  321888
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/brands--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  291501
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/brands--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  236934
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/brands--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  248759
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/contact--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  229183
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/contact--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  177268
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/contact--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  192708
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/home--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  698965
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/home--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  512441
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/home--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  565763
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/reviews--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  127245
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/reviews--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  101904
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/reviews--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  108409
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/service-areas--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  366709
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/service-areas--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  286265
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/service-areas--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  311836
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  507041
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  366324
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  413980
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__appliance-repair--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  527249
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__appliance-repair--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  377667
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__appliance-repair--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  435744
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__cooling--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  467829
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__cooling--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  348188
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__cooling--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  384502
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__cooling__ac-installation--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  436586
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__cooling__ac-installation--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  325432
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__cooling__ac-installation--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  367689
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__cooling__ac-maintenance--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  462678
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__cooling__ac-maintenance--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  343397
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__cooling__ac-maintenance--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  385671
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__cooling__ac-repair--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  431354
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__cooling__ac-repair--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  322382
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__cooling__ac-repair--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  366144
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__cooling__ac-replacement--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  444485
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__cooling__ac-replacement--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  332655
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__cooling__ac-replacement--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  373795
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__heating--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  498798
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__heating--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  345959
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__heating--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  406611
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__heating__boiler-repair--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  468640
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__heating__boiler-repair--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  329951
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__heating__boiler-repair--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  389977
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__heating__furnace-repair--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  473680
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__heating__furnace-repair--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  326522
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__heating__furnace-repair--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  392380
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__heating__heat-pumps--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  471977
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__heating__heat-pumps--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  336323
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__heating__heat-pumps--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  393478
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__heating__heating-maintenance--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  501643
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__heating__heating-maintenance--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  355334
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__heating__heating-maintenance--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  417291
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__water-heater-repair--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  436769
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__water-heater-repair--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  319392
+    },
+    {
+        "path":  "docs/qa/2026-11-16/final/screenshots/services__water-heater-repair--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  354947
+    },
+    {
+        "path":  "docs/qa/2026-11-16/pre-regression-review-sheets/desktop-1.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  773794
+    },
+    {
+        "path":  "docs/qa/2026-11-16/pre-regression-review-sheets/desktop-2.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  677621
+    },
+    {
+        "path":  "docs/qa/2026-11-16/pre-regression-review-sheets/desktop-3.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  732178
+    },
+    {
+        "path":  "docs/qa/2026-11-16/pre-regression-review-sheets/desktop-4.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  697149
+    },
+    {
+        "path":  "docs/qa/2026-11-16/pre-regression-review-sheets/desktop-5.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  526944
+    },
+    {
+        "path":  "docs/qa/2026-11-16/pre-regression-review-sheets/mobile-1.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  723413
+    },
+    {
+        "path":  "docs/qa/2026-11-16/pre-regression-review-sheets/mobile-2.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  720524
+    },
+    {
+        "path":  "docs/qa/2026-11-16/pre-regression-review-sheets/mobile-3.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  677186
+    },
+    {
+        "path":  "docs/qa/2026-11-16/pre-regression-review-sheets/mobile-4.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  665977
+    },
+    {
+        "path":  "docs/qa/2026-11-16/pre-regression-review-sheets/mobile-5.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  523370
+    },
+    {
+        "path":  "docs/qa/2026-11-16/pre-regression-review-sheets/tablet-1.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  633911
+    },
+    {
+        "path":  "docs/qa/2026-11-16/pre-regression-review-sheets/tablet-2.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  620861
+    },
+    {
+        "path":  "docs/qa/2026-11-16/pre-regression-review-sheets/tablet-3.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  633609
+    },
+    {
+        "path":  "docs/qa/2026-11-16/pre-regression-review-sheets/tablet-4.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  608673
+    },
+    {
+        "path":  "docs/qa/2026-11-16/pre-regression-review-sheets/tablet-5.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  473583
+    },
+    {
+        "path":  "docs/qa/2026-11-16/repro/screenshots/home--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  698914
+    },
+    {
+        "path":  "docs/qa/2026-11-16/repro/screenshots/home--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  513024
+    },
+    {
+        "path":  "docs/qa/2026-11-16/repro/screenshots/home--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  566857
+    },
+    {
+        "path":  "docs/qa/2026-11-16/repro/screenshots/services--desktop.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  497471
+    },
+    {
+        "path":  "docs/qa/2026-11-16/repro/screenshots/services--mobile.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  356983
+    },
+    {
+        "path":  "docs/qa/2026-11-16/repro/screenshots/services--tablet.jpg",
+        "reason":  "Historical generated screenshot; preserved in commit 3bb9ed1",
+        "bytes":  403776
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/html/about.html",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  63112
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/html/aux-booking-query.html",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  178953
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/html/aux-review.html",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  43132
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/html/brands.html",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  73181
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/html/contact.html",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  55610
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/html/home.html",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  178996
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/html/reviews.html",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  56480
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/html/service-areas.html",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  80111
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/html/services.html",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  89841
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/html/services__appliance-repair.html",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  86228
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/html/services__cooling.html",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  89150
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/html/services__cooling__ac-installation.html",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  80939
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/html/services__cooling__ac-maintenance.html",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  84105
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/html/services__cooling__ac-repair.html",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  80955
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/html/services__cooling__ac-replacement.html",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  82228
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/html/services__heating.html",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  87215
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/html/services__heating__boiler-repair.html",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  80877
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/html/services__heating__furnace-repair.html",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  80659
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/html/services__heating__heat-pumps.html",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  81821
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/html/services__heating__heating-maintenance.html",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  84027
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/html/services__water-heater-repair.html",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  77202
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/assets/125-01c7933c42e9.webp",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  592312
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/assets/125-22ee6be36198.webp",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  592312
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/assets/26-cf8e2db66e9f.webp",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  1894
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/assets/28-ad8939466723.webp",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  2828
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/assets/29-e23e0fa8e1c3.webp",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  266574
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/assets/30-3efba7b266ac.webp",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  85774
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/assets/31-b93ceb3cc9a9.webp",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  324252
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/assets/33-de53cba084f9.webp",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  122142
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/assets/33-df055e9c7509.webp",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  76586
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/assets/34-a4e19f975286.webp",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  77988
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/assets/35-417619a50750.webp",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  28306
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/assets/36-862ac75667ff.webp",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  184778
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/assets/36-dba9db1aeaeb.webp",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  67218
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/assets/39-dc2090d04ec1.webp",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  593934
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/assets/40-46251bc407bf.webp",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  127536
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/assets/41-1cc424358824.webp",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  87616
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/assets/43-7fffb49e2b29.png",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  73958
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/assets/44-2f865c8ac74f.webp",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  73996
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/assets/44-f04d7f1bc75e.webp",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  52512
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/assets/45-407368f8b4a1.webp",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  57658
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/assets/49-773f0c785fce.webp",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  93906
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/assets/50-e4d11a2ba595.webp",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  95770
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/assets/58-c076cabbe2c4.png",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  73958
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/assets/60-a97fb5e3ace7.png",
+        "reason":  "Historical downloaded crawl copy; preserved in commit 3bb9ed1",
+        "bytes":  73958
+    },
+    {
+        "path":  "docs/audits/on-page-seo-2026-11-13/production.css",
+        "reason":  "Historical downloaded stylesheet; preserved in commit 3bb9ed1",
+        "bytes":  71517
+    }
+]

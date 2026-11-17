@@ -41,7 +41,7 @@ excluded by the user. No policy pages or legal promises are introduced.
 
 ## Foundation tokens
 
-All colors live in `src/app/globals.css`. The brand triad is sampled directly from `apex logo/colored.png` (see `src/content/brand.ts`) — do not hand-pick new hex values without re-sampling the source file.
+All colors live in `src/app/globals.css`. The brand triad is sampled directly from `public/brand/apex-mark-colored.png` (see `src/content/brand.ts`) — do not hand-pick new hex values without re-sampling the source file.
 
 | Token | Value | Source | Primary use |
 | --- | --- | --- | --- |
@@ -72,15 +72,15 @@ Geist, self-hosted via `next/font`. Headline scale is heavy but not maximal — 
 
 ## Carousels
 
-A single primitive family in `src/components/ui/carousel.tsx` (multi-item, scroll-snap based — services, Apex Results) and `hero-image-carousel.tsx` (single dominant image, opacity crossfade — hero only). Both: autoplay pauses on hover/focus, skip autoplay entirely under `prefers-reduced-motion`, no dependency installed.
+The active carousel primitive is `src/components/ui/carousel.tsx` (multi-item, scroll-snap based — services, Apex Results). It respects reduced motion and requires no additional dependency. The unreferenced hero-image carousel was removed during the 17 November cleanup; the current home illustration and service hero are unchanged.
 
 ## Header
 
-Sticky; transparent at the top of the page, transitioning to a bordered/blurred/shadowed floating pill once scrolled (`scrolled` state in `SiteHeader`). No separate utility bar above it. CTA hierarchy left→right: Live Now (small, calm, dot + text) → phone (`brand-primary` pill) → Request service (`ink` pill, secondary weight).
+Sticky; transparent at the top of the page, transitioning to a bordered/blurred/shadowed floating pill once scrolled (`scrolled` state in `SiteHeader`). No separate utility bar above it. The header uses the neutral Contact Apex label, phone and Book Now actions. A live-presence indicator requires a real availability signal.
 
 ## Brand assets
 
-The only approved logo files are `apex logo/{colored,white,black}.png` (client-supplied, 1254×1254). Copies live in `public/brand/` for in-page use and `src/app/icon.png` / `apple-icon.png` for the browser favicon (Next's file-convention auto-generates the `<link rel="icon">` tags — no manual `metadata.icons` needed). Never redesign or recolor this mark; use `colored` on light surfaces, `white` on dark ones.
+The approved client-supplied logos are `public/brand/apex-mark-{colored,white,black}.png` (1254×1254). The duplicate `apex logo/` copies were removed after SHA-256 equality checks. `src/app/icon.png` (64×64) and `apple-icon.png` (180×180) are resized derivatives for Next's file-based icon metadata. Never redesign or recolor the mark; use colored on light surfaces and white on dark ones.
 
 ## Booking-flow patterns
 

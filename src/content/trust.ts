@@ -7,8 +7,8 @@
 export const technicianExperience = "10+ Years Technician Experience";
 
 export const availability = {
-  liveNowLabel: "Live Now",
-  liveNowDetail: "Instant response. Call or text and we reply right away.",
+  // No real-time operator-status signal is connected to the website.
+  contactLabel: "Contact Apex",
   // "We arrive ASAP" was replaced (client feedback): Apex connects homeowners with
   // independent local technicians rather than dispatching its own field staff, so the
   // headline should not imply Apex itself guarantees an arrival time.

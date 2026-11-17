@@ -1,0 +1,337 @@
+{
+  "date": "2026-11-17",
+  "pages": 20,
+  "sitemapURLs": 19,
+  "indexableByObservedDirectives": 19,
+  "non200": [],
+  "missingTitle": 0,
+  "missingDescription": 0,
+  "uniqueTitles": 20,
+  "uniqueDescriptions": 20,
+  "canonicalMismatch": [],
+  "notExactlyOneH1": [],
+  "missingAltAttributes": 0,
+  "emptyAltAttributes": 19,
+  "anchorFailures": [],
+  "phoneLinks": [
+    "tel:+15165860826"
+  ],
+  "lighthouse": [
+    {
+      "run": "lighthouse-mobile",
+      "url": "https://apexhomesupport.com/",
+      "fetchTime": "2026-11-17T06:17:33.202Z",
+      "version": "13.6.0",
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "categories": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "FCP_ms": 1153,
+        "LCP_ms": 1153,
+        "TBT_ms": 168,
+        "CLS": 0,
+        "speedIndex_ms": 2547
+      },
+      "transferredBytes": 829865,
+      "findings": [
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names."
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "displayValue": "Est savings of 76 KiB"
+        },
+        {
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "displayValue": "Est savings of 14 KiB"
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests"
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "run": "lighthouse-desktop",
+      "url": "https://apexhomesupport.com/",
+      "fetchTime": "2026-11-17T06:19:28.002Z",
+      "version": "13.6.0",
+      "formFactor": "desktop",
+      "throttlingMethod": "simulate",
+      "categories": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "FCP_ms": 419,
+        "LCP_ms": 419,
+        "TBT_ms": 6,
+        "CLS": 0.0001776603131455033,
+        "speedIndex_ms": 1312
+      },
+      "transferredBytes": 1105806,
+      "findings": [
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names."
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "displayValue": "Est savings of 237 KiB"
+        },
+        {
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "displayValue": "Est savings of 14 KiB"
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests"
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "run": "lighthouse-service-mobile",
+      "url": "https://apexhomesupport.com/services/cooling/ac-repair",
+      "fetchTime": "2026-11-17T06:19:26.823Z",
+      "version": "13.6.0",
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "categories": {
+        "performance": 89,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "FCP_ms": 1096,
+        "LCP_ms": 2596,
+        "TBT_ms": 292,
+        "CLS": 0,
+        "speedIndex_ms": 3910
+      },
+      "transferredBytes": 653195,
+      "findings": [
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names."
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "displayValue": "Est savings of 28 KiB"
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "displayValue": "Est savings of 15 KiB"
+        },
+        {
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "displayValue": "Est savings of 14 KiB"
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "displayValue": "Est savings of 130 ms"
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "run": "lighthouse-service-mobile-repeat",
+      "url": "https://apexhomesupport.com/services/cooling/ac-repair",
+      "fetchTime": "2026-11-17T06:21:31.671Z",
+      "version": "13.6.0",
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "categories": {
+        "performance": 97,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "FCP_ms": 1059,
+        "LCP_ms": 2584,
+        "TBT_ms": 63,
+        "CLS": 0,
+        "speedIndex_ms": 2862
+      },
+      "transferredBytes": 653133,
+      "findings": [
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names."
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "displayValue": "Est savings of 15 KiB"
+        },
+        {
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "displayValue": "Est savings of 14 KiB"
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "displayValue": "Est savings of 130 ms"
+        }
+      ],
+      "warnings": []
+    }
+  ],
+  "httpChecks": [
+    {
+      "url": "http://apexhomesupport.com/",
+      "status": 200,
+      "finalUrl": "https://apexhomesupport.com/",
+      "redirects": 1,
+      "time": 1.234208,
+      "headers": "HTTP/1.0 308 Permanent Redirect\r\nContent-Type: text/plain\r\nLocation: https://apexhomesupport.com/\r\nRefresh: 0;url=https://apexhomesupport.com/\r\nserver: Vercel\r\n\r\nHTTP/1.0 200 OK\r\nAge: 118\r\nCache-Control: public, max-age=0, must-revalidate\r\nContent-Length: 178876\r\nContent-Type: text/html; charset=utf-8\r\nDate: Tue, 17 Nov 2026 06:15:25 GMT\r\nEtag: \"8efkynktm83tz5\"\r\nServer: Vercel\r\nStrict-Transport-Security: max-age=63072000\r\nVary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch\r\nX-Matched-Path: /\r\nX-Nextjs-Prerender: 1\r\nX-Nextjs-Stale-Time: 300\r\nX-Powered-By: Next.js\r\nX-Vercel-Cache: HIT\r\nX-Vercel-Id: hkg1::iad1::vkll4-1794896244089-a63fcbfaabdf\r\n\r\n",
+      "title": "Apex Home Services | Premium Home Services",
+      "canonical": "https://apexhomesupport.com",
+      "robots": [
+        "index, follow"
+      ]
+    },
+    {
+      "url": "https://www.apexhomesupport.com/",
+      "status": 200,
+      "finalUrl": "https://apexhomesupport.com/",
+      "redirects": 1,
+      "time": 2.246793,
+      "headers": "HTTP/1.1 307 Temporary Redirect\r\nCache-Control: public, max-age=0, must-revalidate\r\nContent-Type: text/plain\r\nDate: Tue, 17 Nov 2026 06:17:24 GMT\r\nLocation: https://apexhomesupport.com/\r\nServer: Vercel\r\nStrict-Transport-Security: max-age=63072000\r\nX-Vercel-Id: hkg1::78gkh-1794896244557-9b6904be756e\r\nTransfer-Encoding: chunked\r\n\r\nHTTP/1.1 200 OK\r\nAge: 119\r\nCache-Control: public, max-age=0, must-revalidate\r\nContent-Length: 178876\r\nContent-Type: text/html; charset=utf-8\r\nDate: Tue, 17 Nov 2026 06:15:25 GMT\r\nEtag: \"8efkynktm83tz5\"\r\nServer: Vercel\r\nStrict-Transport-Security: max-age=63072000\r\nVary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch\r\nX-Matched-Path: /\r\nX-Nextjs-Prerender: 1\r\nX-Nextjs-Stale-Time: 300\r\nX-Powered-By: Next.js\r\nX-Vercel-Cache: HIT\r\nX-Vercel-Id: hkg1::iad1::wbgh7-1794896245004-e1c68261e38f\r\n\r\n",
+      "title": "Apex Home Services | Premium Home Services",
+      "canonical": "https://apexhomesupport.com",
+      "robots": [
+        "index, follow"
+      ]
+    },
+    {
+      "url": "http://www.apexhomesupport.com/",
+      "status": 200,
+      "finalUrl": "https://apexhomesupport.com/",
+      "redirects": 2,
+      "time": 2.245494,
+      "headers": "HTTP/1.0 308 Permanent Redirect\r\nContent-Type: text/plain\r\nLocation: https://www.apexhomesupport.com/\r\nRefresh: 0;url=https://www.apexhomesupport.com/\r\nserver: Vercel\r\n\r\nHTTP/1.0 307 Temporary Redirect\r\nCache-Control: public, max-age=0, must-revalidate\r\nContent-Type: text/plain\r\nDate: Tue, 17 Nov 2026 06:17:24 GMT\r\nLocation: https://apexhomesupport.com/\r\nServer: Vercel\r\nStrict-Transport-Security: max-age=63072000\r\nX-Vercel-Id: hkg1::l85mt-1794896244679-ef0ca15d3e51\r\n\r\nHTTP/1.0 200 OK\r\nAge: 119\r\nCache-Control: public, max-age=0, must-revalidate\r\nContent-Length: 178876\r\nContent-Type: text/html; charset=utf-8\r\nDate: Tue, 17 Nov 2026 06:15:25 GMT\r\nEtag: \"8efkynktm83tz5\"\r\nServer: Vercel\r\nStrict-Transport-Security: max-age=63072000\r\nVary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch\r\nX-Matched-Path: /\r\nX-Nextjs-Prerender: 1\r\nX-Nextjs-Stale-Time: 300\r\nX-Powered-By: Next.js\r\nX-Vercel-Cache: STALE\r\nX-Vercel-Id: hkg1::iad1::v9wdp-1794896245138-022a2ca2760a\r\n\r\n",
+      "title": "Apex Home Services | Premium Home Services",
+      "canonical": "https://apexhomesupport.com",
+      "robots": [
+        "index, follow"
+      ]
+    },
+    {
+      "url": "https://apexhomesupport.com/services/",
+      "status": 200,
+      "finalUrl": "https://apexhomesupport.com/services",
+      "redirects": 1,
+      "time": 0.867743,
+      "headers": "HTTP/1.1 308 Permanent Redirect\r\nCache-Control: public, max-age=0, must-revalidate\r\nContent-Type: text/plain\r\nDate: Tue, 17 Nov 2026 06:17:26 GMT\r\nLocation: /services\r\nRefresh: 0;url=/services\r\nServer: Vercel\r\nStrict-Transport-Security: max-age=63072000\r\nX-Vercel-Id: hkg1::g94hb-1794896246093-cf0efb158020\r\nTransfer-Encoding: chunked\r\n\r\nHTTP/1.1 200 OK\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nAge: 46124\r\nCache-Control: public, max-age=0, must-revalidate\r\nContent-Disposition: inline\r\nContent-Length: 88080\r\nContent-Type: text/html; charset=utf-8\r\nDate: Tue, 17 Nov 2026 06:17:26 GMT\r\nEtag: \"6669eb1fad61be28ea0a96b5717bc590\"\r\nServer: Vercel\r\nStrict-Transport-Security: max-age=63072000\r\nVary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch\r\nX-Matched-Path: /services\r\nX-Nextjs-Prerender: 1\r\nX-Nextjs-Stale-Time: 300\r\nX-Vercel-Cache: HIT\r\nX-Vercel-Id: hkg1::l85mt-1794896246237-3f6fce6b614b\r\n\r\n",
+      "title": "Home Services | Apex Home Services",
+      "canonical": "https://apexhomesupport.com/services",
+      "robots": [
+        "index, follow"
+      ]
+    },
+    {
+      "url": "https://apexhomesupport.com/audit-nonexistent-20261117",
+      "status": 404,
+      "finalUrl": "https://apexhomesupport.com/audit-nonexistent-20261117",
+      "redirects": 0,
+      "time": 0.870294,
+      "headers": "HTTP/1.1 404 Not Found\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nAge: 0\r\nCache-Control: public, max-age=0, must-revalidate\r\nContent-Disposition: inline; filename=\"404\"\r\nContent-Length: 12747\r\nContent-Type: text/html; charset=utf-8\r\nDate: Tue, 17 Nov 2026 06:17:26 GMT\r\nEtag: \"f90234965d9b23f24fe329a9ece77b96\"\r\nLast-Modified: Tue, 17 Nov 2026 06:17:26 GMT\r\nServer: Vercel\r\nStrict-Transport-Security: max-age=63072000\r\nX-Matched-Path: /404\r\nX-Vercel-Cache: HIT\r\nX-Vercel-Id: hkg1::fxr72-1794896246119-74b500048bc7\r\n\r\n",
+      "title": "404: This page could not be found.",
+      "canonical": "https://apexhomesupport.com",
+      "robots": [
+        "noindex"
+      ]
+    },
+    {
+      "url": "https://apexhomesupport.com/privacy",
+      "status": 404,
+      "finalUrl": "https://apexhomesupport.com/privacy",
+      "redirects": 0,
+      "time": 0.854547,
+      "headers": "HTTP/1.1 404 Not Found\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nAge: 0\r\nCache-Control: public, max-age=0, must-revalidate\r\nContent-Disposition: inline; filename=\"404\"\r\nContent-Length: 12747\r\nContent-Type: text/html; charset=utf-8\r\nDate: Tue, 17 Nov 2026 06:17:26 GMT\r\nEtag: \"f90234965d9b23f24fe329a9ece77b96\"\r\nLast-Modified: Tue, 17 Nov 2026 06:17:26 GMT\r\nServer: Vercel\r\nStrict-Transport-Security: max-age=63072000\r\nX-Matched-Path: /404\r\nX-Vercel-Cache: MISS\r\nX-Vercel-Id: hkg1::dmb5x-1794896246108-8f842279aeac\r\n\r\n",
+      "title": "404: This page could not be found.",
+      "canonical": "https://apexhomesupport.com",
+      "robots": [
+        "noindex"
+      ]
+    },
+    {
+      "url": "https://apexhomesupport.com/privacy-policy",
+      "status": 404,
+      "finalUrl": "https://apexhomesupport.com/privacy-policy",
+      "redirects": 0,
+      "time": 0.569765,
+      "headers": "HTTP/1.1 404 Not Found\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nAge: 0\r\nCache-Control: public, max-age=0, must-revalidate\r\nContent-Disposition: inline; filename=\"404\"\r\nContent-Length: 12747\r\nContent-Type: text/html; charset=utf-8\r\nDate: Tue, 17 Nov 2026 06:17:27 GMT\r\nEtag: \"f90234965d9b23f24fe329a9ece77b96\"\r\nLast-Modified: Tue, 17 Nov 2026 06:17:26 GMT\r\nServer: Vercel\r\nStrict-Transport-Security: max-age=63072000\r\nX-Matched-Path: /404\r\nX-Vercel-Cache: HIT\r\nX-Vercel-Id: hkg1::mghv8-1794896247063-a687a175771f\r\n\r\n",
+      "title": "404: This page could not be found.",
+      "canonical": "https://apexhomesupport.com",
+      "robots": [
+        "noindex"
+      ]
+    },
+    {
+      "url": "https://apexhomesupport.com/terms",
+      "status": 404,
+      "finalUrl": "https://apexhomesupport.com/terms",
+      "redirects": 0,
+      "time": 0.522859,
+      "headers": "HTTP/1.1 404 Not Found\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nAge: 0\r\nCache-Control: public, max-age=0, must-revalidate\r\nContent-Disposition: inline; filename=\"404\"\r\nContent-Length: 12747\r\nContent-Type: text/html; charset=utf-8\r\nDate: Tue, 17 Nov 2026 06:17:27 GMT\r\nEtag: \"f90234965d9b23f24fe329a9ece77b96\"\r\nLast-Modified: Tue, 17 Nov 2026 06:17:26 GMT\r\nServer: Vercel\r\nStrict-Transport-Security: max-age=63072000\r\nX-Matched-Path: /404\r\nX-Vercel-Cache: HIT\r\nX-Vercel-Id: hkg1::wbgh7-1794896247063-24060e836df0\r\n\r\n",
+      "title": "404: This page could not be found.",
+      "canonical": "https://apexhomesupport.com",
+      "robots": [
+        "noindex"
+      ]
+    },
+    {
+      "url": "https://apexhomesupport.com/?utm_source=audit",
+      "status": 200,
+      "finalUrl": "https://apexhomesupport.com/?utm_source=audit",
+      "redirects": 0,
+      "time": 0.850208,
+      "headers": "HTTP/1.1 200 OK\r\nAge: 121\r\nCache-Control: public, max-age=0, must-revalidate\r\nContent-Length: 178876\r\nContent-Type: text/html; charset=utf-8\r\nDate: Tue, 17 Nov 2026 06:15:25 GMT\r\nEtag: \"8efkynktm83tz5\"\r\nServer: Vercel\r\nStrict-Transport-Security: max-age=63072000\r\nVary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch\r\nX-Matched-Path: /\r\nX-Nextjs-Prerender: 1\r\nX-Nextjs-Stale-Time: 300\r\nX-Powered-By: Next.js\r\nX-Vercel-Cache: STALE\r\nX-Vercel-Id: hkg1::iad1::mghv8-1794896247083-3f0f8c9a7114\r\n\r\n",
+      "title": "Apex Home Services | Premium Home Services",
+      "canonical": "https://apexhomesupport.com",
+      "robots": [
+        "index, follow"
+      ]
+    },
+    {
+      "url": "https://apexhomesupport.com/robots.txt",
+      "status": 200,
+      "finalUrl": "https://apexhomesupport.com/robots.txt",
+      "redirects": 0,
+      "time": 0.460763,
+      "headers": "HTTP/1.1 200 OK\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nAge: 166\r\nCache-Control: public, max-age=0, must-revalidate\r\nContent-Disposition: inline; filename=\"robots.txt\"\r\nContent-Length: 90\r\nContent-Type: text/plain; charset=utf-8\r\nDate: Tue, 17 Nov 2026 06:17:28 GMT\r\nEtag: \"c0cbe370f67b68f73cbed00bad9da25a\"\r\nLast-Modified: Tue, 17 Nov 2026 06:14:41 GMT\r\nServer: Vercel\r\nStrict-Transport-Security: max-age=63072000\r\nX-Matched-Path: /robots.txt\r\nX-Vercel-Cache: HIT\r\nX-Vercel-Id: hkg1::2sjdg-1794896248035-c1f522f13877\r\n\r\n",
+      "robots": []
+    },
+    {
+      "url": "https://apexhomesupport.com/sitemap.xml",
+      "status": 200,
+      "finalUrl": "https://apexhomesupport.com/sitemap.xml",
+      "redirects": 0,
+      "time": 0.46598,
+      "headers": "HTTP/1.1 200 OK\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nAge: 165\r\nCache-Control: public, max-age=0, must-revalidate\r\nContent-Disposition: inline; filename=\"sitemap.xml\"\r\nContent-Length: 3426\r\nContent-Type: application/xml\r\nDate: Tue, 17 Nov 2026 06:17:28 GMT\r\nEtag: \"e7e177378d791bd7d63676c2d32aac02\"\r\nLast-Modified: Tue, 17 Nov 2026 06:14:42 GMT\r\nServer: Vercel\r\nStrict-Transport-Security: max-age=63072000\r\nX-Matched-Path: /sitemap.xml\r\nX-Vercel-Cache: HIT\r\nX-Vercel-Id: hkg1::mghv8-1794896248052-36214beb5297\r\n\r\n",
+      "robots": []
+    }
+  ]
+}

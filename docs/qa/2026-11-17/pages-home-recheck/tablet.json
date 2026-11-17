@@ -1,0 +1,357 @@
+{
+  "browser": "153.0.8010.12",
+  "results": [
+    {
+      "url": "/",
+      "viewport": "tablet",
+      "dimensions": {
+        "width": 768,
+        "height": 1024
+      },
+      "screenshot": "docs/qa/2026-11-17/pages-home-recheck/screenshots/home--tablet.jpg",
+      "status": 200,
+      "dom": {
+        "title": "Appliance Repair & HVAC Services | Apex Home Services",
+        "h1": [
+          "Let’s get your home back to comfortable."
+        ],
+        "horizontalOverflow": false,
+        "pageWidth": 768,
+        "protrudingContent": [],
+        "brokenImages": [],
+        "images": [
+          {
+            "alt": "Apex Home Services mark",
+            "loading": "auto",
+            "width": 36,
+            "naturalWidth": 48,
+            "optimized": true
+          },
+          {
+            "alt": "Technician using a diagnostic tool to inspect an open range oven",
+            "loading": "lazy",
+            "width": 343,
+            "naturalWidth": 353,
+            "optimized": true
+          },
+          {
+            "alt": "Technician on a ladder using a multimeter to service an outdoor AC condenser unit",
+            "loading": "lazy",
+            "width": 343,
+            "naturalWidth": 353,
+            "optimized": true
+          },
+          {
+            "alt": "Apex technician connecting refrigerant gauges to an outdoor heat pump unit, head and shoulders fully visible",
+            "loading": "lazy",
+            "width": 343,
+            "naturalWidth": 353,
+            "optimized": true
+          },
+          {
+            "alt": "Technician inspecting the label on a residential gas water heater",
+            "loading": "lazy",
+            "width": 343,
+            "naturalWidth": 353,
+            "optimized": true
+          },
+          {
+            "alt": "A dusty, dirt-caked outdoor AC condenser coil before cleaning",
+            "loading": "lazy",
+            "width": 171,
+            "naturalWidth": 320,
+            "optimized": true
+          },
+          {
+            "alt": "The outdoor AC condenser coil visibly cleaner after maintenance",
+            "loading": "lazy",
+            "width": 171,
+            "naturalWidth": 320,
+            "optimized": true
+          },
+          {
+            "alt": "A dryer lint trap housing heavily clogged with compacted lint before cleaning",
+            "loading": "lazy",
+            "width": 171,
+            "naturalWidth": 320,
+            "optimized": true
+          },
+          {
+            "alt": "The same dryer lint trap housing fully cleaned after service",
+            "loading": "lazy",
+            "width": 171,
+            "naturalWidth": 320,
+            "optimized": true
+          },
+          {
+            "alt": "An ice maker assembly removed from a refrigerator freezer door, held in hand",
+            "loading": "lazy",
+            "width": 171,
+            "naturalWidth": 320,
+            "optimized": true
+          },
+          {
+            "alt": "The new ice maker assembly installed in the refrigerator freezer door",
+            "loading": "lazy",
+            "width": 171,
+            "naturalWidth": 320,
+            "optimized": true
+          },
+          {
+            "alt": "A replacement refrigerator control board held in hand before installation",
+            "loading": "lazy",
+            "width": 171,
+            "naturalWidth": 320,
+            "optimized": true
+          },
+          {
+            "alt": "The new refrigerator control board wired and installed in place",
+            "loading": "lazy",
+            "width": 171,
+            "naturalWidth": 320,
+            "optimized": true
+          },
+          {
+            "alt": "",
+            "loading": "lazy",
+            "width": 40,
+            "naturalWidth": 48,
+            "optimized": true
+          }
+        ],
+        "footerCount": 1,
+        "footerLinks": [
+          {
+            "text": "Apex Home Services",
+            "href": "/"
+          },
+          {
+            "text": "States servedNY · NJ · CT · MA · RI",
+            "href": "/service-areas"
+          },
+          {
+            "text": "(516) 586-0826",
+            "href": "tel:+15165860826"
+          },
+          {
+            "text": "Refrigerators, Freezers & Ice Makers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Washers & Dryers (Gas & Electric)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Ovens, Ranges & Cooktops",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Microwaves (Built-in & Over-the-Range)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Dishwashers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Wine & Beverage Coolers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Range Hoods & Warming Drawers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Refrigerators",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Freezers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Ice Machines",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Pizza Ovens & Griddles",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Frozen Beverage Dispensers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Food Truck Refrigeration",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "AC Repair",
+            "href": "/services/cooling/ac-repair"
+          },
+          {
+            "text": "AC Installation",
+            "href": "/services/cooling/ac-installation"
+          },
+          {
+            "text": "AC Maintenance",
+            "href": "/services/cooling/ac-maintenance"
+          },
+          {
+            "text": "AC Replacement",
+            "href": "/services/cooling/ac-replacement"
+          },
+          {
+            "text": "Furnace Repair",
+            "href": "/services/heating/furnace-repair"
+          },
+          {
+            "text": "Heat Pumps",
+            "href": "/services/heating/heat-pumps"
+          },
+          {
+            "text": "Heating Maintenance",
+            "href": "/services/heating/heating-maintenance"
+          },
+          {
+            "text": "Boiler Repair",
+            "href": "/services/heating/boiler-repair"
+          },
+          {
+            "text": "Water Heater Repair",
+            "href": "/services/water-heater-repair"
+          }
+        ],
+        "phoneLinks": [
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Talk to Apex",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          }
+        ],
+        "visibleTopActions": [
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 44
+          },
+          {
+            "label": "Book Now",
+            "height": 44
+          },
+          {
+            "label": "Open navigation",
+            "height": 48
+          },
+          {
+            "label": "AppliancesKitchen & laundry",
+            "height": 88
+          },
+          {
+            "label": "CoolingAC & comfort",
+            "height": 88
+          },
+          {
+            "label": "HeatingFurnace & heat pump",
+            "height": 88
+          },
+          {
+            "label": "Hot waterWater heater repair",
+            "height": 88
+          },
+          {
+            "label": "Book appliances",
+            "height": 48
+          },
+          {
+            "label": "Talk to Apex",
+            "height": 44
+          },
+          {
+            "label": "Explore your home in 2D / 3D +",
+            "height": 44
+          },
+          {
+            "label": "Help from Apex Assistant",
+            "height": 56
+          },
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 56
+          },
+          {
+            "label": "Book now",
+            "height": 56
+          }
+        ],
+        "internalLinks": [
+          "/",
+          "/service-areas",
+          "/about",
+          "/contact",
+          "/services",
+          "/services/appliance-repair",
+          "/services/cooling",
+          "/services/cooling/ac-repair",
+          "/services/cooling/ac-installation",
+          "/services/cooling/ac-maintenance",
+          "/services/cooling/ac-replacement",
+          "/services/heating",
+          "/services/heating/furnace-repair",
+          "/services/heating/heat-pumps",
+          "/services/heating/heating-maintenance",
+          "/services/heating/boiler-repair",
+          "/services/water-heater-repair",
+          "/brands",
+          "/reviews"
+        ],
+        "metrics": {
+          "lcp": 3180,
+          "cls": 0,
+          "longTasks": [
+            95,
+            104
+          ],
+          "interactions": []
+        }
+      },
+      "accessibility": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 41
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedAssets": []
+    }
+  ],
+  "blockedMutations": []
+}

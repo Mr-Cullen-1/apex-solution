@@ -3,7 +3,8 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { chromium } = require(process.env.QA_PLAYWRIGHT || '../node_modules/.qa-tools/node_modules/playwright-core');
 const base = process.env.QA_BASE_URL || 'http://127.0.0.1:3123';
-const output = 'docs/qa/2026-11-16/final/performance.json';
+const output = process.env.QA_PERFORMANCE_OUTPUT || 'docs/qa/current/performance.json';
+fs.mkdirSync(path.dirname(output), { recursive: true });
 const samples = [];
 (async () => {
   const browser = await chromium.launch({ headless: true, executablePath: process.env.QA_BROWSER || path.join(process.env.LOCALAPPDATA, 'ms-playwright/chromium-1228/chrome-win64/chrome.exe') });
@@ -39,7 +40,7 @@ const samples = [];
       await page.keyboard.press('Escape');
       let cameraFrames = null;
       if (!mobile && url === '/') {
-        await page.getByRole('button', { name: 'Turn the home' }).click();
+        await page.getByRole('button', { name: 'Rotate home illustration', exact: true }).click();
         cameraFrames = await page.evaluate(() => new Promise(resolve => {
           const frames = []; let previous; let start;
           function frame(now) { if (previous) frames.push(now - previous); previous = now; start ??= now; if (now - start < 900) requestAnimationFrame(frame); else resolve(frames); }
@@ -51,7 +52,7 @@ const samples = [];
       const row = { profile, url, sample, ...data, cameraFrames, observedInteractionMax: Math.max(0, ...Object.values(data.interactions)) };
       samples.push(row);
       fs.writeFileSync(output, JSON.stringify({ browser: browser.version(), note: 'Local production build. Synthetic timings; observed interaction maximum is a lab diagnostic, not field INP. New browser context per sample. Throttled profile: 4x CPU, 1.6 Mbps down, 0.75 Mbps up, 150ms latency.', samples }, null, 2));
-      console.log(profile, url, sample, 'LCP', Math.round(row.lcp), 'CLS', row.cls.toFixed(4), 'interaction', row.observedInteractionMax);
+      console.log(profile, url, sample, 'LCP', row.lcp === null ? 'unavailable' : Math.round(row.lcp), 'CLS', row.cls.toFixed(4), 'interaction', row.observedInteractionMax);
       await context.close();
     }
   } finally { await browser.close(); }

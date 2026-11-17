@@ -1,5 +1,13 @@
 # Implementation progress
 
+## Workspace cleanup and Git delivery — 17 November 2026
+
+The user subsequently authorized removing unnecessary files and committing/pushing the reviewed work. See [cleanup and validation](docs/audits/workspace-cleanup-2026-11-17.md). Unused source files, exact duplicate media and historical generated captures were removed; runtime assets, unique originals, audit reports and current evidence remain. Earlier no-commit/no-push statements below describe their original checkpoints.
+
+## Audit remediation — 17 November 2026
+
+The authorized local batch is tracked in [remediation progress](docs/audits/remediation-progress-2026-11-17.md) and [status registry](docs/audits/remediation-status-2026-11-17.csv). It addresses existing-route metadata, sitemap dates, accessibility naming, content consistency, structured data and media/header improvements. Business-dependent policies, analytics activation and new landing pages remain explicit outstanding work. See [business inputs](docs/BUSINESS_FACTS.md). No commit, push or deployment was made.
+
 ## Browser QA follow-up — 16 November 2026
 
 Actual local Chromium testing is now documented in [VISUAL_QA_REPORT.md](VISUAL_QA_REPORT.md), [INTERACTION_TEST_REPORT.md](INTERACTION_TEST_REPORT.md), [VISUAL_QA_ISSUES.csv](VISUAL_QA_ISSUES.csv), and [SCREENSHOT_INDEX.md](SCREENSHOT_INDEX.md). This follow-up supersedes the historical browser-access limitation below. It fixes service-description contrast, pricing/action wrapping, and the homepage service-call/chat overlap. The page architecture and runtime dependencies are unchanged; no deployment or Quo configuration change was made.

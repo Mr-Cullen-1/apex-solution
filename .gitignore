@@ -12,6 +12,9 @@
 
 # testing
 /coverage
+/docs/qa/current/
+# Local integration fixtures may contain request identifiers and cleanup SQL.
+/qa-runs/
 
 # next.js
 /.next/

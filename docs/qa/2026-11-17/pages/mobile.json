@@ -1,0 +1,4718 @@
+{
+  "browser": "153.0.8010.12",
+  "results": [
+    {
+      "url": "/",
+      "viewport": "mobile",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "docs/qa/2026-11-17/pages/screenshots/home--mobile.jpg",
+      "status": 200,
+      "dom": {
+        "title": "Appliance Repair & HVAC Services | Apex Home Services",
+        "h1": [
+          "Let’s get your home back to comfortable."
+        ],
+        "horizontalOverflow": false,
+        "pageWidth": 390,
+        "protrudingContent": [],
+        "brokenImages": [
+          {
+            "src": "/_next/image",
+            "alt": "A replacement refrigerator control board held in hand before installation"
+          },
+          {
+            "src": "/_next/image",
+            "alt": "The new refrigerator control board wired and installed in place"
+          }
+        ],
+        "images": [
+          {
+            "alt": "Apex Home Services mark",
+            "loading": "auto",
+            "width": 36,
+            "naturalWidth": 48,
+            "optimized": true
+          },
+          {
+            "alt": "Technician using a diagnostic tool to inspect an open range oven",
+            "loading": "lazy",
+            "width": 96,
+            "naturalWidth": 96,
+            "optimized": true
+          },
+          {
+            "alt": "Technician on a ladder using a multimeter to service an outdoor AC condenser unit",
+            "loading": "lazy",
+            "width": 96,
+            "naturalWidth": 96,
+            "optimized": true
+          },
+          {
+            "alt": "Apex technician connecting refrigerant gauges to an outdoor heat pump unit, head and shoulders fully visible",
+            "loading": "lazy",
+            "width": 96,
+            "naturalWidth": 96,
+            "optimized": true
+          },
+          {
+            "alt": "Technician inspecting the label on a residential gas water heater",
+            "loading": "lazy",
+            "width": 96,
+            "naturalWidth": 96,
+            "optimized": true
+          },
+          {
+            "alt": "A dusty, dirt-caked outdoor AC condenser coil before cleaning",
+            "loading": "lazy",
+            "width": 178,
+            "naturalWidth": 320,
+            "optimized": true
+          },
+          {
+            "alt": "The outdoor AC condenser coil visibly cleaner after maintenance",
+            "loading": "lazy",
+            "width": 178,
+            "naturalWidth": 320,
+            "optimized": true
+          },
+          {
+            "alt": "A dryer lint trap housing heavily clogged with compacted lint before cleaning",
+            "loading": "lazy",
+            "width": 178,
+            "naturalWidth": 320,
+            "optimized": true
+          },
+          {
+            "alt": "The same dryer lint trap housing fully cleaned after service",
+            "loading": "lazy",
+            "width": 178,
+            "naturalWidth": 320,
+            "optimized": true
+          },
+          {
+            "alt": "An ice maker assembly removed from a refrigerator freezer door, held in hand",
+            "loading": "lazy",
+            "width": 178,
+            "naturalWidth": 320,
+            "optimized": true
+          },
+          {
+            "alt": "The new ice maker assembly installed in the refrigerator freezer door",
+            "loading": "lazy",
+            "width": 178,
+            "naturalWidth": 320,
+            "optimized": true
+          },
+          {
+            "alt": "A replacement refrigerator control board held in hand before installation",
+            "loading": "lazy",
+            "width": 178,
+            "naturalWidth": 0,
+            "optimized": false
+          },
+          {
+            "alt": "The new refrigerator control board wired and installed in place",
+            "loading": "lazy",
+            "width": 178,
+            "naturalWidth": 0,
+            "optimized": false
+          },
+          {
+            "alt": "",
+            "loading": "lazy",
+            "width": 40,
+            "naturalWidth": 48,
+            "optimized": true
+          }
+        ],
+        "footerCount": 1,
+        "footerLinks": [
+          {
+            "text": "Apex Home Services",
+            "href": "/"
+          },
+          {
+            "text": "States servedNY · NJ · CT · MA · RI",
+            "href": "/service-areas"
+          },
+          {
+            "text": "(516) 586-0826",
+            "href": "tel:+15165860826"
+          },
+          {
+            "text": "Refrigerators, Freezers & Ice Makers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Washers & Dryers (Gas & Electric)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Ovens, Ranges & Cooktops",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Microwaves (Built-in & Over-the-Range)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Dishwashers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Wine & Beverage Coolers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Range Hoods & Warming Drawers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Refrigerators",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Freezers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Ice Machines",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Pizza Ovens & Griddles",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Frozen Beverage Dispensers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Food Truck Refrigeration",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "AC Repair",
+            "href": "/services/cooling/ac-repair"
+          },
+          {
+            "text": "AC Installation",
+            "href": "/services/cooling/ac-installation"
+          },
+          {
+            "text": "AC Maintenance",
+            "href": "/services/cooling/ac-maintenance"
+          },
+          {
+            "text": "AC Replacement",
+            "href": "/services/cooling/ac-replacement"
+          },
+          {
+            "text": "Furnace Repair",
+            "href": "/services/heating/furnace-repair"
+          },
+          {
+            "text": "Heat Pumps",
+            "href": "/services/heating/heat-pumps"
+          },
+          {
+            "text": "Heating Maintenance",
+            "href": "/services/heating/heating-maintenance"
+          },
+          {
+            "text": "Boiler Repair",
+            "href": "/services/heating/boiler-repair"
+          },
+          {
+            "text": "Water Heater Repair",
+            "href": "/services/water-heater-repair"
+          }
+        ],
+        "phoneLinks": [
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Talk to Apex",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          }
+        ],
+        "visibleTopActions": [
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 44
+          },
+          {
+            "label": "Book Now",
+            "height": 44
+          },
+          {
+            "label": "Open navigation",
+            "height": 44
+          },
+          {
+            "label": "AppliancesKitchen & laundry",
+            "height": 76
+          },
+          {
+            "label": "CoolingAC & comfort",
+            "height": 76
+          },
+          {
+            "label": "HeatingFurnace & heat pump",
+            "height": 76
+          },
+          {
+            "label": "Hot waterWater heater repair",
+            "height": 76
+          },
+          {
+            "label": "Book appliances",
+            "height": 48
+          },
+          {
+            "label": "Talk to Apex",
+            "height": 44
+          },
+          {
+            "label": "Explore your home in 2D / 3D +",
+            "height": 44
+          },
+          {
+            "label": "Help from Apex Assistant",
+            "height": 56
+          },
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 56
+          },
+          {
+            "label": "Book now",
+            "height": 56
+          }
+        ],
+        "internalLinks": [
+          "/",
+          "/service-areas",
+          "/about",
+          "/contact",
+          "/services",
+          "/services/appliance-repair",
+          "/services/cooling",
+          "/services/cooling/ac-repair",
+          "/services/cooling/ac-installation",
+          "/services/cooling/ac-maintenance",
+          "/services/cooling/ac-replacement",
+          "/services/heating",
+          "/services/heating/furnace-repair",
+          "/services/heating/heat-pumps",
+          "/services/heating/heating-maintenance",
+          "/services/heating/boiler-repair",
+          "/services/water-heater-repair",
+          "/brands",
+          "/reviews"
+        ],
+        "metrics": {
+          "lcp": 3688,
+          "cls": 0,
+          "longTasks": [
+            87,
+            124
+          ],
+          "interactions": []
+        }
+      },
+      "accessibility": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 41
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedAssets": []
+    },
+    {
+      "url": "/about",
+      "viewport": "mobile",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "docs/qa/2026-11-17/pages/screenshots/about--mobile.jpg",
+      "status": 200,
+      "dom": {
+        "title": "About | Apex Home Services",
+        "h1": [
+          "Reliable home service starts with clarity."
+        ],
+        "horizontalOverflow": false,
+        "pageWidth": 390,
+        "protrudingContent": [],
+        "brokenImages": [],
+        "images": [
+          {
+            "alt": "Apex Home Services mark",
+            "loading": "auto",
+            "width": 36,
+            "naturalWidth": 48,
+            "optimized": true
+          },
+          {
+            "alt": "",
+            "loading": "lazy",
+            "width": 40,
+            "naturalWidth": 48,
+            "optimized": true
+          }
+        ],
+        "footerCount": 1,
+        "footerLinks": [
+          {
+            "text": "Apex Home Services",
+            "href": "/"
+          },
+          {
+            "text": "States servedNY · NJ · CT · MA · RI",
+            "href": "/service-areas"
+          },
+          {
+            "text": "(516) 586-0826",
+            "href": "tel:+15165860826"
+          },
+          {
+            "text": "Refrigerators, Freezers & Ice Makers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Washers & Dryers (Gas & Electric)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Ovens, Ranges & Cooktops",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Microwaves (Built-in & Over-the-Range)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Dishwashers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Wine & Beverage Coolers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Range Hoods & Warming Drawers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Refrigerators",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Freezers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Ice Machines",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Pizza Ovens & Griddles",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Frozen Beverage Dispensers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Food Truck Refrigeration",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "AC Repair",
+            "href": "/services/cooling/ac-repair"
+          },
+          {
+            "text": "AC Installation",
+            "href": "/services/cooling/ac-installation"
+          },
+          {
+            "text": "AC Maintenance",
+            "href": "/services/cooling/ac-maintenance"
+          },
+          {
+            "text": "AC Replacement",
+            "href": "/services/cooling/ac-replacement"
+          },
+          {
+            "text": "Furnace Repair",
+            "href": "/services/heating/furnace-repair"
+          },
+          {
+            "text": "Heat Pumps",
+            "href": "/services/heating/heat-pumps"
+          },
+          {
+            "text": "Heating Maintenance",
+            "href": "/services/heating/heating-maintenance"
+          },
+          {
+            "text": "Boiler Repair",
+            "href": "/services/heating/boiler-repair"
+          },
+          {
+            "text": "Water Heater Repair",
+            "href": "/services/water-heater-repair"
+          }
+        ],
+        "phoneLinks": [
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          }
+        ],
+        "visibleTopActions": [
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 44
+          },
+          {
+            "label": "Book Now",
+            "height": 44
+          },
+          {
+            "label": "Open navigation",
+            "height": 44
+          },
+          {
+            "label": "Book Now",
+            "height": 48
+          },
+          {
+            "label": "Help from Apex Assistant",
+            "height": 56
+          },
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 56
+          },
+          {
+            "label": "Book now",
+            "height": 56
+          }
+        ],
+        "internalLinks": [
+          "/",
+          "/service-areas",
+          "/about",
+          "/contact",
+          "/services",
+          "/services/appliance-repair",
+          "/services/cooling",
+          "/services/cooling/ac-repair",
+          "/services/cooling/ac-installation",
+          "/services/cooling/ac-maintenance",
+          "/services/cooling/ac-replacement",
+          "/services/heating",
+          "/services/heating/furnace-repair",
+          "/services/heating/heat-pumps",
+          "/services/heating/heating-maintenance",
+          "/services/heating/boiler-repair",
+          "/services/water-heater-repair",
+          "/brands"
+        ],
+        "metrics": {
+          "lcp": 328,
+          "cls": 0,
+          "longTasks": [
+            124
+          ],
+          "interactions": []
+        }
+      },
+      "accessibility": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 33
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedAssets": []
+    },
+    {
+      "url": "/brands",
+      "viewport": "mobile",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "docs/qa/2026-11-17/pages/screenshots/brands--mobile.jpg",
+      "status": 200,
+      "dom": {
+        "title": "Brands We Service | Apex Home Services",
+        "h1": [
+          "Familiar equipment. Thoughtful service."
+        ],
+        "horizontalOverflow": false,
+        "pageWidth": 390,
+        "protrudingContent": [],
+        "brokenImages": [],
+        "images": [
+          {
+            "alt": "Apex Home Services mark",
+            "loading": "auto",
+            "width": 36,
+            "naturalWidth": 48,
+            "optimized": true
+          },
+          {
+            "alt": "",
+            "loading": "lazy",
+            "width": 40,
+            "naturalWidth": 48,
+            "optimized": true
+          }
+        ],
+        "footerCount": 1,
+        "footerLinks": [
+          {
+            "text": "Apex Home Services",
+            "href": "/"
+          },
+          {
+            "text": "States servedNY · NJ · CT · MA · RI",
+            "href": "/service-areas"
+          },
+          {
+            "text": "(516) 586-0826",
+            "href": "tel:+15165860826"
+          },
+          {
+            "text": "Refrigerators, Freezers & Ice Makers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Washers & Dryers (Gas & Electric)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Ovens, Ranges & Cooktops",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Microwaves (Built-in & Over-the-Range)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Dishwashers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Wine & Beverage Coolers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Range Hoods & Warming Drawers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Refrigerators",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Freezers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Ice Machines",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Pizza Ovens & Griddles",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Frozen Beverage Dispensers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Food Truck Refrigeration",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "AC Repair",
+            "href": "/services/cooling/ac-repair"
+          },
+          {
+            "text": "AC Installation",
+            "href": "/services/cooling/ac-installation"
+          },
+          {
+            "text": "AC Maintenance",
+            "href": "/services/cooling/ac-maintenance"
+          },
+          {
+            "text": "AC Replacement",
+            "href": "/services/cooling/ac-replacement"
+          },
+          {
+            "text": "Furnace Repair",
+            "href": "/services/heating/furnace-repair"
+          },
+          {
+            "text": "Heat Pumps",
+            "href": "/services/heating/heat-pumps"
+          },
+          {
+            "text": "Heating Maintenance",
+            "href": "/services/heating/heating-maintenance"
+          },
+          {
+            "text": "Boiler Repair",
+            "href": "/services/heating/boiler-repair"
+          },
+          {
+            "text": "Water Heater Repair",
+            "href": "/services/water-heater-repair"
+          }
+        ],
+        "phoneLinks": [
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          }
+        ],
+        "visibleTopActions": [
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 44
+          },
+          {
+            "label": "Book Now",
+            "height": 44
+          },
+          {
+            "label": "Open navigation",
+            "height": 44
+          },
+          {
+            "label": "Book Now",
+            "height": 48
+          },
+          {
+            "label": "Help from Apex Assistant",
+            "height": 56
+          },
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 56
+          },
+          {
+            "label": "Book now",
+            "height": 56
+          }
+        ],
+        "internalLinks": [
+          "/",
+          "/service-areas",
+          "/about",
+          "/contact",
+          "/services",
+          "/services/appliance-repair",
+          "/services/cooling",
+          "/services/cooling/ac-repair",
+          "/services/cooling/ac-installation",
+          "/services/cooling/ac-maintenance",
+          "/services/cooling/ac-replacement",
+          "/services/heating",
+          "/services/heating/furnace-repair",
+          "/services/heating/heat-pumps",
+          "/services/heating/heating-maintenance",
+          "/services/heating/boiler-repair",
+          "/services/water-heater-repair"
+        ],
+        "metrics": {
+          "lcp": 732,
+          "cls": 0,
+          "longTasks": [
+            122
+          ],
+          "interactions": []
+        }
+      },
+      "accessibility": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 33
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedAssets": []
+    },
+    {
+      "url": "/contact",
+      "viewport": "mobile",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "docs/qa/2026-11-17/pages/screenshots/contact--mobile.jpg",
+      "status": 200,
+      "dom": {
+        "title": "Contact | Apex Home Services",
+        "h1": [
+          "Let's get your home back on track."
+        ],
+        "horizontalOverflow": false,
+        "pageWidth": 390,
+        "protrudingContent": [],
+        "brokenImages": [],
+        "images": [
+          {
+            "alt": "Apex Home Services mark",
+            "loading": "auto",
+            "width": 36,
+            "naturalWidth": 48,
+            "optimized": true
+          },
+          {
+            "alt": "",
+            "loading": "lazy",
+            "width": 40,
+            "naturalWidth": 48,
+            "optimized": true
+          }
+        ],
+        "footerCount": 1,
+        "footerLinks": [
+          {
+            "text": "Apex Home Services",
+            "href": "/"
+          },
+          {
+            "text": "States servedNY · NJ · CT · MA · RI",
+            "href": "/service-areas"
+          },
+          {
+            "text": "(516) 586-0826",
+            "href": "tel:+15165860826"
+          },
+          {
+            "text": "Refrigerators, Freezers & Ice Makers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Washers & Dryers (Gas & Electric)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Ovens, Ranges & Cooktops",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Microwaves (Built-in & Over-the-Range)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Dishwashers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Wine & Beverage Coolers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Range Hoods & Warming Drawers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Refrigerators",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Freezers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Ice Machines",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Pizza Ovens & Griddles",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Frozen Beverage Dispensers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Food Truck Refrigeration",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "AC Repair",
+            "href": "/services/cooling/ac-repair"
+          },
+          {
+            "text": "AC Installation",
+            "href": "/services/cooling/ac-installation"
+          },
+          {
+            "text": "AC Maintenance",
+            "href": "/services/cooling/ac-maintenance"
+          },
+          {
+            "text": "AC Replacement",
+            "href": "/services/cooling/ac-replacement"
+          },
+          {
+            "text": "Furnace Repair",
+            "href": "/services/heating/furnace-repair"
+          },
+          {
+            "text": "Heat Pumps",
+            "href": "/services/heating/heat-pumps"
+          },
+          {
+            "text": "Heating Maintenance",
+            "href": "/services/heating/heating-maintenance"
+          },
+          {
+            "text": "Boiler Repair",
+            "href": "/services/heating/boiler-repair"
+          },
+          {
+            "text": "Water Heater Repair",
+            "href": "/services/water-heater-repair"
+          }
+        ],
+        "phoneLinks": [
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          }
+        ],
+        "visibleTopActions": [
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 44
+          },
+          {
+            "label": "Book Now",
+            "height": 44
+          },
+          {
+            "label": "Open navigation",
+            "height": 44
+          },
+          {
+            "label": "Call (516) 586-0826",
+            "height": 48
+          },
+          {
+            "label": "Book Now",
+            "height": 48
+          },
+          {
+            "label": "Help from Apex Assistant",
+            "height": 56
+          },
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 56
+          },
+          {
+            "label": "Book now",
+            "height": 56
+          }
+        ],
+        "internalLinks": [
+          "/",
+          "/service-areas",
+          "/about",
+          "/contact",
+          "/services",
+          "/services/appliance-repair",
+          "/services/cooling",
+          "/services/cooling/ac-repair",
+          "/services/cooling/ac-installation",
+          "/services/cooling/ac-maintenance",
+          "/services/cooling/ac-replacement",
+          "/services/heating",
+          "/services/heating/furnace-repair",
+          "/services/heating/heat-pumps",
+          "/services/heating/heating-maintenance",
+          "/services/heating/boiler-repair",
+          "/services/water-heater-repair",
+          "/brands"
+        ],
+        "metrics": {
+          "lcp": 704,
+          "cls": 0,
+          "longTasks": [
+            112
+          ],
+          "interactions": []
+        }
+      },
+      "accessibility": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 33
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedAssets": []
+    },
+    {
+      "url": "/service-areas",
+      "viewport": "mobile",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "docs/qa/2026-11-17/pages/screenshots/service-areas--mobile.jpg",
+      "status": 200,
+      "dom": {
+        "title": "Service Areas | Apex Home Services",
+        "h1": [
+          "Local service across select Northeast communities."
+        ],
+        "horizontalOverflow": false,
+        "pageWidth": 390,
+        "protrudingContent": [],
+        "brokenImages": [],
+        "images": [
+          {
+            "alt": "Apex Home Services mark",
+            "loading": "auto",
+            "width": 36,
+            "naturalWidth": 48,
+            "optimized": true
+          },
+          {
+            "alt": "",
+            "loading": "lazy",
+            "width": 40,
+            "naturalWidth": 48,
+            "optimized": true
+          }
+        ],
+        "footerCount": 1,
+        "footerLinks": [
+          {
+            "text": "Apex Home Services",
+            "href": "/"
+          },
+          {
+            "text": "States servedNY · NJ · CT · MA · RI",
+            "href": "/service-areas"
+          },
+          {
+            "text": "(516) 586-0826",
+            "href": "tel:+15165860826"
+          },
+          {
+            "text": "Refrigerators, Freezers & Ice Makers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Washers & Dryers (Gas & Electric)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Ovens, Ranges & Cooktops",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Microwaves (Built-in & Over-the-Range)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Dishwashers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Wine & Beverage Coolers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Range Hoods & Warming Drawers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Refrigerators",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Freezers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Ice Machines",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Pizza Ovens & Griddles",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Frozen Beverage Dispensers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Food Truck Refrigeration",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "AC Repair",
+            "href": "/services/cooling/ac-repair"
+          },
+          {
+            "text": "AC Installation",
+            "href": "/services/cooling/ac-installation"
+          },
+          {
+            "text": "AC Maintenance",
+            "href": "/services/cooling/ac-maintenance"
+          },
+          {
+            "text": "AC Replacement",
+            "href": "/services/cooling/ac-replacement"
+          },
+          {
+            "text": "Furnace Repair",
+            "href": "/services/heating/furnace-repair"
+          },
+          {
+            "text": "Heat Pumps",
+            "href": "/services/heating/heat-pumps"
+          },
+          {
+            "text": "Heating Maintenance",
+            "href": "/services/heating/heating-maintenance"
+          },
+          {
+            "text": "Boiler Repair",
+            "href": "/services/heating/boiler-repair"
+          },
+          {
+            "text": "Water Heater Repair",
+            "href": "/services/water-heater-repair"
+          }
+        ],
+        "phoneLinks": [
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          }
+        ],
+        "visibleTopActions": [
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 44
+          },
+          {
+            "label": "Book Now",
+            "height": 44
+          },
+          {
+            "label": "Open navigation",
+            "height": 44
+          },
+          {
+            "label": "Book Now",
+            "height": 48
+          },
+          {
+            "label": "Help from Apex Assistant",
+            "height": 56
+          },
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 56
+          },
+          {
+            "label": "Book now",
+            "height": 56
+          }
+        ],
+        "internalLinks": [
+          "/",
+          "/service-areas",
+          "/about",
+          "/contact",
+          "/services",
+          "/services/appliance-repair",
+          "/services/cooling",
+          "/services/cooling/ac-repair",
+          "/services/cooling/ac-installation",
+          "/services/cooling/ac-maintenance",
+          "/services/cooling/ac-replacement",
+          "/services/heating",
+          "/services/heating/furnace-repair",
+          "/services/heating/heat-pumps",
+          "/services/heating/heating-maintenance",
+          "/services/heating/boiler-repair",
+          "/services/water-heater-repair"
+        ],
+        "metrics": {
+          "lcp": 440,
+          "cls": 0,
+          "longTasks": [
+            123
+          ],
+          "interactions": []
+        }
+      },
+      "accessibility": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 33
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedAssets": []
+    },
+    {
+      "url": "/services",
+      "viewport": "mobile",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "docs/qa/2026-11-17/pages/screenshots/services--mobile.jpg",
+      "status": 200,
+      "dom": {
+        "title": "Home Services | Apex Home Services",
+        "h1": [
+          "What needs attention?"
+        ],
+        "horizontalOverflow": false,
+        "pageWidth": 390,
+        "protrudingContent": [],
+        "brokenImages": [],
+        "images": [
+          {
+            "alt": "Apex Home Services mark",
+            "loading": "auto",
+            "width": 36,
+            "naturalWidth": 48,
+            "optimized": true
+          },
+          {
+            "alt": "",
+            "loading": "lazy",
+            "width": 40,
+            "naturalWidth": 48,
+            "optimized": true
+          }
+        ],
+        "footerCount": 1,
+        "footerLinks": [
+          {
+            "text": "Apex Home Services",
+            "href": "/"
+          },
+          {
+            "text": "States servedNY · NJ · CT · MA · RI",
+            "href": "/service-areas"
+          },
+          {
+            "text": "(516) 586-0826",
+            "href": "tel:+15165860826"
+          },
+          {
+            "text": "Refrigerators, Freezers & Ice Makers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Washers & Dryers (Gas & Electric)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Ovens, Ranges & Cooktops",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Microwaves (Built-in & Over-the-Range)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Dishwashers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Wine & Beverage Coolers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Range Hoods & Warming Drawers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Refrigerators",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Freezers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Ice Machines",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Pizza Ovens & Griddles",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Frozen Beverage Dispensers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Food Truck Refrigeration",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "AC Repair",
+            "href": "/services/cooling/ac-repair"
+          },
+          {
+            "text": "AC Installation",
+            "href": "/services/cooling/ac-installation"
+          },
+          {
+            "text": "AC Maintenance",
+            "href": "/services/cooling/ac-maintenance"
+          },
+          {
+            "text": "AC Replacement",
+            "href": "/services/cooling/ac-replacement"
+          },
+          {
+            "text": "Furnace Repair",
+            "href": "/services/heating/furnace-repair"
+          },
+          {
+            "text": "Heat Pumps",
+            "href": "/services/heating/heat-pumps"
+          },
+          {
+            "text": "Heating Maintenance",
+            "href": "/services/heating/heating-maintenance"
+          },
+          {
+            "text": "Boiler Repair",
+            "href": "/services/heating/boiler-repair"
+          },
+          {
+            "text": "Water Heater Repair",
+            "href": "/services/water-heater-repair"
+          }
+        ],
+        "phoneLinks": [
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          }
+        ],
+        "visibleTopActions": [
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 44
+          },
+          {
+            "label": "Book Now",
+            "height": 44
+          },
+          {
+            "label": "Open navigation",
+            "height": 44
+          },
+          {
+            "label": "Request service",
+            "height": 44
+          },
+          {
+            "label": "Help from Apex Assistant",
+            "height": 56
+          },
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 56
+          },
+          {
+            "label": "Book now",
+            "height": 56
+          }
+        ],
+        "internalLinks": [
+          "/",
+          "/service-areas",
+          "/about",
+          "/contact",
+          "/services",
+          "/services/appliance-repair",
+          "/services/cooling",
+          "/services/cooling/ac-repair",
+          "/services/cooling/ac-installation",
+          "/services/cooling/ac-maintenance",
+          "/services/cooling/ac-replacement",
+          "/services/heating",
+          "/services/heating/furnace-repair",
+          "/services/heating/heat-pumps",
+          "/services/heating/heating-maintenance",
+          "/services/heating/boiler-repair",
+          "/services/water-heater-repair",
+          "/?book=1",
+          "/brands"
+        ],
+        "metrics": {
+          "lcp": 564,
+          "cls": 0,
+          "longTasks": [
+            330,
+            149
+          ],
+          "interactions": []
+        }
+      },
+      "accessibility": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 33
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedAssets": []
+    },
+    {
+      "url": "/reviews",
+      "viewport": "mobile",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "docs/qa/2026-11-17/pages/screenshots/reviews--mobile.jpg",
+      "status": 200,
+      "dom": {
+        "title": "Customer Reviews | Apex Home Services",
+        "h1": [
+          "What customers say"
+        ],
+        "horizontalOverflow": false,
+        "pageWidth": 390,
+        "protrudingContent": [],
+        "brokenImages": [],
+        "images": [
+          {
+            "alt": "Apex Home Services mark",
+            "loading": "auto",
+            "width": 36,
+            "naturalWidth": 48,
+            "optimized": true
+          },
+          {
+            "alt": "",
+            "loading": "lazy",
+            "width": 40,
+            "naturalWidth": 48,
+            "optimized": true
+          }
+        ],
+        "footerCount": 1,
+        "footerLinks": [
+          {
+            "text": "Apex Home Services",
+            "href": "/"
+          },
+          {
+            "text": "States servedNY · NJ · CT · MA · RI",
+            "href": "/service-areas"
+          },
+          {
+            "text": "(516) 586-0826",
+            "href": "tel:+15165860826"
+          },
+          {
+            "text": "Refrigerators, Freezers & Ice Makers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Washers & Dryers (Gas & Electric)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Ovens, Ranges & Cooktops",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Microwaves (Built-in & Over-the-Range)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Dishwashers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Wine & Beverage Coolers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Range Hoods & Warming Drawers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Refrigerators",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Freezers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Ice Machines",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Pizza Ovens & Griddles",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Frozen Beverage Dispensers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Food Truck Refrigeration",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "AC Repair",
+            "href": "/services/cooling/ac-repair"
+          },
+          {
+            "text": "AC Installation",
+            "href": "/services/cooling/ac-installation"
+          },
+          {
+            "text": "AC Maintenance",
+            "href": "/services/cooling/ac-maintenance"
+          },
+          {
+            "text": "AC Replacement",
+            "href": "/services/cooling/ac-replacement"
+          },
+          {
+            "text": "Furnace Repair",
+            "href": "/services/heating/furnace-repair"
+          },
+          {
+            "text": "Heat Pumps",
+            "href": "/services/heating/heat-pumps"
+          },
+          {
+            "text": "Heating Maintenance",
+            "href": "/services/heating/heating-maintenance"
+          },
+          {
+            "text": "Boiler Repair",
+            "href": "/services/heating/boiler-repair"
+          },
+          {
+            "text": "Water Heater Repair",
+            "href": "/services/water-heater-repair"
+          }
+        ],
+        "phoneLinks": [
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          }
+        ],
+        "visibleTopActions": [
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 44
+          },
+          {
+            "label": "Book Now",
+            "height": 44
+          },
+          {
+            "label": "Open navigation",
+            "height": 44
+          },
+          {
+            "label": "Help from Apex Assistant",
+            "height": 56
+          },
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 56
+          },
+          {
+            "label": "Book now",
+            "height": 56
+          }
+        ],
+        "internalLinks": [
+          "/",
+          "/service-areas",
+          "/about",
+          "/contact",
+          "/services",
+          "/services/appliance-repair",
+          "/services/cooling",
+          "/services/cooling/ac-repair",
+          "/services/cooling/ac-installation",
+          "/services/cooling/ac-maintenance",
+          "/services/cooling/ac-replacement",
+          "/services/heating",
+          "/services/heating/furnace-repair",
+          "/services/heating/heat-pumps",
+          "/services/heating/heating-maintenance",
+          "/services/heating/boiler-repair",
+          "/services/water-heater-repair",
+          "/review"
+        ],
+        "metrics": {
+          "lcp": 632,
+          "cls": 0,
+          "longTasks": [
+            117
+          ],
+          "interactions": []
+        }
+      },
+      "accessibility": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 33
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedAssets": []
+    },
+    {
+      "url": "/services/appliance-repair",
+      "viewport": "mobile",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "docs/qa/2026-11-17/pages/screenshots/services__appliance-repair--mobile.jpg",
+      "status": 200,
+      "dom": {
+        "title": "Appliance Repair Services | Apex Home Services",
+        "h1": [
+          "Appliance Repair"
+        ],
+        "horizontalOverflow": false,
+        "pageWidth": 390,
+        "protrudingContent": [],
+        "brokenImages": [],
+        "images": [
+          {
+            "alt": "Apex Home Services mark",
+            "loading": "auto",
+            "width": 36,
+            "naturalWidth": 48,
+            "optimized": true
+          },
+          {
+            "alt": "Technician using a diagnostic tool to inspect an open range oven",
+            "loading": "auto",
+            "width": 356,
+            "naturalWidth": 358,
+            "optimized": true
+          },
+          {
+            "alt": "",
+            "loading": "lazy",
+            "width": 40,
+            "naturalWidth": 48,
+            "optimized": true
+          }
+        ],
+        "footerCount": 1,
+        "footerLinks": [
+          {
+            "text": "Apex Home Services",
+            "href": "/"
+          },
+          {
+            "text": "States servedNY · NJ · CT · MA · RI",
+            "href": "/service-areas"
+          },
+          {
+            "text": "(516) 586-0826",
+            "href": "tel:+15165860826"
+          },
+          {
+            "text": "Refrigerators, Freezers & Ice Makers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Washers & Dryers (Gas & Electric)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Ovens, Ranges & Cooktops",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Microwaves (Built-in & Over-the-Range)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Dishwashers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Wine & Beverage Coolers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Range Hoods & Warming Drawers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Refrigerators",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Freezers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Ice Machines",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Pizza Ovens & Griddles",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Frozen Beverage Dispensers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Food Truck Refrigeration",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "AC Repair",
+            "href": "/services/cooling/ac-repair"
+          },
+          {
+            "text": "AC Installation",
+            "href": "/services/cooling/ac-installation"
+          },
+          {
+            "text": "AC Maintenance",
+            "href": "/services/cooling/ac-maintenance"
+          },
+          {
+            "text": "AC Replacement",
+            "href": "/services/cooling/ac-replacement"
+          },
+          {
+            "text": "Furnace Repair",
+            "href": "/services/heating/furnace-repair"
+          },
+          {
+            "text": "Heat Pumps",
+            "href": "/services/heating/heat-pumps"
+          },
+          {
+            "text": "Heating Maintenance",
+            "href": "/services/heating/heating-maintenance"
+          },
+          {
+            "text": "Boiler Repair",
+            "href": "/services/heating/boiler-repair"
+          },
+          {
+            "text": "Water Heater Repair",
+            "href": "/services/water-heater-repair"
+          }
+        ],
+        "phoneLinks": [
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          }
+        ],
+        "visibleTopActions": [
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 44
+          },
+          {
+            "label": "Book Now",
+            "height": 44
+          },
+          {
+            "label": "Open navigation",
+            "height": 44
+          },
+          {
+            "label": "Book this service",
+            "height": 48
+          },
+          {
+            "label": "Call (516) 586-0826",
+            "height": 48
+          },
+          {
+            "label": "Help from Apex Assistant",
+            "height": 56
+          },
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 56
+          },
+          {
+            "label": "Book now",
+            "height": 56
+          }
+        ],
+        "internalLinks": [
+          "/",
+          "/service-areas",
+          "/about",
+          "/contact",
+          "/services",
+          "/services/appliance-repair",
+          "/services/cooling",
+          "/services/cooling/ac-repair",
+          "/services/cooling/ac-installation",
+          "/services/cooling/ac-maintenance",
+          "/services/cooling/ac-replacement",
+          "/services/heating",
+          "/services/heating/furnace-repair",
+          "/services/heating/heat-pumps",
+          "/services/heating/heating-maintenance",
+          "/services/heating/boiler-repair",
+          "/services/water-heater-repair",
+          "/brands",
+          "/reviews"
+        ],
+        "metrics": {
+          "lcp": 228,
+          "cls": 0,
+          "longTasks": [
+            74
+          ],
+          "interactions": []
+        }
+      },
+      "accessibility": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 34
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedAssets": []
+    },
+    {
+      "url": "/services/cooling",
+      "viewport": "mobile",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "docs/qa/2026-11-17/pages/screenshots/services__cooling--mobile.jpg",
+      "status": 200,
+      "dom": {
+        "title": "Residential Cooling Services | Apex Home Services",
+        "h1": [
+          "Cooling"
+        ],
+        "horizontalOverflow": false,
+        "pageWidth": 390,
+        "protrudingContent": [],
+        "brokenImages": [],
+        "images": [
+          {
+            "alt": "Apex Home Services mark",
+            "loading": "auto",
+            "width": 36,
+            "naturalWidth": 48,
+            "optimized": true
+          },
+          {
+            "alt": "Technician on a ladder using a multimeter to service an outdoor AC condenser unit",
+            "loading": "auto",
+            "width": 356,
+            "naturalWidth": 358,
+            "optimized": true
+          },
+          {
+            "alt": "",
+            "loading": "lazy",
+            "width": 40,
+            "naturalWidth": 48,
+            "optimized": true
+          }
+        ],
+        "footerCount": 1,
+        "footerLinks": [
+          {
+            "text": "Apex Home Services",
+            "href": "/"
+          },
+          {
+            "text": "States servedNY · NJ · CT · MA · RI",
+            "href": "/service-areas"
+          },
+          {
+            "text": "(516) 586-0826",
+            "href": "tel:+15165860826"
+          },
+          {
+            "text": "Refrigerators, Freezers & Ice Makers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Washers & Dryers (Gas & Electric)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Ovens, Ranges & Cooktops",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Microwaves (Built-in & Over-the-Range)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Dishwashers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Wine & Beverage Coolers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Range Hoods & Warming Drawers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Refrigerators",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Freezers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Ice Machines",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Pizza Ovens & Griddles",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Frozen Beverage Dispensers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Food Truck Refrigeration",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "AC Repair",
+            "href": "/services/cooling/ac-repair"
+          },
+          {
+            "text": "AC Installation",
+            "href": "/services/cooling/ac-installation"
+          },
+          {
+            "text": "AC Maintenance",
+            "href": "/services/cooling/ac-maintenance"
+          },
+          {
+            "text": "AC Replacement",
+            "href": "/services/cooling/ac-replacement"
+          },
+          {
+            "text": "Furnace Repair",
+            "href": "/services/heating/furnace-repair"
+          },
+          {
+            "text": "Heat Pumps",
+            "href": "/services/heating/heat-pumps"
+          },
+          {
+            "text": "Heating Maintenance",
+            "href": "/services/heating/heating-maintenance"
+          },
+          {
+            "text": "Boiler Repair",
+            "href": "/services/heating/boiler-repair"
+          },
+          {
+            "text": "Water Heater Repair",
+            "href": "/services/water-heater-repair"
+          }
+        ],
+        "phoneLinks": [
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          }
+        ],
+        "visibleTopActions": [
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 44
+          },
+          {
+            "label": "Book Now",
+            "height": 44
+          },
+          {
+            "label": "Open navigation",
+            "height": 44
+          },
+          {
+            "label": "Book this service",
+            "height": 48
+          },
+          {
+            "label": "Call (516) 586-0826",
+            "height": 48
+          },
+          {
+            "label": "Help from Apex Assistant",
+            "height": 56
+          },
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 56
+          },
+          {
+            "label": "Book now",
+            "height": 56
+          }
+        ],
+        "internalLinks": [
+          "/",
+          "/service-areas",
+          "/about",
+          "/contact",
+          "/services",
+          "/services/appliance-repair",
+          "/services/cooling",
+          "/services/cooling/ac-repair",
+          "/services/cooling/ac-installation",
+          "/services/cooling/ac-maintenance",
+          "/services/cooling/ac-replacement",
+          "/services/heating",
+          "/services/heating/furnace-repair",
+          "/services/heating/heat-pumps",
+          "/services/heating/heating-maintenance",
+          "/services/heating/boiler-repair",
+          "/services/water-heater-repair",
+          "/brands",
+          "/reviews"
+        ],
+        "metrics": {
+          "lcp": 412,
+          "cls": 0,
+          "longTasks": [
+            78,
+            127
+          ],
+          "interactions": []
+        }
+      },
+      "accessibility": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 34
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedAssets": []
+    },
+    {
+      "url": "/services/heating",
+      "viewport": "mobile",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "docs/qa/2026-11-17/pages/screenshots/services__heating--mobile.jpg",
+      "status": 200,
+      "dom": {
+        "title": "Residential Heating Services | Apex Home Services",
+        "h1": [
+          "Heating"
+        ],
+        "horizontalOverflow": false,
+        "pageWidth": 390,
+        "protrudingContent": [],
+        "brokenImages": [],
+        "images": [
+          {
+            "alt": "Apex Home Services mark",
+            "loading": "auto",
+            "width": 36,
+            "naturalWidth": 48,
+            "optimized": true
+          },
+          {
+            "alt": "Apex technician connecting refrigerant gauges to an outdoor heat pump unit",
+            "loading": "auto",
+            "width": 356,
+            "naturalWidth": 358,
+            "optimized": true
+          },
+          {
+            "alt": "",
+            "loading": "lazy",
+            "width": 40,
+            "naturalWidth": 48,
+            "optimized": true
+          }
+        ],
+        "footerCount": 1,
+        "footerLinks": [
+          {
+            "text": "Apex Home Services",
+            "href": "/"
+          },
+          {
+            "text": "States servedNY · NJ · CT · MA · RI",
+            "href": "/service-areas"
+          },
+          {
+            "text": "(516) 586-0826",
+            "href": "tel:+15165860826"
+          },
+          {
+            "text": "Refrigerators, Freezers & Ice Makers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Washers & Dryers (Gas & Electric)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Ovens, Ranges & Cooktops",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Microwaves (Built-in & Over-the-Range)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Dishwashers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Wine & Beverage Coolers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Range Hoods & Warming Drawers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Refrigerators",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Freezers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Ice Machines",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Pizza Ovens & Griddles",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Frozen Beverage Dispensers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Food Truck Refrigeration",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "AC Repair",
+            "href": "/services/cooling/ac-repair"
+          },
+          {
+            "text": "AC Installation",
+            "href": "/services/cooling/ac-installation"
+          },
+          {
+            "text": "AC Maintenance",
+            "href": "/services/cooling/ac-maintenance"
+          },
+          {
+            "text": "AC Replacement",
+            "href": "/services/cooling/ac-replacement"
+          },
+          {
+            "text": "Furnace Repair",
+            "href": "/services/heating/furnace-repair"
+          },
+          {
+            "text": "Heat Pumps",
+            "href": "/services/heating/heat-pumps"
+          },
+          {
+            "text": "Heating Maintenance",
+            "href": "/services/heating/heating-maintenance"
+          },
+          {
+            "text": "Boiler Repair",
+            "href": "/services/heating/boiler-repair"
+          },
+          {
+            "text": "Water Heater Repair",
+            "href": "/services/water-heater-repair"
+          }
+        ],
+        "phoneLinks": [
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          }
+        ],
+        "visibleTopActions": [
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 44
+          },
+          {
+            "label": "Book Now",
+            "height": 44
+          },
+          {
+            "label": "Open navigation",
+            "height": 44
+          },
+          {
+            "label": "Book this service",
+            "height": 48
+          },
+          {
+            "label": "Call (516) 586-0826",
+            "height": 48
+          },
+          {
+            "label": "Help from Apex Assistant",
+            "height": 56
+          },
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 56
+          },
+          {
+            "label": "Book now",
+            "height": 56
+          }
+        ],
+        "internalLinks": [
+          "/",
+          "/service-areas",
+          "/about",
+          "/contact",
+          "/services",
+          "/services/appliance-repair",
+          "/services/cooling",
+          "/services/cooling/ac-repair",
+          "/services/cooling/ac-installation",
+          "/services/cooling/ac-maintenance",
+          "/services/cooling/ac-replacement",
+          "/services/heating",
+          "/services/heating/furnace-repair",
+          "/services/heating/heat-pumps",
+          "/services/heating/heating-maintenance",
+          "/services/heating/boiler-repair",
+          "/services/water-heater-repair",
+          "/brands",
+          "/reviews"
+        ],
+        "metrics": {
+          "lcp": 344,
+          "cls": 0,
+          "longTasks": [
+            115
+          ],
+          "interactions": []
+        }
+      },
+      "accessibility": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 34
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedAssets": []
+    },
+    {
+      "url": "/services/water-heater-repair",
+      "viewport": "mobile",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "docs/qa/2026-11-17/pages/screenshots/services__water-heater-repair--mobile.jpg",
+      "status": 200,
+      "dom": {
+        "title": "Water Heater Repair Services | Apex Home Services",
+        "h1": [
+          "Water Heater Repair"
+        ],
+        "horizontalOverflow": false,
+        "pageWidth": 390,
+        "protrudingContent": [],
+        "brokenImages": [],
+        "images": [
+          {
+            "alt": "Apex Home Services mark",
+            "loading": "auto",
+            "width": 36,
+            "naturalWidth": 48,
+            "optimized": true
+          },
+          {
+            "alt": "Technician inspecting a residential gas water heater",
+            "loading": "auto",
+            "width": 356,
+            "naturalWidth": 358,
+            "optimized": true
+          },
+          {
+            "alt": "",
+            "loading": "lazy",
+            "width": 40,
+            "naturalWidth": 48,
+            "optimized": true
+          }
+        ],
+        "footerCount": 1,
+        "footerLinks": [
+          {
+            "text": "Apex Home Services",
+            "href": "/"
+          },
+          {
+            "text": "States servedNY · NJ · CT · MA · RI",
+            "href": "/service-areas"
+          },
+          {
+            "text": "(516) 586-0826",
+            "href": "tel:+15165860826"
+          },
+          {
+            "text": "Refrigerators, Freezers & Ice Makers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Washers & Dryers (Gas & Electric)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Ovens, Ranges & Cooktops",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Microwaves (Built-in & Over-the-Range)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Dishwashers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Wine & Beverage Coolers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Range Hoods & Warming Drawers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Refrigerators",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Freezers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Ice Machines",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Pizza Ovens & Griddles",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Frozen Beverage Dispensers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Food Truck Refrigeration",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "AC Repair",
+            "href": "/services/cooling/ac-repair"
+          },
+          {
+            "text": "AC Installation",
+            "href": "/services/cooling/ac-installation"
+          },
+          {
+            "text": "AC Maintenance",
+            "href": "/services/cooling/ac-maintenance"
+          },
+          {
+            "text": "AC Replacement",
+            "href": "/services/cooling/ac-replacement"
+          },
+          {
+            "text": "Furnace Repair",
+            "href": "/services/heating/furnace-repair"
+          },
+          {
+            "text": "Heat Pumps",
+            "href": "/services/heating/heat-pumps"
+          },
+          {
+            "text": "Heating Maintenance",
+            "href": "/services/heating/heating-maintenance"
+          },
+          {
+            "text": "Boiler Repair",
+            "href": "/services/heating/boiler-repair"
+          },
+          {
+            "text": "Water Heater Repair",
+            "href": "/services/water-heater-repair"
+          }
+        ],
+        "phoneLinks": [
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          }
+        ],
+        "visibleTopActions": [
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 44
+          },
+          {
+            "label": "Book Now",
+            "height": 44
+          },
+          {
+            "label": "Open navigation",
+            "height": 44
+          },
+          {
+            "label": "Book this service",
+            "height": 48
+          },
+          {
+            "label": "Call (516) 586-0826",
+            "height": 48
+          },
+          {
+            "label": "Help from Apex Assistant",
+            "height": 56
+          },
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 56
+          },
+          {
+            "label": "Book now",
+            "height": 56
+          }
+        ],
+        "internalLinks": [
+          "/",
+          "/service-areas",
+          "/about",
+          "/contact",
+          "/services",
+          "/services/appliance-repair",
+          "/services/cooling",
+          "/services/cooling/ac-repair",
+          "/services/cooling/ac-installation",
+          "/services/cooling/ac-maintenance",
+          "/services/cooling/ac-replacement",
+          "/services/heating",
+          "/services/heating/furnace-repair",
+          "/services/heating/heat-pumps",
+          "/services/heating/heating-maintenance",
+          "/services/heating/boiler-repair",
+          "/services/water-heater-repair",
+          "/reviews"
+        ],
+        "metrics": {
+          "lcp": 284,
+          "cls": 0,
+          "longTasks": [
+            113
+          ],
+          "interactions": []
+        }
+      },
+      "accessibility": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 34
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedAssets": []
+    },
+    {
+      "url": "/services/cooling/ac-repair",
+      "viewport": "mobile",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "docs/qa/2026-11-17/pages/screenshots/services__cooling__ac-repair--mobile.jpg",
+      "status": 200,
+      "dom": {
+        "title": "AC Repair Services | Apex Home Services",
+        "h1": [
+          "AC Repair"
+        ],
+        "horizontalOverflow": false,
+        "pageWidth": 390,
+        "protrudingContent": [],
+        "brokenImages": [],
+        "images": [
+          {
+            "alt": "Apex Home Services mark",
+            "loading": "auto",
+            "width": 36,
+            "naturalWidth": 48,
+            "optimized": true
+          },
+          {
+            "alt": "Technician on a ladder using a multimeter to service an outdoor AC condenser unit",
+            "loading": "auto",
+            "width": 356,
+            "naturalWidth": 358,
+            "optimized": true
+          },
+          {
+            "alt": "",
+            "loading": "lazy",
+            "width": 40,
+            "naturalWidth": 48,
+            "optimized": true
+          }
+        ],
+        "footerCount": 1,
+        "footerLinks": [
+          {
+            "text": "Apex Home Services",
+            "href": "/"
+          },
+          {
+            "text": "States servedNY · NJ · CT · MA · RI",
+            "href": "/service-areas"
+          },
+          {
+            "text": "(516) 586-0826",
+            "href": "tel:+15165860826"
+          },
+          {
+            "text": "Refrigerators, Freezers & Ice Makers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Washers & Dryers (Gas & Electric)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Ovens, Ranges & Cooktops",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Microwaves (Built-in & Over-the-Range)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Dishwashers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Wine & Beverage Coolers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Range Hoods & Warming Drawers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Refrigerators",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Freezers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Ice Machines",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Pizza Ovens & Griddles",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Frozen Beverage Dispensers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Food Truck Refrigeration",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "AC Repair",
+            "href": "/services/cooling/ac-repair"
+          },
+          {
+            "text": "AC Installation",
+            "href": "/services/cooling/ac-installation"
+          },
+          {
+            "text": "AC Maintenance",
+            "href": "/services/cooling/ac-maintenance"
+          },
+          {
+            "text": "AC Replacement",
+            "href": "/services/cooling/ac-replacement"
+          },
+          {
+            "text": "Furnace Repair",
+            "href": "/services/heating/furnace-repair"
+          },
+          {
+            "text": "Heat Pumps",
+            "href": "/services/heating/heat-pumps"
+          },
+          {
+            "text": "Heating Maintenance",
+            "href": "/services/heating/heating-maintenance"
+          },
+          {
+            "text": "Boiler Repair",
+            "href": "/services/heating/boiler-repair"
+          },
+          {
+            "text": "Water Heater Repair",
+            "href": "/services/water-heater-repair"
+          }
+        ],
+        "phoneLinks": [
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          }
+        ],
+        "visibleTopActions": [
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 44
+          },
+          {
+            "label": "Book Now",
+            "height": 44
+          },
+          {
+            "label": "Open navigation",
+            "height": 44
+          },
+          {
+            "label": "Book this service",
+            "height": 48
+          },
+          {
+            "label": "Call (516) 586-0826",
+            "height": 48
+          },
+          {
+            "label": "Help from Apex Assistant",
+            "height": 56
+          },
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 56
+          },
+          {
+            "label": "Book now",
+            "height": 56
+          }
+        ],
+        "internalLinks": [
+          "/",
+          "/service-areas",
+          "/about",
+          "/contact",
+          "/services",
+          "/services/appliance-repair",
+          "/services/cooling",
+          "/services/cooling/ac-repair",
+          "/services/cooling/ac-installation",
+          "/services/cooling/ac-maintenance",
+          "/services/cooling/ac-replacement",
+          "/services/heating",
+          "/services/heating/furnace-repair",
+          "/services/heating/heat-pumps",
+          "/services/heating/heating-maintenance",
+          "/services/heating/boiler-repair",
+          "/services/water-heater-repair",
+          "/brands",
+          "/reviews"
+        ],
+        "metrics": {
+          "lcp": 376,
+          "cls": 0,
+          "longTasks": [
+            104
+          ],
+          "interactions": []
+        }
+      },
+      "accessibility": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 34
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedAssets": []
+    },
+    {
+      "url": "/services/cooling/ac-installation",
+      "viewport": "mobile",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "docs/qa/2026-11-17/pages/screenshots/services__cooling__ac-installation--mobile.jpg",
+      "status": 200,
+      "dom": {
+        "title": "AC Installation Services | Apex Home Services",
+        "h1": [
+          "AC Installation"
+        ],
+        "horizontalOverflow": false,
+        "pageWidth": 390,
+        "protrudingContent": [],
+        "brokenImages": [],
+        "images": [
+          {
+            "alt": "Apex Home Services mark",
+            "loading": "auto",
+            "width": 36,
+            "naturalWidth": 48,
+            "optimized": true
+          },
+          {
+            "alt": "Technician on a ladder using a multimeter to service an outdoor AC condenser unit",
+            "loading": "auto",
+            "width": 356,
+            "naturalWidth": 358,
+            "optimized": true
+          },
+          {
+            "alt": "",
+            "loading": "lazy",
+            "width": 40,
+            "naturalWidth": 48,
+            "optimized": true
+          }
+        ],
+        "footerCount": 1,
+        "footerLinks": [
+          {
+            "text": "Apex Home Services",
+            "href": "/"
+          },
+          {
+            "text": "States servedNY · NJ · CT · MA · RI",
+            "href": "/service-areas"
+          },
+          {
+            "text": "(516) 586-0826",
+            "href": "tel:+15165860826"
+          },
+          {
+            "text": "Refrigerators, Freezers & Ice Makers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Washers & Dryers (Gas & Electric)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Ovens, Ranges & Cooktops",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Microwaves (Built-in & Over-the-Range)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Dishwashers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Wine & Beverage Coolers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Range Hoods & Warming Drawers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Refrigerators",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Freezers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Ice Machines",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Pizza Ovens & Griddles",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Frozen Beverage Dispensers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Food Truck Refrigeration",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "AC Repair",
+            "href": "/services/cooling/ac-repair"
+          },
+          {
+            "text": "AC Installation",
+            "href": "/services/cooling/ac-installation"
+          },
+          {
+            "text": "AC Maintenance",
+            "href": "/services/cooling/ac-maintenance"
+          },
+          {
+            "text": "AC Replacement",
+            "href": "/services/cooling/ac-replacement"
+          },
+          {
+            "text": "Furnace Repair",
+            "href": "/services/heating/furnace-repair"
+          },
+          {
+            "text": "Heat Pumps",
+            "href": "/services/heating/heat-pumps"
+          },
+          {
+            "text": "Heating Maintenance",
+            "href": "/services/heating/heating-maintenance"
+          },
+          {
+            "text": "Boiler Repair",
+            "href": "/services/heating/boiler-repair"
+          },
+          {
+            "text": "Water Heater Repair",
+            "href": "/services/water-heater-repair"
+          }
+        ],
+        "phoneLinks": [
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          }
+        ],
+        "visibleTopActions": [
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 44
+          },
+          {
+            "label": "Book Now",
+            "height": 44
+          },
+          {
+            "label": "Open navigation",
+            "height": 44
+          },
+          {
+            "label": "Book this service",
+            "height": 48
+          },
+          {
+            "label": "Call (516) 586-0826",
+            "height": 48
+          },
+          {
+            "label": "Help from Apex Assistant",
+            "height": 56
+          },
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 56
+          },
+          {
+            "label": "Book now",
+            "height": 56
+          }
+        ],
+        "internalLinks": [
+          "/",
+          "/service-areas",
+          "/about",
+          "/contact",
+          "/services",
+          "/services/appliance-repair",
+          "/services/cooling",
+          "/services/cooling/ac-repair",
+          "/services/cooling/ac-installation",
+          "/services/cooling/ac-maintenance",
+          "/services/cooling/ac-replacement",
+          "/services/heating",
+          "/services/heating/furnace-repair",
+          "/services/heating/heat-pumps",
+          "/services/heating/heating-maintenance",
+          "/services/heating/boiler-repair",
+          "/services/water-heater-repair",
+          "/brands",
+          "/reviews"
+        ],
+        "metrics": {
+          "lcp": 372,
+          "cls": 0,
+          "longTasks": [
+            103
+          ],
+          "interactions": []
+        }
+      },
+      "accessibility": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 34
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedAssets": []
+    },
+    {
+      "url": "/services/cooling/ac-maintenance",
+      "viewport": "mobile",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "docs/qa/2026-11-17/pages/screenshots/services__cooling__ac-maintenance--mobile.jpg",
+      "status": 200,
+      "dom": {
+        "title": "AC Maintenance Services | Apex Home Services",
+        "h1": [
+          "AC Maintenance"
+        ],
+        "horizontalOverflow": false,
+        "pageWidth": 390,
+        "protrudingContent": [],
+        "brokenImages": [],
+        "images": [
+          {
+            "alt": "Apex Home Services mark",
+            "loading": "auto",
+            "width": 36,
+            "naturalWidth": 48,
+            "optimized": true
+          },
+          {
+            "alt": "Technician on a ladder using a multimeter to service an outdoor AC condenser unit",
+            "loading": "auto",
+            "width": 356,
+            "naturalWidth": 358,
+            "optimized": true
+          },
+          {
+            "alt": "",
+            "loading": "lazy",
+            "width": 40,
+            "naturalWidth": 48,
+            "optimized": true
+          }
+        ],
+        "footerCount": 1,
+        "footerLinks": [
+          {
+            "text": "Apex Home Services",
+            "href": "/"
+          },
+          {
+            "text": "States servedNY · NJ · CT · MA · RI",
+            "href": "/service-areas"
+          },
+          {
+            "text": "(516) 586-0826",
+            "href": "tel:+15165860826"
+          },
+          {
+            "text": "Refrigerators, Freezers & Ice Makers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Washers & Dryers (Gas & Electric)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Ovens, Ranges & Cooktops",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Microwaves (Built-in & Over-the-Range)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Dishwashers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Wine & Beverage Coolers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Range Hoods & Warming Drawers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Refrigerators",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Freezers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Ice Machines",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Pizza Ovens & Griddles",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Frozen Beverage Dispensers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Food Truck Refrigeration",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "AC Repair",
+            "href": "/services/cooling/ac-repair"
+          },
+          {
+            "text": "AC Installation",
+            "href": "/services/cooling/ac-installation"
+          },
+          {
+            "text": "AC Maintenance",
+            "href": "/services/cooling/ac-maintenance"
+          },
+          {
+            "text": "AC Replacement",
+            "href": "/services/cooling/ac-replacement"
+          },
+          {
+            "text": "Furnace Repair",
+            "href": "/services/heating/furnace-repair"
+          },
+          {
+            "text": "Heat Pumps",
+            "href": "/services/heating/heat-pumps"
+          },
+          {
+            "text": "Heating Maintenance",
+            "href": "/services/heating/heating-maintenance"
+          },
+          {
+            "text": "Boiler Repair",
+            "href": "/services/heating/boiler-repair"
+          },
+          {
+            "text": "Water Heater Repair",
+            "href": "/services/water-heater-repair"
+          }
+        ],
+        "phoneLinks": [
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          }
+        ],
+        "visibleTopActions": [
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 44
+          },
+          {
+            "label": "Book Now",
+            "height": 44
+          },
+          {
+            "label": "Open navigation",
+            "height": 44
+          },
+          {
+            "label": "Book this service",
+            "height": 48
+          },
+          {
+            "label": "Call (516) 586-0826",
+            "height": 48
+          },
+          {
+            "label": "Help from Apex Assistant",
+            "height": 56
+          },
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 56
+          },
+          {
+            "label": "Book now",
+            "height": 56
+          }
+        ],
+        "internalLinks": [
+          "/",
+          "/service-areas",
+          "/about",
+          "/contact",
+          "/services",
+          "/services/appliance-repair",
+          "/services/cooling",
+          "/services/cooling/ac-repair",
+          "/services/cooling/ac-installation",
+          "/services/cooling/ac-maintenance",
+          "/services/cooling/ac-replacement",
+          "/services/heating",
+          "/services/heating/furnace-repair",
+          "/services/heating/heat-pumps",
+          "/services/heating/heating-maintenance",
+          "/services/heating/boiler-repair",
+          "/services/water-heater-repair",
+          "/brands",
+          "/reviews"
+        ],
+        "metrics": {
+          "lcp": 540,
+          "cls": 0,
+          "longTasks": [
+            125
+          ],
+          "interactions": []
+        }
+      },
+      "accessibility": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 34
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedAssets": []
+    },
+    {
+      "url": "/services/cooling/ac-replacement",
+      "viewport": "mobile",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "docs/qa/2026-11-17/pages/screenshots/services__cooling__ac-replacement--mobile.jpg",
+      "status": 200,
+      "dom": {
+        "title": "AC Replacement Services | Apex Home Services",
+        "h1": [
+          "AC Replacement"
+        ],
+        "horizontalOverflow": false,
+        "pageWidth": 390,
+        "protrudingContent": [],
+        "brokenImages": [],
+        "images": [
+          {
+            "alt": "Apex Home Services mark",
+            "loading": "auto",
+            "width": 36,
+            "naturalWidth": 48,
+            "optimized": true
+          },
+          {
+            "alt": "Technician on a ladder using a multimeter to service an outdoor AC condenser unit",
+            "loading": "auto",
+            "width": 356,
+            "naturalWidth": 358,
+            "optimized": true
+          },
+          {
+            "alt": "",
+            "loading": "lazy",
+            "width": 40,
+            "naturalWidth": 48,
+            "optimized": true
+          }
+        ],
+        "footerCount": 1,
+        "footerLinks": [
+          {
+            "text": "Apex Home Services",
+            "href": "/"
+          },
+          {
+            "text": "States servedNY · NJ · CT · MA · RI",
+            "href": "/service-areas"
+          },
+          {
+            "text": "(516) 586-0826",
+            "href": "tel:+15165860826"
+          },
+          {
+            "text": "Refrigerators, Freezers & Ice Makers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Washers & Dryers (Gas & Electric)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Ovens, Ranges & Cooktops",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Microwaves (Built-in & Over-the-Range)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Dishwashers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Wine & Beverage Coolers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Range Hoods & Warming Drawers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Refrigerators",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Freezers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Ice Machines",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Pizza Ovens & Griddles",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Frozen Beverage Dispensers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Food Truck Refrigeration",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "AC Repair",
+            "href": "/services/cooling/ac-repair"
+          },
+          {
+            "text": "AC Installation",
+            "href": "/services/cooling/ac-installation"
+          },
+          {
+            "text": "AC Maintenance",
+            "href": "/services/cooling/ac-maintenance"
+          },
+          {
+            "text": "AC Replacement",
+            "href": "/services/cooling/ac-replacement"
+          },
+          {
+            "text": "Furnace Repair",
+            "href": "/services/heating/furnace-repair"
+          },
+          {
+            "text": "Heat Pumps",
+            "href": "/services/heating/heat-pumps"
+          },
+          {
+            "text": "Heating Maintenance",
+            "href": "/services/heating/heating-maintenance"
+          },
+          {
+            "text": "Boiler Repair",
+            "href": "/services/heating/boiler-repair"
+          },
+          {
+            "text": "Water Heater Repair",
+            "href": "/services/water-heater-repair"
+          }
+        ],
+        "phoneLinks": [
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          }
+        ],
+        "visibleTopActions": [
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 44
+          },
+          {
+            "label": "Book Now",
+            "height": 44
+          },
+          {
+            "label": "Open navigation",
+            "height": 44
+          },
+          {
+            "label": "Book this service",
+            "height": 48
+          },
+          {
+            "label": "Call (516) 586-0826",
+            "height": 48
+          },
+          {
+            "label": "Help from Apex Assistant",
+            "height": 56
+          },
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 56
+          },
+          {
+            "label": "Book now",
+            "height": 56
+          }
+        ],
+        "internalLinks": [
+          "/",
+          "/service-areas",
+          "/about",
+          "/contact",
+          "/services",
+          "/services/appliance-repair",
+          "/services/cooling",
+          "/services/cooling/ac-repair",
+          "/services/cooling/ac-installation",
+          "/services/cooling/ac-maintenance",
+          "/services/cooling/ac-replacement",
+          "/services/heating",
+          "/services/heating/furnace-repair",
+          "/services/heating/heat-pumps",
+          "/services/heating/heating-maintenance",
+          "/services/heating/boiler-repair",
+          "/services/water-heater-repair",
+          "/brands",
+          "/reviews"
+        ],
+        "metrics": {
+          "lcp": 416,
+          "cls": 0,
+          "longTasks": [
+            111
+          ],
+          "interactions": []
+        }
+      },
+      "accessibility": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 34
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedAssets": []
+    },
+    {
+      "url": "/services/heating/furnace-repair",
+      "viewport": "mobile",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "docs/qa/2026-11-17/pages/screenshots/services__heating__furnace-repair--mobile.jpg",
+      "status": 200,
+      "dom": {
+        "title": "Furnace Repair Services | Apex Home Services",
+        "h1": [
+          "Furnace Repair"
+        ],
+        "horizontalOverflow": false,
+        "pageWidth": 390,
+        "protrudingContent": [],
+        "brokenImages": [],
+        "images": [
+          {
+            "alt": "Apex Home Services mark",
+            "loading": "auto",
+            "width": 36,
+            "naturalWidth": 48,
+            "optimized": true
+          },
+          {
+            "alt": "Apex technician connecting refrigerant gauges to an outdoor heat pump unit",
+            "loading": "auto",
+            "width": 356,
+            "naturalWidth": 358,
+            "optimized": true
+          },
+          {
+            "alt": "",
+            "loading": "lazy",
+            "width": 40,
+            "naturalWidth": 48,
+            "optimized": true
+          }
+        ],
+        "footerCount": 1,
+        "footerLinks": [
+          {
+            "text": "Apex Home Services",
+            "href": "/"
+          },
+          {
+            "text": "States servedNY · NJ · CT · MA · RI",
+            "href": "/service-areas"
+          },
+          {
+            "text": "(516) 586-0826",
+            "href": "tel:+15165860826"
+          },
+          {
+            "text": "Refrigerators, Freezers & Ice Makers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Washers & Dryers (Gas & Electric)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Ovens, Ranges & Cooktops",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Microwaves (Built-in & Over-the-Range)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Dishwashers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Wine & Beverage Coolers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Range Hoods & Warming Drawers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Refrigerators",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Freezers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Ice Machines",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Pizza Ovens & Griddles",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Frozen Beverage Dispensers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Food Truck Refrigeration",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "AC Repair",
+            "href": "/services/cooling/ac-repair"
+          },
+          {
+            "text": "AC Installation",
+            "href": "/services/cooling/ac-installation"
+          },
+          {
+            "text": "AC Maintenance",
+            "href": "/services/cooling/ac-maintenance"
+          },
+          {
+            "text": "AC Replacement",
+            "href": "/services/cooling/ac-replacement"
+          },
+          {
+            "text": "Furnace Repair",
+            "href": "/services/heating/furnace-repair"
+          },
+          {
+            "text": "Heat Pumps",
+            "href": "/services/heating/heat-pumps"
+          },
+          {
+            "text": "Heating Maintenance",
+            "href": "/services/heating/heating-maintenance"
+          },
+          {
+            "text": "Boiler Repair",
+            "href": "/services/heating/boiler-repair"
+          },
+          {
+            "text": "Water Heater Repair",
+            "href": "/services/water-heater-repair"
+          }
+        ],
+        "phoneLinks": [
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          }
+        ],
+        "visibleTopActions": [
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 44
+          },
+          {
+            "label": "Book Now",
+            "height": 44
+          },
+          {
+            "label": "Open navigation",
+            "height": 44
+          },
+          {
+            "label": "Book this service",
+            "height": 48
+          },
+          {
+            "label": "Call (516) 586-0826",
+            "height": 48
+          },
+          {
+            "label": "Help from Apex Assistant",
+            "height": 56
+          },
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 56
+          },
+          {
+            "label": "Book now",
+            "height": 56
+          }
+        ],
+        "internalLinks": [
+          "/",
+          "/service-areas",
+          "/about",
+          "/contact",
+          "/services",
+          "/services/appliance-repair",
+          "/services/cooling",
+          "/services/cooling/ac-repair",
+          "/services/cooling/ac-installation",
+          "/services/cooling/ac-maintenance",
+          "/services/cooling/ac-replacement",
+          "/services/heating",
+          "/services/heating/furnace-repair",
+          "/services/heating/heat-pumps",
+          "/services/heating/heating-maintenance",
+          "/services/heating/boiler-repair",
+          "/services/water-heater-repair",
+          "/brands",
+          "/reviews"
+        ],
+        "metrics": {
+          "lcp": 328,
+          "cls": 0,
+          "longTasks": [
+            110
+          ],
+          "interactions": []
+        }
+      },
+      "accessibility": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 34
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedAssets": []
+    },
+    {
+      "url": "/services/heating/heat-pumps",
+      "viewport": "mobile",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "docs/qa/2026-11-17/pages/screenshots/services__heating__heat-pumps--mobile.jpg",
+      "status": 200,
+      "dom": {
+        "title": "Heat Pump Services | Apex Home Services",
+        "h1": [
+          "Heat Pumps"
+        ],
+        "horizontalOverflow": false,
+        "pageWidth": 390,
+        "protrudingContent": [],
+        "brokenImages": [],
+        "images": [
+          {
+            "alt": "Apex Home Services mark",
+            "loading": "auto",
+            "width": 36,
+            "naturalWidth": 48,
+            "optimized": true
+          },
+          {
+            "alt": "Apex technician servicing an outdoor HVAC heating unit with the access panel open",
+            "loading": "auto",
+            "width": 356,
+            "naturalWidth": 358,
+            "optimized": true
+          },
+          {
+            "alt": "",
+            "loading": "lazy",
+            "width": 40,
+            "naturalWidth": 48,
+            "optimized": true
+          }
+        ],
+        "footerCount": 1,
+        "footerLinks": [
+          {
+            "text": "Apex Home Services",
+            "href": "/"
+          },
+          {
+            "text": "States servedNY · NJ · CT · MA · RI",
+            "href": "/service-areas"
+          },
+          {
+            "text": "(516) 586-0826",
+            "href": "tel:+15165860826"
+          },
+          {
+            "text": "Refrigerators, Freezers & Ice Makers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Washers & Dryers (Gas & Electric)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Ovens, Ranges & Cooktops",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Microwaves (Built-in & Over-the-Range)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Dishwashers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Wine & Beverage Coolers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Range Hoods & Warming Drawers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Refrigerators",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Freezers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Ice Machines",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Pizza Ovens & Griddles",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Frozen Beverage Dispensers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Food Truck Refrigeration",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "AC Repair",
+            "href": "/services/cooling/ac-repair"
+          },
+          {
+            "text": "AC Installation",
+            "href": "/services/cooling/ac-installation"
+          },
+          {
+            "text": "AC Maintenance",
+            "href": "/services/cooling/ac-maintenance"
+          },
+          {
+            "text": "AC Replacement",
+            "href": "/services/cooling/ac-replacement"
+          },
+          {
+            "text": "Furnace Repair",
+            "href": "/services/heating/furnace-repair"
+          },
+          {
+            "text": "Heat Pumps",
+            "href": "/services/heating/heat-pumps"
+          },
+          {
+            "text": "Heating Maintenance",
+            "href": "/services/heating/heating-maintenance"
+          },
+          {
+            "text": "Boiler Repair",
+            "href": "/services/heating/boiler-repair"
+          },
+          {
+            "text": "Water Heater Repair",
+            "href": "/services/water-heater-repair"
+          }
+        ],
+        "phoneLinks": [
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          }
+        ],
+        "visibleTopActions": [
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 44
+          },
+          {
+            "label": "Book Now",
+            "height": 44
+          },
+          {
+            "label": "Open navigation",
+            "height": 44
+          },
+          {
+            "label": "Book this service",
+            "height": 48
+          },
+          {
+            "label": "Call (516) 586-0826",
+            "height": 48
+          },
+          {
+            "label": "Help from Apex Assistant",
+            "height": 56
+          },
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 56
+          },
+          {
+            "label": "Book now",
+            "height": 56
+          }
+        ],
+        "internalLinks": [
+          "/",
+          "/service-areas",
+          "/about",
+          "/contact",
+          "/services",
+          "/services/appliance-repair",
+          "/services/cooling",
+          "/services/cooling/ac-repair",
+          "/services/cooling/ac-installation",
+          "/services/cooling/ac-maintenance",
+          "/services/cooling/ac-replacement",
+          "/services/heating",
+          "/services/heating/furnace-repair",
+          "/services/heating/heat-pumps",
+          "/services/heating/heating-maintenance",
+          "/services/heating/boiler-repair",
+          "/services/water-heater-repair",
+          "/brands",
+          "/reviews"
+        ],
+        "metrics": {
+          "lcp": 244,
+          "cls": 0,
+          "longTasks": [
+            80
+          ],
+          "interactions": []
+        }
+      },
+      "accessibility": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 34
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedAssets": []
+    },
+    {
+      "url": "/services/heating/heating-maintenance",
+      "viewport": "mobile",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "docs/qa/2026-11-17/pages/screenshots/services__heating__heating-maintenance--mobile.jpg",
+      "status": 200,
+      "dom": {
+        "title": "Heating Maintenance Services | Apex Home Services",
+        "h1": [
+          "Heating Maintenance"
+        ],
+        "horizontalOverflow": false,
+        "pageWidth": 390,
+        "protrudingContent": [],
+        "brokenImages": [],
+        "images": [
+          {
+            "alt": "Apex Home Services mark",
+            "loading": "auto",
+            "width": 36,
+            "naturalWidth": 48,
+            "optimized": true
+          },
+          {
+            "alt": "Apex technician connecting refrigerant gauges to an outdoor heat pump unit",
+            "loading": "auto",
+            "width": 356,
+            "naturalWidth": 358,
+            "optimized": true
+          },
+          {
+            "alt": "",
+            "loading": "lazy",
+            "width": 40,
+            "naturalWidth": 48,
+            "optimized": true
+          }
+        ],
+        "footerCount": 1,
+        "footerLinks": [
+          {
+            "text": "Apex Home Services",
+            "href": "/"
+          },
+          {
+            "text": "States servedNY · NJ · CT · MA · RI",
+            "href": "/service-areas"
+          },
+          {
+            "text": "(516) 586-0826",
+            "href": "tel:+15165860826"
+          },
+          {
+            "text": "Refrigerators, Freezers & Ice Makers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Washers & Dryers (Gas & Electric)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Ovens, Ranges & Cooktops",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Microwaves (Built-in & Over-the-Range)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Dishwashers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Wine & Beverage Coolers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Range Hoods & Warming Drawers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Refrigerators",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Freezers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Ice Machines",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Pizza Ovens & Griddles",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Frozen Beverage Dispensers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Food Truck Refrigeration",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "AC Repair",
+            "href": "/services/cooling/ac-repair"
+          },
+          {
+            "text": "AC Installation",
+            "href": "/services/cooling/ac-installation"
+          },
+          {
+            "text": "AC Maintenance",
+            "href": "/services/cooling/ac-maintenance"
+          },
+          {
+            "text": "AC Replacement",
+            "href": "/services/cooling/ac-replacement"
+          },
+          {
+            "text": "Furnace Repair",
+            "href": "/services/heating/furnace-repair"
+          },
+          {
+            "text": "Heat Pumps",
+            "href": "/services/heating/heat-pumps"
+          },
+          {
+            "text": "Heating Maintenance",
+            "href": "/services/heating/heating-maintenance"
+          },
+          {
+            "text": "Boiler Repair",
+            "href": "/services/heating/boiler-repair"
+          },
+          {
+            "text": "Water Heater Repair",
+            "href": "/services/water-heater-repair"
+          }
+        ],
+        "phoneLinks": [
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          }
+        ],
+        "visibleTopActions": [
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 44
+          },
+          {
+            "label": "Book Now",
+            "height": 44
+          },
+          {
+            "label": "Open navigation",
+            "height": 44
+          },
+          {
+            "label": "Book this service",
+            "height": 48
+          },
+          {
+            "label": "Call (516) 586-0826",
+            "height": 48
+          },
+          {
+            "label": "Help from Apex Assistant",
+            "height": 56
+          },
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 56
+          },
+          {
+            "label": "Book now",
+            "height": 56
+          }
+        ],
+        "internalLinks": [
+          "/",
+          "/service-areas",
+          "/about",
+          "/contact",
+          "/services",
+          "/services/appliance-repair",
+          "/services/cooling",
+          "/services/cooling/ac-repair",
+          "/services/cooling/ac-installation",
+          "/services/cooling/ac-maintenance",
+          "/services/cooling/ac-replacement",
+          "/services/heating",
+          "/services/heating/furnace-repair",
+          "/services/heating/heat-pumps",
+          "/services/heating/heating-maintenance",
+          "/services/heating/boiler-repair",
+          "/services/water-heater-repair",
+          "/brands",
+          "/reviews"
+        ],
+        "metrics": {
+          "lcp": 316,
+          "cls": 0,
+          "longTasks": [
+            113
+          ],
+          "interactions": []
+        }
+      },
+      "accessibility": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 34
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedAssets": []
+    },
+    {
+      "url": "/services/heating/boiler-repair",
+      "viewport": "mobile",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "docs/qa/2026-11-17/pages/screenshots/services__heating__boiler-repair--mobile.jpg",
+      "status": 200,
+      "dom": {
+        "title": "Boiler Repair Services | Apex Home Services",
+        "h1": [
+          "Boiler Repair"
+        ],
+        "horizontalOverflow": false,
+        "pageWidth": 390,
+        "protrudingContent": [],
+        "brokenImages": [],
+        "images": [
+          {
+            "alt": "Apex Home Services mark",
+            "loading": "auto",
+            "width": 36,
+            "naturalWidth": 48,
+            "optimized": true
+          },
+          {
+            "alt": "Apex technician servicing an outdoor HVAC heating unit with the access panel open",
+            "loading": "auto",
+            "width": 356,
+            "naturalWidth": 358,
+            "optimized": true
+          },
+          {
+            "alt": "",
+            "loading": "lazy",
+            "width": 40,
+            "naturalWidth": 48,
+            "optimized": true
+          }
+        ],
+        "footerCount": 1,
+        "footerLinks": [
+          {
+            "text": "Apex Home Services",
+            "href": "/"
+          },
+          {
+            "text": "States servedNY · NJ · CT · MA · RI",
+            "href": "/service-areas"
+          },
+          {
+            "text": "(516) 586-0826",
+            "href": "tel:+15165860826"
+          },
+          {
+            "text": "Refrigerators, Freezers & Ice Makers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Washers & Dryers (Gas & Electric)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Ovens, Ranges & Cooktops",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Microwaves (Built-in & Over-the-Range)",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Dishwashers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Wine & Beverage Coolers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Range Hoods & Warming Drawers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Refrigerators",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Freezers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Commercial Ice Machines",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Pizza Ovens & Griddles",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Frozen Beverage Dispensers",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "Food Truck Refrigeration",
+            "href": "/services/appliance-repair"
+          },
+          {
+            "text": "AC Repair",
+            "href": "/services/cooling/ac-repair"
+          },
+          {
+            "text": "AC Installation",
+            "href": "/services/cooling/ac-installation"
+          },
+          {
+            "text": "AC Maintenance",
+            "href": "/services/cooling/ac-maintenance"
+          },
+          {
+            "text": "AC Replacement",
+            "href": "/services/cooling/ac-replacement"
+          },
+          {
+            "text": "Furnace Repair",
+            "href": "/services/heating/furnace-repair"
+          },
+          {
+            "text": "Heat Pumps",
+            "href": "/services/heating/heat-pumps"
+          },
+          {
+            "text": "Heating Maintenance",
+            "href": "/services/heating/heating-maintenance"
+          },
+          {
+            "text": "Boiler Repair",
+            "href": "/services/heating/boiler-repair"
+          },
+          {
+            "text": "Water Heater Repair",
+            "href": "/services/water-heater-repair"
+          }
+        ],
+        "phoneLinks": [
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call (516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "(516) 586-0826",
+            "visible": true
+          },
+          {
+            "href": "tel:+15165860826",
+            "accessibleName": "Call Apex at (516) 586-0826",
+            "visible": true
+          }
+        ],
+        "visibleTopActions": [
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 44
+          },
+          {
+            "label": "Book Now",
+            "height": 44
+          },
+          {
+            "label": "Open navigation",
+            "height": 44
+          },
+          {
+            "label": "Book this service",
+            "height": 48
+          },
+          {
+            "label": "Call (516) 586-0826",
+            "height": 48
+          },
+          {
+            "label": "Help from Apex Assistant",
+            "height": 56
+          },
+          {
+            "label": "Call Apex at (516) 586-0826",
+            "height": 56
+          },
+          {
+            "label": "Book now",
+            "height": 56
+          }
+        ],
+        "internalLinks": [
+          "/",
+          "/service-areas",
+          "/about",
+          "/contact",
+          "/services",
+          "/services/appliance-repair",
+          "/services/cooling",
+          "/services/cooling/ac-repair",
+          "/services/cooling/ac-installation",
+          "/services/cooling/ac-maintenance",
+          "/services/cooling/ac-replacement",
+          "/services/heating",
+          "/services/heating/furnace-repair",
+          "/services/heating/heat-pumps",
+          "/services/heating/heating-maintenance",
+          "/services/heating/boiler-repair",
+          "/services/water-heater-repair",
+          "/brands",
+          "/reviews"
+        ],
+        "metrics": {
+          "lcp": 264,
+          "cls": 0,
+          "longTasks": [
+            105
+          ],
+          "interactions": []
+        }
+      },
+      "accessibility": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 34
+          }
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedAssets": []
+    }
+  ],
+  "blockedMutations": []
+}

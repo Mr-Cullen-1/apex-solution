@@ -1,5 +1,11 @@
 # Roadmap
 
+## Audit remediation — 17 November 2026
+
+Current work: [implementation plan](superpowers/plans/2026-11-17-audit-remediation.md), [execution evidence](audits/remediation-progress-2026-11-17.md), [status registry](audits/remediation-status-2026-11-17.csv), [business inputs](BUSINESS_FACTS.md), [measurement contract](SEO_MEASUREMENT.md). These statuses supersede older unchecked foundation items below where they overlap.
+
+Local batch: existing-route metadata/accessibility, truthful sitemap dates, shared breadcrumbs/Organization identity, source-backed service content and coverage, smaller icons and response headers. Privacy/terms, analytics activation and new appliance/county landing pages remain dependent on the explicit inputs in the register. No production release is implied.
+
 ## Phase 0 — Foundation
 
 - Framework, TypeScript, linting, and build setup

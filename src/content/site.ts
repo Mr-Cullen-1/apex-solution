@@ -33,6 +33,8 @@ export const serviceAreas = [
   },
 ] as const satisfies readonly ServiceArea[];
 
+export const serviceCoverageDescription = `Service requests are coordinated in select counties in ${serviceAreas.map((area) => area.state).join(", ")}. Availability for your service and ZIP code is confirmed separately.`;
+
 export const supportedBrands = [
   {
     id: "appliances",

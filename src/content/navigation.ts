@@ -8,7 +8,7 @@ export const primaryNavigation: NavigationItem[] = [
     children: [
       { label: "Appliance Repair", href: "/services/appliance-repair", description: "Diagnostic and repair service for household appliances." },
       { label: "Cooling", href: "/services/cooling", description: "Repair, installation, maintenance, and replacement." },
-      { label: "Heating", href: "/services/heating", description: "Furnaces, heat pumps, and seasonal care." },
+      { label: "Heating", href: "/services/heating", description: "Furnaces, boilers, heat pumps, and seasonal care." },
       { label: "Water Heater Repair", href: "/services/water-heater-repair", description: "Diagnostics and repair for residential water heaters." },
     ],
   },
