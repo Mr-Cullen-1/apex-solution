@@ -178,6 +178,17 @@ body {
 /* Public application shell: task access comes before decorative content. */
 .marketing-shell { display: flex; flex: 1; flex-direction: column; min-width: 0; }
 .marketing-shell main { min-width: 0; }
+
+/* Keep the home hero immediate; let the browser lay out distant sections
+   as they approach the viewport. Content stays in the HTML and tab order.
+   Remember measured heights after rendering to preserve scroll position. */
+@media screen {
+  .home-page > section:not(.service-workspace),
+  .marketing-shell:has(> .home-page) > .site-footer {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 700px;
+  }
+}
 .marketing-shell :is(button, a, input, select, textarea) { -webkit-tap-highlight-color: transparent; }
 .marketing-shell :is(h1, h2, h3) { overflow-wrap: break-word; }
 .service-workspace { padding-block: clamp(1.5rem, 3vw, 2.75rem) 0; }

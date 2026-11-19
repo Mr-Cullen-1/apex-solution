@@ -9,7 +9,7 @@ const samples = [];
 (async () => {
   const browser = await chromium.launch({ headless: true, executablePath: process.env.QA_BROWSER || path.join(process.env.LOCALAPPDATA, 'ms-playwright/chromium-1228/chrome-win64/chrome.exe') });
   try {
-    for (const profile of ['desktop', 'mobile-throttled']) for (const url of ['/', '/services/cooling/ac-repair']) for (let sample = 1; sample <= 3; sample++) {
+    for (const profile of (process.env.QA_PROFILES || 'desktop,mobile-throttled').split(',')) for (const url of (process.env.QA_ROUTES || '/,/services/cooling/ac-repair').split(',')) for (let sample = 1; sample <= Number(process.env.QA_SAMPLES || 3); sample++) {
       const mobile = profile === 'mobile-throttled';
       const context = await browser.newContext({ viewport: mobile ? { width: 390, height: 844 } : { width: 1440, height: 900 }, isMobile: mobile, hasTouch: mobile, serviceWorkers: 'block' });
       await context.route('**/*', route => ['GET', 'HEAD', 'OPTIONS'].includes(route.request().method()) ? route.continue() : route.abort());
@@ -21,9 +21,9 @@ const samples = [];
         await cdp.send('Network.emulateNetworkConditions', { offline: false, latency: 150, downloadThroughput: 1600000 / 8, uploadThroughput: 750000 / 8, connectionType: 'cellular4g' });
       }
       await page.addInitScript(() => {
-        window.__perf = { lcp: null, lcpElement: null, cls: 0, longTasks: [], interactions: {} };
+        window.__perf = { lcp: null, lcpElement: null, lcpEntries: [], cls: 0, longTasks: [], interactions: {} };
         let sessionStart = 0, previousShift = 0, sessionValue = 0;
-        new PerformanceObserver(list => { for (const e of list.getEntries()) { window.__perf.lcp = e.startTime; window.__perf.lcpElement = e.element?.tagName + ':' + (e.element?.textContent || e.element?.getAttribute('alt') || '').slice(0, 100); } }).observe({ type: 'largest-contentful-paint', buffered: true });
+        new PerformanceObserver(list => { for (const e of list.getEntries()) { window.__perf.lcp = e.startTime; window.__perf.lcpElement = e.element?.tagName + ':' + (e.element?.textContent || e.element?.getAttribute('alt') || '').slice(0, 100); window.__perf.lcpEntries.push({ time: e.startTime, element: window.__perf.lcpElement, size: e.size, url: e.url }); } }).observe({ type: 'largest-contentful-paint', buffered: true });
         new PerformanceObserver(list => { for (const e of list.getEntries()) if (!e.hadRecentInput) {
           if (e.startTime - previousShift < 1000 && e.startTime - sessionStart < 5000) sessionValue += e.value;
           else { sessionStart = e.startTime; sessionValue = e.value; }
@@ -48,7 +48,7 @@ const samples = [];
         }));
       }
       await page.waitForTimeout(500);
-      const data = await page.evaluate(() => ({ ...window.__perf, resourceBytes: performance.getEntriesByType('resource').reduce((sum, e) => sum + e.transferSize, 0), resources: performance.getEntriesByType('resource').length, navigation: performance.getEntriesByType('navigation').map(e => ({ ttfb: e.responseStart, domContentLoaded: e.domContentLoadedEventEnd, load: e.loadEventEnd })) }));
+      const data = await page.evaluate(() => ({ ...window.__perf, resourceBytes: performance.getEntriesByType('resource').reduce((sum, e) => sum + e.transferSize, 0), resources: performance.getEntriesByType('resource').length, resourceTimings: performance.getEntriesByType('resource').map(e => ({ path: new URL(e.name).pathname, type: e.initiatorType, start: e.startTime, end: e.responseEnd, bytes: e.transferSize })), navigation: performance.getEntriesByType('navigation').map(e => ({ ttfb: e.responseStart, domContentLoaded: e.domContentLoadedEventEnd, load: e.loadEventEnd })) }));
       const row = { profile, url, sample, ...data, cameraFrames, observedInteractionMax: Math.max(0, ...Object.values(data.interactions)) };
       samples.push(row);
       fs.writeFileSync(output, JSON.stringify({ browser: browser.version(), note: 'Local production build. Synthetic timings; observed interaction maximum is a lab diagnostic, not field INP. New browser context per sample. Throttled profile: 4x CPU, 1.6 Mbps down, 0.75 Mbps up, 150ms latency.', samples }, null, 2));

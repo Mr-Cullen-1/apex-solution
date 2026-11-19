@@ -90,6 +90,9 @@ The approved client-supplied logos are `public/brand/apex-mark-{colored,white,bl
 
 ## Content integrity carried into visuals
 
+- The homepage uses screen-only `content-visibility: auto` below the hero and on its footer, with `contain-intrinsic-size: auto 700px`. Keep content server-rendered and retain normal print rendering. Recheck scrolling, focus and viewport layout when changing section sizes; see the [19 November performance evidence](audits/reviews-performance-2026-11-19.md).
+- Review dates use the full `text-slate` token. Do not reintroduce the opacity modifier: it failed normal-text contrast on the review-card background.
+
 - Apex Results and Reviews render an honest, designed empty state (not fabricated content) until real photography/testimonials are supplied.
 - No guarantee/warranty claims appear anywhere in the UI.
 - "Live Now" and similar status cues are never conveyed by color alone.

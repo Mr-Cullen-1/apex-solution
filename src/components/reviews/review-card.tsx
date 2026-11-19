@@ -34,7 +34,7 @@ export function ReviewCard({ review, variant }: { review: PublicReview; variant:
         </span>
       )}
       {meta && <span>{meta}</span>}
-      {variant === "archive" && dateLabel && <span className="text-slate/70">{dateLabel}</span>}
+      {variant === "archive" && dateLabel && <span className="text-slate">{dateLabel}</span>}
     </figcaption>
   );
 

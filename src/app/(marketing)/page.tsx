@@ -28,7 +28,7 @@ export const revalidate = 120;
 
 export default function Home() {
   return (
-    <main id="main-content" className="flex-1 bg-page-bg">
+    <main id="main-content" className="home-page flex-1 bg-page-bg">
       <OrganizationStructuredData />
       <Hero />
       <PricingStrip />

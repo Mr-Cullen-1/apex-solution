@@ -76,25 +76,30 @@ async function run(browser, viewportName, viewport) {
   await check('3D service selection, camera and reduced motion', async () => {
     await page.goto(base, { waitUntil: 'networkidle' });
     const explorer = page.locator('.home-explorer');
+    const picker = page.getByRole('group', { name: 'Choose your home service' });
     for (const label of ['Cooling', 'Heating', 'Hot water', 'Appliances']) {
-      const button = explorer.getByRole('button', { name: label });
+      const button = picker.getByRole('button', { name: new RegExp('^' + label) });
       await button.click(); assert.equal(await button.getAttribute('aria-pressed'), 'true');
       assert.equal(await explorer.locator('.house-unit-active').count(), 1);
     }
     let cameraChanged = false;
-    if (viewportName !== 'mobile') {
+    if (!(await explorer.isVisible())) {
+      assert.notEqual(viewportName, 'desktop', 'desktop explorer must be visible');
+      await page.getByRole('button', { name: 'Explore your home in 2D / 3D +' }).click();
+    }
+    {
       const before = await page.locator('.house-world').evaluate(el => getComputedStyle(el).transform);
-      await explorer.getByRole('button', { name: 'Turn the home' }).click();
+      await explorer.getByRole('button', { name: 'Rotate home illustration' }).click();
       await page.waitForTimeout(700);
       cameraChanged = before !== await page.locator('.house-world').evaluate(el => getComputedStyle(el).transform);
       assert.ok(cameraChanged);
-    } else assert.equal(await explorer.getByRole('button', { name: 'Turn the home' }).isVisible(), false);
+    }
     await screenshot('home-explorer');
     await page.emulateMedia({ reducedMotion: 'reduce' });
     const duration = await page.locator('.house-world').evaluate(el => getComputedStyle(el).transitionDuration);
     assert.ok(parseFloat(duration) < .001, duration);
-    await explorer.getByRole('button', { name: 'Cooling' }).click();
-    assert.equal(await explorer.getByRole('link').getAttribute('href'), '/services/cooling');
+    await picker.getByRole('button', { name: /^Cooling/ }).click();
+    assert.equal(await page.locator('#selected-service').getByRole('link', { name: 'Service details' }).getAttribute('href'), '/services/cooling');
     await screenshot('reduced-motion');
     await page.emulateMedia({ reducedMotion: 'no-preference' });
     return { cameraChanged, reducedMotionTransition: duration };
@@ -157,11 +162,11 @@ async function run(browser, viewportName, viewport) {
     await screenshot('contact-booking-entry');
     await page.keyboard.press('Escape');
     if (viewportName === 'mobile') {
-      const sticky = page.locator('div.fixed.inset-x-0.bottom-0');
-      await sticky.getByRole('button', { name: 'Book Now', exact: true }).click();
+      const sticky = page.getByRole('navigation', { name: 'Quick navigation' });
+      await sticky.getByRole('button', { name: /^Book now$/i }).click();
       await page.locator('#bn-fullName').waitFor();
       await page.keyboard.press('Escape');
-      assert.ok(await sticky.getByRole('button', { name: 'Book Now', exact: true }).evaluate(el => el === document.activeElement));
+      assert.ok(await sticky.getByRole('button', { name: /^Book now$/i }).evaluate(el => el === document.activeElement));
     }
     return { contactEntry: true, mobileStickyEntry: viewportName === 'mobile' };
   });
@@ -169,7 +174,7 @@ async function run(browser, viewportName, viewport) {
     await page.goto(base + '/contact', { waitUntil: 'networkidle' });
     const trigger = page.locator('header').getByRole('button', { name: 'Book Now', exact: true });
     await trigger.click();
-    const dialog = page.getByRole('dialog', { name: "Tell us what's going on." });
+    const dialog = page.getByRole('dialog', { name: 'Let’s get your request started.' });
     assert.ok(await dialog.getByRole('button', { name: 'Close', exact: true }).evaluate(el => el === document.activeElement));
     await page.keyboard.press('Shift+Tab');
     assert.ok(await dialog.getByRole('button', { name: 'Send Request' }).evaluate(el => el === document.activeElement));
@@ -244,7 +249,7 @@ async function run(browser, viewportName, viewport) {
     await page.goto(base + '/?book=1&service=furnace-repair', { waitUntil: 'networkidle' });
     await page.locator('#bn-service').waitFor();
     assert.equal(await page.locator('#bn-service').inputValue(), 'furnace-repair');
-    await page.addScriptTag({ path: require.resolve('axe-core') });
+    await page.addScriptTag({ path: process.env.QA_AXE || require.resolve('axe-core') });
     const violations = await page.evaluate(async () => (await window.axe.run('[role="dialog"]', { runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21aa'] } })).violations.map(v => ({ id: v.id, nodes: v.nodes.map(n => n.target) })));
     await screenshot('booking-preselected');
     assert.deepEqual(violations, []);

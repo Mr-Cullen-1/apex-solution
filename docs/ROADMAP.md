@@ -1,5 +1,9 @@
 # Roadmap
 
+## Reviews and performance — 19 November 2026
+
+The [follow-up investigation](audits/reviews-performance-2026-11-19.md) traced the reproduced review error to restricted network access; a permitted read verified 3 approved/consented reviews and 2 readable photos. Homepage offscreen rendering is optimized locally. Production release, field CWV, real booking delivery, and outstanding business inputs remain separate requirements.
+
 ## Audit remediation — 17 November 2026
 
 Current work: [implementation plan](superpowers/plans/2026-11-17-audit-remediation.md), [execution evidence](audits/remediation-progress-2026-11-17.md), [status registry](audits/remediation-status-2026-11-17.csv), [business inputs](BUSINESS_FACTS.md), [measurement contract](SEO_MEASUREMENT.md). These statuses supersede older unchecked foundation items below where they overlap.
