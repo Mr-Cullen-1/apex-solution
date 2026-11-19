@@ -17,7 +17,7 @@ Updated 2026-11-17. This is a source register, not independent business verifica
 | Warranty/parts | No detailed approved terms found | Visitors are prompted to confirm applicable terms; no promise made | Who provides warranty, duration, exclusions, parts policy |
 | Review verification | Admin-controlled `is_verified_customer`; approval and publish consent are separate | Existing badge condition retained; process explained without claiming external authentication | Actual staff verification procedure and evidence for disputed photo associations |
 | Photos/results | Existing source media and captions; audit questions dryer vent vs lint trap and review associations | Furnace/boiler photos explicitly described as general outdoor HVAC imagery | Confirm exact dryer work, photo-to-review association, publication consent and locality for case studies |
-| Analytics | No analytics integration or scoped GA/GTM key name found; existing campaign/sourcePath support remains | No tracker injected and no secrets changed | Provider/account ID, consent decision and approved campaign codes |
+| Analytics | GTM `GTM-5JLZPN4Q`; GA4 destination `G-50J6LW5JET`; Sprint 1 frontend events implemented locally | No publish/deploy; production form deduplication and user-provided-data settings still require review | See `ANALYTICS_SPRINT_1.md` release gates; consent, private-route exclusions and URL redaction |
 
 ## Policy publication input
 

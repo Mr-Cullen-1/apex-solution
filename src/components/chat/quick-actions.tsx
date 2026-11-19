@@ -36,13 +36,13 @@ export function QuickActions() {
         className={chipClass}
         onClick={() => {
           close();
-          openBookNow();
+          openBookNow({ placement: "chat_quick", initiator: "chat_action" });
         }}
       >
         Book a service
       </button>
       {contact.phoneHref && (
-        <a href={contact.phoneHref} className={chipClass}>
+        <a data-analytics-placement="chat_quick" href={contact.phoneHref} className={chipClass}>
           Talk to someone
         </a>
       )}

@@ -49,12 +49,12 @@ function BrandColumn() {
       </Link>
       <div className="mt-6 flex max-w-sm flex-col gap-3 sm:flex-row md:flex-col xl:flex-row">
         {contact.phoneHref && (
-          <a href={contact.phoneHref} className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 whitespace-nowrap rounded-control border border-footer-border bg-white/10 px-4 text-sm font-semibold hover:bg-white/15">
+          <a data-analytics-placement="footer" href={contact.phoneHref} className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 whitespace-nowrap rounded-control border border-footer-border bg-white/10 px-4 text-sm font-semibold hover:bg-white/15">
             <PhoneIcon className="size-4 shrink-0 text-footer-accent" />
             {contact.phone}
           </a>
         )}
-        <BookingLink variant="footer-primary" className="flex-1 whitespace-nowrap" />
+        <BookingLink placement="footer" variant="footer-primary" className="flex-1 whitespace-nowrap" />
       </div>
     </div>
   );

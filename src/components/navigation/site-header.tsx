@@ -139,12 +139,12 @@ export function SiteHeader() {
               {availability.contactLabel}
             </span>
             {contact.phoneHref && (
-              <a href={contact.phoneHref} aria-label={`Call Apex at ${contact.phone}`} className="inline-flex min-h-11 shrink-0 items-center gap-1.5 rounded-control bg-copper px-2.5 text-xs font-bold text-white transition-transform duration-300 hover:-translate-y-0.5 sm:min-h-11 sm:gap-2 sm:px-4 sm:text-sm">
+              <a data-analytics-placement="header" href={contact.phoneHref} aria-label={`Call Apex at ${contact.phone}`} className="inline-flex min-h-11 shrink-0 items-center gap-1.5 rounded-control bg-copper px-2.5 text-xs font-bold text-white transition-transform duration-300 hover:-translate-y-0.5 sm:min-h-11 sm:gap-2 sm:px-4 sm:text-sm">
                 <PhoneIcon className="size-3.5 shrink-0 sm:size-4" />
                 <span className="sm:hidden">Call</span><span className="hidden whitespace-nowrap sm:inline">{contact.phone}</span>
               </a>
             )}
-            <BookingLink variant="header-compact" showArrow={false} />
+            <BookingLink placement="header" variant="header-compact" showArrow={false} />
             <button
               ref={mobileButtonRef}
               type="button"
@@ -170,7 +170,7 @@ export function SiteHeader() {
             <Link href="/services" onClick={() => setMegaOpen(false)} className="text-link inline-flex min-h-11 items-center underline">All services</Link>
             <p className="mt-4 text-3xl font-semibold tracking-[-0.03em] text-navy">Comfort starts with clarity.</p>
             <p className="mt-4 text-sm leading-6 text-slate">Not sure where to begin? Tell us what is happening and start a guided service request.</p>
-            <button type="button" className="group mt-7 inline-flex items-center gap-3 text-sm font-semibold text-navy" onClick={() => { setMegaOpen(false); openBookNow(); }}>
+            <button type="button" className="group mt-7 inline-flex items-center gap-3 text-sm font-semibold text-navy" onClick={() => { setMegaOpen(false); openBookNow({ placement: "header_menu", initiator: "booking_cta" }); }}>
               Book Now <ArrowRightIcon className="size-5 transition-transform group-hover:translate-x-1" />
             </button>
           </div>
@@ -204,7 +204,7 @@ export function SiteHeader() {
                 <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-ink-muted">
                   {availability.contactLabel}
                 </span>
-                <a href={contact.phoneHref} className="inline-flex min-h-11 items-center gap-2 rounded-control bg-copper px-4 text-sm font-bold text-white"><PhoneIcon className="size-4" />{contact.phone}</a>
+                <a data-analytics-placement="header_menu" href={contact.phoneHref} className="inline-flex min-h-11 items-center gap-2 rounded-control bg-copper px-4 text-sm font-bold text-white"><PhoneIcon className="size-4" />{contact.phone}</a>
               </div>
             )}
             <nav className="flex-1 px-6 py-5" aria-label="Mobile navigation">
@@ -235,7 +235,7 @@ export function SiteHeader() {
                 </Link>
               ))}
             </nav>
-            <div className="border-t border-steel p-6"><BookingLink className="w-full" onClick={closeMobile} /></div>
+            <div className="border-t border-steel p-6"><BookingLink placement="header_mobile" className="w-full" onClick={closeMobile} /></div>
           </div>
         </div>
       )}

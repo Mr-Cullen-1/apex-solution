@@ -21,7 +21,7 @@ export function ServiceFinder({ categories }: { categories: DirectoryCategory[] 
   });
 
   return (
-    <div>
+    <div data-analytics-placement="service_finder">
       <label htmlFor={inputId} className="mb-2 block text-sm font-semibold text-navy">Find your service</label>
       <div className="relative max-w-2xl">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true" className="pointer-events-none absolute left-4 top-4 size-5 text-slate"><circle cx="10.5" cy="10.5" r="6.5" /><path d="m16 16 5 5" /></svg>
@@ -39,11 +39,11 @@ export function ServiceFinder({ categories }: { categories: DirectoryCategory[] 
             </Link>
             <p className="mt-3 text-sm leading-6 text-slate">{category.shortDescription}</p>
             {category.children.length > 0 && <ul className="mt-4 grid gap-x-4 border-t border-steel pt-2 sm:grid-cols-2">{category.children.map((service) => <li key={service.id}><Link href={service.href} className="flex min-h-11 items-center gap-2 text-sm text-navy hover:text-brand-primary hover:underline"><span aria-hidden="true" className="text-brand-primary">↗</span>{service.name}</Link></li>)}</ul>}
-            <BookingLink categoryId={category.id} variant="text" className="mt-3">Request service</BookingLink>
+            <BookingLink placement="service_finder" categoryId={category.id} variant="text" className="mt-3">Request service</BookingLink>
           </article>
         ))}
       </div>
-      {!filtered.length && <div className="mt-6 rounded-panel border border-steel bg-surface p-6"><h2 className="text-lg font-semibold text-navy">Let’s find the right starting point.</h2><p className="mt-2 max-w-xl text-sm leading-6 text-slate">No matching service name. Try a broader term, or tell Apex what is happening and we’ll help you choose.</p><div className="mt-4 flex flex-wrap gap-4"><button type="button" onClick={() => setQuery("")} className="text-link min-h-12 underline">Show all services</button><BookingLink variant="call">Help me choose</BookingLink></div></div>}
+      {!filtered.length && <div className="mt-6 rounded-panel border border-steel bg-surface p-6"><h2 className="text-lg font-semibold text-navy">Let’s find the right starting point.</h2><p className="mt-2 max-w-xl text-sm leading-6 text-slate">No matching service name. Try a broader term, or tell Apex what is happening and we’ll help you choose.</p><div className="mt-4 flex flex-wrap gap-4"><button type="button" onClick={() => setQuery("")} className="text-link min-h-12 underline">Show all services</button><BookingLink placement="service_finder" variant="call">Help me choose</BookingLink></div></div>}
     </div>
   );
 }

@@ -5,8 +5,10 @@ import { bookingEntry } from "@/content/cta";
 import { useBookNow } from "@/features/booking/book-now-context";
 import { ArrowRightIcon } from "./icons";
 import { buttonStyles } from "./button-link";
+import type { Placement } from "@/features/analytics/events";
 
 type BookingLinkProps = Omit<ComponentPropsWithoutRef<"button">, "type"> & {
+  placement: Placement;
   categoryId?: string;
   serviceId?: string;
   /** Marks this CTA as coming from the First-Time Customer Offer, so the modal
@@ -20,15 +22,16 @@ type BookingLinkProps = Omit<ComponentPropsWithoutRef<"button">, "type"> & {
 /** The site-wide "Book Now" trigger. Renders a real <button> (opening a
  * dialog is a button's job, not a link's) that opens the shared Book Now
  * modal, preselecting service/category/offer context when provided. */
-export function BookingLink({ children = bookingEntry.label, categoryId, serviceId, offer, variant = "primary", showArrow = true, className = "", onClick, ...props }: BookingLinkProps) {
+export function BookingLink({ children = bookingEntry.label, placement, categoryId, serviceId, offer, variant = "primary", showArrow = true, className = "", onClick, ...props }: BookingLinkProps) {
   const { open } = useBookNow();
   return (
     <button
       type="button"
+      data-analytics-placement={placement}
       className={`${buttonStyles[variant]} ${className}`}
       onClick={(event) => {
         onClick?.(event);
-        open({ categoryId, serviceId, offer });
+        open({ categoryId, serviceId, offer, placement, initiator: "booking_cta" });
       }}
       {...props}
     >

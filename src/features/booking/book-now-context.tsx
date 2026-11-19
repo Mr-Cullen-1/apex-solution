@@ -5,10 +5,11 @@ import { createContext, Suspense, useCallback, useContext, useEffect, useMemo, u
 import { findServiceContext, getCategoryById } from "./model";
 import { BookNowModal } from "./book-now-modal";
 import { primaryServices } from "@/content/services";
+import { trackEvent, type BookingOrigin } from "@/features/analytics/events";
 
-type OpenOptions = { categoryId?: string; serviceId?: string; offer?: boolean; issue?: string; campaignToken?: string };
+type OpenOptions = { categoryId?: string; serviceId?: string; offer?: boolean; issue?: string; campaignToken?: string } & BookingOrigin;
 type BookNowContextValue = {
-  open: (options?: OpenOptions) => void;
+  open: (options: OpenOptions) => void;
   isOpen: boolean;
   homeCategoryId: string;
   setHomeCategoryId: (categoryId: string) => void;
@@ -26,10 +27,15 @@ export function BookNowProvider({ children }: { children: React.ReactNode }) {
   // `nonce` is bumped on every open() call and used as the modal's React key,
   // so each open mounts a fresh instance with a clean form — no reset-on-open
   // effect required.
-  const [state, setState] = useState<{ isOpen: boolean; nonce: number } & OpenOptions>({ isOpen: false, nonce: 0 });
+  const [state, setState] = useState<{ isOpen: boolean; nonce: number } & OpenOptions>({ isOpen: false, nonce: 0, placement: "query", initiator: "query" });
   const [homeCategoryId, setHomeCategoryId] = useState(primaryServices[0].id);
 
-  const open = useCallback((options: OpenOptions = {}) => setState((current) => ({ isOpen: true, nonce: current.nonce + 1, ...options })), []);
+  const open = useCallback((options: OpenOptions) => {
+    if (options.initiator !== "query") {
+      trackEvent("booking_click", { placement: options.placement, initiator: options.initiator, category_id: options.categoryId, service_id: options.serviceId });
+    }
+    setState((current) => ({ isOpen: true, nonce: current.nonce + 1, ...options }));
+  }, []);
   const close = useCallback(() => setState((current) => ({ ...current, isOpen: false })), []);
 
   const value = useMemo(() => ({ open, isOpen: state.isOpen, homeCategoryId, setHomeCategoryId }), [open, state.isOpen, homeCategoryId]);
@@ -45,6 +51,7 @@ export function BookNowProvider({ children }: { children: React.ReactNode }) {
         offer={state.offer}
         issue={state.issue}
         campaignToken={state.campaignToken}
+        analyticsOrigin={{ placement: state.placement, initiator: state.initiator }}
         onClose={close}
       />
       <Suspense fallback={null}>
@@ -56,7 +63,7 @@ export function BookNowProvider({ children }: { children: React.ReactNode }) {
 
 /** Makes old /book?service=... links (and any ?book=1 link) open the modal
  * automatically, then strips the query so back/refresh doesn't reopen it. */
-function BookNowUrlSync({ open }: { open: (options?: OpenOptions) => void }) {
+function BookNowUrlSync({ open }: { open: (options: OpenOptions) => void }) {
   const searchParams = useSearchParams();
   const router = useRouter();
   const pathname = usePathname();
@@ -73,6 +80,8 @@ function BookNowUrlSync({ open }: { open: (options?: OpenOptions) => void }) {
     const category = !serviceContext && categoryId ? getCategoryById(categoryId) : undefined;
 
     open({
+      placement: "query",
+      initiator: "query",
       serviceId: serviceContext?.service.id,
       categoryId: serviceContext?.category.id ?? category?.id,
       offer,

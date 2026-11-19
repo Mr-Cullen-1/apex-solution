@@ -26,7 +26,7 @@ export function FirstTimeOffer() {
                 <p className="mt-1 text-sm font-bold uppercase tracking-[0.2em] text-copper">Off eligible maintenance</p>
                 <p className="mt-5 max-w-xs text-sm leading-6 text-navy/70">Valid on {firstTimeOffer.eligibility.length} eligible maintenance services — confirmed when you book.</p>
               </div>
-              <BookingLink offer variant="primary" className="w-full justify-center lg:w-auto lg:self-start">Claim this offer</BookingLink>
+              <BookingLink placement="home_offer" offer variant="primary" className="w-full justify-center lg:w-auto lg:self-start">Claim this offer</BookingLink>
             </div>
           </div>
           <div className="border-t border-steel bg-surface p-6 sm:p-8 lg:px-14 lg:py-8">

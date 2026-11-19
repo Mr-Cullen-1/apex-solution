@@ -74,7 +74,7 @@ export function ServiceAreaExplorer() {
                 <p className="text-xs font-bold uppercase tracking-[0.1em] text-copper">Not sure if we service your area?</p>
                 <p className="mt-1.5 max-w-xl text-sm leading-6 text-slate">Provide your ZIP when you book, and our team will confirm availability.</p>
               </div>
-              <BookingLink variant="primary" className="w-full shrink-0 justify-center sm:w-auto" />
+              <BookingLink placement="home_coverage" variant="primary" className="w-full shrink-0 justify-center sm:w-auto" />
             </div>
           </div>
 
@@ -88,7 +88,7 @@ export function ServiceAreaExplorer() {
             <div className="pt-7">
               <p className="text-xs font-bold uppercase tracking-[0.1em] text-copper">Not sure if we service your area?</p>
               <p className="mt-1.5 text-sm leading-6 text-slate">Provide your ZIP when you book, and our team will confirm availability.</p>
-              <BookingLink variant="primary" className="mt-4 w-full justify-center" />
+              <BookingLink placement="home_coverage" variant="primary" className="mt-4 w-full justify-center" />
             </div>
           </div>
         </div>

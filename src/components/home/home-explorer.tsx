@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { trackEvent } from "@/features/analytics/events";
 import Link from "next/link";
 import { BookingLink } from "@/components/ui/booking-link";
 import { ArrowRightIcon, CheckIcon, PhoneIcon } from "@/components/ui/icons";
@@ -20,7 +21,7 @@ export function HomeExplorer({ services }: { services: ExplorerService[] }) {
   const experience = serviceExperience[selected.id];
 
   return (
-    <div className="home-workspace">
+    <div data-analytics-placement="home_explorer" className="home-workspace">
       <div className="workspace-picker">
         <div className="flex items-center justify-between gap-3">
           <h2 className="text-lg font-semibold tracking-tight text-navy">What can we help with?</h2>
@@ -31,7 +32,7 @@ export function HomeExplorer({ services }: { services: ExplorerService[] }) {
             const item = serviceExperience[service.id];
             const active = selected.id === service.id;
             return (
-              <button key={service.id} type="button" aria-pressed={active} aria-controls="selected-service" onClick={() => setSelectedId(service.id)} className={`workspace-option ${active ? "is-selected" : ""}`}>
+              <button key={service.id} type="button" aria-pressed={active} aria-controls="selected-service" onClick={(event) => { if (event.nativeEvent.isTrusted && !active) trackEvent("service_select", { placement: "home_explorer", initiator: "picker", category_id: service.id }); setSelectedId(service.id); }} className={`workspace-option ${active ? "is-selected" : ""}`}>
                 <ServiceIcon service={service.id} className="service-option-icon" />
                 <span><span className="block font-semibold">{item.label}</span><span className="service-option-detail">{item.detail}</span></span>
                 <span className="service-option-check">{active && <CheckIcon className="size-3.5" />}</span>
@@ -45,14 +46,14 @@ export function HomeExplorer({ services }: { services: ExplorerService[] }) {
             <p className="mt-1 text-sm leading-6 text-slate">{experience.prompt}</p>
           </div>
           <div className="workspace-actions">
-            <BookingLink categoryId={selected.id} variant="call">Book {experience.label.toLowerCase()}</BookingLink>
+            <BookingLink placement="home_explorer" categoryId={selected.id} variant="call">Book {experience.label.toLowerCase()}</BookingLink>
             <Link href={selected.href} className="text-link inline-flex min-h-12 items-center justify-center gap-2">Service details <ArrowRightIcon className="size-4" /></Link>
           </div>
           <p className="workspace-followup">Request a visit. We’ll follow up to confirm availability.</p>
         </div>
         <div className="workspace-help">
           <span>Not sure which service?</span>
-          {contact.phoneHref ? <a href={contact.phoneHref}><PhoneIcon className="size-4" />Talk to Apex</a> : <Link href="/contact">Contact Apex</Link>}
+          {contact.phoneHref ? <a data-analytics-placement="home_explorer" href={contact.phoneHref}><PhoneIcon className="size-4" />Talk to Apex</a> : <Link href="/contact">Contact Apex</Link>}
         </div>
         <button type="button" className="scene-disclosure" aria-expanded={sceneOpen} aria-controls="home-scene" onClick={() => setSceneOpen(!sceneOpen)}>{sceneOpen ? "Hide home explorer −" : "Explore your home in 2D / 3D +"}</button>
       </div>

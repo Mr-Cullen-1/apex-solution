@@ -6,6 +6,7 @@ import { BookNowProvider } from "@/features/booking/book-now-context";
 import { ChatProvider } from "@/features/chat/chat-context";
 import { ChatLauncher } from "@/components/chat/chat-launcher";
 import { ChatPanel } from "@/components/chat/chat-panel";
+import { PublicInteractions } from "@/features/analytics/public-interactions";
 
 // Public marketing shell (SiteHeader, Footer, sticky mobile action bar, the
 // Book Now modal context, and the chat assistant) — opted into only by the
@@ -19,6 +20,7 @@ import { ChatPanel } from "@/components/chat/chat-panel";
 export default function MarketingLayout({ children }: { children: ReactNode }) {
   return (
     <BookNowProvider>
+      <PublicInteractions />
       <ChatProvider>
         <div className="marketing-shell">
           <SiteHeader />

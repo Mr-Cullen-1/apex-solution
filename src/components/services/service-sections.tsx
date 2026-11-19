@@ -40,9 +40,9 @@ export function ServiceHero({ eyebrow, title, summary, mediaId, breadcrumbs, ima
             <h1 className="mt-3 max-w-xl text-balance text-[clamp(2rem,4.5vw,3.75rem)] font-semibold leading-[1.06] tracking-[-0.03em] text-navy">{title}</h1>
             <p className="mt-4 max-w-xl text-base leading-7 text-slate">{summary}</p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <BookingLink categoryId={categoryId} serviceId={serviceId} variant="call">Book this service</BookingLink>
+              <BookingLink placement="service_hero" categoryId={categoryId} serviceId={serviceId} variant="call">Book this service</BookingLink>
               {contact.phoneHref && (
-                <a href={contact.phoneHref} className="inline-flex min-h-12 items-center gap-2 rounded-control border border-steel px-5 text-sm font-semibold text-navy transition-colors hover:bg-surface-soft"><PhoneIcon className="size-4" />Call {contact.phone}</a>
+                <a data-analytics-placement="service_hero" href={contact.phoneHref} className="inline-flex min-h-12 items-center gap-2 rounded-control border border-steel px-5 text-sm font-semibold text-navy transition-colors hover:bg-surface-soft"><PhoneIcon className="size-4" />Call {contact.phone}</a>
               )}
             </div>
             <nav aria-label="On this page" className="service-section-links"><a href="#service-details">{anchorLabel} ↓</a><a href="#process-heading">How it works ↓</a><a href="#service-faq-heading">Questions ↓</a></nav>
@@ -67,7 +67,7 @@ export function CompactOffer({ categoryId, serviceId }: { categoryId?: string; s
             <p className="text-xs font-bold uppercase tracking-[0.14em] text-copper">{firstTimeOffer.title}</p>
             <p className="mt-2 text-xl font-semibold tracking-[-0.02em] text-navy">{firstTimeOffer.headline}</p>
           </div>
-          <BookingLink categoryId={categoryId} serviceId={serviceId} offer variant="primary">Claim this offer</BookingLink>
+          <BookingLink placement="service_offer" categoryId={categoryId} serviceId={serviceId} offer variant="primary">Claim this offer</BookingLink>
         </div>
       </Container>
     </section>
@@ -92,7 +92,7 @@ export function ServiceDirectory({ category }: { category: ServiceCategory }) {
             <p className="text-base">Tell us the equipment type, brand, model and ZIP code. The team will confirm support for the specific equipment and location; a brand listing does not mean manufacturer-authorized service.</p>
           </div>
         )}
-        <BookingLink categoryId={category.id} className="mt-6">Request {category.name.toLowerCase()}</BookingLink>
+        <BookingLink placement="service_overview" categoryId={category.id} className="mt-6">Request {category.name.toLowerCase()}</BookingLink>
       </div>
     );
   }
@@ -213,8 +213,8 @@ export function FinalServiceCta({ title = "Ready for a clearer next step?", cate
             <p className="mt-6 max-w-xl text-lg leading-8 text-white/65">Tell us what you are noticing. Service availability and scheduling are confirmed separately.</p>
           </div>
           <div className="flex shrink-0 flex-col gap-3 whitespace-nowrap sm:flex-row">
-            {contact.phoneHref && <a href={contact.phoneHref} className="inline-flex min-h-12 shrink-0 items-center justify-center gap-2 rounded-control bg-white px-6 text-sm font-semibold text-navy transition-colors hover:bg-copper hover:text-white"><PhoneIcon className="size-4 shrink-0" />{contact.phone}</a>}
-            <BookingLink categoryId={categoryId} serviceId={serviceId} variant="outline-invert" />
+            {contact.phoneHref && <a data-analytics-placement="service_cta" href={contact.phoneHref} className="inline-flex min-h-12 shrink-0 items-center justify-center gap-2 rounded-control bg-white px-6 text-sm font-semibold text-navy transition-colors hover:bg-copper hover:text-white"><PhoneIcon className="size-4 shrink-0" />{contact.phone}</a>}
+            <BookingLink placement="service_cta" categoryId={categoryId} serviceId={serviceId} variant="outline-invert" />
           </div>
         </div>
       </Container>

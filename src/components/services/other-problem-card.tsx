@@ -12,7 +12,7 @@ export function OtherProblemCard({ categoryId }: { categoryId?: string }) {
   return (
     <button
       type="button"
-      onClick={() => open({ categoryId, issue: "Other" })}
+      onClick={() => open({ placement: "other_problem", initiator: "booking_cta", categoryId, issue: "Other" })}
       className="group flex min-h-44 flex-col justify-between rounded-panel border border-white/15 bg-white/[0.04] p-6 text-left transition-colors hover:bg-white/[0.08] sm:p-8"
     >
       <span className="text-xl font-semibold tracking-[-0.02em]">Other</span>

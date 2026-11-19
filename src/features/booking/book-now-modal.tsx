@@ -6,6 +6,7 @@ import { primaryServices } from "@/content/services";
 import { contact } from "@/content/company";
 import { createBookNowDraft, normalizeBookNowPayload, resolveBookingContext, validateBookNowPayload } from "./model";
 import type { BookNowDraft, BookNowErrors, SubmissionResult } from "./types";
+import { trackEvent, type BookingOrigin } from "@/features/analytics/events";
 
 // Every terminal outcome except the field-level "invalid" case, which is
 // handled separately via the `errors` state instead of ever being stored here.
@@ -14,6 +15,7 @@ type CompletedResult = Exclude<SubmissionResult, { status: "invalid" }>;
 const fieldClass = "min-h-12 w-full rounded-card border border-steel bg-surface px-4 py-3 text-base text-navy transition-colors placeholder:text-slate/65 focus:border-brand-primary";
 
 type BookNowModalProps = {
+  analyticsOrigin: BookingOrigin;
   isOpen: boolean;
   categoryId?: string;
   serviceId?: string;
@@ -23,7 +25,7 @@ type BookNowModalProps = {
   onClose: () => void;
 };
 
-export function BookNowModal({ isOpen, categoryId, serviceId, offer, issue, campaignToken, onClose }: BookNowModalProps) {
+export function BookNowModal({ isOpen, categoryId, serviceId, offer, issue, campaignToken, analyticsOrigin, onClose }: BookNowModalProps) {
   const [draft, setDraft] = useState<BookNowDraft>(createBookNowDraft);
   const [errors, setErrors] = useState<BookNowErrors>({});
   const [submitting, setSubmitting] = useState(false);
@@ -39,6 +41,8 @@ export function BookNowModal({ isOpen, categoryId, serviceId, offer, issue, camp
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const previouslyFocusedRef = useRef<HTMLElement | null>(null);
   const focusErrorsRef = useRef(false);
+  const analyticsStartedRef = useRef(false);
+  const analyticsSubmittedRef = useRef(false);
 
   const contextLabel = resolveBookingContext(selectedContext);
 
@@ -115,6 +119,10 @@ export function BookNowModal({ isOpen, categoryId, serviceId, offer, issue, camp
     try {
       const response = await fetch("/api/book-now", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) });
       const data = await response.json() as SubmissionResult;
+      if (response.status === 201 && data?.ok === true && data.status === "received" && !analyticsSubmittedRef.current) {
+        analyticsSubmittedRef.current = true;
+        trackEvent("form_submit", { ...analyticsOrigin, category_id: selectedCategory?.id, service_id: selectedService?.id });
+      }
       if (data.status === "invalid") {
         focusErrorsRef.current = true;
         setErrors(data.errors);
@@ -165,7 +173,7 @@ export function BookNowModal({ isOpen, categoryId, serviceId, offer, issue, camp
                   : result.message}
               </p>
               {contact.phoneHref && (
-                <a href={contact.phoneHref} className="mt-4 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-control bg-copper px-6 text-sm font-semibold text-white sm:mt-5 sm:min-h-12">
+                <a data-analytics-placement="booking_form" href={contact.phoneHref} className="mt-4 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-control bg-copper px-6 text-sm font-semibold text-white sm:mt-5 sm:min-h-12">
                   Call {contact.phone} now
                 </a>
               )}
@@ -174,11 +182,23 @@ export function BookNowModal({ isOpen, categoryId, serviceId, offer, issue, camp
               </button>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} noValidate aria-busy={submitting}>
+            <form onSubmit={handleSubmit} noValidate aria-busy={submitting} onChangeCapture={(event) => {
+              if (!event.nativeEvent.isTrusted || analyticsStartedRef.current) return;
+              analyticsStartedRef.current = true;
+              trackEvent("form_start", { ...analyticsOrigin, category_id: selectedCategory?.id, service_id: selectedService?.id });
+            }}>
               {errors.form && <p role="alert" tabIndex={-1} className="mb-3 rounded-control border-l-2 border-copper bg-page-bg px-4 py-2.5 text-sm font-semibold text-navy">{errors.form}</p>}
               <div className="mb-5">
                 <label htmlFor="bn-service" className="mb-2 block text-sm font-bold text-navy">Service needed <span className="font-normal text-slate">Optional</span></label>
-                <select id="bn-service" className={fieldClass} value={selection} onChange={(event) => setSelection(event.target.value)}>
+                <select id="bn-service" className={fieldClass} value={selection} onChange={(event) => {
+                  const value = event.target.value;
+                  if (event.nativeEvent.isTrusted && value !== selection) {
+                    const category = primaryServices.find(item => item.id === value || item.children.some(service => service.id === value));
+                    const service = category?.children.find(item => item.id === value);
+                    trackEvent("service_select", { placement: "booking_form", initiator: "picker", category_id: category?.id, service_id: service?.id });
+                  }
+                  setSelection(value);
+                }}>
                   <option value="">Help me choose</option>
                   {primaryServices.map((category) => <optgroup key={category.id} label={category.name}><option value={category.id}>{category.name} — general request</option>{category.children.map((service) => <option key={service.id} value={service.id}>{service.name}</option>)}</optgroup>)}
                 </select>

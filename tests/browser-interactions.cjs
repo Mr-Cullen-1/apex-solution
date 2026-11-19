@@ -14,6 +14,8 @@ async function run(browser, viewportName, viewport) {
   const payloads = [], blocked = [], consoleErrors = [], pageErrors = [];
   await context.route('**/*', async route => {
     const request = route.request();
+    // Synthetic UI checks must never reach the live analytics destination.
+    if (new URL(request.url()).origin !== new URL(base).origin) return route.fulfill({ status: 200, body: '' });
     if (['GET', 'HEAD', 'OPTIONS'].includes(request.method())) return route.continue();
     blocked.push({ method: request.method(), path: new URL(request.url()).pathname });
     if (new URL(request.url()).pathname !== '/api/book-now') return route.fulfill({ status: 503, body: '{}' });

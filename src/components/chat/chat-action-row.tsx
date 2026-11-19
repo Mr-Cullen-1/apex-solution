@@ -37,7 +37,7 @@ export function ChatActionRow({ actions }: { actions: ChatAction[] }) {
               className={bookButtonClass}
               onClick={() => {
                 close();
-                openBookNow({ categoryId: action.categoryId ?? undefined });
+                openBookNow({ placement: "chat_action", initiator: "chat_action", categoryId: action.categoryId ?? undefined });
               }}
             >
               {action.label}
@@ -46,7 +46,7 @@ export function ChatActionRow({ actions }: { actions: ChatAction[] }) {
         }
         if (!contact.phoneHref) return null;
         return (
-          <a key={action.type} href={contact.phoneHref} className={callButtonClass}>
+          <a data-analytics-placement="chat_action" key={action.type} href={contact.phoneHref} className={callButtonClass}>
             {action.label}
           </a>
         );

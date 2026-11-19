@@ -20,11 +20,11 @@ export function PricingStrip() {
           </div>
           <div className="flex w-full shrink-0 flex-col gap-3 sm:w-auto sm:flex-row sm:items-center">
             {contact.phoneHref && (
-              <a href={contact.phoneHref} className="group inline-flex min-h-12 shrink-0 items-center justify-center gap-2.5 whitespace-nowrap rounded-control bg-copper px-6 text-base font-semibold text-white shadow-soft transition-transform duration-300 hover:-translate-y-0.5">
+              <a data-analytics-placement="home_pricing" href={contact.phoneHref} className="group inline-flex min-h-12 shrink-0 items-center justify-center gap-2.5 whitespace-nowrap rounded-control bg-copper px-6 text-base font-semibold text-white shadow-soft transition-transform duration-300 hover:-translate-y-0.5">
                 <PhoneIcon className="size-4 shrink-0" /> Call {contact.phone}
               </a>
             )}
-            <BookingLink variant="secondary" className="w-full justify-center sm:w-auto" />
+            <BookingLink placement="home_pricing" variant="secondary" className="w-full justify-center sm:w-auto" />
           </div>
         </div>
       </Container>
