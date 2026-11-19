@@ -1,6 +1,6 @@
 # SEO and conversion measurement
 
-2026-11-17. Measurement specification; not an installed analytics service or a traffic report.
+Updated 2026-11-19. GTM is installed in the local application; container-managed tags and measurement acceptance remain separate from this code change. No deployment or traffic report is claimed.
 
 ## Baseline availability
 
@@ -9,12 +9,34 @@
 | `apex-audit/` | 17 November saved crawl and Lighthouse evidence | Historical audit, not refreshed production data |
 | Local checks | Build, HTTP, browser and synthetic performance evidence recorded in remediation progress | Does not establish Google indexing, live lead delivery or field Web Vitals |
 | Search Console | Unavailable in this session | No organic impressions, clicks, CTR, query rankings or indexed-page count claimed |
-| Analytics | Provider/account not configured by this change | No conversion rate baseline claimed |
+| Analytics | GTM `GTM-5JLZPN4Q` installed; intended GA4 destination `G-50J6LW5JET` supplied by the owner | GA4 tag configuration, consent behavior and reporting not verified; no conversion rate baseline claimed |
 | CRM/call attribution | Live data not queried in this task | Click-to-call is not a connected call, qualified lead or sale |
+
+## Container installation
+
+`src/app/layout.tsx` reads `NEXT_PUBLIC_GTM_ID`. The local value and `.env.example` are `GTM-5JLZPN4Q`. An absent or malformed ID omits both snippets. Set the public variable in the target build environment before a future deployment; changing it requires rebuilding. No private key is involved.
+
+The root uses Google's supported two-part installation: an asynchronous container bootstrap in `<head>` via `next/script`, and a hidden noscript iframe as the first authored body child. Next.js can prepend its internal hidden streaming boundary to the rendered body. The shared root covers marketing, admin and other document routes. `beforeInteractive` is used specifically for the required head placement and once-per-document initialization. The usual `afterInteractive`/`@next/third-parties` approach loads after hydration and does not provide this exact head-plus-noscript placement. No new dependency was needed. Existing fonts, metadata and page layouts are preserved.
+
+The application does not load `gtag.js`, initialize GA4, push `page_view`, wrap browser history, or send booking events. Configure the single Google tag for `G-50J6LW5JET` inside GTM. The container persists across Next.js Link/back/forward navigation. Use exactly one page-view mechanism: if using GTM History Change triggers for virtual page views, disable GA4 automatic history-based page views and avoid overlapping page-view triggers. Filter same-page query cleanup (including `BookNowUrlSync`'s `replaceState`) so it does not count a second visit. Confirm one initial view and one view per actual route change in Tag Assistant/GA4 DebugView before treating reporting as validated.
+
+The public container script returned HTTP 200 during setup, but did not contain the supplied GA4 measurement ID as literal text. That is not proof of GA4 configuration; container workspace/settings access was not available. Nothing was published in GTM. Consent configuration, private-route exclusions, URL/referrer redaction and existing container tags remain owner-controlled and must follow the data boundaries below. Loading the container does not establish consent or prove GA4 event delivery.
+
+References: [Google container installation](https://support.google.com/tagmanager/answer/14847097), [Next.js Script](https://nextjs.org/docs/app/api-reference/components/script), [Google SPA measurement with GTM](https://developers.google.com/analytics/devguides/collection/ga4/measure-spa-gtm).
+
+## Local installation validation (2026-11-19)
+
+- `npm.cmd run lint`, `npm.cmd run typecheck`, `npm.cmd run build`: passed; 33 static pages generated.
+- `node --test tests/booking-model.test.cjs tests/service-search.test.cjs tests/audit-seo.test.cjs`: 12 passed against the local production server (`QA_BASE_URL=http://127.0.0.1:3128`). Metadata, structured data, sitemap and protection-header checks passed.
+- `node tests/browser-gtm.cjs`: passed with an isolated container fixture. It failed before installation because no GTM initialization existed, then passed after installation. No app-owned GA4 initialization or manual page-view pushes were observed.
+- `QA_GTM_LIVE=1 node tests/browser-gtm.cjs`: passed with the real public container; all other external requests intercepted. Chromium 153.0.8010.12 confirmed `window.google_tag_manager['GTM-5JLZPN4Q']` initialized, bootstrap and container script were in head, and container requests returned HTTP 200. Service directory/category/detail Link navigation plus back/forward retained the same document and made no additional container request. Reload and a direct admin-login visit each initialized exactly once in their new document: 3 requests for 3 documents. Console errors and uncaught page errors: 0 on these tested routes.
+- JavaScript-disabled browser: exactly one iframe fallback request for the expected container; the response was isolated. It precedes the skip link and all authored page content, after Next.js's internal hidden boundary.
+
+Evidence: ignored `docs/qa/current/gtm/fixture.json` and `live.json`. These tests validate the local installation, not production deployment, GA4 receipt, or GA4-side page-view deduplication. No site deployment, container publishing, real form submission or account configuration was performed. Existing review-image network limitations from the previous audit are outside these service/admin checks.
 
 ## Event contract for the next implementation
 
-Use one selected analytics adapter. Until provider/account and consent behavior are known, do not inject third-party scripts or assume consent. Reuse the existing booking UI and server response contract; no CRM schema migration is required for the first analytics pass.
+Use GTM as the single analytics adapter. Custom conversion events are not part of this installation. Confirm consent and tag behavior before adding them. Reuse the existing booking UI and server response contract; no CRM schema migration is required for the first analytics pass.
 
 | Event | Trigger | Deduplication |
 |---|---|---|
