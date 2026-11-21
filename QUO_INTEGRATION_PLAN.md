@@ -1,5 +1,7 @@
 # Quo integration preparation
 
+**20 November 2026 — Sprint 2.1 implementation:** isolated server-side inbound call ingestion, signed webhooks, order-independent call facts, atomic call/event storage and durable leased reconciliation are implemented locally. Sprint 2.1 fixes late-event enrichment, caller ambiguity, per-item resume, persistent cursor loops, body transport retry and signing-key configuration validation. See [the current call tracking architecture and activation runbook](docs/QUO_CALL_TRACKING.md). No production migration, webhook registration, deployment, contact sync or GA4 call conversion has been performed. The historical proposal below remains future planning for contacts and lead matching; its queue/contact-link suggestions are not the Sprint 2 implementation.
+
 Researched 16 November 2026 against official documentation. **Plan only:** no API key was requested, no customer data was exported, no Quo account settings or production webhooks were changed. Client has confirmed Admin access. Actual account entitlements, organization ID and number ID remain unverified.
 
 ## API contract
