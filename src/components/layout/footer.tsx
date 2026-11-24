@@ -27,6 +27,10 @@ export function Footer() {
           </div>
 
           <div className="mt-12 border-t border-footer-border pt-6 text-xs leading-6 text-footer-muted md:mt-16">
+            <nav aria-label="Legal information" className="mb-3 flex flex-wrap gap-6 text-footer-text">
+              <Link href="/privacy-policy">Privacy Policy (awaiting approval)</Link>
+              <Link href="/terms">Terms (awaiting approval)</Link>
+            </nav>
             <p>© {new Date().getFullYear()} {company.name}. All rights reserved.</p>
           </div>
         </Container>
