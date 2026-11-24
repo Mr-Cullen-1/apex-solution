@@ -118,5 +118,6 @@ W03 review-selector contrast, W04 intermittent image observation, W05 private/ad
 | `3318f92` | Framework/transitive advisory upgrades |
 | `c515c04` | Bounded booking request and durable quota migration |
 | `30db8d5` | Booking notification reliability, deadlines and log redaction |
+| `fa3c298` | Browser/concurrency verification, evidence and remediation report |
 
-Verification/report commit and draft PR link are added after final checks. No merge is part of this task.
+Draft PR: [#1 — remediation for independent review](https://github.com/Mr-Cullen-1/apex-solution/pull/1). The GitHub connector could not create it (integration permission 403); the existing repository Git authentication successfully created the draft. No credential was printed or stored. No merge is part of this task.
