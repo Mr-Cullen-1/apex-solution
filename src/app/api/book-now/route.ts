@@ -4,7 +4,8 @@ import { readBookingBody } from "@/features/booking/request-body";
 import { checkBookingRateLimit } from "@/features/booking/rate-limit";
 
 export const runtime = "nodejs";
-export const maxDuration = 30;
+// Worst bounded campaign path is 31s; retain headroom for serialization/runtime overhead.
+export const maxDuration = 45;
 const headers = { "Cache-Control": "no-store" };
 const invalid = (status: number, form: string) => Response.json({ ok: false, status: "invalid", errors: { form } }, { status, headers });
 

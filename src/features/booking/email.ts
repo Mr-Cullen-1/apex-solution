@@ -181,13 +181,6 @@ export function buildConfirmationEmail(lead: LeadForEmail): { subject: string; h
   return { subject: CONFIRMATION_EMAIL_SUBJECT, html: buildHtml(lead), text: buildPlainText(lead) };
 }
 
-function sanitizeResendError(raw: string | null | undefined): string {
-  if (!raw) return "Unknown Resend error";
-  const config = readResendConfig();
-  const withoutKey = config?.apiKey ? raw.split(config.apiKey).join("[redacted]") : raw;
-  return withoutKey.slice(0, 500);
-}
-
 /** Sends the confirmation email via the official `resend` SDK. Returns
  * `not_configured` (never throws) when the env vars are absent. Idempotency
  * is keyed on the service request UUID (`book-now-confirmation/<requestId>`)
@@ -202,6 +195,7 @@ export async function sendConfirmationEmail(lead: LeadForEmail): Promise<EmailDe
   const { subject, html, text } = buildConfirmationEmail(lead);
 
   try {
+    const sendOptions = { idempotencyKey: `book-now-confirmation/${lead.requestId}`, signal: AbortSignal.timeout(8_000) };
     const { data, error } = await resend.emails.send(
       {
         from: config.fromEmail,
@@ -211,11 +205,11 @@ export async function sendConfirmationEmail(lead: LeadForEmail): Promise<EmailDe
         text,
         ...(config.replyTo ? { replyTo: config.replyTo } : {}),
       },
-      { idempotencyKey: `book-now-confirmation/${lead.requestId}` },
+      sendOptions,
     );
-    if (error || !data) return { status: "failed", error: sanitizeResendError(error?.message ?? "Resend returned no data") };
+    if (error || !data) return { status: "failed", error: "resend_delivery_failed" };
     return { status: "sent", messageId: data.id };
-  } catch (err) {
-    return { status: "failed", error: sanitizeResendError(err instanceof Error ? err.message : "Unknown Resend error") };
+  } catch {
+    return { status: "failed", error: "resend_delivery_outcome_unknown" };
   }
 }

@@ -138,13 +138,6 @@ export function formatLeadMessage(lead: LeadForTelegram): string {
   return buildMessageLines(lead, shortenedMessage).join("\n");
 }
 
-function sanitizeTelegramError(raw: string | null | undefined): string {
-  if (!raw) return "Unknown Telegram error";
-  const config = readTelegramConfig();
-  const withoutToken = config?.botToken ? raw.split(config.botToken).join("[redacted]") : raw;
-  return withoutToken.slice(0, 500);
-}
-
 /** Calls Telegram Bot API `sendMessage` directly — no SDK, no queue, no
  * separate bot process. Returns `not_configured` (never throws) when the env
  * vars are absent, so the caller can decide how to record that outcome. Any
@@ -172,15 +165,14 @@ export async function sendTelegramMessage(text: string): Promise<TelegramDeliver
 
     const data = (await response.json().catch(() => null)) as { ok?: boolean; result?: { message_id?: number }; description?: string } | null;
     if (!response.ok || !data?.ok) {
-      return { status: "failed", error: sanitizeTelegramError(data?.description ?? `HTTP ${response.status}`) };
+      return { status: "failed", error: `telegram_http_${response.status}` };
     }
     const messageId = data.result?.message_id;
     if (typeof messageId !== "number") return { status: "failed", error: "Telegram response did not include a message_id." };
     return { status: "sent", messageId };
   } catch (err) {
     const isAbort = err instanceof Error && err.name === "AbortError";
-    const message = isAbort ? "Telegram request timed out." : err instanceof Error ? err.message : "Unknown Telegram error";
-    return { status: "failed", error: sanitizeTelegramError(message) };
+    return { status: "failed", error: isAbort ? "telegram_delivery_timeout" : "telegram_delivery_outcome_unknown" };
   } finally {
     clearTimeout(timeout);
   }

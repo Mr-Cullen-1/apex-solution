@@ -37,3 +37,16 @@ test('rate limited and unavailable protection fail closed; allowed booking prese
     if (status === 429) assert.equal(response.headers.get('retry-after'), '900');
   }
 });
+test('stalled request body is cancelled at its deadline without persistence', async t => {
+  t.mock.timers.enable({ apis: ['setTimeout'] });
+  let cancelled = false;
+  const r = route();
+  const pending = r.post(new Request('https://example.test/api/book-now', { method: 'POST', headers: { 'content-type': 'application/json' }, body: new ReadableStream({ cancel() { cancelled = true; } }), duplex: 'half' }));
+  t.mock.timers.tick(5001);
+  assert.equal((await pending).status, 408); assert.equal(cancelled, true); assert.equal(r.writes(), 0);
+});
+test('route execution budget covers worst-case campaign booking plus response headroom', () => {
+  const routeModule = createLoader({ '@/features/booking/submission-adapter': {}, '@/features/booking/rate-limit': {} })('src/app/api/book-now/route.ts');
+  // Body + limiter + campaign + insert + parallel delivery/status; five seconds headroom.
+  assert.ok(routeModule.maxDuration >= 5 + 5 + 5 + 5 + 8 + 3 + 5);
+});
