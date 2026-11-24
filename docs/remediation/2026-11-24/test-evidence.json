@@ -1,0 +1,88 @@
+{
+  "date": "2026-11-24",
+  "scope": "Local repository candidate only; no production mutation or real delivery",
+  "checks": [
+    {
+      "command": "QA_BASE_URL=http://127.0.0.1:3128 node --test tests/*.test.cjs",
+      "passed": 49,
+      "failed": 0,
+      "evidence": "unit-and-http-tests.log"
+    },
+    {
+      "command": "npm.cmd run lint",
+      "exitCode": 0
+    },
+    {
+      "command": "npm.cmd run typecheck",
+      "exitCode": 0
+    },
+    {
+      "command": "npm.cmd run build",
+      "exitCode": 0,
+      "next": "16.4.6",
+      "warnings": [
+        "reviews_fetch_failed fallback during restricted-network build"
+      ]
+    },
+    {
+      "command": "node tests/browser-analytics.cjs",
+      "passed": 9,
+      "failed": 0,
+      "mode": "all external requests and booking writes intercepted"
+    },
+    {
+      "command": "node tests/browser-interactions.cjs",
+      "passed": 45,
+      "failed": 0,
+      "viewports": [
+        "1440x900",
+        "768x1024",
+        "390x844"
+      ],
+      "evidence": "interactions.json"
+    },
+    {
+      "command": "node tests/browser-gtm.cjs",
+      "results": [
+        "disabled.json",
+        "enabled-fixture.json"
+      ],
+      "mode": "local fixture, not real Google Preview or DebugView"
+    },
+    {
+      "command": "node tests/booking-concurrency.cjs",
+      "passed": 3,
+      "failed": 0,
+      "connections": 12,
+      "database": "disposable localhost PostgreSQL 18.7"
+    },
+    {
+      "command": "node tests/quo-concurrency.cjs",
+      "passed": 3,
+      "failed": 0,
+      "connections": 12,
+      "database": "disposable localhost PostgreSQL 18.7"
+    },
+    {
+      "command": "npm.cmd audit --json",
+      "vulnerabilities": 0,
+      "evidence": "npm-audit.json"
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0
+    },
+    {
+      "check": "exact configured secret-value scan",
+      "matches": 0,
+      "files": 369,
+      "evidence": "secret-scan.json"
+    }
+  ],
+  "notVerified": [
+    "GTM import validation, Preview, GA4 DebugView, conversion imports",
+    "Hosted booking persistence/RLS and actual inbox/Telegram delivery",
+    "Staging Quo subscription and real answered/missed calls",
+    "Business-owner legal approval and advertising policy/account readiness"
+  ]
+}

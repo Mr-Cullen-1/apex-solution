@@ -159,3 +159,9 @@ These tests do not prove hosted Supabase/PostgREST permissions, actual Quo accou
 The pre-existing uncommitted Sprint 2 files remain local, including its original migration, webhook handler/route, `.env.example` and PGlite lockfile entry. No new dependency or environment secret is introduced into the application by Sprint 2.1.
 
 **Readiness:** the requested HIGH and reconciliation MEDIUM fixes pass local regression and real concurrent SQL checks. Ready for staging verification; not yet approved for production activation. Remaining gates are both migrations/PostgREST permissions in staging, actual Quo account/scope/signing configuration, latency/retry smoke tests, retention/monitoring and a separately authorized release. Old callers must adopt runId-based resume; no scheduler was registered by this sprint.
+
+### November 24 remediation verification
+
+No Quo credentials, webhook subscription, hosted migration, scheduler or activation flag was changed. Current account discovery still does not establish an isolated Apex staging deployment/database. The existing 21 Quo unit/SQL tests passed again, and all three real PostgreSQL concurrency checks passed with 12 independent local connections (including observed lock contention). This supersedes only local test evidence; historical provider GET results do not prove new delivery or real answered/missed call handling.
+
+Staging handoff: verify separate database and destination URL first; apply the two Quo migrations; securely configure organization/number allowlist, whsec signing key and independent reconciliation secret. Register a staging-only subscription for the documented answered/completed/missed events only after that environment is available. Then test answered and missed calls, duplicate/out-of-order delivery, interrupted runId recovery and compare provider events to persisted facts. Keep production tracking disabled. Real calls, webhook delivery and hosted RLS remain BLOCKED/NOT VERIFIED.

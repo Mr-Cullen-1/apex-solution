@@ -26,7 +26,7 @@ const names = ['booking_click', 'form_start', 'form_submit', 'phone_click', 'con
   page.on('pageerror', e => errors.push(e.message));
   const events = () => page.evaluate(names => (window.dataLayer || []).filter(e => names.includes(e.event)), names);
   const count = async name => (await events()).filter(e => e.event === name).length;
-  const reset = () => page.evaluate(() => { window.dataLayer.length = 0; });
+  const reset = () => page.evaluate(() => { (window.dataLayer ??= []).length = 0; });
   const visit = async (route = '/') => { await page.goto(base + route, { waitUntil: 'networkidle' }); };
   const open = () => page.locator('header').getByRole('button', { name: 'Book Now', exact: true }).click();
   const fill = async () => {

@@ -53,3 +53,15 @@
 - Planning/execution proceeds under the user's explicit implementation authorization; no additional design-approval gate is needed.
 - Ruling: external analytics will default off until its container/stream settings are verified. This prevents shipping the known unsafe published container; traffic measurement remains unavailable until authorized account setup.
 - Staging has not been identified. Existing credentials must not be treated as staging credentials.
+
+## Execution ledger
+- Task 1: local analytics/privacy boundary and GTM import candidate committed 88412af; real account setup BLOCKED. Browser adapter 9/9, enabled/disabled fixture passed.
+- Task 2: noindex legal draft structure committed e6fee51; owner copy/approval BLOCKED.
+- Task 3: dependency commit 3318f92; API/limiter commit c515c04. Full audit zero advisories; actual-byte/deadline/SQL-role tests pass. Native quota contention tests 3/3.
+- Task 4: reliability commit 30db8d5; notification/persistence failure isolation tested. Real delivery BLOCKED on isolated staging.
+- Task 5: Quo 21 local tests plus 3 native concurrency checks passed; actual webhook/call tests BLOCKED.
+- Final review: fixed timeout budget and raw database logging findings, both RED-to-GREEN. Added stalled-body deadline test. No reviewer minors deferred.
+- Final verification: 49/49 unit/SQL/HTTP, 45/45 responsive interactions, 9/9 frontend analytics; lint/typecheck/build pass. Build review-fetch warnings disclosed.
+- Ruling: database limiter fails closed when migration/salt is missing, protecting provider costs; cost if deployed prematurely is unavailable online booking. This prerequisite is prominent in report and PR.
+- Ruling: legal draft structures remain noindex and visibly pending, not operative legal text; advertising remains blocked until owner approval.
+- Next dev regenerated the existing AGENTS heading from H1 to H2; retained its generated change as required by project rules.
