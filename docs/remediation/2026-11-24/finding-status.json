@@ -175,8 +175,8 @@
       "businessImpact": "Call-focused ads could spend without proving response or qualified-call return.",
       "recommendedAction": "Test routing and choose a proven call-attribution solution. Quo itself is not mandatory if an equivalent verified solution is used; phone-lead optimization must wait for reliable measurement.",
       "auditStatus": "NOT VERIFIED",
-      "remediationStatus": "NOT VERIFIED",
-      "remediationEvidence": "Real answered/missed calls and operational response not tested."
+      "remediationStatus": "BLOCKED",
+      "remediationEvidence": "Owner confirmed no verified isolated staging; real calls and operational response require a staging scope, secure credentials and approved test window."
     },
     {
       "id": "S02",

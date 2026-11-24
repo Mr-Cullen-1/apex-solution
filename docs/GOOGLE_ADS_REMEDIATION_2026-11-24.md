@@ -6,6 +6,8 @@ Date: November 24, 2026. Baseline: `3849927`. Branch: `fix/google-ads-readiness-
 
 No Google Ads activation, production deployment, hosted migration, production data write, webhook registration, real test call, email or Telegram send was performed. `.env.local` was not edited. Local synthetic tests use intercepted HTTP, isolated module dependencies, disposable PGlite or localhost-only PostgreSQL databases.
 
+Owner clarification confirmed: no isolated staging environment is known; do not create one without approval or use production for tests. A follow-up inspection found no local Vercel project link/staging files and no Apex project accessible through the current Vercel/Supabase connectors. GTM `GTM-5JLZPN4Q` is configured locally; GA4 `G-50J6LW5JET` is identified in audit/configuration evidence, while `NEXT_PUBLIC_GA4_ID` remains unset and analytics readiness false. See [exact configuration and access requirements](STAGING_ACCESS_REQUIREMENTS.md). No live GTM change is permitted without separate approval.
+
 ## Status definitions
 
 - **FIXED:** repository defect repaired with the stated local test evidence. This does not mean deployed.
@@ -69,7 +71,7 @@ See [staging acceptance protocol](BOOKING_STAGING_ACCEPTANCE.md). Historical sta
 |---|---|---|---|
 | Q02: webhook security/idempotency/recovery | FIXED/retained verified local behavior / High | Existing 21 Quo tests pass: raw-body HMAC, replay tolerance, allowlists, duplicates/order, transaction/RLS, interrupted durable cursor/run recovery. Three native PostgreSQL concurrency tests pass with 12 sessions and actual lock waiting. | No new implementation defect found by this review; hosted gateway behavior still requires staging. |
 | Q03: staging subscription/schema/config | BLOCKED / High | Runbook reviewed and updated. No verified Apex project in current Supabase/Vercel connector context. | Supply isolated projects, staging number/scope and secure signing/reconcile credentials. Then apply/test both existing migrations and register staging-only webhook. Production remains untouched. |
-| Q04: answered/missed calls and operational handling | NOT VERIFIED / High | Synthetic answered/missed/out-of-order behavior covered locally; no real calls made. | Test actual ringing, forwarding, missed/answered events, voicemail/after-hours and staff response. No qualified-call conversion or campaign attribution is claimed. |
+| Q04: answered/missed calls and operational handling | BLOCKED / High | Synthetic answered/missed/out-of-order behavior covered locally; no real calls made. | Verified staging, secure credentials and an approved call window are required before actual ringing, forwarding, missed/answered events, voicemail/after-hours and staff response can be tested. No qualified-call conversion or campaign attribution is claimed. |
 
 ## Test evidence and limitations
 
