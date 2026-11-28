@@ -1,39 +1,9 @@
-import type { FAQ, ServiceArea, SupportedBrandGroup } from "@/types/content";
+import type { FAQ, SupportedBrandGroup } from "@/types/content";
 
-export const serviceAreas = [
-  {
-    state: "New York",
-    code: "NY",
-    slug: "new-york",
-    counties: ["Kings County", "Bronx County", "Nassau County", "Suffolk County", "Westchester County", "Rockland County"],
-  },
-  {
-    state: "New Jersey",
-    code: "NJ",
-    slug: "new-jersey",
-    counties: ["Middlesex County", "Monmouth County", "Ocean County", "Union County", "Essex County", "Morris County", "Passaic County", "Bergen County", "Somerset County"],
-  },
-  {
-    state: "Connecticut",
-    code: "CT",
-    slug: "connecticut",
-    counties: ["Fairfield County", "New Haven County", "Litchfield County"],
-  },
-  {
-    state: "Massachusetts",
-    code: "MA",
-    slug: "massachusetts",
-    counties: ["Suffolk County", "Middlesex County", "Worcester County", "Norfolk County", "Plymouth County", "Bristol County"],
-  },
-  {
-    state: "Rhode Island",
-    code: "RI",
-    slug: "rhode-island",
-    counties: ["Providence County", "Kent County", "Bristol County", "Newport County", "Washington County"],
-  },
-] as const satisfies readonly ServiceArea[];
+import { serviceAreas } from "./service-coverage";
+export { serviceAreas } from "./service-coverage";
 
-export const serviceCoverageDescription = `Service requests are coordinated in select counties in ${serviceAreas.map((area) => area.state).join(", ")}. Availability for your service and ZIP code is confirmed separately.`;
+export const serviceCoverageDescription = `Service requests are coordinated in select counties in ${serviceAreas.map((area) => area.state).join(", ")}. Check your ZIP against our current coverage list. Service details and appointment availability are confirmed separately.`;
 
 export const supportedBrands = [
   {
@@ -55,6 +25,6 @@ export const supportedBrands = [
 
 export const faqs: FAQ[] = [
   { id: "choose-service", question: "How do I know which service to book?", answer: "Choose the category closest to what you are experiencing. If you are unsure, book now and describe the symptoms so the request can be directed appropriately." },
-  { id: "service-area", question: "Does Apex Home Services serve my area?", answer: "Apex Home Services covers confirmed counties across New York, New Jersey, Connecticut, Massachusetts, and Rhode Island. Exact ZIP-level availability should be confirmed when you book." },
+  { id: "service-area", question: "Does Apex Home Services serve my area?", answer: "Apex Home Services serves listed ZIP codes in New York, New Jersey, and Connecticut. Use our ZIP checker to confirm geographic coverage; service details and scheduling are confirmed when you book." },
   { id: "request-details", question: "What should I include when I book?", answer: "Share the main symptom, when it started, the type of system if known, and your ZIP code. Exact scheduling will be confirmed separately." },
 ];

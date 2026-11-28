@@ -1,0 +1,88 @@
+import "server-only";
+import type { Resource, ResourceBlock, ResourceInline } from "@/types/resource";
+
+// Research, source mapping and outstanding approvals: docs/editorial/ARTICLE_1_CONTENT_BRIEF.md.
+const text = (value: string): readonly ResourceInline[] => [{ type: "text", text: value }];
+const paragraph = (value: string): ResourceBlock => ({ type: "paragraph", children: text(value) });
+const heading = (level: 2 | 3, id: string, value: string): ResourceBlock => ({ type: "heading", level, id, text: value });
+
+export const furnaceArticleDraft: Pick<Resource, "content" | "faqs" | "readingTime" | "editorialNote"> = {
+  readingTime: 9,
+  editorialNote: "Complete researched draft. Not approved for publication. Qualified HVAC/safety editorial review, an approved author, licensed featured image with verified alt text/dimensions, and actual publication date remain required. See docs/editorial/ARTICLE_1_CONTENT_BRIEF.md. Keep status draft.",
+  content: [
+    paragraph("A furnace not heating can turn a cold morning into a difficult decision: is there a simple setting to check, or does the system need service? The answer depends on what the equipment is doing and whether there are warning signs. A running fan, for example, does not necessarily mean the furnace is producing heat."),
+    paragraph("For homeowners in New York, New Jersey, Connecticut, Massachusetts, and Rhode Island, this guide explains seven possible causes and the limits of safe furnace troubleshooting. It covers forced-air furnaces; boilers, heat pumps, and other heating systems need different checks."),
+    { type: "callout", tone: "warning", title: "Check for danger before troubleshooting", children: text("If a carbon monoxide alarm sounds, or you suspect carbon monoxide exposure, get everyone outside immediately and call 911. If you smell gas or suspect a gas leak, leave immediately; call 911 or your gas utility from a safe location outside. Do not operate switches, thermostats, plugs, or phones inside, and avoid flames. Do not reenter until emergency responders say it is safe. Skip every troubleshooting step below in these situations.") },
+
+    heading(2, "how-a-furnace-works", "How does a furnace heat your home?"),
+    paragraph("The thermostat requests heat, the furnace generates it, and a blower moves warmed air through ducts. Return ducts bring room air back to the system. In a gas furnace, combustion heats a heat exchanger, which transfers warmth to the circulating air while keeping combustion gases separate and venting them outdoors. Gas equipment still needs electricity for controls and airflow."),
+    paragraph("Oil furnaces use a different burner and fuel-delivery arrangement. Electric furnaces use resistance elements rather than a gas burner or pilot. Older gas models may have a standing pilot; many newer models use electronic ignition. Identify your equipment from its accessible label and owner's manual before assuming a particular component is present."),
+
+    heading(2, "seven-common-problems", "Seven common reasons your furnace is not heating"),
+    heading(3, "thermostat", "1. Thermostat settings or a thermostat fault"),
+    paragraph("Start with the controls you normally use. Confirm the thermostat is in Heat mode, with the set temperature above the displayed room temperature. Check schedules, vacation settings, and batteries if your model uses replaceable ones. Follow the manual and allow for its normal startup delay."),
+    paragraph("A fan set to On can circulate room-temperature air between heating cycles. Auto normally runs it with the system's heating cycle. If the display stays blank or the furnace does not respond, a thermostat, wiring, or control problem may need diagnosis. Do not remove wiring or jumper terminals."),
+
+    heading(3, "dirty-filter", "2. A dirty or incorrectly fitted air filter"),
+    paragraph("A clogged filter restricts airflow. Some furnaces can overheat and shut off heat through a safety control, so replacing the filter may address a restriction without explaining every shutdown. A filter that looks clean does not rule out another airflow problem."),
+    paragraph("Inspect or replace a filter only if the owner's manual identifies it as homeowner-accessible. Follow the manual's shutdown instructions, use the specified size and type, and match the airflow arrow. Do not run without a filter or open burner or electrical compartments. If heat does not return, arrange service instead of repeatedly restarting the system."),
+
+    heading(3, "power", "3. A power interruption or tripped circuit breaker"),
+    paragraph("A furnace can stop because electricity is unavailable, even when it burns gas or oil. Check whether other household equipment has power and whether the utility reports an outage. From a safe position, you may observe a clearly labeled furnace service switch or breaker without removing any covers."),
+    paragraph("Do not reset a tripped breaker as part of this guide: it may indicate an electrical fault. Leave an unexpectedly off switch alone if you do not know why it was turned off. A qualified professional should investigate. Never touch electrical equipment that is wet, damaged, sparking, or unusually hot."),
+
+    heading(3, "ignition", "4. Ignition, pilot, or flame-detection problems"),
+    paragraph("A gas furnace may begin a startup sequence but fail to establish or maintain a flame. Depending on the model, the cause could involve an electronic igniter, an older standing pilot, or a flame-sensing component. Electric furnaces do not have these gas-combustion parts."),
+    paragraph("Repeated clicking or short starts are observations to report, not a reliable diagnosis. Do not relight a pilot, clean a flame sensor, adjust a burner, or repeatedly reset a lockout using this guide. Record any fault code visible through an existing viewing window and let a professional follow the model-specific procedure."),
+
+    heading(3, "fuel-supply", "5. An interrupted fuel supply"),
+    paragraph("A fuel-burning furnace cannot heat without its fuel supply. Natural-gas service interruptions differ from an empty propane or heating-oil tank. If you use delivered fuel, review the delivery account or a safely accessible gauge; contact the supplier if supply is uncertain."),
+    paragraph("Do not turn fuel valves, disconnect lines, bleed an oil line, or restart equipment after running out of fuel yourself. Leave restoration and safe restart to the appropriate provider. Suspected gas leakage takes priority over checking an account or gauge: leave the property and call for help from outside."),
+
+    heading(3, "blower-airflow", "6. Blower motor or airflow problems"),
+    paragraph("Heat needs moving air to reach the rooms. Weak airflow, unusual humming or grinding, or uneven room temperatures can accompany a blower problem, but filters, ducts, and blocked grilles can produce overlapping symptoms. Sound alone cannot identify a failed motor."),
+    paragraph("Move furniture or rugs away from accessible supply registers and return grilles. Leave blower wheels, belts, motors, capacitors, and wiring to a professional. If the system is making new mechanical noises or is running with little airflow, stop ordinary troubleshooting and request an assessment rather than forcing it through more cycles."),
+
+    heading(3, "safety-controls", "7. A limit switch or another system component"),
+    paragraph("A high-temperature limit control can stop heating when a furnace overheats; the blower may continue moving cooler air. That does not prove the switch itself is defective. Restricted airflow or another underlying fault may have triggered it."),
+    paragraph("Other model-dependent causes include flame-sensing faults, venting-related safety controls, or a blocked condensate drain on some condensing furnaces. Do not bypass a safety switch, clear internal tubing, or replace control parts yourself. A professional needs to determine why the protection operated before deciding whether a component needs replacement."),
+
+    heading(2, "safe-homeowner-checks", "A safe homeowner troubleshooting checklist"),
+    paragraph("Only continue if there are no alarms, suspected leaks, smoke, or electrical hazards. Keep the owner's manual nearby and stop when a check requires tools, unfamiliar access, or uncertainty."),
+    { type: "list", ordered: true, items: [
+      text("Confirm Heat mode, the set temperature, and the thermostat schedule. Check user-replaceable batteries according to the manual."),
+      text("Inspect a homeowner-accessible filter using the manual's shutdown and replacement instructions."),
+      text("Remove ordinary obstructions from room registers and return grilles; do not dismantle ducts or the furnace."),
+      text("Check utility outage notices or delivered-fuel records without operating fuel equipment."),
+      text("Note the room temperature, startup behavior, noises, and any externally visible fault code for the service provider."),
+    ] },
+
+    heading(2, "call-a-professional", "When should you stop and call a professional?"),
+    paragraph("Arrange professional service if the basic checks do not restore heat, the furnace repeatedly stops, airflow remains weak, or a breaker has tripped. You do not need to identify the failed part before asking for help. Share the model, fuel type, symptoms, and checks already completed."),
+    paragraph("If the home is becoming too cold to occupy safely, move to a warm location while arranging help. Never use an oven to heat rooms. If using a portable electric heater, plug it directly into a wall outlet, keep it at least three feet from anything that can burn, and turn it off before sleeping or leaving the room."),
+
+    heading(2, "urgent-warning-signs", "Warning signs that require immediate attention"),
+    paragraph("Carbon monoxide has no smell or color. Headache, dizziness, nausea, weakness, or confusion can be signs of exposure, although symptoms have other possible causes. Do not wait for certainty or for an alarm to sound if exposure is suspected: get outside and call 911. Never rely on flame color to establish that the air is safe."),
+    paragraph("A gas odor or suspected gas-line hissing calls for immediate evacuation without operating equipment. Smoke, fire, or active sparking also calls for leaving the area and contacting emergency services. Do not restart unsafe equipment. An unexplained burning smell, soot, or damaged venting needs professional attention; do not dismiss it as normal startup behavior."),
+
+    heading(2, "repair-or-replace", "Repair or replacement: what should you consider?"),
+    paragraph("One no-heat event does not automatically mean you need a new furnace. Ask for a written diagnosis explaining the failed component, the underlying cause, and whether safe operation can be restored. Compare a specific repair quote with a complete replacement proposal rather than guessing from symptoms."),
+    paragraph("Consider the equipment's condition, repair history, parts availability, remaining warranty terms, and comfort problems. Frequent repairs or rising bills justify a broader assessment, but bills alone do not prove furnace failure: weather, energy rates, insulation, and duct performance also matter. Replacement planning should include suitable sizing and the home's fuel, electrical, duct, and venting requirements. Ask what each quote includes; avoid decisions based only on age or promised savings."),
+
+    heading(2, "request-furnace-help", "Get help with a furnace that is not working"),
+    { type: "paragraph", children: [
+      ...text("For non-emergency help, review "),
+      { type: "link", href: "/services/heating/furnace-repair", text: "furnace repair options" },
+      ...text(" or learn about "),
+      { type: "link", href: "/services/heating/heating-maintenance", text: "heating maintenance" },
+      ...text(". Apex Home Services is a platform connecting homeowners with independent local professionals. Submit your ZIP code and describe the problem through the booking flow; service coverage and appointment availability need confirmation. For a suspected gas leak, carbon monoxide exposure, or another emergency, contact emergency services instead of submitting a booking request."),
+    ] },
+  ],
+  faqs: [
+    { question: "Why is my furnace blowing cold air?", answer: text("The fan may be circulating air between heating cycles, or the furnace may not be producing heat because of an ignition, fuel, airflow, or safety-control problem. Check normal thermostat settings first if there are no hazards. Persistent cold airflow needs diagnosis; it does not identify one failed component.") },
+    { question: "Should I reset a furnace that is not working?", answer: text("Do not repeatedly press reset or cycle power to clear a fault. Reset procedures and limits vary, particularly for oil burners and gas ignition lockouts. Record an accessible fault code and seek professional guidance. Never restart equipment after a suspected leak or other unsafe condition until it is cleared for use.") },
+    { question: "Does every furnace have a pilot light?", answer: text("No. Some older gas furnaces use a standing pilot, while many newer models use electronic ignition. Electric furnaces have no gas pilot. Check the model's documentation and leave ignition troubleshooting to a qualified professional.") },
+    { question: "How do I choose furnace repair near me?", answer: text("Confirm that the provider serves your ZIP code and works on your furnace's fuel type and model. Ask about applicable licensing, diagnostic charges, written estimates, and scheduling. Verify these details with the independent provider; a platform listing alone does not establish qualifications or availability.") },
+    { question: "Can maintenance prevent heating system problems?", answer: text("Maintenance can identify developing issues and keep specified checks on schedule, but it cannot guarantee uninterrupted heating. Follow the manufacturer's maintenance guidance and arrange professional inspection of fuel-burning equipment. Filter care and keeping room grilles clear are useful ongoing homeowner tasks when performed safely.") },
+  ],
+};

@@ -4,6 +4,7 @@ import { useRef, useState, type KeyboardEvent } from "react";
 import { BookingLink } from "@/components/ui/booking-link";
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
+import { ZipCoverageChecker } from "@/components/service-areas/zip-coverage-checker";
 import { serviceAreas } from "@/content/site";
 
 export function ServiceAreaExplorer() {
@@ -29,11 +30,12 @@ export function ServiceAreaExplorer() {
       <Container>
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
           <div>
-            <SectionHeading id="service-area-heading" eyebrow="Where we serve" title={<>Local professionals,<br />across five states.</>} description="Confirmed county coverage across New York, New Jersey, Connecticut, Massachusetts, and Rhode Island." />
+            <SectionHeading id="service-area-heading" eyebrow="Where we serve" title={<>Local professionals,<br />across three states.</>} description="Serving listed ZIP codes in New York, New Jersey, and Connecticut. County coverage varies by ZIP." />
+            <div className="mt-8"><ZipCoverageChecker placement="home_coverage" /></div>
           </div>
 
           <div className="hidden overflow-hidden rounded-panel border border-steel bg-surface shadow-soft md:flex md:flex-col">
-            <div role="tablist" aria-label="Service area states" className="grid shrink-0 grid-cols-5 border-b border-steel">
+            <div role="tablist" aria-label="Service area states" className="grid shrink-0 grid-cols-3 border-b border-steel">
               {serviceAreas.map((area, index) => {
                 const active = area.code === activeCode;
                 return (
@@ -59,7 +61,7 @@ export function ServiceAreaExplorer() {
             <div id={`state-panel-${activeArea.code}`} role="tabpanel" aria-labelledby={`state-tab-${activeArea.code}`} className="grid flex-1 items-stretch grid-cols-[0.7fr_1.3fr]">
               <div className="flex flex-col justify-between border-r border-steel bg-navy p-7 text-white">
                 <div><p className="text-[0.65rem] font-bold uppercase tracking-[0.18em] text-white/75">{activeArea.code} service area</p><h3 className="mt-4 text-4xl font-semibold tracking-[-0.05em]">{activeArea.state}</h3></div>
-                <p className="text-sm text-white/55">{activeArea.counties.length} confirmed counties</p>
+                <p className="text-sm text-white/55">{activeArea.counties.length} listed counties</p>
               </div>
               <ul className="grid content-start sm:grid-cols-2">
                 {activeArea.counties.map((county, index) => (
@@ -72,7 +74,7 @@ export function ServiceAreaExplorer() {
             <div className="flex shrink-0 flex-col items-start justify-between gap-4 border-t border-steel p-7 sm:flex-row sm:items-center">
               <div>
                 <p className="text-xs font-bold uppercase tracking-[0.1em] text-copper">Not sure if we service your area?</p>
-                <p className="mt-1.5 max-w-xl text-sm leading-6 text-slate">Provide your ZIP when you book, and our team will confirm availability.</p>
+                <p className="mt-1.5 max-w-xl text-sm leading-6 text-slate">Use the ZIP checker for coverage, then request service. Our team confirms service details and scheduling.</p>
               </div>
               <BookingLink placement="home_coverage" variant="primary" className="w-full shrink-0 justify-center sm:w-auto" />
             </div>
@@ -87,7 +89,7 @@ export function ServiceAreaExplorer() {
             ))}
             <div className="pt-7">
               <p className="text-xs font-bold uppercase tracking-[0.1em] text-copper">Not sure if we service your area?</p>
-              <p className="mt-1.5 text-sm leading-6 text-slate">Provide your ZIP when you book, and our team will confirm availability.</p>
+              <p className="mt-1.5 text-sm leading-6 text-slate">Use the ZIP checker for coverage, then request service. Our team confirms service details and scheduling.</p>
               <BookingLink placement="home_coverage" variant="primary" className="mt-4 w-full justify-center" />
             </div>
           </div>

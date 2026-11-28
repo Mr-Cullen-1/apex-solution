@@ -1,0 +1,3721 @@
+{
+  "startedAt": "2026-11-28T10:36:30.061Z",
+  "base": "http://127.0.0.1:3127",
+  "scope": "focused-category-filter-zip",
+  "html": [],
+  "layouts": [
+    {
+      "label": "blog-320",
+      "viewport": 320,
+      "scrollWidth": 320,
+      "overflow": [],
+      "images": [
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-colored.png&w=48&q=75",
+          "width": 48,
+          "alt": "Apex Home Services mark",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Ffurnace.webp&w=384&q=75",
+          "width": 320,
+          "alt": "AI-generated illustration of a closed residential gas furnace and connected ductwork.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fcommercial-refrigeration.webp&w=384&q=75",
+          "width": 320,
+          "alt": "AI-generated illustration of commercial refrigerator and freezer cabinets in a restaurant kitchen.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fcommercial-ice.webp&w=384&q=75",
+          "width": 320,
+          "alt": "AI-generated illustration of a fully assembled commercial ice machine and storage bin.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fcommercial-oven.webp&w=384&q=75",
+          "width": 320,
+          "alt": "AI-generated illustration of a closed commercial convection oven in a restaurant kitchen.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fcommercial-refrigeration.webp&w=384&q=75",
+          "width": 320,
+          "alt": "AI-generated illustration of stainless steel commercial refrigerator and freezer cabinets.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fdishwasher.webp&w=384&q=75",
+          "width": 320,
+          "alt": "AI-generated illustration of an open built-in dishwasher with empty racks.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Flaundry.webp&w=384&q=75",
+          "width": 320,
+          "alt": "AI-generated illustration of a dryer beside a washing machine in a home laundry room.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fcommercial-ice.webp&w=384&q=75",
+          "width": 320,
+          "alt": "AI-generated illustration of a commercial ice machine with its storage bin closed.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fice-maker.webp&w=384&q=75",
+          "width": 320,
+          "alt": "Refrigerator ice maker after replacement.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Foven.webp&w=384&q=75",
+          "width": 320,
+          "alt": "Technician inspecting a household range oven with a diagnostic instrument.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Frefrigerator.webp&w=384&q=75",
+          "width": 320,
+          "alt": "Technician inspecting an open refrigerator in a home kitchen.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fwalk-in.webp&w=384&q=75",
+          "width": 320,
+          "alt": "AI-generated illustration of shelving and enclosed cooling equipment inside a walk-in cold room.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Flaundry.webp&w=384&q=75",
+          "width": 320,
+          "alt": "AI-generated illustration of a front-loading washer and dryer in a laundry room.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-white.png&w=48&q=75",
+          "width": 48,
+          "alt": "",
+          "deferred": false
+        }
+      ],
+      "tables": [],
+      "controls": [
+        {
+          "id": "blog-search",
+          "height": 48,
+          "width": 288
+        },
+        {
+          "id": "blog-category",
+          "height": 48,
+          "width": 288
+        }
+      ],
+      "h1": 1,
+      "links": [
+        "#main-content",
+        "/",
+        "/service-areas",
+        "/about",
+        "/blog",
+        "/contact",
+        "tel:+15165860826",
+        "/services",
+        "/services/appliance-repair",
+        "/services/cooling",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/",
+        "/blog/category/heating",
+        "/blog/furnace-not-heating",
+        "/blog/furnace-not-heating",
+        "/blog/category/commercial-freezers",
+        "/blog/commercial-freezer-not-freezing",
+        "/blog/commercial-freezer-not-freezing",
+        "/blog/category/preventive-maintenance",
+        "/blog/commercial-ice-machine-cleaning",
+        "/blog/commercial-ice-machine-cleaning",
+        "/blog/category/commercial-ovens",
+        "/blog/commercial-oven-not-heating",
+        "/blog/commercial-oven-not-heating",
+        "/blog/category/commercial-refrigeration",
+        "/blog/commercial-refrigerator-not-cooling",
+        "/blog/commercial-refrigerator-not-cooling",
+        "/blog/category/dishwashers",
+        "/blog/dishwasher-not-draining",
+        "/blog/dishwasher-not-draining",
+        "/blog/category/washers-dryers",
+        "/blog/dryer-not-heating",
+        "/blog/dryer-not-heating",
+        "/blog/category/commercial-ice-machines",
+        "/blog/ice-machine-not-making-ice",
+        "/blog/ice-machine-not-making-ice",
+        "/blog/category/ice-makers",
+        "/blog/ice-maker-not-working",
+        "/blog/ice-maker-not-working",
+        "/blog/category/ovens",
+        "/blog/oven-not-heating",
+        "/blog/oven-not-heating",
+        "/blog/category/refrigerators",
+        "/blog/refrigerator-not-cooling",
+        "/blog/refrigerator-not-cooling",
+        "/blog/category/walk-in-coolers-freezers",
+        "/blog/walk-in-cooler-not-cooling",
+        "/blog/walk-in-cooler-not-cooling",
+        "/blog/category/washers-dryers",
+        "/blog/washer-not-draining",
+        "/blog/washer-not-draining",
+        "/blog",
+        "/blog/category/heating",
+        "/blog/category/refrigerators",
+        "/blog/category/washers-dryers",
+        "/blog/category/dishwashers",
+        "/blog/category/ovens",
+        "/blog/category/ice-makers",
+        "/blog/category/commercial-refrigeration",
+        "/blog/category/walk-in-coolers-freezers",
+        "/blog/category/commercial-ice-machines",
+        "/blog/category/commercial-ovens",
+        "/blog/category/commercial-freezers",
+        "/blog/category/preventive-maintenance",
+        "tel:+15165860826",
+        "/service-areas",
+        "/",
+        "/blog",
+        "/service-areas",
+        "tel:+15165860826",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/privacy-policy",
+        "/terms",
+        "/",
+        "/services",
+        "tel:+15165860826"
+      ],
+      "violations": []
+    },
+    {
+      "label": "category-heating-320",
+      "viewport": 320,
+      "scrollWidth": 320,
+      "overflow": [],
+      "images": [
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-colored.png&w=48&q=75",
+          "width": 48,
+          "alt": "Apex Home Services mark",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Ffurnace.webp&w=384&q=75",
+          "width": 320,
+          "alt": "AI-generated illustration of a closed residential gas furnace and connected ductwork.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-white.png&w=48&q=75",
+          "width": 48,
+          "alt": "",
+          "deferred": false
+        }
+      ],
+      "tables": [],
+      "controls": [
+        {
+          "id": "blog-search",
+          "height": 48,
+          "width": 288
+        },
+        {
+          "id": "blog-category",
+          "height": 48,
+          "width": 288
+        }
+      ],
+      "h1": 1,
+      "links": [
+        "#main-content",
+        "/",
+        "/service-areas",
+        "/about",
+        "/blog",
+        "/contact",
+        "tel:+15165860826",
+        "/services",
+        "/services/appliance-repair",
+        "/services/cooling",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/",
+        "/blog",
+        "/blog/category/heating",
+        "/blog/furnace-not-heating",
+        "/blog/furnace-not-heating",
+        "/blog",
+        "/blog/category/heating",
+        "tel:+15165860826",
+        "/service-areas",
+        "/",
+        "/blog",
+        "/service-areas",
+        "tel:+15165860826",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/privacy-policy",
+        "/terms",
+        "/",
+        "/services",
+        "tel:+15165860826"
+      ],
+      "violations": []
+    },
+    {
+      "label": "category-washers-dryers-320",
+      "viewport": 320,
+      "scrollWidth": 320,
+      "overflow": [],
+      "images": [
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-colored.png&w=48&q=75",
+          "width": 48,
+          "alt": "Apex Home Services mark",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Flaundry.webp&w=384&q=75",
+          "width": 320,
+          "alt": "AI-generated illustration of a dryer beside a washing machine in a home laundry room.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Flaundry.webp&w=384&q=75",
+          "width": 320,
+          "alt": "AI-generated illustration of a front-loading washer and dryer in a laundry room.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-white.png&w=48&q=75",
+          "width": 48,
+          "alt": "",
+          "deferred": false
+        }
+      ],
+      "tables": [],
+      "controls": [
+        {
+          "id": "blog-search",
+          "height": 48,
+          "width": 288
+        },
+        {
+          "id": "blog-category",
+          "height": 48,
+          "width": 288
+        }
+      ],
+      "h1": 1,
+      "links": [
+        "#main-content",
+        "/",
+        "/service-areas",
+        "/about",
+        "/blog",
+        "/contact",
+        "tel:+15165860826",
+        "/services",
+        "/services/appliance-repair",
+        "/services/cooling",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/",
+        "/blog",
+        "/blog/category/washers-dryers",
+        "/blog/dryer-not-heating",
+        "/blog/dryer-not-heating",
+        "/blog/category/washers-dryers",
+        "/blog/washer-not-draining",
+        "/blog/washer-not-draining",
+        "/blog",
+        "/blog/category/washers-dryers",
+        "tel:+15165860826",
+        "/service-areas",
+        "/",
+        "/blog",
+        "/service-areas",
+        "tel:+15165860826",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/privacy-policy",
+        "/terms",
+        "/",
+        "/services",
+        "tel:+15165860826"
+      ],
+      "violations": []
+    },
+    {
+      "label": "home-zip-320",
+      "viewport": 320,
+      "scrollWidth": 320,
+      "overflow": [
+        {
+          "tag": "DIV",
+          "className": "shrink-0 snap-start w-full basis-full sm:basis-[calc((100%-1.25rem)/2)] lg:basis-[calc((100%-2.5rem)/3)]",
+          "text": "BeforeAfterAppliance RepairDryer Vent CleaningA dryer lint trap clogge"
+        },
+        {
+          "tag": "DIV",
+          "className": "flex h-full flex-col overflow-hidden rounded-panel border border-steel bg-surface shadow-soft",
+          "text": "BeforeAfterAppliance RepairDryer Vent CleaningA dryer lint trap clogge"
+        },
+        {
+          "tag": "DIV",
+          "className": "grid grid-cols-2 h-60 sm:h-64 lg:h-72",
+          "text": "BeforeAfter"
+        },
+        {
+          "tag": "DIV",
+          "className": "relative bg-surface-muted/25",
+          "text": "Before"
+        },
+        {
+          "tag": "DIV",
+          "className": "relative bg-surface-muted/25",
+          "text": "After"
+        },
+        {
+          "tag": "DIV",
+          "className": "flex flex-1 flex-col justify-center p-6",
+          "text": "Appliance RepairDryer Vent CleaningA dryer lint trap clogged with comp"
+        },
+        {
+          "tag": "P",
+          "className": "text-[0.65rem] font-bold uppercase tracking-[0.1em] text-copper",
+          "text": "Appliance Repair"
+        },
+        {
+          "tag": "H3",
+          "className": "mt-1.5 text-lg font-semibold text-navy",
+          "text": "Dryer Vent Cleaning"
+        },
+        {
+          "tag": "P",
+          "className": "mt-2 text-sm leading-6 text-slate",
+          "text": "A dryer lint trap clogged with compacted lint, cleaned to help reduce "
+        },
+        {
+          "tag": "DIV",
+          "className": "shrink-0 snap-start w-full basis-full sm:basis-[calc((100%-1.25rem)/2)] lg:basis-[calc((100%-2.5rem)/3)]",
+          "text": "BeforeAfterAppliance RepairIce Maker ReplacementA failed ice maker ass"
+        },
+        {
+          "tag": "DIV",
+          "className": "flex h-full flex-col overflow-hidden rounded-panel border border-steel bg-surface shadow-soft",
+          "text": "BeforeAfterAppliance RepairIce Maker ReplacementA failed ice maker ass"
+        },
+        {
+          "tag": "DIV",
+          "className": "grid grid-cols-2 h-60 sm:h-64 lg:h-72",
+          "text": "BeforeAfter"
+        }
+      ],
+      "images": [
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-colored.png&w=48&q=75",
+          "width": 48,
+          "alt": "Apex Home Services mark",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fappliance-oven-card-wide.jpg&w=256&q=75",
+          "width": 96,
+          "alt": "Technician using a diagnostic tool to inspect an open range oven",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fac-cleaning-card.jpg&w=256&q=75",
+          "width": 96,
+          "alt": "Technician on a ladder using a multimeter to service an outdoor AC condenser unit",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fheating-2-card-wide.jpg&w=256&q=75",
+          "width": 96,
+          "alt": "Apex technician connecting refrigerant gauges to an outdoor heat pump unit, head and shoulders fully visible",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fwater-heating-wide.jpg&w=256&q=75",
+          "width": 96,
+          "alt": "Technician inspecting the label on a residential gas water heater",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fbefore-hvac-maintenance.jpg&w=384&q=75",
+          "width": 320,
+          "alt": "A dusty, dirt-caked outdoor AC condenser coil before cleaning",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fafter-hvac-maintenance.jpg&w=384&q=75",
+          "width": 320,
+          "alt": "The outdoor AC condenser coil visibly cleaner after maintenance",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fbefore-appliances.jpg&w=3840&q=75",
+          "width": 0,
+          "alt": "A dryer lint trap housing heavily clogged with compacted lint before cleaning",
+          "deferred": true
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fafter-appliances.jpg&w=3840&q=75",
+          "width": 0,
+          "alt": "The same dryer lint trap housing fully cleaned after service",
+          "deferred": true
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fice-maker-replacement-before.jpg&w=3840&q=75",
+          "width": 0,
+          "alt": "An ice maker assembly removed from a refrigerator freezer door, held in hand",
+          "deferred": true
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fice-maker-replacement-after.jpg&w=3840&q=75",
+          "width": 0,
+          "alt": "The new ice maker assembly installed in the refrigerator freezer door",
+          "deferred": true
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Frefrigerator-control-board-before.jpg&w=3840&q=75",
+          "width": 0,
+          "alt": "A replacement refrigerator control board held in hand before installation",
+          "deferred": true
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Frefrigerator-control-board-after.jpg&w=3840&q=75",
+          "width": 0,
+          "alt": "The new refrigerator control board wired and installed in place",
+          "deferred": true
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-white.png&w=48&q=75",
+          "width": 48,
+          "alt": "",
+          "deferred": false
+        }
+      ],
+      "tables": [],
+      "controls": [
+        {
+          "id": "_R_4minl6bvb_-zip",
+          "height": 48,
+          "width": 238
+        }
+      ],
+      "h1": 1,
+      "links": [
+        "#main-content",
+        "/",
+        "/service-areas",
+        "/about",
+        "/blog",
+        "/contact",
+        "tel:+15165860826",
+        "/services",
+        "/services/appliance-repair",
+        "/services/cooling",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/service-areas",
+        "/services/appliance-repair",
+        "tel:+15165860826",
+        "/service-areas",
+        "/brands",
+        "/reviews",
+        "tel:+15165860826",
+        "tel:+15165860826",
+        "/services/appliance-repair",
+        "/services/cooling",
+        "/services/heating",
+        "/services/water-heater-repair",
+        "/services/cooling/ac-maintenance",
+        "/services/heating/heating-maintenance",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/brands",
+        "/contact",
+        "tel:+15165860826",
+        "/contact",
+        "/",
+        "/blog",
+        "/service-areas",
+        "tel:+15165860826",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/privacy-policy",
+        "/terms",
+        "/",
+        "/services",
+        "tel:+15165860826"
+      ],
+      "violations": []
+    },
+    {
+      "label": "service-areas-zip-320",
+      "viewport": 320,
+      "scrollWidth": 320,
+      "overflow": [
+        {
+          "tag": "LI",
+          "className": "shrink-0 snap-start",
+          "text": "CTConnecticut"
+        },
+        {
+          "tag": "A",
+          "className": "inline-flex min-h-11 items-center gap-2 rounded-control bg-surface px-3 text-sm font-semibold text-navy hover:text-copper",
+          "text": "CTConnecticut"
+        },
+        {
+          "tag": "SPAN",
+          "className": "text-xs font-bold tracking-[0.14em] text-copper",
+          "text": "CT"
+        }
+      ],
+      "images": [
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-colored.png&w=48&q=75",
+          "width": 48,
+          "alt": "Apex Home Services mark",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-white.png&w=48&q=75",
+          "width": 48,
+          "alt": "",
+          "deferred": false
+        }
+      ],
+      "tables": [],
+      "controls": [
+        {
+          "id": "_R_9bsnl6bvb_-zip",
+          "height": 48,
+          "width": 238
+        }
+      ],
+      "h1": 1,
+      "links": [
+        "#main-content",
+        "/",
+        "/service-areas",
+        "/about",
+        "/blog",
+        "/contact",
+        "tel:+15165860826",
+        "/services",
+        "/services/appliance-repair",
+        "/services/cooling",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "tel:+15165860826",
+        "/contact",
+        "#new-york",
+        "#new-jersey",
+        "#connecticut",
+        "/contact",
+        "/",
+        "/blog",
+        "/service-areas",
+        "tel:+15165860826",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/privacy-policy",
+        "/terms",
+        "/",
+        "/services",
+        "tel:+15165860826"
+      ],
+      "violations": []
+    },
+    {
+      "label": "blog-390",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "overflow": [],
+      "images": [
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-colored.png&w=48&q=75",
+          "width": 48,
+          "alt": "Apex Home Services mark",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Ffurnace.webp&w=640&q=75",
+          "width": 390,
+          "alt": "AI-generated illustration of a closed residential gas furnace and connected ductwork.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fcommercial-refrigeration.webp&w=640&q=75",
+          "width": 390,
+          "alt": "AI-generated illustration of commercial refrigerator and freezer cabinets in a restaurant kitchen.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fcommercial-ice.webp&w=640&q=75",
+          "width": 390,
+          "alt": "AI-generated illustration of a fully assembled commercial ice machine and storage bin.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fcommercial-oven.webp&w=640&q=75",
+          "width": 390,
+          "alt": "AI-generated illustration of a closed commercial convection oven in a restaurant kitchen.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fcommercial-refrigeration.webp&w=640&q=75",
+          "width": 390,
+          "alt": "AI-generated illustration of stainless steel commercial refrigerator and freezer cabinets.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fdishwasher.webp&w=640&q=75",
+          "width": 390,
+          "alt": "AI-generated illustration of an open built-in dishwasher with empty racks.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Flaundry.webp&w=640&q=75",
+          "width": 390,
+          "alt": "AI-generated illustration of a dryer beside a washing machine in a home laundry room.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fcommercial-ice.webp&w=640&q=75",
+          "width": 390,
+          "alt": "AI-generated illustration of a commercial ice machine with its storage bin closed.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fice-maker.webp&w=640&q=75",
+          "width": 390,
+          "alt": "Refrigerator ice maker after replacement.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Foven.webp&w=640&q=75",
+          "width": 390,
+          "alt": "Technician inspecting a household range oven with a diagnostic instrument.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Frefrigerator.webp&w=640&q=75",
+          "width": 390,
+          "alt": "Technician inspecting an open refrigerator in a home kitchen.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fwalk-in.webp&w=640&q=75",
+          "width": 390,
+          "alt": "AI-generated illustration of shelving and enclosed cooling equipment inside a walk-in cold room.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Flaundry.webp&w=640&q=75",
+          "width": 390,
+          "alt": "AI-generated illustration of a front-loading washer and dryer in a laundry room.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-white.png&w=48&q=75",
+          "width": 48,
+          "alt": "",
+          "deferred": false
+        }
+      ],
+      "tables": [],
+      "controls": [
+        {
+          "id": "blog-search",
+          "height": 48,
+          "width": 358
+        },
+        {
+          "id": "blog-category",
+          "height": 48,
+          "width": 358
+        }
+      ],
+      "h1": 1,
+      "links": [
+        "#main-content",
+        "/",
+        "/service-areas",
+        "/about",
+        "/blog",
+        "/contact",
+        "tel:+15165860826",
+        "/services",
+        "/services/appliance-repair",
+        "/services/cooling",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/",
+        "/blog/category/heating",
+        "/blog/furnace-not-heating",
+        "/blog/furnace-not-heating",
+        "/blog/category/commercial-freezers",
+        "/blog/commercial-freezer-not-freezing",
+        "/blog/commercial-freezer-not-freezing",
+        "/blog/category/preventive-maintenance",
+        "/blog/commercial-ice-machine-cleaning",
+        "/blog/commercial-ice-machine-cleaning",
+        "/blog/category/commercial-ovens",
+        "/blog/commercial-oven-not-heating",
+        "/blog/commercial-oven-not-heating",
+        "/blog/category/commercial-refrigeration",
+        "/blog/commercial-refrigerator-not-cooling",
+        "/blog/commercial-refrigerator-not-cooling",
+        "/blog/category/dishwashers",
+        "/blog/dishwasher-not-draining",
+        "/blog/dishwasher-not-draining",
+        "/blog/category/washers-dryers",
+        "/blog/dryer-not-heating",
+        "/blog/dryer-not-heating",
+        "/blog/category/commercial-ice-machines",
+        "/blog/ice-machine-not-making-ice",
+        "/blog/ice-machine-not-making-ice",
+        "/blog/category/ice-makers",
+        "/blog/ice-maker-not-working",
+        "/blog/ice-maker-not-working",
+        "/blog/category/ovens",
+        "/blog/oven-not-heating",
+        "/blog/oven-not-heating",
+        "/blog/category/refrigerators",
+        "/blog/refrigerator-not-cooling",
+        "/blog/refrigerator-not-cooling",
+        "/blog/category/walk-in-coolers-freezers",
+        "/blog/walk-in-cooler-not-cooling",
+        "/blog/walk-in-cooler-not-cooling",
+        "/blog/category/washers-dryers",
+        "/blog/washer-not-draining",
+        "/blog/washer-not-draining",
+        "/blog",
+        "/blog/category/heating",
+        "/blog/category/refrigerators",
+        "/blog/category/washers-dryers",
+        "/blog/category/dishwashers",
+        "/blog/category/ovens",
+        "/blog/category/ice-makers",
+        "/blog/category/commercial-refrigeration",
+        "/blog/category/walk-in-coolers-freezers",
+        "/blog/category/commercial-ice-machines",
+        "/blog/category/commercial-ovens",
+        "/blog/category/commercial-freezers",
+        "/blog/category/preventive-maintenance",
+        "tel:+15165860826",
+        "/service-areas",
+        "/",
+        "/blog",
+        "/service-areas",
+        "tel:+15165860826",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/privacy-policy",
+        "/terms",
+        "/",
+        "/services",
+        "tel:+15165860826"
+      ],
+      "violations": []
+    },
+    {
+      "label": "category-heating-390",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "overflow": [],
+      "images": [
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-colored.png&w=48&q=75",
+          "width": 48,
+          "alt": "Apex Home Services mark",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Ffurnace.webp&w=640&q=75",
+          "width": 390,
+          "alt": "AI-generated illustration of a closed residential gas furnace and connected ductwork.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-white.png&w=48&q=75",
+          "width": 48,
+          "alt": "",
+          "deferred": false
+        }
+      ],
+      "tables": [],
+      "controls": [
+        {
+          "id": "blog-search",
+          "height": 48,
+          "width": 358
+        },
+        {
+          "id": "blog-category",
+          "height": 48,
+          "width": 358
+        }
+      ],
+      "h1": 1,
+      "links": [
+        "#main-content",
+        "/",
+        "/service-areas",
+        "/about",
+        "/blog",
+        "/contact",
+        "tel:+15165860826",
+        "/services",
+        "/services/appliance-repair",
+        "/services/cooling",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/",
+        "/blog",
+        "/blog/category/heating",
+        "/blog/furnace-not-heating",
+        "/blog/furnace-not-heating",
+        "/blog",
+        "/blog/category/heating",
+        "tel:+15165860826",
+        "/service-areas",
+        "/",
+        "/blog",
+        "/service-areas",
+        "tel:+15165860826",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/privacy-policy",
+        "/terms",
+        "/",
+        "/services",
+        "tel:+15165860826"
+      ],
+      "violations": []
+    },
+    {
+      "label": "category-washers-dryers-390",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "overflow": [],
+      "images": [
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-colored.png&w=48&q=75",
+          "width": 48,
+          "alt": "Apex Home Services mark",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Flaundry.webp&w=640&q=75",
+          "width": 390,
+          "alt": "AI-generated illustration of a dryer beside a washing machine in a home laundry room.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Flaundry.webp&w=640&q=75",
+          "width": 390,
+          "alt": "AI-generated illustration of a front-loading washer and dryer in a laundry room.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-white.png&w=48&q=75",
+          "width": 48,
+          "alt": "",
+          "deferred": false
+        }
+      ],
+      "tables": [],
+      "controls": [
+        {
+          "id": "blog-search",
+          "height": 48,
+          "width": 358
+        },
+        {
+          "id": "blog-category",
+          "height": 48,
+          "width": 358
+        }
+      ],
+      "h1": 1,
+      "links": [
+        "#main-content",
+        "/",
+        "/service-areas",
+        "/about",
+        "/blog",
+        "/contact",
+        "tel:+15165860826",
+        "/services",
+        "/services/appliance-repair",
+        "/services/cooling",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/",
+        "/blog",
+        "/blog/category/washers-dryers",
+        "/blog/dryer-not-heating",
+        "/blog/dryer-not-heating",
+        "/blog/category/washers-dryers",
+        "/blog/washer-not-draining",
+        "/blog/washer-not-draining",
+        "/blog",
+        "/blog/category/washers-dryers",
+        "tel:+15165860826",
+        "/service-areas",
+        "/",
+        "/blog",
+        "/service-areas",
+        "tel:+15165860826",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/privacy-policy",
+        "/terms",
+        "/",
+        "/services",
+        "tel:+15165860826"
+      ],
+      "violations": []
+    },
+    {
+      "label": "home-zip-390",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "overflow": [
+        {
+          "tag": "DIV",
+          "className": "shrink-0 snap-start w-full basis-full sm:basis-[calc((100%-1.25rem)/2)] lg:basis-[calc((100%-2.5rem)/3)]",
+          "text": "BeforeAfterAppliance RepairDryer Vent CleaningA dryer lint trap clogge"
+        },
+        {
+          "tag": "DIV",
+          "className": "flex h-full flex-col overflow-hidden rounded-panel border border-steel bg-surface shadow-soft",
+          "text": "BeforeAfterAppliance RepairDryer Vent CleaningA dryer lint trap clogge"
+        },
+        {
+          "tag": "DIV",
+          "className": "grid grid-cols-2 h-60 sm:h-64 lg:h-72",
+          "text": "BeforeAfter"
+        },
+        {
+          "tag": "DIV",
+          "className": "relative bg-surface-muted/25",
+          "text": "Before"
+        },
+        {
+          "tag": "DIV",
+          "className": "relative bg-surface-muted/25",
+          "text": "After"
+        },
+        {
+          "tag": "DIV",
+          "className": "flex flex-1 flex-col justify-center p-6",
+          "text": "Appliance RepairDryer Vent CleaningA dryer lint trap clogged with comp"
+        },
+        {
+          "tag": "P",
+          "className": "text-[0.65rem] font-bold uppercase tracking-[0.1em] text-copper",
+          "text": "Appliance Repair"
+        },
+        {
+          "tag": "H3",
+          "className": "mt-1.5 text-lg font-semibold text-navy",
+          "text": "Dryer Vent Cleaning"
+        },
+        {
+          "tag": "P",
+          "className": "mt-2 text-sm leading-6 text-slate",
+          "text": "A dryer lint trap clogged with compacted lint, cleaned to help reduce "
+        },
+        {
+          "tag": "DIV",
+          "className": "shrink-0 snap-start w-full basis-full sm:basis-[calc((100%-1.25rem)/2)] lg:basis-[calc((100%-2.5rem)/3)]",
+          "text": "BeforeAfterAppliance RepairIce Maker ReplacementA failed ice maker ass"
+        },
+        {
+          "tag": "DIV",
+          "className": "flex h-full flex-col overflow-hidden rounded-panel border border-steel bg-surface shadow-soft",
+          "text": "BeforeAfterAppliance RepairIce Maker ReplacementA failed ice maker ass"
+        },
+        {
+          "tag": "DIV",
+          "className": "grid grid-cols-2 h-60 sm:h-64 lg:h-72",
+          "text": "BeforeAfter"
+        }
+      ],
+      "images": [
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-colored.png&w=48&q=75",
+          "width": 48,
+          "alt": "Apex Home Services mark",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fappliance-oven-card-wide.jpg&w=256&q=75",
+          "width": 96,
+          "alt": "Technician using a diagnostic tool to inspect an open range oven",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fac-cleaning-card.jpg&w=256&q=75",
+          "width": 96,
+          "alt": "Technician on a ladder using a multimeter to service an outdoor AC condenser unit",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fheating-2-card-wide.jpg&w=256&q=75",
+          "width": 96,
+          "alt": "Apex technician connecting refrigerant gauges to an outdoor heat pump unit, head and shoulders fully visible",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fwater-heating-wide.jpg&w=256&q=75",
+          "width": 96,
+          "alt": "Technician inspecting the label on a residential gas water heater",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fbefore-hvac-maintenance.jpg&w=384&q=75",
+          "width": 320,
+          "alt": "A dusty, dirt-caked outdoor AC condenser coil before cleaning",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fafter-hvac-maintenance.jpg&w=384&q=75",
+          "width": 320,
+          "alt": "The outdoor AC condenser coil visibly cleaner after maintenance",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fbefore-appliances.jpg&w=3840&q=75",
+          "width": 0,
+          "alt": "A dryer lint trap housing heavily clogged with compacted lint before cleaning",
+          "deferred": true
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fafter-appliances.jpg&w=3840&q=75",
+          "width": 0,
+          "alt": "The same dryer lint trap housing fully cleaned after service",
+          "deferred": true
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fice-maker-replacement-before.jpg&w=3840&q=75",
+          "width": 0,
+          "alt": "An ice maker assembly removed from a refrigerator freezer door, held in hand",
+          "deferred": true
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fice-maker-replacement-after.jpg&w=3840&q=75",
+          "width": 0,
+          "alt": "The new ice maker assembly installed in the refrigerator freezer door",
+          "deferred": true
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Frefrigerator-control-board-before.jpg&w=3840&q=75",
+          "width": 0,
+          "alt": "A replacement refrigerator control board held in hand before installation",
+          "deferred": true
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Frefrigerator-control-board-after.jpg&w=3840&q=75",
+          "width": 0,
+          "alt": "The new refrigerator control board wired and installed in place",
+          "deferred": true
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-white.png&w=48&q=75",
+          "width": 48,
+          "alt": "",
+          "deferred": false
+        }
+      ],
+      "tables": [],
+      "controls": [
+        {
+          "id": "_R_4minl6bvb_-zip",
+          "height": 48,
+          "width": 308
+        }
+      ],
+      "h1": 1,
+      "links": [
+        "#main-content",
+        "/",
+        "/service-areas",
+        "/about",
+        "/blog",
+        "/contact",
+        "tel:+15165860826",
+        "/services",
+        "/services/appliance-repair",
+        "/services/cooling",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/service-areas",
+        "/services/appliance-repair",
+        "tel:+15165860826",
+        "/service-areas",
+        "/brands",
+        "/reviews",
+        "tel:+15165860826",
+        "tel:+15165860826",
+        "/services/appliance-repair",
+        "/services/cooling",
+        "/services/heating",
+        "/services/water-heater-repair",
+        "/services/cooling/ac-maintenance",
+        "/services/heating/heating-maintenance",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/brands",
+        "/contact",
+        "tel:+15165860826",
+        "/contact",
+        "/",
+        "/blog",
+        "/service-areas",
+        "tel:+15165860826",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/privacy-policy",
+        "/terms",
+        "/",
+        "/services",
+        "tel:+15165860826"
+      ],
+      "violations": []
+    },
+    {
+      "label": "service-areas-zip-390",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "overflow": [
+        {
+          "tag": "LI",
+          "className": "shrink-0 snap-start",
+          "text": "CTConnecticut"
+        },
+        {
+          "tag": "A",
+          "className": "inline-flex min-h-11 items-center gap-2 rounded-control bg-surface px-3 text-sm font-semibold text-navy hover:text-copper",
+          "text": "CTConnecticut"
+        }
+      ],
+      "images": [
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-colored.png&w=48&q=75",
+          "width": 48,
+          "alt": "Apex Home Services mark",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-white.png&w=48&q=75",
+          "width": 48,
+          "alt": "",
+          "deferred": false
+        }
+      ],
+      "tables": [],
+      "controls": [
+        {
+          "id": "_R_9bsnl6bvb_-zip",
+          "height": 48,
+          "width": 308
+        }
+      ],
+      "h1": 1,
+      "links": [
+        "#main-content",
+        "/",
+        "/service-areas",
+        "/about",
+        "/blog",
+        "/contact",
+        "tel:+15165860826",
+        "/services",
+        "/services/appliance-repair",
+        "/services/cooling",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "tel:+15165860826",
+        "/contact",
+        "#new-york",
+        "#new-jersey",
+        "#connecticut",
+        "/contact",
+        "/",
+        "/blog",
+        "/service-areas",
+        "tel:+15165860826",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/privacy-policy",
+        "/terms",
+        "/",
+        "/services",
+        "tel:+15165860826"
+      ],
+      "violations": []
+    },
+    {
+      "label": "blog-768",
+      "viewport": 768,
+      "scrollWidth": 768,
+      "overflow": [],
+      "images": [
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-colored.png&w=48&q=75",
+          "width": 48,
+          "alt": "Apex Home Services mark",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Ffurnace.webp&w=384&q=75",
+          "width": 384,
+          "alt": "AI-generated illustration of a closed residential gas furnace and connected ductwork.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fcommercial-refrigeration.webp&w=384&q=75",
+          "width": 384,
+          "alt": "AI-generated illustration of commercial refrigerator and freezer cabinets in a restaurant kitchen.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fcommercial-ice.webp&w=384&q=75",
+          "width": 384,
+          "alt": "AI-generated illustration of a fully assembled commercial ice machine and storage bin.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fcommercial-oven.webp&w=384&q=75",
+          "width": 384,
+          "alt": "AI-generated illustration of a closed commercial convection oven in a restaurant kitchen.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fcommercial-refrigeration.webp&w=384&q=75",
+          "width": 384,
+          "alt": "AI-generated illustration of stainless steel commercial refrigerator and freezer cabinets.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fdishwasher.webp&w=384&q=75",
+          "width": 384,
+          "alt": "AI-generated illustration of an open built-in dishwasher with empty racks.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Flaundry.webp&w=384&q=75",
+          "width": 384,
+          "alt": "AI-generated illustration of a dryer beside a washing machine in a home laundry room.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fcommercial-ice.webp&w=384&q=75",
+          "width": 384,
+          "alt": "AI-generated illustration of a commercial ice machine with its storage bin closed.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fice-maker.webp&w=384&q=75",
+          "width": 384,
+          "alt": "Refrigerator ice maker after replacement.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Foven.webp&w=384&q=75",
+          "width": 384,
+          "alt": "Technician inspecting a household range oven with a diagnostic instrument.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Frefrigerator.webp&w=384&q=75",
+          "width": 384,
+          "alt": "Technician inspecting an open refrigerator in a home kitchen.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fwalk-in.webp&w=384&q=75",
+          "width": 384,
+          "alt": "AI-generated illustration of shelving and enclosed cooling equipment inside a walk-in cold room.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Flaundry.webp&w=384&q=75",
+          "width": 384,
+          "alt": "AI-generated illustration of a front-loading washer and dryer in a laundry room.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-white.png&w=48&q=75",
+          "width": 48,
+          "alt": "",
+          "deferred": false
+        }
+      ],
+      "tables": [],
+      "controls": [
+        {
+          "id": "blog-search",
+          "height": 48,
+          "width": 322.90625
+        },
+        {
+          "id": "blog-category",
+          "height": 48,
+          "width": 230.65625
+        }
+      ],
+      "h1": 1,
+      "links": [
+        "#main-content",
+        "/",
+        "/service-areas",
+        "/about",
+        "/blog",
+        "/contact",
+        "tel:+15165860826",
+        "/services",
+        "/services/appliance-repair",
+        "/services/cooling",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/",
+        "/blog/category/heating",
+        "/blog/furnace-not-heating",
+        "/blog/furnace-not-heating",
+        "/blog/category/commercial-freezers",
+        "/blog/commercial-freezer-not-freezing",
+        "/blog/commercial-freezer-not-freezing",
+        "/blog/category/preventive-maintenance",
+        "/blog/commercial-ice-machine-cleaning",
+        "/blog/commercial-ice-machine-cleaning",
+        "/blog/category/commercial-ovens",
+        "/blog/commercial-oven-not-heating",
+        "/blog/commercial-oven-not-heating",
+        "/blog/category/commercial-refrigeration",
+        "/blog/commercial-refrigerator-not-cooling",
+        "/blog/commercial-refrigerator-not-cooling",
+        "/blog/category/dishwashers",
+        "/blog/dishwasher-not-draining",
+        "/blog/dishwasher-not-draining",
+        "/blog/category/washers-dryers",
+        "/blog/dryer-not-heating",
+        "/blog/dryer-not-heating",
+        "/blog/category/commercial-ice-machines",
+        "/blog/ice-machine-not-making-ice",
+        "/blog/ice-machine-not-making-ice",
+        "/blog/category/ice-makers",
+        "/blog/ice-maker-not-working",
+        "/blog/ice-maker-not-working",
+        "/blog/category/ovens",
+        "/blog/oven-not-heating",
+        "/blog/oven-not-heating",
+        "/blog/category/refrigerators",
+        "/blog/refrigerator-not-cooling",
+        "/blog/refrigerator-not-cooling",
+        "/blog/category/walk-in-coolers-freezers",
+        "/blog/walk-in-cooler-not-cooling",
+        "/blog/walk-in-cooler-not-cooling",
+        "/blog/category/washers-dryers",
+        "/blog/washer-not-draining",
+        "/blog/washer-not-draining",
+        "/blog",
+        "/blog/category/heating",
+        "/blog/category/refrigerators",
+        "/blog/category/washers-dryers",
+        "/blog/category/dishwashers",
+        "/blog/category/ovens",
+        "/blog/category/ice-makers",
+        "/blog/category/commercial-refrigeration",
+        "/blog/category/walk-in-coolers-freezers",
+        "/blog/category/commercial-ice-machines",
+        "/blog/category/commercial-ovens",
+        "/blog/category/commercial-freezers",
+        "/blog/category/preventive-maintenance",
+        "tel:+15165860826",
+        "/service-areas",
+        "/",
+        "/blog",
+        "/service-areas",
+        "tel:+15165860826",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/privacy-policy",
+        "/terms",
+        "/",
+        "/services",
+        "tel:+15165860826"
+      ],
+      "violations": []
+    },
+    {
+      "label": "category-heating-768",
+      "viewport": 768,
+      "scrollWidth": 768,
+      "overflow": [],
+      "images": [
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-colored.png&w=48&q=75",
+          "width": 48,
+          "alt": "Apex Home Services mark",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Ffurnace.webp&w=384&q=75",
+          "width": 384,
+          "alt": "AI-generated illustration of a closed residential gas furnace and connected ductwork.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-white.png&w=48&q=75",
+          "width": 48,
+          "alt": "",
+          "deferred": false
+        }
+      ],
+      "tables": [],
+      "controls": [
+        {
+          "id": "blog-search",
+          "height": 48,
+          "width": 322.90625
+        },
+        {
+          "id": "blog-category",
+          "height": 48,
+          "width": 230.65625
+        }
+      ],
+      "h1": 1,
+      "links": [
+        "#main-content",
+        "/",
+        "/service-areas",
+        "/about",
+        "/blog",
+        "/contact",
+        "tel:+15165860826",
+        "/services",
+        "/services/appliance-repair",
+        "/services/cooling",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/",
+        "/blog",
+        "/blog/category/heating",
+        "/blog/furnace-not-heating",
+        "/blog/furnace-not-heating",
+        "/blog",
+        "/blog/category/heating",
+        "tel:+15165860826",
+        "/service-areas",
+        "/",
+        "/blog",
+        "/service-areas",
+        "tel:+15165860826",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/privacy-policy",
+        "/terms",
+        "/",
+        "/services",
+        "tel:+15165860826"
+      ],
+      "violations": []
+    },
+    {
+      "label": "category-washers-dryers-768",
+      "viewport": 768,
+      "scrollWidth": 768,
+      "overflow": [],
+      "images": [
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-colored.png&w=48&q=75",
+          "width": 48,
+          "alt": "Apex Home Services mark",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Flaundry.webp&w=384&q=75",
+          "width": 384,
+          "alt": "AI-generated illustration of a dryer beside a washing machine in a home laundry room.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Flaundry.webp&w=384&q=75",
+          "width": 384,
+          "alt": "AI-generated illustration of a front-loading washer and dryer in a laundry room.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-white.png&w=48&q=75",
+          "width": 48,
+          "alt": "",
+          "deferred": false
+        }
+      ],
+      "tables": [],
+      "controls": [
+        {
+          "id": "blog-search",
+          "height": 48,
+          "width": 322.90625
+        },
+        {
+          "id": "blog-category",
+          "height": 48,
+          "width": 230.65625
+        }
+      ],
+      "h1": 1,
+      "links": [
+        "#main-content",
+        "/",
+        "/service-areas",
+        "/about",
+        "/blog",
+        "/contact",
+        "tel:+15165860826",
+        "/services",
+        "/services/appliance-repair",
+        "/services/cooling",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/",
+        "/blog",
+        "/blog/category/washers-dryers",
+        "/blog/dryer-not-heating",
+        "/blog/dryer-not-heating",
+        "/blog/category/washers-dryers",
+        "/blog/washer-not-draining",
+        "/blog/washer-not-draining",
+        "/blog",
+        "/blog/category/washers-dryers",
+        "tel:+15165860826",
+        "/service-areas",
+        "/",
+        "/blog",
+        "/service-areas",
+        "tel:+15165860826",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/privacy-policy",
+        "/terms",
+        "/",
+        "/services",
+        "tel:+15165860826"
+      ],
+      "violations": []
+    },
+    {
+      "label": "home-zip-768",
+      "viewport": 768,
+      "scrollWidth": 768,
+      "overflow": [
+        {
+          "tag": "DIV",
+          "className": "shrink-0 snap-start w-full basis-full sm:basis-[calc((100%-1.25rem)/2)] lg:basis-[calc((100%-2.5rem)/3)]",
+          "text": "BeforeAfterAppliance RepairIce Maker ReplacementA failed ice maker ass"
+        },
+        {
+          "tag": "DIV",
+          "className": "flex h-full flex-col overflow-hidden rounded-panel border border-steel bg-surface shadow-soft",
+          "text": "BeforeAfterAppliance RepairIce Maker ReplacementA failed ice maker ass"
+        },
+        {
+          "tag": "DIV",
+          "className": "grid grid-cols-2 h-60 sm:h-64 lg:h-72",
+          "text": "BeforeAfter"
+        },
+        {
+          "tag": "DIV",
+          "className": "relative bg-surface-muted/25",
+          "text": "Before"
+        },
+        {
+          "tag": "DIV",
+          "className": "relative bg-surface-muted/25",
+          "text": "After"
+        },
+        {
+          "tag": "DIV",
+          "className": "flex flex-1 flex-col justify-center p-6",
+          "text": "Appliance RepairIce Maker ReplacementA failed ice maker assembly repla"
+        },
+        {
+          "tag": "P",
+          "className": "text-[0.65rem] font-bold uppercase tracking-[0.1em] text-copper",
+          "text": "Appliance Repair"
+        },
+        {
+          "tag": "H3",
+          "className": "mt-1.5 text-lg font-semibold text-navy",
+          "text": "Ice Maker Replacement"
+        },
+        {
+          "tag": "P",
+          "className": "mt-2 text-sm leading-6 text-slate",
+          "text": "A failed ice maker assembly replaced in a refrigerator freezer door."
+        },
+        {
+          "tag": "DIV",
+          "className": "shrink-0 snap-start w-full basis-full sm:basis-[calc((100%-1.25rem)/2)] lg:basis-[calc((100%-2.5rem)/3)]",
+          "text": "BeforeAfterAppliance RepairRefrigerator Control Board ReplacementA ref"
+        },
+        {
+          "tag": "DIV",
+          "className": "flex h-full flex-col overflow-hidden rounded-panel border border-steel bg-surface shadow-soft",
+          "text": "BeforeAfterAppliance RepairRefrigerator Control Board ReplacementA ref"
+        },
+        {
+          "tag": "DIV",
+          "className": "grid grid-cols-2 h-60 sm:h-64 lg:h-72",
+          "text": "BeforeAfter"
+        }
+      ],
+      "images": [
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-colored.png&w=48&q=75",
+          "width": 48,
+          "alt": "Apex Home Services mark",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fappliance-oven-card-wide.jpg&w=384&q=75",
+          "width": 353,
+          "alt": "Technician using a diagnostic tool to inspect an open range oven",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fac-cleaning-card.jpg&w=384&q=75",
+          "width": 353,
+          "alt": "Technician on a ladder using a multimeter to service an outdoor AC condenser unit",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fheating-2-card-wide.jpg&w=384&q=75",
+          "width": 353,
+          "alt": "Apex technician connecting refrigerant gauges to an outdoor heat pump unit, head and shoulders fully visible",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fwater-heating-wide.jpg&w=384&q=75",
+          "width": 353,
+          "alt": "Technician inspecting the label on a residential gas water heater",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fbefore-hvac-maintenance.jpg&w=384&q=75",
+          "width": 320,
+          "alt": "A dusty, dirt-caked outdoor AC condenser coil before cleaning",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fafter-hvac-maintenance.jpg&w=384&q=75",
+          "width": 320,
+          "alt": "The outdoor AC condenser coil visibly cleaner after maintenance",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fbefore-appliances.jpg&w=384&q=75",
+          "width": 320,
+          "alt": "A dryer lint trap housing heavily clogged with compacted lint before cleaning",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fafter-appliances.jpg&w=384&q=75",
+          "width": 320,
+          "alt": "The same dryer lint trap housing fully cleaned after service",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fice-maker-replacement-before.jpg&w=384&q=75",
+          "width": 320,
+          "alt": "An ice maker assembly removed from a refrigerator freezer door, held in hand",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fice-maker-replacement-after.jpg&w=3840&q=75",
+          "width": 0,
+          "alt": "The new ice maker assembly installed in the refrigerator freezer door",
+          "deferred": true
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Frefrigerator-control-board-before.jpg&w=3840&q=75",
+          "width": 0,
+          "alt": "A replacement refrigerator control board held in hand before installation",
+          "deferred": true
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Frefrigerator-control-board-after.jpg&w=3840&q=75",
+          "width": 0,
+          "alt": "The new refrigerator control board wired and installed in place",
+          "deferred": true
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-white.png&w=48&q=75",
+          "width": 48,
+          "alt": "",
+          "deferred": false
+        }
+      ],
+      "tables": [],
+      "controls": [
+        {
+          "id": "_R_4minl6bvb_-zip",
+          "height": 48,
+          "width": 192
+        }
+      ],
+      "h1": 1,
+      "links": [
+        "#main-content",
+        "/",
+        "/service-areas",
+        "/about",
+        "/blog",
+        "/contact",
+        "tel:+15165860826",
+        "/services",
+        "/services/appliance-repair",
+        "/services/cooling",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/service-areas",
+        "/services/appliance-repair",
+        "tel:+15165860826",
+        "/service-areas",
+        "/brands",
+        "/reviews",
+        "tel:+15165860826",
+        "tel:+15165860826",
+        "/services/appliance-repair",
+        "/services/cooling",
+        "/services/heating",
+        "/services/water-heater-repair",
+        "/services/cooling/ac-maintenance",
+        "/services/heating/heating-maintenance",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/brands",
+        "/contact",
+        "tel:+15165860826",
+        "/contact",
+        "/",
+        "/blog",
+        "/service-areas",
+        "tel:+15165860826",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/privacy-policy",
+        "/terms",
+        "/",
+        "/services",
+        "tel:+15165860826"
+      ],
+      "violations": []
+    },
+    {
+      "label": "service-areas-zip-768",
+      "viewport": 768,
+      "scrollWidth": 768,
+      "overflow": [],
+      "images": [
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-colored.png&w=48&q=75",
+          "width": 48,
+          "alt": "Apex Home Services mark",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-white.png&w=48&q=75",
+          "width": 48,
+          "alt": "",
+          "deferred": false
+        }
+      ],
+      "tables": [],
+      "controls": [
+        {
+          "id": "_R_9bsnl6bvb_-zip",
+          "height": 48,
+          "width": 192
+        }
+      ],
+      "h1": 1,
+      "links": [
+        "#main-content",
+        "/",
+        "/service-areas",
+        "/about",
+        "/blog",
+        "/contact",
+        "tel:+15165860826",
+        "/services",
+        "/services/appliance-repair",
+        "/services/cooling",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "tel:+15165860826",
+        "/contact",
+        "#new-york",
+        "#new-jersey",
+        "#connecticut",
+        "/contact",
+        "/",
+        "/blog",
+        "/service-areas",
+        "tel:+15165860826",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/privacy-policy",
+        "/terms",
+        "/",
+        "/services",
+        "tel:+15165860826"
+      ],
+      "violations": []
+    },
+    {
+      "label": "blog-1440",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "overflow": [],
+      "images": [
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-colored.png&w=48&q=75",
+          "width": 48,
+          "alt": "Apex Home Services mark",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Ffurnace.webp&w=750&q=75",
+          "width": 720,
+          "alt": "AI-generated illustration of a closed residential gas furnace and connected ductwork.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fcommercial-refrigeration.webp&w=640&q=75",
+          "width": 475,
+          "alt": "AI-generated illustration of commercial refrigerator and freezer cabinets in a restaurant kitchen.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fcommercial-ice.webp&w=640&q=75",
+          "width": 475,
+          "alt": "AI-generated illustration of a fully assembled commercial ice machine and storage bin.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fcommercial-oven.webp&w=640&q=75",
+          "width": 475,
+          "alt": "AI-generated illustration of a closed commercial convection oven in a restaurant kitchen.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fcommercial-refrigeration.webp&w=640&q=75",
+          "width": 475,
+          "alt": "AI-generated illustration of stainless steel commercial refrigerator and freezer cabinets.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fdishwasher.webp&w=640&q=75",
+          "width": 475,
+          "alt": "AI-generated illustration of an open built-in dishwasher with empty racks.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Flaundry.webp&w=640&q=75",
+          "width": 475,
+          "alt": "AI-generated illustration of a dryer beside a washing machine in a home laundry room.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fcommercial-ice.webp&w=640&q=75",
+          "width": 475,
+          "alt": "AI-generated illustration of a commercial ice machine with its storage bin closed.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fice-maker.webp&w=640&q=75",
+          "width": 475,
+          "alt": "Refrigerator ice maker after replacement.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Foven.webp&w=640&q=75",
+          "width": 475,
+          "alt": "Technician inspecting a household range oven with a diagnostic instrument.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Frefrigerator.webp&w=640&q=75",
+          "width": 475,
+          "alt": "Technician inspecting an open refrigerator in a home kitchen.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Fwalk-in.webp&w=640&q=75",
+          "width": 475,
+          "alt": "AI-generated illustration of shelving and enclosed cooling equipment inside a walk-in cold room.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Flaundry.webp&w=640&q=75",
+          "width": 475,
+          "alt": "AI-generated illustration of a front-loading washer and dryer in a laundry room.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-white.png&w=48&q=75",
+          "width": 48,
+          "alt": "",
+          "deferred": false
+        }
+      ],
+      "tables": [],
+      "controls": [
+        {
+          "id": "blog-search",
+          "height": 48,
+          "width": 683.5625
+        },
+        {
+          "id": "blog-category",
+          "height": 48,
+          "width": 488.25
+        }
+      ],
+      "h1": 1,
+      "links": [
+        "#main-content",
+        "/",
+        "/service-areas",
+        "/about",
+        "/blog",
+        "/contact",
+        "tel:+15165860826",
+        "/services",
+        "/services/appliance-repair",
+        "/services/cooling",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/",
+        "/blog/category/heating",
+        "/blog/furnace-not-heating",
+        "/blog/furnace-not-heating",
+        "/blog/category/commercial-freezers",
+        "/blog/commercial-freezer-not-freezing",
+        "/blog/commercial-freezer-not-freezing",
+        "/blog/category/preventive-maintenance",
+        "/blog/commercial-ice-machine-cleaning",
+        "/blog/commercial-ice-machine-cleaning",
+        "/blog/category/commercial-ovens",
+        "/blog/commercial-oven-not-heating",
+        "/blog/commercial-oven-not-heating",
+        "/blog/category/commercial-refrigeration",
+        "/blog/commercial-refrigerator-not-cooling",
+        "/blog/commercial-refrigerator-not-cooling",
+        "/blog/category/dishwashers",
+        "/blog/dishwasher-not-draining",
+        "/blog/dishwasher-not-draining",
+        "/blog/category/washers-dryers",
+        "/blog/dryer-not-heating",
+        "/blog/dryer-not-heating",
+        "/blog/category/commercial-ice-machines",
+        "/blog/ice-machine-not-making-ice",
+        "/blog/ice-machine-not-making-ice",
+        "/blog/category/ice-makers",
+        "/blog/ice-maker-not-working",
+        "/blog/ice-maker-not-working",
+        "/blog/category/ovens",
+        "/blog/oven-not-heating",
+        "/blog/oven-not-heating",
+        "/blog/category/refrigerators",
+        "/blog/refrigerator-not-cooling",
+        "/blog/refrigerator-not-cooling",
+        "/blog/category/walk-in-coolers-freezers",
+        "/blog/walk-in-cooler-not-cooling",
+        "/blog/walk-in-cooler-not-cooling",
+        "/blog/category/washers-dryers",
+        "/blog/washer-not-draining",
+        "/blog/washer-not-draining",
+        "/blog",
+        "/blog/category/heating",
+        "/blog/category/refrigerators",
+        "/blog/category/washers-dryers",
+        "/blog/category/dishwashers",
+        "/blog/category/ovens",
+        "/blog/category/ice-makers",
+        "/blog/category/commercial-refrigeration",
+        "/blog/category/walk-in-coolers-freezers",
+        "/blog/category/commercial-ice-machines",
+        "/blog/category/commercial-ovens",
+        "/blog/category/commercial-freezers",
+        "/blog/category/preventive-maintenance",
+        "tel:+15165860826",
+        "/service-areas",
+        "/",
+        "/blog",
+        "/service-areas",
+        "tel:+15165860826",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/privacy-policy",
+        "/terms",
+        "/",
+        "/services",
+        "tel:+15165860826"
+      ],
+      "violations": []
+    },
+    {
+      "label": "category-heating-1440",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "overflow": [],
+      "images": [
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-colored.png&w=48&q=75",
+          "width": 48,
+          "alt": "Apex Home Services mark",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Ffurnace.webp&w=750&q=75",
+          "width": 720,
+          "alt": "AI-generated illustration of a closed residential gas furnace and connected ductwork.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-white.png&w=48&q=75",
+          "width": 48,
+          "alt": "",
+          "deferred": false
+        }
+      ],
+      "tables": [],
+      "controls": [
+        {
+          "id": "blog-search",
+          "height": 48,
+          "width": 683.5625
+        },
+        {
+          "id": "blog-category",
+          "height": 48,
+          "width": 488.25
+        }
+      ],
+      "h1": 1,
+      "links": [
+        "#main-content",
+        "/",
+        "/service-areas",
+        "/about",
+        "/blog",
+        "/contact",
+        "tel:+15165860826",
+        "/services",
+        "/services/appliance-repair",
+        "/services/cooling",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/",
+        "/blog",
+        "/blog/category/heating",
+        "/blog/furnace-not-heating",
+        "/blog/furnace-not-heating",
+        "/blog",
+        "/blog/category/heating",
+        "tel:+15165860826",
+        "/service-areas",
+        "/",
+        "/blog",
+        "/service-areas",
+        "tel:+15165860826",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/privacy-policy",
+        "/terms",
+        "/",
+        "/services",
+        "tel:+15165860826"
+      ],
+      "violations": []
+    },
+    {
+      "label": "category-washers-dryers-1440",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "overflow": [],
+      "images": [
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-colored.png&w=48&q=75",
+          "width": 48,
+          "alt": "Apex Home Services mark",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Flaundry.webp&w=750&q=75",
+          "width": 720,
+          "alt": "AI-generated illustration of a dryer beside a washing machine in a home laundry room.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Fclient-articles%2Flaundry.webp&w=640&q=75",
+          "width": 475,
+          "alt": "AI-generated illustration of a front-loading washer and dryer in a laundry room.",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-white.png&w=48&q=75",
+          "width": 48,
+          "alt": "",
+          "deferred": false
+        }
+      ],
+      "tables": [],
+      "controls": [
+        {
+          "id": "blog-search",
+          "height": 48,
+          "width": 683.5625
+        },
+        {
+          "id": "blog-category",
+          "height": 48,
+          "width": 488.25
+        }
+      ],
+      "h1": 1,
+      "links": [
+        "#main-content",
+        "/",
+        "/service-areas",
+        "/about",
+        "/blog",
+        "/contact",
+        "tel:+15165860826",
+        "/services",
+        "/services/appliance-repair",
+        "/services/cooling",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/",
+        "/blog",
+        "/blog/category/washers-dryers",
+        "/blog/dryer-not-heating",
+        "/blog/dryer-not-heating",
+        "/blog/category/washers-dryers",
+        "/blog/washer-not-draining",
+        "/blog/washer-not-draining",
+        "/blog",
+        "/blog/category/washers-dryers",
+        "tel:+15165860826",
+        "/service-areas",
+        "/",
+        "/blog",
+        "/service-areas",
+        "tel:+15165860826",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/privacy-policy",
+        "/terms",
+        "/",
+        "/services",
+        "tel:+15165860826"
+      ],
+      "violations": []
+    },
+    {
+      "label": "home-zip-1440",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "overflow": [
+        {
+          "tag": "DIV",
+          "className": "shrink-0 snap-start w-full basis-full sm:basis-[calc((100%-1.25rem)/2)] lg:basis-[calc((100%-2.5rem)/3)]",
+          "text": "BeforeAfterAppliance RepairRefrigerator Control Board ReplacementA ref"
+        },
+        {
+          "tag": "DIV",
+          "className": "flex h-full flex-col overflow-hidden rounded-panel border border-steel bg-surface shadow-soft",
+          "text": "BeforeAfterAppliance RepairRefrigerator Control Board ReplacementA ref"
+        },
+        {
+          "tag": "DIV",
+          "className": "grid grid-cols-2 h-60 sm:h-64 lg:h-72",
+          "text": "BeforeAfter"
+        },
+        {
+          "tag": "DIV",
+          "className": "relative bg-surface-muted/25",
+          "text": "Before"
+        },
+        {
+          "tag": "DIV",
+          "className": "relative bg-surface-muted/25",
+          "text": "After"
+        },
+        {
+          "tag": "DIV",
+          "className": "flex flex-1 flex-col justify-center p-6",
+          "text": "Appliance RepairRefrigerator Control Board ReplacementA refrigerator c"
+        },
+        {
+          "tag": "P",
+          "className": "text-[0.65rem] font-bold uppercase tracking-[0.1em] text-copper",
+          "text": "Appliance Repair"
+        },
+        {
+          "tag": "H3",
+          "className": "mt-1.5 text-lg font-semibold text-navy",
+          "text": "Refrigerator Control Board Replacement"
+        },
+        {
+          "tag": "P",
+          "className": "mt-2 text-sm leading-6 text-slate",
+          "text": "A refrigerator control board replaced and reinstalled to restore prope"
+        }
+      ],
+      "images": [
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-colored.png&w=48&q=75",
+          "width": 48,
+          "alt": "Apex Home Services mark",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fappliance-oven-card-wide.jpg&w=384&q=75",
+          "width": 331,
+          "alt": "Technician using a diagnostic tool to inspect an open range oven",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fac-cleaning-card.jpg&w=384&q=75",
+          "width": 331,
+          "alt": "Technician on a ladder using a multimeter to service an outdoor AC condenser unit",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fheating-2-card-wide.jpg&w=384&q=75",
+          "width": 331,
+          "alt": "Apex technician connecting refrigerant gauges to an outdoor heat pump unit, head and shoulders fully visible",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fwater-heating-wide.jpg&w=384&q=75",
+          "width": 331,
+          "alt": "Technician inspecting the label on a residential gas water heater",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fbefore-hvac-maintenance.jpg&w=384&q=75",
+          "width": 320,
+          "alt": "A dusty, dirt-caked outdoor AC condenser coil before cleaning",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fafter-hvac-maintenance.jpg&w=384&q=75",
+          "width": 320,
+          "alt": "The outdoor AC condenser coil visibly cleaner after maintenance",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fbefore-appliances.jpg&w=384&q=75",
+          "width": 320,
+          "alt": "A dryer lint trap housing heavily clogged with compacted lint before cleaning",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fafter-appliances.jpg&w=384&q=75",
+          "width": 320,
+          "alt": "The same dryer lint trap housing fully cleaned after service",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fice-maker-replacement-before.jpg&w=384&q=75",
+          "width": 320,
+          "alt": "An ice maker assembly removed from a refrigerator freezer door, held in hand",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Fice-maker-replacement-after.jpg&w=384&q=75",
+          "width": 320,
+          "alt": "The new ice maker assembly installed in the refrigerator freezer door",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Frefrigerator-control-board-before.jpg&w=384&q=75",
+          "width": 320,
+          "alt": "A replacement refrigerator control board held in hand before installation",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fimages%2Freal%2Frefrigerator-control-board-after.jpg&w=3840&q=75",
+          "width": 0,
+          "alt": "The new refrigerator control board wired and installed in place",
+          "deferred": true
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-white.png&w=48&q=75",
+          "width": 48,
+          "alt": "",
+          "deferred": false
+        }
+      ],
+      "tables": [],
+      "controls": [
+        {
+          "id": "_R_4minl6bvb_-zip",
+          "height": 48,
+          "width": 192
+        }
+      ],
+      "h1": 1,
+      "links": [
+        "#main-content",
+        "/",
+        "/service-areas",
+        "/about",
+        "/blog",
+        "/contact",
+        "tel:+15165860826",
+        "/services",
+        "/services/appliance-repair",
+        "/services/cooling",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/service-areas",
+        "/services/appliance-repair",
+        "tel:+15165860826",
+        "/service-areas",
+        "/brands",
+        "/reviews",
+        "tel:+15165860826",
+        "tel:+15165860826",
+        "/services/appliance-repair",
+        "/services/cooling",
+        "/services/heating",
+        "/services/water-heater-repair",
+        "/services/cooling/ac-maintenance",
+        "/services/heating/heating-maintenance",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/brands",
+        "/contact",
+        "tel:+15165860826",
+        "/contact",
+        "/",
+        "/blog",
+        "/service-areas",
+        "tel:+15165860826",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/privacy-policy",
+        "/terms",
+        "/",
+        "/services",
+        "tel:+15165860826"
+      ],
+      "violations": []
+    },
+    {
+      "label": "service-areas-zip-1440",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "overflow": [],
+      "images": [
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-colored.png&w=48&q=75",
+          "width": 48,
+          "alt": "Apex Home Services mark",
+          "deferred": false
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fbrand%2Fapex-mark-white.png&w=48&q=75",
+          "width": 48,
+          "alt": "",
+          "deferred": false
+        }
+      ],
+      "tables": [],
+      "controls": [
+        {
+          "id": "_R_9bsnl6bvb_-zip",
+          "height": 48,
+          "width": 192
+        }
+      ],
+      "h1": 1,
+      "links": [
+        "#main-content",
+        "/",
+        "/service-areas",
+        "/about",
+        "/blog",
+        "/contact",
+        "tel:+15165860826",
+        "/services",
+        "/services/appliance-repair",
+        "/services/cooling",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "tel:+15165860826",
+        "/contact",
+        "#new-york",
+        "#new-jersey",
+        "#connecticut",
+        "/contact",
+        "/",
+        "/blog",
+        "/service-areas",
+        "tel:+15165860826",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/appliance-repair",
+        "/services/cooling/ac-repair",
+        "/services/cooling/ac-installation",
+        "/services/cooling/ac-maintenance",
+        "/services/cooling/ac-replacement",
+        "/services/heating/furnace-repair",
+        "/services/heating/heat-pumps",
+        "/services/heating/heating-maintenance",
+        "/services/heating/boiler-repair",
+        "/services/water-heater-repair",
+        "/privacy-policy",
+        "/terms",
+        "/",
+        "/services",
+        "tel:+15165860826"
+      ],
+      "violations": []
+    }
+  ],
+  "interactions": [
+    {
+      "width": 320,
+      "searchTitleAndKeyword": true,
+      "combinedFilter": true,
+      "emptyState": true,
+      "reset": true
+    },
+    {
+      "width": 320,
+      "category": "heating",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 320,
+      "category": "refrigerators",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 320,
+      "category": "washers-dryers",
+      "count": 2,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 320,
+      "category": "dishwashers",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 320,
+      "category": "ovens",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 320,
+      "category": "ice-makers",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 320,
+      "category": "commercial-refrigeration",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 320,
+      "category": "walk-in-coolers-freezers",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 320,
+      "category": "commercial-ice-machines",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 320,
+      "category": "commercial-ovens",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 320,
+      "category": "commercial-freezers",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 320,
+      "category": "preventive-maintenance",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 320,
+      "bookingOpenClose": true,
+      "submitted": false
+    },
+    {
+      "route": "/",
+      "width": 320,
+      "exactZipCoverage": true,
+      "leadingZeros": true,
+      "accessibleInvalidState": true,
+      "unsupportedMAandRI": true
+    },
+    {
+      "route": "/service-areas",
+      "width": 320,
+      "exactZipCoverage": true,
+      "leadingZeros": true,
+      "accessibleInvalidState": true,
+      "unsupportedMAandRI": true
+    },
+    {
+      "width": 390,
+      "searchTitleAndKeyword": true,
+      "combinedFilter": true,
+      "emptyState": true,
+      "reset": true
+    },
+    {
+      "width": 390,
+      "category": "heating",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 390,
+      "category": "refrigerators",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 390,
+      "category": "washers-dryers",
+      "count": 2,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 390,
+      "category": "dishwashers",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 390,
+      "category": "ovens",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 390,
+      "category": "ice-makers",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 390,
+      "category": "commercial-refrigeration",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 390,
+      "category": "walk-in-coolers-freezers",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 390,
+      "category": "commercial-ice-machines",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 390,
+      "category": "commercial-ovens",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 390,
+      "category": "commercial-freezers",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 390,
+      "category": "preventive-maintenance",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 390,
+      "bookingOpenClose": true,
+      "submitted": false
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "exactZipCoverage": true,
+      "leadingZeros": true,
+      "accessibleInvalidState": true,
+      "unsupportedMAandRI": true
+    },
+    {
+      "route": "/service-areas",
+      "width": 390,
+      "exactZipCoverage": true,
+      "leadingZeros": true,
+      "accessibleInvalidState": true,
+      "unsupportedMAandRI": true
+    },
+    {
+      "width": 768,
+      "searchTitleAndKeyword": true,
+      "combinedFilter": true,
+      "emptyState": true,
+      "reset": true
+    },
+    {
+      "width": 768,
+      "category": "heating",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 768,
+      "category": "refrigerators",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 768,
+      "category": "washers-dryers",
+      "count": 2,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 768,
+      "category": "dishwashers",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 768,
+      "category": "ovens",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 768,
+      "category": "ice-makers",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 768,
+      "category": "commercial-refrigeration",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 768,
+      "category": "walk-in-coolers-freezers",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 768,
+      "category": "commercial-ice-machines",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 768,
+      "category": "commercial-ovens",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 768,
+      "category": "commercial-freezers",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 768,
+      "category": "preventive-maintenance",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 768,
+      "bookingOpenClose": true,
+      "submitted": false
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "exactZipCoverage": true,
+      "leadingZeros": true,
+      "accessibleInvalidState": true,
+      "unsupportedMAandRI": true
+    },
+    {
+      "route": "/service-areas",
+      "width": 768,
+      "exactZipCoverage": true,
+      "leadingZeros": true,
+      "accessibleInvalidState": true,
+      "unsupportedMAandRI": true
+    },
+    {
+      "width": 1440,
+      "searchTitleAndKeyword": true,
+      "combinedFilter": true,
+      "emptyState": true,
+      "reset": true
+    },
+    {
+      "width": 1440,
+      "category": "heating",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 1440,
+      "category": "refrigerators",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 1440,
+      "category": "washers-dryers",
+      "count": 2,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 1440,
+      "category": "dishwashers",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 1440,
+      "category": "ovens",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 1440,
+      "category": "ice-makers",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 1440,
+      "category": "commercial-refrigeration",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 1440,
+      "category": "walk-in-coolers-freezers",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 1440,
+      "category": "commercial-ice-machines",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 1440,
+      "category": "commercial-ovens",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 1440,
+      "category": "commercial-freezers",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 1440,
+      "category": "preventive-maintenance",
+      "count": 1,
+      "featured": 1,
+      "falseEmptyState": false
+    },
+    {
+      "width": 1440,
+      "bookingOpenClose": true,
+      "submitted": false
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "exactZipCoverage": true,
+      "leadingZeros": true,
+      "accessibleInvalidState": true,
+      "unsupportedMAandRI": true
+    },
+    {
+      "route": "/service-areas",
+      "width": 1440,
+      "exactZipCoverage": true,
+      "leadingZeros": true,
+      "accessibleInvalidState": true,
+      "unsupportedMAandRI": true
+    }
+  ],
+  "links": [
+    {
+      "route": "/",
+      "status": 200
+    },
+    {
+      "route": "/service-areas",
+      "status": 200
+    },
+    {
+      "route": "/about",
+      "status": 200
+    },
+    {
+      "route": "/blog",
+      "status": 200
+    },
+    {
+      "route": "/contact",
+      "status": 200
+    },
+    {
+      "route": "/services",
+      "status": 200
+    },
+    {
+      "route": "/services/appliance-repair",
+      "status": 200
+    },
+    {
+      "route": "/services/cooling",
+      "status": 200
+    },
+    {
+      "route": "/services/cooling/ac-repair",
+      "status": 200
+    },
+    {
+      "route": "/services/cooling/ac-installation",
+      "status": 200
+    },
+    {
+      "route": "/services/cooling/ac-maintenance",
+      "status": 200
+    },
+    {
+      "route": "/services/cooling/ac-replacement",
+      "status": 200
+    },
+    {
+      "route": "/services/heating",
+      "status": 200
+    },
+    {
+      "route": "/services/heating/furnace-repair",
+      "status": 200
+    },
+    {
+      "route": "/services/heating/heat-pumps",
+      "status": 200
+    },
+    {
+      "route": "/services/heating/heating-maintenance",
+      "status": 200
+    },
+    {
+      "route": "/services/heating/boiler-repair",
+      "status": 200
+    },
+    {
+      "route": "/services/water-heater-repair",
+      "status": 200
+    },
+    {
+      "route": "/blog/category/heating",
+      "status": 200
+    },
+    {
+      "route": "/blog/furnace-not-heating",
+      "status": 200
+    },
+    {
+      "route": "/blog/category/commercial-freezers",
+      "status": 200
+    },
+    {
+      "route": "/blog/commercial-freezer-not-freezing",
+      "status": 200
+    },
+    {
+      "route": "/blog/category/preventive-maintenance",
+      "status": 200
+    },
+    {
+      "route": "/blog/commercial-ice-machine-cleaning",
+      "status": 200
+    },
+    {
+      "route": "/blog/category/commercial-ovens",
+      "status": 200
+    },
+    {
+      "route": "/blog/commercial-oven-not-heating",
+      "status": 200
+    },
+    {
+      "route": "/blog/category/commercial-refrigeration",
+      "status": 200
+    },
+    {
+      "route": "/blog/commercial-refrigerator-not-cooling",
+      "status": 200
+    },
+    {
+      "route": "/blog/category/dishwashers",
+      "status": 200
+    },
+    {
+      "route": "/blog/dishwasher-not-draining",
+      "status": 200
+    },
+    {
+      "route": "/blog/category/washers-dryers",
+      "status": 200
+    },
+    {
+      "route": "/blog/dryer-not-heating",
+      "status": 200
+    },
+    {
+      "route": "/blog/category/commercial-ice-machines",
+      "status": 200
+    },
+    {
+      "route": "/blog/ice-machine-not-making-ice",
+      "status": 200
+    },
+    {
+      "route": "/blog/category/ice-makers",
+      "status": 200
+    },
+    {
+      "route": "/blog/ice-maker-not-working",
+      "status": 200
+    },
+    {
+      "route": "/blog/category/ovens",
+      "status": 200
+    },
+    {
+      "route": "/blog/oven-not-heating",
+      "status": 200
+    },
+    {
+      "route": "/blog/category/refrigerators",
+      "status": 200
+    },
+    {
+      "route": "/blog/refrigerator-not-cooling",
+      "status": 200
+    },
+    {
+      "route": "/blog/category/walk-in-coolers-freezers",
+      "status": 200
+    },
+    {
+      "route": "/blog/walk-in-cooler-not-cooling",
+      "status": 200
+    },
+    {
+      "route": "/blog/washer-not-draining",
+      "status": 200
+    },
+    {
+      "route": "/privacy-policy",
+      "status": 200
+    },
+    {
+      "route": "/terms",
+      "status": 200
+    },
+    {
+      "route": "/brands",
+      "status": 200
+    },
+    {
+      "route": "/reviews",
+      "status": 200
+    }
+  ],
+  "warnings": [],
+  "blockedRequests": [],
+  "failures": [],
+  "browser": "158.0.8127.38",
+  "finishedAt": "2026-11-28T10:39:36.486Z",
+  "summary": {
+    "html": 0,
+    "layouts": 20,
+    "interactions": 64,
+    "links": 47,
+    "warnings": 0,
+    "failures": 0
+  }
+}

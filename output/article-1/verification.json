@@ -1,0 +1,274 @@
+{
+  "article": "furnace-not-heating-common-problems",
+  "status": "draft",
+  "http": [
+    {
+      "path": "/resources/furnace-not-heating-common-problems",
+      "status": 404,
+      "noindex": true,
+      "draftContentAbsent": true,
+      "articleSchemaAbsent": true
+    },
+    {
+      "path": "/sitemap.xml",
+      "draftExcluded": true
+    },
+    {
+      "path": "/resources",
+      "status": 200
+    },
+    {
+      "path": "/resources/category/hvac-heating",
+      "status": 200
+    },
+    {
+      "path": "/services/heating/furnace-repair",
+      "status": 200
+    },
+    {
+      "path": "/services/heating/heating-maintenance",
+      "status": 200
+    },
+    {
+      "path": "/resources/furnace-not-heating-common-problems/residential-gas-furnace-hero.webp",
+      "status": 200,
+      "bytes": 111066
+    },
+    {
+      "path": "/resources/furnace-not-heating-common-problems/dirty-and-clean-furnace-air-filters.webp",
+      "status": 200,
+      "bytes": 183644
+    },
+    {
+      "path": "/resources/furnace-not-heating-common-problems/snow-blocked-furnace-intake-vent.webp",
+      "status": 200,
+      "bytes": 156520
+    },
+    {
+      "path": "/resources/furnace-not-heating-common-problems/professional-furnace-inspection.webp",
+      "status": 200,
+      "bytes": 83360
+    }
+  ],
+  "layouts": [
+    {
+      "width": 320,
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "faqKeyboard": true,
+      "tableOfContents": true,
+      "headingCount": 16,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Ffurnace-not-heating-common-problems%2Fresidential-gas-furnace-hero.webp&w=640&q=75",
+          "sizes": "(max-width: 1023px) 100vw, 896px",
+          "alt": "AI-generated illustration of a residential gas furnace with closed panels and connected ductwork in a clean basement.",
+          "loading": "auto",
+          "width": 320,
+          "height": 180
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Ffurnace-not-heating-common-problems%2Fdirty-and-clean-furnace-air-filters.webp&w=640&q=75",
+          "sizes": "(max-width: 1023px) 100vw, 768px",
+          "alt": "AI-generated comparison of a dust-clogged pleated furnace filter beside a clean replacement filter.",
+          "loading": "lazy",
+          "width": 320,
+          "height": 180
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Ffurnace-not-heating-common-problems%2Fsnow-blocked-furnace-intake-vent.webp&w=640&q=75",
+          "sizes": "(max-width: 1023px) 100vw, 768px",
+          "alt": "AI-generated winter scene showing snow partially blocking a downward-facing furnace intake beside a home's exterior wall.",
+          "loading": "lazy",
+          "width": 320,
+          "height": 180
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Ffurnace-not-heating-common-problems%2Fprofessional-furnace-inspection.webp&w=640&q=75",
+          "sizes": "(max-width: 1023px) 100vw, 768px",
+          "alt": "AI-generated illustration of an HVAC professional using a flashlight and handheld instrument beside a closed furnace.",
+          "loading": "lazy",
+          "width": 320,
+          "height": 180
+        }
+      ],
+      "reservedImageSpace": true,
+      "imageLayoutShift": 0,
+      "realSharedBookingOpenedAndClosed": true,
+      "noSubmission": true,
+      "externalLinks": 8
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "faqKeyboard": true,
+      "tableOfContents": true,
+      "headingCount": 16,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Ffurnace-not-heating-common-problems%2Fresidential-gas-furnace-hero.webp&w=640&q=75",
+          "sizes": "(max-width: 1023px) 100vw, 896px",
+          "alt": "AI-generated illustration of a residential gas furnace with closed panels and connected ductwork in a clean basement.",
+          "loading": "auto",
+          "width": 390,
+          "height": 219
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Ffurnace-not-heating-common-problems%2Fdirty-and-clean-furnace-air-filters.webp&w=640&q=75",
+          "sizes": "(max-width: 1023px) 100vw, 768px",
+          "alt": "AI-generated comparison of a dust-clogged pleated furnace filter beside a clean replacement filter.",
+          "loading": "lazy",
+          "width": 390,
+          "height": 219
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Ffurnace-not-heating-common-problems%2Fsnow-blocked-furnace-intake-vent.webp&w=640&q=75",
+          "sizes": "(max-width: 1023px) 100vw, 768px",
+          "alt": "AI-generated winter scene showing snow partially blocking a downward-facing furnace intake beside a home's exterior wall.",
+          "loading": "lazy",
+          "width": 390,
+          "height": 219
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Ffurnace-not-heating-common-problems%2Fprofessional-furnace-inspection.webp&w=640&q=75",
+          "sizes": "(max-width: 1023px) 100vw, 768px",
+          "alt": "AI-generated illustration of an HVAC professional using a flashlight and handheld instrument beside a closed furnace.",
+          "loading": "lazy",
+          "width": 390,
+          "height": 219
+        }
+      ],
+      "reservedImageSpace": true,
+      "imageLayoutShift": 0,
+      "realSharedBookingOpenedAndClosed": true,
+      "noSubmission": true,
+      "externalLinks": 8
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "faqKeyboard": true,
+      "tableOfContents": true,
+      "headingCount": 16,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Ffurnace-not-heating-common-problems%2Fresidential-gas-furnace-hero.webp&w=828&q=75",
+          "sizes": "(max-width: 1023px) 100vw, 896px",
+          "alt": "AI-generated illustration of a residential gas furnace with closed panels and connected ductwork in a clean basement.",
+          "loading": "auto",
+          "width": 768,
+          "height": 432
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Ffurnace-not-heating-common-problems%2Fdirty-and-clean-furnace-air-filters.webp&w=828&q=75",
+          "sizes": "(max-width: 1023px) 100vw, 768px",
+          "alt": "AI-generated comparison of a dust-clogged pleated furnace filter beside a clean replacement filter.",
+          "loading": "lazy",
+          "width": 768,
+          "height": 432
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Ffurnace-not-heating-common-problems%2Fsnow-blocked-furnace-intake-vent.webp&w=828&q=75",
+          "sizes": "(max-width: 1023px) 100vw, 768px",
+          "alt": "AI-generated winter scene showing snow partially blocking a downward-facing furnace intake beside a home's exterior wall.",
+          "loading": "lazy",
+          "width": 768,
+          "height": 432
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Ffurnace-not-heating-common-problems%2Fprofessional-furnace-inspection.webp&w=828&q=75",
+          "sizes": "(max-width: 1023px) 100vw, 768px",
+          "alt": "AI-generated illustration of an HVAC professional using a flashlight and handheld instrument beside a closed furnace.",
+          "loading": "lazy",
+          "width": 768,
+          "height": 432
+        }
+      ],
+      "reservedImageSpace": true,
+      "imageLayoutShift": 0,
+      "realSharedBookingOpenedAndClosed": true,
+      "noSubmission": true,
+      "externalLinks": 8
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "violations": [],
+      "errors": [],
+      "faqKeyboard": true,
+      "tableOfContents": true,
+      "headingCount": 16,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Ffurnace-not-heating-common-problems%2Fresidential-gas-furnace-hero.webp&w=1080&q=75",
+          "sizes": "(max-width: 1023px) 100vw, 896px",
+          "alt": "AI-generated illustration of a residential gas furnace with closed panels and connected ductwork in a clean basement.",
+          "loading": "auto",
+          "width": 895,
+          "height": 504
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Ffurnace-not-heating-common-problems%2Fdirty-and-clean-furnace-air-filters.webp&w=828&q=75",
+          "sizes": "(max-width: 1023px) 100vw, 768px",
+          "alt": "AI-generated comparison of a dust-clogged pleated furnace filter beside a clean replacement filter.",
+          "loading": "lazy",
+          "width": 768,
+          "height": 432
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Ffurnace-not-heating-common-problems%2Fsnow-blocked-furnace-intake-vent.webp&w=828&q=75",
+          "sizes": "(max-width: 1023px) 100vw, 768px",
+          "alt": "AI-generated winter scene showing snow partially blocking a downward-facing furnace intake beside a home's exterior wall.",
+          "loading": "lazy",
+          "width": 768,
+          "height": 432
+        },
+        {
+          "src": "http://127.0.0.1:3127/_next/image?url=%2Fresources%2Ffurnace-not-heating-common-problems%2Fprofessional-furnace-inspection.webp&w=828&q=75",
+          "sizes": "(max-width: 1023px) 100vw, 768px",
+          "alt": "AI-generated illustration of an HVAC professional using a flashlight and handheld instrument beside a closed furnace.",
+          "loading": "lazy",
+          "width": 768,
+          "height": 432
+        }
+      ],
+      "reservedImageSpace": true,
+      "imageLayoutShift": 0,
+      "realSharedBookingOpenedAndClosed": true,
+      "noSubmission": true,
+      "externalLinks": 8
+    }
+  ],
+  "sourceLinks": [
+    {
+      "title": "CPSC: Carbon Monoxide Fact Sheet",
+      "href": "https://www.cpsc.gov/safety-education/safety-guides/carbon-monoxide/carbon-monoxide-fact-sheet"
+    },
+    {
+      "title": "CPSC: Winter Weather Safety Tips",
+      "href": "https://www.cpsc.gov/Newsroom/News-Releases/2025/As-Winter-Weather-Impacts-Millions-CPSC-Issues-Safety-Tips-to-Help-Families-Prevent-Carbon-Monoxide-Poisoning-and-Fires"
+    },
+    {
+      "title": "CPSC: Keep Warm and Safe This Winter",
+      "href": "https://www.cpsc.gov/Newsroom/News-Releases/2026/Keep-Warm-and-Safe-This-Winter-Tips-for-Using-Generators-Furnaces-and-Space-Heaters"
+    },
+    {
+      "title": "U.S. Department of Energy: HVAC Proper Installation of Filters",
+      "href": "https://bsesc.energy.gov/energy-basics/hvac-proper-installation-filters"
+    }
+  ],
+  "failures": [],
+  "wordCount": 1795,
+  "author": {
+    "name": "Apex Home Services",
+    "type": "Organization",
+    "id": "http://localhost:3000/#organization"
+  },
+  "browser": "158.0.8127.38",
+  "offlinePreviewImages": 4
+}

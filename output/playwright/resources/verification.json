@@ -1,0 +1,432 @@
+{
+  "http": [
+    {
+      "route": "/resources",
+      "status": 200,
+      "canonical": "http://localhost:3000/resources",
+      "noindex": true,
+      "draftsExcluded": true
+    },
+    {
+      "route": "/resources/category/hvac-heating",
+      "status": 200,
+      "canonical": "http://localhost:3000/resources/category/hvac-heating",
+      "noindex": true,
+      "draftsExcluded": true
+    },
+    {
+      "route": "/resources/category/water-heaters",
+      "status": 200,
+      "canonical": "http://localhost:3000/resources/category/water-heaters",
+      "noindex": true,
+      "draftsExcluded": true
+    },
+    {
+      "route": "/resources/category/appliance-repair",
+      "status": 200,
+      "canonical": "http://localhost:3000/resources/category/appliance-repair",
+      "noindex": true,
+      "draftsExcluded": true
+    },
+    {
+      "route": "/resources/category/home-maintenance",
+      "status": 200,
+      "canonical": "http://localhost:3000/resources/category/home-maintenance",
+      "noindex": true,
+      "draftsExcluded": true
+    },
+    {
+      "route": "/resources/category/energy-efficiency",
+      "status": 200,
+      "canonical": "http://localhost:3000/resources/category/energy-efficiency",
+      "noindex": true,
+      "draftsExcluded": true
+    },
+    {
+      "route": "/resources/furnace-not-heating-common-problems",
+      "status": 404
+    },
+    {
+      "route": "/resources/how-to-prevent-frozen-pipes-in-winter",
+      "status": 404
+    },
+    {
+      "route": "/resources/water-heater-warning-signs",
+      "status": 404
+    },
+    {
+      "route": "/resources/why-are-heating-bills-so-high",
+      "status": 404
+    },
+    {
+      "route": "/resources/repair-or-replace-home-appliances",
+      "status": 404
+    },
+    {
+      "route": "/resources/missing-article",
+      "status": 404
+    },
+    {
+      "route": "/resources/category/missing-category",
+      "status": 404
+    },
+    {
+      "route": "/resources/README.md",
+      "status": 404
+    },
+    {
+      "route": "/sitemap.xml",
+      "emptyResourceRoutesExcluded": true
+    }
+  ],
+  "layouts": [
+    {
+      "name": "/resources-320",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "name": "/resources/category/hvac-heating-320",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "name": "article-fixture-320",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "name": "listing-fixture-320",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "name": "/resources-390",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "name": "/resources/category/hvac-heating-390",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "name": "article-fixture-390",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "name": "listing-fixture-390",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "name": "/resources-768",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "name": "/resources/category/hvac-heating-768",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "name": "article-fixture-768",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "name": "listing-fixture-768",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "name": "/resources-1280",
+      "width": 1280,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "name": "/resources/category/hvac-heating-1280",
+      "width": 1280,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "name": "article-fixture-1280",
+      "width": 1280,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "name": "listing-fixture-1280",
+      "width": 1280,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "name": "/resources-1440",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "name": "/resources/category/hvac-heating-1440",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "name": "article-fixture-1440",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "name": "listing-fixture-1440",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    }
+  ],
+  "interactions": [
+    {
+      "width": 320,
+      "mobileResourcesNavigation": true
+    },
+    {
+      "width": 320,
+      "bookingOpenedAndClosed": true,
+      "noSubmission": true
+    },
+    {
+      "width": 320,
+      "nativeFaqKeyboard": true,
+      "tableOfContents": true
+    },
+    {
+      "width": 390,
+      "mobileResourcesNavigation": true
+    },
+    {
+      "width": 390,
+      "bookingOpenedAndClosed": true,
+      "noSubmission": true
+    },
+    {
+      "width": 390,
+      "nativeFaqKeyboard": true,
+      "tableOfContents": true
+    },
+    {
+      "width": 768,
+      "mobileResourcesNavigation": true
+    },
+    {
+      "width": 768,
+      "bookingOpenedAndClosed": true,
+      "noSubmission": true
+    },
+    {
+      "width": 768,
+      "nativeFaqKeyboard": true,
+      "tableOfContents": true
+    },
+    {
+      "width": 1280,
+      "bookingOpenedAndClosed": true,
+      "noSubmission": true
+    },
+    {
+      "width": 1280,
+      "nativeFaqKeyboard": true,
+      "tableOfContents": true
+    },
+    {
+      "width": 1440,
+      "bookingOpenedAndClosed": true,
+      "noSubmission": true
+    },
+    {
+      "width": 1440,
+      "nativeFaqKeyboard": true,
+      "tableOfContents": true
+    }
+  ],
+  "links": [
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/service-areas",
+      "status": 200
+    },
+    {
+      "path": "/about",
+      "status": 200
+    },
+    {
+      "path": "/resources",
+      "status": 200
+    },
+    {
+      "path": "/contact",
+      "status": 200
+    },
+    {
+      "path": "/services",
+      "status": 200
+    },
+    {
+      "path": "/services/appliance-repair",
+      "status": 200
+    },
+    {
+      "path": "/services/cooling",
+      "status": 200
+    },
+    {
+      "path": "/services/cooling/ac-repair",
+      "status": 200
+    },
+    {
+      "path": "/services/cooling/ac-installation",
+      "status": 200
+    },
+    {
+      "path": "/services/cooling/ac-maintenance",
+      "status": 200
+    },
+    {
+      "path": "/services/cooling/ac-replacement",
+      "status": 200
+    },
+    {
+      "path": "/services/heating",
+      "status": 200
+    },
+    {
+      "path": "/services/heating/furnace-repair",
+      "status": 200
+    },
+    {
+      "path": "/services/heating/heat-pumps",
+      "status": 200
+    },
+    {
+      "path": "/services/heating/heating-maintenance",
+      "status": 200
+    },
+    {
+      "path": "/services/heating/boiler-repair",
+      "status": 200
+    },
+    {
+      "path": "/services/water-heater-repair",
+      "status": 200
+    },
+    {
+      "path": "/resources/category/hvac-heating",
+      "status": 200
+    },
+    {
+      "path": "/resources/category/water-heaters",
+      "status": 200
+    },
+    {
+      "path": "/resources/category/appliance-repair",
+      "status": 200
+    },
+    {
+      "path": "/resources/category/home-maintenance",
+      "status": 200
+    },
+    {
+      "path": "/resources/category/energy-efficiency",
+      "status": 200
+    },
+    {
+      "path": "/privacy-policy",
+      "status": 200
+    },
+    {
+      "path": "/terms",
+      "status": 200
+    }
+  ],
+  "failures": [],
+  "browser": "158.0.8127.38"
+}

@@ -14,6 +14,7 @@ export const primaryNavigation: NavigationItem[] = [
   },
   { label: "Service Areas", href: "/service-areas" },
   { label: "About", href: "/about" },
+  { label: "Blog", href: "/blog" },
   { label: contactEntry.label, href: contactEntry.href },
 ];
 

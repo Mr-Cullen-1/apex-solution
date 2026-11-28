@@ -60,6 +60,8 @@ Legacy Tailwind utility names (`bg-navy`, `bg-warm-white`, `bg-soft-white`, `tex
 
 ## Typography
 
+The Resources section uses the same tokens, Geist and section spacing. Its editorial hero, topic navigation and honest empty state introduce no new colors. Article/card images reserve a 16:9 region; `.resource-prose` scopes readable H2/H3, list and callout styles to article bodies. Native FAQ disclosures require no added client JavaScript. Article 1 AI illustrations carry visible provenance captions (including an optional featured-image caption); source links remain underlined and announce new-tab behavior accessibly. Missing editorial photography stays null; the empty-state house drawing is a decorative placeholder, not a claimed asset.
+
 Geist, self-hosted via `next/font`. Headline scale is heavy but not maximal — `tracking-[-0.03em]`, `leading-[1.02–1.08]` — closer to the reference's confident-but-calm hierarchy than the earlier ultra-condensed editorial treatment.
 
 ## Layout and interaction
@@ -89,6 +91,9 @@ The approved client-supplied logos are `public/brand/apex-mark-{colored,white,bl
 - Confirmation styling never implies a transmitted or confirmed appointment while the submission adapter is unconfigured.
 
 ## Content integrity carried into visuals
+
+- Blog layouts share the existing shell, brand tokens and article typography. The responsive listing uses one featured card, a 1/2/3-column guide grid, labeled title/keyword search and grouped category filtering. Article pages preserve original Word formatting, a sticky desktop table of contents, readable body width and focusable horizontal table scroll regions. A one-article category shows its featured article without a contradictory empty-result message.
+- Blog imagery uses fixed 16:9 dimensions with `next/image`, descriptive alt text and visible disclosure for AI editorial illustrations. Generated illustrations are never presented as photographs of Apex service visits. Article CTAs reuse the existing booking modal and approved phone/hours/pricing terms. The shared ZIP checker uses text input with a numeric keyboard hint, a linked invalid-input error and live coverage results.
 
 - The homepage uses screen-only `content-visibility: auto` below the hero and on its footer, with `contain-intrinsic-size: auto 700px`. Keep content server-rendered and retain normal print rendering. Recheck scrolling, focus and viewport layout when changing section sizes; see the [19 November performance evidence](audits/reviews-performance-2026-11-19.md).
 - Review dates use the full `text-slate` token. Do not reintroduce the opacity modifier: it failed normal-text contrast on the review-card background.

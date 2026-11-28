@@ -1,0 +1,605 @@
+{
+  "note": "Client import deliverables and QA artifacts. Earlier shared infrastructure is documented separately; this manifest excludes itself.",
+  "files": [
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "bytes": 10764
+    },
+    {
+      "path": "docs/BLOG_IMPLEMENTATION_REPORT.md",
+      "bytes": 16223
+    },
+    {
+      "path": "docs/DESIGN_SYSTEM.md",
+      "bytes": 11808
+    },
+    {
+      "path": "docs/RESOURCES.md",
+      "bytes": 10799
+    },
+    {
+      "path": "docs/RESOURCES_IMPLEMENTATION_REPORT.md",
+      "bytes": 10390
+    },
+    {
+      "path": "docs/SERVICE_COVERAGE.md",
+      "bytes": 4230
+    },
+    {
+      "path": "next.config.ts",
+      "bytes": 2240
+    },
+    {
+      "path": "output/blog-assets/manifest.json",
+      "bytes": 1619
+    },
+    {
+      "path": "output/blog-assets/originals/commercial-ice.png",
+      "bytes": 2141201
+    },
+    {
+      "path": "output/blog-assets/originals/commercial-oven.png",
+      "bytes": 2080979
+    },
+    {
+      "path": "output/blog-assets/originals/commercial-refrigeration.png",
+      "bytes": 2145980
+    },
+    {
+      "path": "output/blog-assets/originals/dishwasher.png",
+      "bytes": 1950441
+    },
+    {
+      "path": "output/blog-assets/originals/laundry.png",
+      "bytes": 2414643
+    },
+    {
+      "path": "output/blog-assets/originals/walk-in.png",
+      "bytes": 2251914
+    },
+    {
+      "path": "output/blog-qa/blog-1440-viewport.png",
+      "bytes": 182854
+    },
+    {
+      "path": "output/blog-qa/blog-1440.png",
+      "bytes": 2401970
+    },
+    {
+      "path": "output/blog-qa/blog-320-viewport.png",
+      "bytes": 60382
+    },
+    {
+      "path": "output/blog-qa/blog-320.png",
+      "bytes": 1484562
+    },
+    {
+      "path": "output/blog-qa/blog-390-viewport.png",
+      "bytes": 67779
+    },
+    {
+      "path": "output/blog-qa/blog-390.png",
+      "bytes": 1940178
+    },
+    {
+      "path": "output/blog-qa/blog-768-viewport.png",
+      "bytes": 82015
+    },
+    {
+      "path": "output/blog-qa/blog-768.png",
+      "bytes": 1701903
+    },
+    {
+      "path": "output/blog-qa/category-heating-1440-viewport.png",
+      "bytes": 236897
+    },
+    {
+      "path": "output/blog-qa/category-heating-1440.png",
+      "bytes": 512086
+    },
+    {
+      "path": "output/blog-qa/category-heating-320-viewport.png",
+      "bytes": 50111
+    },
+    {
+      "path": "output/blog-qa/category-heating-320.png",
+      "bytes": 285412
+    },
+    {
+      "path": "output/blog-qa/category-heating-390-viewport.png",
+      "bytes": 66940
+    },
+    {
+      "path": "output/blog-qa/category-heating-390.png",
+      "bytes": 311703
+    },
+    {
+      "path": "output/blog-qa/category-heating-768-viewport.png",
+      "bytes": 104453
+    },
+    {
+      "path": "output/blog-qa/category-heating-768.png",
+      "bytes": 308481
+    },
+    {
+      "path": "output/blog-qa/category-washers-dryers-1440-viewport.png",
+      "bytes": 266017
+    },
+    {
+      "path": "output/blog-qa/category-washers-dryers-1440.png",
+      "bytes": 767723
+    },
+    {
+      "path": "output/blog-qa/category-washers-dryers-320-viewport.png",
+      "bytes": 64326
+    },
+    {
+      "path": "output/blog-qa/category-washers-dryers-320.png",
+      "bytes": 400724
+    },
+    {
+      "path": "output/blog-qa/category-washers-dryers-390-viewport.png",
+      "bytes": 69652
+    },
+    {
+      "path": "output/blog-qa/category-washers-dryers-390.png",
+      "bytes": 466118
+    },
+    {
+      "path": "output/blog-qa/category-washers-dryers-768-viewport.png",
+      "bytes": 113195
+    },
+    {
+      "path": "output/blog-qa/category-washers-dryers-768.png",
+      "bytes": 456935
+    },
+    {
+      "path": "output/blog-qa/furnace-not-heating-1440-viewport.png",
+      "bytes": 419544
+    },
+    {
+      "path": "output/blog-qa/furnace-not-heating-1440.png",
+      "bytes": 1772909
+    },
+    {
+      "path": "output/blog-qa/furnace-not-heating-320-viewport.png",
+      "bytes": 114907
+    },
+    {
+      "path": "output/blog-qa/furnace-not-heating-320.png",
+      "bytes": 1188454
+    },
+    {
+      "path": "output/blog-qa/furnace-not-heating-390-viewport.png",
+      "bytes": 150217
+    },
+    {
+      "path": "output/blog-qa/furnace-not-heating-390.png",
+      "bytes": 1411144
+    },
+    {
+      "path": "output/blog-qa/furnace-not-heating-768-viewport.png",
+      "bytes": 303387
+    },
+    {
+      "path": "output/blog-qa/furnace-not-heating-768.png",
+      "bytes": 1443684
+    },
+    {
+      "path": "output/blog-qa/home-zip-1440-viewport.png",
+      "bytes": 159999
+    },
+    {
+      "path": "output/blog-qa/home-zip-1440.png",
+      "bytes": 850439
+    },
+    {
+      "path": "output/blog-qa/home-zip-320-viewport.png",
+      "bytes": 62780
+    },
+    {
+      "path": "output/blog-qa/home-zip-320.png",
+      "bytes": 461135
+    },
+    {
+      "path": "output/blog-qa/home-zip-390-viewport.png",
+      "bytes": 67551
+    },
+    {
+      "path": "output/blog-qa/home-zip-390.png",
+      "bytes": 449693
+    },
+    {
+      "path": "output/blog-qa/home-zip-768-viewport.png",
+      "bytes": 75968
+    },
+    {
+      "path": "output/blog-qa/home-zip-768.png",
+      "bytes": 697926
+    },
+    {
+      "path": "output/blog-qa/home-zip-supported-1440.png",
+      "bytes": 33007
+    },
+    {
+      "path": "output/blog-qa/home-zip-supported-320.png",
+      "bytes": 33421
+    },
+    {
+      "path": "output/blog-qa/home-zip-supported-390.png",
+      "bytes": 32172
+    },
+    {
+      "path": "output/blog-qa/home-zip-supported-768.png",
+      "bytes": 33044
+    },
+    {
+      "path": "output/blog-qa/home-zip-unsupported-1440.png",
+      "bytes": 40228
+    },
+    {
+      "path": "output/blog-qa/home-zip-unsupported-320.png",
+      "bytes": 40605
+    },
+    {
+      "path": "output/blog-qa/home-zip-unsupported-390.png",
+      "bytes": 39647
+    },
+    {
+      "path": "output/blog-qa/home-zip-unsupported-768.png",
+      "bytes": 40080
+    },
+    {
+      "path": "output/blog-qa/routing-verification.json",
+      "bytes": 3597
+    },
+    {
+      "path": "output/blog-qa/service-areas-zip-1440-viewport.png",
+      "bytes": 122669
+    },
+    {
+      "path": "output/blog-qa/service-areas-zip-1440.png",
+      "bytes": 464236
+    },
+    {
+      "path": "output/blog-qa/service-areas-zip-320-viewport.png",
+      "bytes": 57383
+    },
+    {
+      "path": "output/blog-qa/service-areas-zip-320.png",
+      "bytes": 412644
+    },
+    {
+      "path": "output/blog-qa/service-areas-zip-390-viewport.png",
+      "bytes": 64228
+    },
+    {
+      "path": "output/blog-qa/service-areas-zip-390.png",
+      "bytes": 418239
+    },
+    {
+      "path": "output/blog-qa/service-areas-zip-768-viewport.png",
+      "bytes": 78104
+    },
+    {
+      "path": "output/blog-qa/service-areas-zip-768.png",
+      "bytes": 425599
+    },
+    {
+      "path": "output/blog-qa/service-areas-zip-supported-1440.png",
+      "bytes": 33264
+    },
+    {
+      "path": "output/blog-qa/service-areas-zip-supported-320.png",
+      "bytes": 33421
+    },
+    {
+      "path": "output/blog-qa/service-areas-zip-supported-390.png",
+      "bytes": 32183
+    },
+    {
+      "path": "output/blog-qa/service-areas-zip-supported-768.png",
+      "bytes": 33058
+    },
+    {
+      "path": "output/blog-qa/service-areas-zip-unsupported-1440.png",
+      "bytes": 41380
+    },
+    {
+      "path": "output/blog-qa/service-areas-zip-unsupported-320.png",
+      "bytes": 40599
+    },
+    {
+      "path": "output/blog-qa/service-areas-zip-unsupported-390.png",
+      "bytes": 39653
+    },
+    {
+      "path": "output/blog-qa/service-areas-zip-unsupported-768.png",
+      "bytes": 40088
+    },
+    {
+      "path": "output/blog-qa/unit-tests.txt",
+      "bytes": 23128
+    },
+    {
+      "path": "output/blog-qa/verification-focused.json",
+      "bytes": 120747
+    },
+    {
+      "path": "output/blog-qa/verification.json",
+      "bytes": 425807
+    },
+    {
+      "path": "output/blog-source/README.md",
+      "bytes": 4265
+    },
+    {
+      "path": "output/blog-source/[Content_Types].xml",
+      "bytes": 927
+    },
+    {
+      "path": "output/blog-source/_rels__.rels",
+      "bytes": 588
+    },
+    {
+      "path": "output/blog-source/docProps__app.xml",
+      "bytes": 231
+    },
+    {
+      "path": "output/blog-source/docProps__core.xml",
+      "bytes": 430
+    },
+    {
+      "path": "output/blog-source/extraction-validation.json",
+      "bytes": 7776
+    },
+    {
+      "path": "output/blog-source/publication-manifest.json",
+      "bytes": 14306
+    },
+    {
+      "path": "output/blog-source/source-structure.json",
+      "bytes": 1027319
+    },
+    {
+      "path": "output/blog-source/source-transcript.txt",
+      "bytes": 75062
+    },
+    {
+      "path": "output/blog-source/word___rels__document.xml.rels",
+      "bytes": 1094
+    },
+    {
+      "path": "output/blog-source/word__document.xml",
+      "bytes": 181415
+    },
+    {
+      "path": "output/blog-source/word__numbering.xml",
+      "bytes": 5958
+    },
+    {
+      "path": "output/blog-source/word__styles.xml",
+      "bytes": 5214
+    },
+    {
+      "path": "public/resources/client-articles/commercial-ice.webp",
+      "bytes": 108702
+    },
+    {
+      "path": "public/resources/client-articles/commercial-oven.webp",
+      "bytes": 114070
+    },
+    {
+      "path": "public/resources/client-articles/commercial-refrigeration.webp",
+      "bytes": 123460
+    },
+    {
+      "path": "public/resources/client-articles/dishwasher.webp",
+      "bytes": 112092
+    },
+    {
+      "path": "public/resources/client-articles/furnace.webp",
+      "bytes": 100496
+    },
+    {
+      "path": "public/resources/client-articles/ice-maker.webp",
+      "bytes": 70274
+    },
+    {
+      "path": "public/resources/client-articles/laundry.webp",
+      "bytes": 186090
+    },
+    {
+      "path": "public/resources/client-articles/oven.webp",
+      "bytes": 202286
+    },
+    {
+      "path": "public/resources/client-articles/refrigerator.webp",
+      "bytes": 102318
+    },
+    {
+      "path": "public/resources/client-articles/walk-in.webp",
+      "bytes": 142894
+    },
+    {
+      "path": "scripts/extract-client-articles.ps1",
+      "bytes": 12468
+    },
+    {
+      "path": "scripts/extract-zip-coverage.ps1",
+      "bytes": 4123
+    },
+    {
+      "path": "scripts/prepare-blog-images.cjs",
+      "bytes": 2626
+    },
+    {
+      "path": "src/app/(marketing)/about/page.tsx",
+      "bytes": 6614
+    },
+    {
+      "path": "src/app/(marketing)/blog/[slug]/page.tsx",
+      "bytes": 863
+    },
+    {
+      "path": "src/app/(marketing)/blog/category/[category]/page.tsx",
+      "bytes": 1385
+    },
+    {
+      "path": "src/app/(marketing)/blog/page.tsx",
+      "bytes": 619
+    },
+    {
+      "path": "src/app/(marketing)/resources/[slug]/page.tsx",
+      "bytes": 500
+    },
+    {
+      "path": "src/app/(marketing)/resources/category/[category]/page.tsx",
+      "bytes": 633
+    },
+    {
+      "path": "src/app/(marketing)/resources/page.tsx",
+      "bytes": 131
+    },
+    {
+      "path": "src/app/(marketing)/service-areas/page.tsx",
+      "bytes": 5370
+    },
+    {
+      "path": "src/app/(marketing)/services/page.tsx",
+      "bytes": 4399
+    },
+    {
+      "path": "src/app/globals.css",
+      "bytes": 26264
+    },
+    {
+      "path": "src/components/home/service-area-explorer.tsx",
+      "bytes": 6324
+    },
+    {
+      "path": "src/components/layout/footer.tsx",
+      "bytes": 4252
+    },
+    {
+      "path": "src/components/resources/resource-article.tsx",
+      "bytes": 4917
+    },
+    {
+      "path": "src/components/resources/resource-content.tsx",
+      "bytes": 3354
+    },
+    {
+      "path": "src/components/resources/resource-cta.tsx",
+      "bytes": 1262
+    },
+    {
+      "path": "src/components/resources/resource-listing.tsx",
+      "bytes": 2626
+    },
+    {
+      "path": "src/components/resources/resource-navigation.tsx",
+      "bytes": 1735
+    },
+    {
+      "path": "src/components/resources/resource-search.tsx",
+      "bytes": 3430
+    },
+    {
+      "path": "src/components/service-areas/zip-coverage-checker.tsx",
+      "bytes": 4176
+    },
+    {
+      "path": "src/content/company.ts",
+      "bytes": 1538
+    },
+    {
+      "path": "src/content/navigation.ts",
+      "bytes": 1396
+    },
+    {
+      "path": "src/content/resources/articles.ts",
+      "bytes": 428
+    },
+    {
+      "path": "src/content/resources/categories.ts",
+      "bytes": 3972
+    },
+    {
+      "path": "src/content/resources/client-articles-source.json",
+      "bytes": 1357489
+    },
+    {
+      "path": "src/content/resources/client-articles.ts",
+      "bytes": 9766
+    },
+    {
+      "path": "src/content/resources/index.ts",
+      "bytes": 6613
+    },
+    {
+      "path": "src/content/resources/planned-drafts.ts",
+      "bytes": 5689
+    },
+    {
+      "path": "src/content/resources/sources.ts",
+      "bytes": 1631
+    },
+    {
+      "path": "src/content/service-coverage-data.json",
+      "bytes": 31828
+    },
+    {
+      "path": "src/content/service-coverage.ts",
+      "bytes": 1698
+    },
+    {
+      "path": "src/content/site.ts",
+      "bytes": 1861
+    },
+    {
+      "path": "src/lib/resource-seo.ts",
+      "bytes": 3671
+    },
+    {
+      "path": "src/types/resource.ts",
+      "bytes": 2910
+    },
+    {
+      "path": "tests/article-1.test.cjs",
+      "bytes": 9851
+    },
+    {
+      "path": "tests/audit-seo.test.cjs",
+      "bytes": 4705
+    },
+    {
+      "path": "tests/blog-browser.cjs",
+      "bytes": 19208
+    },
+    {
+      "path": "tests/client-blog.test.cjs",
+      "bytes": 10365
+    },
+    {
+      "path": "tests/load-ts.cjs",
+      "bytes": 1303
+    },
+    {
+      "path": "tests/resource-fixture.cjs",
+      "bytes": 2961
+    },
+    {
+      "path": "tests/resources-render.test.cjs",
+      "bytes": 4651
+    },
+    {
+      "path": "tests/resources.test.cjs",
+      "bytes": 6015
+    },
+    {
+      "path": "tests/service-coverage.test.cjs",
+      "bytes": 3327
+    }
+  ]
+}

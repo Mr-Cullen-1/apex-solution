@@ -1,0 +1,163 @@
+{
+    "sourceSha256":  "694104eaf150b49f1a798e4c1d3ac387c7fc398a32086fc6ef095784484be2c4",
+    "articleCount":  13,
+    "exactXmlTextMatch":  true,
+    "articles":  [
+                     {
+                         "slug":  "furnace-not-heating",
+                         "exactXmlTextMatch":  true,
+                         "counts":  {
+                                        "words":  1328,
+                                        "characters":  7383,
+                                        "blocks":  43,
+                                        "tables":  0,
+                                        "faq":  5,
+                                        "hyperlinks":  0
+                                    }
+                     },
+                     {
+                         "slug":  "refrigerator-not-cooling",
+                         "exactXmlTextMatch":  true,
+                         "counts":  {
+                                        "words":  1297,
+                                        "characters":  7198,
+                                        "blocks":  50,
+                                        "tables":  1,
+                                        "faq":  6,
+                                        "hyperlinks":  1
+                                    }
+                     },
+                     {
+                         "slug":  "commercial-refrigerator-not-cooling",
+                         "exactXmlTextMatch":  true,
+                         "counts":  {
+                                        "words":  987,
+                                        "characters":  5776,
+                                        "blocks":  54,
+                                        "tables":  0,
+                                        "faq":  4,
+                                        "hyperlinks":  2
+                                    }
+                     },
+                     {
+                         "slug":  "washer-not-draining",
+                         "exactXmlTextMatch":  true,
+                         "counts":  {
+                                        "words":  792,
+                                        "characters":  4322,
+                                        "blocks":  30,
+                                        "tables":  1,
+                                        "faq":  4,
+                                        "hyperlinks":  0
+                                    }
+                     },
+                     {
+                         "slug":  "dryer-not-heating",
+                         "exactXmlTextMatch":  true,
+                         "counts":  {
+                                        "words":  814,
+                                        "characters":  4415,
+                                        "blocks":  34,
+                                        "tables":  0,
+                                        "faq":  4,
+                                        "hyperlinks":  0
+                                    }
+                     },
+                     {
+                         "slug":  "dishwasher-not-draining",
+                         "exactXmlTextMatch":  true,
+                         "counts":  {
+                                        "words":  742,
+                                        "characters":  4104,
+                                        "blocks":  33,
+                                        "tables":  0,
+                                        "faq":  4,
+                                        "hyperlinks":  0
+                                    }
+                     },
+                     {
+                         "slug":  "oven-not-heating",
+                         "exactXmlTextMatch":  true,
+                         "counts":  {
+                                        "words":  875,
+                                        "characters":  4817,
+                                        "blocks":  34,
+                                        "tables":  1,
+                                        "faq":  4,
+                                        "hyperlinks":  0
+                                    }
+                     },
+                     {
+                         "slug":  "ice-maker-not-working",
+                         "exactXmlTextMatch":  true,
+                         "counts":  {
+                                        "words":  758,
+                                        "characters":  4088,
+                                        "blocks":  28,
+                                        "tables":  1,
+                                        "faq":  4,
+                                        "hyperlinks":  0
+                                    }
+                     },
+                     {
+                         "slug":  "walk-in-cooler-not-cooling",
+                         "exactXmlTextMatch":  true,
+                         "counts":  {
+                                        "words":  803,
+                                        "characters":  4633,
+                                        "blocks":  35,
+                                        "tables":  1,
+                                        "faq":  4,
+                                        "hyperlinks":  1
+                                    }
+                     },
+                     {
+                         "slug":  "commercial-ice-machine-cleaning",
+                         "exactXmlTextMatch":  true,
+                         "counts":  {
+                                        "words":  625,
+                                        "characters":  3587,
+                                        "blocks":  37,
+                                        "tables":  1,
+                                        "faq":  4,
+                                        "hyperlinks":  1
+                                    }
+                     },
+                     {
+                         "slug":  "commercial-oven-not-heating",
+                         "exactXmlTextMatch":  true,
+                         "counts":  {
+                                        "words":  820,
+                                        "characters":  4639,
+                                        "blocks":  29,
+                                        "tables":  1,
+                                        "faq":  4,
+                                        "hyperlinks":  0
+                                    }
+                     },
+                     {
+                         "slug":  "commercial-freezer-not-freezing",
+                         "exactXmlTextMatch":  true,
+                         "counts":  {
+                                        "words":  826,
+                                        "characters":  4772,
+                                        "blocks":  36,
+                                        "tables":  1,
+                                        "faq":  4,
+                                        "hyperlinks":  1
+                                    }
+                     },
+                     {
+                         "slug":  "ice-machine-not-making-ice",
+                         "exactXmlTextMatch":  true,
+                         "counts":  {
+                                        "words":  789,
+                                        "characters":  4411,
+                                        "blocks":  29,
+                                        "tables":  1,
+                                        "faq":  4,
+                                        "hyperlinks":  0
+                                    }
+                     }
+                 ]
+}

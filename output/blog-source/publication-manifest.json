@@ -1,0 +1,369 @@
+[
+  {
+    "slug": "commercial-freezer-not-freezing",
+    "status": "published",
+    "publishedAt": "2026-11-28",
+    "title": "Commercial Freezer Not Freezing? Causes and What to Do With Your Product",
+    "seoTitle": "Commercial Freezer Not Freezing? Causes and What to Do With Your Product",
+    "metaDescription": "Reach-in, chest or display freezer running warm or icing up? What to do with frozen product, the most common causes, and when to call a refrigeration tech.",
+    "canonical": "http://localhost:3000/blog/commercial-freezer-not-freezing",
+    "category": "commercial-freezers",
+    "author": {
+      "name": "Apex Home Services",
+      "type": "Organization",
+      "id": "http://localhost:3000/#organization"
+    },
+    "image": {
+      "src": "/resources/client-articles/commercial-refrigeration.webp",
+      "width": 1600,
+      "height": 900
+    },
+    "alt": "AI-generated illustration of commercial refrigerator and freezer cabinets in a restaurant kitchen.",
+    "bodyWords": 826,
+    "relatedArticles": [
+      "walk-in-cooler-not-cooling",
+      "commercial-refrigerator-not-cooling"
+    ],
+    "relatedServices": []
+  },
+  {
+    "slug": "commercial-ice-machine-cleaning",
+    "status": "published",
+    "publishedAt": "2026-11-28",
+    "title": "How Often Should You Clean a Commercial Ice Machine?",
+    "seoTitle": "How Often Should You Clean a Commercial Ice Machine?",
+    "metaDescription": "Cloudy ice, slow production or a strange taste? How often to clean and sanitize a commercial ice machine, what staff can do daily, and what a service visit covers.",
+    "canonical": "http://localhost:3000/blog/commercial-ice-machine-cleaning",
+    "category": "preventive-maintenance",
+    "author": {
+      "name": "Apex Home Services",
+      "type": "Organization",
+      "id": "http://localhost:3000/#organization"
+    },
+    "image": {
+      "src": "/resources/client-articles/commercial-ice.webp",
+      "width": 1600,
+      "height": 900
+    },
+    "alt": "AI-generated illustration of a fully assembled commercial ice machine and storage bin.",
+    "bodyWords": 625,
+    "relatedArticles": [
+      "ice-machine-not-making-ice",
+      "commercial-refrigerator-not-cooling"
+    ],
+    "relatedServices": []
+  },
+  {
+    "slug": "commercial-oven-not-heating",
+    "status": "published",
+    "publishedAt": "2026-11-28",
+    "title": "Commercial Oven Not Heating? Causes and Quick Checks for Restaurant Ovens",
+    "seoTitle": "Commercial Oven Not Heating? Causes and Quick Checks for Restaurant Ovens",
+    "metaDescription": "Convection oven, deck oven or range oven not heating? What to check before service, the parts that fail most often, and when to call a commercial oven technician.",
+    "canonical": "http://localhost:3000/blog/commercial-oven-not-heating",
+    "category": "commercial-ovens",
+    "author": {
+      "name": "Apex Home Services",
+      "type": "Organization",
+      "id": "http://localhost:3000/#organization"
+    },
+    "image": {
+      "src": "/resources/client-articles/commercial-oven.webp",
+      "width": 1600,
+      "height": 900
+    },
+    "alt": "AI-generated illustration of a closed commercial convection oven in a restaurant kitchen.",
+    "bodyWords": 820,
+    "relatedArticles": [
+      "oven-not-heating",
+      "commercial-refrigerator-not-cooling"
+    ],
+    "relatedServices": []
+  },
+  {
+    "slug": "commercial-refrigerator-not-cooling",
+    "status": "published",
+    "publishedAt": "2026-11-28",
+    "title": "Commercial Refrigerator Not Cooling? What to Do Before You Lose Inventory",
+    "seoTitle": "Commercial Refrigerator Not Cooling? What to Do Before You Lose Inventory",
+    "metaDescription": "Reach-in, walk-in or prep table running warm? What to do right away to protect your food, the most common causes, and when to call a commercial refrigeration tech.",
+    "canonical": "http://localhost:3000/blog/commercial-refrigerator-not-cooling",
+    "category": "commercial-refrigeration",
+    "author": {
+      "name": "Apex Home Services",
+      "type": "Organization",
+      "id": "http://localhost:3000/#organization"
+    },
+    "image": {
+      "src": "/resources/client-articles/commercial-refrigeration.webp",
+      "width": 1600,
+      "height": 900
+    },
+    "alt": "AI-generated illustration of stainless steel commercial refrigerator and freezer cabinets.",
+    "bodyWords": 987,
+    "relatedArticles": [
+      "walk-in-cooler-not-cooling",
+      "commercial-freezer-not-freezing",
+      "ice-machine-not-making-ice"
+    ],
+    "relatedServices": []
+  },
+  {
+    "slug": "dishwasher-not-draining",
+    "status": "published",
+    "publishedAt": "2026-11-28",
+    "title": "Dishwasher Not Draining? 6 Things to Check Before You Call",
+    "seoTitle": "Dishwasher Not Draining? 6 Things to Check Before You Call",
+    "metaDescription": "Standing water at the bottom of your dishwasher? Start with the filter, the disposal and the drain hose. Here's what to check and when to call for repair.",
+    "canonical": "http://localhost:3000/blog/dishwasher-not-draining",
+    "category": "dishwashers",
+    "author": {
+      "name": "Apex Home Services",
+      "type": "Organization",
+      "id": "http://localhost:3000/#organization"
+    },
+    "image": {
+      "src": "/resources/client-articles/dishwasher.webp",
+      "width": 1600,
+      "height": 900
+    },
+    "alt": "AI-generated illustration of an open built-in dishwasher with empty racks.",
+    "bodyWords": 742,
+    "relatedArticles": [
+      "washer-not-draining",
+      "oven-not-heating"
+    ],
+    "relatedServices": [
+      "/services/appliance-repair"
+    ]
+  },
+  {
+    "slug": "dryer-not-heating",
+    "status": "published",
+    "publishedAt": "2026-11-28",
+    "title": "Dryer Not Heating? Common Causes for Gas and Electric Dryers",
+    "seoTitle": "Dryer Not Heating? Common Causes for Gas and Electric Dryers",
+    "metaDescription": "Dryer running but clothes still damp? Check the vent, the breaker and the settings first. Here are the most common causes for gas and electric dryers.",
+    "canonical": "http://localhost:3000/blog/dryer-not-heating",
+    "category": "washers-dryers",
+    "author": {
+      "name": "Apex Home Services",
+      "type": "Organization",
+      "id": "http://localhost:3000/#organization"
+    },
+    "image": {
+      "src": "/resources/client-articles/laundry.webp",
+      "width": 1600,
+      "height": 900
+    },
+    "alt": "AI-generated illustration of a dryer beside a washing machine in a home laundry room.",
+    "bodyWords": 814,
+    "relatedArticles": [
+      "washer-not-draining",
+      "furnace-not-heating"
+    ],
+    "relatedServices": [
+      "/services/appliance-repair"
+    ]
+  },
+  {
+    "slug": "furnace-not-heating",
+    "status": "published",
+    "publishedAt": "2026-11-28",
+    "title": "Furnace Not Heating? 7 Common Causes and What to Check First",
+    "seoTitle": "Furnace Not Heating? 7 Common Causes and What to Check First",
+    "metaDescription": "Furnace running but no heat? Here are 7 common causes, the simple checks you can safely do yourself, and when it's time to call a heating technician.",
+    "canonical": "http://localhost:3000/blog/furnace-not-heating",
+    "category": "heating",
+    "author": {
+      "name": "Apex Home Services",
+      "type": "Organization",
+      "id": "http://localhost:3000/#organization"
+    },
+    "image": {
+      "src": "/resources/client-articles/furnace.webp",
+      "width": 1600,
+      "height": 900
+    },
+    "alt": "AI-generated illustration of a closed residential gas furnace and connected ductwork.",
+    "bodyWords": 1328,
+    "relatedArticles": [
+      "dryer-not-heating",
+      "oven-not-heating"
+    ],
+    "relatedServices": [
+      "/services/heating/furnace-repair",
+      "/services/heating/boiler-repair"
+    ]
+  },
+  {
+    "slug": "ice-machine-not-making-ice",
+    "status": "published",
+    "publishedAt": "2026-11-28",
+    "title": "Commercial Ice Machine Not Making Ice? Common Causes and Quick Checks",
+    "seoTitle": "Commercial Ice Machine Not Making Ice? Common Causes and Quick Checks",
+    "metaDescription": "Ice machine making little or no ice, or the ice won't drop? Check water, airflow and scale first. Here are the most common causes and when to call for repair.",
+    "canonical": "http://localhost:3000/blog/ice-machine-not-making-ice",
+    "category": "commercial-ice-machines",
+    "author": {
+      "name": "Apex Home Services",
+      "type": "Organization",
+      "id": "http://localhost:3000/#organization"
+    },
+    "image": {
+      "src": "/resources/client-articles/commercial-ice.webp",
+      "width": 1600,
+      "height": 900
+    },
+    "alt": "AI-generated illustration of a commercial ice machine with its storage bin closed.",
+    "bodyWords": 789,
+    "relatedArticles": [
+      "commercial-ice-machine-cleaning",
+      "ice-maker-not-working"
+    ],
+    "relatedServices": []
+  },
+  {
+    "slug": "ice-maker-not-working",
+    "status": "published",
+    "publishedAt": "2026-11-28",
+    "title": "Refrigerator Ice Maker Not Working? What to Check and How to Fix It",
+    "seoTitle": "Refrigerator Ice Maker Not Working? What to Check and How to Fix It",
+    "metaDescription": "Ice maker stopped making ice, or the dispenser is jammed? Check the switch, the water supply and the filter first. Here's what else can go wrong.",
+    "canonical": "http://localhost:3000/blog/ice-maker-not-working",
+    "category": "ice-makers",
+    "author": {
+      "name": "Apex Home Services",
+      "type": "Organization",
+      "id": "http://localhost:3000/#organization"
+    },
+    "image": {
+      "src": "/resources/client-articles/ice-maker.webp",
+      "width": 1600,
+      "height": 900
+    },
+    "alt": "Refrigerator ice maker after replacement.",
+    "bodyWords": 758,
+    "relatedArticles": [
+      "refrigerator-not-cooling",
+      "ice-machine-not-making-ice"
+    ],
+    "relatedServices": [
+      "/services/appliance-repair"
+    ]
+  },
+  {
+    "slug": "oven-not-heating",
+    "status": "published",
+    "publishedAt": "2026-11-28",
+    "title": "Oven Not Heating? Causes for Gas and Electric Ovens and Ranges",
+    "seoTitle": "Oven Not Heating? Causes for Gas and Electric Ovens and Ranges",
+    "metaDescription": "Burners work but the oven stays cold? Here's what to check on gas and electric ovens, the parts that fail most often, and when to call a technician.",
+    "canonical": "http://localhost:3000/blog/oven-not-heating",
+    "category": "ovens",
+    "author": {
+      "name": "Apex Home Services",
+      "type": "Organization",
+      "id": "http://localhost:3000/#organization"
+    },
+    "image": {
+      "src": "/resources/client-articles/oven.webp",
+      "width": 1600,
+      "height": 900
+    },
+    "alt": "Technician inspecting a household range oven with a diagnostic instrument.",
+    "bodyWords": 875,
+    "relatedArticles": [
+      "commercial-oven-not-heating",
+      "dishwasher-not-draining"
+    ],
+    "relatedServices": [
+      "/services/appliance-repair"
+    ]
+  },
+  {
+    "slug": "refrigerator-not-cooling",
+    "status": "published",
+    "publishedAt": "2026-11-28",
+    "title": "Refrigerator Not Cooling? Common Causes and What to Check First",
+    "seoTitle": "Refrigerator Not Cooling? Common Causes and What to Check First",
+    "metaDescription": "Fridge running but not cold? Freezer fine but the fridge is warm? Here's what to check yourself, the most common causes, and when to call a repair technician.",
+    "canonical": "http://localhost:3000/blog/refrigerator-not-cooling",
+    "category": "refrigerators",
+    "author": {
+      "name": "Apex Home Services",
+      "type": "Organization",
+      "id": "http://localhost:3000/#organization"
+    },
+    "image": {
+      "src": "/resources/client-articles/refrigerator.webp",
+      "width": 1600,
+      "height": 900
+    },
+    "alt": "Technician inspecting an open refrigerator in a home kitchen.",
+    "bodyWords": 1297,
+    "relatedArticles": [
+      "ice-maker-not-working",
+      "commercial-refrigerator-not-cooling"
+    ],
+    "relatedServices": [
+      "/services/appliance-repair"
+    ]
+  },
+  {
+    "slug": "walk-in-cooler-not-cooling",
+    "status": "published",
+    "publishedAt": "2026-11-28",
+    "title": "Walk-In Cooler or Freezer Not Cooling? Causes and What to Do First",
+    "seoTitle": "Walk-In Cooler or Freezer Not Cooling? Causes and What to Do First",
+    "metaDescription": "Walk-in running warm or icing up? What to do in the first hour to protect your product, the most common causes, and when to call a refrigeration tech.",
+    "canonical": "http://localhost:3000/blog/walk-in-cooler-not-cooling",
+    "category": "walk-in-coolers-freezers",
+    "author": {
+      "name": "Apex Home Services",
+      "type": "Organization",
+      "id": "http://localhost:3000/#organization"
+    },
+    "image": {
+      "src": "/resources/client-articles/walk-in.webp",
+      "width": 1600,
+      "height": 900
+    },
+    "alt": "AI-generated illustration of shelving and enclosed cooling equipment inside a walk-in cold room.",
+    "bodyWords": 803,
+    "relatedArticles": [
+      "commercial-refrigerator-not-cooling",
+      "commercial-freezer-not-freezing"
+    ],
+    "relatedServices": []
+  },
+  {
+    "slug": "washer-not-draining",
+    "status": "published",
+    "publishedAt": "2026-11-28",
+    "title": "Washer Not Draining or Spinning? Causes and Easy Fixes to Try First",
+    "seoTitle": "Washer Not Draining or Spinning? Causes and Easy Fixes to Try First",
+    "metaDescription": "Water left in the drum or clothes still soaking wet? Here's what to check on top-load and front-load washers, and when it's time to call a repair technician.",
+    "canonical": "http://localhost:3000/blog/washer-not-draining",
+    "category": "washers-dryers",
+    "author": {
+      "name": "Apex Home Services",
+      "type": "Organization",
+      "id": "http://localhost:3000/#organization"
+    },
+    "image": {
+      "src": "/resources/client-articles/laundry.webp",
+      "width": 1600,
+      "height": 900
+    },
+    "alt": "AI-generated illustration of a front-loading washer and dryer in a laundry room.",
+    "bodyWords": 792,
+    "relatedArticles": [
+      "dryer-not-heating",
+      "dishwasher-not-draining"
+    ],
+    "relatedServices": [
+      "/services/appliance-repair"
+    ]
+  }
+]

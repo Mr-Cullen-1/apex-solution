@@ -1,0 +1,72 @@
+[
+  {
+    "name": "laundry",
+    "path": "public\\resources\\client-articles\\laundry.webp",
+    "width": 1600,
+    "height": 900,
+    "bytes": 186090
+  },
+  {
+    "name": "dishwasher",
+    "path": "public\\resources\\client-articles\\dishwasher.webp",
+    "width": 1600,
+    "height": 900,
+    "bytes": 112092
+  },
+  {
+    "name": "commercial-refrigeration",
+    "path": "public\\resources\\client-articles\\commercial-refrigeration.webp",
+    "width": 1600,
+    "height": 900,
+    "bytes": 123460
+  },
+  {
+    "name": "walk-in",
+    "path": "public\\resources\\client-articles\\walk-in.webp",
+    "width": 1600,
+    "height": 900,
+    "bytes": 142894
+  },
+  {
+    "name": "commercial-ice",
+    "path": "public\\resources\\client-articles\\commercial-ice.webp",
+    "width": 1600,
+    "height": 900,
+    "bytes": 108702
+  },
+  {
+    "name": "commercial-oven",
+    "path": "public\\resources\\client-articles\\commercial-oven.webp",
+    "width": 1600,
+    "height": 900,
+    "bytes": 114070
+  },
+  {
+    "name": "furnace",
+    "path": "public\\resources\\client-articles\\furnace.webp",
+    "width": 1600,
+    "height": 900,
+    "bytes": 100496
+  },
+  {
+    "name": "refrigerator",
+    "path": "public\\resources\\client-articles\\refrigerator.webp",
+    "width": 1600,
+    "height": 900,
+    "bytes": 102318
+  },
+  {
+    "name": "oven",
+    "path": "public\\resources\\client-articles\\oven.webp",
+    "width": 1600,
+    "height": 900,
+    "bytes": 202286
+  },
+  {
+    "name": "ice-maker",
+    "path": "public\\resources\\client-articles\\ice-maker.webp",
+    "width": 1600,
+    "height": 900,
+    "bytes": 70274
+  }
+]
