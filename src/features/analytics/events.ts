@@ -47,6 +47,18 @@ export function isPublicAnalyticsLocation() {
     && publicPaths.has(window.location.pathname);
 }
 
+/** Never use document URL/title/referrer: all can contain customer/private data. */
+export function analyticsContext(location: Pick<Location, "hostname" | "origin" | "pathname">) {
+  if (location.hostname.toLowerCase().startsWith("admin.") || !publicPaths.has(location.pathname)) return null;
+  return {
+    analytics_allowed: true,
+    page_location: location.origin + location.pathname,
+    page_referrer: "",
+    page_path: location.pathname,
+    page_title: "Apex Home Services",
+  };
+}
+
 /** One dataLayer writer. Never forward an object, URL, DOM text or user input.
  * Null fields clear the previous event's context in GTM's persistent data model.
  * Tracking failure must never alter a booking result or cancel navigation.
@@ -65,6 +77,7 @@ export function trackEvent<E extends keyof Events>(event: E, params: Events[E]):
     if (event === "contact_click" && !["contact_page", "email", "sms"].includes(method ?? "")) return;
     if (event === "service_select" && !category) return;
     const payload = {
+      ...analyticsContext(window.location),
       event,
       placement: params.placement,
       initiator: params.initiator,

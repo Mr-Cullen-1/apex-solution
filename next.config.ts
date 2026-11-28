@@ -27,6 +27,10 @@ const nextConfig: NextConfig = {
   // has no successor category, so it sends visitors to the main Services experience.
   async redirects() {
     return [
+      { source: "/resources", destination: "/blog", permanent: true },
+      { source: "/resources/furnace-not-heating-common-problems", destination: "/blog/furnace-not-heating", permanent: true },
+      { source: "/resources/category/hvac-heating", destination: "/blog/category/heating", permanent: true },
+      ...["water-heaters", "appliance-repair", "home-maintenance", "energy-efficiency"].map((category) => ({ source: `/resources/category/${category}`, destination: "/blog", permanent: true })),
       { source: "/services/plumbing", destination: "/services/water-heater-repair", permanent: false },
       { source: "/services/plumbing/:service", destination: "/services/water-heater-repair", permanent: false },
       { source: "/services/air-quality", destination: "/services", permanent: false },

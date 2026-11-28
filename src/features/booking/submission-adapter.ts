@@ -8,7 +8,7 @@ import type { BookNowPayload, ServiceRequestRow, SubmissionResult } from "./type
 
 const NOT_CONFIGURED_MESSAGE =
   "Online submission is unavailable right now. Apex has not received this request. Please call us directly to reach the team right away.";
-const SUBMISSION_FAILED_MESSAGE = "We couldn't submit your request right now. Please try again or call us.";
+const SUBMISSION_FAILED_MESSAGE = "We couldn't confirm whether your request arrived. Please call Apex before trying again so we can avoid a duplicate request.";
 
 async function deliverTelegram(row: ServiceRequestRow): Promise<void> {
   if (!isTelegramConfigured()) {
@@ -37,7 +37,7 @@ async function deliverTelegram(row: ServiceRequestRow): Promise<void> {
   if (delivery.status === "sent") {
     await markTelegramSent(row.id, delivery.messageId);
   } else if (delivery.status === "failed") {
-    console.error("[book_now_telegram_delivery_failed]", row.id, delivery.error);
+    console.error("[book_now_telegram_delivery_failed]", row.id);
     await markTelegramFailed(row.id, delivery.error);
   }
 }
@@ -67,7 +67,7 @@ async function deliverConfirmationEmail(row: ServiceRequestRow): Promise<void> {
   if (delivery.status === "sent") {
     await markEmailSent(row.id, delivery.messageId);
   } else if (delivery.status === "failed") {
-    console.error("[book_now_email_delivery_failed]", row.id, delivery.error);
+    console.error("[book_now_email_delivery_failed]", row.id);
     await markEmailFailed(row.id, delivery.error);
   }
 }
@@ -79,20 +79,32 @@ async function deliverConfirmationEmail(row: ServiceRequestRow): Promise<void> {
  * changes the response already decided by the successful DB insert (see
  * docs/BOOK_NOW_ARCHITECTURE.md).
  *
- * Run concurrently via Promise.all, not sequentially: the two deliveries
- * touch disjoint columns on the same row (no write conflict), each function
- * already catches and records its own failure internally (neither ever
- * rejects), and this still runs on a serverless function that may freeze
+ * Await both settled outcomes: unexpected provider or status-write exceptions
+ * must not turn a persisted lead into an apparent submission failure.
+ * This still runs on a serverless function that may freeze
  * once a response is sent — so both are awaited here before responding,
  * rather than left to finish in the background unawaited. */
 export async function submitBookNowRequest(payload: BookNowPayload, options: { source?: string } = {}): Promise<SubmissionResult> {
   if (!isSupabaseConfigured()) return { ok: false, status: "not_configured", message: NOT_CONFIGURED_MESSAGE };
 
-  const created = await createServiceRequest(payload, options);
+  let created: Awaited<ReturnType<typeof createServiceRequest>>;
+  try {
+    created = await createServiceRequest(payload, options);
+  } catch {
+    console.error("[book_now_persistence_outcome_unknown]");
+    return { ok: false, status: "error", message: "We couldn't confirm whether your request arrived. Please call Apex before trying again so we can avoid a duplicate request." };
+  }
   if (!created.ok) return { ok: false, status: "error", message: SUBMISSION_FAILED_MESSAGE };
 
   const { row } = created;
-  await Promise.all([deliverTelegram(row), deliverConfirmationEmail(row)]);
+  const deliveries = await Promise.allSettled([deliverTelegram(row), deliverConfirmationEmail(row)]);
+  deliveries.forEach((delivery, index) => {
+    if (delivery.status === "rejected") {
+      // No raw exception: providers/DB transports can echo customer data.
+      // Do not resend here: delivery may have succeeded before status storage failed.
+      console.error("[book_now_notification_outcome_unknown]", row.id, index === 0 ? "telegram" : "email");
+    }
+  });
 
   // Neither delivery channel's outcome is ever surfaced to the customer
   // here — the lead is already safely stored, so the response is the same

@@ -24,14 +24,22 @@ function load(file) {
 }
 
 const modulePath = path.join(__dirname, '../src/features/analytics/events.ts');
+test('safe analytics context removes every query/hash and rejects private origins/routes', () => {
+  const { analyticsContext } = load(modulePath);
+  assert.equal(typeof analyticsContext, 'function');
+  const location = { hostname: 'apexhomesupport.com', origin: 'https://apexhomesupport.com', pathname: '/contact', search: '?email=secret', hash: '#token' };
+  assert.deepEqual(analyticsContext(location), { analytics_allowed: true, page_location: 'https://apexhomesupport.com/contact', page_referrer: '', page_path: '/contact', page_title: 'Apex Home Services' });
+  for (const pathname of ['/admin/login', '/review/secret', '/l/secret', '/unknown', '/contact/secret']) assert.equal(analyticsContext({ ...location, pathname }), null);
+  assert.equal(analyticsContext({ ...location, hostname: 'admin.apexhomesupport.com' }), null);
+});
 test('adapter exists and rejects arbitrary payloads, private routes, invalid catalog values', () => {
   assert.ok(fs.existsSync(modulePath), 'Frontend analytics adapter is missing');
   const { trackEvent } = load(modulePath);
-  global.window = { location: { hostname: 'apexhomesupport.com', pathname: '/contact', search: '?email=private@example.test' }, dataLayer: [] };
+  global.window = { location: { hostname: 'apexhomesupport.com', origin: 'https://apexhomesupport.com', pathname: '/contact', search: '?email=private@example.test' }, dataLayer: [] };
   const props = { placement: 'header', initiator: 'booking_cta', category_id: 'cooling', service_id: 'ac-repair', email: 'private@example.test', requestId: 'secret' };
   trackEvent('booking_click', props);
   assert.equal(window.dataLayer.length, 1);
-  assert.deepEqual(window.dataLayer[0], { event: 'booking_click', placement: 'header', initiator: 'booking_cta', page_path: '/contact', form_id: 'book_now', category_id: 'cooling', service_id: 'ac-repair', contact_method: null });
+  assert.deepEqual(window.dataLayer[0], { ...load(modulePath).analyticsContext(window.location), event: 'booking_click', placement: 'header', initiator: 'booking_cta', page_path: '/contact', form_id: 'book_now', category_id: 'cooling', service_id: 'ac-repair', contact_method: null });
   for (const pathname of ['/admin', '/admin/login', '/review', '/review/private-token', '/l/private-token', '/unknown/private']) {
     window.location.pathname = pathname; trackEvent('booking_click', props);
   }

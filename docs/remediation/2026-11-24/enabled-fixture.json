@@ -1,0 +1,10 @@
+{
+  "enabled": true,
+  "mode": "isolated fixture, not GTM Preview/DebugView",
+  "checks": [
+    "private entry routes never bootstrap GTM",
+    "one sanitized view per public pathname; query-only and private navigation excluded; public tracking resumes",
+    "legal drafts render 200 and noindex"
+  ],
+  "status": "passed"
+}

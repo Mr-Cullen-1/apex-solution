@@ -1,0 +1,158 @@
+[
+  {
+    "route": "/resources",
+    "status": 308,
+    "destination": "/blog"
+  },
+  {
+    "route": "/resources/furnace-not-heating-common-problems",
+    "status": 308,
+    "destination": "/blog/furnace-not-heating"
+  },
+  {
+    "route": "/resources/category/hvac-heating",
+    "status": 308,
+    "destination": "/blog/category/heating"
+  },
+  {
+    "route": "/resources/category/water-heaters",
+    "status": 308,
+    "destination": "/blog"
+  },
+  {
+    "route": "/resources/category/appliance-repair",
+    "status": 308,
+    "destination": "/blog"
+  },
+  {
+    "route": "/resources/category/home-maintenance",
+    "status": 308,
+    "destination": "/blog"
+  },
+  {
+    "route": "/resources/category/energy-efficiency",
+    "status": 308,
+    "destination": "/blog"
+  },
+  {
+    "route": "/resources/commercial-freezer-not-freezing",
+    "status": 308,
+    "destination": "/blog/commercial-freezer-not-freezing"
+  },
+  {
+    "route": "/resources/commercial-ice-machine-cleaning",
+    "status": 308,
+    "destination": "/blog/commercial-ice-machine-cleaning"
+  },
+  {
+    "route": "/resources/commercial-oven-not-heating",
+    "status": 308,
+    "destination": "/blog/commercial-oven-not-heating"
+  },
+  {
+    "route": "/resources/commercial-refrigerator-not-cooling",
+    "status": 308,
+    "destination": "/blog/commercial-refrigerator-not-cooling"
+  },
+  {
+    "route": "/resources/dishwasher-not-draining",
+    "status": 308,
+    "destination": "/blog/dishwasher-not-draining"
+  },
+  {
+    "route": "/resources/dryer-not-heating",
+    "status": 308,
+    "destination": "/blog/dryer-not-heating"
+  },
+  {
+    "route": "/resources/furnace-not-heating",
+    "status": 308,
+    "destination": "/blog/furnace-not-heating"
+  },
+  {
+    "route": "/resources/ice-machine-not-making-ice",
+    "status": 308,
+    "destination": "/blog/ice-machine-not-making-ice"
+  },
+  {
+    "route": "/resources/ice-maker-not-working",
+    "status": 308,
+    "destination": "/blog/ice-maker-not-working"
+  },
+  {
+    "route": "/resources/oven-not-heating",
+    "status": 308,
+    "destination": "/blog/oven-not-heating"
+  },
+  {
+    "route": "/resources/refrigerator-not-cooling",
+    "status": 308,
+    "destination": "/blog/refrigerator-not-cooling"
+  },
+  {
+    "route": "/resources/walk-in-cooler-not-cooling",
+    "status": 308,
+    "destination": "/blog/walk-in-cooler-not-cooling"
+  },
+  {
+    "route": "/resources/washer-not-draining",
+    "status": 308,
+    "destination": "/blog/washer-not-draining"
+  },
+  {
+    "route": "/blog/furnace-not-heating-common-problems",
+    "status": 404
+  },
+  {
+    "route": "/blog/how-to-prevent-frozen-pipes-in-winter",
+    "status": 404
+  },
+  {
+    "route": "/blog/water-heater-warning-signs",
+    "status": 404
+  },
+  {
+    "route": "/blog/why-are-heating-bills-so-high",
+    "status": 404
+  },
+  {
+    "route": "/blog/repair-or-replace-home-appliances",
+    "status": 404
+  },
+  {
+    "route": "/resources/how-to-prevent-frozen-pipes-in-winter",
+    "status": 404
+  },
+  {
+    "route": "/resources/water-heater-warning-signs",
+    "status": 404
+  },
+  {
+    "route": "/resources/why-are-heating-bills-so-high",
+    "status": 404
+  },
+  {
+    "route": "/resources/repair-or-replace-home-appliances",
+    "status": 404
+  },
+  {
+    "route": "/blog/unknown-article",
+    "status": 404
+  },
+  {
+    "route": "/blog/category/unknown-category",
+    "status": 404
+  },
+  {
+    "route": "/resources/unknown-article",
+    "status": 404
+  },
+  {
+    "route": "/about",
+    "obsoleteCoverageAbsent": true
+  },
+  {
+    "route": "/services",
+    "obsoleteCoverageAbsent": true
+  }
+]

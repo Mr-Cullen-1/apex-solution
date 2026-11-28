@@ -1,5 +1,20 @@
 @import "tailwindcss";
 
+/* Resource article typography; all colors/spacing inherit the site tokens. */
+.resource-prose { font-size: 1.0625rem; line-height: 1.85; color: var(--ink-muted); }
+.resource-prose > * + * { margin-top: 1.5rem; }
+.resource-prose > h2 { margin-top: 2.75rem; font-size: clamp(1.6rem, 3vw, 2rem); line-height: 1.25; }
+.resource-prose > h3 { margin-top: 2rem; font-size: 1.3rem; line-height: 1.35; }
+.resource-prose > :is(h2, h3) { color: var(--ink); font-weight: 600; letter-spacing: -.025em; }
+.resource-prose > :first-child { margin-top: 0; }
+.resource-prose > :is(ul, ol) { padding-left: 1.5rem; }
+.resource-prose > ul { list-style: disc; }
+.resource-prose > ol { list-style: decimal; }
+.resource-prose li + li { margin-top: .65rem; }
+.resource-prose figcaption { margin-top: .75rem; font-size: .875rem; }
+.resource-callout { border-left: 3px solid var(--brand-primary); border-radius: 0 var(--radius-card) var(--radius-card) 0; padding: 1.5rem; background: var(--surface); }
+.resource-callout p + p { margin-top: .5rem; }
+
 /*
  * Apex visual system.
  * Brand colors (--ink, --brand-dark, --brand-primary, --brand-accent) are sampled
@@ -407,3 +422,13 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Client article tables retain source columns and remain scrollable on narrow screens. */
+.resource-table-wrap { max-width: 100%; overflow-x: auto; margin: 2rem 0; border: 1px solid var(--steel); border-radius: .5rem; }
+.resource-table-wrap table { width: 100%; border-collapse: collapse; font-size: .9375rem; line-height: 1.65; }
+.resource-table-wrap th, .resource-table-wrap td { padding: .875rem 1rem; border-bottom: 1px solid var(--steel); text-align: left; vertical-align: top; min-width: 10rem; white-space: pre-line; }
+.resource-table-wrap th { background: var(--surface); font-weight: 600; }
+.resource-prose blockquote { margin-inline: 0; }
+
+.resource-prose li > ul { list-style: circle; padding-left: 1.5rem; margin-top: .65rem; }
+.resource-prose li > ol { list-style: decimal; padding-left: 1.5rem; margin-top: .65rem; }

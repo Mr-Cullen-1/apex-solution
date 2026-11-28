@@ -1,0 +1,10 @@
+{
+  "enabled": false,
+  "mode": "isolated fixture, not GTM Preview/DebugView",
+  "checks": [
+    "private entry routes never bootstrap GTM",
+    "readiness gate defaults off on public pages",
+    "legal drafts render 200 and noindex"
+  ],
+  "status": "passed"
+}

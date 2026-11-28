@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-11-26",
+  "method": "Web browsing tool: each of the four exact URLs opened successfully with readable source content; independently confirmed by editorial reviewer. HTTP status codes not exposed by that tool.",
+  "sources": [
+    {
+      "title": "CPSC: Carbon Monoxide Fact Sheet",
+      "href": "https://www.cpsc.gov/safety-education/safety-guides/carbon-monoxide/carbon-monoxide-fact-sheet",
+      "contentRetrieved": true
+    },
+    {
+      "title": "CPSC: Winter Weather Safety Tips",
+      "href": "https://www.cpsc.gov/Newsroom/News-Releases/2025/As-Winter-Weather-Impacts-Millions-CPSC-Issues-Safety-Tips-to-Help-Families-Prevent-Carbon-Monoxide-Poisoning-and-Fires",
+      "contentRetrieved": true
+    },
+    {
+      "title": "CPSC: Keep Warm and Safe This Winter",
+      "href": "https://www.cpsc.gov/Newsroom/News-Releases/2026/Keep-Warm-and-Safe-This-Winter-Tips-for-Using-Generators-Furnaces-and-Space-Heaters",
+      "contentRetrieved": true
+    },
+    {
+      "title": "U.S. Department of Energy: HVAC Proper Installation of Filters",
+      "href": "https://bsesc.energy.gov/energy-basics/hvac-proper-installation-filters",
+      "contentRetrieved": true
+    }
+  ],
+  "restrictedShellFetchAttempts": [
+    {
+      "title": "CPSC: Carbon Monoxide Fact Sheet",
+      "href": "https://www.cpsc.gov/safety-education/safety-guides/carbon-monoxide/carbon-monoxide-fact-sheet",
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "title": "CPSC: Winter Weather Safety Tips",
+      "href": "https://www.cpsc.gov/Newsroom/News-Releases/2025/As-Winter-Weather-Impacts-Millions-CPSC-Issues-Safety-Tips-to-Help-Families-Prevent-Carbon-Monoxide-Poisoning-and-Fires",
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "title": "CPSC: Keep Warm and Safe This Winter",
+      "href": "https://www.cpsc.gov/Newsroom/News-Releases/2026/Keep-Warm-and-Safe-This-Winter-Tips-for-Using-Generators-Furnaces-and-Space-Heaters",
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "title": "U.S. Department of Energy: HVAC Proper Installation of Filters",
+      "href": "https://bsesc.energy.gov/energy-basics/hvac-proper-installation-filters",
+      "error": "TypeError: fetch failed"
+    }
+  ]
+}

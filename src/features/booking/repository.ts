@@ -37,7 +37,7 @@ export async function createServiceRequest(
   let resolvedSource = options.source || "book_now";
   let campaignLinkId: string | null = null;
   if (payload.campaignToken) {
-    const { data: campaignLink } = await supabase.rpc("get_active_campaign_link", { p_token: payload.campaignToken });
+    const { data: campaignLink } = await supabase.rpc("get_active_campaign_link", { p_token: payload.campaignToken }).abortSignal(AbortSignal.timeout(5_000));
     const link = (campaignLink as { id: string; platform: string } | null) ?? null;
     if (link) {
       resolvedSource = link.platform;
@@ -65,11 +65,11 @@ export async function createServiceRequest(
     p_discount_percent: offer.discountPercent,
     p_source: resolvedSource,
     p_campaign_link_id: campaignLinkId,
-  });
+  }).abortSignal(AbortSignal.timeout(5_000));
 
   if (error || !data) {
-    console.error("[book_now_insert_failed]", error?.code, error?.message);
-    return { ok: false, error: error?.message ?? "insert returned no row" };
+    console.error("[book_now_insert_failed]", "database_error");
+    return { ok: false, error: "database_error" };
   }
   return { ok: true, row: data as ServiceRequestRow };
 }
@@ -82,8 +82,8 @@ export async function markTelegramSent(id: string, messageId: number): Promise<v
   const { error } = await supabase
     .from("service_requests")
     .update({ telegram_status: "sent", telegram_message_id: messageId, telegram_sent_at: new Date().toISOString(), telegram_last_error: null })
-    .eq("id", id);
-  if (error) console.error("[book_now_telegram_status_update_failed]", id, error.message);
+    .eq("id", id).abortSignal(AbortSignal.timeout(3_000));
+  if (error) console.error("[book_now_telegram_status_update_failed]", id);
 }
 
 export async function markTelegramFailed(id: string, errorSummary: string): Promise<void> {
@@ -91,8 +91,8 @@ export async function markTelegramFailed(id: string, errorSummary: string): Prom
   const { error } = await supabase
     .from("service_requests")
     .update({ telegram_status: "failed", telegram_last_error: errorSummary })
-    .eq("id", id);
-  if (error) console.error("[book_now_telegram_status_update_failed]", id, error.message);
+    .eq("id", id).abortSignal(AbortSignal.timeout(3_000));
+  if (error) console.error("[book_now_telegram_status_update_failed]", id);
 }
 
 /** Independent of markTelegramSent/Failed above — email and Telegram are
@@ -103,8 +103,8 @@ export async function markEmailSent(id: string, messageId: string): Promise<void
   const { error } = await supabase
     .from("service_requests")
     .update({ email_status: "sent", email_message_id: messageId, email_sent_at: new Date().toISOString(), email_last_error: null })
-    .eq("id", id);
-  if (error) console.error("[book_now_email_status_update_failed]", id, error.message);
+    .eq("id", id).abortSignal(AbortSignal.timeout(3_000));
+  if (error) console.error("[book_now_email_status_update_failed]", id);
 }
 
 export async function markEmailFailed(id: string, errorSummary: string): Promise<void> {
@@ -112,6 +112,6 @@ export async function markEmailFailed(id: string, errorSummary: string): Promise
   const { error } = await supabase
     .from("service_requests")
     .update({ email_status: "failed", email_last_error: errorSummary })
-    .eq("id", id);
-  if (error) console.error("[book_now_email_status_update_failed]", id, error.message);
+    .eq("id", id).abortSignal(AbortSignal.timeout(3_000));
+  if (error) console.error("[book_now_email_status_update_failed]", id);
 }

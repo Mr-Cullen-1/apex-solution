@@ -1,0 +1,21 @@
+{
+  "otherDrafts": [
+    {
+      "slug": "how-to-prevent-frozen-pipes-in-winter",
+      "sha256": "b4da4e630f29c6c7b6102ac53f18c64737ec1ed824553551b39b58a924787358"
+    },
+    {
+      "slug": "water-heater-warning-signs",
+      "sha256": "f6064112f9f9f7cbbecbcb072caa468d3a15fc6b87c128933d3fd37606c50b5b"
+    },
+    {
+      "slug": "why-are-heating-bills-so-high",
+      "sha256": "72d48f1bdbb9547e3fd38c34eda85e52195141312b716bf22091199376f7d025"
+    },
+    {
+      "slug": "repair-or-replace-home-appliances",
+      "sha256": "dfd0ba251e8d554e422dd7c5c110ea45501cad2d713b28c071cbd5b64bb5b9ef"
+    }
+  ],
+  "otherDraftSource": "eb7d5ae7a8f7019c6283654ad2f52c920926341e9e461bfd7f50d8a84b69b33d"
+}

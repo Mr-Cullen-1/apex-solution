@@ -27,6 +27,10 @@ export function Footer() {
           </div>
 
           <div className="mt-12 border-t border-footer-border pt-6 text-xs leading-6 text-footer-muted md:mt-16">
+            <nav aria-label="Legal information" className="mb-3 flex flex-wrap gap-6 text-footer-text">
+              <Link href="/privacy-policy">Privacy Policy (awaiting approval)</Link>
+              <Link href="/terms">Terms (awaiting approval)</Link>
+            </nav>
             <p>© {new Date().getFullYear()} {company.name}. All rights reserved.</p>
           </div>
         </Container>
@@ -43,6 +47,7 @@ function BrandColumn() {
         <span className="text-xl font-semibold tracking-[-0.02em]">{company.name}</span>
       </Link>
       <p className="mt-5 max-w-sm text-sm leading-6 text-footer-text">{company.description}</p>
+      <Link href="/blog" className="mt-3 inline-flex min-h-11 items-center text-sm font-semibold text-footer-text underline underline-offset-4">Blog & resources</Link>
       <Link href="/service-areas" className="mt-6 block max-w-sm rounded-xl border border-footer-border bg-footer-panel p-4">
         <span className="block text-[0.65rem] font-bold uppercase tracking-[0.14em] text-footer-accent">States served</span>
         <span className="mt-1.5 block text-sm font-medium tracking-wide">{serviceAreas.map((area) => area.code).join(" · ")}</span>

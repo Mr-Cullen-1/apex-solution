@@ -40,6 +40,10 @@ Future feature-specific code should live under `src/features`, beginning with `s
 
 ## Content boundary
 
+### Resources (25 November 2026)
+
+The Blog / Resources foundation uses `src/content/resources`, `src/types/resource.ts`, server components in `src/components/resources`, and three route patterns under `app/(marketing)/resources`. A single publication selector feeds detail routes, related cards, metadata and sitemap. Five initial records are private drafts; empty resource/category pages are noindex until publication. No CMS or database integration is added. See [Resources architecture and publishing](RESOURCES.md). Article 1 adds reviewed exact HTTPS source URLs through `sources.ts`, reusing existing inline link blocks; optional `featuredImageCaption` provides visible image provenance. The publication gate is unchanged.
+
 The files in `src/content` are the single source of truth during the file-backed phase. They deliberately mirror simple CMS collections. Unknown factual content stays `null` or in an empty collection; UI must handle that state honestly.
 
 `serviceAreas` is organized as typed state groups containing confirmed county lists. `supportedBrands` is organized as typed appliance, premium-appliance, and HVAC categories. `services.ts` is the typed taxonomy for category, service, problem, relationship, FAQ, media, and SEO data. Homepage, navigation, service routes, and footer consume these datasets directly. `cta.ts` and `BookingLink` define the site-wide "Book Now" entry point, which opens the shared modal in `src/features/booking/book-now-modal.tsx` rather than navigating to a page.
@@ -54,7 +58,11 @@ Completed service routes live under `app/services`; core public pages live at `a
 
 The old catch-all set of `noindex` "planned" foundation pages (`/emergency`, `/membership`, `/financing`, `/team`, `/faq`, `/privacy`, etc.) was removed — none had real content or an inbound link from the live UI, and the client asked for fewer placeholder pages. `/book` still resolves (as a redirect into the Book Now modal, preserving `?service=`/`?category=` context) so old links never 404.
 
-The Service Areas page consumes the single state-and-county dataset and uses anchors rather than generating 29 county routes. The Brands page consumes the single supported-brand dataset and maintains a small explicit mapping from brand group to existing service-category routes.
+The Service Areas page consumes the shared approved three-state, 18-county directory and exact 721-ZIP allowlist. The homepage and Service Areas page use the same accessible ZIP checker; no county or ZIP landing pages are generated. ZIP-to-county assignments are deliberately absent because the source crosswalk is blank. See [coverage documentation](SERVICE_COVERAGE.md). The Brands page consumes the single supported-brand dataset and maintains a small explicit mapping from brand group to existing service-category routes.
+
+### Blog migration, 28 November 2026
+
+The existing Resources engine now serves the client's 13 complete articles at `/blog` and 12 populated category routes. Legacy Resources URLs permanently redirect to approved successors; private planned drafts remain excluded. Original Word content is extracted into a provenance-bearing JSON source, then adapted through the shared typed resource renderer. Search receives server-rendered card slots and searchable summaries; article bodies and editorial drafts remain server content. Organization author/publisher identity, metadata, JSON-LD and sitemap derive from existing shared utilities. See [current Resources architecture](RESOURCES.md) and [implementation report](BLOG_IMPLEMENTATION_REPORT.md).
 
 ## Booking boundary
 

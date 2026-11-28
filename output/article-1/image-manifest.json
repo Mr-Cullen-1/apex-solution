@@ -1,0 +1,62 @@
+[
+  {
+    "name": "residential-gas-furnace-hero",
+    "original": "public\\resources\\furnace-not-heating-common-problems\\residential-gas-furnace-hero-original.png",
+    "webp": "public\\resources\\furnace-not-heating-common-problems\\residential-gas-furnace-hero.webp",
+    "width": 1600,
+    "height": 900,
+    "originalWidth": 1672,
+    "originalHeight": 941,
+    "bytes": 111066,
+    "sha256": "39d7d043bdf853b490e4aff069af45dea56c86f3cbb208bfcac19c2a2ead7f09",
+    "originalSha256": "5ce380d62c648f85a6c5969aaaef52474b7bc88a6bc0f9751dfe5a7fa8b37e86",
+    "generator": "Built-in image_gen",
+    "generatedAt": "2026-11-26",
+    "illustration": true
+  },
+  {
+    "name": "dirty-and-clean-furnace-air-filters",
+    "original": "public\\resources\\furnace-not-heating-common-problems\\dirty-and-clean-furnace-air-filters-original.png",
+    "webp": "public\\resources\\furnace-not-heating-common-problems\\dirty-and-clean-furnace-air-filters.webp",
+    "width": 1600,
+    "height": 900,
+    "originalWidth": 1672,
+    "originalHeight": 941,
+    "bytes": 183644,
+    "sha256": "d487b24e616c5dc69c9577ad611b0f7a658a62a6003851f2f0030f9591adac36",
+    "originalSha256": "e1538d12ef25f1c4e22ce9837fbb2f6c02cf40675cd84fe3de573fe66ee84ca4",
+    "generator": "Built-in image_gen",
+    "generatedAt": "2026-11-26",
+    "illustration": true
+  },
+  {
+    "name": "snow-blocked-furnace-intake-vent",
+    "original": "public\\resources\\furnace-not-heating-common-problems\\snow-blocked-furnace-intake-vent-original.png",
+    "webp": "public\\resources\\furnace-not-heating-common-problems\\snow-blocked-furnace-intake-vent.webp",
+    "width": 1600,
+    "height": 900,
+    "originalWidth": 1672,
+    "originalHeight": 941,
+    "bytes": 156520,
+    "sha256": "deab47c7f18332f22be1d9dadd76c5cb70584e7cc0a8c6dbbb6d2b73f2c0efcd",
+    "originalSha256": "9e26ef95890d3e2ea0617aa8b3b819e996c06ff03cd0d43c881ff05e8df26a91",
+    "generator": "Built-in image_gen",
+    "generatedAt": "2026-11-26",
+    "illustration": true
+  },
+  {
+    "name": "professional-furnace-inspection",
+    "original": "public\\resources\\furnace-not-heating-common-problems\\professional-furnace-inspection-original.png",
+    "webp": "public\\resources\\furnace-not-heating-common-problems\\professional-furnace-inspection.webp",
+    "width": 1600,
+    "height": 900,
+    "originalWidth": 1672,
+    "originalHeight": 941,
+    "bytes": 83360,
+    "sha256": "f41e0dee54f63291de8a9d38eab2cd9bd39c3d97094b19a081c672edc757d6a8",
+    "originalSha256": "89bb611c817a9431b6f5cd26ed1c15b5e388a84ee53ae2b27e3c1337f4702ff6",
+    "generator": "Built-in image_gen",
+    "generatedAt": "2026-11-26",
+    "illustration": true
+  }
+]

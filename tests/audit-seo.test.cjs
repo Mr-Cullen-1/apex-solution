@@ -36,7 +36,14 @@ test('sitemap lists public reviews but has no invented modification dates', asyn
   assert.equal(new Set(paths).size, paths.length);
   assert.equal(paths.filter(path => path === '/reviews').length, 1);
   assert.ok(!paths.includes('/review'));
-  assert.ok(!xml.includes('<lastmod>'));
+  const dated = [...xml.matchAll(/<url>([\s\S]*?)<\/url>/g)]
+    .filter(match => match[1].includes('<lastmod>'));
+  assert.equal(dated.length, 13, 'Only the 13 approved articles have authored publication dates');
+  for (const entry of dated) {
+    const path = new URL(entry[1].match(/<loc>(.*?)<\/loc>/)[1]).pathname;
+    assert.match(path, /^\/blog\/[^/]+$/);
+    assert.ok(entry[1].includes('<lastmod>2026-11-28</lastmod>'));
+  }
 });
 
 test('home and About identify the same organization without fabricated locations', async () => {
@@ -48,9 +55,10 @@ test('home and About identify the same organization without fabricated locations
     assert.ok(data.logo.startsWith('http'));
     assert.equal(data.address, undefined);
     assert.equal(data.aggregateRating, undefined);
-    assert.equal(data.areaServed.length, 29);
+    assert.equal(data.areaServed.length, 18);
+    assert.deepEqual([...new Set(data.areaServed.map(area => area.containedInPlace.name))].sort(), ['Connecticut', 'New Jersey', 'New York']);
     const suffolk = data.areaServed.filter(area => area.name === 'Suffolk County');
-    assert.deepEqual(suffolk.map(area => area.containedInPlace.name).sort(), ['Massachusetts', 'New York']);
+    assert.deepEqual(suffolk.map(area => area.containedInPlace.name), ['New York']);
     return data;
   }));
   assert.deepEqual(entries[0], entries[1]);
